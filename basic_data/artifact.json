@@ -1,0 +1,2383 @@
+{
+  "10001": {
+    "Id": 10001,
+    "Icon": "UI_RelicIcon_10001_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100010": {
+        "Name": {
+          "En": "Resolution of Sojourner",
+          "Ko": "행자의 마음",
+          "Zh": "行者之心",
+          "Ja": "旅人の心"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2100011": {
+        "Name": {
+          "En": "Resolution of Sojourner",
+          "Ko": "행자의 마음",
+          "Zh": "行者之心",
+          "Ja": "旅人の心"
+        },
+        "Desc": {
+          "En": "Increases Charged Attack CRIT Rate by 30%.",
+          "Ko": "강공격의 치명타 확률+30%",
+          "Zh": "重击的暴击率提升30%。",
+          "Ja": "重撃の会心率+30%。"
+        }
+      }
+    }
+  },
+  "10002": {
+    "Id": 10002,
+    "Icon": "UI_RelicIcon_10002_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100020": {
+        "Name": {
+          "En": "Brave Heart",
+          "Ko": "용사의 마음",
+          "Zh": "勇士之心",
+          "Ja": "勇士の心"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2100021": {
+        "Name": {
+          "En": "Brave Heart",
+          "Ko": "용사의 마음",
+          "Zh": "勇士之心",
+          "Ja": "勇士の心"
+        },
+        "Desc": {
+          "En": "Increases DMG by 30% against opponents with more than 50% HP.",
+          "Ko": "HP가 50%를 초과하는 적에게 주는 피해가 30% 증가한다",
+          "Zh": "对生命值高于50%的敌人，造成的伤害增加30%。",
+          "Ja": "HPが50%以上の敵に対するダメージ+30%。"
+        }
+      }
+    }
+  },
+  "10003": {
+    "Id": 10003,
+    "Icon": "UI_RelicIcon_10003_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100030": {
+        "Name": {
+          "En": "Defender's Will",
+          "Ko": "수호자의 마음",
+          "Zh": "守护之心",
+          "Ja": "守護の心"
+        },
+        "Desc": {
+          "En": "DEF +30%",
+          "Ko": "방어력+30%",
+          "Zh": "防御力提高30%。",
+          "Ja": "防御力+30%。"
+        }
+      },
+      "2100031": {
+        "Name": {
+          "En": "Defender's Will",
+          "Ko": "수호자의 마음",
+          "Zh": "守护之心",
+          "Ja": "守護の心"
+        },
+        "Desc": {
+          "En": "For each different element present in your own party, the wearer's Elemental RES to that corresponding element is increased by 30%.",
+          "Ko": "파티 내에 다른 원소 타입의 자신의 캐릭터가 1명 존재할 때마다 자신은 대응하는 원소의 내성을 30% 획득한다",
+          "Zh": "队伍里每有不同一种元素类型的自己的角色，自身获得30%相应的元素抗性。",
+          "Ja": "チーム内の自身のキャラクターの元素タイプ1種類につき、自身にその元素の耐性+30%。"
+        }
+      }
+    }
+  },
+  "10004": {
+    "Id": 10004,
+    "Icon": "UI_RelicIcon_10004_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100040": {
+        "Name": {
+          "En": "Tiny Miracle",
+          "Ko": "기적",
+          "Zh": "奇迹",
+          "Ja": "奇跡"
+        },
+        "Desc": {
+          "En": "All Elemental RES increased by 20%.",
+          "Ko": "모든 원소 내성+20%",
+          "Zh": "所有元素抗性提高20%。",
+          "Ja": "全ての元素耐性+20%。"
+        }
+      },
+      "2100041": {
+        "Name": {
+          "En": "Tiny Miracle",
+          "Ko": "기적",
+          "Zh": "奇迹",
+          "Ja": "奇跡"
+        },
+        "Desc": {
+          "En": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
+          "Ko": "받은 원소 공격에 대응하는 원소의 내성이 30% 증가한다. 지속 시간: 10초. 해당 효과는 10초마다 1번 발동한다",
+          "Zh": "受到某个元素类型的伤害后，相应的抗性提升30%，持续10秒。该效果每10秒只能触发一次。",
+          "Ja": "元素ダメージを受けると、その元素の耐性+30%、継続時間10秒。10秒毎に1回のみ発動可能。"
+        }
+      }
+    }
+  },
+  "10005": {
+    "Id": 10005,
+    "Icon": "UI_RelicIcon_10005_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100050": {
+        "Name": {
+          "En": "Berserker",
+          "Ko": "전투광",
+          "Zh": "战狂",
+          "Ja": "狂戦士"
+        },
+        "Desc": {
+          "En": "CRIT Rate +12%",
+          "Ko": "치명타 확률+12%",
+          "Zh": "暴击率提高12%。",
+          "Ja": "会心率+12%。"
+        }
+      },
+      "2100051": {
+        "Name": {
+          "En": "Berserker",
+          "Ko": "전투광",
+          "Zh": "战狂",
+          "Ja": "狂戦士"
+        },
+        "Desc": {
+          "En": "When HP is below 70%, CRIT Rate increases by an additional 24%.",
+          "Ko": "HP 70% 미만 시 치명타 확률이 추가로 24% 증가한다",
+          "Zh": "生命值低于70%时，暴击率额外提升24%。",
+          "Ja": "HPが70%以下になると、会心率+24%。"
+        }
+      }
+    }
+  },
+  "10006": {
+    "Id": 10006,
+    "Icon": "UI_RelicIcon_10006_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100060": {
+        "Name": {
+          "En": "Martial Artist",
+          "Ko": "무인",
+          "Zh": "武人",
+          "Ja": "武人"
+        },
+        "Desc": {
+          "En": "Normal and Charged Attack DMG +15%",
+          "Ko": "일반 공격과 강공격으로 주는 피해+15%",
+          "Zh": "普通攻击与重击造成的伤害提高15%。",
+          "Ja": "通常攻撃と重擊ダメージ+15%。"
+        }
+      },
+      "2100061": {
+        "Name": {
+          "En": "Martial Artist",
+          "Ko": "무인",
+          "Zh": "武人",
+          "Ja": "武人"
+        },
+        "Desc": {
+          "En": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s.",
+          "Ko": "원소전투 스킬 발동 후 8초 동안 일반 공격과 강공격으로 주는 피해가 25% 증가한다",
+          "Zh": "施放元素战技后的8秒内，普通攻击和重击造成的伤害提升25%。",
+          "Ja": "元素スキル発動後、通常攻撃と重撃ダメージ+25%、継続時間8秒。"
+        }
+      }
+    }
+  },
+  "10007": {
+    "Id": 10007,
+    "Icon": "UI_RelicIcon_10007_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100070": {
+        "Name": {
+          "En": "Instructor",
+          "Ko": "교관",
+          "Zh": "教官",
+          "Ja": "教官"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2100071": {
+        "Name": {
+          "En": "Instructor",
+          "Ko": "교관",
+          "Zh": "教官",
+          "Ja": "教官"
+        },
+        "Desc": {
+          "En": "Upon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s.",
+          "Ko": "원소 반응 후 파티 내 모든 캐릭터의 원소 마스터리가 120pt 증가한다. 지속 시간: 8초",
+          "Zh": "触发元素反应后，队伍中所有角色的元素精通提高120点，持续8秒。",
+          "Ja": "元素反応を引き起こした後、チーム全員の元素熟知+120、継続時間8秒。"
+        }
+      }
+    }
+  },
+  "10008": {
+    "Id": 10008,
+    "Icon": "UI_RelicIcon_10008_4",
+    "Rank": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100080": {
+        "Name": {
+          "En": "Gambler",
+          "Ko": "노름꾼",
+          "Zh": "赌徒",
+          "Ja": "博徒"
+        },
+        "Desc": {
+          "En": "Increases Elemental Skill DMG by 20%.",
+          "Ko": "원소전투 스킬로 주는 피해+20%",
+          "Zh": "元素战技造成的伤害提升20%。",
+          "Ja": "元素スキルのダメージ+20%。"
+        }
+      },
+      "2100081": {
+        "Name": {
+          "En": "Gambler",
+          "Ko": "노름꾼",
+          "Zh": "赌徒",
+          "Ja": "博徒"
+        },
+        "Desc": {
+          "En": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s.",
+          "Ko": "적을 처치하면 100%의 확률로 원소전투 스킬의 재사용 대기시간이 초기화된다. 해당 효과는 15초마다 1번 발동한다",
+          "Zh": "击败敌人时，有100%概率清除元素战技的冷却时间。该效果每15秒至多触发一次。",
+          "Ja": "敵を倒した時、100%の確率で元素スキルのクールタイムをリセットする。15秒に1回のみ発動可能。"
+        }
+      }
+    }
+  },
+  "10009": {
+    "Id": 10009,
+    "Icon": "UI_RelicIcon_10009_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100090": {
+        "Name": {
+          "En": "The Exile",
+          "Ko": "유배자",
+          "Zh": "流放者",
+          "Ja": "亡命者"
+        },
+        "Desc": {
+          "En": "Energy Recharge +20%",
+          "Ko": "원소 충전 효율+20%",
+          "Zh": "元素充能效率提高20%。",
+          "Ja": "元素チャージ効率+20%。"
+        }
+      },
+      "2100091": {
+        "Name": {
+          "En": "The Exile",
+          "Ko": "유배자",
+          "Zh": "流放者",
+          "Ja": "亡命者"
+        },
+        "Desc": {
+          "En": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack.",
+          "Ko": "원소폭발 발동 후 2초마다 파티 내 모든 캐릭터(자신을 포함하지 않음)의 원소 에너지를 2pt 회복한다. 해당 효과는 6초간 지속하며 중첩되지 않는다",
+          "Zh": "施放元素爆发后，每2秒为队伍中所有角色（不包括自己）恢复2点元素能量。该效果持续6秒，无法叠加。",
+          "Ja": "元素爆発を発動すると、2秒毎にチーム全員（自分を除く）の元素エネルギーを2回復する、継続時間6秒。重ね掛け不可。"
+        }
+      }
+    }
+  },
+  "10010": {
+    "Id": 10010,
+    "Icon": "UI_RelicIcon_10010_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "Set": {
+      "2100100": {
+        "Name": {
+          "En": "Adventurer",
+          "Ko": "모험가",
+          "Zh": "冒险家",
+          "Ja": "冒険者"
+        },
+        "Desc": {
+          "En": "Max HP increased by 1,000.",
+          "Ko": "HP 최대치+1000pt",
+          "Zh": "生命值上限提高1000点。",
+          "Ja": "HP上限+1000。"
+        }
+      },
+      "2100101": {
+        "Name": {
+          "En": "Adventurer",
+          "Ko": "모험가",
+          "Zh": "冒险家",
+          "Ja": "冒険者"
+        },
+        "Desc": {
+          "En": "Opening a chest regenerates 30% Max HP over 5s.",
+          "Ko": "각종 보물상자를 오픈 후 5초 동안 30%의 HP를 지속해서 회복한다",
+          "Zh": "开启各类宝箱后的5秒内，持续恢复30%生命值。",
+          "Ja": "宝箱を開けた後5秒間、HPの30%を徐々に回復する。"
+        }
+      }
+    }
+  },
+  "10011": {
+    "Id": 10011,
+    "Icon": "UI_RelicIcon_10011_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "Set": {
+      "2100110": {
+        "Name": {
+          "En": "Lucky Dog",
+          "Ko": "행운아",
+          "Zh": "幸运儿",
+          "Ja": "幸運"
+        },
+        "Desc": {
+          "En": "DEF increased by 100.",
+          "Ko": "방어력+100pt",
+          "Zh": "防御力提高100点。",
+          "Ja": "防御力+100。"
+        }
+      },
+      "2100111": {
+        "Name": {
+          "En": "Lucky Dog",
+          "Ko": "행운아",
+          "Zh": "幸运儿",
+          "Ja": "幸運"
+        },
+        "Desc": {
+          "En": "Picking up Mora restores 300 HP.",
+          "Ko": "모라 획득 시 HP를 300pt 회복한다",
+          "Zh": "拾取摩拉时，恢复300点生命值。",
+          "Ja": "モラを拾得すると、HPを300回復する。"
+        }
+      }
+    }
+  },
+  "10012": {
+    "Id": 10012,
+    "Icon": "UI_RelicIcon_10012_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2100120": {
+        "Name": {
+          "En": "Scholar",
+          "Ko": "학사",
+          "Zh": "学士",
+          "Ja": "学者"
+        },
+        "Desc": {
+          "En": "Energy Recharge +20%",
+          "Ko": "원소 충전 효율+20%",
+          "Zh": "元素充能效率提高20%。",
+          "Ja": "元素チャージ効率+20%。"
+        }
+      },
+      "2100121": {
+        "Name": {
+          "En": "Scholar",
+          "Ko": "학사",
+          "Zh": "学士",
+          "Ja": "学者"
+        },
+        "Desc": {
+          "En": "Gaining Elemental Particles or Orbs gives 3 Energy to all party members who have a bow or a catalyst equipped. Can only occur once every 3s.",
+          "Ko": "원소 입자 혹은 원소 구슬 획득 시 파티 내 모든 활과 법구를 사용하는 캐릭터는 원소 에너지를 추가로 3pt 회복한다. 해당 효과는 3초마다 1번 발동한다",
+          "Zh": "获得元素微粒或元素晶球时，队伍中所有弓箭和法器角色额外恢复3点元素能量。该效果每3秒只能触发一次。",
+          "Ja": "元素オーブまたは元素粒子を獲得した時、チーム内全ての弓と法器キャラの元素エネルギーが3回復する。3秒毎に1回のみ発動可能。"
+        }
+      }
+    }
+  },
+  "10013": {
+    "Id": 10013,
+    "Icon": "UI_RelicIcon_10013_4",
+    "Rank": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "Set": {
+      "2100130": {
+        "Name": {
+          "En": "Traveling Doctor",
+          "Ko": "떠돌이 의사",
+          "Zh": "游医",
+          "Ja": "医者"
+        },
+        "Desc": {
+          "En": "Increases incoming healing by 20%.",
+          "Ko": "캐릭터가 받는 치유 효과+20%",
+          "Zh": "角色受到的治疗效果提高20%。",
+          "Ja": "受ける治療効果+20%。"
+        }
+      },
+      "2100131": {
+        "Name": {
+          "En": "Traveling Doctor",
+          "Ko": "떠돌이 의사",
+          "Zh": "游医",
+          "Ja": "医者"
+        },
+        "Desc": {
+          "En": "Using Elemental Burst restores 20% HP.",
+          "Ko": "원소폭발 발동 시 HP를 20% 회복한다",
+          "Zh": "施放元素爆发时，恢复20%生命值。",
+          "Ja": "元素爆発を発動すると、HPを20%回復する。"
+        }
+      }
+    }
+  },
+  "14001": {
+    "Id": 14001,
+    "Icon": "UI_RelicIcon_14001_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2140010": {
+        "Name": {
+          "En": "Blizzard Strayer",
+          "Ko": "얼음바람 속에서 길잃은 용사",
+          "Zh": "冰风迷途的勇士",
+          "Ja": "氷風を彷徨う勇士"
+        },
+        "Desc": {
+          "En": "Cryo DMG Bonus +15%",
+          "Ko": "얼음 원소 피해 보너스+15%",
+          "Zh": "获得15%冰元素伤害加成。",
+          "Ja": "氷元素ダメージ+15%。"
+        }
+      },
+      "2140011": {
+        "Name": {
+          "En": "Blizzard Strayer",
+          "Ko": "얼음바람 속에서 길잃은 용사",
+          "Zh": "冰风迷途的勇士",
+          "Ja": "氷風を彷徨う勇士"
+        },
+        "Desc": {
+          "En": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%.",
+          "Ko": "얼음 원소의 영향을 받은 적을 공격 시 치명타 확률이 20% 증가한다. 만약 적이 빙결 상태라면 치명타 확률이 추가로 20% 증가한다",
+          "Zh": "攻击处于冰元素影响下的敌人时，暴击率提高20%；若敌人处于冻结状态下，则暴击率额外提高20%。",
+          "Ja": "氷元素の影響を受けている敵を攻撃した場合、会心率+20%。敵が凍結状態の場合、会心率は更に+20%。"
+        }
+      }
+    }
+  },
+  "14002": {
+    "Id": 14002,
+    "Icon": "UI_RelicIcon_14002_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2140020": {
+        "Name": {
+          "En": "Thundersoother",
+          "Ko": "뇌명을 평정한 존자",
+          "Zh": "平息鸣雷的尊者",
+          "Ja": "雷を鎮める尊者"
+        },
+        "Desc": {
+          "En": "Electro RES increased by 40%.",
+          "Ko": "번개 원소 내성+40%",
+          "Zh": "雷元素抗性提高40%。",
+          "Ja": "雷元素耐性+40%。"
+        }
+      },
+      "2140021": {
+        "Name": {
+          "En": "Thundersoother",
+          "Ko": "뇌명을 평정한 존자",
+          "Zh": "平息鸣雷的尊者",
+          "Ja": "雷を鎮める尊者"
+        },
+        "Desc": {
+          "En": "Increases DMG against opponents affected by Electro by 35%.",
+          "Ko": "번개 원소의 영향을 받은 적에게 주는 피해가 35% 증가한다",
+          "Zh": "对处于雷元素影响下的敌人造成的伤害提升35%。",
+          "Ja": "雷元素の影響を受けた敵に対するダメージ+35%。"
+        }
+      }
+    }
+  },
+  "14003": {
+    "Id": 14003,
+    "Icon": "UI_RelicIcon_14003_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2140030": {
+        "Name": {
+          "En": "Lavawalker",
+          "Ko": "불 위를 걷는 현인",
+          "Zh": "渡过烈火的贤人",
+          "Ja": "烈火を渡る賢者"
+        },
+        "Desc": {
+          "En": "Pyro RES increased by 40%.",
+          "Ko": "불 원소 내성+40%",
+          "Zh": "火元素抗性提高40%。",
+          "Ja": "炎元素耐性+40%。"
+        }
+      },
+      "2140031": {
+        "Name": {
+          "En": "Lavawalker",
+          "Ko": "불 위를 걷는 현인",
+          "Zh": "渡过烈火的贤人",
+          "Ja": "烈火を渡る賢者"
+        },
+        "Desc": {
+          "En": "Increases DMG against opponents affected by Pyro by 35%.",
+          "Ko": "불 원소의 영향을 받은 적에게 주는 피해가 35% 증가한다",
+          "Zh": "对处于火元素影响下的敌人造成的伤害提升35%。",
+          "Ja": "炎元素の影響を受けた敵に対するダメージ+35%。"
+        }
+      }
+    }
+  },
+  "14004": {
+    "Id": 14004,
+    "Icon": "UI_RelicIcon_14004_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2140040": {
+        "Name": {
+          "En": "Maiden Beloved",
+          "Ko": "사랑받는 소녀",
+          "Zh": "被怜爱的少女",
+          "Ja": "愛される少女"
+        },
+        "Desc": {
+          "En": "Character Healing Effectiveness +15%",
+          "Ko": "캐릭터가 주는 치유 효과+15%",
+          "Zh": "角色造成的治疗效果提升15%。",
+          "Ja": "与える治療効果+15%。"
+        }
+      },
+      "2140041": {
+        "Name": {
+          "En": "Maiden Beloved",
+          "Ko": "사랑받는 소녀",
+          "Zh": "被怜爱的少女",
+          "Ja": "愛される少女"
+        },
+        "Desc": {
+          "En": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s.",
+          "Ko": "원소전투 스킬 또는 원소폭발 발동 후 10초 동안 파티 내 모든 캐릭터가 받는 치유 효과가 20% 증가한다",
+          "Zh": "施放元素战技或元素爆发后的10秒内，队伍中所有角色受治疗效果加成提高20%。",
+          "Ja": "元素スキルまたは元素爆発を発動した後10秒間、チーム全員の受ける治療効果+20%。"
+        }
+      }
+    }
+  },
+  "15001": {
+    "Id": 15001,
+    "Icon": "UI_RelicIcon_15001_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150010": {
+        "Name": {
+          "En": "Gladiator's Finale",
+          "Ko": "검투사의 피날레",
+          "Zh": "角斗士的终幕礼",
+          "Ja": "剣闘士のフィナーレ"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150011": {
+        "Name": {
+          "En": "Gladiator's Finale",
+          "Ko": "검투사의 피날레",
+          "Zh": "角斗士的终幕礼",
+          "Ja": "剣闘士のフィナーレ"
+        },
+        "Desc": {
+          "En": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%.",
+          "Ko": "해당 성유물 세트를 장착한 캐릭터가 한손검, 양손검, 장병기를 사용 시 캐릭터의 일반 공격으로 주는 피해가 35% 증가한다",
+          "Zh": "装备该圣遗物套装的角色为单手剑、双手剑、长柄武器角色时，角色普通攻击造成的伤害提高35%。",
+          "Ja": "該当聖遺物セットを装備したキャラが片手剣、両手剣、長柄武器キャラの場合、通常攻撃ダメージ+35%。"
+        }
+      }
+    }
+  },
+  "15002": {
+    "Id": 15002,
+    "Icon": "UI_RelicIcon_15002_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150020": {
+        "Name": {
+          "En": "Viridescent Venerer",
+          "Ko": "청록색 그림자",
+          "Zh": "翠绿之影",
+          "Ja": "翠緑の影"
+        },
+        "Desc": {
+          "En": "Anemo DMG Bonus +15%",
+          "Ko": "바람 원소 피해 보너스+15%",
+          "Zh": "获得15%风元素伤害加成。",
+          "Ja": "風元素ダメージ+15%。"
+        }
+      },
+      "2150021": {
+        "Name": {
+          "En": "Viridescent Venerer",
+          "Ko": "청록색 그림자",
+          "Zh": "翠绿之影",
+          "Ja": "翠緑の影"
+        },
+        "Desc": {
+          "En": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
+          "Ko": "확산 반응이 주는 피해가 60% 증가한다. 확산되는 원소 타입에 따라 피해 범위 내 적의 해당 원소의 내성이 40% 감소한다. 지속 시간: 10초",
+          "Zh": "扩散反应造成的伤害提升60%。根据扩散的元素类型，降低受到影响的敌人40%的对应元素抗性，持续10秒。",
+          "Ja": "拡散反応によるダメージ+60%。拡散された元素タイプを基準に、影響を受けた敵の元素耐性-40%、継続時間10秒。"
+        }
+      }
+    }
+  },
+  "15003": {
+    "Id": 15003,
+    "Icon": "UI_RelicIcon_15003_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150030": {
+        "Name": {
+          "En": "Wanderer's Troupe",
+          "Ko": "대지를 유랑하는 악단",
+          "Zh": "流浪大地的乐团",
+          "Ja": "大地を流浪する楽団"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2150031": {
+        "Name": {
+          "En": "Wanderer's Troupe",
+          "Ko": "대지를 유랑하는 악단",
+          "Zh": "流浪大地的乐团",
+          "Ja": "大地を流浪する楽団"
+        },
+        "Desc": {
+          "En": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow.",
+          "Ko": "해당 성유물 세트를 장착한 캐릭터가 법구 또는 활을 사용 시 캐릭터의 강공격으로 주는 피해가 35% 증가한다",
+          "Zh": "装备该圣遗物套装的角色为法器、弓箭角色时，角色重击造成的伤害提高35%。",
+          "Ja": "該当聖遺物セットを装備したキャラが法器、弓キャラの場合、キャラの重撃ダメージ+35%。"
+        }
+      }
+    }
+  },
+  "15004": {
+    "Id": 15004,
+    "Icon": "UI_RelicIcon_15004_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150040": {
+        "Name": {
+          "En": "Glacier and Snowfield",
+          "Ko": "빙하와 눈의 모래",
+          "Zh": "冰之川与雪之砂",
+          "Ja": "氷の川と雪の砂"
+        },
+        "Desc": {
+          "En": "Cryo DMG Bonus +15%",
+          "Ko": "얼음 원소 피해 보너스+15%",
+          "Zh": "获得15%冰元素伤害加成。",
+          "Ja": "氷元素ダメージ+15%。"
+        }
+      },
+      "2150041": {
+        "Name": {
+          "En": "Glacier and Snowfield",
+          "Ko": "빙하와 눈의 모래",
+          "Zh": "冰之川与雪之砂",
+          "Ja": "氷の川と雪の砂"
+        },
+        "Desc": {
+          "En": "Increases Superconduct DMG by 100%. Increases Melt DMG by 15%. Using an Elemental Burst increases Cryo DMG Bonus by 30% for 10s.",
+          "Ko": "초전도 반응이 적에게 주는 피해가 100% 증가하고 융해 반응의 보너스 계수가 15% 증가한다. 원소폭발 발동 후 10초 동안 얼음 원소 피해 보너스가 추가로 30% 증가한다",
+          "Zh": "超导反应造成的伤害提升100%，融化反应的加成系数提高15%。施放元素爆发后的10秒内，冰元素伤害加成额外提升30%。",
+          "Ja": "超電導反応ダメージ+100%、溶解反応の加算効果+15%。元素爆発を発動した10秒間、氷元素ダメージ+30%。"
+        }
+      }
+    }
+  },
+  "15005": {
+    "Id": 15005,
+    "Icon": "UI_RelicIcon_15005_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150050": {
+        "Name": {
+          "En": "Thundering Fury",
+          "Ko": "번개 같은 분노",
+          "Zh": "如雷的盛怒",
+          "Ja": "雷のような怒り"
+        },
+        "Desc": {
+          "En": "Electro DMG Bonus +15%",
+          "Ko": "번개 원소 피해 보너스+15%",
+          "Zh": "获得15%雷元素伤害加成。",
+          "Ja": "雷元素ダメージ+15%。"
+        }
+      },
+      "2150051": {
+        "Name": {
+          "En": "Thundering Fury",
+          "Ko": "번개 같은 분노",
+          "Zh": "如雷的盛怒",
+          "Ja": "雷のような怒り"
+        },
+        "Desc": {
+          "En": "Increases the DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, the DMG Bonus conferred by Aggravate by 20%, and the DMG caused by Lunar-Charged by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s.",
+          "Ko": "과부하, 감전, 초전도, 만개 반응으로 주는 피해가 40% 증가하고, 촉진 반응이 주는 피해가 20% 증가하며, 달 감전 반응으로 주는 피해가 20% 증가한다. 위와 같은 원소 반응 또는 활성 반응 발동 시, 원소전투 스킬의 재사용 대기시간이 1초 줄어든다. 해당 효과는 0.8초마다 최대 1회 발동된다",
+          "Zh": "超载、感电、超导、超绽放反应造成的伤害提升40%，超激化反应带来的伤害提升提高20%，月感电反应造成的伤害提升20%。触发上述元素反应或原激化反应时，元素战技冷却时间减少1秒。该效果每0.8秒最多触发一次。",
+          "Ja": "過負荷、感電、超電導、超開花反応によるダメージ+40%、超激化反応によるダメージアップ効果+20%、月感電反応によるダメージ+20%。上記元素反応または原激化反応を起こすと、元素スキルのクールタイム-1秒。0.8秒毎に最大1回のみ発動可能。"
+        }
+      }
+    }
+  },
+  "15006": {
+    "Id": 15006,
+    "Icon": "UI_RelicIcon_15006_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150060": {
+        "Name": {
+          "En": "Crimson Witch of Flames",
+          "Ko": "불타오르는 화염의 마녀",
+          "Zh": "炽烈的炎之魔女",
+          "Ja": "燃え盛る炎の魔女"
+        },
+        "Desc": {
+          "En": "Pyro DMG Bonus +15%",
+          "Ko": "불 원소 피해 보너스+15%",
+          "Zh": "获得15%火元素伤害加成。",
+          "Ja": "炎元素ダメージ+15%。"
+        }
+      },
+      "2150061": {
+        "Name": {
+          "En": "Crimson Witch of Flames",
+          "Ko": "불타오르는 화염의 마녀",
+          "Zh": "炽烈的炎之魔女",
+          "Ja": "燃え盛る炎の魔女"
+        },
+        "Desc": {
+          "En": "Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.",
+          "Ko": "과부하, 연소, 발화 반응으로 주는 피해가 40% 증가하고 증발, 융해 반응의 보너스 계수가 15% 증가한다. 원소전투 스킬 발동 후 10초 동안 2세트의 효과가 50% 증가한다. 최대 중첩수: 3회",
+          "Zh": "超载、燃烧、烈绽放反应造成的伤害提升40%，蒸发、融化反应的加成系数提高15%。施放元素战技后的10秒内，2件套的效果提高50%，该效果最多叠加3次。",
+          "Ja": "過負荷、燃焼、烈開花反応によるダメージ+40%。蒸発、溶解反応による加算効果+15%。元素スキルを発動した10秒間、2セットの効果が50%アップし、最大3重まで。"
+        }
+      }
+    }
+  },
+  "15007": {
+    "Id": 15007,
+    "Icon": "UI_RelicIcon_15007_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150070": {
+        "Name": {
+          "En": "Noblesse Oblige",
+          "Ko": "옛 왕실의 의식",
+          "Zh": "昔日宗室之仪",
+          "Ja": "旧貴族のしつけ"
+        },
+        "Desc": {
+          "En": "Elemental Burst DMG +20%",
+          "Ko": "원소폭발로 주는 피해+20%",
+          "Zh": "元素爆发造成的伤害提升20%。",
+          "Ja": "元素爆発のダメージ+20%。"
+        }
+      },
+      "2150071": {
+        "Name": {
+          "En": "Noblesse Oblige",
+          "Ko": "옛 왕실의 의식",
+          "Zh": "昔日宗室之仪",
+          "Ja": "旧貴族のしつけ"
+        },
+        "Desc": {
+          "En": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack.",
+          "Ko": "원소폭발 발동 후 파티 내 모든 캐릭터의 공격력이 20% 증가한다. 지속 시간: 12초. 해당 효과는 중첩되지 않는다",
+          "Zh": "施放元素爆发后，队伍中所有角色攻击力提升20%，持续12秒。该效果不可叠加。",
+          "Ja": "元素爆発を発動すると、チーム全員の攻撃力+20%、継続時間12秒、重ねがけ不可。"
+        }
+      }
+    }
+  },
+  "15008": {
+    "Id": 15008,
+    "Icon": "UI_RelicIcon_15008_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150080": {
+        "Name": {
+          "En": "Bloodstained Chivalry",
+          "Ko": "피에 물든 기사도",
+          "Zh": "染血的骑士道",
+          "Ja": "血染めの騎士道"
+        },
+        "Desc": {
+          "En": "Physical DMG +25%",
+          "Ko": "주는 물리 피해+25%",
+          "Zh": "造成的物理伤害提高25%。",
+          "Ja": "物理ダメージ+25%。"
+        }
+      },
+      "2150081": {
+        "Name": {
+          "En": "Bloodstained Chivalry",
+          "Ko": "피에 물든 기사도",
+          "Zh": "染血的骑士道",
+          "Ja": "血染めの騎士道"
+        },
+        "Desc": {
+          "En": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s.",
+          "Ko": "적을 처치한 후 10초 동안 강공격 사용 시 스태미나를 소모하지 않고 강공격으로 주는 피해가 50% 증가한다",
+          "Zh": "击败敌人后的10秒内，施放重击时不消耗体力，且重击造成的伤害提升50%。",
+          "Ja": "敵を倒した後の10秒間、重撃の際にスタミナを消費しない。また、重撃のダメージ+50%。"
+        }
+      }
+    }
+  },
+  "15009": {
+    "Id": 15009,
+    "Icon": "UI_RelicIcon_15009_3",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150090": {
+        "Name": {
+          "En": "Prayers for Illumination",
+          "Ko": "불을 모시는 자",
+          "Zh": "祭火之人",
+          "Ja": "火祭りの人"
+        },
+        "Desc": {
+          "En": "Affected by Pyro for 40% less time.",
+          "Ko": "받는 불 원소 부착 효과 지속 시간이 40% 감소한다",
+          "Zh": "受到的火元素附着效果的持续时间减少40%。",
+          "Ja": "受けた炎元素付着の効果継続時間-40%。"
+        }
+      }
+    }
+  },
+  "15010": {
+    "Id": 15010,
+    "Icon": "UI_RelicIcon_15010_3",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150100": {
+        "Name": {
+          "En": "Prayers for Destiny",
+          "Ko": "물을 모시는 자",
+          "Zh": "祭水之人",
+          "Ja": "水祭りの人"
+        },
+        "Desc": {
+          "En": "Affected by Hydro for 40% less time.",
+          "Ko": "받는 물 원소 부착 효과 지속 시간이 40% 감소한다",
+          "Zh": "受到的水元素附着效果的持续时间减少40%。",
+          "Ja": "受けた水元素付着の効果継続時間-40%。"
+        }
+      }
+    }
+  },
+  "15011": {
+    "Id": 15011,
+    "Icon": "UI_RelicIcon_15011_3",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150110": {
+        "Name": {
+          "En": "Prayers for Wisdom",
+          "Ko": "뇌명을 모시는 자",
+          "Zh": "祭雷之人",
+          "Ja": "雷祭りの人"
+        },
+        "Desc": {
+          "En": "Affected by Electro for 40% less time.",
+          "Ko": "받는 번개 원소 부착 효과 지속 시간이 40% 감소한다",
+          "Zh": "受到的雷元素附着效果的持续时间减少40%。",
+          "Ja": "受けた雷元素付着の効果継続時間-40%。"
+        }
+      }
+    }
+  },
+  "15012": {
+    "Id": 15012,
+    "Icon": "UI_RelicIcon_15012_3",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150120": {
+        "Name": {
+          "En": "Prayers to the Firmament",
+          "Ko": "바람을 모시는 자",
+          "Zh": "祭风之人",
+          "Ja": "風祭りの人"
+        },
+        "Desc": {
+          "En": "Affected by Anemo for 40% less time.",
+          "Ko": "받는 바람 원소 부착 효과 지속 시간이 40% 감소한다",
+          "Zh": "受到的风元素附着效果的持续时间减少40%。",
+          "Ja": "受けた風元素付着の効果継続時間-40%。"
+        }
+      }
+    }
+  },
+  "15013": {
+    "Id": 15013,
+    "Icon": "UI_RelicIcon_15013_3",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150130": {
+        "Name": {
+          "En": "Prayers to Springtime",
+          "Ko": "얼음을 모시는 자",
+          "Zh": "祭冰之人",
+          "Ja": "氷祭りの人"
+        },
+        "Desc": {
+          "En": "Affected by Cryo for 40% less time.",
+          "Ko": "받는 얼음 원소 부착 효과 지속 시간이 40% 감소한다",
+          "Zh": "受到的冰元素附着效果的持续时间减少40%。",
+          "Ja": "受けた氷元素付着の効果継続時間-40%。"
+        }
+      }
+    }
+  },
+  "15014": {
+    "Id": 15014,
+    "Icon": "UI_RelicIcon_15014_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150140": {
+        "Name": {
+          "En": "Archaic Petra",
+          "Ko": "유구한 반암",
+          "Zh": "悠古的磐岩",
+          "Ja": "悠久の磐岩"
+        },
+        "Desc": {
+          "En": "Gain a 15% Geo DMG Bonus.",
+          "Ko": "바위 원소 피해 보너스+15%",
+          "Zh": "获得15%岩元素伤害加成。",
+          "Ja": "岩元素ダメージ+15%。"
+        }
+      },
+      "2150141": {
+        "Name": {
+          "En": "Archaic Petra",
+          "Ko": "유구한 반암",
+          "Zh": "悠古的磐岩",
+          "Ja": "悠久の磐岩"
+        },
+        "Desc": {
+          "En": "Upon obtaining an Elemental Shard created through Crystallize or triggering a Lunar-Crystallize reaction, all party members gain a 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time.",
+          "Ko": "결정 반응으로 생성된 결정 조각을 획득하거나 달 결정 반응 발동 시, 파티 내 모든 캐릭터가 상응하는 원소 피해 보너스를 35% 획득한다. 지속 시간: 10초. 해당 효과로 동시에 한 가지 타입의 원소 피해 보너스만 획득할 수 있다",
+          "Zh": "获得结晶反应形成的晶片或触发月结晶反应时，队伍中所有角色获得35%对应元素伤害加成，持续10秒。同时只能通过该效果获得一种元素伤害加成。",
+          "Ja": "結晶反応で形成された欠片を獲得、または月結晶反応を起こすと、チーム全員の該当元素ダメージ+35%、継続時間10秒。元素ダメージアップは1種類のみ獲得可能。"
+        }
+      }
+    }
+  },
+  "15015": {
+    "Id": 15015,
+    "Icon": "UI_RelicIcon_15015_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150150": {
+        "Name": {
+          "En": "Retracing Bolide",
+          "Ko": "날아오르는 유성",
+          "Zh": "逆飞的流星",
+          "Ja": "逆飛びの流星"
+        },
+        "Desc": {
+          "En": "Increases Shield Strength by 35%.",
+          "Ko": "보호막 강화 효과+35%",
+          "Zh": "护盾强效提高35%。",
+          "Ja": "シールド強化+35%"
+        }
+      },
+      "2150151": {
+        "Name": {
+          "En": "Retracing Bolide",
+          "Ko": "날아오르는 유성",
+          "Zh": "逆飞的流星",
+          "Ja": "逆飛びの流星"
+        },
+        "Desc": {
+          "En": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG.",
+          "Ko": "보호막이 존재 시 추가로 일반 공격과 강공격 보너스를 40% 획득한다",
+          "Zh": "处于护盾庇护下时，额外获得40%普通攻击和重击伤害加成。",
+          "Ja": "シールド状態の時、通常攻撃と重撃ダメージ+40%。"
+        }
+      }
+    }
+  },
+  "15016": {
+    "Id": 15016,
+    "Icon": "UI_RelicIcon_15016_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150160": {
+        "Name": {
+          "En": "Heart of Depth",
+          "Ko": "몰락한 마음",
+          "Zh": "沉沦之心",
+          "Ja": "沈淪の心"
+        },
+        "Desc": {
+          "En": "Hydro DMG Bonus +15%",
+          "Ko": "물 원소 피해 보너스+15%",
+          "Zh": "获得15%水元素伤害加成。",
+          "Ja": "水元素ダメージ+15%。"
+        }
+      },
+      "2150161": {
+        "Name": {
+          "En": "Heart of Depth",
+          "Ko": "몰락한 마음",
+          "Zh": "沉沦之心",
+          "Ja": "沈淪の心"
+        },
+        "Desc": {
+          "En": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s.",
+          "Ko": "원소전투 스킬 발동 후 15초 동안 일반 공격과 강공격으로 주는 피해가 30% 증가한다",
+          "Zh": "施放元素战技后的15秒内，普通攻击与重击造成的伤害提高30%。",
+          "Ja": "元素スキルを発動した後の15秒間、通常攻撃と重撃のダメージ+30%。"
+        }
+      }
+    }
+  },
+  "15017": {
+    "Id": 15017,
+    "Icon": "UI_RelicIcon_15017_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150170": {
+        "Name": {
+          "En": "Tenacity of the Millelith",
+          "Ko": "견고한 천암",
+          "Zh": "千岩牢固",
+          "Ja": "千岩牢固"
+        },
+        "Desc": {
+          "En": "HP +20%",
+          "Ko": "HP+20%",
+          "Zh": "生命值提升20%。",
+          "Ja": "HP+20%。"
+        }
+      },
+      "2150171": {
+        "Name": {
+          "En": "Tenacity of the Millelith",
+          "Ko": "견고한 천암",
+          "Zh": "千岩牢固",
+          "Ja": "千岩牢固"
+        },
+        "Desc": {
+          "En": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
+          "Ko": "원소전투 스킬이 적을 명중하면 파티 내 주변 모든 캐릭터의 공격력이 20% 증가하고, 보호막 강화 효과가 30% 증가한다. 지속 시간: 3초. 해당 효과는 0.5초마다 최대 1회 발동되며, 해당 성유물을 장착한 캐릭터가 대기 상태일 때도 발동된다",
+          "Zh": "元素战技命中敌人后，使队伍中附近的所有角色攻击力提升20%，护盾强效提升30%，持续3秒。该效果每0.5秒至多触发一次。装备此圣遗物套装的角色处于队伍后台时，依然能触发该效果。",
+          "Ja": "元素スキルが敵に命中すると、周囲のチーム全員の攻撃力+20%、シールド強化+30%、持続時間3秒。この効果は0.5秒毎に1回のみ発動可能。この聖遺物セットを装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15018": {
+    "Id": 15018,
+    "Icon": "UI_RelicIcon_15018_4",
+    "Rank": [
+      3,
+      4,
+      5
+    ],
+    "Set": {
+      "2150180": {
+        "Name": {
+          "En": "Pale Flame",
+          "Ko": "창백의 화염",
+          "Zh": "苍白之火",
+          "Ja": "蒼白の炎"
+        },
+        "Desc": {
+          "En": "Physical DMG is increased by 25%.",
+          "Ko": "주는 물리 피해+25%",
+          "Zh": "造成的物理伤害提高25%。",
+          "Ja": "物理ダメージ+25%。"
+        }
+      },
+      "2150181": {
+        "Name": {
+          "En": "Pale Flame",
+          "Ko": "창백의 화염",
+          "Zh": "苍白之火",
+          "Ja": "蒼白の炎"
+        },
+        "Desc": {
+          "En": "When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%.",
+          "Ko": "원소전투 스킬로 적을 명중하면 공격력이 9% 증가한다. 지속 시간: 7초, 최대 중첩수: 2회. 해당 효과는 0.3초마다 1회 발동되며, 2회 중첩 시 2세트의 효과가 100% 증가한다",
+          "Zh": "元素战技命中敌人后，攻击力提升9%。该效果持续7秒，至多叠加2层，每0.3秒至多触发一次。叠满2层时，2件套的效果提升100%。",
+          "Ja": "元素スキルが敵に命中すると、攻撃力+9%。持続時間7秒、最大2重まで、0.3秒毎に1回のみ発動可能。2重まで重ねると、2セットの効果が2倍になる。"
+        }
+      }
+    }
+  },
+  "15019": {
+    "Id": 15019,
+    "Icon": "UI_RelicIcon_15019_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150190": {
+        "Name": {
+          "En": "Shimenawa's Reminiscence",
+          "Ko": "추억의 시메나와",
+          "Zh": "追忆之注连",
+          "Ja": "追憶のしめ縄"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150191": {
+        "Name": {
+          "En": "Shimenawa's Reminiscence",
+          "Ko": "추억의 시메나와",
+          "Zh": "追忆之注连",
+          "Ja": "追憶のしめ縄"
+        },
+        "Desc": {
+          "En": "When casting an Elemental Skill, if the character has 15 or more Energy, they lose 15 Energy and Normal/Charged/Plunging Attack DMG is increased by 50% for 10s. This effect will not trigger again during that duration.",
+          "Ko": "원소전투 스킬 발동 후 캐릭터의 원소 에너지가 15pt 이상일 경우, 15pt의 원소 에너지를 잃는다. 그 후 10초 동안 일반 공격, 강공격, 낙하 공격으로 주는 피해가 50% 증가한다. 지속 기간 내에 해당 효과는 다시 발동하지 않는다",
+          "Zh": "施放元素战技时，如果角色的元素能量高于或等于15点，则会流失15点元素能量，使接下来的10秒内，普通攻击、重击、下落攻击造成的伤害提高50%，持续期间内该效果不会再次触发。",
+          "Ja": "元素スキルを発動した時、キャラクターの元素エネルギーが15以上の場合、元素エネルギーを15消費し、次の10秒間通常攻撃、重撃、落下攻撃ダメージ+50%。継続時間中この効果は再発動できない。"
+        }
+      }
+    }
+  },
+  "15020": {
+    "Id": 15020,
+    "Icon": "UI_RelicIcon_15020_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150200": {
+        "Name": {
+          "En": "Emblem of Severed Fate",
+          "Ko": "절연의 기치",
+          "Zh": "绝缘之旗印",
+          "Ja": "絶縁の旗印"
+        },
+        "Desc": {
+          "En": "Energy Recharge +20%",
+          "Ko": "원소 충전 효율+20%",
+          "Zh": "元素充能效率提高20%。",
+          "Ja": "元素チャージ効率+20%。"
+        }
+      },
+      "2150201": {
+        "Name": {
+          "En": "Emblem of Severed Fate",
+          "Ko": "절연의 기치",
+          "Zh": "绝缘之旗印",
+          "Ja": "絶縁の旗印"
+        },
+        "Desc": {
+          "En": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way.",
+          "Ko": "원소폭발로 주는 피해가 원소 충전 효율의 25%만큼 증가한다. 해당 방식으로 최대 75%까지 증가할 수 있다",
+          "Zh": "基于元素充能效率的25%，提高元素爆发造成的伤害。至多通过这种方式获得75%提升。",
+          "Ja": "元素チャージ効率の25%を基準に、元素爆発ダメージがアップする。この方法でアップできるダメージは最大75%まで。"
+        }
+      }
+    }
+  },
+  "15021": {
+    "Id": 15021,
+    "Icon": "UI_RelicIcon_15021_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150210": {
+        "Name": {
+          "En": "Husk of Opulent Dreams",
+          "Ko": "풍요로운 꿈의 껍데기",
+          "Zh": "华馆梦醒形骸记",
+          "Ja": "華館夢醒形骸記"
+        },
+        "Desc": {
+          "En": "DEF +30%",
+          "Ko": "방어력+30%",
+          "Zh": "防御力提高30%。",
+          "Ja": "防御力+30%。"
+        }
+      },
+      "2150211": {
+        "Name": {
+          "En": "Husk of Opulent Dreams",
+          "Ko": "풍요로운 꿈의 껍데기",
+          "Zh": "华馆梦醒形骸记",
+          "Ja": "華館夢醒形骸記"
+        },
+        "Desc": {
+          "En": "A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions: When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s. When off the field, the character gains 1 stack every 3s. Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus. When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.",
+          "Ko": "해당 성유물 세트를 장착한 캐릭터는 아래 상황에서 「문답」 효과를 얻는다: 필드 위에서 바위 원소 공격으로 적 명중 시 1스택 획득, 0.3초마다 최대 1회 발동된다. 대기 상태일 때 3초마다 1스택 획득. 문답 효과는 최대 4스택까지 중첩 가능하고, 스택 당 6%의 방어력과 6%의 바위 원소 피해 보너스를 제공한다. 6초마다 문답 효과를 획득하지 못할 경우, 1스택이 차감된다",
+          "Zh": "装备此圣遗物套装的角色在以下情况下，将获得「问答」效果：在场上用岩元素攻击命中敌人后获得一层，每0.3秒至多触发一次；在队伍后台中，每3秒获得一层。问答至多叠加4层，每层能提供6%防御力与6%岩元素伤害加成。每6秒，若未获得问答效果，将损失一层。",
+          "Ja": "この聖遺物セットを装備したキャラクターは、以下の状況において「問答」効果を獲得する。「問答」効果：フィールド上で岩元素攻撃を敵に命中した後に1層獲得、0.3秒毎に1層のみ獲得できる。待機中の時は、3秒毎に自動で1層獲得する。重ね掛けできる「問答」は最大4層までとなり、1層につき防御力+6%、岩元素ダメージ+6%。6秒毎に「問答」効果を獲得していない場合は、1層失う。"
+        }
+      }
+    }
+  },
+  "15022": {
+    "Id": 15022,
+    "Icon": "UI_RelicIcon_15022_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150220": {
+        "Name": {
+          "En": "Ocean-Hued Clam",
+          "Ko": "바다에 물든 거대 조개",
+          "Zh": "海染砗磲",
+          "Ja": "海染硨磲"
+        },
+        "Desc": {
+          "En": "Healing Bonus +15%.",
+          "Ko": "치유 보너스+15%",
+          "Zh": "治疗加成提高15%。",
+          "Ja": "与える治療効果+15%。"
+        }
+      },
+      "2150221": {
+        "Name": {
+          "En": "Ocean-Hued Clam",
+          "Ko": "바다에 물든 거대 조개",
+          "Zh": "海染砗磲",
+          "Ja": "海染硨磲"
+        },
+        "Desc": {
+          "En": "When the character equipping this artifact set heals a character in the party, a Sea-Dyed Foam will appear for 3 seconds, accumulating the amount of HP recovered from healing (including overflow healing). At the end of the duration, the Sea-Dyed Foam will explode, dealing DMG to nearby opponents based on 90% of the accumulated healing. (This DMG is calculated similarly to Reactions such as Electro-Charged, and Superconduct, but is not affected by Elemental Mastery, Character Levels, or Reaction DMG Bonuses). Only one Sea-Dyed Foam can be produced every 3.5 seconds. Each Sea-Dyed Foam can accumulate up to 30,000 HP (including overflow healing). There can be no more than one Sea-Dyed Foam active at any given time. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
+          "Ko": "해당 성유물 세트를 장착한 캐릭터가 파티 내 캐릭터를 치유하면, 3초간 지속되는 바다에 물든 거품을 생성해 치유한 HP의 회복량을 기록한다(초과된 수치 포함). 지속 시간 종료 후 바다에 물든 거품이 폭발해 주변의 적에게 누적 회복량의 90%에 해당하는 피해를 준다(해당 피해 계산 방식은 감전, 초전도 등 원소 반응의 방식과 같지만, 원소 마스터리, 레벨 또는 반응 피해 보너스 효과의 영향을 받지 않는다). 3.5초마다 최대 1개의 바다에 물든 거품이 생성되며, 바다에 물든 거품은 초과한 부분의 치유량을 포함해 최대 30,000pt의 회복량을 기록할 수 있다. 자신의 파티에 바다에 물든 거품은 동시에 1개만 존재할 수 있다. 해당 성유물 세트를 장착한 캐릭터가 대기 상태일 때도 해당 효과가 발동한다",
+          "Zh": "装备此圣遗物套装的角色对队伍中的角色进行治疗时，将产生持续3秒的海染泡沫，记录治疗的生命值回复量（包括溢出值）。持续时间结束时，海染泡沫将会爆炸，对周围的敌人造成90%累计回复量的伤害（该伤害结算方式同感电、超导等元素反应，但不受元素精通、等级或反应伤害加成效果影响）。每3.5秒至多产生一个海染泡沫；海染泡沫至多记录30000点回复量，含溢出部分的治疗量；自己的队伍中同时至多存在一个海染泡沫。装备此圣遗物套装的角色处于队伍后台时，依然能触发该效果。",
+          "Ja": "この聖遺物セットを装備したキャラクターがチーム内のキャラクターに治療を行うと、治療によるHP回復量（HP上限を超えた回復量も含む）を記録する海染の泡を生成する。海染の泡は3秒継続する。継続時間終了時、海染の泡は破裂し、周囲の敵に記録した回復量の90%分のダメージを与える（このダメージは感電や超電導などの元素反応と同じように計算されるが、元素熟知、キャラクターLv、または元素反応のダメージアップ効果の影響は受けない）。海染の泡は3.5秒毎に1回のみ生成可能。海染の泡が記録できる回復量は最大30000までとなり、HP上限超過分の回復量を含む。自身のチーム内に、海染の泡は1つのみ存在可能。この聖遺物セットを装備したキャラクターは待機中でも、この効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15023": {
+    "Id": 15023,
+    "Icon": "UI_RelicIcon_15023_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150230": {
+        "Name": {
+          "En": "Vermillion Hereafter",
+          "Ko": "진사 왕생록",
+          "Zh": "辰砂往生录",
+          "Ja": "辰砂往生録"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150231": {
+        "Name": {
+          "En": "Vermillion Hereafter",
+          "Ko": "진사 왕생록",
+          "Zh": "辰砂往生录",
+          "Ja": "辰砂往生録"
+        },
+        "Desc": {
+          "En": "After using an Elemental Burst, this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This further increase can occur this way a maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.",
+          "Ko": "원소폭발 발동 후 16초 동안 「숨겨진 빛」 효과가 생성되고, 공격력이 8% 증가한다. 캐릭터 HP가 감소할 때 공격력이 10% 더 증가한다. 이러한 방식으로 최대 4회 증가할 수 있으며, 0.8초마다 1회 발동한다. 「숨겨진 빛」 효과는 캐릭터 퇴장 시 사라진다. 지속 시간 동안 다시 원소폭발 발동 시 기존의 「숨겨진 빛」이 사라진다",
+          "Zh": "施放元素爆发后，将产生持续16秒的「潜光」效果：攻击力提升8%；并在角色的生命值降低时，攻击力进一步提升10%，至多通过这种方式提升4次，每0.8秒至多触发一次。「潜光」效果将在角色退场时消失；持续期间再次施放元素爆发，将移除原有的「潜光」。",
+          "Ja": "元素爆発を発動すると、継続時間16秒の「潜光」効果が発動する。「潜光」：攻撃力+8%、キャラクターがHPを失うたびに攻撃力がさらに10%アップする。HPの損失による攻撃力アップ効果は0.8秒毎に1回のみ発動でき、最大4回重ね掛けできる。「潜光」効果はキャラクターが戦闘不能、または退場する時に解除される。「潜光」効果の継続時間中に再び元素爆発を発動すると、既存の「潜光」効果が先にクリアされる。"
+        }
+      }
+    }
+  },
+  "15024": {
+    "Id": 15024,
+    "Icon": "UI_RelicIcon_15024_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150240": {
+        "Name": {
+          "En": "Echoes of an Offering",
+          "Ko": "제사의 여운",
+          "Zh": "来歆余响",
+          "Ja": "来歆の余響"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150241": {
+        "Name": {
+          "En": "Echoes of an Offering",
+          "Ko": "제사의 여운",
+          "Zh": "来歆余响",
+          "Ja": "来歆の余響"
+        },
+        "Desc": {
+          "En": "When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK. This effect will be dispelled 0.05s after a Normal Attack deals DMG. If a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%. This trigger can occur once every 0.2s.",
+          "Ko": "일반 공격이 적 명중 시, 36%의 확률로 「유곡의 축사」를 발동한다. 「유곡의 축사」: 일반 공격으로 주는 피해가 공격력의 70%만큼 증가한다. 해당 효과는 일반 공격으로 피해를 준 다음 0.05초 후에 사라진다. 일반 공격으로 「유곡의 축사」가 발동되지 않을 때, 다음 공격에서 발동될 확률이 20% 증가한다. 0.2초 내 최대 1회 발동 여부를 판정한다",
+          "Zh": "普通攻击命中敌人时，有36%概率触发「幽谷祝祀」：普通攻击造成的伤害提高，伤害提高值为攻击力的70%，该效果将在普通攻击造成伤害后的0.05秒后清除。普通攻击未触发「幽谷祝祀」时，会使下次触发概率提升20%；0.2秒内至多判定1次触发与否。",
+          "Ja": "通常攻撃が敵に命中すると、36%の確率で「幽谷祭祀」が発動する。「幽谷祭祀」：通常攻撃ダメージが攻撃力70%分アップする。この効果は通常攻撃でダメージを与えた0.05秒後にクリアされる。通常攻撃後に「幽谷祭祀」が発動しなかった場合、次回の発動確率+20%。発動判定は0.2秒毎に1回のみ行われる。"
+        }
+      }
+    }
+  },
+  "15025": {
+    "Id": 15025,
+    "Icon": "UI_RelicIcon_15025_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150250": {
+        "Name": {
+          "En": "Deepwood Memories",
+          "Ko": "숲의 기억",
+          "Zh": "深林的记忆",
+          "Ja": "深林の記憶"
+        },
+        "Desc": {
+          "En": "Dendro DMG Bonus +15%.",
+          "Ko": "풀 원소 피해 보너스+15%",
+          "Zh": "获得15%草元素伤害加成。",
+          "Ja": "草元素ダメージ+15%。"
+        }
+      },
+      "2150251": {
+        "Name": {
+          "En": "Deepwood Memories",
+          "Ko": "숲의 기억",
+          "Zh": "深林的记忆",
+          "Ja": "深林の記憶"
+        },
+        "Desc": {
+          "En": "After Elemental Skills or Bursts hit opponents, the targets' Dendro RES will be decreased by 30% for 8s. This effect can be triggered even if the equipping character is not on the field.",
+          "Ko": "원소전투 스킬 또는 원소폭발 공격에 명중된 적은 풀 원소 내성이 30% 감소한다. 지속 시간: 8초. 장착 캐릭터가 대기 상태일 때도 해당 효과는 발동된다",
+          "Zh": "元素战技或元素爆发命中敌人后，使命中目标的草元素抗性降低30%，持续8秒。装备者处于队伍后台时，依然能触发该效果。",
+          "Ja": "元素スキルまたは元素爆発が敵に命中すると、その敵の草元素耐性-30%、継続時間8秒。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15026": {
+    "Id": 15026,
+    "Icon": "UI_RelicIcon_15026_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150260": {
+        "Name": {
+          "En": "Gilded Dreams",
+          "Ko": "도금된 꿈",
+          "Zh": "饰金之梦",
+          "Ja": "金メッキの夢"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2150261": {
+        "Name": {
+          "En": "Gilded Dreams",
+          "Ko": "도금된 꿈",
+          "Zh": "饰金之梦",
+          "Ja": "金メッキの夢"
+        },
+        "Desc": {
+          "En": "Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.",
+          "Ko": "원소 반응 발동 후 8초 동안 파티 내 다른 캐릭터의 원소 타입에 따라 장착 캐릭터가 강화 효과를 받는다: 파티 내 장착 캐릭터와 동일한 원소 타입의 캐릭터가 1명 존재할 때마다 공격력이 14% 증가한다. 파티 내 장착 캐릭터와 다른 원소 타입의 캐릭터가 1명 존재할 때마다 원소 마스터리가 50pt 증가한다. 해당 효과는 각각 최대 3명의 캐릭터까지 계산한다. 해당 효과는 8초마다 최대 1회 발동된다. 장착 캐릭터가 대기 상태일 때도 해당 효과는 발동된다",
+          "Zh": "触发元素反应后的8秒内，会根据队伍内其他角色的元素类型，使装备者获得强化：队伍中每存在1个和装备者同类元素的角色，攻击力提升14%；每存在1个和装备者不同元素类型的角色，元素精通提升50点。上述每类效果至多计算3个角色。该效果每8秒至多触发一次。装备者处于队伍后台时，依然能触发该效果。",
+          "Ja": "元素反応を起こした後の8秒間、装備キャラクターは、チーム内自身以外のキャラクターの元素タイプに応じて強化効果を獲得する。チームに装備キャラクターと同じ元素タイプのキャラクターが1名存在する毎に攻撃力+14%、異なる元素タイプのキャラクターが1名存在する毎に元素熟知+50。上記効果は、それぞれ最大でキャラクター3名までカウントされる。この効果は8秒毎に1回のみ発動可能。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15027": {
+    "Id": 15027,
+    "Icon": "UI_RelicIcon_15027_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150270": {
+        "Name": {
+          "En": "Desert Pavilion Chronicle",
+          "Ko": "모래 위 누각의 역사",
+          "Zh": "沙上楼阁史话",
+          "Ja": "砂上の楼閣の史話"
+        },
+        "Desc": {
+          "En": "Anemo DMG Bonus +15%",
+          "Ko": "바람 원소 피해 보너스+15%",
+          "Zh": "获得15%风元素伤害加成。",
+          "Ja": "風元素ダメージ+15%。"
+        }
+      },
+      "2150271": {
+        "Name": {
+          "En": "Desert Pavilion Chronicle",
+          "Ko": "모래 위 누각의 역사",
+          "Zh": "沙上楼阁史话",
+          "Ja": "砂上の楼閣の史話"
+        },
+        "Desc": {
+          "En": "When Charged Attacks hit opponents, the equipping character's Normal Attack SPD will increase by 10% while Normal, Charged, and Plunging Attack DMG will increase by 40% for 15s.",
+          "Ko": "강공격이 적을 명중 후, 해당 캐릭터의 일반 공격 속도가 10% 증가하고 일반 공격, 강공격, 낙하 공격으로 주는 피해가 40% 증가한다. 지속 시간: 15초",
+          "Zh": "重击命中敌人后，该角色的普通攻击速度提升10%，普通攻击、重击与下落攻击造成的伤害提升40%，持续15秒。",
+          "Ja": "重撃が敵に命中すると、該当キャラクターの通常攻撃の攻撃速度+10%、通常攻撃、重撃および落下攻撃ダメージ+40%、継続時間15秒。"
+        }
+      }
+    }
+  },
+  "15028": {
+    "Id": 15028,
+    "Icon": "UI_RelicIcon_15028_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150280": {
+        "Name": {
+          "En": "Flower of Paradise Lost",
+          "Ko": "잃어버린 낙원의 꽃",
+          "Zh": "乐园遗落之花",
+          "Ja": "楽園の絶花"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2150281": {
+        "Name": {
+          "En": "Flower of Paradise Lost",
+          "Ko": "잃어버린 낙원의 꽃",
+          "Zh": "乐园遗落之花",
+          "Ja": "楽園の絶花"
+        },
+        "Desc": {
+          "En": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%, and their Lunar-Bloom reaction DMG is increased by 10%. Additionally, after the equipping character triggers Bloom, Hyperbloom, Lunar-Bloom, or Burgeon, they will gain another 25% bonus to the effects mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
+          "Ko": "장착 캐릭터가 개화, 만개, 발화 반응으로 주는 피해가 40%, 달 개화 반응으로 주는 피해가 10% 증가한다. 또한 장착 캐릭터가 개화, 만개, 발화, 달 개화 발동 후 상술한 효과로 증가한 보너스가 25% 증가한다. 지속 시간: 10초. 최대 중첩수: 4회. 해당 효과는 1초마다 최대 1회 발동되며, 장착 캐릭터가 대기 상태일 때도 발동된다",
+          "Zh": "装备者绽放、超绽放、烈绽放反应造成的伤害提升40%，造成的月绽放反应伤害提升10%。此外，装备者触发绽放、超绽放、烈绽放、月绽放后，上述效果带来的加成提升25%，该效果持续10秒，至多叠加4次，每1秒至多触发一次。装备者处于队伍后台时依然能触发该效果。",
+          "Ja": "開花、超開花、烈開花反応によるダメージ+40%、月開花反応によるダメージ+10%。また、装備者自身が開花、超開花、烈開花、または月開花を起こした後、上記強化効果が25%アップする。継続時間10秒、最大4層まで重ねられ、1秒毎に最大1回のみ発動可能。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15029": {
+    "Id": 15029,
+    "Icon": "UI_RelicIcon_15029_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150290": {
+        "Name": {
+          "En": "Nymph's Dream",
+          "Ko": "님프의 꿈",
+          "Zh": "水仙之梦",
+          "Ja": "水仙の夢"
+        },
+        "Desc": {
+          "En": "Hydro DMG Bonus +15%",
+          "Ko": "물 원소 피해 보너스+15%",
+          "Zh": "获得15%水元素伤害加成。",
+          "Ja": "水元素ダメージ+15%。"
+        }
+      },
+      "2150291": {
+        "Name": {
+          "En": "Nymph's Dream",
+          "Ko": "님프의 꿈",
+          "Zh": "水仙之梦",
+          "Ja": "水仙の夢"
+        },
+        "Desc": {
+          "En": "After Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts hit opponents, 1 stack of Mirrored Nymph will be triggered, lasting 8s. When under the effect of 1, 2, or 3 or more Mirrored Nymph stacks, ATK will be increased by 7%/16%/25%, and Hydro DMG Bonus will be increased by 4%/9%/15%. Mirrored Nymph stacks created by Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts exist independently.",
+          "Ko": "일반 공격, 강공격, 낙하 공격, 원소전투 스킬 또는 원소폭발이 적에게 명중한 후, 8초 동안 지속되는 「거울 속 님프」 효과가 1스택 생성된다. 「거울 속 님프」 효과가 1/2/3스택 이상일 시, 공격력이 7%/16%/25% 증가하고 물 원소 피해 보너스가 4%/9%/15% 증가한다. 일반 공격, 강공격, 낙하 공격, 원소전투 스킬 또는 원소폭발이 생성한 「거울 속 님프」는 각각 독립적으로 존재한다",
+          "Zh": "普通攻击、重击、下落攻击、元素战技或元素爆发命中敌人后，将产生1层持续8秒的「镜中水仙」效果。处于1/2/3层及以上「镜中水仙」效果下时，攻击力将提高7%/16%/25%，水元素伤害加成提升4%/9%/15%。由普通攻击、重击、下落攻击、元素战技或元素爆发产生的「镜中水仙」将分别独立存在。",
+          "Ja": "通常攻撃、重撃、落下攻撃、元素スキル、または元素爆発が敵に命中すると、8秒間継続する「鏡中の水仙」効果を1層獲得する。1/2/3層以上の「鏡中の水仙」効果を持つ時、それぞれ攻撃力+7%/16%/25%、水元素ダメージ+4%/9%/15%。通常攻撃、重撃、落下攻撃、元素スキル、元素爆発による「鏡中の水仙」効果はそれぞれ独立してカウントされる。"
+        }
+      }
+    }
+  },
+  "15030": {
+    "Id": 15030,
+    "Icon": "UI_RelicIcon_15030_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150300": {
+        "Name": {
+          "En": "Vourukasha's Glow",
+          "Ko": "감로빛 꽃바다",
+          "Zh": "花海甘露之光",
+          "Ja": "花海甘露の光"
+        },
+        "Desc": {
+          "En": "HP +20%",
+          "Ko": "HP+20%",
+          "Zh": "生命值提升20%。",
+          "Ja": "HP+20%。"
+        }
+      },
+      "2150301": {
+        "Name": {
+          "En": "Vourukasha's Glow",
+          "Ko": "감로빛 꽃바다",
+          "Zh": "花海甘露之光",
+          "Ja": "花海甘露の光"
+        },
+        "Desc": {
+          "En": "Elemental Skill and Elemental Burst DMG will be increased by 10%. After the equipping character takes DMG, the aforementioned DMG Bonus is increased by 80% for 5s. This effect increase can have 5 stacks. The duration of each stack is counted independently. These effects can be triggered even when the equipping character is not on the field.",
+          "Ko": "원소전투 스킬 및 원소폭발로 주는 피해가 10% 증가한다. 장착 캐릭터가 피해를 입은 후 5초 동안 해당 피해 증가 효과가 80% 증가한다. 최대 중첩수: 5스택. 스택마다 지속 시간은 독립적으로 계산한다. 해당 효과는 장착 캐릭터가 대기 상태일 때도 발동된다",
+          "Zh": "元素战技与元素爆发造成的伤害提升10%；装备者受到伤害后的5秒内，上述伤害提升效果提高80%，该提高效果至多叠加5层，每层持续时间独立计算，处于队伍后台时依然能触发该效果。",
+          "Ja": "元素スキルと元素爆発のダメージ+10%。装備者がダメージを受けた後の5秒間、上記強化効果が80%アップする。最大5層まで重ね掛け可能。継続時間は層ごとに独立してカウントされる。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15031": {
+    "Id": 15031,
+    "Icon": "UI_RelicIcon_15031_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150310": {
+        "Name": {
+          "En": "Marechaussee Hunter",
+          "Ko": "그림자 사냥꾼",
+          "Zh": "逐影猎人",
+          "Ja": "ファントムハンター"
+        },
+        "Desc": {
+          "En": "Normal and Charged Attack DMG +15%",
+          "Ko": "일반 공격과 강공격으로 주는 피해+15%",
+          "Zh": "普通攻击与重击造成的伤害提高15%。",
+          "Ja": "通常攻撃と重擊ダメージ+15%。"
+        }
+      },
+      "2150311": {
+        "Name": {
+          "En": "Marechaussee Hunter",
+          "Ko": "그림자 사냥꾼",
+          "Zh": "逐影猎人",
+          "Ja": "ファントムハンター"
+        },
+        "Desc": {
+          "En": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks.",
+          "Ko": "현재 HP가 증가 또는 감소 시, 치명타 확률이 12% 증가한다. 지속 시간: 5초, 최대 중첩수: 3회",
+          "Zh": "当前生命值提升或降低时，暴击率提升12%，该效果持续5秒，至多叠加3次。",
+          "Ja": "現在HPが増減する時、会心率+12%、継続時間5秒、最大3層まで重ね掛け可能。"
+        }
+      }
+    }
+  },
+  "15032": {
+    "Id": 15032,
+    "Icon": "UI_RelicIcon_15032_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150320": {
+        "Name": {
+          "En": "Golden Troupe",
+          "Ko": "황금 극단",
+          "Zh": "黄金剧团",
+          "Ja": "黄金の劇団"
+        },
+        "Desc": {
+          "En": "Increases Elemental Skill DMG by 20%.",
+          "Ko": "원소전투 스킬로 주는 피해+20%",
+          "Zh": "元素战技造成的伤害提升20%。",
+          "Ja": "元素スキルのダメージ+20%。"
+        }
+      },
+      "2150321": {
+        "Name": {
+          "En": "Golden Troupe",
+          "Ko": "황금 극단",
+          "Zh": "黄金剧团",
+          "Ja": "黄金の劇団"
+        },
+        "Desc": {
+          "En": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field.",
+          "Ko": "원소전투 스킬로 주는 피해가 25% 증가한다. 또한 대기 상태 시 원소전투 스킬로 주는 피해가 추가로 25% 증가하며, 해당 효과는 등장 후 2초가 지나면 사라진다",
+          "Zh": "元素战技造成的伤害提升25%；此外，处于队伍后台时，元素战技造成的伤害还将进一步提升25%，该效果将在登场后2秒移除。",
+          "Ja": "元素スキルのダメージ+25%。また、装備者が待機中の時、元素スキルのダメージがさらに+25%。この効果は装備キャラクターが登場してから2秒後に解除される。"
+        }
+      }
+    }
+  },
+  "15033": {
+    "Id": 15033,
+    "Icon": "UI_RelicIcon_15033_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150330": {
+        "Name": {
+          "En": "Song of Days Past",
+          "Ko": "지난날의 노래",
+          "Zh": "昔时之歌",
+          "Ja": "在りし日の歌"
+        },
+        "Desc": {
+          "En": "Healing Bonus +15%.",
+          "Ko": "치유 보너스+15%",
+          "Zh": "治疗加成提高15%。",
+          "Ja": "与える治療効果+15%。"
+        }
+      },
+      "2150331": {
+        "Name": {
+          "En": "Song of Days Past",
+          "Ko": "지난날의 노래",
+          "Zh": "昔时之歌",
+          "Ja": "在りし日の歌"
+        },
+        "Desc": {
+          "En": "When the equipping character heals a party member, the Yearning effect will be created for 6s, which records the total amount of healing provided (including overflow healing). When the duration expires, the Yearning effect will be transformed into the \"Waves of Days Past\" effect: When your active party member hits an opponent with a Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst, the DMG dealt will be increased by 8% of the total healing amount recorded by the Yearning effect. The \"Waves of Days Past\" effect is removed after it has taken effect 5 times or after 10s. A single instance of the Yearning effect can record up to 15,000 healing, and only a single instance can exist at once, but it can record the healing from multiple equipping characters. Equipping characters on standby can still trigger this effect.",
+          "Ko": "장착 캐릭터가 파티 내 캐릭터 치유 시 6초 동안 지속되는 갈망 효과를 생성해 치유한 HP 회복량(초과치 포함)을 기록한다. 지속 시간 종료 시 갈망 효과는 「그때의 파도」 효과로 전환되어 아래 효과를 얻는다: 파티 내 자신의 현재 필드 위 캐릭터의 일반 공격, 강공격, 낙하 공격, 원소전투 스킬, 원소폭발이 적에게 명중 시 갈망 효과가 기록한 회복량의 8%에 기반해 주는 피해가 증가한다. 「그때의 파도」는 5회 발동 또는 10초 후 사라진다. 한 번의 갈망 효과는 회복량을 최대 15000pt 기록하며 동시에 최대 1개만 존재할 수 있으나, 여러 장착 캐릭터가 생성한 회복량을 기록할 수 있다. 장착 캐릭터가 대기 상태일 때도 해당 효과는 발동된다",
+          "Zh": "装备者对队伍中的角色进行治疗时，将产生持续6秒的渴盼效果，记录治疗的生命值回复量（包括溢出值）。持续时间结束时，渴盼效果将转变为「彼时的浪潮」效果：队伍中自己的当前场上角色的普通攻击、重击、下落攻击、元素战技与元素爆发命中敌人时，将基于渴盼效果所记录的回复量的8%提高造成的伤害，「彼时的浪潮」将在生效5次或10秒后移除。一次渴盼效果至多记录15000点回复量，同时至多存在一个，能够记录多个装备者的产生的回复量；装备者处于队伍后台时，依然能触发该效果。",
+          "Ja": "装備者がチームにいるキャラクターのHPを回復した時、継続時間6秒の「渇望」効果が発動し、HP回復量（HP上限を超えた回復量も含む）を記録する。継続時間終了時、「渇望」効果は「かの時の潮」効果に変化する。「かの時の潮」効果発動中、フィールド上にいるチーム内の自身キャラクターの通常攻撃、重撃、落下攻撃、元素スキル、元素爆発が敵に命中すると、「渇望」効果で記録した回復量の8%分を基に与えるダメージをアップする。「かの時の潮」効果は、5回発動、または10秒後にクリアされる。1回の「渇望」効果が記録する回復量は最大15000ポイントまで。なお、「渇望」は1つのみ存在でき、複数の装備者の与える回復量を記録可能。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15034": {
+    "Id": 15034,
+    "Icon": "UI_RelicIcon_15034_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150340": {
+        "Name": {
+          "En": "Nighttime Whispers in the Echoing Woods",
+          "Ko": "메아리숲의 야화",
+          "Zh": "回声之林夜话",
+          "Ja": "残響の森で囁かれる夜話"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150341": {
+        "Name": {
+          "En": "Nighttime Whispers in the Echoing Woods",
+          "Ko": "메아리숲의 야화",
+          "Zh": "回声之林夜话",
+          "Ja": "残響の森で囁かれる夜話"
+        },
+        "Desc": {
+          "En": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. When under a shield granted by the Crystallize reaction, or when Moondrifts formed by Lunar-Crystallize reactions are nearby, the above effect is increased by 150%. When these conditions are no longer met, this additional increase disappears after 1s.",
+          "Ko": "원소전투 스킬 발동 후 10초 동안 바위 원소 피해 보너스가 20% 증가한다. 만약 결정 반응으로 생성된 보호막의 보호를 받고 있거나 주변에 달 결정 반응으로 생성된 달빛 조각이 존재하면 상술한 효과가 150% 증가한다. 상술한 조건이 충족되지 않으면 추가로 증가한 효과는 1초 후에 사라진다",
+          "Zh": "施放元素战技后的10秒内，岩元素伤害加成提升20%；若处于结晶反应产生的护盾庇护下，或附近存在月结晶反应产生的月笼，上述效果提高150%，进一步提高的效果将在不满足上述条件的1秒后移除。",
+          "Ja": "元素スキルを発動した後の10秒間、岩元素ダメージ+20%。結晶反応によるシールド状態にある時、または周囲に月結晶反応で生成された月籠が存在する時、上記強化効果が150%アップする。追加された効果量は、条件を満たさなくなった1秒後に解除される。"
+        }
+      }
+    }
+  },
+  "15035": {
+    "Id": 15035,
+    "Icon": "UI_RelicIcon_15035_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150350": {
+        "Name": {
+          "En": "Fragment of Harmonic Whimsy",
+          "Ko": "조화로운 공상의 단편",
+          "Zh": "谐律异想断章",
+          "Ja": "諧律奇想の断章"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150351": {
+        "Name": {
+          "En": "Fragment of Harmonic Whimsy",
+          "Ko": "조화로운 공상의 단편",
+          "Zh": "谐律异想断章",
+          "Ja": "諧律奇想の断章"
+        },
+        "Desc": {
+          "En": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks.",
+          "Ko": "생명의 계약의 수치가 증가 또는 감소 시, 캐릭터가 주는 피해가 18% 증가한다. 지속 시간: 6초, 최대 중첩수: 3회",
+          "Zh": "生命之契的数值提升或降低时，角色造成的伤害提升18%，该效果持续6秒，至多叠加3次。",
+          "Ja": "命の契約の数値が増減する時、キャラクターの与えるダメージ+18%、継続時間6秒、最大3層まで重ね掛け可能。"
+        }
+      }
+    }
+  },
+  "15036": {
+    "Id": 15036,
+    "Icon": "UI_RelicIcon_15036_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150360": {
+        "Name": {
+          "En": "Unfinished Reverie",
+          "Ko": "미완의 몽상",
+          "Zh": "未竟的遐思",
+          "Ja": "遂げられなかった想い"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150361": {
+        "Name": {
+          "En": "Unfinished Reverie",
+          "Ko": "미완의 몽상",
+          "Zh": "未竟的遐思",
+          "Ja": "遂げられなかった想い"
+        },
+        "Desc": {
+          "En": "After leaving combat for 3s, DMG dealt increased by 50%. In combat, if no Burning opponents are nearby for more than 6s, this DMG Bonus will decrease by 10% per second until it reaches 0%. When a Burning opponent exists, it will increase by 10% instead until it reaches 50%. This effect still triggers if the equipping character is off-field.",
+          "Ko": "전투 상태 이탈 3초 후, 주는 피해가 50% 증가한다. 전투 상태에서 6초 넘게 주변에 연소 상태의 적이 없으면, 상술한 피해 증가 효과는 0%에 이를 때까지 초당 10%씩 감소한다. 연소 상태의 적이 있을 시, 50%에 이를 때까지 초당 10%씩 증가한다. 해당 성유물 세트를 장착한 캐릭터가 대기 상태 시에도 해당 효과는 발동된다",
+          "Zh": "脱离战斗状态3秒后，造成的伤害提升50%。在战斗状态下，附近不存在处于燃烧状态下的敌人超过6秒后，上述伤害提升效果每秒降低10%，直到降低至0%；存在处于燃烧状态下的敌人时，每秒提升10%，直到达到50%。装备此圣遗物套装的角色处于队伍后台时，依然会触发该效果。",
+          "Ja": "戦闘状態が解除されてから3秒経過すると、与えるダメージ+50%。戦闘状態にある時、近くに燃焼状態の敵が存在しないまま6秒以上経過すると、上記強化効果の効果量は0%になるまで1秒毎に10%減少する。一方、燃焼状態の敵が存在する場合、50%になるまで1秒毎に10%増加する。この聖遺物セットを装備したキャラクターが待機している場合にも、効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15037": {
+    "Id": 15037,
+    "Icon": "UI_RelicIcon_15037_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150370": {
+        "Name": {
+          "En": "Scroll of the Hero of Cinder City",
+          "Ko": "잿더미성 용사의 두루마리",
+          "Zh": "烬城勇者绘卷",
+          "Ja": "灰燼の都に立つ英雄の絵巻"
+        },
+        "Desc": {
+          "En": "When a nearby party member triggers a Nightsoul Burst, the equipping character regenerates 6 Elemental Energy.",
+          "Ko": "주변에 있는 파티 내 캐릭터가 「밤혼 발산」 발동 시, 장착 캐릭터가 원소 에너지를 6pt 회복한다",
+          "Zh": "队伍中附近的角色触发「夜魂迸发」时，装备者恢复6点元素能量。",
+          "Ja": "付近にいるチーム内キャラクターが「夜魂バースト」を起こすと、装備者は元素エネルギーを6ポイント回復する。"
+        }
+      },
+      "2150371": {
+        "Name": {
+          "En": "Scroll of the Hero of Cinder City",
+          "Ko": "잿더미성 용사의 두루마리",
+          "Zh": "烬城勇者绘卷",
+          "Ja": "灰燼の都に立つ英雄の絵巻"
+        },
+        "Desc": {
+          "En": "After the equipping character triggers a reaction related to their Elemental Type, all nearby party members gain a 12% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 15s. If the equipping character is in the Nightsoul's Blessing state when triggering this effect, all nearby party members gain an additional 28% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 20s. The equipping character can trigger this effect while off-field, and the DMG bonus from Artifact Sets with the same name do not stack.",
+          "Ko": "장착 캐릭터가 상응하는 원소 타입 관련 반응 발동 후, 주변에 있는 파티 내 모든 캐릭터의 해당 원소 반응과 관련된 원소 피해 보너스가 12% 증가한다. 지속 시간: 15초. 해당 효과 발동 시 장착 캐릭터가 밤혼 가호 상태일 경우, 추가로 주변에 있는 파티 내 모든 캐릭터의 해당 원소 반응과 관련된 원소 피해 보너스가 28% 증가한다. 지속 시간: 20초. 장착 캐릭터가 대기 상태일 때도 상술한 효과를 발동할 수 있다. 동명의 성유물 세트가 생성한 피해 보너스 효과는 중첩되지 않는다",
+          "Zh": "装备者触发其对应元素类型的相关反应后，队伍中附近的所有角色的该元素反应相关的元素伤害加成提升12%，持续15秒。若触发该效果时，装备者处于夜魂加持状态下，还将使队伍中附近的所有角色的与该元素反应相关的元素伤害加成提升28%，持续20秒。装备者处于后台时也能触发上述效果。同名圣遗物套装产生的伤害加成效果无法叠加。",
+          "Ja": "装備者が自身の元素タイプの関連元素反応を起こした後、周囲のチーム全員の、該当元素反応の関連元素タイプのダメージ+12%、継続時間15秒。この効果を発動した時に、装備者が「夜魂の加護」状態にあった場合、周囲チーム全員の前述の元素タイプのダメージがさらに+28%、継続時間20秒。装備者が待機中でも、上記効果を発動できる。同名の聖遺物セットによるダメージアップ効果は重ね掛け不可。"
+        }
+      }
+    }
+  },
+  "15038": {
+    "Id": 15038,
+    "Icon": "UI_RelicIcon_15038_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150380": {
+        "Name": {
+          "En": "Obsidian Codex",
+          "Ko": "흑요석 비전",
+          "Zh": "黑曜秘典",
+          "Ja": "黒曜の秘典"
+        },
+        "Desc": {
+          "En": "While the equipping character is in Nightsoul's Blessing and is on the field, their DMG dealt is increased by 15%.",
+          "Ko": "밤혼 가호 상태의 장착 캐릭터가 필드 위에 있을 시, 주는 피해가 15% 증가한다",
+          "Zh": "装备者处于夜魂加持状态，并且在场上时，造成的伤害提高15%。",
+          "Ja": "装備者が夜魂の加護状態にあり、かつフィールド上にいる時、与えるダメージ+15%。"
+        }
+      },
+      "2150381": {
+        "Name": {
+          "En": "Obsidian Codex",
+          "Ko": "흑요석 비전",
+          "Zh": "黑曜秘典",
+          "Ja": "黒曜の秘典"
+        },
+        "Desc": {
+          "En": "After the equipping character consumes 1 Nightsoul point while on the field, CRIT Rate increases by 40% for 6s. This effect can trigger once every second.",
+          "Ko": "장착 캐릭터가 필드 위에서 밤혼을 1pt 소모한 후, 치명타 확률이 40% 증가한다. 지속 시간: 6초. 해당 효과는 1초마다 최대 1회 발동된다",
+          "Zh": "装备者在场上消耗1点夜魂值后，暴击率提高40%，持续6秒。该效果每1秒至多触发一次。",
+          "Ja": "装備者がフィールド上で夜魂値を1消費すると、会心率+40%、継続時間6秒。この効果は1秒毎に1回のみ発動可能。"
+        }
+      }
+    }
+  },
+  "15039": {
+    "Id": 15039,
+    "Icon": "UI_RelicIcon_15039_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150390": {
+        "Name": {
+          "En": "Long Night's Oath",
+          "Ko": "긴 밤의 맹세",
+          "Zh": "长夜之誓",
+          "Ja": "長き夜の誓い"
+        },
+        "Desc": {
+          "En": "Plunging Attack DMG increased by 25%.",
+          "Ko": "낙하 공격으로 주는 피해+25%",
+          "Zh": "下落攻击造成的伤害提升25%。",
+          "Ja": "落下攻撃の与えるダメージ+25%。"
+        }
+      },
+      "2150391": {
+        "Name": {
+          "En": "Long Night's Oath",
+          "Ko": "긴 밤의 맹세",
+          "Zh": "长夜之誓",
+          "Ja": "長き夜の誓い"
+        },
+        "Desc": {
+          "En": "After the equipping character's Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of \"Radiance Everlasting.\" Plunging Attacks, Charged Attacks, or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15% increased DMG for 6s. Max 5 stacks. Each stack's duration is counted independently.",
+          "Ko": "장착 캐릭터의 낙하 공격/강공격/원소전투 스킬이 적에게 명중 후, 「영원한 광휘」를 1/2/2스택 획득한다. 해당 효과는 낙하 공격, 강공격 또는 원소전투 스킬로 1초마다 각각 최대 1회 발동된다. 「영원한 광휘」: 낙하 공격으로 주는 피해가 15% 증가한다. 지속 시간: 6초, 최대 중첩수: 5스택, 스택마다 지속 시간은 독립적으로 계산한다",
+          "Zh": "装备者的下落攻击/重击/元素战技命中敌人后，获得1/2/2层「永照的流辉」，由下落攻击、重击或元素战技产生的该效果分别每1秒至多触发一次。永照的流辉：下落攻击造成的伤害提升15%，持续6秒，至多叠加5层，每层持续时间独立计算。",
+          "Ja": "装備者の落下攻撃/重撃/元素スキルが敵に命中した後、「永遠に輝く流光」効果を1/2/2層獲得する。落下攻撃、重撃、または元素スキルによるこの効果はそれぞれ1秒毎に1回のみ発動可能。「永遠に輝く流光」：落下攻撃ダメージ+15%、継続時間6秒、最大5層まで重ね掛け可能。継続時間は層ごとに独立してカウントされる。"
+        }
+      }
+    }
+  },
+  "15040": {
+    "Id": 15040,
+    "Icon": "UI_RelicIcon_15040_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150400": {
+        "Name": {
+          "En": "Finale of the Deep Galleries",
+          "Ko": "깊은 회랑의 피날레",
+          "Zh": "深廊终曲",
+          "Ja": "深廊の終曲"
+        },
+        "Desc": {
+          "En": "Cryo DMG Bonus +15%",
+          "Ko": "얼음 원소 피해 보너스+15%",
+          "Zh": "获得15%冰元素伤害加成。",
+          "Ja": "氷元素ダメージ+15%。"
+        }
+      },
+      "2150401": {
+        "Name": {
+          "En": "Finale of the Deep Galleries",
+          "Ko": "깊은 회랑의 피날레",
+          "Zh": "深廊终曲",
+          "Ja": "深廊の終曲"
+        },
+        "Desc": {
+          "En": "When the equipping character has 0 Elemental Energy, Normal Attack DMG is increased by 60% and Elemental Burst DMG is increased by 60%. After the equipping character deals Normal Attack DMG, the aforementioned Elemental Burst effect will stop applying for 6s. After the equipping character deals Elemental Burst DMG, the aforementioned Normal Attack effect will stop applying for 6s. This effect can trigger even if the equipping character is off the field.",
+          "Ko": "장착 캐릭터의 원소 에너지가 0pt일 시, 일반 공격으로 주는 피해가 60%, 원소폭발로 주는 피해가 60% 증가한다. 장착 캐릭터가 일반 공격으로 피해를 주면 상술한 원소폭발 피해 증가 효과는 6초 동안 적용되지 않는다. 장착 캐릭터가 원소폭발로 피해를 주면 상술한 일반 공격 피해 증가 효과는 6초 동안 적용되지 않는다. 장착 캐릭터가 대기 상태 시에도 발동된다",
+          "Zh": "装备者的元素能量为0时，普通攻击造成的伤害提升60%，元素爆发造成的伤害提升60%。装备者的普通攻击造成伤害后，上述元素爆发伤害提升效果将失效6秒；装备者的元素爆发造成伤害后，上述普通攻击伤害提升效果将失效6秒。角色处于队伍后台也能触发。",
+          "Ja": "装備者の元素エネルギーが0の時、通常攻撃ダメージ+60%、元素爆発ダメージ+60%。装備者の通常攻撃がダメージを与えた後、上記元素爆発ダメージアップ効果は6秒間無効になる。装備者の元素爆発がダメージを与えた後、上記通常攻撃ダメージアップ効果は6秒間無効になる。キャラクターが待機中でも発動できる。"
+        }
+      }
+    }
+  },
+  "15041": {
+    "Id": 15041,
+    "Icon": "UI_RelicIcon_15041_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150410": {
+        "Name": {
+          "En": "Night of the Sky's Unveiling",
+          "Ko": "하늘 경계가 드러난 밤",
+          "Zh": "穹境示现之夜",
+          "Ja": "天穹の顕現せし夜"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2150411": {
+        "Name": {
+          "En": "Night of the Sky's Unveiling",
+          "Ko": "하늘 경계가 드러난 밤",
+          "Zh": "穹境示现之夜",
+          "Ja": "天穹の顕現せし夜"
+        },
+        "Desc": {
+          "En": "When nearby party members trigger Lunar Reactions, if the equipping character is on the field, gain the Gleaming Moon: Intent effect for 4s: Increases CRIT Rate by 15%/30% when the party's Moonsign is Nascent Gleam/Ascendant Gleam. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
+          "Ko": "주변에 있는 파티 내 캐릭터가 달빛 반응 발동 시, 장착 캐릭터가 필드 위에 있을 경우 4초 동안 지속되는 「월광·음모」 효과를 획득한다: 파티의 달빛 징조가 초승/보름인 경우, 치명타 확률이 15%/30% 증가한다. 파티 내 캐릭터가 서로 다른 「월광」 효과를 1개 보유할 때마다, 파티 내 모든 캐릭터가 발동한 달빛 반응으로 주는 피해가 10% 증가한다. 「월광」으로 생성된 효과는 중첩되지 않는다",
+          "Zh": "队伍中附近的角色触发月曜反应时，若装备者在场上，将获得持续4秒的「月辉明光·蓄念」效果：队伍的月兆为初辉/满辉时，暴击率提升15%/30%。队伍中的角色每拥有一种不同的「月辉明光」效果，队伍中的所有角色触发的月曜反应造成的伤害提升10%。由「月辉明光」产生的效果无法叠加。",
+          "Ja": "付近にいるチーム内キャラクターが月反応を起こした時に装備者がフィールドにいる場合、4秒間継続する「月輝明光・蓄念」効果を獲得する。「月輝明光・蓄念」：チームの月兆が初照/満照の時、会心率+15%/30%。チーム内キャラクターの「月輝明光」効果が1種類存在するごとに、チーム内キャラクターが起こす月反応のダメージ+10%。「月輝明光」によって生じた効果は重ね掛け不可。"
+        }
+      }
+    }
+  },
+  "15042": {
+    "Id": 15042,
+    "Icon": "UI_RelicIcon_15042_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150420": {
+        "Name": {
+          "En": "Silken Moon's Serenade",
+          "Ko": "달을 엮는 밤노래",
+          "Zh": "纺月的夜歌",
+          "Ja": "月を紡ぐ夜の歌"
+        },
+        "Desc": {
+          "En": "Energy Recharge +20%.",
+          "Ko": "원소 충전 효율+20%",
+          "Zh": "元素充能效率提高20%。",
+          "Ja": "元素チャージ効率+20%。"
+        }
+      },
+      "2150421": {
+        "Name": {
+          "En": "Silken Moon's Serenade",
+          "Ko": "달을 엮는 밤노래",
+          "Zh": "纺月的夜歌",
+          "Ja": "月を紡ぐ夜の歌"
+        },
+        "Desc": {
+          "En": "When dealing Elemental DMG, gain the Gleaming Moon: Devotion effect for 8s: Increases all party members' Elemental Mastery by 60/120 when the party's Moonsign is Nascent Gleam/Ascendant Gleam. The equipping character can trigger this effect while off-field. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
+          "Ko": "원소 피해를 줄 시, 8초 동안 지속되는 「월광·신앙」 효과를 획득한다: 파티의 달빛 징조가 초승/보름인 경우, 파티 내 모든 캐릭터의 원소 마스터리가 60pt/120pt 증가한다. 상술한 효과는 장착 캐릭터가 대기 상태일 때도 발동한다. 파티 내 캐릭터가 서로 다른 「월광」 효과를 1개 보유할 때마다, 파티 내 모든 캐릭터가 발동한 달빛 반응으로 주는 피해가 10% 증가한다. 「월광」으로 생성된 효과는 중첩되지 않는다",
+          "Zh": "造成元素伤害时，获得持续8秒的「月辉明光·崇信」效果：队伍的月兆为初辉/满辉时，队伍中的所有角色的元素精通提高60点/120点。装备者处于后台时也能触发上述效果。队伍中的角色每拥有一种不同的「月辉明光」效果，队伍中的所有角色触发的月曜反应造成的伤害提升10%。由「月辉明光」产生的效果无法叠加。",
+          "Ja": "元素ダメージを与えた時、8秒間継続する「月輝明光・崇拝」効果を獲得する。「月輝明光・崇拝」：チームの月兆が初照/満照の時、チーム全員の元素熟知+60/120。装備者が待機中でも、上記効果を発動できる。チーム内キャラクターの「月輝明光」効果が1種類存在するごとに、チーム内キャラクターが起こす月反応のダメージ+10%。「月輝明光」によって生じた効果は重ね掛け不可。"
+        }
+      }
+    }
+  },
+  "15043": {
+    "Id": 15043,
+    "Icon": "UI_RelicIcon_15043_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150430": {
+        "Name": {
+          "En": "Aubade of Morningstar and Moon",
+          "Ko": "샛별과 달의 여명",
+          "Zh": "晨星与月的晓歌",
+          "Ja": "暁の星と月の歌"
+        },
+        "Desc": {
+          "En": "Increases Elemental Mastery by 80.",
+          "Ko": "원소 마스터리+80pt",
+          "Zh": "元素精通提高80点。",
+          "Ja": "元素熟知+80。"
+        }
+      },
+      "2150431": {
+        "Name": {
+          "En": "Aubade of Morningstar and Moon",
+          "Ko": "샛별과 달의 여명",
+          "Zh": "晨星与月的晓歌",
+          "Ja": "暁の星と月の歌"
+        },
+        "Desc": {
+          "En": "When the equipping character is off-field, Lunar Reaction DMG is increased by 20%. When the party's Moonsign Level is at least Ascendant Gleam, Lunar Reaction DMG will be further increased by 40%. This effect will disappear after the equipping character is active for 3s.",
+          "Ko": "장착 캐릭터가 대기 상태일 경우, 주는 달빛 반응 피해가 20% 증가한다. 파티의 달빛 징조 레벨이 최소 보름일 경우, 주는 달빛 반응 피해가 40% 더 증가한다. 상술한 효과는 장착 캐릭터가 필드에 등장 후 3초가 지나면 사라진다",
+          "Zh": "装备者处于队伍后台时，造成的月曜反应伤害提升20%；队伍的月兆等级至少为满辉时，造成的月曜反应伤害进一步提升40%。上述效果将在装备者位于场上3秒后移除。",
+          "Ja": "装備者が待機中の時、与える月反応のダメージ+20%。チーム全体の月兆レベルが満照以上の時、与える月反応のダメージがさらに+40%。上記効果は装備者がフィールド上に3秒間滞在すると解除される。"
+        }
+      }
+    }
+  },
+  "15044": {
+    "Id": 15044,
+    "Icon": "UI_RelicIcon_15044_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150440": {
+        "Name": {
+          "En": "A Day Carved From Rising Winds",
+          "Ko": "바람이 시작되는 날",
+          "Zh": "风起之日",
+          "Ja": "風立ちの日"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150441": {
+        "Name": {
+          "En": "A Day Carved From Rising Winds",
+          "Ko": "바람이 시작되는 날",
+          "Zh": "风起之日",
+          "Ja": "風立ちの日"
+        },
+        "Desc": {
+          "En": "After a Normal Attack, Charged Attack, Elemental Skill, or Elemental Burst hits an opponent, gain the Blessing of Pastoral Winds effect for 6s: ATK is increased by 25%. If the equipping character has completed Witch's Homework, Blessing of Pastoral Winds will be upgraded to Resolve of Pastoral Winds, which additionally increases the CRIT Rate of the equipping character by 20%. This effect can be triggered even when the character is off-field.",
+          "Ko": "일반 공격, 강공격, 원소전투 스킬 또는 원소폭발이 적 명중 후, 6초 동안 지속되는 「바람과 목가의 가호」를 획득한다: 공격력이 25% 증가한다. 장착 캐릭터가 「마녀의 과제」를 완료했을 경우, 「바람과 목가의 가호」가 「바람과 목가의 결의」로 강화되어, 과제를 통과한 장착 캐릭터의 치명타 확률이 추가로 20% 증가한다. 상술한 효과는 장착 캐릭터가 대기 상태일 때에도 발동된다",
+          "Zh": "普通攻击、重击、元素战技或元素爆发命中敌人后，将获得持续6秒的「风与牧歌的眷怜」：攻击力提高25%。若装备者已经完成了「魔女的课业」，则「风与牧歌的眷怜」将会升级为「风与牧歌的决意」，额外使通过考验的装备者的暴击率提升20%。装备者处于队伍后台时，也能触发上述效果。",
+          "Ja": "通常攻撃、重撃、元素スキル、または元素爆発が敵に命中すると、継続時間6秒の「風と牧歌の寵愛」を獲得する。「風と牧歌の寵愛」：攻撃力+25%。装備者が「魔女の課題」をクリアしている場合、「風と牧歌の寵愛」は「風と牧歌の決意」に強化され、「魔女の課題」をクリアした装備者の会心率+20%。装備したキャラクターが待機している場合にも効果を発動できる。"
+        }
+      }
+    }
+  },
+  "15045": {
+    "Id": 15045,
+    "Icon": "UI_RelicIcon_15045_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150450": {
+        "Name": {
+          "En": "Heaven's Gift",
+          "Ko": "하늘의 은총",
+          "Zh": "天之美赐",
+          "Ja": "天の授け物JP0D"
+        },
+        "Desc": {
+          "En": "Energy Recharge +20%.",
+          "Ko": "원소 충전 효율+20%",
+          "Zh": "元素充能效率提高20%。",
+          "Ja": "元素チャージ効率+20%。"
+        }
+      },
+      "2150451": {
+        "Name": {
+          "En": "Heaven's Gift",
+          "Ko": "하늘의 은총",
+          "Zh": "天之美赐",
+          "Ja": "天の授け物JP0D"
+        },
+        "Desc": {
+          "En": "If the equipping character has completed Witch's Homework, after they use an Elemental Skill, they also gain \"Light's Guidance\" for 20s: All nearby party members gain a 20% Elemental DMG Bonus corresponding to the equipping character's Elemental Type. The equipping character can trigger this effect while off-field. DMG Bonuses provided by Artifact Sets with the same name do not stack.\\n· When your party has the Hexerei: Secret Rite effect, Light's Guidance is upgraded to \"Mortal Hymn\": All nearby party members gain a 40% Elemental DMG Bonus corresponding to both the equipping character and the current active party member's Elemental Type instead. If both characters have the same Elemental Type, these bonuses will not stack.",
+          "Ko": "장착 캐릭터가 마녀의 과제를 완료한 경우, 원소전투 스킬 발동 후 추가로 「하늘의 인도」 효과를 획득한다: 장착 캐릭터의 원소 타입에 따라 주변에 있는 파티 내 모든 캐릭터가 상응하는 원소 피해 보너스를 20% 획득한다. 지속 시간: 20초. 장착 캐릭터가 대기 상태일 때도 상술한 효과가 발동되며, 동명의 성유물 세트가 생성한 피해 보너스 효과는 중첩되지 않는다.\\n·파티가 「마도·비밀 의식」 효과 보유 시, 「하늘의 인도」 효과가 「속세의 송가」로 강화된다. 장착 캐릭터의 원소 타입 외에도 현재 필드 위에 있는 파티 내 자신의 캐릭터의 원소 타입에 따라 주변에 있는 파티 내 모든 캐릭터가 상응하는 원소 피해 보너스를 획득하며, 상술한 두 가지 원소 피해 보너스가 40%로 증가한다. 동명의 성유물 세트가 생성한 피해 보너스 효과는 중첩되지 않는다",
+          "Zh": "若装备者已经完成了魔女的课业，则施放元素战技后，还会获得「天光之引」效果：依据装备者的元素类型，使队伍中附近的所有角色获得20%对应元素伤害加成，持续20秒。装备者处于后台时也能触发上述效果，同名圣遗物套装产生的伤害加成效果无法叠加。\\n·队伍拥有「魔导·秘仪」效果时，「天光之引」效果将会升级为「凡世颂歌」，除装备者的元素类型外，还会依据队伍中自己的当前场上角色的元素类型，使队伍中附近的所有角色获得对应元素伤害加成，且上述两种元素伤害加成提升至40%，同元素类型的元素伤害加成效果无法叠加。",
+          "Ja": "装備者が「魔女の課題」をクリアしている場合、元素スキルを発動すると、「天光の導き」効果を獲得する。この効果は装備者の元素タイプに基づき、付近にいるチーム全員に当該元素ダメージ+20%のバフを付与する。継続時間20秒。装備者が待機中でも発動可能。同じ聖遺物セットによるダメージアップ効果は重ね掛けできない。\\n・チームが「魔導秘儀」効果を持っている時、「天光の導き」効果は「浮世の頌歌」にアップグレードされる。装備者の元素タイプに加え、フィールド上にいるキャラクターの元素タイプに基づき、周囲のチーム全員に当該元素のダメージアップ効果を付与する。さらに、上記2種類の元素ダメージアップ効果は40%までアップする。同じ元素タイプの元素ダメージアップ効果は重ね掛けできない。JP0D"
+        }
+      }
+    }
+  },
+  "15046": {
+    "Id": 15046,
+    "Icon": "UI_RelicIcon_15046_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150460": {
+        "Name": {
+          "En": "Disenchantment in Deep Shadow",
+          "Ko": "그림자 속의 산산조각 난 꿈",
+          "Zh": "影中沉凝的幻灭",
+          "Ja": "影に沈む幻JP0D"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Ko": "공격력+18%",
+          "Zh": "攻击力提高18%。",
+          "Ja": "攻撃力+18%。"
+        }
+      },
+      "2150461": {
+        "Name": {
+          "En": "Disenchantment in Deep Shadow",
+          "Ko": "그림자 속의 산산조각 난 꿈",
+          "Zh": "影中沉凝的幻灭",
+          "Ja": "影に沈む幻JP0D"
+        },
+        "Desc": {
+          "En": "Increases Superconduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct, this attack's CRIT Rate is increased by 16%. An all-new blessing may be obtained as you make your way toward Snezhnaya...",
+          "Ko": "초전도 반응으로 주는 피해가 40% 증가한다. 장착 캐릭터가 초전도 반응의 영향을 받은 적 공격 시, 이번 공격의 치명타 확률이 16% 증가한다. 스네즈나야로 향하는 여정에서 어쩌면 새로운 축복을 얻게 될지도 모른다…",
+          "Zh": "超导反应造成的伤害提升80%；装备者攻击受到超导反应影响的敌人时，本次攻击的暴击率提高16%。前往至冬的途中，或许还会得到全新的祝赐…",
+          "Ja": "超電導反応によるダメージ+40%。装備者が超電導反応の影響を受けた敵を攻撃する時、その攻撃の会心率+16%。スネージナヤへ向かう途中、新たな祝福を得られるかもしれない…JP0D"
+        }
+      }
+    }
+  }
+}
