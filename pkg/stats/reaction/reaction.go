@@ -24,6 +24,8 @@ var eventToReaction = map[event.Event]info.ReactionType{
 	event.OnCrystallizeElectro: info.ReactionTypeCrystallizeElectro,
 	event.OnCrystallizeHydro:   info.ReactionTypeCrystallizeHydro,
 	event.OnLunarCrystallize:   info.ReactionTypeLunarCrystallize,
+	event.OnStarSuperconduct:   info.ReactionTypeStarSuperconduct,
+	event.OnStarDiffusion:      info.ReactionTypeStarDiffusion,
 	event.OnCrystallizePyro:    info.ReactionTypeCrystallizePyro,
 	event.OnAggravate:          info.ReactionTypeAggravate,
 	event.OnSpread:             info.ReactionTypeSpread,

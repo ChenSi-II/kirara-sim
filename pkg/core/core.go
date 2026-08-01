@@ -36,6 +36,10 @@ type Core struct {
 	Combat     *combat.Handler
 	Constructs *construct.Handler
 	Player     *player.Handler
+	// StarReactions stores the team-wide state shared by Star Superconduct and
+	// Star Diffusion. It is enabled during Init when an eligible character is
+	// present, or explicitly by tests/placeholder character implementations.
+	StarReactions StarReactionState
 }
 
 type Flags struct {
@@ -131,6 +135,7 @@ func (c *Core) Init() error {
 	if err != nil {
 		return err
 	}
+	c.initStarReactions()
 	c.Events.Emit(event.OnInitialize)
 	return nil
 }

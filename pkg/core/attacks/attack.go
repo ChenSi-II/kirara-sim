@@ -35,6 +35,12 @@ const (
 	AttackTagReactionLunarCrystallize
 	LunarReactionEndDelim
 
+	StarReactionStartDelim
+	AttackTagReactionStarSuperconduct
+	AttackTagReactionStarDiffusionAnemo
+	AttackTagReactionStarDiffusionCryo
+	StarReactionEndDelim
+
 	DirectLunarReactionStartDelim
 	AttackTagDirectLunarCharged
 	AttackTagDirectLunarBloom
@@ -66,4 +72,8 @@ func AttackTagIsLunar(tag AttackTag) bool {
 	isReaction := LunarReactionStartDelim < tag && tag < LunarReactionEndDelim
 	isDirect := DirectLunarReactionStartDelim < tag && tag < DirectLunarReactionEndDelim
 	return isReaction || isDirect
+}
+
+func AttackTagIsStar(tag AttackTag) bool {
+	return StarReactionStartDelim < tag && tag < StarReactionEndDelim
 }

@@ -125,6 +125,9 @@ func (r *Reactable) TrySwirlHydro(a *info.AttackEvent) bool {
 }
 
 func (r *Reactable) TrySwirlCryo(a *info.AttackEvent) bool {
+	if r.core.StarReactions.Enabled {
+		return r.tryStarDiffusion(a, attributes.Cryo)
+	}
 	if a.Info.Durability < info.ZeroDur {
 		return false
 	}
@@ -186,6 +189,9 @@ func (r *Reactable) TrySwirlPyro(a *info.AttackEvent) bool {
 }
 
 func (r *Reactable) TrySwirlFrozen(a *info.AttackEvent) bool {
+	if r.core.StarReactions.Enabled {
+		return r.tryStarDiffusion(a, attributes.Frozen)
+	}
 	if a.Info.Durability < info.ZeroDur {
 		return false
 	}

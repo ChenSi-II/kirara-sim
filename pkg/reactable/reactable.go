@@ -91,6 +91,10 @@ func (r *Reactable) AuraCount() int {
 }
 
 func (r *Reactable) React(a *info.AttackEvent) {
+	// Once the Star Superconduct domain exists, every successful Cryo/Electro
+	// application contributes one layer, whether or not that application goes
+	// on to trigger another reaction.
+	r.addStarSuperconductStack(a)
 	// TODO: double check order of reactions
 	switch a.Info.Element {
 	case attributes.Electro:
