@@ -78,39 +78,54 @@ func (r *Reactable) tryStarSuperconduct(a *info.AttackEvent, frozen bool) bool {
 		return false
 	}
 
+	var reacted bool
 	if frozen {
-		if a.Info.Element != attributes.Electro || r.GetAuraDurability(info.ReactionModKeyFrozen) < info.ZeroDur {
-			return false
-		}
-		a.Info.Durability -= r.reduce(attributes.Cryo, a.Info.Durability, 1)
-		r.reduce(attributes.Frozen, a.Info.Durability, 1)
-		a.Info.Durability = 0
+		reacted = r.tryStarSuperconductOnFrozen(a)
 	} else {
-		if r.GetAuraDurability(info.ReactionModKeyFrozen) >= info.ZeroDur {
-			return false
-		}
-		var consumed info.Durability
-		switch a.Info.Element {
-		case attributes.Electro:
-			if r.GetAuraDurability(info.ReactionModKeyCryo) < info.ZeroDur {
-				return false
-			}
-			consumed = r.reduce(attributes.Cryo, a.Info.Durability, 1)
-		case attributes.Cryo:
-			if r.GetAuraDurability(info.ReactionModKeyElectro) < info.ZeroDur {
-				return false
-			}
-			consumed = r.reduce(attributes.Electro, a.Info.Durability, 1)
-		default:
-			return false
-		}
-		a.Info.Durability = max(a.Info.Durability-consumed, 0)
+		reacted = r.tryStarSuperconductOnAura(a)
+	}
+	if !reacted {
+		return false
 	}
 
 	a.Reacted = true
 	r.core.Events.Emit(event.OnStarSuperconduct, r.self, a)
 	r.activateStarSuperconductDomain()
 	r.queueStarSuperconduct(a.Info.ActorIndex)
+	return true
+}
+
+func (r *Reactable) tryStarSuperconductOnFrozen(a *info.AttackEvent) bool {
+	if a.Info.Element != attributes.Electro || r.GetAuraDurability(info.ReactionModKeyFrozen) < info.ZeroDur {
+		return false
+	}
+	a.Info.Durability -= r.reduce(attributes.Cryo, a.Info.Durability, 1)
+	r.reduce(attributes.Frozen, a.Info.Durability, 1)
+	a.Info.Durability = 0
+	return true
+}
+
+func (r *Reactable) tryStarSuperconductOnAura(a *info.AttackEvent) bool {
+	if r.GetAuraDurability(info.ReactionModKeyFrozen) >= info.ZeroDur {
+		return false
+	}
+
+	var consumed info.Durability
+	switch a.Info.Element {
+	case attributes.Electro:
+		if r.GetAuraDurability(info.ReactionModKeyCryo) < info.ZeroDur {
+			return false
+		}
+		consumed = r.reduce(attributes.Cryo, a.Info.Durability, 1)
+	case attributes.Cryo:
+		if r.GetAuraDurability(info.ReactionModKeyElectro) < info.ZeroDur {
+			return false
+		}
+		consumed = r.reduce(attributes.Electro, a.Info.Durability, 1)
+	default:
+		return false
+	}
+	a.Info.Durability = max(a.Info.Durability-consumed, 0)
 	return true
 }
 
