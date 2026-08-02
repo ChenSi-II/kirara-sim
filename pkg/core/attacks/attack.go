@@ -66,6 +66,7 @@ const (
 	AdditionalTagNone AdditionalTag = iota
 	AdditionalTagNightsoul
 	AdditionalTagKinichCannon
+	AdditionalTagVarkaSpecial
 )
 
 func AttackTagIsLunar(tag AttackTag) bool {

@@ -9,7 +9,6 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
-	"github.com/genshinsim/gcsim/pkg/core/keys"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/modifier"
 )
@@ -41,10 +40,6 @@ var reactToElements = map[info.ReactionType][]attributes.Element{
 	info.ReactionTypeHyperbloom:         {attributes.Dendro, attributes.Electro},
 	info.ReactionTypeBurgeon:            {attributes.Dendro, attributes.Pyro},
 	info.ReactionTypeBurning:            {attributes.Dendro, attributes.Pyro},
-}
-
-func init() {
-	core.RegisterSetFunc(keys.ScrollOfTheHeroOfCinderCity, NewSet)
 }
 
 type Set struct {
