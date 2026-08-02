@@ -1,6 +1,24 @@
 package simulation
 
 import (
+	_ "github.com/genshinsim/gcsim/internal/weapons/bow/frostboundoath"
+	_ "github.com/genshinsim/gcsim/internal/weapons/bow/goldenfrostboundoath"
+	_ "github.com/genshinsim/gcsim/internal/weapons/bow/shatteredmirror"
+	_ "github.com/genshinsim/gcsim/internal/weapons/bow/thedaybreakchronicles"
+	_ "github.com/genshinsim/gcsim/internal/weapons/catalyst/heartsecho"
+	_ "github.com/genshinsim/gcsim/internal/weapons/catalyst/sandmemoria"
+	_ "github.com/genshinsim/gcsim/internal/weapons/claymore/escapewheel"
+	_ "github.com/genshinsim/gcsim/internal/weapons/claymore/flameforgedinsight"
+	_ "github.com/genshinsim/gcsim/internal/weapons/claymore/keyoftranscendence"
+	_ "github.com/genshinsim/gcsim/internal/weapons/claymore/redemptioncleaver"
+	_ "github.com/genshinsim/gcsim/internal/weapons/spear/disasterandremorse"
+	_ "github.com/genshinsim/gcsim/internal/weapons/spear/faescrystalle"
+	_ "github.com/genshinsim/gcsim/internal/weapons/spear/watchsong"
+	_ "github.com/genshinsim/gcsim/internal/weapons/sword/lightbearingmoonshard"
+	_ "github.com/genshinsim/gcsim/internal/weapons/sword/serpenttooth"
+	_ "github.com/genshinsim/gcsim/internal/weapons/sword/sourceofkindling"
+	_ "github.com/genshinsim/gcsim/internal/weapons/sword/starforgedblade"
+	_ "github.com/genshinsim/gcsim/internal/weapons/sword/swanlakeswinterfeather"
 	// stats collectors
 	_ "github.com/genshinsim/gcsim/pkg/stats/action"
 	_ "github.com/genshinsim/gcsim/pkg/stats/damage"

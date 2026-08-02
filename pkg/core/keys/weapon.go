@@ -261,6 +261,24 @@ var weaponNames = []string{
 	"wolffang",
 	"wolfsgravestone",
 	"xiphosmoonlight",
+	"serpenttooth",
+	"sourceofkindling",
+	"lightbearingmoonshard",
+	"swanlakeswinterfeather",
+	"starforgedblade",
+	"flameforgedinsight",
+	"escapewheel",
+	"redemptioncleaver",
+	"keyoftranscendence",
+	"faescrystalle",
+	"watchsong",
+	"disasterandremorse",
+	"sandmemoria",
+	"heartsecho",
+	"shatteredmirror",
+	"frostboundoath",
+	"thedaybreakchronicles",
+	"goldenfrostboundoath",
 }
 
 const (
@@ -493,4 +511,22 @@ const (
 	WolfFang
 	WolfsGravestone
 	XiphosMoonlight
+	SerpentTooth
+	SourceOfKindling
+	LightbearingMoonshard
+	SwanlakesWinterFeather
+	StarforgedBlade
+	FlameForgedInsight
+	EscapeWheel
+	RedemptionCleaver
+	KeyOfTranscendence
+	FaesCrystalle
+	Watchsong
+	DisasterAndRemorse
+	SandMemoria
+	HeartsEcho
+	ShatteredMirror
+	FrostboundOath
+	TheDaybreakChronicles
+	GoldenFrostboundOath
 )

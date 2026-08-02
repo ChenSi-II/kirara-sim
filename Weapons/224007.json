@@ -1,0 +1,9 @@
+{
+  "Name": "榴晶·冰",
+  "Desc": "(test) 冰属性雷",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "Sword_Template",
+  "Skill": 999007,
+  "Tps": true
+}

@@ -1,0 +1,9 @@
+{
+  "Name": "莎塔娜娅的苍银",
+  "Desc": "(test) 冰属性枪械",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_AssaultRifle_Glacia",
+  "Skill": 11344,
+  "Tps": true
+}

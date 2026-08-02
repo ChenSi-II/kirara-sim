@@ -1,0 +1,9 @@
+{
+  "Name": "榴晶·雷",
+  "Desc": "(test) 雷属性雷",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "Sword_Template",
+  "Skill": 999006,
+  "Tps": true
+}

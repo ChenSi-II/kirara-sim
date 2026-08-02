@@ -1,0 +1,20 @@
+[
+  {"id": 11435, "package_name": "serpenttooth", "key": "serpenttooth", "key_constant": "SerpentTooth"},
+  {"id": 11436, "package_name": "sourceofkindling", "key": "sourceofkindling", "key_constant": "SourceOfKindling"},
+  {"id": 11519, "package_name": "lightbearingmoonshard", "key": "lightbearingmoonshard", "key_constant": "LightbearingMoonshard"},
+  {"id": 11520, "package_name": "swanlakeswinterfeather", "key": "swanlakeswinterfeather", "key_constant": "SwanlakesWinterFeather"},
+  {"id": 11521, "package_name": "starforgedblade", "key": "starforgedblade", "key_constant": "StarforgedBlade"},
+  {"id": 12432, "package_name": "flameforgedinsight", "key": "flameforgedinsight", "key_constant": "FlameForgedInsight"},
+  {"id": 12435, "package_name": "escapewheel", "key": "escapewheel", "key_constant": "EscapeWheel"},
+  {"id": 12436, "package_name": "redemptioncleaver", "key": "redemptioncleaver", "key_constant": "RedemptionCleaver"},
+  {"id": 12516, "package_name": "keyoftranscendence", "key": "keyoftranscendence", "key_constant": "KeyOfTranscendence"},
+  {"id": 13435, "package_name": "faescrystalle", "key": "faescrystalle", "key_constant": "FaesCrystalle"},
+  {"id": 13436, "package_name": "watchsong", "key": "watchsong", "key_constant": "Watchsong"},
+  {"id": 13517, "package_name": "disasterandremorse", "key": "disasterandremorse", "key_constant": "DisasterAndRemorse"},
+  {"id": 14435, "package_name": "sandmemoria", "key": "sandmemoria", "key_constant": "SandMemoria"},
+  {"id": 14436, "package_name": "heartsecho", "key": "heartsecho", "key_constant": "HeartsEcho"},
+  {"id": 15435, "package_name": "shatteredmirror", "key": "shatteredmirror", "key_constant": "ShatteredMirror"},
+  {"id": 15436, "package_name": "frostboundoath", "key": "frostboundoath", "key_constant": "FrostboundOath"},
+  {"id": 15515, "package_name": "thedaybreakchronicles", "key": "thedaybreakchronicles", "key_constant": "TheDaybreakChronicles"},
+  {"id": 15516, "package_name": "goldenfrostboundoath", "key": "goldenfrostboundoath", "key_constant": "GoldenFrostboundOath"}
+]

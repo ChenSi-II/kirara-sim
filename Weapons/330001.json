@@ -1,0 +1,9 @@
+{
+  "Name": "碎月",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在古老的国度曾以「瓦恩斯图格」的名讳为猎月的罪人持有。",
+  "WeaponType": "WEAPON_POLE",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Pole_MorphSpinifer_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

@@ -1,0 +1,9 @@
+{
+  "Name": "瓦尔萨格的日轮",
+  "Desc": "(test) 可变属性枪械",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_GrenadeLauncher_Ignis",
+  "Skill": 11348,
+  "Tps": true
+}
