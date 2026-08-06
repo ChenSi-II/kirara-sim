@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "frostbreath",
+      "override_id": "13435",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "frostbreath",
+    "id": "13435",
+    "lunaris_id": "13435"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 42.401,
+            "levels": {
+              "1": 1,
+              "10": 1.743,
+              "100": 9.174,
+              "11": 1.826,
+              "12": 1.908,
+              "13": 1.991,
+              "14": 2.073,
+              "15": 2.156,
+              "16": 2.239,
+              "17": 2.321,
+              "18": 2.404,
+              "19": 2.486,
+              "2": 1.083,
+              "20": 2.569,
+              "21": 2.651,
+              "22": 2.734,
+              "23": 2.817,
+              "24": 2.899,
+              "25": 2.982,
+              "26": 3.064,
+              "27": 3.147,
+              "28": 3.229,
+              "29": 3.312,
+              "3": 1.165,
+              "30": 3.394,
+              "31": 3.477,
+              "32": 3.56,
+              "33": 3.642,
+              "34": 3.725,
+              "35": 3.807,
+              "36": 3.89,
+              "37": 3.972,
+              "38": 4.055,
+              "39": 4.138,
+              "4": 1.248,
+              "40": 4.22,
+              "41": 4.303,
+              "42": 4.385,
+              "43": 4.468,
+              "44": 4.55,
+              "45": 4.633,
+              "46": 4.716,
+              "47": 4.798,
+              "48": 4.881,
+              "49": 4.963,
+              "5": 1.33,
+              "50": 5.046,
+              "51": 5.128,
+              "52": 5.211,
+              "53": 5.294,
+              "54": 5.376,
+              "55": 5.459,
+              "56": 5.541,
+              "57": 5.624,
+              "58": 5.706,
+              "59": 5.789,
+              "6": 1.413,
+              "60": 5.872,
+              "61": 5.954,
+              "62": 6.037,
+              "63": 6.119,
+              "64": 6.202,
+              "65": 6.284,
+              "66": 6.367,
+              "67": 6.45,
+              "68": 6.532,
+              "69": 6.615,
+              "7": 1.495,
+              "70": 6.697,
+              "71": 6.78,
+              "72": 6.862,
+              "73": 6.945,
+              "74": 7.028,
+              "75": 7.11,
+              "76": 7.193,
+              "77": 7.275,
+              "78": 7.358,
+              "79": 7.44,
+              "8": 1.578,
+              "80": 7.523,
+              "81": 7.606,
+              "82": 7.688,
+              "83": 7.771,
+              "84": 7.853,
+              "85": 7.936,
+              "86": 8.018,
+              "87": 8.101,
+              "88": 8.183,
+              "89": 8.266,
+              "9": 1.661,
+              "90": 8.349,
+              "91": 8.431,
+              "92": 8.514,
+              "93": 8.596,
+              "94": 8.679,
+              "95": 8.761,
+              "96": 8.844,
+              "97": 8.927,
+              "98": 9.009,
+              "99": 9.092
+            }
+          },
+          "fight_prop_charge_efficiency": {
+            "base": 0.1,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 42.401,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_201"
+          },
+          {
+            "init_value": 0.1,
+            "prop_type": "FIGHT_PROP_CHARGE_EFFICIENCY",
+            "type": "GROW_CURVE_CRITICAL_201"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Pole_FaesCrystalle",
+        "name": "Frostbreath",
+        "rarity": 4,
+        "weapon_type": "WEAPON_POLE"
+      },
+      "refinements": {
+        "1": {
+          "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>20%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>6</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+          "name": "A Cast Real Far",
+          "param_list": [
+            0.2,
+            15,
+            6,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>25%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>7.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+          "name": "A Cast Real Far",
+          "param_list": [
+            0.25,
+            15,
+            7.5,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>30%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>9</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+          "name": "A Cast Real Far",
+          "param_list": [
+            0.3,
+            15,
+            9,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>35%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>10.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+          "name": "A Cast Real Far",
+          "param_list": [
+            0.35,
+            15,
+            10.5,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>40%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>12</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+          "name": "A Cast Real Far",
+          "param_list": [
+            0.4,
+            15,
+            12,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            0.20000000298023224,
+            15.0,
+            6.0,
+            16.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            0.25,
+            15.0,
+            7.5,
+            16.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            0.30000001192092896,
+            15.0,
+            9.0,
+            16.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            0.3499999940395355,
+            15.0,
+            10.5,
+            16.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            0.4000000059604645,
+            15.0,
+            12.0,
+            16.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            0.2,
+            15,
+            6,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0.25,
+            15,
+            7.5,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0.3,
+            15,
+            9,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0.35,
+            15,
+            10.5,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            0.4,
+            15,
+            12,
+            16,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Frostbreath",
+        "nanoka": "Frostbreath"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_PURPLE",
+        "nanoka": "QUALITY_PURPLE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_POLE",
+        "nanoka": "WEAPON_POLE"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Frostbreath",
+          "passive": {
+            "name": "A Cast Real Far",
+            "refinements": {
+              "1": {
+                "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 20% for the next 15s, as well as regenerates 6 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+                "params": [
+                  0.20000000298023224,
+                  15.0,
+                  6.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 25% for the next 15s, as well as regenerates 7.5 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+                "params": [
+                  0.25,
+                  15.0,
+                  7.5,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 30% for the next 15s, as well as regenerates 9 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+                "params": [
+                  0.30000001192092896,
+                  15.0,
+                  9.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 35% for the next 15s, as well as regenerates 10.5 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+                "params": [
+                  0.3499999940395355,
+                  15.0,
+                  10.5,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 40% for the next 15s, as well as regenerates 12 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+                "params": [
+                  0.4000000059604645,
+                  15.0,
+                  12.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Energy Recharge%": 10.0,
+              "atk": 42
+            },
+            "10": {
+              "Energy Recharge%": 13.6,
+              "atk": 74
+            },
+            "11": {
+              "Energy Recharge%": 13.6,
+              "atk": 77
+            },
+            "12": {
+              "Energy Recharge%": 13.6,
+              "atk": 81
+            },
+            "13": {
+              "Energy Recharge%": 13.6,
+              "atk": 84
+            },
+            "14": {
+              "Energy Recharge%": 13.6,
+              "atk": 88
+            },
+            "15": {
+              "Energy Recharge%": 15.7,
+              "atk": 91
+            },
+            "16": {
+              "Energy Recharge%": 15.7,
+              "atk": 95
+            },
+            "17": {
+              "Energy Recharge%": 15.7,
+              "atk": 98
+            },
+            "18": {
+              "Energy Recharge%": 15.7,
+              "atk": 102
+            },
+            "19": {
+              "Energy Recharge%": 15.7,
+              "atk": 105
+            },
+            "2": {
+              "Energy Recharge%": 10.0,
+              "atk": 46
+            },
+            "20": {
+              "Energy Recharge%": 17.7,
+              "atk": 109
+            },
+            "21": {
+              "Energy Recharge%": 17.7,
+              "atk": 138
+            },
+            "22": {
+              "Energy Recharge%": 17.7,
+              "atk": 142
+            },
+            "23": {
+              "Energy Recharge%": 17.7,
+              "atk": 145
+            },
+            "24": {
+              "Energy Recharge%": 17.7,
+              "atk": 149
+            },
+            "25": {
+              "Energy Recharge%": 19.7,
+              "atk": 152
+            },
+            "26": {
+              "Energy Recharge%": 19.7,
+              "atk": 156
+            },
+            "27": {
+              "Energy Recharge%": 19.7,
+              "atk": 159
+            },
+            "28": {
+              "Energy Recharge%": 19.7,
+              "atk": 163
+            },
+            "29": {
+              "Energy Recharge%": 19.7,
+              "atk": 166
+            },
+            "3": {
+              "Energy Recharge%": 10.0,
+              "atk": 49
+            },
+            "30": {
+              "Energy Recharge%": 21.7,
+              "atk": 170
+            },
+            "31": {
+              "Energy Recharge%": 21.7,
+              "atk": 173
+            },
+            "32": {
+              "Energy Recharge%": 21.7,
+              "atk": 177
+            },
+            "33": {
+              "Energy Recharge%": 21.7,
+              "atk": 180
+            },
+            "34": {
+              "Energy Recharge%": 21.7,
+              "atk": 184
+            },
+            "35": {
+              "Energy Recharge%": 23.7,
+              "atk": 187
+            },
+            "36": {
+              "Energy Recharge%": 23.7,
+              "atk": 191
+            },
+            "37": {
+              "Energy Recharge%": 23.7,
+              "atk": 194
+            },
+            "38": {
+              "Energy Recharge%": 23.7,
+              "atk": 198
+            },
+            "39": {
+              "Energy Recharge%": 23.7,
+              "atk": 201
+            },
+            "4": {
+              "Energy Recharge%": 10.0,
+              "atk": 53
+            },
+            "40": {
+              "Energy Recharge%": 25.8,
+              "atk": 205
+            },
+            "41": {
+              "Energy Recharge%": 25.8,
+              "atk": 234
+            },
+            "42": {
+              "Energy Recharge%": 25.8,
+              "atk": 238
+            },
+            "43": {
+              "Energy Recharge%": 25.8,
+              "atk": 241
+            },
+            "44": {
+              "Energy Recharge%": 25.8,
+              "atk": 245
+            },
+            "45": {
+              "Energy Recharge%": 27.8,
+              "atk": 248
+            },
+            "46": {
+              "Energy Recharge%": 27.8,
+              "atk": 252
+            },
+            "47": {
+              "Energy Recharge%": 27.8,
+              "atk": 255
+            },
+            "48": {
+              "Energy Recharge%": 27.8,
+              "atk": 259
+            },
+            "49": {
+              "Energy Recharge%": 27.8,
+              "atk": 262
+            },
+            "5": {
+              "Energy Recharge%": 11.6,
+              "atk": 56
+            },
+            "50": {
+              "Energy Recharge%": 29.8,
+              "atk": 266
+            },
+            "51": {
+              "Energy Recharge%": 29.8,
+              "atk": 295
+            },
+            "52": {
+              "Energy Recharge%": 29.8,
+              "atk": 299
+            },
+            "53": {
+              "Energy Recharge%": 29.8,
+              "atk": 302
+            },
+            "54": {
+              "Energy Recharge%": 29.8,
+              "atk": 306
+            },
+            "55": {
+              "Energy Recharge%": 31.8,
+              "atk": 309
+            },
+            "56": {
+              "Energy Recharge%": 31.8,
+              "atk": 313
+            },
+            "57": {
+              "Energy Recharge%": 31.8,
+              "atk": 316
+            },
+            "58": {
+              "Energy Recharge%": 31.8,
+              "atk": 320
+            },
+            "59": {
+              "Energy Recharge%": 31.8,
+              "atk": 323
+            },
+            "6": {
+              "Energy Recharge%": 11.6,
+              "atk": 60
+            },
+            "60": {
+              "Energy Recharge%": 33.8,
+              "atk": 327
+            },
+            "61": {
+              "Energy Recharge%": 33.8,
+              "atk": 356
+            },
+            "62": {
+              "Energy Recharge%": 33.8,
+              "atk": 360
+            },
+            "63": {
+              "Energy Recharge%": 33.8,
+              "atk": 363
+            },
+            "64": {
+              "Energy Recharge%": 33.8,
+              "atk": 367
+            },
+            "65": {
+              "Energy Recharge%": 35.9,
+              "atk": 370
+            },
+            "66": {
+              "Energy Recharge%": 35.9,
+              "atk": 374
+            },
+            "67": {
+              "Energy Recharge%": 35.9,
+              "atk": 377
+            },
+            "68": {
+              "Energy Recharge%": 35.9,
+              "atk": 381
+            },
+            "69": {
+              "Energy Recharge%": 35.9,
+              "atk": 384
+            },
+            "7": {
+              "Energy Recharge%": 11.6,
+              "atk": 63
+            },
+            "70": {
+              "Energy Recharge%": 37.9,
+              "atk": 388
+            },
+            "71": {
+              "Energy Recharge%": 37.9,
+              "atk": 417
+            },
+            "72": {
+              "Energy Recharge%": 37.9,
+              "atk": 421
+            },
+            "73": {
+              "Energy Recharge%": 37.9,
+              "atk": 424
+            },
+            "74": {
+              "Energy Recharge%": 37.9,
+              "atk": 428
+            },
+            "75": {
+              "Energy Recharge%": 39.9,
+              "atk": 431
+            },
+            "76": {
+              "Energy Recharge%": 39.9,
+              "atk": 435
+            },
+            "77": {
+              "Energy Recharge%": 39.9,
+              "atk": 438
+            },
+            "78": {
+              "Energy Recharge%": 39.9,
+              "atk": 442
+            },
+            "79": {
+              "Energy Recharge%": 39.9,
+              "atk": 445
+            },
+            "8": {
+              "Energy Recharge%": 11.6,
+              "atk": 67
+            },
+            "80": {
+              "Energy Recharge%": 41.9,
+              "atk": 449
+            },
+            "81": {
+              "Energy Recharge%": 41.9,
+              "atk": 478
+            },
+            "82": {
+              "Energy Recharge%": 41.9,
+              "atk": 482
+            },
+            "83": {
+              "Energy Recharge%": 41.9,
+              "atk": 485
+            },
+            "84": {
+              "Energy Recharge%": 41.9,
+              "atk": 489
+            },
+            "85": {
+              "Energy Recharge%": 43.9,
+              "atk": 492
+            },
+            "86": {
+              "Energy Recharge%": 43.9,
+              "atk": 496
+            },
+            "87": {
+              "Energy Recharge%": 43.9,
+              "atk": 499
+            },
+            "88": {
+              "Energy Recharge%": 43.9,
+              "atk": 503
+            },
+            "89": {
+              "Energy Recharge%": 43.9,
+              "atk": 506
+            },
+            "9": {
+              "Energy Recharge%": 11.6,
+              "atk": 70
+            },
+            "90": {
+              "Energy Recharge%": 45.9,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Pole_FaesCrystalle",
+          "weaponType": "WEAPON_POLE"
+        },
+        "sha256": "79331f8c4bbd440ce511901afd73ff9dcf03a3e794cc82694ad2a28e355f32fb",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/13435.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "寒息",
+          "passive": {
+            "name": "万顷一掷",
+            "refinements": {
+              "1": {
+                "description": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升20%，并为队伍中自己的其他角色恢复6点元素能量。该效果每16秒至多触发一次。",
+                "params": [
+                  0.20000000298023224,
+                  15.0,
+                  6.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升25%，并为队伍中自己的其他角色恢复7.5点元素能量。该效果每16秒至多触发一次。",
+                "params": [
+                  0.25,
+                  15.0,
+                  7.5,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升30%，并为队伍中自己的其他角色恢复9点元素能量。该效果每16秒至多触发一次。",
+                "params": [
+                  0.30000001192092896,
+                  15.0,
+                  9.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升35%，并为队伍中自己的其他角色恢复10.5点元素能量。该效果每16秒至多触发一次。",
+                "params": [
+                  0.3499999940395355,
+                  15.0,
+                  10.5,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升40%，并为队伍中自己的其他角色恢复12点元素能量。该效果每16秒至多触发一次。",
+                "params": [
+                  0.4000000059604645,
+                  15.0,
+                  12.0,
+                  16.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Energy Recharge%": 10.0,
+              "atk": 42
+            },
+            "10": {
+              "Energy Recharge%": 13.6,
+              "atk": 74
+            },
+            "11": {
+              "Energy Recharge%": 13.6,
+              "atk": 77
+            },
+            "12": {
+              "Energy Recharge%": 13.6,
+              "atk": 81
+            },
+            "13": {
+              "Energy Recharge%": 13.6,
+              "atk": 84
+            },
+            "14": {
+              "Energy Recharge%": 13.6,
+              "atk": 88
+            },
+            "15": {
+              "Energy Recharge%": 15.7,
+              "atk": 91
+            },
+            "16": {
+              "Energy Recharge%": 15.7,
+              "atk": 95
+            },
+            "17": {
+              "Energy Recharge%": 15.7,
+              "atk": 98
+            },
+            "18": {
+              "Energy Recharge%": 15.7,
+              "atk": 102
+            },
+            "19": {
+              "Energy Recharge%": 15.7,
+              "atk": 105
+            },
+            "2": {
+              "Energy Recharge%": 10.0,
+              "atk": 46
+            },
+            "20": {
+              "Energy Recharge%": 17.7,
+              "atk": 109
+            },
+            "21": {
+              "Energy Recharge%": 17.7,
+              "atk": 138
+            },
+            "22": {
+              "Energy Recharge%": 17.7,
+              "atk": 142
+            },
+            "23": {
+              "Energy Recharge%": 17.7,
+              "atk": 145
+            },
+            "24": {
+              "Energy Recharge%": 17.7,
+              "atk": 149
+            },
+            "25": {
+              "Energy Recharge%": 19.7,
+              "atk": 152
+            },
+            "26": {
+              "Energy Recharge%": 19.7,
+              "atk": 156
+            },
+            "27": {
+              "Energy Recharge%": 19.7,
+              "atk": 159
+            },
+            "28": {
+              "Energy Recharge%": 19.7,
+              "atk": 163
+            },
+            "29": {
+              "Energy Recharge%": 19.7,
+              "atk": 166
+            },
+            "3": {
+              "Energy Recharge%": 10.0,
+              "atk": 49
+            },
+            "30": {
+              "Energy Recharge%": 21.7,
+              "atk": 170
+            },
+            "31": {
+              "Energy Recharge%": 21.7,
+              "atk": 173
+            },
+            "32": {
+              "Energy Recharge%": 21.7,
+              "atk": 177
+            },
+            "33": {
+              "Energy Recharge%": 21.7,
+              "atk": 180
+            },
+            "34": {
+              "Energy Recharge%": 21.7,
+              "atk": 184
+            },
+            "35": {
+              "Energy Recharge%": 23.7,
+              "atk": 187
+            },
+            "36": {
+              "Energy Recharge%": 23.7,
+              "atk": 191
+            },
+            "37": {
+              "Energy Recharge%": 23.7,
+              "atk": 194
+            },
+            "38": {
+              "Energy Recharge%": 23.7,
+              "atk": 198
+            },
+            "39": {
+              "Energy Recharge%": 23.7,
+              "atk": 201
+            },
+            "4": {
+              "Energy Recharge%": 10.0,
+              "atk": 53
+            },
+            "40": {
+              "Energy Recharge%": 25.8,
+              "atk": 205
+            },
+            "41": {
+              "Energy Recharge%": 25.8,
+              "atk": 234
+            },
+            "42": {
+              "Energy Recharge%": 25.8,
+              "atk": 238
+            },
+            "43": {
+              "Energy Recharge%": 25.8,
+              "atk": 241
+            },
+            "44": {
+              "Energy Recharge%": 25.8,
+              "atk": 245
+            },
+            "45": {
+              "Energy Recharge%": 27.8,
+              "atk": 248
+            },
+            "46": {
+              "Energy Recharge%": 27.8,
+              "atk": 252
+            },
+            "47": {
+              "Energy Recharge%": 27.8,
+              "atk": 255
+            },
+            "48": {
+              "Energy Recharge%": 27.8,
+              "atk": 259
+            },
+            "49": {
+              "Energy Recharge%": 27.8,
+              "atk": 262
+            },
+            "5": {
+              "Energy Recharge%": 11.6,
+              "atk": 56
+            },
+            "50": {
+              "Energy Recharge%": 29.8,
+              "atk": 266
+            },
+            "51": {
+              "Energy Recharge%": 29.8,
+              "atk": 295
+            },
+            "52": {
+              "Energy Recharge%": 29.8,
+              "atk": 299
+            },
+            "53": {
+              "Energy Recharge%": 29.8,
+              "atk": 302
+            },
+            "54": {
+              "Energy Recharge%": 29.8,
+              "atk": 306
+            },
+            "55": {
+              "Energy Recharge%": 31.8,
+              "atk": 309
+            },
+            "56": {
+              "Energy Recharge%": 31.8,
+              "atk": 313
+            },
+            "57": {
+              "Energy Recharge%": 31.8,
+              "atk": 316
+            },
+            "58": {
+              "Energy Recharge%": 31.8,
+              "atk": 320
+            },
+            "59": {
+              "Energy Recharge%": 31.8,
+              "atk": 323
+            },
+            "6": {
+              "Energy Recharge%": 11.6,
+              "atk": 60
+            },
+            "60": {
+              "Energy Recharge%": 33.8,
+              "atk": 327
+            },
+            "61": {
+              "Energy Recharge%": 33.8,
+              "atk": 356
+            },
+            "62": {
+              "Energy Recharge%": 33.8,
+              "atk": 360
+            },
+            "63": {
+              "Energy Recharge%": 33.8,
+              "atk": 363
+            },
+            "64": {
+              "Energy Recharge%": 33.8,
+              "atk": 367
+            },
+            "65": {
+              "Energy Recharge%": 35.9,
+              "atk": 370
+            },
+            "66": {
+              "Energy Recharge%": 35.9,
+              "atk": 374
+            },
+            "67": {
+              "Energy Recharge%": 35.9,
+              "atk": 377
+            },
+            "68": {
+              "Energy Recharge%": 35.9,
+              "atk": 381
+            },
+            "69": {
+              "Energy Recharge%": 35.9,
+              "atk": 384
+            },
+            "7": {
+              "Energy Recharge%": 11.6,
+              "atk": 63
+            },
+            "70": {
+              "Energy Recharge%": 37.9,
+              "atk": 388
+            },
+            "71": {
+              "Energy Recharge%": 37.9,
+              "atk": 417
+            },
+            "72": {
+              "Energy Recharge%": 37.9,
+              "atk": 421
+            },
+            "73": {
+              "Energy Recharge%": 37.9,
+              "atk": 424
+            },
+            "74": {
+              "Energy Recharge%": 37.9,
+              "atk": 428
+            },
+            "75": {
+              "Energy Recharge%": 39.9,
+              "atk": 431
+            },
+            "76": {
+              "Energy Recharge%": 39.9,
+              "atk": 435
+            },
+            "77": {
+              "Energy Recharge%": 39.9,
+              "atk": 438
+            },
+            "78": {
+              "Energy Recharge%": 39.9,
+              "atk": 442
+            },
+            "79": {
+              "Energy Recharge%": 39.9,
+              "atk": 445
+            },
+            "8": {
+              "Energy Recharge%": 11.6,
+              "atk": 67
+            },
+            "80": {
+              "Energy Recharge%": 41.9,
+              "atk": 449
+            },
+            "81": {
+              "Energy Recharge%": 41.9,
+              "atk": 478
+            },
+            "82": {
+              "Energy Recharge%": 41.9,
+              "atk": 482
+            },
+            "83": {
+              "Energy Recharge%": 41.9,
+              "atk": 485
+            },
+            "84": {
+              "Energy Recharge%": 41.9,
+              "atk": 489
+            },
+            "85": {
+              "Energy Recharge%": 43.9,
+              "atk": 492
+            },
+            "86": {
+              "Energy Recharge%": 43.9,
+              "atk": 496
+            },
+            "87": {
+              "Energy Recharge%": 43.9,
+              "atk": 499
+            },
+            "88": {
+              "Energy Recharge%": 43.9,
+              "atk": 503
+            },
+            "89": {
+              "Energy Recharge%": 43.9,
+              "atk": 506
+            },
+            "9": {
+              "Energy Recharge%": 11.6,
+              "atk": 70
+            },
+            "90": {
+              "Energy Recharge%": 45.9,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Pole_FaesCrystalle",
+          "weaponType": "WEAPON_POLE"
+        },
+        "sha256": "7502a1f9bfafc672b5522bbcd99e2377bcd292d0a08314c073856b7eca34875f",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/13435.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Pole_FaesCrystalle",
+          "name": "Frostbreath",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>20%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>6</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+              "name": "A Cast Real Far",
+              "param_list": [
+                0.2,
+                15,
+                6,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>25%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>7.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+              "name": "A Cast Real Far",
+              "param_list": [
+                0.25,
+                15,
+                7.5,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>30%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>9</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+              "name": "A Cast Real Far",
+              "param_list": [
+                0.3,
+                15,
+                9,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>35%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>10.5</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+              "name": "A Cast Real Far",
+              "param_list": [
+                0.35,
+                15,
+                10.5,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by <color=#99FFFFFF>40%</color> for the next 15s, as well as regenerates <color=#99FFFFFF>12</color> Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+              "name": "A Cast Real Far",
+              "param_list": [
+                0.4,
+                15,
+                12,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_charge_efficiency": {
+              "base": 0.1,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 0.1,
+              "prop_type": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_POLE"
+        },
+        "sha256": "d65e1359a553e9f909be190cd9a55f0255fb3becd7ababb6e50ff0b75f33ed82",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/13435.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Pole_FaesCrystalle",
+          "name": "寒息",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升<color=#99FFFFFF>20%</color>，并为队伍中自己的其他角色恢复<color=#99FFFFFF>6</color>点元素能量。该效果每16秒至多触发一次。",
+              "name": "万顷一掷",
+              "param_list": [
+                0.2,
+                15,
+                6,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升<color=#99FFFFFF>25%</color>，并为队伍中自己的其他角色恢复<color=#99FFFFFF>7.5</color>点元素能量。该效果每16秒至多触发一次。",
+              "name": "万顷一掷",
+              "param_list": [
+                0.25,
+                15,
+                7.5,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升<color=#99FFFFFF>30%</color>，并为队伍中自己的其他角色恢复<color=#99FFFFFF>9</color>点元素能量。该效果每16秒至多触发一次。",
+              "name": "万顷一掷",
+              "param_list": [
+                0.3,
+                15,
+                9,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升<color=#99FFFFFF>35%</color>，并为队伍中自己的其他角色恢复<color=#99FFFFFF>10.5</color>点元素能量。该效果每16秒至多触发一次。",
+              "name": "万顷一掷",
+              "param_list": [
+                0.35,
+                15,
+                10.5,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "触发冰元素或水元素相关反应后的15秒内，装备者的攻击力提升<color=#99FFFFFF>40%</color>，并为队伍中自己的其他角色恢复<color=#99FFFFFF>12</color>点元素能量。该效果每16秒至多触发一次。",
+              "name": "万顷一掷",
+              "param_list": [
+                0.4,
+                15,
+                12,
+                16,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_charge_efficiency": {
+              "base": 0.1,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 0.1,
+              "prop_type": "FIGHT_PROP_CHARGE_EFFICIENCY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_POLE"
+        },
+        "sha256": "cc3ad146b1347e39baee9d2a3ad94298ba904615c8fe20693a62148d3bb3c153",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/13435.json"
+      }
+    }
+  }
+}

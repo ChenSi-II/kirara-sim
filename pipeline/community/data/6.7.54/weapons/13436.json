@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "songofthevigil",
+      "override_id": "13436",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "songofthevigil",
+    "id": "13436",
+    "lunaris_id": "13436"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 43.7349,
+            "levels": {
+              "1": 1,
+              "10": 1.8,
+              "100": 10.324,
+              "11": 1.891,
+              "12": 1.981,
+              "13": 2.072,
+              "14": 2.162,
+              "15": 2.253,
+              "16": 2.345,
+              "17": 2.436,
+              "18": 2.527,
+              "19": 2.619,
+              "2": 1.088,
+              "20": 2.711,
+              "21": 2.803,
+              "22": 2.895,
+              "23": 2.987,
+              "24": 3.08,
+              "25": 3.172,
+              "26": 3.265,
+              "27": 3.358,
+              "28": 3.451,
+              "29": 3.544,
+              "3": 1.176,
+              "30": 3.637,
+              "31": 3.731,
+              "32": 3.824,
+              "33": 3.918,
+              "34": 4.011,
+              "35": 4.105,
+              "36": 4.199,
+              "37": 4.293,
+              "38": 4.387,
+              "39": 4.481,
+              "4": 1.264,
+              "40": 4.575,
+              "41": 4.669,
+              "42": 4.763,
+              "43": 4.858,
+              "44": 4.952,
+              "45": 5.047,
+              "46": 5.142,
+              "47": 5.236,
+              "48": 5.331,
+              "49": 5.426,
+              "5": 1.353,
+              "50": 5.521,
+              "51": 5.616,
+              "52": 5.711,
+              "53": 5.806,
+              "54": 5.901,
+              "55": 5.996,
+              "56": 6.092,
+              "57": 6.187,
+              "58": 6.282,
+              "59": 6.378,
+              "6": 1.442,
+              "60": 6.473,
+              "61": 6.569,
+              "62": 6.664,
+              "63": 6.76,
+              "64": 6.856,
+              "65": 6.951,
+              "66": 7.047,
+              "67": 7.143,
+              "68": 7.239,
+              "69": 7.335,
+              "7": 1.531,
+              "70": 7.431,
+              "71": 7.527,
+              "72": 7.623,
+              "73": 7.719,
+              "74": 7.815,
+              "75": 7.911,
+              "76": 8.007,
+              "77": 8.103,
+              "78": 8.199,
+              "79": 8.296,
+              "8": 1.621,
+              "80": 8.392,
+              "81": 8.488,
+              "82": 8.585,
+              "83": 8.681,
+              "84": 8.777,
+              "85": 8.874,
+              "86": 8.97,
+              "87": 9.067,
+              "88": 9.163,
+              "89": 9.26,
+              "9": 1.71,
+              "90": 9.356,
+              "91": 9.453,
+              "92": 9.55,
+              "93": 9.646,
+              "94": 9.743,
+              "95": 9.84,
+              "96": 9.936,
+              "97": 10.033,
+              "98": 10.13,
+              "99": 10.227
+            }
+          },
+          "fight_prop_element_mastery": {
+            "base": 24,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 43.7349,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_202"
+          },
+          {
+            "init_value": 24,
+            "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+            "type": "GROW_CURVE_CRITICAL_201"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Pole_GlintstonePolearm",
+        "name": "Song of the Vigil",
+        "rarity": 4,
+        "weapon_type": "WEAPON_POLE"
+      },
+      "refinements": {
+        "1": {
+          "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>4</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>20%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Cadence of Days Gone By",
+          "param_list": [
+            4,
+            0.2,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>5</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>25%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Cadence of Days Gone By",
+          "param_list": [
+            5,
+            0.25,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>6</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>30%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Cadence of Days Gone By",
+          "param_list": [
+            6,
+            0.3,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>7</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>35%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Cadence of Days Gone By",
+          "param_list": [
+            7,
+            0.35,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>8</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>40%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Cadence of Days Gone By",
+          "param_list": [
+            8,
+            0.4,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            4.0,
+            0.20000000298023224,
+            9.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            5.0,
+            0.25,
+            9.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            6.0,
+            0.30000001192092896,
+            9.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            7.0,
+            0.3499999940395355,
+            9.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            8.0,
+            0.4000000059604645,
+            9.0,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            4,
+            0.2,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            5,
+            0.25,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            6,
+            0.3,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            7,
+            0.35,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            8,
+            0.4,
+            9,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Song of the Vigil",
+        "nanoka": "Song of the Vigil"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_PURPLE",
+        "nanoka": "QUALITY_PURPLE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_POLE",
+        "nanoka": "WEAPON_POLE"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Song of the Vigil",
+          "passive": {
+            "name": "Cadence of Days Gone By",
+            "refinements": {
+              "1": {
+                "description": "Triggering an Elemental Reaction regenerates 4 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 20% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  4.0,
+                  0.20000000298023224,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "Triggering an Elemental Reaction regenerates 5 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 25% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  5.0,
+                  0.25,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "Triggering an Elemental Reaction regenerates 6 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 30% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  6.0,
+                  0.30000001192092896,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "Triggering an Elemental Reaction regenerates 7 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 35% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  7.0,
+                  0.3499999940395355,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "Triggering an Elemental Reaction regenerates 8 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 40% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  8.0,
+                  0.4000000059604645,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Elemental Mastery": 24,
+              "atk": 44
+            },
+            "10": {
+              "Elemental Mastery": 33,
+              "atk": 79
+            },
+            "11": {
+              "Elemental Mastery": 33,
+              "atk": 83
+            },
+            "12": {
+              "Elemental Mastery": 33,
+              "atk": 87
+            },
+            "13": {
+              "Elemental Mastery": 33,
+              "atk": 91
+            },
+            "14": {
+              "Elemental Mastery": 33,
+              "atk": 95
+            },
+            "15": {
+              "Elemental Mastery": 38,
+              "atk": 99
+            },
+            "16": {
+              "Elemental Mastery": 38,
+              "atk": 103
+            },
+            "17": {
+              "Elemental Mastery": 38,
+              "atk": 107
+            },
+            "18": {
+              "Elemental Mastery": 38,
+              "atk": 111
+            },
+            "19": {
+              "Elemental Mastery": 38,
+              "atk": 115
+            },
+            "2": {
+              "Elemental Mastery": 24,
+              "atk": 48
+            },
+            "20": {
+              "Elemental Mastery": 42,
+              "atk": 119
+            },
+            "21": {
+              "Elemental Mastery": 42,
+              "atk": 148
+            },
+            "22": {
+              "Elemental Mastery": 42,
+              "atk": 153
+            },
+            "23": {
+              "Elemental Mastery": 42,
+              "atk": 157
+            },
+            "24": {
+              "Elemental Mastery": 42,
+              "atk": 161
+            },
+            "25": {
+              "Elemental Mastery": 47,
+              "atk": 165
+            },
+            "26": {
+              "Elemental Mastery": 47,
+              "atk": 169
+            },
+            "27": {
+              "Elemental Mastery": 47,
+              "atk": 173
+            },
+            "28": {
+              "Elemental Mastery": 47,
+              "atk": 177
+            },
+            "29": {
+              "Elemental Mastery": 47,
+              "atk": 181
+            },
+            "3": {
+              "Elemental Mastery": 24,
+              "atk": 51
+            },
+            "30": {
+              "Elemental Mastery": 52,
+              "atk": 185
+            },
+            "31": {
+              "Elemental Mastery": 52,
+              "atk": 189
+            },
+            "32": {
+              "Elemental Mastery": 52,
+              "atk": 193
+            },
+            "33": {
+              "Elemental Mastery": 52,
+              "atk": 197
+            },
+            "34": {
+              "Elemental Mastery": 52,
+              "atk": 201
+            },
+            "35": {
+              "Elemental Mastery": 57,
+              "atk": 205
+            },
+            "36": {
+              "Elemental Mastery": 57,
+              "atk": 210
+            },
+            "37": {
+              "Elemental Mastery": 57,
+              "atk": 214
+            },
+            "38": {
+              "Elemental Mastery": 57,
+              "atk": 218
+            },
+            "39": {
+              "Elemental Mastery": 57,
+              "atk": 222
+            },
+            "4": {
+              "Elemental Mastery": 24,
+              "atk": 55
+            },
+            "40": {
+              "Elemental Mastery": 62,
+              "atk": 226
+            },
+            "41": {
+              "Elemental Mastery": 62,
+              "atk": 256
+            },
+            "42": {
+              "Elemental Mastery": 62,
+              "atk": 260
+            },
+            "43": {
+              "Elemental Mastery": 62,
+              "atk": 264
+            },
+            "44": {
+              "Elemental Mastery": 62,
+              "atk": 268
+            },
+            "45": {
+              "Elemental Mastery": 67,
+              "atk": 273
+            },
+            "46": {
+              "Elemental Mastery": 67,
+              "atk": 277
+            },
+            "47": {
+              "Elemental Mastery": 67,
+              "atk": 281
+            },
+            "48": {
+              "Elemental Mastery": 67,
+              "atk": 285
+            },
+            "49": {
+              "Elemental Mastery": 67,
+              "atk": 289
+            },
+            "5": {
+              "Elemental Mastery": 28,
+              "atk": 59
+            },
+            "50": {
+              "Elemental Mastery": 71,
+              "atk": 293
+            },
+            "51": {
+              "Elemental Mastery": 71,
+              "atk": 323
+            },
+            "52": {
+              "Elemental Mastery": 71,
+              "atk": 328
+            },
+            "53": {
+              "Elemental Mastery": 71,
+              "atk": 332
+            },
+            "54": {
+              "Elemental Mastery": 71,
+              "atk": 336
+            },
+            "55": {
+              "Elemental Mastery": 76,
+              "atk": 340
+            },
+            "56": {
+              "Elemental Mastery": 76,
+              "atk": 344
+            },
+            "57": {
+              "Elemental Mastery": 76,
+              "atk": 348
+            },
+            "58": {
+              "Elemental Mastery": 76,
+              "atk": 353
+            },
+            "59": {
+              "Elemental Mastery": 76,
+              "atk": 357
+            },
+            "6": {
+              "Elemental Mastery": 28,
+              "atk": 63
+            },
+            "60": {
+              "Elemental Mastery": 81,
+              "atk": 361
+            },
+            "61": {
+              "Elemental Mastery": 81,
+              "atk": 391
+            },
+            "62": {
+              "Elemental Mastery": 81,
+              "atk": 395
+            },
+            "63": {
+              "Elemental Mastery": 81,
+              "atk": 399
+            },
+            "64": {
+              "Elemental Mastery": 81,
+              "atk": 404
+            },
+            "65": {
+              "Elemental Mastery": 86,
+              "atk": 408
+            },
+            "66": {
+              "Elemental Mastery": 86,
+              "atk": 412
+            },
+            "67": {
+              "Elemental Mastery": 86,
+              "atk": 416
+            },
+            "68": {
+              "Elemental Mastery": 86,
+              "atk": 420
+            },
+            "69": {
+              "Elemental Mastery": 86,
+              "atk": 424
+            },
+            "7": {
+              "Elemental Mastery": 28,
+              "atk": 67
+            },
+            "70": {
+              "Elemental Mastery": 91,
+              "atk": 429
+            },
+            "71": {
+              "Elemental Mastery": 91,
+              "atk": 459
+            },
+            "72": {
+              "Elemental Mastery": 91,
+              "atk": 463
+            },
+            "73": {
+              "Elemental Mastery": 91,
+              "atk": 467
+            },
+            "74": {
+              "Elemental Mastery": 91,
+              "atk": 471
+            },
+            "75": {
+              "Elemental Mastery": 96,
+              "atk": 476
+            },
+            "76": {
+              "Elemental Mastery": 96,
+              "atk": 480
+            },
+            "77": {
+              "Elemental Mastery": 96,
+              "atk": 484
+            },
+            "78": {
+              "Elemental Mastery": 96,
+              "atk": 488
+            },
+            "79": {
+              "Elemental Mastery": 96,
+              "atk": 493
+            },
+            "8": {
+              "Elemental Mastery": 28,
+              "atk": 71
+            },
+            "80": {
+              "Elemental Mastery": 101,
+              "atk": 497
+            },
+            "81": {
+              "Elemental Mastery": 101,
+              "atk": 527
+            },
+            "82": {
+              "Elemental Mastery": 101,
+              "atk": 531
+            },
+            "83": {
+              "Elemental Mastery": 101,
+              "atk": 535
+            },
+            "84": {
+              "Elemental Mastery": 101,
+              "atk": 539
+            },
+            "85": {
+              "Elemental Mastery": 105,
+              "atk": 544
+            },
+            "86": {
+              "Elemental Mastery": 105,
+              "atk": 548
+            },
+            "87": {
+              "Elemental Mastery": 105,
+              "atk": 552
+            },
+            "88": {
+              "Elemental Mastery": 105,
+              "atk": 556
+            },
+            "89": {
+              "Elemental Mastery": 105,
+              "atk": 561
+            },
+            "9": {
+              "Elemental Mastery": 28,
+              "atk": 75
+            },
+            "90": {
+              "Elemental Mastery": 110,
+              "atk": 565
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Pole_GlintstonePolearm",
+          "weaponType": "WEAPON_POLE"
+        },
+        "sha256": "695664534e31853e8048b76efdefca9638dcf2f1eba2291b30aad4cfcd90295f",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/13436.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "戍望谣歌",
+          "passive": {
+            "name": "旧日和弦",
+            "refinements": {
+              "1": {
+                "description": "触发元素反应后，为装备者恢复4点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升20%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  4.0,
+                  0.20000000298023224,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "触发元素反应后，为装备者恢复5点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升25%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  5.0,
+                  0.25,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "触发元素反应后，为装备者恢复6点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升30%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  6.0,
+                  0.30000001192092896,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "触发元素反应后，为装备者恢复7点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升35%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  7.0,
+                  0.3499999940395355,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "触发元素反应后，为装备者恢复8点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升40%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  8.0,
+                  0.4000000059604645,
+                  9.0,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Elemental Mastery": 24,
+              "atk": 44
+            },
+            "10": {
+              "Elemental Mastery": 33,
+              "atk": 79
+            },
+            "11": {
+              "Elemental Mastery": 33,
+              "atk": 83
+            },
+            "12": {
+              "Elemental Mastery": 33,
+              "atk": 87
+            },
+            "13": {
+              "Elemental Mastery": 33,
+              "atk": 91
+            },
+            "14": {
+              "Elemental Mastery": 33,
+              "atk": 95
+            },
+            "15": {
+              "Elemental Mastery": 38,
+              "atk": 99
+            },
+            "16": {
+              "Elemental Mastery": 38,
+              "atk": 103
+            },
+            "17": {
+              "Elemental Mastery": 38,
+              "atk": 107
+            },
+            "18": {
+              "Elemental Mastery": 38,
+              "atk": 111
+            },
+            "19": {
+              "Elemental Mastery": 38,
+              "atk": 115
+            },
+            "2": {
+              "Elemental Mastery": 24,
+              "atk": 48
+            },
+            "20": {
+              "Elemental Mastery": 42,
+              "atk": 119
+            },
+            "21": {
+              "Elemental Mastery": 42,
+              "atk": 148
+            },
+            "22": {
+              "Elemental Mastery": 42,
+              "atk": 153
+            },
+            "23": {
+              "Elemental Mastery": 42,
+              "atk": 157
+            },
+            "24": {
+              "Elemental Mastery": 42,
+              "atk": 161
+            },
+            "25": {
+              "Elemental Mastery": 47,
+              "atk": 165
+            },
+            "26": {
+              "Elemental Mastery": 47,
+              "atk": 169
+            },
+            "27": {
+              "Elemental Mastery": 47,
+              "atk": 173
+            },
+            "28": {
+              "Elemental Mastery": 47,
+              "atk": 177
+            },
+            "29": {
+              "Elemental Mastery": 47,
+              "atk": 181
+            },
+            "3": {
+              "Elemental Mastery": 24,
+              "atk": 51
+            },
+            "30": {
+              "Elemental Mastery": 52,
+              "atk": 185
+            },
+            "31": {
+              "Elemental Mastery": 52,
+              "atk": 189
+            },
+            "32": {
+              "Elemental Mastery": 52,
+              "atk": 193
+            },
+            "33": {
+              "Elemental Mastery": 52,
+              "atk": 197
+            },
+            "34": {
+              "Elemental Mastery": 52,
+              "atk": 201
+            },
+            "35": {
+              "Elemental Mastery": 57,
+              "atk": 205
+            },
+            "36": {
+              "Elemental Mastery": 57,
+              "atk": 210
+            },
+            "37": {
+              "Elemental Mastery": 57,
+              "atk": 214
+            },
+            "38": {
+              "Elemental Mastery": 57,
+              "atk": 218
+            },
+            "39": {
+              "Elemental Mastery": 57,
+              "atk": 222
+            },
+            "4": {
+              "Elemental Mastery": 24,
+              "atk": 55
+            },
+            "40": {
+              "Elemental Mastery": 62,
+              "atk": 226
+            },
+            "41": {
+              "Elemental Mastery": 62,
+              "atk": 256
+            },
+            "42": {
+              "Elemental Mastery": 62,
+              "atk": 260
+            },
+            "43": {
+              "Elemental Mastery": 62,
+              "atk": 264
+            },
+            "44": {
+              "Elemental Mastery": 62,
+              "atk": 268
+            },
+            "45": {
+              "Elemental Mastery": 67,
+              "atk": 273
+            },
+            "46": {
+              "Elemental Mastery": 67,
+              "atk": 277
+            },
+            "47": {
+              "Elemental Mastery": 67,
+              "atk": 281
+            },
+            "48": {
+              "Elemental Mastery": 67,
+              "atk": 285
+            },
+            "49": {
+              "Elemental Mastery": 67,
+              "atk": 289
+            },
+            "5": {
+              "Elemental Mastery": 28,
+              "atk": 59
+            },
+            "50": {
+              "Elemental Mastery": 71,
+              "atk": 293
+            },
+            "51": {
+              "Elemental Mastery": 71,
+              "atk": 323
+            },
+            "52": {
+              "Elemental Mastery": 71,
+              "atk": 328
+            },
+            "53": {
+              "Elemental Mastery": 71,
+              "atk": 332
+            },
+            "54": {
+              "Elemental Mastery": 71,
+              "atk": 336
+            },
+            "55": {
+              "Elemental Mastery": 76,
+              "atk": 340
+            },
+            "56": {
+              "Elemental Mastery": 76,
+              "atk": 344
+            },
+            "57": {
+              "Elemental Mastery": 76,
+              "atk": 348
+            },
+            "58": {
+              "Elemental Mastery": 76,
+              "atk": 353
+            },
+            "59": {
+              "Elemental Mastery": 76,
+              "atk": 357
+            },
+            "6": {
+              "Elemental Mastery": 28,
+              "atk": 63
+            },
+            "60": {
+              "Elemental Mastery": 81,
+              "atk": 361
+            },
+            "61": {
+              "Elemental Mastery": 81,
+              "atk": 391
+            },
+            "62": {
+              "Elemental Mastery": 81,
+              "atk": 395
+            },
+            "63": {
+              "Elemental Mastery": 81,
+              "atk": 399
+            },
+            "64": {
+              "Elemental Mastery": 81,
+              "atk": 404
+            },
+            "65": {
+              "Elemental Mastery": 86,
+              "atk": 408
+            },
+            "66": {
+              "Elemental Mastery": 86,
+              "atk": 412
+            },
+            "67": {
+              "Elemental Mastery": 86,
+              "atk": 416
+            },
+            "68": {
+              "Elemental Mastery": 86,
+              "atk": 420
+            },
+            "69": {
+              "Elemental Mastery": 86,
+              "atk": 424
+            },
+            "7": {
+              "Elemental Mastery": 28,
+              "atk": 67
+            },
+            "70": {
+              "Elemental Mastery": 91,
+              "atk": 429
+            },
+            "71": {
+              "Elemental Mastery": 91,
+              "atk": 459
+            },
+            "72": {
+              "Elemental Mastery": 91,
+              "atk": 463
+            },
+            "73": {
+              "Elemental Mastery": 91,
+              "atk": 467
+            },
+            "74": {
+              "Elemental Mastery": 91,
+              "atk": 471
+            },
+            "75": {
+              "Elemental Mastery": 96,
+              "atk": 476
+            },
+            "76": {
+              "Elemental Mastery": 96,
+              "atk": 480
+            },
+            "77": {
+              "Elemental Mastery": 96,
+              "atk": 484
+            },
+            "78": {
+              "Elemental Mastery": 96,
+              "atk": 488
+            },
+            "79": {
+              "Elemental Mastery": 96,
+              "atk": 493
+            },
+            "8": {
+              "Elemental Mastery": 28,
+              "atk": 71
+            },
+            "80": {
+              "Elemental Mastery": 101,
+              "atk": 497
+            },
+            "81": {
+              "Elemental Mastery": 101,
+              "atk": 527
+            },
+            "82": {
+              "Elemental Mastery": 101,
+              "atk": 531
+            },
+            "83": {
+              "Elemental Mastery": 101,
+              "atk": 535
+            },
+            "84": {
+              "Elemental Mastery": 101,
+              "atk": 539
+            },
+            "85": {
+              "Elemental Mastery": 105,
+              "atk": 544
+            },
+            "86": {
+              "Elemental Mastery": 105,
+              "atk": 548
+            },
+            "87": {
+              "Elemental Mastery": 105,
+              "atk": 552
+            },
+            "88": {
+              "Elemental Mastery": 105,
+              "atk": 556
+            },
+            "89": {
+              "Elemental Mastery": 105,
+              "atk": 561
+            },
+            "9": {
+              "Elemental Mastery": 28,
+              "atk": 75
+            },
+            "90": {
+              "Elemental Mastery": 110,
+              "atk": 565
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Pole_GlintstonePolearm",
+          "weaponType": "WEAPON_POLE"
+        },
+        "sha256": "efc59951f24b039c590026b50e0e95b110406aca8820d4b16a860796d85afcfb",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/13436.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Pole_GlintstonePolearm",
+          "name": "Song of the Vigil",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>4</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>20%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Cadence of Days Gone By",
+              "param_list": [
+                4,
+                0.2,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>5</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>25%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Cadence of Days Gone By",
+              "param_list": [
+                5,
+                0.25,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>6</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>30%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Cadence of Days Gone By",
+              "param_list": [
+                6,
+                0.3,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>7</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>35%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Cadence of Days Gone By",
+              "param_list": [
+                7,
+                0.35,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "Triggering an Elemental Reaction regenerates <color=#99FFFFFF>8</color> Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>40%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Cadence of Days Gone By",
+              "param_list": [
+                8,
+                0.4,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 43.7349,
+              "levels": {
+                "1": 1,
+                "10": 1.8,
+                "100": 10.324,
+                "11": 1.891,
+                "12": 1.981,
+                "13": 2.072,
+                "14": 2.162,
+                "15": 2.253,
+                "16": 2.345,
+                "17": 2.436,
+                "18": 2.527,
+                "19": 2.619,
+                "2": 1.088,
+                "20": 2.711,
+                "21": 2.803,
+                "22": 2.895,
+                "23": 2.987,
+                "24": 3.08,
+                "25": 3.172,
+                "26": 3.265,
+                "27": 3.358,
+                "28": 3.451,
+                "29": 3.544,
+                "3": 1.176,
+                "30": 3.637,
+                "31": 3.731,
+                "32": 3.824,
+                "33": 3.918,
+                "34": 4.011,
+                "35": 4.105,
+                "36": 4.199,
+                "37": 4.293,
+                "38": 4.387,
+                "39": 4.481,
+                "4": 1.264,
+                "40": 4.575,
+                "41": 4.669,
+                "42": 4.763,
+                "43": 4.858,
+                "44": 4.952,
+                "45": 5.047,
+                "46": 5.142,
+                "47": 5.236,
+                "48": 5.331,
+                "49": 5.426,
+                "5": 1.353,
+                "50": 5.521,
+                "51": 5.616,
+                "52": 5.711,
+                "53": 5.806,
+                "54": 5.901,
+                "55": 5.996,
+                "56": 6.092,
+                "57": 6.187,
+                "58": 6.282,
+                "59": 6.378,
+                "6": 1.442,
+                "60": 6.473,
+                "61": 6.569,
+                "62": 6.664,
+                "63": 6.76,
+                "64": 6.856,
+                "65": 6.951,
+                "66": 7.047,
+                "67": 7.143,
+                "68": 7.239,
+                "69": 7.335,
+                "7": 1.531,
+                "70": 7.431,
+                "71": 7.527,
+                "72": 7.623,
+                "73": 7.719,
+                "74": 7.815,
+                "75": 7.911,
+                "76": 8.007,
+                "77": 8.103,
+                "78": 8.199,
+                "79": 8.296,
+                "8": 1.621,
+                "80": 8.392,
+                "81": 8.488,
+                "82": 8.585,
+                "83": 8.681,
+                "84": 8.777,
+                "85": 8.874,
+                "86": 8.97,
+                "87": 9.067,
+                "88": 9.163,
+                "89": 9.26,
+                "9": 1.71,
+                "90": 9.356,
+                "91": 9.453,
+                "92": 9.55,
+                "93": 9.646,
+                "94": 9.743,
+                "95": 9.84,
+                "96": 9.936,
+                "97": 10.033,
+                "98": 10.13,
+                "99": 10.227
+              }
+            },
+            "fight_prop_element_mastery": {
+              "base": 24,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 43.7349,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+              "init_value": 24,
+              "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_POLE"
+        },
+        "sha256": "d3b27fe364135d5207da486b5bc56f16e1958ea9a9b02d0f924d8022fc440177",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/13436.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Pole_GlintstonePolearm",
+          "name": "戍望谣歌",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "触发元素反应后，为装备者恢复<color=#99FFFFFF>4</color>点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>20%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "旧日和弦",
+              "param_list": [
+                4,
+                0.2,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "触发元素反应后，为装备者恢复<color=#99FFFFFF>5</color>点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>25%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "旧日和弦",
+              "param_list": [
+                5,
+                0.25,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "触发元素反应后，为装备者恢复<color=#99FFFFFF>6</color>点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>30%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "旧日和弦",
+              "param_list": [
+                6,
+                0.3,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "触发元素反应后，为装备者恢复<color=#99FFFFFF>7</color>点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>35%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "旧日和弦",
+              "param_list": [
+                7,
+                0.35,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "触发元素反应后，为装备者恢复<color=#99FFFFFF>8</color>点元素能量，该效果每9秒至多触发一次；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>40%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "旧日和弦",
+              "param_list": [
+                8,
+                0.4,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 43.7349,
+              "levels": {
+                "1": 1,
+                "10": 1.8,
+                "100": 10.324,
+                "11": 1.891,
+                "12": 1.981,
+                "13": 2.072,
+                "14": 2.162,
+                "15": 2.253,
+                "16": 2.345,
+                "17": 2.436,
+                "18": 2.527,
+                "19": 2.619,
+                "2": 1.088,
+                "20": 2.711,
+                "21": 2.803,
+                "22": 2.895,
+                "23": 2.987,
+                "24": 3.08,
+                "25": 3.172,
+                "26": 3.265,
+                "27": 3.358,
+                "28": 3.451,
+                "29": 3.544,
+                "3": 1.176,
+                "30": 3.637,
+                "31": 3.731,
+                "32": 3.824,
+                "33": 3.918,
+                "34": 4.011,
+                "35": 4.105,
+                "36": 4.199,
+                "37": 4.293,
+                "38": 4.387,
+                "39": 4.481,
+                "4": 1.264,
+                "40": 4.575,
+                "41": 4.669,
+                "42": 4.763,
+                "43": 4.858,
+                "44": 4.952,
+                "45": 5.047,
+                "46": 5.142,
+                "47": 5.236,
+                "48": 5.331,
+                "49": 5.426,
+                "5": 1.353,
+                "50": 5.521,
+                "51": 5.616,
+                "52": 5.711,
+                "53": 5.806,
+                "54": 5.901,
+                "55": 5.996,
+                "56": 6.092,
+                "57": 6.187,
+                "58": 6.282,
+                "59": 6.378,
+                "6": 1.442,
+                "60": 6.473,
+                "61": 6.569,
+                "62": 6.664,
+                "63": 6.76,
+                "64": 6.856,
+                "65": 6.951,
+                "66": 7.047,
+                "67": 7.143,
+                "68": 7.239,
+                "69": 7.335,
+                "7": 1.531,
+                "70": 7.431,
+                "71": 7.527,
+                "72": 7.623,
+                "73": 7.719,
+                "74": 7.815,
+                "75": 7.911,
+                "76": 8.007,
+                "77": 8.103,
+                "78": 8.199,
+                "79": 8.296,
+                "8": 1.621,
+                "80": 8.392,
+                "81": 8.488,
+                "82": 8.585,
+                "83": 8.681,
+                "84": 8.777,
+                "85": 8.874,
+                "86": 8.97,
+                "87": 9.067,
+                "88": 9.163,
+                "89": 9.26,
+                "9": 1.71,
+                "90": 9.356,
+                "91": 9.453,
+                "92": 9.55,
+                "93": 9.646,
+                "94": 9.743,
+                "95": 9.84,
+                "96": 9.936,
+                "97": 10.033,
+                "98": 10.13,
+                "99": 10.227
+              }
+            },
+            "fight_prop_element_mastery": {
+              "base": 24,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 43.7349,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+              "init_value": 24,
+              "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_POLE"
+        },
+        "sha256": "8d859a8efa594fa91d73dad0437b58bdb77a8eea950156a749f25703a512ae4c",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/13436.json"
+      }
+    }
+  }
+}

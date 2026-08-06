@@ -41,6 +41,8 @@ type Config struct {
 	Use       string           `yaml:"use,omitempty"`
 	Kind      Kind             `yaml:"kind,omitempty"`
 	Name      string           `yaml:"name,omitempty"`
+	Source    string           `yaml:"source,omitempty"`
+	Version   string           `yaml:"version,omitempty"`
 	Override  Override         `yaml:"override,omitempty"`
 	Shortcuts []string         `yaml:"shortcuts,omitempty"`
 	Combat    CombatInfo       `yaml:"combat,omitempty"`

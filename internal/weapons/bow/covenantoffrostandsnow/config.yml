@@ -1,0 +1,8 @@
+use: pipeline
+kind: weapon
+name: covenantoffrostandsnow
+source: community
+version: 6.7.54
+
+override:
+  id: 15436

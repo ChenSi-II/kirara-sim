@@ -1,0 +1,8 @@
+use: pipeline
+kind: weapon
+name: bladeofatonement
+source: community
+version: 6.7.54
+
+override:
+  id: 12436

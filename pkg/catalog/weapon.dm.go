@@ -865,6 +865,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.ATeaspoonOfTranscendence: {
+		Id:          12516,
+		Key:         "ateaspoonoftranscendence",
+		Rarity:      5,
+		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
+		ImageName:   "UI_EquipIcon_Claymore_CrystallineSword_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 47.537,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_302,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+					InitialValue: 0.096,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    31.1,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    62.2,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    93.4,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    124.5,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    186.7,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.AthameArtis: {
 		Id:          11518,
 		Key:         "athameartis",
@@ -2042,6 +2122,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.BladeOfAtonement: {
+		Id:          12436,
+		Key:         "bladeofatonement",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
+		ImageName:   "UI_EquipIcon_Claymore_GlintstoneClaymore_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 43.7349,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_202,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.BloodsoakedRuins: {
 		Id:          13516,
 		Key:         "bloodsoakedruins",
@@ -2602,6 +2762,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.ClashOfKings: {
+		Id:          14435,
+		Key:         "clashofkings",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_CATALYST,
+		ImageName:   "UI_EquipIcon_Catalyst_SandMemoria_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.Cloudforged: {
 		Id:          15426,
 		Key:         "cloudforged",
@@ -2836,6 +3076,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
 							Value:    116.7,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.CovenantOfFrostAndSnow: {
+		Id:          15436,
+		Key:         "covenantoffrostandsnow",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_BOW,
+		ImageName:   "UI_EquipIcon_Bow_GlintstoneBow_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_DEFENSE_PERCENT,
+					InitialValue: 0.1126,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
 						},
 					},
 				},
@@ -3482,6 +3802,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.DisasterAndRemorse: {
+		Id:          13517,
+		Key:         "disasterandremorse",
+		Rarity:      5,
+		WeaponClass: model.WeaponType_WEAPON_POLE,
+		ImageName:   "UI_EquipIcon_Pole_Carbine_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 47.537,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_302,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.048,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    31.1,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    62.2,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    93.4,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    124.5,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    186.7,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.DodocoTales: {
 		Id:          14413,
 		Key:         "dodocotales",
@@ -3859,6 +4259,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.EchoesOfTheHeart: {
+		Id:          14436,
+		Key:         "echoesoftheheart",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_CATALYST,
+		ImageName:   "UI_EquipIcon_Catalyst_GlintstoneCatalyst_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 43.7349,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_202,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.ElegyForTheEnd: {
 		Id:          15503,
 		Key:         "elegyfortheend",
@@ -3933,6 +4413,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
 							Value:    186.7,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.Emberwell: {
+		Id:          11436,
+		Key:         "emberwell",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
+		ImageName:   "UI_EquipIcon_Sword_GlintstoneSword_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
+					InitialValue: 36.0,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
 						},
 					},
 				},
@@ -4275,6 +4835,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 				{
 					PropType:     model.FightPropType_FIGHT_PROP_HP_PERCENT,
 					InitialValue: 0.108,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    31.1,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    62.2,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    93.4,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    124.5,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    186.7,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.ExaiphanesBlade: {
+		Id:          11521,
+		Key:         "exaiphanesblade",
+		Rarity:      5,
+		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
+		ImageName:   "UI_EquipIcon_Sword_WeaponQuestSnezhnaya_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 45.9364,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_301,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.072,
 					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
 				},
 			},
@@ -5859,6 +6499,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.ForgedByTheGoldenMelody: {
+		Id:          12435,
+		Key:         "forgedbythegoldenmelody",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_CLAYMORE,
+		ImageName:   "UI_EquipIcon_Claymore_EscapeWheel_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.FracturedHalo: {
 		Id:          13515,
 		Key:         "fracturedhalo",
@@ -6035,6 +6755,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 				{
 					PropType:     model.FightPropType_FIGHT_PROP_ATTACK_PERCENT,
 					InitialValue: 0.09,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.Frostbreath: {
+		Id:          13435,
+		Key:         "frostbreath",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_POLE,
+		ImageName:   "UI_EquipIcon_Pole_FaesCrystalle_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CHARGE_EFFICIENCY,
+					InitialValue: 0.1,
 					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
 				},
 			},
@@ -6819,6 +7619,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.HereticsMoltenBlade: {
+		Id:          11435,
+		Key:         "hereticsmoltenblade",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
+		ImageName:   "UI_EquipIcon_Sword_SerpentTooth_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.HuntersBow: {
 		Id:          15101,
 		Key:         "huntersbow",
@@ -7247,6 +8127,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
 							Value:    186.7,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.JadeVista: {
+		Id:          15435,
+		Key:         "jadevista",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_BOW,
+		ImageName:   "UI_EquipIcon_Bow_ShatteredMirror_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 42.401,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_201,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.06,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
 						},
 					},
 				},
@@ -7727,6 +8687,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
 							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.LightbearingMoonshard: {
+		Id:          11519,
+		Key:         "lightbearingmoonshard",
+		Rarity:      5,
+		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
+		ImageName:   "UI_EquipIcon_Sword_SilverwareSaw_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 44.3358,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_304,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL_HURT,
+					InitialValue: 0.192,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    31.1,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    62.2,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    93.4,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    124.5,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    186.7,
 						},
 					},
 				},
@@ -14281,6 +15321,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 			},
 		},
 	},
+	keys.SongOfTheVigil: {
+		Id:          13436,
+		Key:         "songofthevigil",
+		Rarity:      4,
+		WeaponClass: model.WeaponType_WEAPON_POLE,
+		ImageName:   "UI_EquipIcon_Pole_GlintstonePolearm_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 43.7349,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_202,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_ELEMENT_MASTERY,
+					InitialValue: 24.0,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_201,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    25.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    51.9,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    77.8,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    103.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    129.7,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+			},
+		},
+	},
 	keys.SplendorOfTranquilWaters: {
 		Id:          11513,
 		Key:         "splendoroftranquilwaters",
@@ -17772,6 +18892,86 @@ var WeaponMap = map[keys.Weapon]*model.WeaponData{
 						{
 							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
 							Value:    116.7,
+						},
+					},
+				},
+			},
+		},
+	},
+	keys.WhitelakeFrostfeather: {
+		Id:          11520,
+		Key:         "whitelakefrostfeather",
+		Rarity:      5,
+		WeaponClass: model.WeaponType_WEAPON_SWORD_ONE_HAND,
+		ImageName:   "UI_EquipIcon_Sword_Swanlake_Awaken",
+		BaseStats: &model.WeaponStatsData{
+			BaseProps: []*model.WeaponProp{
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+					InitialValue: 47.537,
+					Curve:        model.GrowCurveType_GROW_CURVE_ATTACK_302,
+				},
+				{
+					PropType:     model.FightPropType_FIGHT_PROP_CRITICAL,
+					InitialValue: 0.048,
+					Curve:        model.GrowCurveType_GROW_CURVE_CRITICAL_301,
+				},
+			},
+			PromoData: []*model.PromotionData{
+				{
+					MaxLevel: 20,
+				},
+				{
+					MaxLevel: 40,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    31.1,
+						},
+					},
+				},
+				{
+					MaxLevel: 50,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    62.2,
+						},
+					},
+				},
+				{
+					MaxLevel: 60,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    93.4,
+						},
+					},
+				},
+				{
+					MaxLevel: 70,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    124.5,
+						},
+					},
+				},
+				{
+					MaxLevel: 80,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    155.6,
+						},
+					},
+				},
+				{
+					MaxLevel: 90,
+					AddProps: []*model.PromotionAddProp{
+						{
+							PropType: model.FightPropType_FIGHT_PROP_BASE_ATTACK,
+							Value:    186.7,
 						},
 					},
 				},

@@ -17,15 +17,26 @@ func CalcReactionBaseDmg(lvl int) float64 {
 	return reactionLvlBase[idx]
 }
 
-func CalcLunarReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em float64) float64 {
+func CalcSpecialReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em float64) float64 {
 	var reactionMultiplier float64
 	switch atk.AttackTag {
 	case attacks.AttackTagReactionLunarCharge:
 		reactionMultiplier = 3
 	case attacks.AttackTagReactionLunarCrystallize:
 		reactionMultiplier = 1.6
+	case attacks.AttackTagReactionStarSuperconduct,
+		attacks.AttackTagReactionStarDiffusionCryo:
+		reactionMultiplier = atk.Mult
+	case attacks.AttackTagReactionStarDiffusionAnemo:
+		reactionMultiplier = 0.75
 	}
 	return (reactionMultiplier*(1+((6*em)/(2000+em))+reactBonus)*CalcReactionBaseDmg(lvl)*(1+atk.BaseDmgBonus) + atk.FlatDmg) * (1 + atk.Elevation)
+}
+
+// CalcLunarReactionDmg is kept for callers outside the core package. New
+// Lunar-like reactions should use CalcSpecialReactionDmg.
+func CalcLunarReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em float64) float64 {
+	return CalcSpecialReactionDmg(lvl, reactBonus, atk, em)
 }
 
 func CalcReactionDmg(lvl int, src reactionBonusSrc, atk info.AttackInfo, em float64) (float64, info.Snapshot) {

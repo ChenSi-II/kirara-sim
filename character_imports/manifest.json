@@ -12,8 +12,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000148.json",
       "lunaris_url": "https://lunaris.moe/character/10000148",
       "nanoka_query": "Alyosha 10000148",
-      "status": "compile-ready",
-      "simulation_level": "basic-simulation-ready",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -21,9 +21,13 @@
         "particle observations pending verification; Lunaris is the temporary default"
       ],
       "missing_core_support": [],
-      "references": [],
+      "references": [
+        "internal/characters/fischl",
+        "internal/characters/gorou"
+      ],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -37,8 +41,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000110.json",
       "lunaris_url": "https://lunaris.moe/character/10000110",
       "nanoka_query": "Iansan 10000110",
-      "status": "compile-ready",
-      "simulation_level": "basic-simulation-ready",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -46,9 +50,13 @@
         "particle observations pending verification; Lunaris is the temporary default"
       ],
       "missing_core_support": [],
-      "references": [],
+      "references": [
+        "internal/characters/varesa",
+        "internal/characters/xilonen"
+      ],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -62,8 +70,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000113.json",
       "lunaris_url": "https://lunaris.moe/character/10000113",
       "nanoka_query": "Ifa 10000113",
-      "status": "compile-ready",
-      "simulation_level": "basic-simulation-ready",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -71,9 +79,13 @@
         "particle observations pending verification; Lunaris is the temporary default"
       ],
       "missing_core_support": [],
-      "references": [],
+      "references": [
+        "internal/characters/chasca",
+        "internal/characters/sayu"
+      ],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -87,21 +99,22 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000127.json",
       "lunaris_url": "https://lunaris.moe/character/10000127",
       "nanoka_query": "Illuga 10000127",
-      "status": "compile-ready",
-      "simulation_level": "partial-simulation",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
         "runtime state-machine ordering, snapshot timing, and server-only logic",
         "particle observations pending verification; Lunaris is the temporary default"
       ],
-      "missing_core_support": [
-        "Moonsign state/query",
-        "Ascendant Gleam state"
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/albedo",
+        "internal/characters/gorou"
       ],
-      "references": [],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -115,21 +128,22 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000124.json",
       "lunaris_url": "https://lunaris.moe/character/10000124",
       "nanoka_query": "Jahoda 10000124",
-      "status": "compile-ready",
-      "simulation_level": "partial-simulation",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
         "runtime state-machine ordering, snapshot timing, and server-only logic",
         "particle observations pending verification; Lunaris is the temporary default"
       ],
-      "missing_core_support": [
-        "Moonsign state/query",
-        "Ascendant Gleam state"
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/heizou",
+        "internal/characters/sayu"
       ],
-      "references": [],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -143,8 +157,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000100.json",
       "lunaris_url": "https://lunaris.moe/character/10000100",
       "nanoka_query": "Kachina 10000100",
-      "status": "compile-ready",
-      "simulation_level": "basic-simulation-ready",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -152,9 +166,13 @@
         "particle observations pending verification; Lunaris is the temporary default"
       ],
       "missing_core_support": [],
-      "references": [],
+      "references": [
+        "internal/characters/albedo",
+        "internal/characters/gorou"
+      ],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -168,21 +186,25 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000130.json",
       "lunaris_url": "https://lunaris.moe/character/10000130",
       "nanoka_query": "Linnea 10000130",
-      "status": "compile-ready",
-      "simulation_level": "partial-simulation",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
         "runtime state-machine ordering, snapshot timing, and server-only logic",
         "particle observations pending verification; Lunaris is the temporary default"
       ],
-      "missing_core_support": [
-        "Moonsign state/query",
-        "Ascendant Gleam state"
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/columbina",
+        "internal/characters/flins",
+        "internal/characters/gorou",
+        "internal/characters/kokomi",
+        "pkg/reactable/lunarcrystallize.go"
       ],
-      "references": [],
       "todos": [
-        "Implement confirmed passives and constellations beyond the conservative direct-damage baseline",
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ]
     },
@@ -193,4 +215,198 @@
       "element": "Cryo",
       "weapon": "Polearm",
       "data_version": "6.7.54",
-      "source_path": "pipeline/community/data/6.7.54/character
+      "source_path": "pipeline/community/data/6.7.54/characters/10000129.json",
+      "lunaris_url": "https://lunaris.moe/character/10000129",
+      "nanoka_query": "Lohen 10000129",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/ayaka",
+        "internal/characters/tartaglia"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
+      ]
+    },
+    {
+      "id": 10000122,
+      "name": "nefer",
+      "display_name": "Nefer",
+      "element": "Dendro",
+      "weapon": "Catalyst",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000122.json",
+      "lunaris_url": "https://lunaris.moe/character/10000122",
+      "nanoka_query": "Nefer 10000122",
+      "status": "review-ready",
+      "simulation_level": "partial-simulation",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [
+        "Seed of Deceit entity"
+      ],
+      "references": [
+        "internal/characters/columbina",
+        "internal/characters/nahida",
+        "pkg/reactable/bloom.go"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering",
+        "Implement Seed of Deceit entity"
+      ]
+    },
+    {
+      "id": 10000150,
+      "name": "odette",
+      "display_name": "Odette",
+      "element": "Cryo",
+      "weapon": "Sword",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000150.json",
+      "lunaris_url": "https://lunaris.moe/character/10000150",
+      "nanoka_query": "Odette 10000150",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/fischl",
+        "pkg/core/star_reaction.go"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
+      ]
+    },
+    {
+      "id": 10000132,
+      "name": "prune",
+      "display_name": "Prune",
+      "element": "Anemo",
+      "weapon": "Catalyst",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000132.json",
+      "lunaris_url": "https://lunaris.moe/character/10000132",
+      "nanoka_query": "Prune 10000132",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/heizou",
+        "internal/characters/sayu"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
+      ]
+    },
+    {
+      "id": 10000133,
+      "name": "sandrone",
+      "display_name": "Sandrone",
+      "element": "Cryo",
+      "weapon": "Claymore",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000133.json",
+      "lunaris_url": "https://lunaris.moe/character/10000133",
+      "nanoka_query": "Sandrone 10000133",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/fischl",
+        "pkg/core/star_reaction.go"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
+      ]
+    },
+    {
+      "id": 10000128,
+      "name": "varka",
+      "display_name": "Varka",
+      "element": "Anemo",
+      "weapon": "Claymore",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000128.json",
+      "lunaris_url": "https://lunaris.moe/character/10000128",
+      "nanoka_query": "Varka 10000128",
+      "status": "existing",
+      "simulation_level": "unknown",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [],
+      "todos": []
+    },
+    {
+      "id": 10000126,
+      "name": "zibai",
+      "display_name": "Zibai",
+      "element": "Geo",
+      "weapon": "Sword",
+      "data_version": "6.7.54",
+      "source_path": "pipeline/community/data/6.7.54/characters/10000126.json",
+      "lunaris_url": "https://lunaris.moe/character/10000126",
+      "nanoka_query": "Zibai 10000126",
+      "status": "review-ready",
+      "simulation_level": "basic-simulation-validated",
+      "missing_local_fields": [
+        "action frames, hit marks, cancel windows, and hitlag",
+        "hitbox geometry, targeting, travel time, and multi-target behavior",
+        "runtime state-machine ordering, snapshot timing, and server-only logic",
+        "particle observations pending verification; Lunaris is the temporary default"
+      ],
+      "missing_core_support": [],
+      "references": [
+        "internal/characters/albedo",
+        "pkg/reactable/lunarcrystallize.go"
+      ],
+      "todos": [
+        "User review of character-specific mechanics",
+        "Validate final damage values against an independent trusted sample",
+        "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
+      ]
+    }
+  ]
+}

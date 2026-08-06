@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "jadevista",
+      "override_id": "15435",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "jadevista",
+    "id": "15435",
+    "lunaris_id": "15435"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 42.401,
+            "levels": {
+              "1": 1,
+              "10": 1.743,
+              "100": 9.174,
+              "11": 1.826,
+              "12": 1.908,
+              "13": 1.991,
+              "14": 2.073,
+              "15": 2.156,
+              "16": 2.239,
+              "17": 2.321,
+              "18": 2.404,
+              "19": 2.486,
+              "2": 1.083,
+              "20": 2.569,
+              "21": 2.651,
+              "22": 2.734,
+              "23": 2.817,
+              "24": 2.899,
+              "25": 2.982,
+              "26": 3.064,
+              "27": 3.147,
+              "28": 3.229,
+              "29": 3.312,
+              "3": 1.165,
+              "30": 3.394,
+              "31": 3.477,
+              "32": 3.56,
+              "33": 3.642,
+              "34": 3.725,
+              "35": 3.807,
+              "36": 3.89,
+              "37": 3.972,
+              "38": 4.055,
+              "39": 4.138,
+              "4": 1.248,
+              "40": 4.22,
+              "41": 4.303,
+              "42": 4.385,
+              "43": 4.468,
+              "44": 4.55,
+              "45": 4.633,
+              "46": 4.716,
+              "47": 4.798,
+              "48": 4.881,
+              "49": 4.963,
+              "5": 1.33,
+              "50": 5.046,
+              "51": 5.128,
+              "52": 5.211,
+              "53": 5.294,
+              "54": 5.376,
+              "55": 5.459,
+              "56": 5.541,
+              "57": 5.624,
+              "58": 5.706,
+              "59": 5.789,
+              "6": 1.413,
+              "60": 5.872,
+              "61": 5.954,
+              "62": 6.037,
+              "63": 6.119,
+              "64": 6.202,
+              "65": 6.284,
+              "66": 6.367,
+              "67": 6.45,
+              "68": 6.532,
+              "69": 6.615,
+              "7": 1.495,
+              "70": 6.697,
+              "71": 6.78,
+              "72": 6.862,
+              "73": 6.945,
+              "74": 7.028,
+              "75": 7.11,
+              "76": 7.193,
+              "77": 7.275,
+              "78": 7.358,
+              "79": 7.44,
+              "8": 1.578,
+              "80": 7.523,
+              "81": 7.606,
+              "82": 7.688,
+              "83": 7.771,
+              "84": 7.853,
+              "85": 7.936,
+              "86": 8.018,
+              "87": 8.101,
+              "88": 8.183,
+              "89": 8.266,
+              "9": 1.661,
+              "90": 8.349,
+              "91": 8.431,
+              "92": 8.514,
+              "93": 8.596,
+              "94": 8.679,
+              "95": 8.761,
+              "96": 8.844,
+              "97": 8.927,
+              "98": 9.009,
+              "99": 9.092
+            }
+          },
+          "fight_prop_critical": {
+            "base": 0.06,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 42.401,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_201"
+          },
+          {
+            "init_value": 0.06,
+            "prop_type": "FIGHT_PROP_CRITICAL",
+            "type": "GROW_CURVE_CRITICAL_201"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Bow_ShatteredMirror",
+        "name": "Jade Vista",
+        "rarity": 4,
+        "weapon_type": "WEAPON_BOW"
+      },
+      "refinements": {
+        "1": {
+          "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>64</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>12%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+          "name": "A Candle Woven From the Night",
+          "param_list": [
+            0.12,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>80</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>15%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+          "name": "A Candle Woven From the Night",
+          "param_list": [
+            0.15,
+            80,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>96</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>18%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+          "name": "A Candle Woven From the Night",
+          "param_list": [
+            0.18,
+            96,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>112</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>21%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+          "name": "A Candle Woven From the Night",
+          "param_list": [
+            0.21,
+            112,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>128</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>24%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+          "name": "A Candle Woven From the Night",
+          "param_list": [
+            0.24,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            0.11999999731779099,
+            64.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            0.15000000596046448,
+            80.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            0.18000000715255737,
+            96.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            0.20999999344348907,
+            112.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            0.23999999463558197,
+            128.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            0.12,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0.15,
+            80,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0.18,
+            96,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0.21,
+            112,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            0.24,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Jade Vista",
+        "nanoka": "Jade Vista"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_PURPLE",
+        "nanoka": "QUALITY_PURPLE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_BOW",
+        "nanoka": "WEAPON_BOW"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Jade Vista",
+          "passive": {
+            "name": "A Candle Woven From the Night",
+            "refinements": {
+              "1": {
+                "description": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by 64;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by 12%.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+                "params": [
+                  0.11999999731779099,
+                  64.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by 80;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by 15%.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+                "params": [
+                  0.15000000596046448,
+                  80.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by 96;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by 18%.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+                "params": [
+                  0.18000000715255737,
+                  96.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by 112;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by 21%.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+                "params": [
+                  0.20999999344348907,
+                  112.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by 128;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by 24%.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+                "params": [
+                  0.23999999463558197,
+                  128.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 6.0,
+              "atk": 42
+            },
+            "10": {
+              "CRIT Rate%": 8.2,
+              "atk": 74
+            },
+            "11": {
+              "CRIT Rate%": 8.2,
+              "atk": 77
+            },
+            "12": {
+              "CRIT Rate%": 8.2,
+              "atk": 81
+            },
+            "13": {
+              "CRIT Rate%": 8.2,
+              "atk": 84
+            },
+            "14": {
+              "CRIT Rate%": 8.2,
+              "atk": 88
+            },
+            "15": {
+              "CRIT Rate%": 9.4,
+              "atk": 91
+            },
+            "16": {
+              "CRIT Rate%": 9.4,
+              "atk": 95
+            },
+            "17": {
+              "CRIT Rate%": 9.4,
+              "atk": 98
+            },
+            "18": {
+              "CRIT Rate%": 9.4,
+              "atk": 102
+            },
+            "19": {
+              "CRIT Rate%": 9.4,
+              "atk": 105
+            },
+            "2": {
+              "CRIT Rate%": 6.0,
+              "atk": 46
+            },
+            "20": {
+              "CRIT Rate%": 10.6,
+              "atk": 109
+            },
+            "21": {
+              "CRIT Rate%": 10.6,
+              "atk": 138
+            },
+            "22": {
+              "CRIT Rate%": 10.6,
+              "atk": 142
+            },
+            "23": {
+              "CRIT Rate%": 10.6,
+              "atk": 145
+            },
+            "24": {
+              "CRIT Rate%": 10.6,
+              "atk": 149
+            },
+            "25": {
+              "CRIT Rate%": 11.8,
+              "atk": 152
+            },
+            "26": {
+              "CRIT Rate%": 11.8,
+              "atk": 156
+            },
+            "27": {
+              "CRIT Rate%": 11.8,
+              "atk": 159
+            },
+            "28": {
+              "CRIT Rate%": 11.8,
+              "atk": 163
+            },
+            "29": {
+              "CRIT Rate%": 11.8,
+              "atk": 166
+            },
+            "3": {
+              "CRIT Rate%": 6.0,
+              "atk": 49
+            },
+            "30": {
+              "CRIT Rate%": 13.0,
+              "atk": 170
+            },
+            "31": {
+              "CRIT Rate%": 13.0,
+              "atk": 173
+            },
+            "32": {
+              "CRIT Rate%": 13.0,
+              "atk": 177
+            },
+            "33": {
+              "CRIT Rate%": 13.0,
+              "atk": 180
+            },
+            "34": {
+              "CRIT Rate%": 13.0,
+              "atk": 184
+            },
+            "35": {
+              "CRIT Rate%": 14.2,
+              "atk": 187
+            },
+            "36": {
+              "CRIT Rate%": 14.2,
+              "atk": 191
+            },
+            "37": {
+              "CRIT Rate%": 14.2,
+              "atk": 194
+            },
+            "38": {
+              "CRIT Rate%": 14.2,
+              "atk": 198
+            },
+            "39": {
+              "CRIT Rate%": 14.2,
+              "atk": 201
+            },
+            "4": {
+              "CRIT Rate%": 6.0,
+              "atk": 53
+            },
+            "40": {
+              "CRIT Rate%": 15.4,
+              "atk": 205
+            },
+            "41": {
+              "CRIT Rate%": 15.4,
+              "atk": 234
+            },
+            "42": {
+              "CRIT Rate%": 15.4,
+              "atk": 238
+            },
+            "43": {
+              "CRIT Rate%": 15.4,
+              "atk": 241
+            },
+            "44": {
+              "CRIT Rate%": 15.4,
+              "atk": 245
+            },
+            "45": {
+              "CRIT Rate%": 16.7,
+              "atk": 248
+            },
+            "46": {
+              "CRIT Rate%": 16.7,
+              "atk": 252
+            },
+            "47": {
+              "CRIT Rate%": 16.7,
+              "atk": 255
+            },
+            "48": {
+              "CRIT Rate%": 16.7,
+              "atk": 259
+            },
+            "49": {
+              "CRIT Rate%": 16.7,
+              "atk": 262
+            },
+            "5": {
+              "CRIT Rate%": 7.0,
+              "atk": 56
+            },
+            "50": {
+              "CRIT Rate%": 17.9,
+              "atk": 266
+            },
+            "51": {
+              "CRIT Rate%": 17.9,
+              "atk": 295
+            },
+            "52": {
+              "CRIT Rate%": 17.9,
+              "atk": 299
+            },
+            "53": {
+              "CRIT Rate%": 17.9,
+              "atk": 302
+            },
+            "54": {
+              "CRIT Rate%": 17.9,
+              "atk": 306
+            },
+            "55": {
+              "CRIT Rate%": 19.1,
+              "atk": 309
+            },
+            "56": {
+              "CRIT Rate%": 19.1,
+              "atk": 313
+            },
+            "57": {
+              "CRIT Rate%": 19.1,
+              "atk": 316
+            },
+            "58": {
+              "CRIT Rate%": 19.1,
+              "atk": 320
+            },
+            "59": {
+              "CRIT Rate%": 19.1,
+              "atk": 323
+            },
+            "6": {
+              "CRIT Rate%": 7.0,
+              "atk": 60
+            },
+            "60": {
+              "CRIT Rate%": 20.3,
+              "atk": 327
+            },
+            "61": {
+              "CRIT Rate%": 20.3,
+              "atk": 356
+            },
+            "62": {
+              "CRIT Rate%": 20.3,
+              "atk": 360
+            },
+            "63": {
+              "CRIT Rate%": 20.3,
+              "atk": 363
+            },
+            "64": {
+              "CRIT Rate%": 20.3,
+              "atk": 367
+            },
+            "65": {
+              "CRIT Rate%": 21.5,
+              "atk": 370
+            },
+            "66": {
+              "CRIT Rate%": 21.5,
+              "atk": 374
+            },
+            "67": {
+              "CRIT Rate%": 21.5,
+              "atk": 377
+            },
+            "68": {
+              "CRIT Rate%": 21.5,
+              "atk": 381
+            },
+            "69": {
+              "CRIT Rate%": 21.5,
+              "atk": 384
+            },
+            "7": {
+              "CRIT Rate%": 7.0,
+              "atk": 63
+            },
+            "70": {
+              "CRIT Rate%": 22.7,
+              "atk": 388
+            },
+            "71": {
+              "CRIT Rate%": 22.7,
+              "atk": 417
+            },
+            "72": {
+              "CRIT Rate%": 22.7,
+              "atk": 421
+            },
+            "73": {
+              "CRIT Rate%": 22.7,
+              "atk": 424
+            },
+            "74": {
+              "CRIT Rate%": 22.7,
+              "atk": 428
+            },
+            "75": {
+              "CRIT Rate%": 23.9,
+              "atk": 431
+            },
+            "76": {
+              "CRIT Rate%": 23.9,
+              "atk": 435
+            },
+            "77": {
+              "CRIT Rate%": 23.9,
+              "atk": 438
+            },
+            "78": {
+              "CRIT Rate%": 23.9,
+              "atk": 442
+            },
+            "79": {
+              "CRIT Rate%": 23.9,
+              "atk": 445
+            },
+            "8": {
+              "CRIT Rate%": 7.0,
+              "atk": 67
+            },
+            "80": {
+              "CRIT Rate%": 25.1,
+              "atk": 449
+            },
+            "81": {
+              "CRIT Rate%": 25.1,
+              "atk": 478
+            },
+            "82": {
+              "CRIT Rate%": 25.1,
+              "atk": 482
+            },
+            "83": {
+              "CRIT Rate%": 25.1,
+              "atk": 485
+            },
+            "84": {
+              "CRIT Rate%": 25.1,
+              "atk": 489
+            },
+            "85": {
+              "CRIT Rate%": 26.4,
+              "atk": 492
+            },
+            "86": {
+              "CRIT Rate%": 26.4,
+              "atk": 496
+            },
+            "87": {
+              "CRIT Rate%": 26.4,
+              "atk": 499
+            },
+            "88": {
+              "CRIT Rate%": 26.4,
+              "atk": 503
+            },
+            "89": {
+              "CRIT Rate%": 26.4,
+              "atk": 506
+            },
+            "9": {
+              "CRIT Rate%": 7.0,
+              "atk": 70
+            },
+            "90": {
+              "CRIT Rate%": 27.6,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Bow_ShatteredMirror",
+          "weaponType": "WEAPON_BOW"
+        },
+        "sha256": "f80292778189f21712f82c2edb6768ad0c371d7d7cc2e5a214ddee25b6538f66",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/15435.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "悬黎千钧",
+          "passive": {
+            "name": "缀夜为烛",
+            "refinements": {
+              "1": {
+                "description": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升64点；元素类型与装备者不同：装备者的攻击力提升12%。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+                "params": [
+                  0.11999999731779099,
+                  64.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升80点；元素类型与装备者不同：装备者的攻击力提升15%。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+                "params": [
+                  0.15000000596046448,
+                  80.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升96点；元素类型与装备者不同：装备者的攻击力提升18%。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+                "params": [
+                  0.18000000715255737,
+                  96.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升112点；元素类型与装备者不同：装备者的攻击力提升21%。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+                "params": [
+                  0.20999999344348907,
+                  112.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升128点；元素类型与装备者不同：装备者的攻击力提升24%。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+                "params": [
+                  0.23999999463558197,
+                  128.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 6.0,
+              "atk": 42
+            },
+            "10": {
+              "CRIT Rate%": 8.2,
+              "atk": 74
+            },
+            "11": {
+              "CRIT Rate%": 8.2,
+              "atk": 77
+            },
+            "12": {
+              "CRIT Rate%": 8.2,
+              "atk": 81
+            },
+            "13": {
+              "CRIT Rate%": 8.2,
+              "atk": 84
+            },
+            "14": {
+              "CRIT Rate%": 8.2,
+              "atk": 88
+            },
+            "15": {
+              "CRIT Rate%": 9.4,
+              "atk": 91
+            },
+            "16": {
+              "CRIT Rate%": 9.4,
+              "atk": 95
+            },
+            "17": {
+              "CRIT Rate%": 9.4,
+              "atk": 98
+            },
+            "18": {
+              "CRIT Rate%": 9.4,
+              "atk": 102
+            },
+            "19": {
+              "CRIT Rate%": 9.4,
+              "atk": 105
+            },
+            "2": {
+              "CRIT Rate%": 6.0,
+              "atk": 46
+            },
+            "20": {
+              "CRIT Rate%": 10.6,
+              "atk": 109
+            },
+            "21": {
+              "CRIT Rate%": 10.6,
+              "atk": 138
+            },
+            "22": {
+              "CRIT Rate%": 10.6,
+              "atk": 142
+            },
+            "23": {
+              "CRIT Rate%": 10.6,
+              "atk": 145
+            },
+            "24": {
+              "CRIT Rate%": 10.6,
+              "atk": 149
+            },
+            "25": {
+              "CRIT Rate%": 11.8,
+              "atk": 152
+            },
+            "26": {
+              "CRIT Rate%": 11.8,
+              "atk": 156
+            },
+            "27": {
+              "CRIT Rate%": 11.8,
+              "atk": 159
+            },
+            "28": {
+              "CRIT Rate%": 11.8,
+              "atk": 163
+            },
+            "29": {
+              "CRIT Rate%": 11.8,
+              "atk": 166
+            },
+            "3": {
+              "CRIT Rate%": 6.0,
+              "atk": 49
+            },
+            "30": {
+              "CRIT Rate%": 13.0,
+              "atk": 170
+            },
+            "31": {
+              "CRIT Rate%": 13.0,
+              "atk": 173
+            },
+            "32": {
+              "CRIT Rate%": 13.0,
+              "atk": 177
+            },
+            "33": {
+              "CRIT Rate%": 13.0,
+              "atk": 180
+            },
+            "34": {
+              "CRIT Rate%": 13.0,
+              "atk": 184
+            },
+            "35": {
+              "CRIT Rate%": 14.2,
+              "atk": 187
+            },
+            "36": {
+              "CRIT Rate%": 14.2,
+              "atk": 191
+            },
+            "37": {
+              "CRIT Rate%": 14.2,
+              "atk": 194
+            },
+            "38": {
+              "CRIT Rate%": 14.2,
+              "atk": 198
+            },
+            "39": {
+              "CRIT Rate%": 14.2,
+              "atk": 201
+            },
+            "4": {
+              "CRIT Rate%": 6.0,
+              "atk": 53
+            },
+            "40": {
+              "CRIT Rate%": 15.4,
+              "atk": 205
+            },
+            "41": {
+              "CRIT Rate%": 15.4,
+              "atk": 234
+            },
+            "42": {
+              "CRIT Rate%": 15.4,
+              "atk": 238
+            },
+            "43": {
+              "CRIT Rate%": 15.4,
+              "atk": 241
+            },
+            "44": {
+              "CRIT Rate%": 15.4,
+              "atk": 245
+            },
+            "45": {
+              "CRIT Rate%": 16.7,
+              "atk": 248
+            },
+            "46": {
+              "CRIT Rate%": 16.7,
+              "atk": 252
+            },
+            "47": {
+              "CRIT Rate%": 16.7,
+              "atk": 255
+            },
+            "48": {
+              "CRIT Rate%": 16.7,
+              "atk": 259
+            },
+            "49": {
+              "CRIT Rate%": 16.7,
+              "atk": 262
+            },
+            "5": {
+              "CRIT Rate%": 7.0,
+              "atk": 56
+            },
+            "50": {
+              "CRIT Rate%": 17.9,
+              "atk": 266
+            },
+            "51": {
+              "CRIT Rate%": 17.9,
+              "atk": 295
+            },
+            "52": {
+              "CRIT Rate%": 17.9,
+              "atk": 299
+            },
+            "53": {
+              "CRIT Rate%": 17.9,
+              "atk": 302
+            },
+            "54": {
+              "CRIT Rate%": 17.9,
+              "atk": 306
+            },
+            "55": {
+              "CRIT Rate%": 19.1,
+              "atk": 309
+            },
+            "56": {
+              "CRIT Rate%": 19.1,
+              "atk": 313
+            },
+            "57": {
+              "CRIT Rate%": 19.1,
+              "atk": 316
+            },
+            "58": {
+              "CRIT Rate%": 19.1,
+              "atk": 320
+            },
+            "59": {
+              "CRIT Rate%": 19.1,
+              "atk": 323
+            },
+            "6": {
+              "CRIT Rate%": 7.0,
+              "atk": 60
+            },
+            "60": {
+              "CRIT Rate%": 20.3,
+              "atk": 327
+            },
+            "61": {
+              "CRIT Rate%": 20.3,
+              "atk": 356
+            },
+            "62": {
+              "CRIT Rate%": 20.3,
+              "atk": 360
+            },
+            "63": {
+              "CRIT Rate%": 20.3,
+              "atk": 363
+            },
+            "64": {
+              "CRIT Rate%": 20.3,
+              "atk": 367
+            },
+            "65": {
+              "CRIT Rate%": 21.5,
+              "atk": 370
+            },
+            "66": {
+              "CRIT Rate%": 21.5,
+              "atk": 374
+            },
+            "67": {
+              "CRIT Rate%": 21.5,
+              "atk": 377
+            },
+            "68": {
+              "CRIT Rate%": 21.5,
+              "atk": 381
+            },
+            "69": {
+              "CRIT Rate%": 21.5,
+              "atk": 384
+            },
+            "7": {
+              "CRIT Rate%": 7.0,
+              "atk": 63
+            },
+            "70": {
+              "CRIT Rate%": 22.7,
+              "atk": 388
+            },
+            "71": {
+              "CRIT Rate%": 22.7,
+              "atk": 417
+            },
+            "72": {
+              "CRIT Rate%": 22.7,
+              "atk": 421
+            },
+            "73": {
+              "CRIT Rate%": 22.7,
+              "atk": 424
+            },
+            "74": {
+              "CRIT Rate%": 22.7,
+              "atk": 428
+            },
+            "75": {
+              "CRIT Rate%": 23.9,
+              "atk": 431
+            },
+            "76": {
+              "CRIT Rate%": 23.9,
+              "atk": 435
+            },
+            "77": {
+              "CRIT Rate%": 23.9,
+              "atk": 438
+            },
+            "78": {
+              "CRIT Rate%": 23.9,
+              "atk": 442
+            },
+            "79": {
+              "CRIT Rate%": 23.9,
+              "atk": 445
+            },
+            "8": {
+              "CRIT Rate%": 7.0,
+              "atk": 67
+            },
+            "80": {
+              "CRIT Rate%": 25.1,
+              "atk": 449
+            },
+            "81": {
+              "CRIT Rate%": 25.1,
+              "atk": 478
+            },
+            "82": {
+              "CRIT Rate%": 25.1,
+              "atk": 482
+            },
+            "83": {
+              "CRIT Rate%": 25.1,
+              "atk": 485
+            },
+            "84": {
+              "CRIT Rate%": 25.1,
+              "atk": 489
+            },
+            "85": {
+              "CRIT Rate%": 26.4,
+              "atk": 492
+            },
+            "86": {
+              "CRIT Rate%": 26.4,
+              "atk": 496
+            },
+            "87": {
+              "CRIT Rate%": 26.4,
+              "atk": 499
+            },
+            "88": {
+              "CRIT Rate%": 26.4,
+              "atk": 503
+            },
+            "89": {
+              "CRIT Rate%": 26.4,
+              "atk": 506
+            },
+            "9": {
+              "CRIT Rate%": 7.0,
+              "atk": 70
+            },
+            "90": {
+              "CRIT Rate%": 27.6,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Bow_ShatteredMirror",
+          "weaponType": "WEAPON_BOW"
+        },
+        "sha256": "f02ae3755ae568e87fdfc0eb9ea3055a5e78fe5d30219facffc4ea3c39a5ca62",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/15435.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Bow_ShatteredMirror",
+          "name": "Jade Vista",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>64</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>12%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+              "name": "A Candle Woven From the Night",
+              "param_list": [
+                0.12,
+                64,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>80</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>15%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+              "name": "A Candle Woven From the Night",
+              "param_list": [
+                0.15,
+                80,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>96</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>18%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+              "name": "A Candle Woven From the Night",
+              "param_list": [
+                0.18,
+                96,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>112</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>21%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+              "name": "A Candle Woven From the Night",
+              "param_list": [
+                0.21,
+                112,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "For every party member other than the equipping character:\\n· Who is of the same Elemental Type as the equipper: The equipping character's Elemental Mastery is increased by <color=#99FFFFFF>128</color>;\\n· Who is not of the same Elemental Type as the equipper: The equipping character's ATK increases by <color=#99FFFFFF>24%</color>.\\nThe two effects described above can stack up to 3 times in total, with Elemental Mastery buffs applied first.",
+              "name": "A Candle Woven From the Night",
+              "param_list": [
+                0.24,
+                128,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.06,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 0.06,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_BOW"
+        },
+        "sha256": "3ff679da5e81712c0946d271af86d175b1b20ffb5b452262146199e8c6cfec41",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/15435.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Bow_ShatteredMirror",
+          "name": "悬黎千钧",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升<color=#99FFFFFF>64</color>点；元素类型与装备者不同：装备者的攻击力提升<color=#99FFFFFF>12%</color>。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+              "name": "缀夜为烛",
+              "param_list": [
+                0.12,
+                64,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升<color=#99FFFFFF>80</color>点；元素类型与装备者不同：装备者的攻击力提升<color=#99FFFFFF>15%</color>。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+              "name": "缀夜为烛",
+              "param_list": [
+                0.15,
+                80,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升<color=#99FFFFFF>96</color>点；元素类型与装备者不同：装备者的攻击力提升<color=#99FFFFFF>18%</color>。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+              "name": "缀夜为烛",
+              "param_list": [
+                0.18,
+                96,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升<color=#99FFFFFF>112</color>点；元素类型与装备者不同：装备者的攻击力提升<color=#99FFFFFF>21%</color>。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+              "name": "缀夜为烛",
+              "param_list": [
+                0.21,
+                112,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "除装备者外，队伍中每有一名角色：元素类型与装备者相同：装备者的元素精通提升<color=#99FFFFFF>128</color>点；元素类型与装备者不同：装备者的攻击力提升<color=#99FFFFFF>24%</color>。上述两种效果总共至多叠加3层，元素类型相同的效果优先生效。",
+              "name": "缀夜为烛",
+              "param_list": [
+                0.24,
+                128,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.06,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 0.06,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_BOW"
+        },
+        "sha256": "0ed8500e919bbe1687c9a9bd9021063202d61c0de7b2965b0e9bd548ac37c2ae",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/15435.json"
+      }
+    }
+  }
+}

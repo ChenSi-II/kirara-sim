@@ -221,6 +221,11 @@ func walkConfigs() ([]*Config, error) {
 		default:
 			return nil
 		}
+		// Community data is an input snapshot. Legacy scaffolds stored under it
+		// must not be treated as active implementation configs.
+		if strings.HasPrefix(path, "pipeline/community/") {
+			return nil
+		}
 
 		data, err := projectRoot.ReadFile(path)
 		if err != nil {

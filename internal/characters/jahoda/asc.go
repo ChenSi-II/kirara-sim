@@ -1,3 +1,5 @@
 package jahoda
 
-// TODO: connect confirmed passive descriptions after their required core events exist.
+func (c *char) initAscensions() {
+	// Combat passives are evaluated by elementalRobotBonus and robotTick.
+}

@@ -54,6 +54,7 @@ const (
 	AquilaFavonia                                 // aquilafavonia
 	AshGravenDrinkingHorn                         // ashgravendrinkinghorn
 	AstralVulturesCrimsonPlumage                  // astralvulturescrimsonplumage
+	ATeaspoonOfTranscendence                      // ateaspoonoftranscendence
 	AthameArtis                                   // athameartis
 	AThousandBlazingSuns                          // athousandblazingsuns
 	AThousandFloatingDreams                       // athousandfloatingdreams
@@ -69,6 +70,7 @@ const (
 	BlackcliffWarbow                              // blackcliffwarbow
 	BlackmarrowLantern                            // blackmarrowlantern
 	BlackTassel                                   // blacktassel
+	BladeOfAtonement                              // bladeofatonement
 	BloodsoakedRuins                              // bloodsoakedruins
 	BloodtaintedGreatsword                        // bloodtaintedgreatsword
 	CalamityOfEshu                                // calamityofeshu
@@ -76,9 +78,11 @@ const (
 	CashflowSupervision                           // cashflowsupervision
 	ChainBreaker                                  // chainbreaker
 	CinnabarSpindle                               // cinnabarspindle
+	ClashOfKings                                  // clashofkings
 	Cloudforged                                   // cloudforged
 	CompoundBow                                   // compoundbow
 	CoolSteel                                     // coolsteel
+	CovenantOfFrostAndSnow                        // covenantoffrostandsnow
 	CranesEchoingCall                             // cranesechoingcall
 	CrescentPike                                  // crescentpike
 	CrimsonMoonsSemblance                         // crimsonmoonssemblance
@@ -87,17 +91,21 @@ const (
 	Deathmatch                                    // deathmatch
 	DebateClub                                    // debateclub
 	DialoguesOfTheDesertSages                     // dialoguesofthedesertsages
+	DisasterAndRemorse                            // disasterandremorse
 	DodocoTales                                   // dodocotales
 	DragonsBane                                   // dragonsbane
 	DragonspineSpear                              // dragonspinespear
 	DullBlade                                     // dullblade
 	EarthShaker                                   // earthshaker
+	EchoesOfTheHeart                              // echoesoftheheart
 	ElegyForTheEnd                                // elegyfortheend
+	Emberwell                                     // emberwell
 	EmeraldOrb                                    // emeraldorb
 	EndOfTheLine                                  // endoftheline
 	EngulfingLightning                            // engulfinglightning
 	EtherlightSpindlelute                         // etherlightspindlelute
 	EverlastingMoonglow                           // everlastingmoonglow
+	ExaiphanesBlade                               // exaiphanesblade
 	EyeOfPerception                               // eyeofperception
 	FadingTwilight                                // fadingtwilight
 	FangOfTheMountainKing                         // fangofthemountainking
@@ -117,9 +125,11 @@ const (
 	FluteOfEzpitzal                               // fluteofezpitzal
 	FootprintOfTheRainbow                         // footprintoftherainbow
 	ForestRegalia                                 // forestregalia
+	ForgedByTheGoldenMelody                       // forgedbythegoldenmelody
 	FracturedHalo                                 // fracturedhalo
 	FreedomSworn                                  // freedomsworn
 	Frostbearer                                   // frostbearer
+	Frostbreath                                   // frostbreath
 	FruitfulHook                                  // fruitfulhook
 	FruitOfFulfillment                            // fruitoffulfillment
 	GestOfTheMightyWolf                           // gestofthemightywolf
@@ -129,18 +139,21 @@ const (
 	Hamayumi                                      // hamayumi
 	HaranGeppakuFutsu                             // harangeppakufutsu
 	HarbingerOfDawn                               // harbingerofdawn
+	HereticsMoltenBlade                           // hereticsmoltenblade
 	HuntersBow                                    // huntersbow
 	HuntersPath                                   // hunterspath
 	IbisPiercer                                   // ibispiercer
 	IronPoint                                     // ironpoint
 	IronSting                                     // ironsting
 	JadefallsSplendor                             // jadefallssplendor
+	JadeVista                                     // jadevista
 	KagotsurubeIsshin                             // kagotsurubeisshin
 	KagurasVerity                                 // kagurasverity
 	KatsuragikiriNagamasa                         // katsuragikirinagamasa
 	KeyOfKhajNisut                                // keyofkhajnisut
 	KingsSquire                                   // kingssquire
 	KitainCrossSpear                              // kitaincrossspear
+	LightbearingMoonshard                         // lightbearingmoonshard
 	LightOfFoliarIncision                         // lightoffoliarincision
 	LionsRoar                                     // lionsroar
 	LithicBlade                                   // lithicblade
@@ -224,6 +237,7 @@ const (
 	SolarPearl                                    // solarpearl
 	SongOfBrokenPines                             // songofbrokenpines
 	SongOfStillness                               // songofstillness
+	SongOfTheVigil                                // songofthevigil
 	SplendorOfTranquilWaters                      // splendoroftranquilwaters
 	StaffOfHoma                                   // staffofhoma
 	StaffOfTheScarletSands                        // staffofthescarletsands
@@ -268,6 +282,7 @@ const (
 	WaveridingWhirl                               // waveridingwhirl
 	Whiteblind                                    // whiteblind
 	WhiteIronGreatsword                           // whiteirongreatsword
+	WhitelakeFrostfeather                         // whitelakefrostfeather
 	WhiteTassel                                   // whitetassel
 	WindblumeOde                                  // windblumeode
 	WineAndSong                                   // wineandsong
@@ -290,6 +305,7 @@ var _WeaponNames = [...]string{
 	"aquilafavonia",
 	"ashgravendrinkinghorn",
 	"astralvulturescrimsonplumage",
+	"ateaspoonoftranscendence",
 	"athameartis",
 	"athousandblazingsuns",
 	"athousandfloatingdreams",
@@ -305,6 +321,7 @@ var _WeaponNames = [...]string{
 	"blackcliffwarbow",
 	"blackmarrowlantern",
 	"blacktassel",
+	"bladeofatonement",
 	"bloodsoakedruins",
 	"bloodtaintedgreatsword",
 	"calamityofeshu",
@@ -312,9 +329,11 @@ var _WeaponNames = [...]string{
 	"cashflowsupervision",
 	"chainbreaker",
 	"cinnabarspindle",
+	"clashofkings",
 	"cloudforged",
 	"compoundbow",
 	"coolsteel",
+	"covenantoffrostandsnow",
 	"cranesechoingcall",
 	"crescentpike",
 	"crimsonmoonssemblance",
@@ -323,17 +342,21 @@ var _WeaponNames = [...]string{
 	"deathmatch",
 	"debateclub",
 	"dialoguesofthedesertsages",
+	"disasterandremorse",
 	"dodocotales",
 	"dragonsbane",
 	"dragonspinespear",
 	"dullblade",
 	"earthshaker",
+	"echoesoftheheart",
 	"elegyfortheend",
+	"emberwell",
 	"emeraldorb",
 	"endoftheline",
 	"engulfinglightning",
 	"etherlightspindlelute",
 	"everlastingmoonglow",
+	"exaiphanesblade",
 	"eyeofperception",
 	"fadingtwilight",
 	"fangofthemountainking",
@@ -353,9 +376,11 @@ var _WeaponNames = [...]string{
 	"fluteofezpitzal",
 	"footprintoftherainbow",
 	"forestregalia",
+	"forgedbythegoldenmelody",
 	"fracturedhalo",
 	"freedomsworn",
 	"frostbearer",
+	"frostbreath",
 	"fruitfulhook",
 	"fruitoffulfillment",
 	"gestofthemightywolf",
@@ -365,18 +390,21 @@ var _WeaponNames = [...]string{
 	"hamayumi",
 	"harangeppakufutsu",
 	"harbingerofdawn",
+	"hereticsmoltenblade",
 	"huntersbow",
 	"hunterspath",
 	"ibispiercer",
 	"ironpoint",
 	"ironsting",
 	"jadefallssplendor",
+	"jadevista",
 	"kagotsurubeisshin",
 	"kagurasverity",
 	"katsuragikirinagamasa",
 	"keyofkhajnisut",
 	"kingssquire",
 	"kitaincrossspear",
+	"lightbearingmoonshard",
 	"lightoffoliarincision",
 	"lionsroar",
 	"lithicblade",
@@ -460,6 +488,7 @@ var _WeaponNames = [...]string{
 	"solarpearl",
 	"songofbrokenpines",
 	"songofstillness",
+	"songofthevigil",
 	"splendoroftranquilwaters",
 	"staffofhoma",
 	"staffofthescarletsands",
@@ -504,6 +533,7 @@ var _WeaponNames = [...]string{
 	"waveridingwhirl",
 	"whiteblind",
 	"whiteirongreatsword",
+	"whitelakefrostfeather",
 	"whitetassel",
 	"windblumeode",
 	"wineandsong",
@@ -526,6 +556,7 @@ var _WeaponValues = [...]Weapon{
 	AquilaFavonia,
 	AshGravenDrinkingHorn,
 	AstralVulturesCrimsonPlumage,
+	ATeaspoonOfTranscendence,
 	AthameArtis,
 	AThousandBlazingSuns,
 	AThousandFloatingDreams,
@@ -541,6 +572,7 @@ var _WeaponValues = [...]Weapon{
 	BlackcliffWarbow,
 	BlackmarrowLantern,
 	BlackTassel,
+	BladeOfAtonement,
 	BloodsoakedRuins,
 	BloodtaintedGreatsword,
 	CalamityOfEshu,
@@ -548,9 +580,11 @@ var _WeaponValues = [...]Weapon{
 	CashflowSupervision,
 	ChainBreaker,
 	CinnabarSpindle,
+	ClashOfKings,
 	Cloudforged,
 	CompoundBow,
 	CoolSteel,
+	CovenantOfFrostAndSnow,
 	CranesEchoingCall,
 	CrescentPike,
 	CrimsonMoonsSemblance,
@@ -559,17 +593,21 @@ var _WeaponValues = [...]Weapon{
 	Deathmatch,
 	DebateClub,
 	DialoguesOfTheDesertSages,
+	DisasterAndRemorse,
 	DodocoTales,
 	DragonsBane,
 	DragonspineSpear,
 	DullBlade,
 	EarthShaker,
+	EchoesOfTheHeart,
 	ElegyForTheEnd,
+	Emberwell,
 	EmeraldOrb,
 	EndOfTheLine,
 	EngulfingLightning,
 	EtherlightSpindlelute,
 	EverlastingMoonglow,
+	ExaiphanesBlade,
 	EyeOfPerception,
 	FadingTwilight,
 	FangOfTheMountainKing,
@@ -589,9 +627,11 @@ var _WeaponValues = [...]Weapon{
 	FluteOfEzpitzal,
 	FootprintOfTheRainbow,
 	ForestRegalia,
+	ForgedByTheGoldenMelody,
 	FracturedHalo,
 	FreedomSworn,
 	Frostbearer,
+	Frostbreath,
 	FruitfulHook,
 	FruitOfFulfillment,
 	GestOfTheMightyWolf,
@@ -601,18 +641,21 @@ var _WeaponValues = [...]Weapon{
 	Hamayumi,
 	HaranGeppakuFutsu,
 	HarbingerOfDawn,
+	HereticsMoltenBlade,
 	HuntersBow,
 	HuntersPath,
 	IbisPiercer,
 	IronPoint,
 	IronSting,
 	JadefallsSplendor,
+	JadeVista,
 	KagotsurubeIsshin,
 	KagurasVerity,
 	KatsuragikiriNagamasa,
 	KeyOfKhajNisut,
 	KingsSquire,
 	KitainCrossSpear,
+	LightbearingMoonshard,
 	LightOfFoliarIncision,
 	LionsRoar,
 	LithicBlade,
@@ -696,6 +739,7 @@ var _WeaponValues = [...]Weapon{
 	SolarPearl,
 	SongOfBrokenPines,
 	SongOfStillness,
+	SongOfTheVigil,
 	SplendorOfTranquilWaters,
 	StaffOfHoma,
 	StaffOfTheScarletSands,
@@ -740,6 +784,7 @@ var _WeaponValues = [...]Weapon{
 	WaveridingWhirl,
 	Whiteblind,
 	WhiteIronGreatsword,
+	WhitelakeFrostfeather,
 	WhiteTassel,
 	WindblumeOde,
 	WineAndSong,

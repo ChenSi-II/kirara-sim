@@ -1,0 +1,256 @@
+{
+  "gcsim": {
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "stellarconduct",
+    "tutorial_id": "1048"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "related_hyperlinks": {
+        "11330001": {
+          "color": "",
+          "desc": "Fagio will switch to this mode when using a Charged Attack.\\nWhen in this mode, Fagio will engage any opponents ahead with a sweeping fire attack, as well as fire condensed beams at intervals, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.",
+          "name": "Decoding",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11330003": {
+          "color": "",
+          "desc": "When Stellar-Conduct is triggered, the surrounding area will transform into a <color=#FFD780FF>Polestar Field</color> for a short period of time, and when inside a Polestar Field, certain characters will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state, which grants various skill buffs.",
+          "name": "Polestar Field",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11500002": {
+          "color": "",
+          "desc": "Odette's special Elemental Skill, which deals to nearby opponents <color=#99FFFFFF>AoE Cryo DMG</color> over time. Then, when the dance duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG. During the dance duet, Odette can control the direction of the dance steps.\\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The DMG dealt when the dance duet ends is changed to <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.\\n\\nAdditionally, after Odette unleashes the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>, should she be in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state while her <color=#FFD780FF>Dance Double</color> is still on the field, the <color=#FFD780FF>Dance Double</color>'s two dance moves types will also deal additional <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.",
+          "name": "Adagio: Coda at Dawn's Tolling",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11500004": {
+          "color": "",
+          "desc": "<color=#FFD780FF>Radiance: Stellar-Conduct</color> and <color=#FFD780FF>Radiance: Stellar Swirl</color> are both considered <color=#FFD780FF>Radiance: Stellar Glimmer</color> states.\\nCharacters can only be affected by one Radiance state at any one time, and where more than one state can be triggered, <color=#FFD780FF>Radiance: Stellar-Conduct</color> shall apply first.",
+          "name": "Radiance: Stellar Glimmer",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      "tutorial": {
+        "category": "Elemental Reactions",
+        "description": "When Cryo comes in contact with Electro, a special Stellar-Conduct reaction will be triggered if certain conditions are also met. When this happens, a Starlight Prism is generated, and the surrounding area turns into a wondrous Polestar Field for a short period of time.\\nAll characters inside the Polestar Field receive a Cryo and Electro DMG Bonus, and when opponents within the field are hit by Cryo or Electro attacks, the field will store the dissipating elemental energies and then completely release them every 4s. This further increases the aforementioned DMG Bonus and also increases the Base Stellar-Conduct DMG coefficient for 4s.\\nAdditionally, opponents within the Polestar Field will also have their Physical RES lowered.",
+        "name": "Elemental Reaction: Stellar-Conduct",
+        "tipIcon": "UI_MessageIcon_StarSuperconductor",
+        "tips": {
+          "1": {
+            "img": "UI_Tutorial_StarSuperconductor_01",
+            "tipDescription": "When Cryo comes in contact with Electro, a special Stellar-Conduct reaction will be triggered if certain conditions are also met. When this happens, a Starlight Prism is generated, and the surrounding area turns into a wondrous Polestar Field for a short period of time.\\nAll characters inside the Polestar Field receive a Cryo and Electro DMG Bonus, and when opponents within the field are hit by Cryo or Electro attacks, the field will store the dissipating elemental energies and then completely release them every 4s. This further increases the aforementioned DMG Bonus and also increases the Base Stellar-Conduct DMG coefficient for 4s.\\nAdditionally, opponents within the Polestar Field will also have their Physical RES lowered."
+          },
+          "2": {
+            "img": "UI_Tutorial_StarSuperconductor_02",
+            "tipDescription": "Certain characters will also gain the effects of Radiance: Stellar-Conduct when within the Polestar Field, enhancing certain Talents and skill effects.\\nCertain characters can deal Stellar-Conduct DMG to opponents using their Talents, and this DMG can trigger CRIT Hits."
+          }
+        }
+      }
+    },
+    "unresolved": [
+      "exact base coefficient and level-scaling formula",
+      "eligibility conditions represented only as 'certain conditions'",
+      "field/vortex duration, radius, trigger count, stored-energy thresholds, and caps",
+      "aura consumption, ICD, ownership, snapshot, and multi-target rules"
+    ]
+  },
+  "kind": "reaction",
+  "schema_version": 1,
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "category": "Elemental Reactions",
+          "description": "When Cryo comes in contact with Electro, a special Stellar-Conduct reaction will be triggered if certain conditions are also met. When this happens, a Starlight Prism is generated, and the surrounding area turns into a wondrous Polestar Field for a short period of time.\\nAll characters inside the Polestar Field receive a Cryo and Electro DMG Bonus, and when opponents within the field are hit by Cryo or Electro attacks, the field will store the dissipating elemental energies and then completely release them every 4s. This further increases the aforementioned DMG Bonus and also increases the Base Stellar-Conduct DMG coefficient for 4s.\\nAdditionally, opponents within the Polestar Field will also have their Physical RES lowered.",
+          "name": "Elemental Reaction: Stellar-Conduct",
+          "tipIcon": "UI_MessageIcon_StarSuperconductor",
+          "tips": {
+            "1": {
+              "img": "UI_Tutorial_StarSuperconductor_01",
+              "tipDescription": "When Cryo comes in contact with Electro, a special Stellar-Conduct reaction will be triggered if certain conditions are also met. When this happens, a Starlight Prism is generated, and the surrounding area turns into a wondrous Polestar Field for a short period of time.\\nAll characters inside the Polestar Field receive a Cryo and Electro DMG Bonus, and when opponents within the field are hit by Cryo or Electro attacks, the field will store the dissipating elemental energies and then completely release them every 4s. This further increases the aforementioned DMG Bonus and also increases the Base Stellar-Conduct DMG coefficient for 4s.\\nAdditionally, opponents within the Polestar Field will also have their Physical RES lowered."
+            },
+            "2": {
+              "img": "UI_Tutorial_StarSuperconductor_02",
+              "tipDescription": "Certain characters will also gain the effects of Radiance: Stellar-Conduct when within the Polestar Field, enhancing certain Talents and skill effects.\\nCertain characters can deal Stellar-Conduct DMG to opponents using their Talents, and this DMG can trigger CRIT Hits."
+            }
+          }
+        },
+        "sha256": "9f2419d1c7ff9e8733cd42dd44f6970fd476f21ae7ead2cb2156322c6d6285e7",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/tutorial/1048.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "category": "元素反应",
+          "description": "「冰元素」触及「雷元素」时，若满足特定条件，会引发特殊的「星超导」反应，创造「星辉棱晶」，并将其附近的区域短暂变换为奇妙的「极星辉域」。\\n领域内的所有角色将会获得冰元素与雷元素伤害加成；处于极星辉域中的敌人被冰元素或雷元素攻击命中时，极星辉域会冻存这些溢散的元素力，并每隔4秒将冻存的元素力全部释放，进一步提升上述伤害加成，并使星超导反应的基础反应系数提升，持续4秒。\\n此外，处于极星辉域中的敌人，物理抗性将会降低。",
+          "name": "元素反应：星超导",
+          "tipIcon": "UI_MessageIcon_StarSuperconductor",
+          "tips": {
+            "1": {
+              "img": "UI_Tutorial_StarSuperconductor_01",
+              "tipDescription": "「冰元素」触及「雷元素」时，若满足特定条件，会引发特殊的「星超导」反应，创造「星辉棱晶」，并将其附近的区域短暂变换为奇妙的「极星辉域」。\\n领域内的所有角色将会获得冰元素与雷元素伤害加成；处于极星辉域中的敌人被冰元素或雷元素攻击命中时，极星辉域会冻存这些溢散的元素力，并每隔4秒将冻存的元素力全部释放，进一步提升上述伤害加成，并使星超导反应的基础反应系数提升，持续4秒。\\n此外，处于极星辉域中的敌人，物理抗性将会降低。"
+            },
+            "2": {
+              "img": "UI_Tutorial_StarSuperconductor_02",
+              "tipDescription": "处于极星辉域中，部分角色还会获得额外的辉映·星超导效果，使部分天赋与技能的效果获得强化。\\n部分角色可以通过自身的天赋特性，对敌人造成星超导反应伤害，该伤害可以触发暴击。"
+            }
+          }
+        },
+        "sha256": "9f7c2b2a30252a393bb1e31fe70758f0385a64af52805e7074c4ea945ebe18fe",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/tutorial/1048.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "11330001": {
+            "color": "",
+            "desc": "Fagio will switch to this mode when using a Charged Attack.\\nWhen in this mode, Fagio will engage any opponents ahead with a sweeping fire attack, as well as fire condensed beams at intervals, dealing <color=#99FFFFFF>AoE Cryo DMG</color>.\\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The condensed beams will instead deal <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG.",
+            "name": "Decoding",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11330003": {
+            "color": "",
+            "desc": "When Stellar-Conduct is triggered, the surrounding area will transform into a <color=#FFD780FF>Polestar Field</color> for a short period of time, and when inside a Polestar Field, certain characters will enter the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state, which grants various skill buffs.",
+            "name": "Polestar Field",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500002": {
+            "color": "",
+            "desc": "Odette's special Elemental Skill, which deals to nearby opponents <color=#99FFFFFF>AoE Cryo DMG</color> over time. Then, when the dance duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG. During the dance duet, Odette can control the direction of the dance steps.\\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The DMG dealt when the dance duet ends is changed to <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.\\n\\nAdditionally, after Odette unleashes the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>, should she be in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state while her <color=#FFD780FF>Dance Double</color> is still on the field, the <color=#FFD780FF>Dance Double</color>'s two dance moves types will also deal additional <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.",
+            "name": "Adagio: Coda at Dawn's Tolling",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500004": {
+            "color": "",
+            "desc": "<color=#FFD780FF>Radiance: Stellar-Conduct</color> and <color=#FFD780FF>Radiance: Stellar Swirl</color> are both considered <color=#FFD780FF>Radiance: Stellar Glimmer</color> states.\\nCharacters can only be affected by one Radiance state at any one time, and where more than one state can be triggered, <color=#FFD780FF>Radiance: Stellar-Conduct</color> shall apply first.",
+            "name": "Radiance: Stellar Glimmer",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "sha256": "7a11214b0e3e40ef40d07170041a2819f629e751151fb946e9a490df88ca3adc",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/hyperlink.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "11130007": {
+            "color": "",
+            "desc": "队伍中附近的角色对敌人触发冻结、超导、星超导、冰元素扩散、星扩散或冰元素结晶反应时，将在敌人附近创造一枚虚境裂隙。该效果每2.5秒至多触发一次，场上至多存在3枚丝柯克自己创造的虚境裂隙。\\n\\n丝柯克可以通过以下方式，汲取附近一定范围内的虚境裂隙：\\n·在七相一闪模式下进行的重击命中敌人时；\\n·施放七相一闪模式下的特殊元素爆发<color=#FFD780FF>极恶技·尽</color>时；\\n·长按施放元素战技<color=#FFD780FF>极恶技·闪</color>进行快速移动时。\\n\\n每汲取一枚虚境裂隙，丝柯克将获得8点蛇之狡谋。",
+            "name": "理外之理",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11330001": {
+            "color": "",
+            "desc": "进行重击时，法洁欧将会切换至该模式。\\n处于该模式下时，法洁欧会对前方的敌人进行扫射攻击，并周期性发射冷凝射线，造成<color=#99FFFFFF>冰元素范围伤害</color>。\\n<color=#FFD780FF>辉映·星超导</color>：冷凝射线转为造成视为星超导反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。",
+            "name": "解算",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11330003": {
+            "color": "",
+            "desc": "触发星超导反应时，附近的区域会短暂变化为<color=#FFD780FF>极星辉域</color>；处于极星辉域中时，特定角色将会进入<color=#FFD780FF>辉映·星超导</color>状态，使其不同技能分别获得对应的强化效果。",
+            "name": "极星辉域",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500002": {
+            "color": "",
+            "desc": "奥黛塔的特殊元素战技，对附近的敌人持续造成<color=#99FFFFFF>冰元素范围伤害</color>，并在共舞结束时，造成一次视为星超导反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。共舞时，奥黛塔可以控制舞步的方向。\\n<color=#FFD780FF>辉映·星烁</color>：共舞结束时，改为造成一次视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。\\n\\n此外，施放特殊元素战技<color=#FFD780FF>柔板·破晓终奏</color>后，在<color=#FFD780FF>独舞倒影</color>剩余持续时间内，若奥黛塔处于<color=#FFD780FF>辉映·星烁</color>状态，则<color=#FFD780FF>独舞倒影</color>的两种舞步还会额外造成视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。",
+            "name": "柔板·破晓终奏",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500004": {
+            "color": "",
+            "desc": "<color=#FFD780FF>辉映·星超导</color>与<color=#FFD780FF>辉映·星扩散</color>统称为<color=#FFD780FF>辉映·星烁</color>状态。\\n角色同时只能受到一种辉映状态影响，且优先被<color=#FFD780FF>辉映·星超导</color>影响。",
+            "name": "辉映·星烁",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "sha256": "da9afb26c50272a5eabb6458045d8311d1bcd12473b6cf0eff589f4e61b82bd4",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/hyperlink.json"
+      }
+    }
+  }
+}

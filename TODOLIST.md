@@ -2,62 +2,38 @@
 
 ## Missing Character Implementations
 
-- [x] Detect missing characters programmatically
-- [x] Generate pipeline configs from exact local labels
-- [x] Generate character files and `zz_*.dm.go` through the community-data generator
-- [x] Run gofmt
-- [x] First compile and independent structural review
-- [x] Automatically fix confirmed config and registration issues
-- [ ] Complete character-specific passive, constellation, and runtime-state implementations
-- [ ] Verify combat frame data and full simulations
+- [x] Discover missing characters programmatically from every local data version
+- [x] Generate exact local multipliers and complete catalog growth/ascension data
+- [x] Replace generic `basicimport` scaffolds with character-specific actions and states
+- [x] Run the non-scaffold implementation audit across every imported character
+- [x] Run package, action-queue, and targeted character runtime tests
+- [ ] Independent user review and frame/hitbox/particle verification
 
 Summary:
 
-- Missing discovered: 13
-- Generated: 13
-- Compile-ready: 13
-- Basic-simulation-ready: 8
-- Partial-simulation: 5
-- Core-support-blocked: 0
-- Full-simulation-ready: 0
-- Failed: 0
+- Imported characters: 13
+- Review-ready: 13
+- Basic-simulation-validated: 12
+- Partial-simulation: 1
+- Core-support-blocked details: 1
 
-The generated baseline simulates confirmed direct talent damage. It does not claim that unknown frames, particles, hitboxes, passives, constellations, or star-reaction formulas are complete.
-
-## Star-Reaction Core Support
-
-- [ ] Lunar-Bloom reaction event and confirmed damage formula
-  - Required by: Nefer
-- [ ] Moonsign state/query and Ascendant Gleam state
-  - Required by: Illuga, Jahoda, Linnea, Nefer, Zibai
-- [ ] Verdant Dew team resource
-  - Required by: Nefer
-- [ ] Seed of Deceit field entity and conversion support
-  - Required by: Nefer
-- [ ] Connect public star-reaction events to character callbacks
+`review-ready` means the package contains real character mechanics and passed local
+runtime checks. It does not claim verified live-server frames, hitboxes, ICD, or
+particle distributions; those remain explicitly listed below.
 
 ## Imported Characters
 
+
 ### Alyosha — 10000148
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -65,44 +41,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000148
 - Nanoka fallback query: `Alyosha 10000148`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/fischl`
+- `internal/characters/gorou`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Iansan — 10000110
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -110,44 +76,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000110
 - Nanoka fallback query: `Iansan 10000110`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/varesa`
+- `internal/characters/xilonen`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Ifa — 10000113
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -155,44 +111,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000113
 - Nanoka fallback query: `Ifa 10000113`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/chasca`
+- `internal/characters/sayu`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Illuga — 10000127
 
-Status: compile-ready
-Simulation level: partial-simulation
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -200,55 +146,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000127
 - Nanoka fallback query: `Illuga 10000127`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/albedo`
+- `internal/characters/gorou`
 
-Core support required:
+Remaining verification:
 
-- Moonsign state/query, Ascendant Gleam state
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
-
-Star-reaction implementation:
-
-- [x] Description dependency classified
-- [ ] Character-side trigger logic
-- [ ] Character-side stacks/status
-- [ ] Character-provided reaction modifiers
-- [ ] Talent and constellation interactions
-- [ ] Public reaction event integration
-- [ ] Confirmed base damage and EM/Moonsign/critical formulas
-- [ ] Final damage validation
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Jahoda — 10000124
 
-Status: compile-ready
-Simulation level: partial-simulation
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -256,55 +181,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000124
 - Nanoka fallback query: `Jahoda 10000124`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/heizou`
+- `internal/characters/sayu`
 
-Core support required:
+Remaining verification:
 
-- Moonsign state/query, Ascendant Gleam state
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
-
-Star-reaction implementation:
-
-- [x] Description dependency classified
-- [ ] Character-side trigger logic
-- [ ] Character-side stacks/status
-- [ ] Character-provided reaction modifiers
-- [ ] Talent and constellation interactions
-- [ ] Public reaction event integration
-- [ ] Confirmed base damage and EM/Moonsign/critical formulas
-- [ ] Final damage validation
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Kachina — 10000100
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -312,44 +216,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000100
 - Nanoka fallback query: `Kachina 10000100`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/albedo`
+- `internal/characters/gorou`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Linnea — 10000130
 
-Status: compile-ready
-Simulation level: partial-simulation
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -357,55 +251,37 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000130
 - Nanoka fallback query: `Linnea 10000130`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/columbina`
+- `internal/characters/flins`
+- `internal/characters/gorou`
+- `internal/characters/kokomi`
+- `pkg/reactable/lunarcrystallize.go`
 
-Core support required:
+Remaining verification:
 
-- Moonsign state/query, Ascendant Gleam state
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
-
-Star-reaction implementation:
-
-- [x] Description dependency classified
-- [ ] Character-side trigger logic
-- [ ] Character-side stacks/status
-- [ ] Character-provided reaction modifiers
-- [ ] Talent and constellation interactions
-- [ ] Public reaction event integration
-- [ ] Confirmed base damage and EM/Moonsign/critical formulas
-- [ ] Final damage validation
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Lohen — 10000129
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -413,44 +289,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000129
 - Nanoka fallback query: `Lohen 10000129`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/ayaka`
+- `internal/characters/tartaglia`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Nefer — 10000122
 
-Status: compile-ready
+Status: review-ready
 Simulation level: partial-simulation
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -458,55 +324,40 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000122
 - Nanoka fallback query: `Nefer 10000122`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/columbina`
+- `internal/characters/nahida`
+- `pkg/reactable/bloom.go`
 
-Core support required:
+Remaining verification:
 
-- Lunar-Bloom reaction event and formula, Moonsign state/query, Ascendant Gleam state, Verdant Dew team resource
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Core support still required:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] Seed of Deceit entity
 
-Star-reaction implementation:
+Review TODO:
 
-- [x] Description dependency classified
-- [ ] Character-side trigger logic
-- [ ] Character-side stacks/status
-- [ ] Character-provided reaction modifiers
-- [ ] Talent and constellation interactions
-- [ ] Public reaction event integration
-- [ ] Confirmed base damage and EM/Moonsign/critical formulas
-- [ ] Final damage validation
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
+- [ ] Implement Seed of Deceit entity
 
 ### Odette — 10000150
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -514,44 +365,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000150
 - Nanoka fallback query: `Odette 10000150`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/fischl`
+- `pkg/core/star_reaction.go`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Prune — 10000132
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -559,44 +400,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000132
 - Nanoka fallback query: `Prune 10000132`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/heizou`
+- `internal/characters/sayu`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Sandrone — 10000133
 
-Status: compile-ready
-Simulation level: basic-simulation-ready
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -604,44 +435,34 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000133
 - Nanoka fallback query: `Sandrone 10000133`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/fischl`
+- `pkg/core/star_reaction.go`
 
-Core support required:
+Remaining verification:
 
-- None identified
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
 ### Zibai — 10000126
 
-Status: compile-ready
-Simulation level: partial-simulation
+Status: review-ready
+Simulation level: basic-simulation-validated
 
-- [x] Local data
-- [x] Exact-label config.yml
-- [x] Pipeline-generated `zz_*.dm.go`
-- [x] Base character and registration
-- [x] Normal attack
-- [x] Charged attack
-- [x] Plunge
-- [x] Skill direct damage baseline
-- [x] Burst direct damage baseline
-- [ ] Complete A1/A4 implementation
-- [ ] Complete C1-C6 implementation
-- [x] First package compile
-- [x] Independent structural review
-- [x] Confirmed structural fixes
-- [ ] Character-specific mechanic review
+- [x] Local data, exact-label config, catalog stats, and generated multipliers
+- [x] Character-specific normal, charged, and plunge attacks
+- [x] Character-specific Skill, Burst, states, passives, and constellations
+- [x] Independent non-scaffold audit
+- [x] Minimal action-queue simulation
 
 Sources:
 
@@ -649,32 +470,39 @@ Sources:
 - Lunaris fallback: https://lunaris.moe/character/10000126
 - Nanoka fallback query: `Zibai 10000126`
 
-Combat data TODO:
+Older implementation/core references:
 
-- [ ] Frames and cancel windows
-- [ ] Hitboxes, offsets, and targeting
-- [ ] ICD, gauge, hitlag, and particles
-- [ ] Snapshot and runtime state-machine timing
+- `internal/characters/albedo`
+- `pkg/reactable/lunarcrystallize.go`
 
-Core support required:
+Remaining verification:
 
-- Moonsign state/query, Ascendant Gleam state
+- [ ] action frames, hit marks, cancel windows, and hitlag
+- [ ] hitbox geometry, targeting, travel time, and multi-target behavior
+- [ ] runtime state-machine ordering, snapshot timing, and server-only logic
+- [ ] particle observations pending verification; Lunaris is the temporary default
 
-Validation:
+Review TODO:
 
-- gofmt: passed
-- package compile: passed
-- basic simulation: not run (global simulation package build did not complete in this workspace)
-- full simulation: not claimed
+- [ ] User review of character-specific mechanics
+- [ ] Validate final damage values against an independent trusted sample
+- [ ] Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering
 
-Star-reaction implementation:
+## Kirara Non-Character Import
 
-- [x] Description dependency classified
-- [ ] Character-side trigger logic
-- [ ] Character-side stacks/status
-- [ ] Character-provided reaction modifiers
-- [ ] Talent and constellation interactions
-- [ ] Public reaction event integration
-- [ ] Confirmed base damage and EM/Moonsign/critical formulas
-- [ ] Final damage validation
+Source: `ChenSi-II/kirara-sim` commits `cf027d533` and `560609444`.
 
+- [x] Star Superconduct core reaction, domain state, contribution damage, events, and tests
+- [x] Star Diffusion core reaction, vortex state, contribution damage, events, and tests
+- [x] Scroll of the Hero of Cinder City and Thundering Fury reaction integration
+- [x] Import Kirara artifact and weapon basic-data snapshots
+- [x] Adapt Star reaction character detection to the current catalog API
+- [x] Core, reactable, combat, and affected artifact package tests
+- [x] Full `internal/...` regression suite (backend-only Docker tests excluded)
+
+Excluded from this import: Kirara character implementations, character basic data, character mechanism spreadsheet, and Kirara's project TODOLIST.
+
+
+## Remaining Core Support
+
+- [ ] Seed of Deceit entity

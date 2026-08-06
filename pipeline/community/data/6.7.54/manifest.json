@@ -1,0 +1,533 @@
+{
+  "data_track": "preview",
+  "promotion_rule": "Do not promote a snapshot to an active simulation implementation until every unresolved runtime field used by that implementation has a cited measurement, test, or explicit documented assumption.",
+  "reactions": [
+    {
+      "gcsim_status": "missing",
+      "keywords": {
+        "en": [
+          "Stellar-Conduct"
+        ],
+        "zh": [
+          "星超导"
+        ]
+      },
+      "slug": "stellarconduct",
+      "tutorial_id": "1048"
+    },
+    {
+      "gcsim_status": "missing",
+      "keywords": {
+        "en": [
+          "Stellar Swirl",
+          "Stellar Glimmer"
+        ],
+        "zh": [
+          "星扩散",
+          "星烁"
+        ]
+      },
+      "slug": "stellarswirl",
+      "tutorial_id": "1049"
+    }
+  ],
+  "schema_version": 1,
+  "source_indexes": {
+    "artifact": {
+      "count": 65,
+      "sha256": "85e6dc14b7bba3c79f7e610637dfc192ec1af82952ade4d00a961c3c9e9402c4",
+      "url": "https://static.nanoka.cc/gi/6.7.54/artifact.json"
+    },
+    "character": {
+      "count": 148,
+      "sha256": "50ffad44d09fa8dbfddf8b3b2f60f488ee9fec3874b832d2eaeb4894c3f8356c",
+      "url": "https://static.nanoka.cc/gi/6.7.54/character.json"
+    },
+    "weapon": {
+      "count": 268,
+      "sha256": "36f891f90f7349e1d329b78bf6c4a978d2ae2dda5b94fdfaaa4148033b61319f",
+      "url": "https://static.nanoka.cc/gi/6.7.54/weapon.json"
+    }
+  },
+  "source_policy": {
+    "character_energy_default": "lunaris",
+    "note": "Use Lunaris particle count, chance, and cooldown until verified measurements are supplied. Keep Nanoka as a secondary reference."
+  },
+  "supplemental_findings": {
+    "already_implemented": [
+      "10000128 Varka (registered, explicitly incomplete)",
+      "12432 Flame-Forged Insight"
+    ],
+    "artifact_catalog_gaps": [
+      {
+        "classification": "legacy_low_priority",
+        "id": "10004",
+        "name": {
+          "en": "Tiny Miracle",
+          "ja": "奇跡",
+          "ko": "기적",
+          "zh": "奇迹"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "10010",
+        "name": {
+          "en": "Adventurer",
+          "ja": "冒険者",
+          "ko": "모험가",
+          "zh": "冒险家"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "10011",
+        "name": {
+          "en": "Lucky Dog",
+          "ja": "幸運",
+          "ko": "행운아",
+          "zh": "幸运儿"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "10013",
+        "name": {
+          "en": "Traveling Doctor",
+          "ja": "医者",
+          "ko": "떠돌이 의사",
+          "zh": "游医"
+        }
+      },
+      {
+        "classification": "excluded_unreleased",
+        "id": "15004",
+        "name": {
+          "en": "Glacier and Snowfield",
+          "ja": "氷の川と雪の砂",
+          "ko": "빙하와 눈의 모래",
+          "zh": "冰之川与雪之砂"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "15009",
+        "name": {
+          "en": "Prayers for Illumination",
+          "ja": "火祭りの人",
+          "ko": "불을 모시는 자",
+          "zh": "祭火之人"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "15010",
+        "name": {
+          "en": "Prayers for Destiny",
+          "ja": "水祭りの人",
+          "ko": "물을 모시는 자",
+          "zh": "祭水之人"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "15011",
+        "name": {
+          "en": "Prayers for Wisdom",
+          "ja": "雷祭りの人",
+          "ko": "뇌명을 모시는 자",
+          "zh": "祭雷之人"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "15012",
+        "name": {
+          "en": "Prayers to the Firmament",
+          "ja": "風祭りの人",
+          "ko": "바람을 모시는 자",
+          "zh": "祭风之人"
+        }
+      },
+      {
+        "classification": "legacy_low_priority",
+        "id": "15013",
+        "name": {
+          "en": "Prayers to Springtime",
+          "ja": "氷祭りの人",
+          "ko": "얼음을 모시는 자",
+          "zh": "祭冰之人"
+        }
+      },
+      {
+        "classification": "current_target",
+        "id": "15047",
+        "name": {
+          "en": "Scarlet Proof",
+          "ja": "紅血の証",
+          "ko": "핏빛 증표",
+          "zh": "血红之证"
+        }
+      },
+      {
+        "classification": "current_target",
+        "id": "15048",
+        "name": {
+          "en": "Heart of the Furnace",
+          "ja": "炉炎溶錬の心",
+          "ko": "용광로가 빚은 심장",
+          "zh": "炉火融炼之心"
+        }
+      }
+    ],
+    "excluded_entities": {
+      "artifacts": [
+        {
+          "ids": "15004",
+          "reason": "Glacier and Snowfield is unreleased/internal."
+        }
+      ],
+      "characters": [
+        {
+          "ids": "10000117-2..8, 10000118-2..8",
+          "reason": "Manekin/Manekina special avatars, not normal party characters."
+        },
+        {
+          "ids": "10000134, 10000135",
+          "reason": "Crossbow/TPS Traveler entries, not normal elemental Traveler forms."
+        }
+      ],
+      "weapons": [
+        {
+          "ids": "224001..224008, 310001..390001",
+          "reason": "TPS, event, or internal special equipment; not normal inventory weapons."
+        }
+      ]
+    },
+    "missing_cryo_traveler_counterpart": "10000005-5 (Aether)",
+    "source_conflicts": {
+      "character_energy_timing": [
+        {
+          "conflicts": [],
+          "id": "10000005-5",
+          "unmatched_lunaris": [],
+          "unmatched_nanoka": [
+            {
+              "applications": 1,
+              "cd": 0.3,
+              "chance": 100.0,
+              "drop_id": 2022,
+              "element": "Cryo",
+              "kind": "ElementalArt",
+              "lifetime": 9.0,
+              "name": "ElementalArt_ElemBall_Initial",
+              "per_drop": 1.0,
+              "skill": "ElementalArt_Ice"
+            }
+          ]
+        },
+        {
+          "conflicts": [],
+          "id": "10000007-5",
+          "unmatched_lunaris": [],
+          "unmatched_nanoka": [
+            {
+              "applications": 1,
+              "cd": 0.3,
+              "chance": 100.0,
+              "drop_id": 2022,
+              "element": "Cryo",
+              "kind": "ElementalArt",
+              "lifetime": 9.0,
+              "name": "ElementalArt_ElemBall_Initial",
+              "per_drop": 1.0,
+              "skill": "ElementalArt_Ice"
+            }
+          ]
+        },
+        {
+          "conflicts": [
+            {
+              "lunaris_cd": "0.5s",
+              "nanoka_cd": 1.0,
+              "source": "Ball"
+            }
+          ],
+          "id": "10000148",
+          "unmatched_lunaris": [],
+          "unmatched_nanoka": []
+        },
+        {
+          "conflicts": [
+            {
+              "lunaris_cd": "12s",
+              "nanoka_cd": 6.0,
+              "source": "GenerateBall"
+            }
+          ],
+          "id": "10000150",
+          "unmatched_lunaris": [],
+          "unmatched_nanoka": []
+        }
+      ]
+    }
+  },
+  "targets": {
+    "artifacts": [
+      {
+        "gcsim_status": "incomplete",
+        "id": "15046",
+        "registered": true,
+        "release_track": "live",
+        "slug": "disenchantmentindeepshadow"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "15047",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "scarletproof"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "15048",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "heartofthefurnace"
+      }
+    ],
+    "characters": [
+      {
+        "gcsim_status": "missing",
+        "id": "10000100",
+        "registered": false,
+        "slug": "kachina"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000110",
+        "registered": false,
+        "slug": "iansan"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000113",
+        "registered": false,
+        "slug": "ifa"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000122",
+        "registered": false,
+        "slug": "nefer"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000124",
+        "registered": false,
+        "slug": "jahoda"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000126",
+        "registered": false,
+        "slug": "zibai"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000127",
+        "registered": false,
+        "slug": "illuga"
+      },
+      {
+        "gcsim_status": "incomplete",
+        "id": "10000128",
+        "registered": true,
+        "slug": "varka"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000129",
+        "registered": false,
+        "slug": "lohen"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000130",
+        "registered": false,
+        "slug": "linnea"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000132",
+        "registered": false,
+        "slug": "prune"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000133",
+        "registered": false,
+        "slug": "sandrone"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000005-5",
+        "lunaris_id": "10000005_CRYO",
+        "registered": false,
+        "slug": "aethercryo"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000007-5",
+        "lunaris_id": "10000007_CRYO",
+        "registered": false,
+        "slug": "luminecryo"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000148",
+        "registered": false,
+        "slug": "alyosha"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "10000150",
+        "registered": false,
+        "slug": "odette"
+      }
+    ],
+    "weapons": [
+      {
+        "gcsim_status": "missing",
+        "id": "11519",
+        "registered": false,
+        "release_track": "live",
+        "slug": "lightbearingmoonshard"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "12516",
+        "registered": false,
+        "release_track": "live",
+        "slug": "ateaspoonoftranscendence"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "13517",
+        "registered": false,
+        "release_track": "live",
+        "slug": "disasterandremorse"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "11435",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "hereticsmoltenblade"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "11436",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "emberwell"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "11520",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "whitelakefrostfeather"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "11521",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "exaiphanesblade"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "12435",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "forgedbythegoldenmelody"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "12436",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "bladeofatonement"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "13435",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "frostbreath"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "13436",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "songofthevigil"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "14435",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "clashofkings"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "14436",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "echoesoftheheart"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "15435",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "jadevista"
+      },
+      {
+        "gcsim_status": "missing",
+        "id": "15436",
+        "registered": false,
+        "release_track": "preview",
+        "slug": "covenantoffrostandsnow"
+      },
+      {
+        "gcsim_status": "implemented",
+        "id": "12432",
+        "note": "The user-reported 拾慧铸熔 is already registered and implemented.",
+        "registered": true,
+        "release_track": "live",
+        "slug": "flameforgedinsight"
+      }
+    ]
+  },
+  "versions": {
+    "lunaris": {
+      "base_url": "https://api.lunaris.moe/data",
+      "live_version": "6.7.0",
+      "preview_version": "6.7.54.2"
+    },
+    "lunaris_reported": {
+      "sha256": "3c462e7cf6e4953d1ea31d3586b84db83ec90386f174ee045d6b0f7689349da4",
+      "timestamp": 1785924000,
+      "url": "https://api.lunaris.moe/data/version.json",
+      "version": "6.7.54.2"
+    },
+    "nanoka": {
+      "base_url": "https://static.nanoka.cc/gi",
+      "live_version": "6.7",
+      "preview_version": "6.7.54"
+    }
+  }
+}

@@ -3,7 +3,9 @@ package main
 import (
 	"bytes"
 	"cmp"
+	"errors"
 	"fmt"
+	"io/fs"
 	"path"
 	"reflect"
 	"slices"
@@ -16,19 +18,116 @@ import (
 )
 
 type WeaponSpec struct {
-	Name  string            `yaml:"name,omitempty"`
-	Model *model.WeaponData `yaml:"model,omitempty"`
-
-	ref *excel.Weapon `yaml:"-"`
+	Name         string            `yaml:"name,omitempty"`
+	Model        *model.WeaponData `yaml:"model,omitempty"`
+	Localization map[string]string `yaml:"localization,omitempty"`
 }
 
-func (s *WeaponSpec) ClearRef() {
-	if s != nil {
-		s.ref = nil
+func (s *WeaponSpec) ClearRef() {}
+
+type weaponBuildRef struct {
+	Name         string
+	Model        *model.WeaponData
+	Attributes   []*AttributeSpec
+	Localization map[string]string
+}
+
+var errLiveWeaponNotFound = errors.New("live weapon not found")
+
+func buildWeaponSpec(cfg *Config) (*WeaponSpec, error) {
+	ref, err := resolveWeaponBuildRef(projectRoot.FS(), cfg)
+	if err != nil {
+		return nil, err
+	}
+	cfg.Attributes = append(cfg.Attributes, ref.Attributes...)
+	return &WeaponSpec{
+		Name:         ref.Name,
+		Model:        ref.Model,
+		Localization: ref.Localization,
+	}, nil
+}
+
+func resolveWeaponBuildRef(root fs.FS, cfg *Config) (*weaponBuildRef, error) {
+	return resolveWeaponBuildRefWithLive(root, cfg, buildLiveWeaponRef)
+}
+
+func resolveWeaponBuildRefWithLive(
+	root fs.FS,
+	cfg *Config,
+	live func(*Config) (*weaponBuildRef, error),
+) (*weaponBuildRef, error) {
+	return resolveWeaponBuildRefWithResolvers(root, cfg, live, loadCommunityWeaponRef)
+}
+
+func resolveWeaponBuildRefWithResolvers(
+	root fs.FS,
+	cfg *Config,
+	live func(*Config) (*weaponBuildRef, error),
+	community func(fs.FS, *Config) (*weaponBuildRef, error),
+) (*weaponBuildRef, error) {
+	switch cfg.Source {
+	case "live":
+		if cfg.Version != "" {
+			return nil, errors.New("weapon version requires source: community")
+		}
+		return live(cfg)
+	case "":
+		if cfg.Version != "" {
+			return nil, errors.New("weapon version requires source: community")
+		}
+		liveRef, liveErr := live(cfg)
+		versions, err := findCommunityWeaponVersions(root, cfg.Override.Id)
+		if err != nil {
+			return nil, err
+		}
+		if liveErr == nil {
+			if len(versions) == 0 {
+				return liveRef, nil
+			}
+			if len(versions) > 1 {
+				return nil, fmt.Errorf(
+					"weapon %d exists in multiple community versions %v; select source and version explicitly",
+					cfg.Override.Id,
+					versions,
+				)
+			}
+			communityCfg := *cfg
+			communityCfg.Source = "community"
+			communityCfg.Version = versions[0]
+			communityRef, err := community(root, &communityCfg)
+			if err != nil {
+				return nil, err
+			}
+			if err := compareLiveAndCommunityWeapon(liveRef, communityRef); err != nil {
+				return nil, fmt.Errorf("live/community conflict for weapon %d: %w", cfg.Override.Id, err)
+			}
+			return liveRef, nil
+		}
+		if !errors.Is(liveErr, errLiveWeaponNotFound) || len(versions) == 0 {
+			return nil, liveErr
+		}
+		if len(versions) > 1 {
+			return nil, fmt.Errorf(
+				"weapon %d exists in multiple community versions %v; select source and version explicitly",
+				cfg.Override.Id,
+				versions,
+			)
+		}
+		communityCfg := *cfg
+		communityCfg.Source = "community"
+		communityCfg.Version = versions[0]
+		return community(root, &communityCfg)
+	case "community":
+		if cfg.Version == "" {
+			return nil, errors.New("community weapon source requires version")
+		}
+		return community(root, cfg)
+	default:
+		return nil, fmt.Errorf("unsupported weapon source %q", cfg.Source)
 	}
 }
 
-func buildWeaponSpec(cfg *Config) (*WeaponSpec, error) {
+func buildLiveWeaponRef(cfg *Config) (*weaponBuildRef, error) {
 	refs := excel.Filter(excel.WeaponExcelConfigData, func(v *excel.Weapon) bool {
 		if id := cfg.Override.Id; id != 0 {
 			return v.Id == id
@@ -36,63 +135,49 @@ func buildWeaponSpec(cfg *Config) (*WeaponSpec, error) {
 		return v.StoryId != 0 && excel.SlugLower(v.Name()) == cfg.Name
 	})
 	if len(refs) != 1 {
+		if len(refs) == 0 {
+			return nil, fmt.Errorf("%w: query results in refs=0 but we expect 1", errLiveWeaponNotFound)
+		}
 		return nil, fmt.Errorf("query results in refs=%v but we expect 1", len(refs))
 	}
+	ref := refs[0]
 
-	spec := &WeaponSpec{ref: refs[0]}
-	promote := excel.Filter(excel.WeaponPromoteExcelConfigData, func(v *excel.WeaponPromote) bool { return v.WeaponPromoteId == spec.ref.WeaponPromoteId })
-	if len(promote) == 0 {
-		return nil, fmt.Errorf("no promote found for weapon_id=%v", spec.ref.Id)
-	}
-	slices.SortFunc(promote, func(a, b *excel.WeaponPromote) int { return cmp.Compare(a.PromoteLevel, b.PromoteLevel) })
-
-	spec.Name = spec.ref.Name()
-	spec.Model = &model.WeaponData{
-		Id:          spec.ref.Id,
-		Key:         excel.SlugLower(spec.Name),
-		Rarity:      spec.ref.RankLevel,
-		WeaponClass: ConvertEnum[model.WeaponType](spec.ref.WeaponType, model.WeaponType_value, -1),
-		ImageName:   spec.ref.AwakenIcon,
-		BaseStats:   &model.WeaponStatsData{},
-	}
-	if spec.Model.WeaponClass == -1 {
-		return nil, fmt.Errorf("unknown weapon_type=%v", spec.ref.WeaponType)
+	promoData, err := buildPromotionData(ref.WeaponPromoteId)
+	if err != nil {
+		return nil, fmt.Errorf("weapon_id=%v: %w", ref.Id, err)
 	}
 
-	for _, add := range spec.ref.WeaponProp {
+	name := ref.Name()
+	out := &weaponBuildRef{
+		Name: name,
+		Model: &model.WeaponData{
+			Id:          ref.Id,
+			Key:         excel.SlugLower(name),
+			Rarity:      ref.RankLevel,
+			WeaponClass: ConvertEnum[model.WeaponType](ref.WeaponType, model.WeaponType_value, -1),
+			ImageName:   ref.AwakenIcon,
+			BaseStats: &model.WeaponStatsData{
+				PromoData: promoData,
+			},
+		},
+		Localization: make(map[string]string),
+	}
+	if out.Model.WeaponClass == -1 {
+		return nil, fmt.Errorf("unknown weapon_type=%v", ref.WeaponType)
+	}
+
+	for _, add := range ref.WeaponProp {
 		if add.InitValue == 0 || add.PropType == excel.FIGHT_PROP_NONE {
 			continue
 		}
-		if curve := add.Type; !slices.Contains(curveTypes[KindWeapon], curve) {
-			return nil, fmt.Errorf("curve not listed in known types: %v", curve)
-		}
-		typ := ConvertEnum[model.FightPropType](add.PropType, model.FightPropType_value, -1)
-		curve := ConvertEnum[model.GrowCurveType](add.Type, model.GrowCurveType_value, -1)
-		if typ == -1 {
-			return nil, fmt.Errorf("unknown prop=%v", add.PropType)
-		}
-		if curve == -1 {
-			return nil, fmt.Errorf("unknown curve=%v", add.Type)
-		}
-		spec.Model.BaseStats.BaseProps = append(spec.Model.BaseStats.BaseProps, &model.WeaponProp{
-			PropType:     typ,
-			InitialValue: add.InitValue,
-			Curve:        curve,
-		})
-	}
-
-	for _, v := range promote {
-		props, err := ConvertAddProps(v.AddProps)
+		prop, err := buildWeaponProp(add.InitValue, add.PropType, add.Type)
 		if err != nil {
 			return nil, err
 		}
-		spec.Model.BaseStats.PromoData = append(spec.Model.BaseStats.PromoData, &model.PromotionData{
-			MaxLevel: v.UnlockMaxLevel,
-			AddProps: props,
-		})
+		out.Model.BaseStats.BaseProps = append(out.Model.BaseStats.BaseProps, prop)
 	}
 
-	for num, id := range spec.ref.SkillAffix {
+	for num, id := range ref.SkillAffix {
 		affixes := excel.Filter(excel.EquipAffixExcelConfigData, func(v *excel.EquipAffix) bool { return v.Id == id })
 		slices.SortFunc(affixes, func(a, b *excel.EquipAffix) int { return cmp.Compare(a.Level, b.Level) })
 		if len(affixes) == 0 {
@@ -109,10 +194,59 @@ func buildWeaponSpec(cfg *Config) (*WeaponSpec, error) {
 			attr.Type += strconv.Itoa(num)
 		}
 		attr.SetValues(len(affixes), func(i int) []float64 { return affixes[i].ParamList })
-		cfg.Attributes = append(cfg.Attributes, attr)
+		out.Attributes = append(out.Attributes, attr)
 	}
 
-	return spec, nil
+	for _, lang := range languages {
+		out.Localization[lang] = ref.NameTextMapHash.Lang(lang)
+	}
+	return out, nil
+}
+
+func buildWeaponProp(initialValue float64, propType, curveType any) (*model.WeaponProp, error) {
+	if !slices.ContainsFunc(curveTypes[KindWeapon], func(curve excel.GrowCurveType) bool {
+		return curve.String() == fmt.Sprint(curveType)
+	}) {
+		return nil, fmt.Errorf("curve not listed in known types: %v", curveType)
+	}
+	typ := ConvertEnum[model.FightPropType](propType, model.FightPropType_value, -1)
+	curve := ConvertEnum[model.GrowCurveType](curveType, model.GrowCurveType_value, -1)
+	if typ == -1 {
+		return nil, fmt.Errorf("unknown prop=%v", propType)
+	}
+	if curve == -1 {
+		return nil, fmt.Errorf("unknown curve=%v", curveType)
+	}
+	return &model.WeaponProp{
+		PropType:     typ,
+		InitialValue: initialValue,
+		Curve:        curve,
+	}, nil
+}
+
+func buildPromotionData(promoteID uint32) ([]*model.PromotionData, error) {
+	promote := excel.Filter(excel.WeaponPromoteExcelConfigData, func(v *excel.WeaponPromote) bool {
+		return v.WeaponPromoteId == promoteID
+	})
+	if len(promote) == 0 {
+		return nil, fmt.Errorf("no promote found for weapon_promote_id=%v", promoteID)
+	}
+	slices.SortFunc(promote, func(a, b *excel.WeaponPromote) int {
+		return cmp.Compare(a.PromoteLevel, b.PromoteLevel)
+	})
+
+	out := make([]*model.PromotionData, 0, len(promote))
+	for _, v := range promote {
+		props, err := ConvertAddProps(v.AddProps)
+		if err != nil {
+			return nil, err
+		}
+		out = append(out, &model.PromotionData{
+			MaxLevel: v.UnlockMaxLevel,
+			AddProps: props,
+		})
+	}
+	return out, nil
 }
 
 func (c *Compiled) GenerateWeapons() error {

@@ -77,6 +77,13 @@
       "weapon_class": "WEAPON_BOW",
       "image_name": "UI_EquipIcon_Bow_Qoyllorsnova_Awaken"
     },
+    "ateaspoonoftranscendence": {
+      "id": 12516,
+      "key": "ateaspoonoftranscendence",
+      "rarity": 5,
+      "weapon_class": "WEAPON_CLAYMORE",
+      "image_name": "UI_EquipIcon_Claymore_CrystallineSword_Awaken"
+    },
     "athameartis": {
       "id": 11518,
       "key": "athameartis",
@@ -182,6 +189,13 @@
       "weapon_class": "WEAPON_POLE",
       "image_name": "UI_EquipIcon_Pole_Noire_Awaken"
     },
+    "bladeofatonement": {
+      "id": 12436,
+      "key": "bladeofatonement",
+      "rarity": 4,
+      "weapon_class": "WEAPON_CLAYMORE",
+      "image_name": "UI_EquipIcon_Claymore_GlintstoneClaymore_Awaken"
+    },
     "bloodsoakedruins": {
       "id": 13516,
       "key": "bloodsoakedruins",
@@ -231,6 +245,13 @@
       "weapon_class": "WEAPON_SWORD_ONE_HAND",
       "image_name": "UI_EquipIcon_Sword_Opus_Awaken"
     },
+    "clashofkings": {
+      "id": 14435,
+      "key": "clashofkings",
+      "rarity": 4,
+      "weapon_class": "WEAPON_CATALYST",
+      "image_name": "UI_EquipIcon_Catalyst_SandMemoria_Awaken"
+    },
     "cloudforged": {
       "id": 15426,
       "key": "cloudforged",
@@ -251,6 +272,13 @@
       "rarity": 3,
       "weapon_class": "WEAPON_SWORD_ONE_HAND",
       "image_name": "UI_EquipIcon_Sword_Steel_Awaken"
+    },
+    "covenantoffrostandsnow": {
+      "id": 15436,
+      "key": "covenantoffrostandsnow",
+      "rarity": 4,
+      "weapon_class": "WEAPON_BOW",
+      "image_name": "UI_EquipIcon_Bow_GlintstoneBow_Awaken"
     },
     "cranesechoingcall": {
       "id": 14515,
@@ -308,6 +336,13 @@
       "weapon_class": "WEAPON_POLE",
       "image_name": "UI_EquipIcon_Pole_Caduceus_Awaken"
     },
+    "disasterandremorse": {
+      "id": 13517,
+      "key": "disasterandremorse",
+      "rarity": 5,
+      "weapon_class": "WEAPON_POLE",
+      "image_name": "UI_EquipIcon_Pole_Carbine_Awaken"
+    },
     "dodocotales": {
       "id": 14413,
       "key": "dodocotales",
@@ -343,12 +378,26 @@
       "weapon_class": "WEAPON_CLAYMORE",
       "image_name": "UI_EquipIcon_Claymore_Isikhulu_Awaken"
     },
+    "echoesoftheheart": {
+      "id": 14436,
+      "key": "echoesoftheheart",
+      "rarity": 4,
+      "weapon_class": "WEAPON_CATALYST",
+      "image_name": "UI_EquipIcon_Catalyst_GlintstoneCatalyst_Awaken"
+    },
     "elegyfortheend": {
       "id": 15503,
       "key": "elegyfortheend",
       "rarity": 5,
       "weapon_class": "WEAPON_BOW",
       "image_name": "UI_EquipIcon_Bow_Widsith_Awaken"
+    },
+    "emberwell": {
+      "id": 11436,
+      "key": "emberwell",
+      "rarity": 4,
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "image_name": "UI_EquipIcon_Sword_GlintstoneSword_Awaken"
     },
     "emeraldorb": {
       "id": 14304,
@@ -384,6 +433,13 @@
       "rarity": 5,
       "weapon_class": "WEAPON_CATALYST",
       "image_name": "UI_EquipIcon_Catalyst_Kaleido_Awaken"
+    },
+    "exaiphanesblade": {
+      "id": 11521,
+      "key": "exaiphanesblade",
+      "rarity": 5,
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "image_name": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya_Awaken"
     },
     "eyeofperception": {
       "id": 14409,
@@ -518,6 +574,13 @@
       "weapon_class": "WEAPON_CLAYMORE",
       "image_name": "UI_EquipIcon_Claymore_Arakalari_Awaken"
     },
+    "forgedbythegoldenmelody": {
+      "id": 12435,
+      "key": "forgedbythegoldenmelody",
+      "rarity": 4,
+      "weapon_class": "WEAPON_CLAYMORE",
+      "image_name": "UI_EquipIcon_Claymore_EscapeWheel_Awaken"
+    },
     "fracturedhalo": {
       "id": 13515,
       "key": "fracturedhalo",
@@ -538,6 +601,13 @@
       "rarity": 4,
       "weapon_class": "WEAPON_CATALYST",
       "image_name": "UI_EquipIcon_Catalyst_Everfrost_Awaken"
+    },
+    "frostbreath": {
+      "id": 13435,
+      "key": "frostbreath",
+      "rarity": 4,
+      "weapon_class": "WEAPON_POLE",
+      "image_name": "UI_EquipIcon_Pole_FaesCrystalle_Awaken"
     },
     "fruitfulhook": {
       "id": 12430,
@@ -602,6 +672,13 @@
       "weapon_class": "WEAPON_SWORD_ONE_HAND",
       "image_name": "UI_EquipIcon_Sword_Dawn_Awaken"
     },
+    "hereticsmoltenblade": {
+      "id": 11435,
+      "key": "hereticsmoltenblade",
+      "rarity": 4,
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "image_name": "UI_EquipIcon_Sword_SerpentTooth_Awaken"
+    },
     "huntersbow": {
       "id": 15101,
       "key": "huntersbow",
@@ -644,6 +721,13 @@
       "weapon_class": "WEAPON_CATALYST",
       "image_name": "UI_EquipIcon_Catalyst_Morax_Awaken"
     },
+    "jadevista": {
+      "id": 15435,
+      "key": "jadevista",
+      "rarity": 4,
+      "weapon_class": "WEAPON_BOW",
+      "image_name": "UI_EquipIcon_Bow_ShatteredMirror_Awaken"
+    },
     "kagotsurubeisshin": {
       "id": 11416,
       "key": "kagotsurubeisshin",
@@ -685,6 +769,13 @@
       "rarity": 4,
       "weapon_class": "WEAPON_POLE",
       "image_name": "UI_EquipIcon_Pole_Bakufu_Awaken"
+    },
+    "lightbearingmoonshard": {
+      "id": 11519,
+      "key": "lightbearingmoonshard",
+      "rarity": 5,
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "image_name": "UI_EquipIcon_Sword_SilverwareSaw_Awaken"
     },
     "lightoffoliarincision": {
       "id": 11512,
@@ -1267,6 +1358,13 @@
       "weapon_class": "WEAPON_BOW",
       "image_name": "UI_EquipIcon_Bow_Vorpal_Awaken"
     },
+    "songofthevigil": {
+      "id": 13436,
+      "key": "songofthevigil",
+      "rarity": 4,
+      "weapon_class": "WEAPON_POLE",
+      "image_name": "UI_EquipIcon_Pole_GlintstonePolearm_Awaken"
+    },
     "splendoroftranquilwaters": {
       "id": 11513,
       "key": "splendoroftranquilwaters",
@@ -1574,6 +1672,13 @@
       "rarity": 3,
       "weapon_class": "WEAPON_CLAYMORE",
       "image_name": "UI_EquipIcon_Claymore_Tin_Awaken"
+    },
+    "whitelakefrostfeather": {
+      "id": 11520,
+      "key": "whitelakefrostfeather",
+      "rarity": 5,
+      "weapon_class": "WEAPON_SWORD_ONE_HAND",
+      "image_name": "UI_EquipIcon_Sword_Swanlake_Awaken"
     },
     "whitetassel": {
       "id": 13301,

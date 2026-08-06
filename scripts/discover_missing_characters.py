@@ -98,13 +98,19 @@ def detect_core_support(record: dict) -> list[str]:
         for item in tables.get(group, [])
     ).lower()
     terms = {
-        "Lunar-Bloom reaction event and formula": ("lunar-bloom",),
-        "Moonsign state/query": ("moonsign",),
-        "Ascendant Gleam state": ("ascendant gleam",),
-        "Verdant Dew team resource": ("verdant dew",),
-        "Seed of Deceit entity": ("seed of deceit", "seeds of deceit"),
+        "Lunar-Bloom reaction event and formula": (("lunar-bloom",), (("pkg/core/event/event.go", "OnLunarBloom"), ("pkg/reactable/bloom.go", "LunarBloomEnableKey"))),
+        "Moonsign state/query": (("moonsign",), (("pkg/core/player/player.go", "GetMoonsignLevel"),)),
+        "Ascendant Gleam state": (("ascendant gleam",), (("pkg/core/player/player.go", "GetMoonsignLevel"),)),
+        "Verdant Dew team resource": (("verdant dew",), (("pkg/core/player/verdantdew.go", "ConsumeDew"),)),
+        "Seed of Deceit entity": (("seed of deceit", "seeds of deceit"), (("internal/template/seedofdeceit/seed.go", "Seed"),)),
     }
-    return [label for label, needles in terms.items() if any(needle in text for needle in needles)]
+    missing = []
+    for label, (needles, probes) in terms.items():
+        if not any(needle in text for needle in needles):
+            continue
+        if not all((ROOT / path).is_file() and symbol in (ROOT / path).read_text() for path, symbol in probes):
+            missing.append(label)
+    return missing
 
 
 def main() -> None:

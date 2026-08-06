@@ -1,0 +1,454 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "artifact",
+      "name": "scarletproof",
+      "override_id": "15047",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "scarletproof",
+    "id": "15047",
+    "lunaris_id": "15047"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "identity": {
+        "icon": "UI_RelicIcon_15047_4",
+        "id": 15047,
+        "rank": [
+          4,
+          5
+        ]
+      },
+      "set_bonuses": [
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+              "value": 0.18
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150470,
+          "desc": "ATK +18%.",
+          "id": 215047,
+          "level": 0,
+          "name": "Scarlet Proof",
+          "open_config": "",
+          "param_list": [
+            0.18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150471,
+          "desc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction dealt by 40%, for 10s after they trigger a Stellar Swirl reaction.",
+          "id": 215047,
+          "level": 1,
+          "name": "Scarlet Proof",
+          "open_config": "Relic_7.0_StarWind",
+          "param_list": [
+            0.16,
+            0.4,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "unresolved": [
+      "event ordering and off-field behavior not explicitly encoded by the source",
+      "the reaction event/tag implementation required by the 4-piece effect"
+    ]
+  },
+  "kind": "artifact",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "set_bonus_params": {
+        "agrees": true,
+        "lunaris": {
+          "2pc": [
+            0.18000000715255737,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4pc": [
+            0.1599999964237213,
+            0.4000000059604645,
+            10.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "2pc": [
+            0.18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4pc": [
+            0.16,
+            0.4,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Scarlet Proof",
+        "nanoka": "Scarlet Proof"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15047_3",
+                "name": "Testament to Your Faith"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15047_4",
+                "name": "Honor to Your Devotion"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15047_1",
+                "name": "Chalice of Your Blood and Sorrow"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15047_2",
+                "name": "Glory to Your Legacy"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15047_5",
+                "name": "Time Gifted Unto You"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "ATK +18%.",
+                "params": [
+                  0.18000000715255737,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction dealt by 40%, for 10s after they trigger a Stellar Swirl reaction.",
+                "params": [
+                  0.1599999964237213,
+                  0.4000000059604645,
+                  10.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15047_4",
+            "setName": "Scarlet Proof"
+          }
+        },
+        "sha256": "ec58314808e825963353d8cc1a38023f8accb8bdc0fbb07320612d2f34efeb14",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/artifact/15047.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15047_3",
+                "name": "缅怀你的信仰"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15047_4",
+                "name": "感谢你的奉献"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15047_1",
+                "name": "饮尽你的血泪"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15047_2",
+                "name": "铭记你的功勋"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15047_5",
+                "name": "授予你的年华"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "攻击力提高18%。",
+                "params": [
+                  0.18000000715255737,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "装备者触发星扩散反应后的10秒内，暴击率提升16%，星扩散反应伤害提升40%。",
+                "params": [
+                  0.1599999964237213,
+                  0.4000000059604645,
+                  10.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15047_4",
+            "setName": "血红之证"
+          }
+        },
+        "sha256": "f704021a30c2bb420e72395bba17f51e9649af8a78dc389b611c87dadf0a71a4",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/artifact/15047.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150470,
+              "desc": "ATK +18%.",
+              "id": 215047,
+              "level": 0,
+              "name": "Scarlet Proof",
+              "open_config": "",
+              "param_list": [
+                0.18,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150471,
+              "desc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction dealt by 40%, for 10s after they trigger a Stellar Swirl reaction.",
+              "id": 215047,
+              "level": 1,
+              "name": "Scarlet Proof",
+              "open_config": "Relic_7.0_StarWind",
+              "param_list": [
+                0.16,
+                0.4,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15047_4",
+          "id": 15047,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "2c640928479794987aad273b69799473af4de8ed7245779055bb7df216049d5c",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/artifact/15047.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150470,
+              "desc": "攻击力提高18%。",
+              "id": 215047,
+              "level": 0,
+              "name": "血红之证",
+              "open_config": "",
+              "param_list": [
+                0.18,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150471,
+              "desc": "装备者触发星扩散反应后的10秒内，暴击率提升16%，星扩散反应伤害提升40%。",
+              "id": 215047,
+              "level": 1,
+              "name": "血红之证",
+              "open_config": "Relic_7.0_StarWind",
+              "param_list": [
+                0.16,
+                0.4,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15047_4",
+          "id": 15047,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "80204c75fa1adbfc1e285c8bd091992d681392eecb6361e619a1c1fa46fe4a67",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/artifact/15047.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "artifact",
+      "name": "disenchantmentindeepshadow",
+      "override_id": "15046",
+      "use": "pipeline"
+    },
+    "registered": true,
+    "status": "incomplete"
+  },
+  "identity": {
+    "gcsim_slug": "disenchantmentindeepshadow",
+    "id": "15046",
+    "lunaris_id": "15046"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "identity": {
+        "icon": "UI_RelicIcon_15046_4",
+        "id": 15046,
+        "rank": [
+          4,
+          5
+        ]
+      },
+      "set_bonuses": [
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+              "value": 0.18
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150460,
+          "desc": "ATK +18%.",
+          "id": 215046,
+          "level": 0,
+          "name": "Disenchantment in Deep Shadow",
+          "open_config": "",
+          "param_list": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150461,
+          "desc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%.",
+          "id": 215046,
+          "level": 1,
+          "name": "Disenchantment in Deep Shadow",
+          "open_config": "Relic_6.6_Superconductor",
+          "param_list": [
+            0.8,
+            0.16,
+            0.4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "unresolved": [
+      "event ordering and off-field behavior not explicitly encoded by the source",
+      "the reaction event/tag implementation required by the 4-piece effect"
+    ]
+  },
+  "kind": "artifact",
+  "release_track": "live",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "set_bonus_params": {
+        "agrees": true,
+        "lunaris": {
+          "2pc": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4pc": [
+            0.800000011920929,
+            0.1599999964237213,
+            0.4000000059604645,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "2pc": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4pc": [
+            0.8,
+            0.16,
+            0.4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Disenchantment in Deep Shadow",
+        "nanoka": "Disenchantment in Deep Shadow"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15046_3",
+                "name": "Pendulum That Ceased Amidst a Great Fall"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15046_4",
+                "name": "Iridescence That Ceased Amidst Glory"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15046_1",
+                "name": "Ovations That Ceased Upon Festivity"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15046_2",
+                "name": "Sharpness That Ceased Upon Wondrous Creation"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15046_5",
+                "name": "Moment That Ceased Upon Waking From Grand Dreams"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "ATK +18%.",
+                "params": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%.",
+                "params": [
+                  0.800000011920929,
+                  0.1599999964237213,
+                  0.4000000059604645,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15046_4",
+            "setName": "Disenchantment in Deep Shadow"
+          }
+        },
+        "sha256": "7741d2baeab93a30640429e6607173e6fedf60c1585c0d9d1b2f20e1530fe856",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/artifact/15046.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15046_3",
+                "name": "止于阔步跌坠的灵摆"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15046_4",
+                "name": "止于荣礼的缎彩"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15046_1",
+                "name": "止于祝庆的喝礼"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15046_2",
+                "name": "止于妙想成型的锋毫"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15046_5",
+                "name": "止于宏伟梦醒的时刻"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "攻击力提高18%。",
+                "params": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "超导反应造成的伤害提升80%，星超导反应造成的伤害提升40%；装备者攻击受到超导或星超导反应影响的敌人时，本次攻击的暴击率提高16%。",
+                "params": [
+                  0.800000011920929,
+                  0.1599999964237213,
+                  0.4000000059604645,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15046_4",
+            "setName": "影中沉凝的幻灭"
+          }
+        },
+        "sha256": "1407ecbf9f2a36d9167bfd6ab55ef386e823dc6bec75eb5b799ad7b4ac680f93",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/artifact/15046.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150460,
+              "desc": "ATK +18%.",
+              "id": 215046,
+              "level": 0,
+              "name": "Disenchantment in Deep Shadow",
+              "open_config": "",
+              "param_list": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150461,
+              "desc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%.",
+              "id": 215046,
+              "level": 1,
+              "name": "Disenchantment in Deep Shadow",
+              "open_config": "Relic_6.6_Superconductor",
+              "param_list": [
+                0.8,
+                0.16,
+                0.4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15046_4",
+          "id": 15046,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "ef323dd6c6c952cb57bb77db71a8aa07a6eef13894905a1130fcecb635761b39",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/artifact/15046.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150460,
+              "desc": "攻击力提高18%。",
+              "id": 215046,
+              "level": 0,
+              "name": "影中沉凝的幻灭",
+              "open_config": "",
+              "param_list": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150461,
+              "desc": "超导反应造成的伤害提升80%，星超导反应造成的伤害提升40%；装备者攻击受到超导或星超导反应影响的敌人时，本次攻击的暴击率提高16%。",
+              "id": 215046,
+              "level": 1,
+              "name": "影中沉凝的幻灭",
+              "open_config": "Relic_6.6_Superconductor",
+              "param_list": [
+                0.8,
+                0.16,
+                0.4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15046_4",
+          "id": 15046,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "58df29229b5acdc6f48ed1e3a81ea41d1cbc4ac1e199bc60ebdfc7985a97b02a",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/artifact/15046.json"
+      }
+    }
+  }
+}

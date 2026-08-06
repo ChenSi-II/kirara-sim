@@ -1,3 +1,5 @@
 package ifa
 
-// TODO: connect confirmed constellation descriptions without inventing missing core APIs.
+func (c *char) initConstellations() {
+	// C1, C4, and C6 are attached to Supporting Fire and Compound Sedation Field.
+}

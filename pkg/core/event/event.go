@@ -42,6 +42,8 @@ const (
 	OnLunarCharged       // target, AttackEvent
 	OnLunarBloom         // target, AttackEvent
 	OnLunarCrystallize   // target, AttackEvent
+	OnStarSuperconduct   // target, AttackEvent
+	OnStarDiffusion      // target, AttackEvent
 	OnShatter            // target, AttackEvent; at the end to simplify all reaction event subs since it's normally not considered as an elemental reaction
 	ReactionEventEndDelim
 	OnDendroCore // Gadget
@@ -76,6 +78,7 @@ const (
 	OnAimShoot     // nil
 	OnDash
 	OnLunarReactionAttack // target, AttackEvent; event so predamagemods can be applied to the individual Lunar contributions. Emitted once per contributor
+	OnStarReactionAttack  // target, AttackEvent; emitted once per Star reaction contributor
 	OnMoondriftHarmony    // target, AttackEvent;
 	// sim stuff
 	OnInitialize  // nil

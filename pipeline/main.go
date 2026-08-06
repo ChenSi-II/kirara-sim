@@ -267,7 +267,7 @@ func (c *Compiled) build(config *Config) error {
 		}
 		for lang, loc := range c.Localization {
 			lang := languages[lang]
-			loc.WeaponNames[spec.Model.Key] = spec.ref.NameTextMapHash.Lang(lang)
+			loc.WeaponNames[spec.Model.Key] = spec.Localization[lang]
 		}
 		config.Weapon = spec
 	default:
@@ -441,7 +441,7 @@ func check(ctx context.Context, cmd *cli.Command) error {
 		}
 		if excel.Find(c.Configuration, func(v *Config) bool {
 			if spec := v.Weapon; spec != nil {
-				return spec.ref.Codex() == codex
+				return spec.Model.Id == codex.Weapon().Id
 			}
 			return false
 		}) == nil {

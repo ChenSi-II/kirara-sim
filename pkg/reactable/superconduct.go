@@ -11,6 +11,9 @@ import (
 const SuperConductShredKey = "superconduct-phys-shred"
 
 func (r *Reactable) TrySuperconduct(a *info.AttackEvent) bool {
+	if r.core.StarReactions.Enabled {
+		return r.tryStarSuperconduct(a, false)
+	}
 	if a.Info.Durability < info.ZeroDur {
 		return false
 	}
@@ -43,6 +46,9 @@ func (r *Reactable) TrySuperconduct(a *info.AttackEvent) bool {
 }
 
 func (r *Reactable) TryFrozenSuperconduct(a *info.AttackEvent) bool {
+	if r.core.StarReactions.Enabled {
+		return r.tryStarSuperconduct(a, true)
+	}
 	if a.Info.Durability < info.ZeroDur {
 		return false
 	}

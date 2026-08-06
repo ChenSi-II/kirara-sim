@@ -1,0 +1,6 @@
+use: pipeline
+kind: weapon
+name: lightbearingmoonshard
+
+override:
+  id: 11519
