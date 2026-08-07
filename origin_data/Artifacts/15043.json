@@ -1,0 +1,145 @@
+{
+  "Id": 15043,
+  "Icon": "UI_RelicIcon_15043_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEMENT_MASTERY",
+          "Value": 80
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150430,
+      "Id": 215043,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "晨星与月的晓歌",
+      "Desc": "元素精通提高80点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150431,
+      "Id": 215043,
+      "Level": 1,
+      "OpenConfig": "Relic_6.3_Columbia",
+      "ParamList": [
+        0.2,
+        0.4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "晨星与月的晓歌",
+      "Desc": "装备者处于队伍后台时，造成的月曜反应伤害提升20%；队伍的月兆等级至少为满辉时，造成的月曜反应伤害进一步提升40%。上述效果将在装备者位于场上3秒后移除。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15043_1",
+      "Name": "献与月的酹祭",
+      "Desc": "古时向空月奉献祭祀的信徒，在仪式最后的狂欢宴上遗失的酒杯。",
+      "Story": {
+        "285431": {
+          "Zh": "ART/UI/Readable/CHS/Relic15043_1",
+          "En": "ART/UI/Readable/EN/Relic15043_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15043_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15043_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15043_2",
+      "Name": "献与月的离光",
+      "Desc": "古时为空月书写祷文的司祭，从这支羽笔中汲取了无数的灵感。",
+      "Story": {
+        "285432": {
+          "Zh": "ART/UI/Readable/CHS/Relic15043_2",
+          "En": "ART/UI/Readable/EN/Relic15043_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15043_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15043_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15043_3",
+      "Name": "献与月的银冕",
+      "Desc": "古时为空月献上赞美诗的诗人，在念诵出最后一个音节时摘下的银冠。",
+      "Story": {
+        "285433": {
+          "Zh": "ART/UI/Readable/CHS/Relic15043_3",
+          "En": "ART/UI/Readable/EN/Relic15043_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15043_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15043_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15043_4",
+      "Name": "献与月的华梦",
+      "Desc": "古时为空月女神塑像的工匠，为彰显神明华美的容姿而精心雕琢的花饰。",
+      "Story": {
+        "285434": {
+          "Zh": "ART/UI/Readable/CHS/Relic15043_4",
+          "En": "ART/UI/Readable/EN/Relic15043_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15043_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15043_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15043_5",
+      "Name": "献与月的终时",
+      "Desc": "古时向空月求索真相的贤者，为铭记终末之时而准备的沙漏。",
+      "Story": {
+        "285435": {
+          "Zh": "ART/UI/Readable/CHS/Relic15043_5",
+          "En": "ART/UI/Readable/EN/Relic15043_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15043_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15043_5_KR"
+        }
+      }
+    }
+  }
+}

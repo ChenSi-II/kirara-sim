@@ -1,0 +1,147 @@
+[
+  {
+    "Magbeast_Gecko": {
+      "NameZHCN": "蕴光月守宫", 
+      "NameENUS": "Radiant Moongecko",
+      "Id": "Magbeast_Gecko",
+      "SubtitleZHCN": "渴求月光的鳞蜥",
+      "SubtitleENUS": "Moonseeker Drake",
+      "Description": "眷恋月光的古老魔物，在岩层深处栖息的守宫。\\n躯体因长久以来积蓄的月矩力而发生晶化，形成如同机关构件般精密的节段，能化作岩刺攻击敌人。\\n有学者认为，这种奇异蜥类的祖先原本生活在地表，千年以来的沧海桑田令它们被迫遁入地底，从此之后便世代栖居于黑暗之中，逐渐忘却了真正的月光，不过本能依旧驱使着它们在满月之时啃食被月辉浸浴的岩土以维持血脉。",
+      "Tier": "Boss",
+      "Category": "MagicalBeasts",
+      "Resistace": {
+        "State1": {
+          "Name": "正常",
+          "Pyro": 10,
+          "Hydro": 10,
+          "Anemo": 10,
+          "Electro": 10,
+          "Dendro": 10,
+          "Cryo": 10,
+          "Geo": 10,
+          "Physical": 10
+        },
+        "State2": {
+          "Name": "开大后(深渊)",
+          "Pyro": 70,
+          "Hydro": 70,
+          "Anemo": 70,
+          "Electro": 70,
+          "Dendro": 70,
+          "Cryo": 70,
+          "Geo": 70,
+          "Physical": 70
+        },
+        "State3": {
+          "Name": "蕴光-岩",
+          "Pyro": 10,
+          "Hydro": 10,
+          "Anemo": 10,
+          "Electro": 10,
+          "Dendro": 10,
+          "Cryo": 10,
+          "Geo": 70,
+          "Physical": 10
+        }
+      },
+      "EnergyDrop": {
+        "Type": "Geo",
+        "EnergyGroup": "B_3332"
+      },
+      "BaseHp": {
+        "Value": 285.264,
+        "Curve": "HP_2"
+      },
+      "BaseAtk": {
+        "Value": 87.92,
+        "Curve": "ATK_2"
+      },
+      "BaseDef": {
+        "Value": 500,
+        "Curve": "DEF_1"
+      },
+      "DefaultLevel": 103,
+      "ElementMastery": 0,
+      "MultiplayerGroup": "1",
+      "Weight": 300,
+      "EndureType": "Monster_Boss_Other",
+      "Skill": [
+        {
+          "Name": "峰岩残响",
+          "Type": "输出",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/combo0.png",
+          "Description": "鳞蜥进行右咬、左咬、下扑至多3段的普攻，依次造成<color=#ffe599>40%,50%,65%</color>伤害。"
+        },
+        {
+          "Name": "窟明回鉴",
+          "Type": "防御",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/swipe0.png",
+          "Description": "<p>距离太近或处于后方时，鳞蜥迅速自转扫尾，造成<span color='#ffe599'>100%</span><span>伤害。</span></p>"
+        },
+        {
+          "Name": "断尾棱光",
+          "Type": "远程",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/laser0.png",
+          "Description": "鳞蜥凝聚力量，用凝晶的尾部发射岩流，造成<color=#ffe599>75%</color>伤害。"
+        },
+        {
+          "Name": "嵴生石蕨",
+          "Type": "定点",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/spike0.png",
+          "Description": "鳞蜥在场地内促生多个岩蕨，每个造成<color=#ffe599>35%</color>伤害。"
+        },
+        {
+          "Name": "鎏月余晖",
+          "Type": "妨害",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/crystallation0.png",
+          "Description": "开局或瘫痪恢复后施放，鳞蜥为自身附上<u>晖岩之护</u>，岩抗提升<color=#ffcc32>60%</color>；展开半径25m的蕴光领域；清除任意角色的「蕴光之茧」时，晖岩之护将被立即破坏。\\n施放「行虚空荡」之前，全队的「蕴光之茧」会被移除(仅移除，无增益)。"
+        },
+        {
+          "Name": "行虚空荡",
+          "Type": "召唤",
+          "IconPath": "static/images/MonsterSkillIcon/Boss/RMG/crystal0.png",
+          "Description": "鳞蜥移动到场地中央，展开穹顶，隐匿自身，并留下「月锚岩」；穹顶上有三只鳞蜥，其中一只会间歇性发射岩流，造成<color=#ffe599>75%</color>伤害；25s后月锚岩爆炸，造成<color=#ffe599>200%</color>"
+        }
+      ],
+      "Notes": [
+        {
+          "Text": "晖岩之护",
+          "Desc": "鳞蜥展开蕴光领域时，岩元素抗性<color=#ffcc32>+60%</color>，当角色清除前台角色的「蕴光之茧」时，晖岩之护将被立即破坏，并失去岩抗提升。"
+        },
+        {
+          "Text": "蕴光之茧",
+          "Desc": "暴击率<color=#ffcc32>-100%</color>，造成的伤害<color=#ffcc32>-50%</color>，受治疗加成<color=#ffcc32>-40%</color>；施加时，扣除全队角色<color=#ffcc32>10%+1800</color>点生命值，若角色生命值低于<color=#ffcc32>7200</color>点，则改为扣除<color=#ffcc32>35%</color>生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。"
+        },
+        {
+          "Text": "出缠",
+          "Desc": "暴击率<color=#ffcc32>+15%</color>，造成的伤害<color=#ffcc32>+50%</color>，持续<color=#ffcc32>15s</color>。"
+        },
+        {
+          "Text": "月锚岩",
+          "Desc": "<color=#ffe599>2.8</color>岩盾，共<color=#ffcc32>9</color>层，破坏后瘫痪7s；破坏第3/6/9层时会对鳞蜥造成<color=#ff5a5a>6%/6%/18%</color>生命值的伤害。\\n(深境特化为<color=#ff5a5a>4%/4%/12%</color>生命值)"
+        }
+      ],
+      "Shield": [
+        {
+          "Name": "月锚岩",
+          "Description": "<color=#ffe599>2.8</color>岩盾，共<color=#ffcc32>9</color>层，破坏后瘫痪7s；破坏第3/6/9层时会对鳞蜥造成<color=#ff5a5a>6%/6%/18%</color>生命值的伤害。\\n(深境特化为<color=#ff5a5a>4%/4%/12%</color>生命值)。",
+          "IconPath": "static/images/UIIcon/shd-g-sg.png",
+          "Type": "Element",
+          "ElementType": "Rock",
+          "Duration": 25,
+          "MaxValue": 70,
+          "ShieldAngle": 360,
+          "ShieldHPRatio": 1,
+          "DamageRatio": 0,
+          "ShieldLayer": 9,
+          "Revert": false,
+          "UseMultiplayerData": true,
+          "UpdateByMaxHp": false,
+          "ShowDamageText": false
+        }
+      ],
+      "Chargebar": [
+      ]
+    }
+  }
+]

@@ -13,8 +13,6 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
-var starContributorMult = []float64{0.6, 0.3, 0.05, 0.05}
-
 type starContribution struct {
 	dmg     float64
 	isCrit  bool
@@ -22,9 +20,10 @@ type starContribution struct {
 	ae      info.AttackEvent
 }
 
-// doStarReactionAttack follows the Lunar reaction contribution model: every
-// team member calculates an independent contribution, the results are sorted
-// after crit, then weighted 60%/30%/5%/5%.
+// doStarReactionAttack follows the Lunar Crystallize contribution model:
+// every team member calculates an independent contribution, the results are
+// sorted after crit, then weighted 60%/30%/5%/5%. The reaction multiplier is
+// supplied separately, so it does not affect the weights.
 func doStarReactionAttack(
 	c *core.Core,
 	target info.Target,
@@ -33,6 +32,7 @@ func doStarReactionAttack(
 	tag attacks.AttackTag,
 	ele attributes.Element,
 	mult float64,
+	durability info.Durability,
 	pattern info.AttackPattern,
 ) {
 	contributions := make([]starContribution, 0, len(c.Player.Chars()))
@@ -45,6 +45,7 @@ func doStarReactionAttack(
 		StrikeType:       attacks.StrikeTypeDefault,
 		Element:          ele,
 		Mult:             mult,
+		Durability:       durability,
 		IgnoreDefPercent: 1,
 	}
 
@@ -90,14 +91,14 @@ func doStarReactionAttack(
 			Write("target", target.Key()).
 			Write("damage", &contr.dmg).
 			Write("crit", &contr.isCrit).
-			Write("mult", starContributorMult[i]).
+			Write("mult", reactionContributorMult[i]).
 			Write("cr", &contr.ae.Snapshot.Stats[attributes.CR]).
 			Write("cd", &contr.ae.Snapshot.Stats[attributes.CD]).
 			Write("em", &contr.ae.Snapshot.Stats[attributes.EM]).
 			Write("base_damage_bonus", &contr.ae.Info.BaseDmgBonus).
 			Write("react_bonus", c.Player.Chars()[contr.charInd].ReactBonus(contr.ae.Info)).
 			Write("elevation", &contr.ae.Info.Elevation)
-		ai.FlatDmg += contr.dmg * starContributorMult[i]
+		ai.FlatDmg += contr.dmg * reactionContributorMult[i]
 	}
 
 	ai.ActorIndex = owner

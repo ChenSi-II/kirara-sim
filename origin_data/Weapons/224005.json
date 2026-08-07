@@ -1,0 +1,9 @@
+{
+  "Name": "榴晶·水",
+  "Desc": "(test) 水属性雷",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "Sword_Template",
+  "Skill": 999005,
+  "Tps": true
+}

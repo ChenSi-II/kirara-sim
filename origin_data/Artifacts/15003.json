@@ -1,0 +1,146 @@
+{
+  "Id": 15003,
+  "Icon": "UI_RelicIcon_15003_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEMENT_MASTERY",
+          "Value": 80
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150030,
+      "Id": 215003,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "流浪大地的乐团",
+      "Desc": "元素精通提高80点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150031,
+      "Id": 215003,
+      "Level": 1,
+      "OpenConfig": "Relci_RangerAttackUp",
+      "ParamList": [
+        0.35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "流浪大地的乐团",
+      "Desc": "装备该圣遗物套装的角色为法器、弓箭角色时，角色重击造成的伤害提高35%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15003_1",
+      "Name": "吟游者之壶",
+      "Desc": "外形奇妙的古代水壶，内侧安装着琴弦，随流水而奏出无旋律的奇妙乐声。",
+      "Story": {
+        "285031": {
+          "Zh": "ART/UI/Readable/CHS/Relic15003_1",
+          "En": "ART/UI/Readable/EN/Relic15003_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15003_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15003_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15003_2",
+      "Name": "琴师的箭羽",
+      "Desc": "青蓝色的箭羽，并未在漫长岁月中褪色破碎。似乎带来了落珠流水的琴声。",
+      "Story": {
+        "285032": {
+          "Zh": "ART/UI/Readable/CHS/Relic15003_2",
+          "En": "ART/UI/Readable/EN/Relic15003_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15003_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15003_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15003_3",
+      "Name": "指挥的礼帽",
+      "Desc": "尽管饱经风霜，但依旧光彩照人的礼帽。其中似乎回荡着古老悠扬的乐声。",
+      "Story": {
+        "285033": {
+          "Zh": "ART/UI/Readable/CHS/Relic15003_3",
+          "En": "ART/UI/Readable/EN/Relic15003_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15003_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15003_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15003_4",
+      "Name": "乐团的晨光",
+      "Desc": "小小的花形徽章。侧耳细听的话，仿佛能听到悠扬的笛声和清新的歌唱声。",
+      "Story": {
+        "285034": {
+          "Zh": "ART/UI/Readable/CHS/Relic15003_4",
+          "En": "ART/UI/Readable/EN/Relic15003_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15003_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15003_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15003_5",
+      "Name": "终幕的时计",
+      "Desc": "为乐团的演奏计时的沙漏，曾发出利落的声响。如今他们的表演已经落幕。",
+      "Story": {
+        "285035": {
+          "Zh": "ART/UI/Readable/CHS/Relic15003_5",
+          "En": "ART/UI/Readable/EN/Relic15003_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15003_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15003_5_KR"
+        }
+      }
+    }
+  }
+}

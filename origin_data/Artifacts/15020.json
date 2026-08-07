@@ -1,0 +1,145 @@
+{
+  "Id": 15020,
+  "Icon": "UI_RelicIcon_15020_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150200,
+      "Id": 215020,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "绝缘之旗印",
+      "Desc": "元素充能效率提高20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150201,
+      "Id": 215020,
+      "Level": 1,
+      "OpenConfig": "Relic_ElementalBurstUpByChargeEfficiency",
+      "ParamList": [
+        0.25,
+        0.75,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "绝缘之旗印",
+      "Desc": "基于元素充能效率的25%，提高元素爆发造成的伤害。至多通过这种方式获得75%提升。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15020_1",
+      "Name": "绯花之壶",
+      "Desc": "安柏专用",
+      "Story": {
+        "285201": {
+          "Zh": "ART/UI/Readable/CHS/Relic15020_1",
+          "En": "ART/UI/Readable/EN/Relic15020_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15020_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15020_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15020_2",
+      "Name": "切落之羽",
+      "Desc": "安柏专用",
+      "Story": {
+        "285202": {
+          "Zh": "ART/UI/Readable/CHS/Relic15020_2",
+          "En": "ART/UI/Readable/EN/Relic15020_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15020_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15020_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15020_3",
+      "Name": "华饰之兜",
+      "Desc": "安柏专用",
+      "Story": {
+        "285203": {
+          "Zh": "ART/UI/Readable/CHS/Relic15020_3",
+          "En": "ART/UI/Readable/EN/Relic15020_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15020_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15020_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15020_4",
+      "Name": "明威之镡",
+      "Desc": "安柏专用",
+      "Story": {
+        "285204": {
+          "Zh": "ART/UI/Readable/CHS/Relic15020_4",
+          "En": "ART/UI/Readable/EN/Relic15020_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15020_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15020_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15020_5",
+      "Name": "雷云之笼",
+      "Desc": "安柏专用",
+      "Story": {
+        "285205": {
+          "Zh": "ART/UI/Readable/CHS/Relic15020_5",
+          "En": "ART/UI/Readable/EN/Relic15020_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15020_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15020_5_KR"
+        }
+      }
+    }
+  }
+}

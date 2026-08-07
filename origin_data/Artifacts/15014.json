@@ -1,0 +1,146 @@
+{
+  "Id": 15014,
+  "Icon": "UI_RelicIcon_15014_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ROCK_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150140,
+      "Id": 215014,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "悠古的磐岩",
+      "Desc": "获得15%岩元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150141,
+      "Id": 215014,
+      "Level": 1,
+      "OpenConfig": "Relic_ElementDmgUpAfterCrystalShield",
+      "ParamList": [
+        0.35,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "悠古的磐岩",
+      "Desc": "获得结晶反应形成的晶片或触发月结晶反应时，队伍中所有角色获得35%对应元素伤害加成，持续10秒。同时只能通过该效果获得一种元素伤害加成。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15014_1",
+      "Name": "巉岩琢塑之樽",
+      "Desc": "华丽而不失庄重的酒樽，千年前曾满盛玉露。",
+      "Story": {
+        "285141": {
+          "Zh": "ART/UI/Readable/CHS/Relic15014_1",
+          "En": "ART/UI/Readable/EN/Relic15014_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15014_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15014_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15014_2",
+      "Name": "嵯峨群峰之翼",
+      "Desc": "来自矶岩巨鸢的刚羽，玄石的羽尖有时会凝结有清冷的露珠。",
+      "Story": {
+        "285142": {
+          "Zh": "ART/UI/Readable/CHS/Relic15014_2",
+          "En": "ART/UI/Readable/EN/Relic15014_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15014_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15014_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15014_3",
+      "Name": "不动玄石之相",
+      "Desc": "凝光专用",
+      "Story": {
+        "285143": {
+          "Zh": "ART/UI/Readable/CHS/Relic15014_3",
+          "En": "ART/UI/Readable/EN/Relic15014_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15014_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15014_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15014_4",
+      "Name": "磐陀裂生之花",
+      "Desc": "凝光专用",
+      "Story": {
+        "285144": {
+          "Zh": "ART/UI/Readable/CHS/Relic15014_4",
+          "En": "ART/UI/Readable/EN/Relic15014_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15014_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15014_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15014_5",
+      "Name": "星罗圭璧之晷",
+      "Desc": "凝光专用",
+      "Story": {
+        "285145": {
+          "Zh": "ART/UI/Readable/CHS/Relic15014_5",
+          "En": "ART/UI/Readable/EN/Relic15014_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15014_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15014_5_KR"
+        }
+      }
+    }
+  }
+}

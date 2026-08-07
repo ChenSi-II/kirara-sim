@@ -1,0 +1,61 @@
+{
+  "Id": 15011,
+  "Icon": "UI_RelicIcon_15011_3",
+  "Need": [
+    1
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150110,
+      "Id": 215011,
+      "Level": 0,
+      "OpenConfig": "Relic_ElectricResistance",
+      "ParamList": [
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "祭雷之人",
+      "Desc": "受到的雷元素附着效果的持续时间减少40%。"
+    }
+  ],
+  "Parts": {
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15011_3",
+      "Name": "祭雷礼冠",
+      "Desc": "在古老的时代，司祭祀之人佩戴的礼冠。因为常年聆听着雷鸣，具有奇妙的抗性。",
+      "Story": {
+        "285113": {
+          "Zh": "ART/UI/Readable/CHS/Relic15011_3",
+          "En": "ART/UI/Readable/EN/Relic15011_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15011_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15011_3_KR"
+        }
+      }
+    }
+  }
+}

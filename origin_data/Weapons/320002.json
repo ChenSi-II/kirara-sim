@@ -1,0 +1,9 @@
+{
+  "Name": "赫烈·真化",
+  "Desc": "自地脉至深之处显现的、闪映着「理」之力的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在古老的国度曾以「索达古瑟」的名讳为超越的罪人持有。",
+  "WeaponType": "WEAPON_CLAYMORE",
+  "Rarity": 5,
+  "Icon": "UI_EquipIcon_Claymore_MorphGravitas_Great_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

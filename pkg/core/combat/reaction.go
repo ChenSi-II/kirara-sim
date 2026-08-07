@@ -25,10 +25,9 @@ func CalcSpecialReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em
 	case attacks.AttackTagReactionLunarCrystallize:
 		reactionMultiplier = 1.6
 	case attacks.AttackTagReactionStarSuperconduct,
+		attacks.AttackTagReactionStarDiffusionAnemo,
 		attacks.AttackTagReactionStarDiffusionCryo:
 		reactionMultiplier = atk.Mult
-	case attacks.AttackTagReactionStarDiffusionAnemo:
-		reactionMultiplier = 0.75
 	}
 	return (reactionMultiplier*(1+((6*em)/(2000+em))+reactBonus)*CalcReactionBaseDmg(lvl)*(1+atk.BaseDmgBonus) + atk.FlatDmg) * (1 + atk.Elevation)
 }

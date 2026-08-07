@@ -1,0 +1,9 @@
+{
+  "Name": "榴晶·火",
+  "Desc": "(test) 火属性雷",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "Sword_Template",
+  "Skill": 999004,
+  "Tps": true
+}

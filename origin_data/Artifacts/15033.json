@@ -1,0 +1,145 @@
+{
+  "Id": 15033,
+  "Icon": "UI_RelicIcon_15033_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HEAL_ADD",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150330,
+      "Id": 215033,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "昔时之歌",
+      "Desc": "治疗加成提高15%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150331,
+      "Id": 215033,
+      "Level": 1,
+      "OpenConfig": "Relic_HealToDamageExtra",
+      "ParamList": [
+        6,
+        10,
+        5,
+        0.08,
+        15000,
+        0,
+        0,
+        0
+      ],
+      "Name": "昔时之歌",
+      "Desc": "装备者对队伍中的角色进行治疗时，将产生持续6秒的渴盼效果，记录治疗的生命值回复量（包括溢出值）。持续时间结束时，渴盼效果将转变为「彼时的浪潮」效果：队伍中自己的当前场上角色的普通攻击、重击、下落攻击、元素战技与元素爆发命中敌人时，将基于渴盼效果所记录的回复量的8%提高造成的伤害，「彼时的浪潮」将在生效5次或10秒后移除。一次渴盼效果至多记录15000点回复量，同时至多存在一个，能够记录多个装备者的产生的回复量；装备者处于队伍后台时，依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15033_1",
+      "Name": "昔时应许之梦",
+      "Desc": "仿照传说中「纯水之杯」的形制打造而成的华美器皿，据说能够实现最为纯净之人的心愿。",
+      "Story": {
+        "285331": {
+          "Zh": "ART/UI/Readable/CHS/Relic15033_1",
+          "En": "ART/UI/Readable/EN/Relic15033_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15033_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15033_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15033_2",
+      "Name": "昔时浮想之思",
+      "Desc": "白银与苍水晶制成的蝶状羽饰，据说在遥远的过去象征着永不分离的誓言。",
+      "Story": {
+        "285332": {
+          "Zh": "ART/UI/Readable/CHS/Relic15033_2",
+          "En": "ART/UI/Readable/EN/Relic15033_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15033_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15033_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15033_3",
+      "Name": "昔时传奏之诗",
+      "Desc": "曾一度在枫丹的歌剧创作者之间流行的礼帽，据说羽饰的设计参考了传说中纯水骑士的盔缨。",
+      "Story": {
+        "285333": {
+          "Zh": "ART/UI/Readable/CHS/Relic15033_3",
+          "En": "ART/UI/Readable/EN/Relic15033_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15033_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15033_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15033_4",
+      "Name": "昔时遗落之誓",
+      "Desc": "由海纹石与苍银打造而成的不凋花朵，据说至今依然被视为反抗者的象征。",
+      "Story": {
+        "285334": {
+          "Zh": "ART/UI/Readable/CHS/Relic15033_4",
+          "En": "ART/UI/Readable/EN/Relic15033_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15033_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15033_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15033_5",
+      "Name": "昔时回映之音",
+      "Desc": "造型奇异的沙漏，由青金石与水玉打造，据说设计灵感来自佩特莉可镇的钟塔。",
+      "Story": {
+        "285335": {
+          "Zh": "ART/UI/Readable/CHS/Relic15033_5",
+          "En": "ART/UI/Readable/EN/Relic15033_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15033_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15033_5_KR"
+        }
+      }
+    }
+  }
+}

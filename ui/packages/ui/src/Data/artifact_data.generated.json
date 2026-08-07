@@ -5,6 +5,11 @@
       "text_map_id": "3721836931",
       "key": "adaycarvedfromrisingwinds"
     },
+    "artifact15048": {
+      "id": "15048",
+      "text_map_id": "0",
+      "key": "artifact15048"
+    },
     "archaicpetra": {
       "id": "15014",
       "text_map_id": "2040573235",
@@ -24,6 +29,11 @@
       "id": "14001",
       "text_map_id": "933076115",
       "key": "blizzardstrayer"
+    },
+    "bloodredproof": {
+      "id": "15047",
+      "text_map_id": "0",
+      "key": "bloodredproof"
     },
     "bloodstainedchivalry": {
       "id": "15008",
@@ -60,6 +70,11 @@
       "text_map_id": "2538235187",
       "key": "desertpavilionchronicle"
     },
+    "disenchantmentindeepshadow": {
+      "id": "15046",
+      "text_map_id": "0",
+      "key": "disenchantmentindeepshadow"
+    },
     "echoesofanoffering": {
       "id": "15024",
       "text_map_id": "3626267699",
@@ -89,6 +104,11 @@
       "id": "10008",
       "text_map_id": "1186208923",
       "key": "gambler"
+    },
+    "glacierandsnowfield": {
+      "id": "15004",
+      "text_map_id": "0",
+      "key": "glacierandsnowfield"
     },
     "gildeddreams": {
       "id": "15026",

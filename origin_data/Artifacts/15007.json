@@ -1,0 +1,146 @@
+{
+  "Id": 15007,
+  "Icon": "UI_RelicIcon_15007_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150070,
+      "Id": 215007,
+      "Level": 0,
+      "OpenConfig": "Relic_ElementalBurstUp",
+      "ParamList": [
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "昔日宗室之仪",
+      "Desc": "元素爆发造成的伤害提升20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150071,
+      "Id": 215007,
+      "Level": 1,
+      "OpenConfig": "Relic_TeamAtkupAfterElementalBurst",
+      "ParamList": [
+        0.2,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "昔日宗室之仪",
+      "Desc": "施放元素爆发后，队伍中所有角色攻击力提升20%，持续12秒。该效果不可叠加。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15007_1",
+      "Name": "宗室银瓮",
+      "Desc": "九条裟罗专用",
+      "Story": {
+        "285071": {
+          "Zh": "ART/UI/Readable/CHS/Relic15007_1",
+          "En": "ART/UI/Readable/EN/Relic15007_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15007_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15007_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15007_2",
+      "Name": "宗室之翎",
+      "Desc": "九条裟罗专用",
+      "Story": {
+        "285072": {
+          "Zh": "ART/UI/Readable/CHS/Relic15007_2",
+          "En": "ART/UI/Readable/EN/Relic15007_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15007_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15007_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15007_3",
+      "Name": "宗室面具",
+      "Desc": "九条裟罗专用",
+      "Story": {
+        "285073": {
+          "Zh": "ART/UI/Readable/CHS/Relic15007_3",
+          "En": "ART/UI/Readable/EN/Relic15007_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15007_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15007_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15007_4",
+      "Name": "宗室之花",
+      "Desc": "九条裟罗专用",
+      "Story": {
+        "285074": {
+          "Zh": "ART/UI/Readable/CHS/Relic15007_4",
+          "En": "ART/UI/Readable/EN/Relic15007_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15007_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15007_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15007_5",
+      "Name": "宗室时计",
+      "Desc": "九条裟罗专用",
+      "Story": {
+        "285075": {
+          "Zh": "ART/UI/Readable/CHS/Relic15007_5",
+          "En": "ART/UI/Readable/EN/Relic15007_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15007_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15007_5_KR"
+        }
+      }
+    }
+  }
+}

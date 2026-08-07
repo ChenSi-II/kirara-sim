@@ -1,0 +1,147 @@
+{
+  "Id": 10013,
+  "Icon": "UI_RelicIcon_10013_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HEALED_ADD",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100130,
+      "Id": 210013,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "游医",
+      "Desc": "角色受到的治疗效果提高20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100131,
+      "Id": 210013,
+      "Level": 1,
+      "OpenConfig": "Relic_UltHealSelf",
+      "ParamList": [
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "游医",
+      "Desc": "施放元素爆发时，恢复20%生命值。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10013_1",
+      "Name": "游医的药壶",
+      "Desc": "原本装满了提炼后极浓的药汁，如今只剩下浓烈的药味。",
+      "Story": {
+        "280131": {
+          "Zh": "ART/UI/Readable/CHS/Relic10013_1",
+          "En": "ART/UI/Readable/EN/Relic10013_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10013_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10013_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10013_2",
+      "Name": "游医的枭羽",
+      "Desc": "枭的坚硬羽毛，夜间行医时用夜行猛禽的意象鼓舞自己。",
+      "Story": {
+        "280132": {
+          "Zh": "ART/UI/Readable/CHS/Relic10013_2",
+          "En": "ART/UI/Readable/EN/Relic10013_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10013_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10013_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10013_3",
+      "Name": "游医的方巾",
+      "Desc": "平时能在行医时绑住乱发，紧急情况下也能用来托起扭伤、折断的手臂。",
+      "Story": {
+        "280133": {
+          "Zh": "ART/UI/Readable/CHS/Relic10013_3",
+          "En": "ART/UI/Readable/EN/Relic10013_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10013_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10013_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10013_4",
+      "Name": "游医的银莲",
+      "Desc": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
+      "Story": {
+        "280134": {
+          "Zh": "ART/UI/Readable/CHS/Relic10013_4",
+          "En": "ART/UI/Readable/EN/Relic10013_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10013_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10013_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10013_5",
+      "Name": "游医的怀钟",
+      "Desc": "用来精确计时的道具。对医者而言，即使是一秒的时间也不能浪费。",
+      "Story": {
+        "280135": {
+          "Zh": "ART/UI/Readable/CHS/Relic10013_5",
+          "En": "ART/UI/Readable/EN/Relic10013_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10013_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10013_5_KR"
+        }
+      }
+    }
+  }
+}

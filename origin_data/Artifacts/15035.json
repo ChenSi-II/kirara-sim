@@ -1,0 +1,145 @@
+{
+  "Id": 15035,
+  "Icon": "UI_RelicIcon_15035_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150350,
+      "Id": 215035,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "谐律异想断章",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150351,
+      "Id": 215035,
+      "Level": 1,
+      "OpenConfig": "Relic_BuffWhenHPdebtsUpAndDown",
+      "ParamList": [
+        0.18,
+        6,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "谐律异想断章",
+      "Desc": "生命之契的数值提升或降低时，角色造成的伤害提升18%，该效果持续6秒，至多叠加3次。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15035_1",
+      "Name": "灵露倾洒的狂诗",
+      "Desc": "使用铜胎为底烧制的来通杯，过去曾灌满乐园的美酒。",
+      "Story": {
+        "285351": {
+          "Zh": "ART/UI/Readable/CHS/Relic15035_1",
+          "En": "ART/UI/Readable/EN/Relic15035_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15035_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15035_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15035_2",
+      "Name": "古海玄幽的夜想",
+      "Desc": "模仿传说中的金蜂翅翼雕琢而成的羽饰，似乎会随着微风震颤。",
+      "Story": {
+        "285352": {
+          "Zh": "ART/UI/Readable/CHS/Relic15035_2",
+          "En": "ART/UI/Readable/EN/Relic15035_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15035_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15035_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15035_3",
+      "Name": "异想零落的圆舞",
+      "Desc": "曾经覆以金箔的面具，或许是古时统帅军团之人的遗物。",
+      "Story": {
+        "285353": {
+          "Zh": "ART/UI/Readable/CHS/Relic15035_3",
+          "En": "ART/UI/Readable/EN/Relic15035_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15035_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15035_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15035_4",
+      "Name": "谐律交响的前奏",
+      "Desc": "以黄金与青石点缀的怒放之花，曾是赐予不朽之人的荣章。",
+      "Story": {
+        "285354": {
+          "Zh": "ART/UI/Readable/CHS/Relic15035_4",
+          "En": "ART/UI/Readable/EN/Relic15035_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15035_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15035_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15035_5",
+      "Name": "命途轮转的谐谑",
+      "Desc": "仿照命运之轮的样子打造的时计，如今早已无法转动。",
+      "Story": {
+        "285355": {
+          "Zh": "ART/UI/Readable/CHS/Relic15035_5",
+          "En": "ART/UI/Readable/EN/Relic15035_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15035_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15035_5_KR"
+        }
+      }
+    }
+  }
+}

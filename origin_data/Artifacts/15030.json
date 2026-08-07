@@ -1,0 +1,145 @@
+{
+  "Id": 15030,
+  "Icon": "UI_RelicIcon_15030_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HP_PERCENT",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150300,
+      "Id": 215030,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "花海甘露之光",
+      "Desc": "生命值提升20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150301,
+      "Id": 215030,
+      "Level": 1,
+      "OpenConfig": "Relic_Pari",
+      "ParamList": [
+        0.1,
+        0.8,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "花海甘露之光",
+      "Desc": "元素战技与元素爆发造成的伤害提升10%；装备者受到伤害后的5秒内，上述伤害提升效果提高80%，该提高效果至多叠加5层，每层持续时间独立计算，处于队伍后台时依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15030_1",
+      "Name": "无边酣乐之筵",
+      "Desc": "曾盛装琼浆蜜露的华丽酒杯，如今已空空如也。",
+      "Story": {
+        "285301": {
+          "Zh": "ART/UI/Readable/CHS/Relic15030_1",
+          "En": "ART/UI/Readable/EN/Relic15030_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15030_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15030_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15030_2",
+      "Name": "琦色灵彩之羽",
+      "Desc": "精巧的羽状饰品，闪烁着绿叶与芳花的光泽。",
+      "Story": {
+        "285302": {
+          "Zh": "ART/UI/Readable/CHS/Relic15030_2",
+          "En": "ART/UI/Readable/EN/Relic15030_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15030_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15030_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15030_3",
+      "Name": "灵光明烁之心",
+      "Desc": "精致多彩的耳饰，其上仿佛流露着百种花儿的光泽。",
+      "Story": {
+        "285303": {
+          "Zh": "ART/UI/Readable/CHS/Relic15030_3",
+          "En": "ART/UI/Readable/EN/Relic15030_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15030_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15030_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15030_4",
+      "Name": "灵光源起之蕊",
+      "Desc": "久远的朝圣者曾佩戴的徽记，是一朵华丽的小花。",
+      "Story": {
+        "285304": {
+          "Zh": "ART/UI/Readable/CHS/Relic15030_4",
+          "En": "ART/UI/Readable/EN/Relic15030_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15030_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15030_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15030_5",
+      "Name": "久远花落之时",
+      "Desc": "闪烁着灵光的古老时计，其中盛装着似有生命的纯净液体。",
+      "Story": {
+        "285305": {
+          "Zh": "ART/UI/Readable/CHS/Relic15030_5",
+          "En": "ART/UI/Readable/EN/Relic15030_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15030_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15030_5_KR"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "Id": 15045,
+  "Icon": "UI_RelicIcon_15045_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150450,
+      "Id": 215045,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "天之美赐",
+      "Desc": "元素充能效率提高20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150451,
+      "Id": 215045,
+      "Level": 1,
+      "OpenConfig": "Relic_6.6_Nicole",
+      "ParamList": [
+        0.2,
+        20,
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "天之美赐",
+      "Desc": "若装备者已经完成了魔女的课业，则施放元素战技后，会获得「天光之引」效果：依据装备者的元素类型，使队伍中附近的所有角色获得20%对应元素伤害加成，持续20秒。装备者处于后台时也能触发上述效果，同名圣遗物套装产生的伤害加成效果无法叠加。\\n·队伍拥有「魔导·秘仪」效果时，「天光之引」效果将会升级为「凡世颂歌」，除装备者的元素类型外，还会依据队伍中自己的当前场上角色的元素类型，使队伍中附近的所有角色获得对应元素伤害加成，且上述两种元素伤害加成提升至40%，同元素类型的元素伤害加成效果无法叠加。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15045_1",
+      "Name": "天授之禄",
+      "Desc": "高天赐予御使的甘美之醴，永不止歇的欢宴开启了欲念之门。",
+      "Story": {
+        "285451": {
+          "Zh": "ART/UI/Readable/CHS/Relic15045_1",
+          "En": "ART/UI/Readable/EN/Relic15045_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15045_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15045_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15045_2",
+      "Name": "天授之殁",
+      "Desc": "高天赐予御使的往生之羽，一切罪愆都将在命运的尽头得到赦免。",
+      "Story": {
+        "285452": {
+          "Zh": "ART/UI/Readable/CHS/Relic15045_2",
+          "En": "ART/UI/Readable/EN/Relic15045_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15045_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15045_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15045_3",
+      "Name": "天授之冕",
+      "Desc": "高天赐予御使的华贵冠冕，无人辖制的权势助长了傲慢。",
+      "Story": {
+        "285453": {
+          "Zh": "ART/UI/Readable/CHS/Relic15045_3",
+          "En": "ART/UI/Readable/EN/Relic15045_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15045_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15045_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15045_4",
+      "Name": "天授之馨",
+      "Desc": "高天赐予御使的不凋之花，没有尽头的生命滋生了贪婪。",
+      "Story": {
+        "285454": {
+          "Zh": "ART/UI/Readable/CHS/Relic15045_4",
+          "En": "ART/UI/Readable/EN/Relic15045_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15045_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15045_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15045_5",
+      "Name": "天授之令",
+      "Desc": "高天赐予御使的逆时之晷，不可逾越的禁制成为了愤怒的渊薮。",
+      "Story": {
+        "285455": {
+          "Zh": "ART/UI/Readable/CHS/Relic15045_5",
+          "En": "ART/UI/Readable/EN/Relic15045_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15045_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15045_5_KR"
+        }
+      }
+    }
+  }
+}

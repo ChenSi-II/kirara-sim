@@ -1,0 +1,145 @@
+{
+  "Id": 15032,
+  "Icon": "UI_RelicIcon_15032_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150320,
+      "Id": 215032,
+      "Level": 0,
+      "OpenConfig": "Relic_ArtSkillDamageUp",
+      "ParamList": [
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "黄金剧团",
+      "Desc": "元素战技造成的伤害提升20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150321,
+      "Id": 215032,
+      "Level": 1,
+      "OpenConfig": "Relic_OffStageArtDamageUp",
+      "ParamList": [
+        0.25,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "黄金剧团",
+      "Desc": "元素战技造成的伤害提升25%；此外，处于队伍后台时，元素战技造成的伤害还将进一步提升25%，该效果将在登场后2秒移除。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15032_1",
+      "Name": "黄金之夜的喧嚣",
+      "Desc": "形制古老的银瓮，曾经满盛着红宝石般的美酒，如今其中却是苦涩的海水。",
+      "Story": {
+        "285321": {
+          "Zh": "ART/UI/Readable/CHS/Relic15032_1",
+          "En": "ART/UI/Readable/EN/Relic15032_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15032_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15032_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15032_2",
+      "Name": "黄金飞鸟的落羽",
+      "Desc": "黄金与白银掐丝打造的鸟羽，其上一颗蓝宝石晶莹剔透。",
+      "Story": {
+        "285322": {
+          "Zh": "ART/UI/Readable/CHS/Relic15032_2",
+          "En": "ART/UI/Readable/EN/Relic15032_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15032_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15032_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15032_3",
+      "Name": "黄金剧团的奖赏",
+      "Desc": "形制古老的王冠，相比起君主的头饰，不如说更像是舞台道具。",
+      "Story": {
+        "285323": {
+          "Zh": "ART/UI/Readable/CHS/Relic15032_3",
+          "En": "ART/UI/Readable/EN/Relic15032_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15032_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15032_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15032_4",
+      "Name": "黄金乐曲的变奏",
+      "Desc": "由砗磲、贝母和金箔精心制成的花朵，正骄傲地盛放着。",
+      "Story": {
+        "285324": {
+          "Zh": "ART/UI/Readable/CHS/Relic15032_4",
+          "En": "ART/UI/Readable/EN/Relic15032_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15032_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15032_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15032_5",
+      "Name": "黄金时代的先声",
+      "Desc": "黄金与白银镶嵌而成的美妙日晷，似乎晷盘之上时间早已停止了流动。",
+      "Story": {
+        "285325": {
+          "Zh": "ART/UI/Readable/CHS/Relic15032_5",
+          "En": "ART/UI/Readable/EN/Relic15032_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15032_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15032_5_KR"
+        }
+      }
+    }
+  }
+}

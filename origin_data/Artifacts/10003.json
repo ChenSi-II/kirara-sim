@@ -1,0 +1,148 @@
+{
+  "Id": 10003,
+  "Icon": "UI_RelicIcon_10003_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_DEFENSE_PERCENT",
+          "Value": 0.3
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100030,
+      "Id": 210003,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "守护之心",
+      "Desc": "防御力提高30%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100031,
+      "Id": 210003,
+      "Level": 1,
+      "OpenConfig": "Relic_AbsorbTeamElemResist",
+      "ParamList": [
+        0.3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "守护之心",
+      "Desc": "队伍里每有不同一种元素类型的自己的角色，自身获得30%相应的元素抗性。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10003_1",
+      "Name": "守护之皿",
+      "Desc": "金属的容器。可以用来装某种能排遣漫长守望带来的孤独的液体。",
+      "Story": {
+        "280031": {
+          "Zh": "ART/UI/Readable/CHS/Relic10003_1",
+          "En": "ART/UI/Readable/EN/Relic10003_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10003_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10003_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10003_2",
+      "Name": "守护徽印",
+      "Desc": "象征着某人「渴望成为坚盾」的羽形别针。",
+      "Story": {
+        "280032": {
+          "Zh": "ART/UI/Readable/CHS/Relic10003_2",
+          "En": "ART/UI/Readable/EN/Relic10003_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10003_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10003_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10003_3",
+      "Name": "守护束带",
+      "Desc": "被夜色染得靛青的织物。能在紧急时充当绷带。",
+      "Story": {
+        "280033": {
+          "Zh": "ART/UI/Readable/CHS/Relic10003_3",
+          "En": "ART/UI/Readable/EN/Relic10003_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10003_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10003_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10003_4",
+      "Name": "守护之花",
+      "Desc": "守护者珍视的鸢尾花。并没有机会送给倾心的人。",
+      "Story": {
+        "280034": {
+          "Zh": "ART/UI/Readable/CHS/Relic10003_4",
+          "En": "ART/UI/Readable/EN/Relic10003_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10003_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10003_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10003_5",
+      "Name": "守护座钟",
+      "Desc": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+      "Story": {
+        "280035": {
+          "Zh": "ART/UI/Readable/CHS/Relic10003_5",
+          "En": "ART/UI/Readable/EN/Relic10003_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10003_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10003_5_KR"
+        }
+      }
+    }
+  }
+}

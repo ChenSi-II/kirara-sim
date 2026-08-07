@@ -1,0 +1,147 @@
+{
+  "Id": 10008,
+  "Icon": "UI_RelicIcon_10008_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100080,
+      "Id": 210008,
+      "Level": 0,
+      "OpenConfig": "Relic_SkillDamageUp",
+      "ParamList": [
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "赌徒",
+      "Desc": "元素战技造成的伤害提升20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100081,
+      "Id": 210008,
+      "Level": 1,
+      "OpenConfig": "Relic_KillingRefreshSkill",
+      "ParamList": [
+        15,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "赌徒",
+      "Desc": "击败敌人时，有100%概率清除元素战技的冷却时间。该效果每15秒至多触发一次。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10008_1",
+      "Name": "赌徒的骰盅",
+      "Desc": "是特制的、用于单一用途的容器，但其中并没有欺诈用的机关。",
+      "Story": {
+        "280081": {
+          "Zh": "ART/UI/Readable/CHS/Relic10008_1",
+          "En": "ART/UI/Readable/EN/Relic10008_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10008_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10008_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10008_2",
+      "Name": "赌徒的羽饰",
+      "Desc": "大型鸟的尾羽，其中能藏得下能改天逆命的牌。",
+      "Story": {
+        "280082": {
+          "Zh": "ART/UI/Readable/CHS/Relic10008_2",
+          "En": "ART/UI/Readable/EN/Relic10008_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10008_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10008_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10008_3",
+      "Name": "赌徒的耳环",
+      "Desc": "能让人冷静评估局势与风险，避免危机的翠蓝耳环。",
+      "Story": {
+        "280083": {
+          "Zh": "ART/UI/Readable/CHS/Relic10008_3",
+          "En": "ART/UI/Readable/EN/Relic10008_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10008_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10008_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10008_4",
+      "Name": "赌徒的胸花",
+      "Desc": "华丽的大花朵，其中能藏得下自己事前准备好的骰子。",
+      "Story": {
+        "280084": {
+          "Zh": "ART/UI/Readable/CHS/Relic10008_4",
+          "En": "ART/UI/Readable/EN/Relic10008_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10008_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10008_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10008_5",
+      "Name": "赌徒的怀表",
+      "Desc": "破碎的怀表，曾经为它的主人挡下了致命的攻击。",
+      "Story": {
+        "280085": {
+          "Zh": "ART/UI/Readable/CHS/Relic10008_5",
+          "En": "ART/UI/Readable/EN/Relic10008_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10008_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10008_5_KR"
+        }
+      }
+    }
+  }
+}

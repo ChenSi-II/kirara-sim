@@ -1,0 +1,103 @@
+{
+  "Id": 15047,
+  "Icon": "UI_RelicIcon_15047_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        }
+      ],
+      "AffixId": 2150470,
+      "Id": 215047,
+      "ParamList": [
+        0.18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Name": "血红之证",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        }
+      ],
+      "AffixId": 2150471,
+      "Id": 215047,
+      "Level": 1,
+      "OpenConfig": "Relic_7.0_StarWind",
+      "ParamList": [
+        0.16,
+        0.4,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Name": "血红之证",
+      "Desc": "自身触发星扩散之后，提升自己的暴击率16%，提升星扩散反应伤害40%，持续10秒。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15047_1",
+      "Name": "饮尽你的血泪",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15047_2",
+      "Name": "铭记你的功勋",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15047_3",
+      "Name": "缅怀你的信仰",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15047_4",
+      "Name": "感谢你的奉献",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15047_5",
+      "Name": "授予你的年华",
+      "Desc": "",
+      "Story": {}
+    }
+  }
+}

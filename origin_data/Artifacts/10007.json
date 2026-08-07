@@ -1,0 +1,148 @@
+{
+  "Id": 10007,
+  "Icon": "UI_RelicIcon_10007_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEMENT_MASTERY",
+          "Value": 80
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100070,
+      "Id": 210007,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "教官",
+      "Desc": "元素精通提高80点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100071,
+      "Id": 210007,
+      "Level": 1,
+      "OpenConfig": "Relic_ReactionGainExtraElemMasteryForTeam",
+      "ParamList": [
+        8,
+        120,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "教官",
+      "Desc": "触发元素反应后，队伍中所有角色的元素精通提高120点，持续8秒。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10007_1",
+      "Name": "教官的茶杯",
+      "Desc": "虽然在外人看来只是普通的茶杯，但在学员眼里可是教官权力的象征。",
+      "Story": {
+        "280071": {
+          "Zh": "ART/UI/Readable/CHS/Relic10007_1",
+          "En": "ART/UI/Readable/EN/Relic10007_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10007_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10007_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10007_2",
+      "Name": "教官的羽饰",
+      "Desc": "熟知如何化解攻击力道的教官，不会让这种羽饰被劲风吹掉。",
+      "Story": {
+        "280072": {
+          "Zh": "ART/UI/Readable/CHS/Relic10007_2",
+          "En": "ART/UI/Readable/EN/Relic10007_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10007_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10007_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10007_3",
+      "Name": "教官的帽子",
+      "Desc": "制式的教官帽子。是拒绝了晋升的军官才能获得的殊荣。",
+      "Story": {
+        "280073": {
+          "Zh": "ART/UI/Readable/CHS/Relic10007_3",
+          "En": "ART/UI/Readable/EN/Relic10007_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10007_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10007_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10007_4",
+      "Name": "教官的胸花",
+      "Desc": "教官的胸口别着这种花的时候，意味着今日不练兵。",
+      "Story": {
+        "280074": {
+          "Zh": "ART/UI/Readable/CHS/Relic10007_4",
+          "En": "ART/UI/Readable/EN/Relic10007_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10007_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10007_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10007_5",
+      "Name": "教官的怀表",
+      "Desc": "不能用来看时间的怀表，是完全奉献给训练的计时工具。",
+      "Story": {
+        "280075": {
+          "Zh": "ART/UI/Readable/CHS/Relic10007_5",
+          "En": "ART/UI/Readable/EN/Relic10007_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10007_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10007_5_KR"
+        }
+      }
+    }
+  }
+}

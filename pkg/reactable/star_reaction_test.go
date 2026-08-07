@@ -170,6 +170,28 @@ func TestStarDiffusionVortexMultipliers(t *testing.T) {
 	}
 }
 
+func TestStarDiffusionVortexAppliesCryo(t *testing.T) {
+	c, trg := testCoreWithTrgs(1)
+	if err := c.Init(); err != nil {
+		t.Fatal(err)
+	}
+	c.StarReactions.Enabled = true
+	c.StarReactions.DiffusionStacks = 1
+	c.StarReactions.DiffusionOwner = 0
+	c.StarReactions.DiffusionTarget = trg[0]
+
+	trg[0].detonateStarDiffusion()
+	advanceCoreFrameMultiple(c, 2)
+
+	if got := trg[0].last.Info.Durability; got != starDiffusionCryoDurability {
+		t.Fatalf("cryo detonation durability = %v, want %v", got, starDiffusionCryoDurability)
+	}
+	wantAura := 20 - 20/float64(6*25+420)
+	if got := trg[0].GetAuraDurability(info.ReactionModKeyCryo); !floatApproxEqual(float64(got), wantAura) {
+		t.Fatalf("cryo aura after detonation = %v, want %v", got, wantAura)
+	}
+}
+
 func floatApproxEqual(got, want float64) bool {
 	return math.Abs(got-want) < 1e-9
 }

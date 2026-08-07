@@ -35,10 +35,12 @@ var setNames = []string{
 	"",
 	"adaycarvedfromrisingwinds",
 	"adventurer",
+	"artifact15048",
 	"archaicpetra",
 	"aubadeofmorningstarandmoon",
 	"berserker",
 	"blizzardstrayer",
+	"bloodredproof",
 	"bloodstainedchivalry",
 	"braveheart",
 	"celestialgift",
@@ -46,12 +48,14 @@ var setNames = []string{
 	"deepwoodmemories",
 	"defenderswill",
 	"desertpavilionchronicle",
+	"disenchantmentindeepshadow",
 	"echoesofanoffering",
 	"emblemofseveredfate",
 	"finaleofthedeepgalleries",
 	"flowerofparadiselost",
 	"fragmentofharmonicwhimsy",
 	"gambler",
+	"glacierandsnowfield",
 	"gladiatorsfinale",
 	"gildeddreams",
 	"goldentroupe",
@@ -99,10 +103,12 @@ const (
 	NoSet Set = iota
 	ADayCarvedFromRisingWinds
 	Adventurer
+	Artifact15048
 	ArchaicPetra
 	AubadeOfMorningstarAndMoon
 	Berserker
 	BlizzardStrayer
+	BloodRedProof
 	BloodstainedChivalry
 	BraveHeart
 	CelestialGift
@@ -110,12 +116,14 @@ const (
 	DeepwoodMemories
 	DefendersWill
 	DesertPavilionChronicle
+	DisenchantmentInDeepShadow
 	EchoesOfAnOffering
 	EmblemOfSeveredFate
 	FinaleOfTheDeepGalleries
 	FlowerOfParadiseLost
 	FragmentOfHarmonicWhimsy
 	Gambler
+	GlacierAndSnowfield
 	GladiatorsFinale
 	GildedDreams
 	GoldenTroupe

@@ -1,0 +1,145 @@
+{
+  "Id": 15031,
+  "Icon": "UI_RelicIcon_15031_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150310,
+      "Id": 215031,
+      "Level": 0,
+      "OpenConfig": "Relic_NorAndExtraAtkUp",
+      "ParamList": [
+        0.15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "逐影猎人",
+      "Desc": "普通攻击与重击造成的伤害提高15%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150311,
+      "Id": 215031,
+      "Level": 1,
+      "OpenConfig": "Relic_BuffWhenHPUpAndDown",
+      "ParamList": [
+        0.12,
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "逐影猎人",
+      "Desc": "当前生命值提升或降低时，暴击率提升12%，该效果持续5秒，至多叠加3次。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15031_1",
+      "Name": "遗忘的容器",
+      "Desc": "容纳烈酒的便携金属容器，适合放在大衣口袋中随时使用。",
+      "Story": {
+        "285311": {
+          "Zh": "ART/UI/Readable/CHS/Relic15031_1",
+          "En": "ART/UI/Readable/EN/Relic15031_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15031_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15031_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15031_2",
+      "Name": "杰作的序曲",
+      "Desc": "用于调整旧式机关发条力矩的便携工具。如今失去了实用价值。",
+      "Story": {
+        "285312": {
+          "Zh": "ART/UI/Readable/CHS/Relic15031_2",
+          "En": "ART/UI/Readable/EN/Relic15031_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15031_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15031_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15031_3",
+      "Name": "老兵的容颜",
+      "Desc": "老旧的面具，能够一定程度上替代因伤害而损毁的面容。依据伤残的面积、使用者的性别，有不同的设计。",
+      "Story": {
+        "285313": {
+          "Zh": "ART/UI/Readable/CHS/Relic15031_3",
+          "En": "ART/UI/Readable/EN/Relic15031_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15031_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15031_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15031_4",
+      "Name": "猎人的胸花",
+      "Desc": "老旧的勋章，在过去曾被用来配发给在战斗中做出了杰出贡献的人。",
+      "Story": {
+        "285314": {
+          "Zh": "ART/UI/Readable/CHS/Relic15031_4",
+          "En": "ART/UI/Readable/EN/Relic15031_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15031_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15031_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15031_5",
+      "Name": "裁判的时刻",
+      "Desc": "制式的怀表，走时精准度并不算高。",
+      "Story": {
+        "285315": {
+          "Zh": "ART/UI/Readable/CHS/Relic15031_5",
+          "En": "ART/UI/Readable/EN/Relic15031_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15031_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15031_5_KR"
+        }
+      }
+    }
+  }
+}
