@@ -1,0 +1,146 @@
+{
+  "Id": 15006,
+  "Icon": "UI_RelicIcon_15006_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_FIRE_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150060,
+      "Id": 215006,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "炽烈的炎之魔女",
+      "Desc": "获得15%火元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150061,
+      "Id": 215006,
+      "Level": 1,
+      "OpenConfig": "Relic_ReactionFireEnhance",
+      "ParamList": [
+        0.4,
+        0.15,
+        0.15,
+        0.5,
+        10,
+        0,
+        0,
+        0
+      ],
+      "Name": "炽烈的炎之魔女",
+      "Desc": "超载、燃烧、烈绽放反应造成的伤害提升40%，蒸发、融化反应的加成系数提高15%。施放元素战技后的10秒内，2件套的效果提高50%，该效果最多叠加3次。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15006_1",
+      "Name": "魔女的心之火",
+      "Desc": "烟绯专用",
+      "Story": {
+        "285061": {
+          "Zh": "ART/UI/Readable/CHS/Relic15006_1",
+          "En": "ART/UI/Readable/EN/Relic15006_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15006_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15006_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15006_2",
+      "Name": "魔女常燃之羽",
+      "Desc": "烟绯专用",
+      "Story": {
+        "285062": {
+          "Zh": "ART/UI/Readable/CHS/Relic15006_2",
+          "En": "ART/UI/Readable/EN/Relic15006_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15006_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15006_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15006_3",
+      "Name": "焦灼的魔女帽",
+      "Desc": "烟绯专用",
+      "Story": {
+        "285063": {
+          "Zh": "ART/UI/Readable/CHS/Relic15006_3",
+          "En": "ART/UI/Readable/EN/Relic15006_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15006_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15006_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15006_4",
+      "Name": "魔女的炎之花",
+      "Desc": "烟绯专用",
+      "Story": {
+        "285064": {
+          "Zh": "ART/UI/Readable/CHS/Relic15006_4",
+          "En": "ART/UI/Readable/EN/Relic15006_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15006_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15006_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15006_5",
+      "Name": "魔女破灭之时",
+      "Desc": "烟绯专用",
+      "Story": {
+        "285065": {
+          "Zh": "ART/UI/Readable/CHS/Relic15006_5",
+          "En": "ART/UI/Readable/EN/Relic15006_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15006_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15006_5_KR"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Name": "蛇噬",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在古老的国度曾以「洛格瑟姆」的名讳为黄金的罪人持有。",
+  "WeaponType": "WEAPON_SWORD_ONE_HAND",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Sword_MorphVinces_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

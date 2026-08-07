@@ -1,0 +1,145 @@
+{
+  "Id": 15036,
+  "Icon": "UI_RelicIcon_15036_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150360,
+      "Id": 215036,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "未竟的遐思",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150361,
+      "Id": 215036,
+      "Level": 1,
+      "OpenConfig": "Relic_CheckBuringDamageUp",
+      "ParamList": [
+        5,
+        0.1,
+        6,
+        1,
+        1,
+        3,
+        0,
+        0
+      ],
+      "Name": "未竟的遐思",
+      "Desc": "脱离战斗状态3秒后，造成的伤害提升50%。在战斗状态下，附近不存在处于燃烧状态下的敌人超过6秒后，上述伤害提升效果每秒降低10%，直到降低至0%；存在处于燃烧状态下的敌人时，每秒提升10%，直到达到50%。装备此圣遗物套装的角色处于队伍后台时，依然会触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15036_1",
+      "Name": "筹谋的共樽",
+      "Desc": "陶制的三足杯，曾有诸多英雄在篝火边举杯酣饮，谈论各自的野心与期冀。",
+      "Story": {
+        "285361": {
+          "Zh": "ART/UI/Readable/CHS/Relic15036_1",
+          "En": "ART/UI/Readable/EN/Relic15036_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15036_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15036_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15036_2",
+      "Name": "褪光的翠尾",
+      "Desc": "已褪去华光的尾翎装饰，其上的纹路据说出自久远之前的巧匠之手。",
+      "Story": {
+        "285362": {
+          "Zh": "ART/UI/Readable/CHS/Relic15036_2",
+          "En": "ART/UI/Readable/EN/Relic15036_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15036_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15036_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15036_3",
+      "Name": "失冕的宝冠",
+      "Desc": "由松石与翠羽装饰的黄金宝冠，但空居绒垫之上，从未出现在冕礼之中。",
+      "Story": {
+        "285363": {
+          "Zh": "ART/UI/Readable/CHS/Relic15036_3",
+          "En": "ART/UI/Readable/EN/Relic15036_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15036_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15036_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15036_4",
+      "Name": "暗结的明花",
+      "Desc": "由灰石雕刻并巧贴金箔的花，传说在一场战争中，曾作为敌我双方区别的凭证。",
+      "Story": {
+        "285364": {
+          "Zh": "ART/UI/Readable/CHS/Relic15036_4",
+          "En": "ART/UI/Readable/EN/Relic15036_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15036_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15036_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15036_5",
+      "Name": "举业的识刻",
+      "Desc": "古老国度计时的历晷，在某一刻度上，留有仔细观察才可看到的细小印记。",
+      "Story": {
+        "285365": {
+          "Zh": "ART/UI/Readable/CHS/Relic15036_5",
+          "En": "ART/UI/Readable/EN/Relic15036_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15036_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15036_5_KR"
+        }
+      }
+    }
+  }
+}

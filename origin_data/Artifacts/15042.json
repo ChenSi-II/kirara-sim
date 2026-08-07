@@ -1,0 +1,145 @@
+{
+  "Id": 15042,
+  "Icon": "UI_RelicIcon_15042_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_CHARGE_EFFICIENCY",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150420,
+      "Id": 215042,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "纺月的夜歌",
+      "Desc": "元素充能效率提高20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150421,
+      "Id": 215042,
+      "Level": 1,
+      "OpenConfig": "Relic_6.0_Support",
+      "ParamList": [
+        8,
+        60,
+        120,
+        0.1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "纺月的夜歌",
+      "Desc": "造成元素伤害时，获得持续8秒的「月辉明光·崇信」效果：队伍的月兆为初辉/满辉时，队伍中的所有角色的元素精通提高60点/120点。装备者处于后台时也能触发上述效果。队伍中的角色每拥有一种不同的「月辉明光」效果，队伍中的所有角色触发的月曜反应造成的伤害提升10%。由「月辉明光」产生的效果无法叠加。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15042_1",
+      "Name": "至纯者的欢荣",
+      "Desc": "纯净无垢的银杯，据说在霜月之子过去的仪式中曾被用作圣器。如今的仪式早已用不到这样的银杯了。",
+      "Story": {
+        "285421": {
+          "Zh": "ART/UI/Readable/CHS/Relic15042_1",
+          "En": "ART/UI/Readable/EN/Relic15042_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15042_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15042_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15042_2",
+      "Name": "受福者的白羽",
+      "Desc": "纯净无垢的羽饰，据说是由最初的咏月使亲手锻造而成。",
+      "Story": {
+        "285422": {
+          "Zh": "ART/UI/Readable/CHS/Relic15042_2",
+          "En": "ART/UI/Readable/EN/Relic15042_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15042_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15042_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15042_3",
+      "Name": "司信者的圣冕",
+      "Desc": "纯净无垢的头饰，形貌似乎是仿照苍林灵使的角冠打造而成。",
+      "Story": {
+        "285423": {
+          "Zh": "ART/UI/Readable/CHS/Relic15042_3",
+          "En": "ART/UI/Readable/EN/Relic15042_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15042_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15042_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15042_4",
+      "Name": "流离者的晶泪",
+      "Desc": "纯净无垢的花朵，传说是因冰风而保持了永恒的美丽。",
+      "Story": {
+        "285424": {
+          "Zh": "ART/UI/Readable/CHS/Relic15042_4",
+          "En": "ART/UI/Readable/EN/Relic15042_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15042_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15042_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15042_5",
+      "Name": "祭霜者的迷狂",
+      "Desc": "纯净无垢的时计，如今早已伴着其旧主的妄执一同停转。",
+      "Story": {
+        "285425": {
+          "Zh": "ART/UI/Readable/CHS/Relic15042_5",
+          "En": "ART/UI/Readable/EN/Relic15042_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15042_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15042_5_KR"
+        }
+      }
+    }
+  }
+}

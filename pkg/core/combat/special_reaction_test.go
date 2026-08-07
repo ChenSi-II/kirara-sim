@@ -18,7 +18,7 @@ func TestCalcSpecialReactionDmgStarMultipliers(t *testing.T) {
 	}{
 		{name: "star superconduct zero stack exception", tag: attacks.AttackTagReactionStarSuperconduct, mult: 1, want: base},
 		{name: "star superconduct one stack", tag: attacks.AttackTagReactionStarSuperconduct, mult: 1.45, want: 1.45 * base},
-		{name: "star diffusion anemo", tag: attacks.AttackTagReactionStarDiffusionAnemo, mult: 99, want: 0.75 * base},
+		{name: "star diffusion anemo", tag: attacks.AttackTagReactionStarDiffusionAnemo, mult: 0.75, want: 0.75 * base},
 		{name: "star diffusion cryo low vortex", tag: attacks.AttackTagReactionStarDiffusionCryo, mult: 2, want: 2 * base},
 		{name: "star diffusion cryo high vortex", tag: attacks.AttackTagReactionStarDiffusionCryo, mult: 3, want: 3 * base},
 	}

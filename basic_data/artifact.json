@@ -2372,10 +2372,70 @@
           "Ja": "影に沈む幻JP0D"
         },
         "Desc": {
-          "En": "Increases Superconduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct, this attack's CRIT Rate is increased by 16%. An all-new blessing may be obtained as you make your way toward Snezhnaya...",
+          "En": "Increases Superconduct Reaction DMG by 80% and Star Superconduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Star Superconduct, this attack's CRIT Rate is increased by 16%.",
           "Ko": "초전도 반응으로 주는 피해가 40% 증가한다. 장착 캐릭터가 초전도 반응의 영향을 받은 적 공격 시, 이번 공격의 치명타 확률이 16% 증가한다. 스네즈나야로 향하는 여정에서 어쩌면 새로운 축복을 얻게 될지도 모른다…",
-          "Zh": "超导反应造成的伤害提升80%；装备者攻击受到超导反应影响的敌人时，本次攻击的暴击率提高16%。前往至冬的途中，或许还会得到全新的祝赐…",
+          "Zh": "超导反应造成的伤害提升80%，星超导反应造成的伤害提升40%；装备者攻击受到超导或星超导反应影响的敌人时，本次攻击的暴击率提高16%。",
           "Ja": "超電導反応によるダメージ+40%。装備者が超電導反応の影響を受けた敵を攻撃する時、その攻撃の会心率+16%。スネージナヤへ向かう途中、新たな祝福を得られるかもしれない…JP0D"
+        }
+      }
+    }
+  },
+  "15047": {
+    "Id": 15047,
+    "Icon": "UI_RelicIcon_15047_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150470": {
+        "Name": {
+          "En": "Blood-Red Proof",
+          "Zh": "血红之证"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Zh": "攻击力提高18%。"
+        }
+      },
+      "2150471": {
+        "Name": {
+          "En": "Blood-Red Proof",
+          "Zh": "血红之证"
+        },
+        "Desc": {
+          "En": "After the equipping character triggers Star Diffusion, their CRIT Rate is increased by 16% and their Star Diffusion Reaction DMG is increased by 40% for 10s.",
+          "Zh": "自身触发星扩散之后，提升自己的暴击率16%，提升星扩散反应伤害40%，持续10秒。"
+        }
+      }
+    }
+  },
+  "15048": {
+    "Id": 15048,
+    "Icon": "UI_RelicIcon_15048_4",
+    "Rank": [
+      4,
+      5
+    ],
+    "Set": {
+      "2150480": {
+        "Name": {
+          "En": "Artifact Set 15048",
+          "Zh": "炉火熔炼之心"
+        },
+        "Desc": {
+          "En": "ATK +18%.",
+          "Zh": "攻击力提高18%。"
+        }
+      },
+      "2150481": {
+        "Name": {
+          "En": "Artifact Set 15048",
+          "Zh": "炉火熔炼之心"
+        },
+        "Desc": {
+          "En": "When the equipping character triggers Star Superconduct or Star Diffusion, or directly deals DMG from either reaction, their ATK is increased by 12% and nearby party members gain a 50% Star Superconduct and Star Diffusion DMG Bonus for 12s. This effect is unique and cannot stack. It can be triggered while the equipping character is off-field.",
+          "Zh": "自身触发星超导、星扩散，或直接造成上述反应伤害时，自身攻击力提升12%，并为队伍中附近的角色提供星超导、星扩散伤害提升50%的增益，持续12秒；该效果唯一，多套不可叠加，角色在后台时也能触发效果。"
         }
       }
     }

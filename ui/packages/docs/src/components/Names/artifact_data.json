@@ -2,6 +2,10 @@
   "adaycarvedfromrisingwinds": [
     "risingwinds"
   ],
+  "artifact15048": [
+    "set15048",
+    "luhuoronglianzhixin"
+  ],
   "archaicpetra": [
     "ap"
   ],
@@ -13,6 +17,9 @@
   "blizzardstrayer": [
     "blizzard",
     "bs"
+  ],
+  "bloodredproof": [
+    "bloodred"
   ],
   "bloodstainedchivalry": [
     "bloodstained",
@@ -42,6 +49,9 @@
     "desertpavilion",
     "dpc"
   ],
+  "disenchantmentindeepshadow": [
+    "disenchantment"
+  ],
   "vourukashasglow": [
     "vourukasha",
     "vg"
@@ -66,6 +76,10 @@
     "fohw"
   ],
   "gambler": [],
+  "glacierandsnowfield": [
+    "glacier",
+    "snowfield"
+  ],
   "gladiatorsfinale": [
     "glad",
     "gladiators"

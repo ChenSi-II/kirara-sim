@@ -1,0 +1,145 @@
+{
+  "Id": 15028,
+  "Icon": "UI_RelicIcon_15028_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEMENT_MASTERY",
+          "Value": 80
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150280,
+      "Id": 215028,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "乐园遗落之花",
+      "Desc": "元素精通提高80点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150281,
+      "Id": 215028,
+      "Level": 1,
+      "OpenConfig": "Relic_OvergrowReactionEnhance",
+      "ParamList": [
+        0.4,
+        0.4,
+        0.4,
+        10,
+        4,
+        0.25,
+        1,
+        0.1
+      ],
+      "Name": "乐园遗落之花",
+      "Desc": "装备者绽放、超绽放、烈绽放反应造成的伤害提升40%，造成的月绽放反应伤害提升10%。此外，装备者触发绽放、超绽放、烈绽放、月绽放后，上述效果带来的加成提升25%，该效果持续10秒，至多叠加4次，每1秒至多触发一次。装备者处于队伍后台时依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15028_1",
+      "Name": "守秘的魔瓶",
+      "Desc": "紫色水晶雕成的小瓶，被祖母绿的瓶盖紧紧封装着。",
+      "Story": {
+        "285281": {
+          "Zh": "ART/UI/Readable/CHS/Relic15028_1",
+          "En": "ART/UI/Readable/EN/Relic15028_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15028_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15028_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15028_2",
+      "Name": "谢落的筵席",
+      "Desc": "早已绝迹的鸟类留下的羽毛，被古代花神的信徒镶嵌了亮丽的黄金与宝石。",
+      "Story": {
+        "285282": {
+          "Zh": "ART/UI/Readable/CHS/Relic15028_2",
+          "En": "ART/UI/Readable/EN/Relic15028_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15028_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15028_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15028_3",
+      "Name": "紫晶的花冠",
+      "Desc": "镶嵌着紫水晶与祖母绿的冠冕，似乎是古代花神祭司的头饰。",
+      "Story": {
+        "285283": {
+          "Zh": "ART/UI/Readable/CHS/Relic15028_3",
+          "En": "ART/UI/Readable/EN/Relic15028_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15028_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15028_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15028_4",
+      "Name": "月女的华彩",
+      "Desc": "精雕细琢的紫水晶之花，其形态描摹了一种近乎绝迹的古代花朵。",
+      "Story": {
+        "285284": {
+          "Zh": "ART/UI/Readable/CHS/Relic15028_4",
+          "En": "ART/UI/Readable/EN/Relic15028_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15028_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15028_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15028_5",
+      "Name": "凝结的时刻",
+      "Desc": "不再流动的沙漏，无论如何颠倒，都不再回应时间的流动。",
+      "Story": {
+        "285285": {
+          "Zh": "ART/UI/Readable/CHS/Relic15028_5",
+          "En": "ART/UI/Readable/EN/Relic15028_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15028_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15028_5_KR"
+        }
+      }
+    }
+  }
+}

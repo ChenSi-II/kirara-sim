@@ -144,6 +144,7 @@ func (r *Reactable) queueStarSuperconduct(owner int) {
 		attacks.AttackTagReactionStarSuperconduct,
 		attributes.Cryo,
 		coefficient,
+		0,
 		combat.NewCircleHitOnTarget(r.self, nil, 3),
 	)
 }

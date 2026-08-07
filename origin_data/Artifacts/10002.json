@@ -1,0 +1,148 @@
+{
+  "Id": 10002,
+  "Icon": "UI_RelicIcon_10002_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100020,
+      "Id": 210002,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "勇士之心",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100021,
+      "Id": 210002,
+      "Level": 1,
+      "OpenConfig": "Relic_GiantKiller",
+      "ParamList": [
+        0.3,
+        0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "勇士之心",
+      "Desc": "对生命值高于50%的敌人，造成的伤害增加30%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10002_1",
+      "Name": "勇士的壮行",
+      "Desc": "木制的粗糙容器，其中空洞洞地盛满了回忆。",
+      "Story": {
+        "280021": {
+          "Zh": "ART/UI/Readable/CHS/Relic10002_1",
+          "En": "ART/UI/Readable/EN/Relic10002_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10002_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10002_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10002_2",
+      "Name": "勇士的期许",
+      "Desc": "明亮的鸣禽翎羽。能带来小小的勇气。",
+      "Story": {
+        "280022": {
+          "Zh": "ART/UI/Readable/CHS/Relic10002_2",
+          "En": "ART/UI/Readable/EN/Relic10002_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10002_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10002_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10002_3",
+      "Name": "勇士的冠冕",
+      "Desc": "粗略编成的草环。对一些人而言，就像王者的金冠一样贵重吧。",
+      "Story": {
+        "280023": {
+          "Zh": "ART/UI/Readable/CHS/Relic10002_3",
+          "En": "ART/UI/Readable/EN/Relic10002_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10002_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10002_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10002_4",
+      "Name": "勇士的勋章",
+      "Desc": "别在胸前的朴实小花，是一次冒险后得到的纪念品。",
+      "Story": {
+        "280024": {
+          "Zh": "ART/UI/Readable/CHS/Relic10002_4",
+          "En": "ART/UI/Readable/EN/Relic10002_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10002_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10002_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10002_5",
+      "Name": "勇士的坚毅",
+      "Desc": "老旧的微型沙漏，不具有实用性。与岁月一样不可捉摸。",
+      "Story": {
+        "280025": {
+          "Zh": "ART/UI/Readable/CHS/Relic10002_5",
+          "En": "ART/UI/Readable/EN/Relic10002_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10002_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10002_5_KR"
+        }
+      }
+    }
+  }
+}

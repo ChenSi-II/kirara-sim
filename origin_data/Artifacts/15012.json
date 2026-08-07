@@ -1,0 +1,61 @@
+{
+  "Id": 15012,
+  "Icon": "UI_RelicIcon_15012_3",
+  "Need": [
+    1
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150120,
+      "Id": 215012,
+      "Level": 0,
+      "OpenConfig": "Relic_WindResistance",
+      "ParamList": [
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "祭风之人",
+      "Desc": "受到的风元素附着效果的持续时间减少40%。"
+    }
+  ],
+  "Parts": {
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15012_3",
+      "Name": "祭风礼冠",
+      "Desc": "在古老的时代，司祭祀之人佩戴的礼冠。过去，风常常从礼冠构成的空洞中穿过。",
+      "Story": {
+        "285123": {
+          "Zh": "ART/UI/Readable/CHS/Relic15012_3",
+          "En": "ART/UI/Readable/EN/Relic15012_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15012_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15012_3_KR"
+        }
+      }
+    }
+  }
+}

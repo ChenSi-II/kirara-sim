@@ -1,0 +1,9 @@
+{
+  "Name": "「超厉害魔法钥匙」",
+  "Desc": "「小魔女会」送给好朋友的礼物。由于材料不足的缘故，形制参考了枫丹的《雪翅雁童话集》中的神奇道具。\\n虽然不能真的像童话里那样随意打开通往不同空间的门扉，但依然有着可以陪伴重要的朋友走过无数空间的坚韧。",
+  "WeaponType": "WEAPON_CLAYMORE",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Claymore_LoliFriend",
+  "Tag": "TAG_TYPE_NONE",
+  "Skin": true
+}

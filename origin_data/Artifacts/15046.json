@@ -1,0 +1,145 @@
+{
+  "Id": 15046,
+  "Icon": "UI_RelicIcon_15046_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150460,
+      "Id": 215046,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "影中沉凝的幻灭",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150461,
+      "Id": 215046,
+      "Level": 1,
+      "OpenConfig": "Relic_6.6_Superconductor",
+      "ParamList": [
+        0.8,
+        0.16,
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "影中沉凝的幻灭",
+      "Desc": "超导反应造成的伤害提升80%，星超导反应造成的伤害提升40%；装备者攻击受到超导或星超导反应影响的敌人时，本次攻击的暴击率提高16%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15046_1",
+      "Name": "止于祝庆的喝礼",
+      "Desc": "那是她从自己的同僚手中取得，作为庆礼的漫酒之杯。",
+      "Story": {
+        "285461": {
+          "Zh": "ART/UI/Readable/CHS/Relic15046_1",
+          "En": "ART/UI/Readable/EN/Relic15046_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15046_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15046_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15046_2",
+      "Name": "止于妙想成型的锋毫",
+      "Desc": "那是她赠予跟随自己者，一度书写荒诞之梦的羽笔。",
+      "Story": {
+        "285462": {
+          "Zh": "ART/UI/Readable/CHS/Relic15046_2",
+          "En": "ART/UI/Readable/EN/Relic15046_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15046_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15046_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15046_3",
+      "Name": "止于阔步跌坠的灵摆",
+      "Desc": "那是她从自己唯一的主人那里取得，作为嘉奖的饰品。",
+      "Story": {
+        "285463": {
+          "Zh": "ART/UI/Readable/CHS/Relic15046_3",
+          "En": "ART/UI/Readable/EN/Relic15046_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15046_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15046_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15046_4",
+      "Name": "止于荣礼的缎彩",
+      "Desc": "那是她从有着冰冷双手的友人手中取得，作为礼物的缎带之花。",
+      "Story": {
+        "285464": {
+          "Zh": "ART/UI/Readable/CHS/Relic15046_4",
+          "En": "ART/UI/Readable/EN/Relic15046_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15046_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15046_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15046_5",
+      "Name": "止于宏伟梦醒的时刻",
+      "Desc": "那是她赠予那缄默的炼金术士，提醒一切日程的时刻。",
+      "Story": {
+        "285465": {
+          "Zh": "ART/UI/Readable/CHS/Relic15046_5",
+          "En": "ART/UI/Readable/EN/Relic15046_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15046_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15046_5_KR"
+        }
+      }
+    }
+  }
+}

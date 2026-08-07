@@ -1,0 +1,145 @@
+{
+  "Id": 15021,
+  "Icon": "UI_RelicIcon_15021_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_DEFENSE_PERCENT",
+          "Value": 0.3
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150210,
+      "Id": 215021,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "华馆梦醒形骸记",
+      "Desc": "防御力提高30%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150211,
+      "Id": 215021,
+      "Level": 1,
+      "OpenConfig": "Relic_RaiseDefenceAndRock",
+      "ParamList": [
+        0.3,
+        3,
+        0.06,
+        0.06,
+        6,
+        0,
+        0,
+        0
+      ],
+      "Name": "华馆梦醒形骸记",
+      "Desc": "装备此圣遗物套装的角色在以下情况下，将获得「问答」效果：在场上用岩元素攻击命中敌人后获得一层，每0.3秒至多触发一次；在队伍后台中，每3秒获得一层。问答至多叠加4层，每层能提供6%防御力与6%岩元素伤害加成。每6秒，若未获得问答效果，将损失一层。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15021_1",
+      "Name": "梦醒之瓢",
+      "Desc": "待定",
+      "Story": {
+        "285211": {
+          "Zh": "ART/UI/Readable/CHS/Relic15021_1",
+          "En": "ART/UI/Readable/EN/Relic15021_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15021_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15021_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15021_2",
+      "Name": "华馆之羽",
+      "Desc": "待定",
+      "Story": {
+        "285212": {
+          "Zh": "ART/UI/Readable/CHS/Relic15021_2",
+          "En": "ART/UI/Readable/EN/Relic15021_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15021_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15021_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15021_3",
+      "Name": "形骸之笠",
+      "Desc": "待定",
+      "Story": {
+        "285213": {
+          "Zh": "ART/UI/Readable/CHS/Relic15021_3",
+          "En": "ART/UI/Readable/EN/Relic15021_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15021_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15021_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15021_4",
+      "Name": "荣花之期",
+      "Desc": "待定",
+      "Story": {
+        "285214": {
+          "Zh": "ART/UI/Readable/CHS/Relic15021_4",
+          "En": "ART/UI/Readable/EN/Relic15021_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15021_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15021_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15021_5",
+      "Name": "众生之谣",
+      "Desc": "待定",
+      "Story": {
+        "285215": {
+          "Zh": "ART/UI/Readable/CHS/Relic15021_5",
+          "En": "ART/UI/Readable/EN/Relic15021_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15021_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15021_5_KR"
+        }
+      }
+    }
+  }
+}

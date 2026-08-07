@@ -1,0 +1,145 @@
+{
+  "Id": 15022,
+  "Icon": "UI_RelicIcon_15022_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HEAL_ADD",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150220,
+      "Id": 215022,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "海染砗磲",
+      "Desc": "治疗加成提高15%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150221,
+      "Id": 215022,
+      "Level": 1,
+      "OpenConfig": "Relic_HealAndHolyNova",
+      "ParamList": [
+        3,
+        0.9,
+        0,
+        3.5,
+        30000,
+        0,
+        0,
+        0
+      ],
+      "Name": "海染砗磲",
+      "Desc": "装备此圣遗物套装的角色对队伍中的角色进行治疗时，将产生持续3秒的海染泡沫，记录治疗的生命值回复量（包括溢出值）。持续时间结束时，海染泡沫将会爆炸，对周围的敌人造成90%累计回复量的伤害（该伤害结算方式同感电、超导等元素反应，但不受元素精通、等级或反应伤害加成效果影响）。每3.5秒至多产生一个海染泡沫；海染泡沫至多记录30000点回复量，含溢出部分的治疗量；自己的队伍中同时至多存在一个海染泡沫。装备此圣遗物套装的角色处于队伍后台时，依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15022_1",
+      "Name": "真珠之笼",
+      "Desc": "海祇岛的巫女们所供奉的明珠，始终闪烁着点点光芒，从未黯淡。",
+      "Story": {
+        "285221": {
+          "Zh": "ART/UI/Readable/CHS/Relic15022_1",
+          "En": "ART/UI/Readable/EN/Relic15022_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15022_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15022_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15022_2",
+      "Name": "渊宫之羽",
+      "Desc": "与珊瑚同色的柔弱彩羽，据说出自巫女的羽衣。",
+      "Story": {
+        "285222": {
+          "Zh": "ART/UI/Readable/CHS/Relic15022_2",
+          "En": "ART/UI/Readable/EN/Relic15022_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15022_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15022_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15022_3",
+      "Name": "海祇之冠",
+      "Desc": "古老精致的冠冕，由被遗忘的「神人」所拥有。如今被海祇之民精心封存起来。",
+      "Story": {
+        "285223": {
+          "Zh": "ART/UI/Readable/CHS/Relic15022_3",
+          "En": "ART/UI/Readable/EN/Relic15022_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15022_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15022_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15022_4",
+      "Name": "海染之花",
+      "Desc": "染上多变海色的轻柔之花，在月光下闪烁着奇妙的色彩。",
+      "Story": {
+        "285224": {
+          "Zh": "ART/UI/Readable/CHS/Relic15022_4",
+          "En": "ART/UI/Readable/EN/Relic15022_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15022_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15022_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15022_5",
+      "Name": "离别之贝",
+      "Desc": "明净无垢的贝壳，来自深邃无底的大海。",
+      "Story": {
+        "285225": {
+          "Zh": "ART/UI/Readable/CHS/Relic15022_5",
+          "En": "ART/UI/Readable/EN/Relic15022_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15022_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15022_5_KR"
+        }
+      }
+    }
+  }
+}

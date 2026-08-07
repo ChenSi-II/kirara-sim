@@ -1,0 +1,9 @@
+{
+  "Name": "(test)  影域雷",
+  "Desc": "(test) 影域雷",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "Sword_Template",
+  "Skill": 0,
+  "Tps": true
+}

@@ -1,0 +1,146 @@
+{
+  "Id": 15018,
+  "Icon": "UI_RelicIcon_15018_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_PHYSICAL_ADD_HURT",
+          "Value": 0.25
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150180,
+      "Id": 215018,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "苍白之火",
+      "Desc": "造成的物理伤害提高25%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150181,
+      "Id": 215018,
+      "Level": 1,
+      "OpenConfig": "Relic_AttackUpWhenNormalAtkAndExtraAtkHit",
+      "ParamList": [
+        0.09,
+        7,
+        0.3,
+        0.25,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "苍白之火",
+      "Desc": "元素战技命中敌人后，攻击力提升9%。该效果持续7秒，至多叠加2层，每0.3秒至多触发一次。叠满2层时，2件套的效果提升100%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15018_1",
+      "Name": "超越之盏",
+      "Desc": "罗莎莉亚专用",
+      "Story": {
+        "285181": {
+          "Zh": "ART/UI/Readable/CHS/Relic15018_1",
+          "En": "ART/UI/Readable/EN/Relic15018_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15018_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15018_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15018_2",
+      "Name": "贤医之羽",
+      "Desc": "罗莎莉亚专用",
+      "Story": {
+        "285182": {
+          "Zh": "ART/UI/Readable/CHS/Relic15018_2",
+          "En": "ART/UI/Readable/EN/Relic15018_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15018_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15018_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15018_3",
+      "Name": "嗤笑之面",
+      "Desc": "罗莎莉亚专用",
+      "Story": {
+        "285183": {
+          "Zh": "ART/UI/Readable/CHS/Relic15018_3",
+          "En": "ART/UI/Readable/EN/Relic15018_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15018_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15018_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15018_4",
+      "Name": "无垢之花",
+      "Desc": "罗莎莉亚专用",
+      "Story": {
+        "285184": {
+          "Zh": "ART/UI/Readable/CHS/Relic15018_4",
+          "En": "ART/UI/Readable/EN/Relic15018_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15018_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15018_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15018_5",
+      "Name": "停摆之刻",
+      "Desc": "罗莎莉亚专用",
+      "Story": {
+        "285185": {
+          "Zh": "ART/UI/Readable/CHS/Relic15018_5",
+          "En": "ART/UI/Readable/EN/Relic15018_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15018_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15018_5_KR"
+        }
+      }
+    }
+  }
+}

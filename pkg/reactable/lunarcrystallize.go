@@ -24,9 +24,9 @@ const (
 )
 
 var (
-	lcrContributorMult = []float64{0.6, 0.3, 0.05, 0.05}
-	moondriftOffset    = []info.Point{{Y: 1, X: 0}, {Y: -0.5, X: 0.866}, {Y: -0.5, X: -0.866}}
-	lcrHitmarks        = []int{13, 13 + 12, 13 + 12 + 12}
+	reactionContributorMult = []float64{0.6, 0.3, 0.05, 0.05}
+	moondriftOffset         = []info.Point{{Y: 1, X: 0}, {Y: -0.5, X: 0.866}, {Y: -0.5, X: -0.866}}
+	lcrHitmarks             = []int{13, 13 + 12, 13 + 12 + 12}
 )
 
 func (r *Reactable) TryAddLCr(a *info.AttackEvent) bool {
@@ -217,7 +217,7 @@ func doSingleLCrAttack(contribMap [info.MaxChars]bool, target info.Target, core 
 			Write("target", target.Key()).
 			Write("damage", &contr.dmg).
 			Write("crit", &contr.isCrit).
-			Write("mult", lcrContributorMult[i]).
+			Write("mult", reactionContributorMult[i]).
 			Write("contrib_map", contribMap).
 			Write("cr", &contr.ae.Snapshot.Stats[attributes.CR]).
 			Write("cd", &contr.ae.Snapshot.Stats[attributes.CD]).
@@ -227,7 +227,7 @@ func doSingleLCrAttack(contribMap [info.MaxChars]bool, target info.Target, core 
 			Write("flat_dmg", &contr.ae.Info.FlatDmg).
 			Write("elevation", &contr.ae.Info.Elevation)
 
-		ai.FlatDmg += contr.dmg * lcrContributorMult[i]
+		ai.FlatDmg += contr.dmg * reactionContributorMult[i]
 	}
 
 	snap := info.Snapshot{}

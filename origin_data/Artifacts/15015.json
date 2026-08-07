@@ -1,0 +1,146 @@
+{
+  "Id": 15015,
+  "Icon": "UI_RelicIcon_15015_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_SHIELD_COST_MINUS_RATIO",
+          "Value": 0.35
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150150,
+      "Id": 215015,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "逆飞的流星",
+      "Desc": "护盾强效提高35%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150151,
+      "Id": 215015,
+      "Level": 1,
+      "OpenConfig": "Relic_ShieldEnhanceAtk",
+      "ParamList": [
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "逆飞的流星",
+      "Desc": "处于护盾庇护下时，额外获得40%普通攻击和重击伤害加成。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15015_1",
+      "Name": "夏祭水玉",
+      "Desc": "诺艾尔专用",
+      "Story": {
+        "285151": {
+          "Zh": "ART/UI/Readable/CHS/Relic15015_1",
+          "En": "ART/UI/Readable/EN/Relic15015_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15015_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15015_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15015_2",
+      "Name": "夏祭终末",
+      "Desc": "诺艾尔专用",
+      "Story": {
+        "285152": {
+          "Zh": "ART/UI/Readable/CHS/Relic15015_2",
+          "En": "ART/UI/Readable/EN/Relic15015_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15015_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15015_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15015_3",
+      "Name": "夏祭之面",
+      "Desc": "诺艾尔专用",
+      "Story": {
+        "285153": {
+          "Zh": "ART/UI/Readable/CHS/Relic15015_3",
+          "En": "ART/UI/Readable/EN/Relic15015_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15015_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15015_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15015_4",
+      "Name": "夏祭之花",
+      "Desc": "诺艾尔专用",
+      "Story": {
+        "285154": {
+          "Zh": "ART/UI/Readable/CHS/Relic15015_4",
+          "En": "ART/UI/Readable/EN/Relic15015_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15015_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15015_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15015_5",
+      "Name": "夏祭之刻",
+      "Desc": "诺艾尔专用",
+      "Story": {
+        "285155": {
+          "Zh": "ART/UI/Readable/CHS/Relic15015_5",
+          "En": "ART/UI/Readable/EN/Relic15015_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15015_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15015_5_KR"
+        }
+      }
+    }
+  }
+}

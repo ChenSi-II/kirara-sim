@@ -1,0 +1,148 @@
+{
+  "Id": 10005,
+  "Icon": "UI_RelicIcon_10005_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_CRITICAL",
+          "Value": 0.12
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100050,
+      "Id": 210005,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "战狂",
+      "Desc": "暴击率提高12%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100051,
+      "Id": 210005,
+      "Level": 1,
+      "OpenConfig": "Relic_LowHPGainExtraCritRate",
+      "ParamList": [
+        0.24,
+        0.7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "战狂",
+      "Desc": "生命值低于70%时，暴击率额外提升24%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10005_1",
+      "Name": "战狂的骨杯",
+      "Desc": "用不知名的巨大兽类的骨头制成的杯。是某次厮杀后得到的猎获。",
+      "Story": {
+        "280051": {
+          "Zh": "ART/UI/Readable/CHS/Relic10005_1",
+          "En": "ART/UI/Readable/EN/Relic10005_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10005_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10005_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10005_2",
+      "Name": "战狂的翎羽",
+      "Desc": "原本传说中报丧之鸟的黯蓝尾羽，一部分被染成了红色。",
+      "Story": {
+        "280052": {
+          "Zh": "ART/UI/Readable/CHS/Relic10005_2",
+          "En": "ART/UI/Readable/EN/Relic10005_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10005_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10005_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10005_3",
+      "Name": "战狂的鬼面",
+      "Desc": "在不顾生死的厮杀中一半破碎的骇人铁面具。",
+      "Story": {
+        "280053": {
+          "Zh": "ART/UI/Readable/CHS/Relic10005_3",
+          "En": "ART/UI/Readable/EN/Relic10005_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10005_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10005_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10005_4",
+      "Name": "战狂的蔷薇",
+      "Desc": "被染红的精致花朵，与狂战士的气质微妙地相符。",
+      "Story": {
+        "280054": {
+          "Zh": "ART/UI/Readable/CHS/Relic10005_4",
+          "En": "ART/UI/Readable/EN/Relic10005_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10005_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10005_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10005_5",
+      "Name": "战狂的时计",
+      "Desc": "永远无情流动着的器物。提醒着狂战士自己在战场上的时限，和在人世间的时限。",
+      "Story": {
+        "280055": {
+          "Zh": "ART/UI/Readable/CHS/Relic10005_5",
+          "En": "ART/UI/Readable/EN/Relic10005_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10005_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10005_5_KR"
+        }
+      }
+    }
+  }
+}

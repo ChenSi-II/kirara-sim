@@ -1,0 +1,145 @@
+{
+  "Id": 15027,
+  "Icon": "UI_RelicIcon_15027_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_WIND_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150270,
+      "Id": 215027,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "沙上楼阁史话",
+      "Desc": "获得15%风元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150271,
+      "Id": 215027,
+      "Level": 1,
+      "OpenConfig": "Relic_ExtraAttackCauseSpeedAndDamage",
+      "ParamList": [
+        0.1,
+        0.4,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "沙上楼阁史话",
+      "Desc": "重击命中敌人后，该角色的普通攻击速度提升10%，普通攻击、重击与下落攻击造成的伤害提升40%，持续15秒。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15027_1",
+      "Name": "迷醉长梦的守护",
+      "Desc": "一尊古老的金杯，形制奇妙华丽，空空如也的腹内回响着呢喃之声。",
+      "Story": {
+        "285271": {
+          "Zh": "ART/UI/Readable/CHS/Relic15027_1",
+          "En": "ART/UI/Readable/EN/Relic15027_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15027_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15027_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15027_2",
+      "Name": "黄金邦国的结末",
+      "Desc": "晶莹剔透的人造之羽，古老人类邦国的遗物之一，飞鹰的啸鸣似乎也被封存其中。",
+      "Story": {
+        "285272": {
+          "Zh": "ART/UI/Readable/CHS/Relic15027_2",
+          "En": "ART/UI/Readable/EN/Relic15027_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15027_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15027_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15027_3",
+      "Name": "流沙贵嗣的遗宝",
+      "Desc": "琥珀金打造的耳饰，其上镶嵌着宝石，闪烁着奇妙的光芒。",
+      "Story": {
+        "285273": {
+          "Zh": "ART/UI/Readable/CHS/Relic15027_3",
+          "En": "ART/UI/Readable/EN/Relic15027_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15027_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15027_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15027_4",
+      "Name": "众王之都的开端",
+      "Desc": "闪烁着奇异光彩的人造之花，侧耳倾听，似有巧笑之声隐隐传来。",
+      "Story": {
+        "285274": {
+          "Zh": "ART/UI/Readable/CHS/Relic15027_4",
+          "En": "ART/UI/Readable/EN/Relic15027_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15027_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15027_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15027_5",
+      "Name": "失落迷途的机芯",
+      "Desc": "一台古老的机芯，镇灵的碎片在其中央熠熠生光，隐隐振动，似乎在诉说着什么…",
+      "Story": {
+        "285275": {
+          "Zh": "ART/UI/Readable/CHS/Relic15027_5",
+          "En": "ART/UI/Readable/EN/Relic15027_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15027_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15027_5_KR"
+        }
+      }
+    }
+  }
+}

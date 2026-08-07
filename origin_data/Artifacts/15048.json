@@ -1,0 +1,103 @@
+{
+  "Id": 15048,
+  "Icon": "UI_RelicIcon_15048_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        }
+      ],
+      "AffixId": 2150480,
+      "Id": 215048,
+      "ParamList": [
+        0.18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Name": "",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE"
+        }
+      ],
+      "AffixId": 2150481,
+      "Id": 215048,
+      "Level": 1,
+      "OpenConfig": "Relic_7.0_StarSupport_4",
+      "ParamList": [
+        0.12,
+        0.5,
+        12.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Name": "",
+      "Desc": "自身触发星超导、星扩散，或直接造成上述反应伤害时，自身攻击力提升12%，并为队伍中附近的角色提供星超导、星扩散伤害提升50%的增益，持续12秒；该效果唯一，多套不可叠加，角色在后台时也能触发效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15048_1",
+      "Name": "0",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15048_2",
+      "Name": "0",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15048_3",
+      "Name": "0",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15048_4",
+      "Name": "0",
+      "Desc": "",
+      "Story": {}
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15048_5",
+      "Name": "0",
+      "Desc": "",
+      "Story": {}
+    }
+  }
+}

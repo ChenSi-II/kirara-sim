@@ -1,0 +1,61 @@
+{
+  "Id": 15013,
+  "Icon": "UI_RelicIcon_15013_3",
+  "Need": [
+    1
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150130,
+      "Id": 215013,
+      "Level": 0,
+      "OpenConfig": "Relic_IceResistance",
+      "ParamList": [
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "祭冰之人",
+      "Desc": "受到的冰元素附着效果的持续时间减少40%。"
+    }
+  ],
+  "Parts": {
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15013_3",
+      "Name": "祭冰礼冠",
+      "Desc": "在古老的时代，司祭祀之人佩戴的礼冠。因为过去饱尝霜寒，具有奇妙的抗性。",
+      "Story": {
+        "285133": {
+          "Zh": "ART/UI/Readable/CHS/Relic15013_3",
+          "En": "ART/UI/Readable/EN/Relic15013_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15013_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15013_3_KR"
+        }
+      }
+    }
+  }
+}

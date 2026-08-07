@@ -1,0 +1,145 @@
+{
+  "Id": 15023,
+  "Icon": "UI_RelicIcon_15023_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150230,
+      "Id": 215023,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "辰砂往生录",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150231,
+      "Id": 215023,
+      "Level": 1,
+      "OpenConfig": "Relic_AttackUpWhenHPdown",
+      "ParamList": [
+        16,
+        0.08,
+        0.1,
+        4,
+        0.8,
+        0,
+        0,
+        0
+      ],
+      "Name": "辰砂往生录",
+      "Desc": "施放元素爆发后，将产生持续16秒的「潜光」效果：攻击力提升8%；并在角色的生命值降低时，攻击力进一步提升10%，至多通过这种方式提升4次，每0.8秒至多触发一次。「潜光」效果将在角色退场时消失；持续期间再次施放元素爆发，将移除原有的「潜光」。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15023_1",
+      "Name": "结契之刻",
+      "Desc": "古老的晶砂之杯，似乎未尝被岁月磨洗暗淡。",
+      "Story": {
+        "285231": {
+          "Zh": "ART/UI/Readable/CHS/Relic15023_1",
+          "En": "ART/UI/Readable/EN/Relic15023_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15023_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15023_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15023_2",
+      "Name": "潜光片羽",
+      "Desc": "一片光泽暗淡的翎羽，凝聚着浓重的记忆。",
+      "Story": {
+        "285232": {
+          "Zh": "ART/UI/Readable/CHS/Relic15023_2",
+          "En": "ART/UI/Readable/EN/Relic15023_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15023_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15023_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15023_3",
+      "Name": "虺雷之姿",
+      "Desc": "据称是山民为夜叉所打造的头冠，外观古朴，但其表面光亮不失润泽。",
+      "Story": {
+        "285233": {
+          "Zh": "ART/UI/Readable/CHS/Relic15023_3",
+          "En": "ART/UI/Readable/EN/Relic15023_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15023_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15023_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15023_4",
+      "Name": "生灵之华",
+      "Desc": "古老的纪念物，恰如数百年前将它保存的生灵一般鲜活。",
+      "Story": {
+        "285234": {
+          "Zh": "ART/UI/Readable/CHS/Relic15023_4",
+          "En": "ART/UI/Readable/EN/Relic15023_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15023_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15023_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15023_5",
+      "Name": "阳辔之遗",
+      "Desc": "外观坚实的古代时计，有着晶砂的光泽。",
+      "Story": {
+        "285235": {
+          "Zh": "ART/UI/Readable/CHS/Relic15023_5",
+          "En": "ART/UI/Readable/EN/Relic15023_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15023_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15023_5_KR"
+        }
+      }
+    }
+  }
+}

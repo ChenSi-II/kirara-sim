@@ -1,0 +1,145 @@
+{
+  "Id": 15040,
+  "Icon": "UI_RelicIcon_15040_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ICE_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150400,
+      "Id": 215040,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "深廊终曲",
+      "Desc": "获得15%冰元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150401,
+      "Id": 215040,
+      "Level": 1,
+      "OpenConfig": "Relic_SpiralAbyss",
+      "ParamList": [
+        0.6,
+        0.6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "深廊终曲",
+      "Desc": "装备者的元素能量为0时，普通攻击造成的伤害提升60%，元素爆发造成的伤害提升60%。装备者的普通攻击造成伤害后，上述元素爆发伤害提升效果将失效6秒；装备者的元素爆发造成伤害后，上述普通攻击伤害提升效果将失效6秒。角色处于队伍后台也能触发。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15040_1",
+      "Name": "深廊的饫赐之宴",
+      "Desc": "由北国的玉石打造而成的杯盏，据说曾是古老的文明用以向高天奉献的礼器。",
+      "Story": {
+        "285401": {
+          "Zh": "ART/UI/Readable/CHS/Relic15040_1",
+          "En": "ART/UI/Readable/EN/Relic15040_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15040_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15040_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15040_2",
+      "Name": "深廊的漫远之约",
+      "Desc": "由北国的玉石打造而成的羽饰，折射出的幽光仿佛不应属于这个世界。",
+      "Story": {
+        "285402": {
+          "Zh": "ART/UI/Readable/CHS/Relic15040_2",
+          "En": "ART/UI/Readable/EN/Relic15040_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15040_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15040_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15040_3",
+      "Name": "深廊的遂失之冕",
+      "Desc": "如同其旧主的心神一般，为「执念」所浸染的盔面。其上装饰的玉石似乎来自更古老的时代。",
+      "Story": {
+        "285403": {
+          "Zh": "ART/UI/Readable/CHS/Relic15040_3",
+          "En": "ART/UI/Readable/EN/Relic15040_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15040_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15040_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15040_4",
+      "Name": "深廊的回奏之歌",
+      "Desc": "由北国的玉石打造而成的冰之花，花瓣已然在漫长的岁月中湮落成尘。",
+      "Story": {
+        "285404": {
+          "Zh": "ART/UI/Readable/CHS/Relic15040_4",
+          "En": "ART/UI/Readable/EN/Relic15040_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15040_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15040_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15040_5",
+      "Name": "深廊的湮落之刻",
+      "Desc": "由北国的玉石打造而成的怀表，指针已永久停驻于湮灭的那一刻。",
+      "Story": {
+        "285405": {
+          "Zh": "ART/UI/Readable/CHS/Relic15040_5",
+          "En": "ART/UI/Readable/EN/Relic15040_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15040_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15040_5_KR"
+        }
+      }
+    }
+  }
+}
