@@ -5,8 +5,8 @@ import "testing"
 func TestIsStarReactionAvatar(t *testing.T) {
 	tests := []struct {
 		name  string
-		id    uint32
-		subID uint32
+		id    int32
+		subID int32
 		want  bool
 	}{
 		{name: "avatar 10000150", id: 10000150, want: true},
