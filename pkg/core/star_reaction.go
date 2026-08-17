@@ -1,6 +1,9 @@
 package core
 
-import "github.com/genshinsim/gcsim/pkg/core/info"
+import (
+	"github.com/genshinsim/gcsim/pkg/catalog"
+	"github.com/genshinsim/gcsim/pkg/core/info"
+)
 
 const (
 	starReactionAvatar150 int32 = 10000150
@@ -40,8 +43,8 @@ func isStarReactionAvatar(id, subID int32) bool {
 
 func (c *Core) initStarReactions() {
 	for _, char := range c.Player.Chars() {
-		data := char.Data()
-		if data != nil && isStarReactionAvatar(data.Id, data.SubId) {
+		data := catalog.CharacterMap[char.Base.Key]
+		if data != nil && isStarReactionAvatar(int32(data.Id), int32(data.SubId)) {
 			c.StarReactions.Enabled = true
 			return
 		}
