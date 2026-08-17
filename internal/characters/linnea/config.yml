@@ -1,0 +1,41 @@
+use: pipeline
+kind: character
+name: linnea
+source: community
+version: 6.7.54
+override:
+  id: 10000130
+
+# Exact local labels used by the community-data generator.
+talents:
+  - attack:
+      - 'attack(1-Hit DMG|{param1:F1P})'
+      - 'attack(2-Hit DMG|{param2:F1P})'
+      - 'attack(3-Hit DMG|{param3:F1P})'
+  - aim: 'attack(Aimed Shot|{param4:F1P})'
+  - charge: 'attack(Fully-Charged Aimed Shot|{param5:P})'
+  - collision: 'attack(Plunge DMG|{param6:F1P})'
+  - lowPlunge: 'attack(Low/High Plunge DMG|{param7:P}/{param8:P}|0)'
+  - highPlunge: 'attack(Low/High Plunge DMG|{param7:P}/{param8:P}|1)'
+  - skillPummeler:
+      - 'skill(Lumi Pound-Pound Pummeler DMG|{param1:F1P} DEF ×2)'
+      - 'skill(Lumi Pound-Pound Pummeler DMG|{param1:F1P} DEF ×2)'
+  - skillHeavy: 'skill(Lumi Heavy Overdrive Hammer DMG|{param2:F1P} DEF)'
+  - skillMillion: 'skill(Lumi Million Ton Crush DMG|{param3:F1P} DEF)'
+  - burstInitialFlat: 'burst(Initial Healing|{param1:I})'
+  - burstInitialDef: 'burst(Initial Healing|{param2:F1P} DEF + {param1:I})'
+  - burstContinuousFlat: 'burst(Continuous Healing|{param3:I})'
+  - burstContinuousDef: 'burst(Continuous Healing|{param4:F1P} DEF + {param3:I})'
+
+docs:
+  fields:
+    .linnea.lumi: Whether Lumi is active.
+    .linnea.lumi-form: Lumi's current form (`super`, `standard`, or `absent`).
+    .linnea.field-catalog: Current Field Catalog stacks.
+  issues:
+    - Skill, Burst, summon attack frames, hitboxes, and Burst healing interval remain provisional pending verified runtime data.
+
+abilities:
+  - name: skill
+    params:
+      taps: Number of consecutive Skill/Normal taps represented by the cast. Default 1; range 1–5.

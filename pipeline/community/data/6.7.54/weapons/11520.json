@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "whitelakefrostfeather",
+      "override_id": "11520",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "whitelakefrostfeather",
+    "id": "11520",
+    "lunaris_id": "11520"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 47.537,
+            "levels": {
+              "1": 1,
+              "10": 1.837,
+              "100": 11.397,
+              "11": 1.933,
+              "12": 2.028,
+              "13": 2.124,
+              "14": 2.22,
+              "15": 2.317,
+              "16": 2.414,
+              "17": 2.511,
+              "18": 2.608,
+              "19": 2.706,
+              "2": 1.091,
+              "20": 2.804,
+              "21": 2.903,
+              "22": 3.002,
+              "23": 3.101,
+              "24": 3.2,
+              "25": 3.3,
+              "26": 3.4,
+              "27": 3.5,
+              "28": 3.601,
+              "29": 3.701,
+              "3": 1.183,
+              "30": 3.803,
+              "31": 3.904,
+              "32": 4.005,
+              "33": 4.107,
+              "34": 4.209,
+              "35": 4.312,
+              "36": 4.414,
+              "37": 4.517,
+              "38": 4.62,
+              "39": 4.723,
+              "4": 1.275,
+              "40": 4.827,
+              "41": 4.931,
+              "42": 5.035,
+              "43": 5.139,
+              "44": 5.243,
+              "45": 5.348,
+              "46": 5.453,
+              "47": 5.558,
+              "48": 5.663,
+              "49": 5.768,
+              "5": 1.368,
+              "50": 5.874,
+              "51": 5.98,
+              "52": 6.086,
+              "53": 6.192,
+              "54": 6.299,
+              "55": 6.406,
+              "56": 6.513,
+              "57": 6.62,
+              "58": 6.727,
+              "59": 6.835,
+              "6": 1.461,
+              "60": 6.942,
+              "61": 7.05,
+              "62": 7.158,
+              "63": 7.267,
+              "64": 7.375,
+              "65": 7.484,
+              "66": 7.592,
+              "67": 7.701,
+              "68": 7.811,
+              "69": 7.92,
+              "7": 1.554,
+              "70": 8.03,
+              "71": 8.139,
+              "72": 8.249,
+              "73": 8.359,
+              "74": 8.47,
+              "75": 8.58,
+              "76": 8.691,
+              "77": 8.802,
+              "78": 8.913,
+              "79": 9.024,
+              "8": 1.648,
+              "80": 9.135,
+              "81": 9.247,
+              "82": 9.358,
+              "83": 9.47,
+              "84": 9.582,
+              "85": 9.694,
+              "86": 9.807,
+              "87": 9.919,
+              "88": 10.032,
+              "89": 10.145,
+              "9": 1.743,
+              "90": 10.258,
+              "91": 10.371,
+              "92": 10.485,
+              "93": 10.598,
+              "94": 10.712,
+              "95": 10.826,
+              "96": 10.94,
+              "97": 11.054,
+              "98": 11.168,
+              "99": 11.283
+            }
+          },
+          "fight_prop_critical": {
+            "base": 0.048,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 47.537,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_302"
+          },
+          {
+            "init_value": 0.048,
+            "prop_type": "FIGHT_PROP_CRITICAL",
+            "type": "GROW_CURVE_CRITICAL_301"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Sword_Swanlake",
+        "name": "Whitelake Frostfeather",
+        "rarity": 5,
+        "weapon_type": "WEAPON_SWORD_ONE_HAND"
+      },
+      "refinements": {
+        "1": {
+          "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>8%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>50%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+          "name": "Snow Swan's Finale",
+          "param_list": [
+            4,
+            0.08,
+            8,
+            3,
+            0.5,
+            3.5,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>10%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>65%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+          "name": "Snow Swan's Finale",
+          "param_list": [
+            4.5,
+            0.1,
+            8,
+            3,
+            0.65,
+            3.5,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>12%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>80%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+          "name": "Snow Swan's Finale",
+          "param_list": [
+            5,
+            0.12,
+            8,
+            3,
+            0.8,
+            3.5,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>14%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>95%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+          "name": "Snow Swan's Finale",
+          "param_list": [
+            5.5,
+            0.14,
+            8,
+            3,
+            0.95,
+            3.5,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>16%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>110%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>6</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+          "name": "Snow Swan's Finale",
+          "param_list": [
+            6,
+            0.16,
+            8,
+            3,
+            1.1,
+            3.5,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            4.0,
+            0.07999999821186066,
+            8.0,
+            3.0,
+            0.5,
+            3.5,
+            0.0,
+            0.0
+          ],
+          "2": [
+            4.5,
+            0.10000000149011612,
+            8.0,
+            3.0,
+            0.6499999761581421,
+            3.5,
+            0.0,
+            0.0
+          ],
+          "3": [
+            5.0,
+            0.11999999731779099,
+            8.0,
+            3.0,
+            0.800000011920929,
+            3.5,
+            0.0,
+            0.0
+          ],
+          "4": [
+            5.5,
+            0.14000000059604645,
+            8.0,
+            3.0,
+            0.949999988079071,
+            3.5,
+            0.0,
+            0.0
+          ],
+          "5": [
+            6.0,
+            0.1599999964237213,
+            8.0,
+            3.0,
+            1.100000023841858,
+            3.5,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            4,
+            0.08,
+            8,
+            3,
+            0.5,
+            3.5,
+            0,
+            0
+          ],
+          "2": [
+            4.5,
+            0.1,
+            8,
+            3,
+            0.65,
+            3.5,
+            0,
+            0
+          ],
+          "3": [
+            5,
+            0.12,
+            8,
+            3,
+            0.8,
+            3.5,
+            0,
+            0
+          ],
+          "4": [
+            5.5,
+            0.14,
+            8,
+            3,
+            0.95,
+            3.5,
+            0,
+            0
+          ],
+          "5": [
+            6,
+            0.16,
+            8,
+            3,
+            1.1,
+            3.5,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Whitelake Frostfeather",
+        "nanoka": "Whitelake Frostfeather"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_ORANGE",
+        "nanoka": "QUALITY_ORANGE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_SWORD_ONE_HAND",
+        "nanoka": "WEAPON_SWORD_ONE_HAND"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Whitelake Frostfeather",
+          "passive": {
+            "name": "Snow Swan's Finale",
+            "refinements": {
+              "1": {
+                "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by 8% for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by 50%, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore 4 Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+                "params": [
+                  4.0,
+                  0.07999999821186066,
+                  8.0,
+                  3.0,
+                  0.5,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by 10% for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by 65%, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore 4.5 Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+                "params": [
+                  4.5,
+                  0.10000000149011612,
+                  8.0,
+                  3.0,
+                  0.6499999761581421,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by 12% for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by 80%, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore 5 Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+                "params": [
+                  5.0,
+                  0.11999999731779099,
+                  8.0,
+                  3.0,
+                  0.800000011920929,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by 14% for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by 95%, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore 5.5 Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+                "params": [
+                  5.5,
+                  0.14000000059604645,
+                  8.0,
+                  3.0,
+                  0.949999988079071,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by 16% for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by 110%, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore 6 Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+                "params": [
+                  6.0,
+                  0.1599999964237213,
+                  8.0,
+                  3.0,
+                  1.100000023841858,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 4.8,
+              "atk": 48
+            },
+            "10": {
+              "CRIT Rate%": 6.5,
+              "atk": 87
+            },
+            "11": {
+              "CRIT Rate%": 6.5,
+              "atk": 92
+            },
+            "12": {
+              "CRIT Rate%": 6.5,
+              "atk": 96
+            },
+            "13": {
+              "CRIT Rate%": 6.5,
+              "atk": 101
+            },
+            "14": {
+              "CRIT Rate%": 6.5,
+              "atk": 106
+            },
+            "15": {
+              "CRIT Rate%": 7.5,
+              "atk": 110
+            },
+            "16": {
+              "CRIT Rate%": 7.5,
+              "atk": 115
+            },
+            "17": {
+              "CRIT Rate%": 7.5,
+              "atk": 119
+            },
+            "18": {
+              "CRIT Rate%": 7.5,
+              "atk": 124
+            },
+            "19": {
+              "CRIT Rate%": 7.5,
+              "atk": 129
+            },
+            "2": {
+              "CRIT Rate%": 4.8,
+              "atk": 52
+            },
+            "20": {
+              "CRIT Rate%": 8.5,
+              "atk": 133
+            },
+            "21": {
+              "CRIT Rate%": 8.5,
+              "atk": 169
+            },
+            "22": {
+              "CRIT Rate%": 8.5,
+              "atk": 174
+            },
+            "23": {
+              "CRIT Rate%": 8.5,
+              "atk": 179
+            },
+            "24": {
+              "CRIT Rate%": 8.5,
+              "atk": 183
+            },
+            "25": {
+              "CRIT Rate%": 9.5,
+              "atk": 188
+            },
+            "26": {
+              "CRIT Rate%": 9.5,
+              "atk": 193
+            },
+            "27": {
+              "CRIT Rate%": 9.5,
+              "atk": 197
+            },
+            "28": {
+              "CRIT Rate%": 9.5,
+              "atk": 202
+            },
+            "29": {
+              "CRIT Rate%": 9.5,
+              "atk": 207
+            },
+            "3": {
+              "CRIT Rate%": 4.8,
+              "atk": 56
+            },
+            "30": {
+              "CRIT Rate%": 10.4,
+              "atk": 212
+            },
+            "31": {
+              "CRIT Rate%": 10.4,
+              "atk": 217
+            },
+            "32": {
+              "CRIT Rate%": 10.4,
+              "atk": 221
+            },
+            "33": {
+              "CRIT Rate%": 10.4,
+              "atk": 226
+            },
+            "34": {
+              "CRIT Rate%": 10.4,
+              "atk": 231
+            },
+            "35": {
+              "CRIT Rate%": 11.4,
+              "atk": 236
+            },
+            "36": {
+              "CRIT Rate%": 11.4,
+              "atk": 241
+            },
+            "37": {
+              "CRIT Rate%": 11.4,
+              "atk": 246
+            },
+            "38": {
+              "CRIT Rate%": 11.4,
+              "atk": 251
+            },
+            "39": {
+              "CRIT Rate%": 11.4,
+              "atk": 256
+            },
+            "4": {
+              "CRIT Rate%": 4.8,
+              "atk": 61
+            },
+            "40": {
+              "CRIT Rate%": 12.4,
+              "atk": 261
+            },
+            "41": {
+              "CRIT Rate%": 12.4,
+              "atk": 297
+            },
+            "42": {
+              "CRIT Rate%": 12.4,
+              "atk": 302
+            },
+            "43": {
+              "CRIT Rate%": 12.4,
+              "atk": 306
+            },
+            "44": {
+              "CRIT Rate%": 12.4,
+              "atk": 311
+            },
+            "45": {
+              "CRIT Rate%": 13.3,
+              "atk": 316
+            },
+            "46": {
+              "CRIT Rate%": 13.3,
+              "atk": 321
+            },
+            "47": {
+              "CRIT Rate%": 13.3,
+              "atk": 326
+            },
+            "48": {
+              "CRIT Rate%": 13.3,
+              "atk": 331
+            },
+            "49": {
+              "CRIT Rate%": 13.3,
+              "atk": 336
+            },
+            "5": {
+              "CRIT Rate%": 5.6,
+              "atk": 65
+            },
+            "50": {
+              "CRIT Rate%": 14.3,
+              "atk": 341
+            },
+            "51": {
+              "CRIT Rate%": 14.3,
+              "atk": 378
+            },
+            "52": {
+              "CRIT Rate%": 14.3,
+              "atk": 383
+            },
+            "53": {
+              "CRIT Rate%": 14.3,
+              "atk": 388
+            },
+            "54": {
+              "CRIT Rate%": 14.3,
+              "atk": 393
+            },
+            "55": {
+              "CRIT Rate%": 15.3,
+              "atk": 398
+            },
+            "56": {
+              "CRIT Rate%": 15.3,
+              "atk": 403
+            },
+            "57": {
+              "CRIT Rate%": 15.3,
+              "atk": 408
+            },
+            "58": {
+              "CRIT Rate%": 15.3,
+              "atk": 413
+            },
+            "59": {
+              "CRIT Rate%": 15.3,
+              "atk": 418
+            },
+            "6": {
+              "CRIT Rate%": 5.6,
+              "atk": 69
+            },
+            "60": {
+              "CRIT Rate%": 16.2,
+              "atk": 423
+            },
+            "61": {
+              "CRIT Rate%": 16.2,
+              "atk": 460
+            },
+            "62": {
+              "CRIT Rate%": 16.2,
+              "atk": 465
+            },
+            "63": {
+              "CRIT Rate%": 16.2,
+              "atk": 470
+            },
+            "64": {
+              "CRIT Rate%": 16.2,
+              "atk": 475
+            },
+            "65": {
+              "CRIT Rate%": 17.2,
+              "atk": 480
+            },
+            "66": {
+              "CRIT Rate%": 17.2,
+              "atk": 485
+            },
+            "67": {
+              "CRIT Rate%": 17.2,
+              "atk": 491
+            },
+            "68": {
+              "CRIT Rate%": 17.2,
+              "atk": 496
+            },
+            "69": {
+              "CRIT Rate%": 17.2,
+              "atk": 501
+            },
+            "7": {
+              "CRIT Rate%": 5.6,
+              "atk": 74
+            },
+            "70": {
+              "CRIT Rate%": 18.2,
+              "atk": 506
+            },
+            "71": {
+              "CRIT Rate%": 18.2,
+              "atk": 543
+            },
+            "72": {
+              "CRIT Rate%": 18.2,
+              "atk": 548
+            },
+            "73": {
+              "CRIT Rate%": 18.2,
+              "atk": 553
+            },
+            "74": {
+              "CRIT Rate%": 18.2,
+              "atk": 558
+            },
+            "75": {
+              "CRIT Rate%": 19.1,
+              "atk": 563
+            },
+            "76": {
+              "CRIT Rate%": 19.1,
+              "atk": 569
+            },
+            "77": {
+              "CRIT Rate%": 19.1,
+              "atk": 574
+            },
+            "78": {
+              "CRIT Rate%": 19.1,
+              "atk": 579
+            },
+            "79": {
+              "CRIT Rate%": 19.1,
+              "atk": 585
+            },
+            "8": {
+              "CRIT Rate%": 5.6,
+              "atk": 78
+            },
+            "80": {
+              "CRIT Rate%": 20.1,
+              "atk": 590
+            },
+            "81": {
+              "CRIT Rate%": 20.1,
+              "atk": 626
+            },
+            "82": {
+              "CRIT Rate%": 20.1,
+              "atk": 632
+            },
+            "83": {
+              "CRIT Rate%": 20.1,
+              "atk": 637
+            },
+            "84": {
+              "CRIT Rate%": 20.1,
+              "atk": 642
+            },
+            "85": {
+              "CRIT Rate%": 21.1,
+              "atk": 648
+            },
+            "86": {
+              "CRIT Rate%": 21.1,
+              "atk": 653
+            },
+            "87": {
+              "CRIT Rate%": 21.1,
+              "atk": 658
+            },
+            "88": {
+              "CRIT Rate%": 21.1,
+              "atk": 664
+            },
+            "89": {
+              "CRIT Rate%": 21.1,
+              "atk": 669
+            },
+            "9": {
+              "CRIT Rate%": 5.6,
+              "atk": 83
+            },
+            "90": {
+              "CRIT Rate%": 22.1,
+              "atk": 674
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_Swanlake",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "b22e61b2c603ac1de03a5c64d8f10215a88ecd8054c8642a84974753199f69aa",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/11520.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "白湖冬羽",
+          "passive": {
+            "name": "雪鹄的终幕舞",
+            "refinements": {
+              "1": {
+                "description": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升8%，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升50%，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复4点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  4.0,
+                  0.07999999821186066,
+                  8.0,
+                  3.0,
+                  0.5,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升10%，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升65%，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复4.5点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  4.5,
+                  0.10000000149011612,
+                  8.0,
+                  3.0,
+                  0.6499999761581421,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升12%，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升80%，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复5点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  5.0,
+                  0.11999999731779099,
+                  8.0,
+                  3.0,
+                  0.800000011920929,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升14%，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升95%，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复5.5点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  5.5,
+                  0.14000000059604645,
+                  8.0,
+                  3.0,
+                  0.949999988079071,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升16%，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升110%，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复6点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  6.0,
+                  0.1599999964237213,
+                  8.0,
+                  3.0,
+                  1.100000023841858,
+                  3.5,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 4.8,
+              "atk": 48
+            },
+            "10": {
+              "CRIT Rate%": 6.5,
+              "atk": 87
+            },
+            "11": {
+              "CRIT Rate%": 6.5,
+              "atk": 92
+            },
+            "12": {
+              "CRIT Rate%": 6.5,
+              "atk": 96
+            },
+            "13": {
+              "CRIT Rate%": 6.5,
+              "atk": 101
+            },
+            "14": {
+              "CRIT Rate%": 6.5,
+              "atk": 106
+            },
+            "15": {
+              "CRIT Rate%": 7.5,
+              "atk": 110
+            },
+            "16": {
+              "CRIT Rate%": 7.5,
+              "atk": 115
+            },
+            "17": {
+              "CRIT Rate%": 7.5,
+              "atk": 119
+            },
+            "18": {
+              "CRIT Rate%": 7.5,
+              "atk": 124
+            },
+            "19": {
+              "CRIT Rate%": 7.5,
+              "atk": 129
+            },
+            "2": {
+              "CRIT Rate%": 4.8,
+              "atk": 52
+            },
+            "20": {
+              "CRIT Rate%": 8.5,
+              "atk": 133
+            },
+            "21": {
+              "CRIT Rate%": 8.5,
+              "atk": 169
+            },
+            "22": {
+              "CRIT Rate%": 8.5,
+              "atk": 174
+            },
+            "23": {
+              "CRIT Rate%": 8.5,
+              "atk": 179
+            },
+            "24": {
+              "CRIT Rate%": 8.5,
+              "atk": 183
+            },
+            "25": {
+              "CRIT Rate%": 9.5,
+              "atk": 188
+            },
+            "26": {
+              "CRIT Rate%": 9.5,
+              "atk": 193
+            },
+            "27": {
+              "CRIT Rate%": 9.5,
+              "atk": 197
+            },
+            "28": {
+              "CRIT Rate%": 9.5,
+              "atk": 202
+            },
+            "29": {
+              "CRIT Rate%": 9.5,
+              "atk": 207
+            },
+            "3": {
+              "CRIT Rate%": 4.8,
+              "atk": 56
+            },
+            "30": {
+              "CRIT Rate%": 10.4,
+              "atk": 212
+            },
+            "31": {
+              "CRIT Rate%": 10.4,
+              "atk": 217
+            },
+            "32": {
+              "CRIT Rate%": 10.4,
+              "atk": 221
+            },
+            "33": {
+              "CRIT Rate%": 10.4,
+              "atk": 226
+            },
+            "34": {
+              "CRIT Rate%": 10.4,
+              "atk": 231
+            },
+            "35": {
+              "CRIT Rate%": 11.4,
+              "atk": 236
+            },
+            "36": {
+              "CRIT Rate%": 11.4,
+              "atk": 241
+            },
+            "37": {
+              "CRIT Rate%": 11.4,
+              "atk": 246
+            },
+            "38": {
+              "CRIT Rate%": 11.4,
+              "atk": 251
+            },
+            "39": {
+              "CRIT Rate%": 11.4,
+              "atk": 256
+            },
+            "4": {
+              "CRIT Rate%": 4.8,
+              "atk": 61
+            },
+            "40": {
+              "CRIT Rate%": 12.4,
+              "atk": 261
+            },
+            "41": {
+              "CRIT Rate%": 12.4,
+              "atk": 297
+            },
+            "42": {
+              "CRIT Rate%": 12.4,
+              "atk": 302
+            },
+            "43": {
+              "CRIT Rate%": 12.4,
+              "atk": 306
+            },
+            "44": {
+              "CRIT Rate%": 12.4,
+              "atk": 311
+            },
+            "45": {
+              "CRIT Rate%": 13.3,
+              "atk": 316
+            },
+            "46": {
+              "CRIT Rate%": 13.3,
+              "atk": 321
+            },
+            "47": {
+              "CRIT Rate%": 13.3,
+              "atk": 326
+            },
+            "48": {
+              "CRIT Rate%": 13.3,
+              "atk": 331
+            },
+            "49": {
+              "CRIT Rate%": 13.3,
+              "atk": 336
+            },
+            "5": {
+              "CRIT Rate%": 5.6,
+              "atk": 65
+            },
+            "50": {
+              "CRIT Rate%": 14.3,
+              "atk": 341
+            },
+            "51": {
+              "CRIT Rate%": 14.3,
+              "atk": 378
+            },
+            "52": {
+              "CRIT Rate%": 14.3,
+              "atk": 383
+            },
+            "53": {
+              "CRIT Rate%": 14.3,
+              "atk": 388
+            },
+            "54": {
+              "CRIT Rate%": 14.3,
+              "atk": 393
+            },
+            "55": {
+              "CRIT Rate%": 15.3,
+              "atk": 398
+            },
+            "56": {
+              "CRIT Rate%": 15.3,
+              "atk": 403
+            },
+            "57": {
+              "CRIT Rate%": 15.3,
+              "atk": 408
+            },
+            "58": {
+              "CRIT Rate%": 15.3,
+              "atk": 413
+            },
+            "59": {
+              "CRIT Rate%": 15.3,
+              "atk": 418
+            },
+            "6": {
+              "CRIT Rate%": 5.6,
+              "atk": 69
+            },
+            "60": {
+              "CRIT Rate%": 16.2,
+              "atk": 423
+            },
+            "61": {
+              "CRIT Rate%": 16.2,
+              "atk": 460
+            },
+            "62": {
+              "CRIT Rate%": 16.2,
+              "atk": 465
+            },
+            "63": {
+              "CRIT Rate%": 16.2,
+              "atk": 470
+            },
+            "64": {
+              "CRIT Rate%": 16.2,
+              "atk": 475
+            },
+            "65": {
+              "CRIT Rate%": 17.2,
+              "atk": 480
+            },
+            "66": {
+              "CRIT Rate%": 17.2,
+              "atk": 485
+            },
+            "67": {
+              "CRIT Rate%": 17.2,
+              "atk": 491
+            },
+            "68": {
+              "CRIT Rate%": 17.2,
+              "atk": 496
+            },
+            "69": {
+              "CRIT Rate%": 17.2,
+              "atk": 501
+            },
+            "7": {
+              "CRIT Rate%": 5.6,
+              "atk": 74
+            },
+            "70": {
+              "CRIT Rate%": 18.2,
+              "atk": 506
+            },
+            "71": {
+              "CRIT Rate%": 18.2,
+              "atk": 543
+            },
+            "72": {
+              "CRIT Rate%": 18.2,
+              "atk": 548
+            },
+            "73": {
+              "CRIT Rate%": 18.2,
+              "atk": 553
+            },
+            "74": {
+              "CRIT Rate%": 18.2,
+              "atk": 558
+            },
+            "75": {
+              "CRIT Rate%": 19.1,
+              "atk": 563
+            },
+            "76": {
+              "CRIT Rate%": 19.1,
+              "atk": 569
+            },
+            "77": {
+              "CRIT Rate%": 19.1,
+              "atk": 574
+            },
+            "78": {
+              "CRIT Rate%": 19.1,
+              "atk": 579
+            },
+            "79": {
+              "CRIT Rate%": 19.1,
+              "atk": 585
+            },
+            "8": {
+              "CRIT Rate%": 5.6,
+              "atk": 78
+            },
+            "80": {
+              "CRIT Rate%": 20.1,
+              "atk": 590
+            },
+            "81": {
+              "CRIT Rate%": 20.1,
+              "atk": 626
+            },
+            "82": {
+              "CRIT Rate%": 20.1,
+              "atk": 632
+            },
+            "83": {
+              "CRIT Rate%": 20.1,
+              "atk": 637
+            },
+            "84": {
+              "CRIT Rate%": 20.1,
+              "atk": 642
+            },
+            "85": {
+              "CRIT Rate%": 21.1,
+              "atk": 648
+            },
+            "86": {
+              "CRIT Rate%": 21.1,
+              "atk": 653
+            },
+            "87": {
+              "CRIT Rate%": 21.1,
+              "atk": 658
+            },
+            "88": {
+              "CRIT Rate%": 21.1,
+              "atk": 664
+            },
+            "89": {
+              "CRIT Rate%": 21.1,
+              "atk": 669
+            },
+            "9": {
+              "CRIT Rate%": 5.6,
+              "atk": 83
+            },
+            "90": {
+              "CRIT Rate%": 22.1,
+              "atk": 674
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_Swanlake",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "d345fe649f040ba36071b296b8dd84b5de6cfc93b8b0db12e8be37990ce0f262",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/11520.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_Swanlake",
+          "name": "Whitelake Frostfeather",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>8%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>50%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+              "name": "Snow Swan's Finale",
+              "param_list": [
+                4,
+                0.08,
+                8,
+                3,
+                0.5,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>10%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>65%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>4.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+              "name": "Snow Swan's Finale",
+              "param_list": [
+                4.5,
+                0.1,
+                8,
+                3,
+                0.65,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>12%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>80%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+              "name": "Snow Swan's Finale",
+              "param_list": [
+                5,
+                0.12,
+                8,
+                3,
+                0.8,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>14%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>95%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>5.5</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+              "name": "Snow Swan's Finale",
+              "param_list": [
+                5.5,
+                0.14,
+                8,
+                3,
+                0.95,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "When the equipping character hits an opponent with their Elemental Skill, they gain \"Lake-Hued Lament\": ATK increases by <color=#99FFFFFF>16%</color> for 8s. This effect can trigger once every 0.1s. Max 3 stacks, and each stack's duration is independent. At 3 stacks, the CRIT DMG of any Stellar Glimmer reaction DMG caused by the equipping character is increased by <color=#99FFFFFF>110%</color>, and triggering Stellar Glimmer reactions or Stellar Glimmer reaction DMG will also restore <color=#99FFFFFF>6</color> Elemental Energy to the character. This Energy recovery effect can trigger once every 3.5s. Can be triggered even when the equipping character is off-field.",
+              "name": "Snow Swan's Finale",
+              "param_list": [
+                6,
+                0.16,
+                8,
+                3,
+                1.1,
+                3.5,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 47.537,
+              "levels": {
+                "1": 1,
+                "10": 1.837,
+                "100": 11.397,
+                "11": 1.933,
+                "12": 2.028,
+                "13": 2.124,
+                "14": 2.22,
+                "15": 2.317,
+                "16": 2.414,
+                "17": 2.511,
+                "18": 2.608,
+                "19": 2.706,
+                "2": 1.091,
+                "20": 2.804,
+                "21": 2.903,
+                "22": 3.002,
+                "23": 3.101,
+                "24": 3.2,
+                "25": 3.3,
+                "26": 3.4,
+                "27": 3.5,
+                "28": 3.601,
+                "29": 3.701,
+                "3": 1.183,
+                "30": 3.803,
+                "31": 3.904,
+                "32": 4.005,
+                "33": 4.107,
+                "34": 4.209,
+                "35": 4.312,
+                "36": 4.414,
+                "37": 4.517,
+                "38": 4.62,
+                "39": 4.723,
+                "4": 1.275,
+                "40": 4.827,
+                "41": 4.931,
+                "42": 5.035,
+                "43": 5.139,
+                "44": 5.243,
+                "45": 5.348,
+                "46": 5.453,
+                "47": 5.558,
+                "48": 5.663,
+                "49": 5.768,
+                "5": 1.368,
+                "50": 5.874,
+                "51": 5.98,
+                "52": 6.086,
+                "53": 6.192,
+                "54": 6.299,
+                "55": 6.406,
+                "56": 6.513,
+                "57": 6.62,
+                "58": 6.727,
+                "59": 6.835,
+                "6": 1.461,
+                "60": 6.942,
+                "61": 7.05,
+                "62": 7.158,
+                "63": 7.267,
+                "64": 7.375,
+                "65": 7.484,
+                "66": 7.592,
+                "67": 7.701,
+                "68": 7.811,
+                "69": 7.92,
+                "7": 1.554,
+                "70": 8.03,
+                "71": 8.139,
+                "72": 8.249,
+                "73": 8.359,
+                "74": 8.47,
+                "75": 8.58,
+                "76": 8.691,
+                "77": 8.802,
+                "78": 8.913,
+                "79": 9.024,
+                "8": 1.648,
+                "80": 9.135,
+                "81": 9.247,
+                "82": 9.358,
+                "83": 9.47,
+                "84": 9.582,
+                "85": 9.694,
+                "86": 9.807,
+                "87": 9.919,
+                "88": 10.032,
+                "89": 10.145,
+                "9": 1.743,
+                "90": 10.258,
+                "91": 10.371,
+                "92": 10.485,
+                "93": 10.598,
+                "94": 10.712,
+                "95": 10.826,
+                "96": 10.94,
+                "97": 11.054,
+                "98": 11.168,
+                "99": 11.283
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.048,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 47.537,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+              "init_value": 0.048,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "4b814cd16bc83bec195cde1ed282feefda2af34325ade835ea732a8e09fce1b2",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/11520.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_Swanlake",
+          "name": "白湖冬羽",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升<color=#99FFFFFF>8%</color>，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升<color=#99FFFFFF>50%</color>，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复<color=#99FFFFFF>4</color>点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "雪鹄的终幕舞",
+              "param_list": [
+                4,
+                0.08,
+                8,
+                3,
+                0.5,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升<color=#99FFFFFF>10%</color>，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升<color=#99FFFFFF>65%</color>，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复<color=#99FFFFFF>4.5</color>点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "雪鹄的终幕舞",
+              "param_list": [
+                4.5,
+                0.1,
+                8,
+                3,
+                0.65,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升<color=#99FFFFFF>12%</color>，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升<color=#99FFFFFF>80%</color>，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复<color=#99FFFFFF>5</color>点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "雪鹄的终幕舞",
+              "param_list": [
+                5,
+                0.12,
+                8,
+                3,
+                0.8,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升<color=#99FFFFFF>14%</color>，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升<color=#99FFFFFF>95%</color>，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复<color=#99FFFFFF>5.5</color>点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "雪鹄的终幕舞",
+              "param_list": [
+                5.5,
+                0.14,
+                8,
+                3,
+                0.95,
+                3.5,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "装备者的元素战技命中敌人时，获得「湖色的哀告」：攻击力提升<color=#99FFFFFF>16%</color>，持续8秒，至多叠加3层，每0.1秒至多触发一次，每层持续时间独立计算；持有3层时，装备者造成的星烁反应伤害的暴击伤害提升<color=#99FFFFFF>110%</color>，且触发星烁反应或造成星烁反应伤害时，还会使装备者恢复<color=#99FFFFFF>6</color>点元素能量。上述恢复元素能量的效果每3.5秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "雪鹄的终幕舞",
+              "param_list": [
+                6,
+                0.16,
+                8,
+                3,
+                1.1,
+                3.5,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 47.537,
+              "levels": {
+                "1": 1,
+                "10": 1.837,
+                "100": 11.397,
+                "11": 1.933,
+                "12": 2.028,
+                "13": 2.124,
+                "14": 2.22,
+                "15": 2.317,
+                "16": 2.414,
+                "17": 2.511,
+                "18": 2.608,
+                "19": 2.706,
+                "2": 1.091,
+                "20": 2.804,
+                "21": 2.903,
+                "22": 3.002,
+                "23": 3.101,
+                "24": 3.2,
+                "25": 3.3,
+                "26": 3.4,
+                "27": 3.5,
+                "28": 3.601,
+                "29": 3.701,
+                "3": 1.183,
+                "30": 3.803,
+                "31": 3.904,
+                "32": 4.005,
+                "33": 4.107,
+                "34": 4.209,
+                "35": 4.312,
+                "36": 4.414,
+                "37": 4.517,
+                "38": 4.62,
+                "39": 4.723,
+                "4": 1.275,
+                "40": 4.827,
+                "41": 4.931,
+                "42": 5.035,
+                "43": 5.139,
+                "44": 5.243,
+                "45": 5.348,
+                "46": 5.453,
+                "47": 5.558,
+                "48": 5.663,
+                "49": 5.768,
+                "5": 1.368,
+                "50": 5.874,
+                "51": 5.98,
+                "52": 6.086,
+                "53": 6.192,
+                "54": 6.299,
+                "55": 6.406,
+                "56": 6.513,
+                "57": 6.62,
+                "58": 6.727,
+                "59": 6.835,
+                "6": 1.461,
+                "60": 6.942,
+                "61": 7.05,
+                "62": 7.158,
+                "63": 7.267,
+                "64": 7.375,
+                "65": 7.484,
+                "66": 7.592,
+                "67": 7.701,
+                "68": 7.811,
+                "69": 7.92,
+                "7": 1.554,
+                "70": 8.03,
+                "71": 8.139,
+                "72": 8.249,
+                "73": 8.359,
+                "74": 8.47,
+                "75": 8.58,
+                "76": 8.691,
+                "77": 8.802,
+                "78": 8.913,
+                "79": 9.024,
+                "8": 1.648,
+                "80": 9.135,
+                "81": 9.247,
+                "82": 9.358,
+                "83": 9.47,
+                "84": 9.582,
+                "85": 9.694,
+                "86": 9.807,
+                "87": 9.919,
+                "88": 10.032,
+                "89": 10.145,
+                "9": 1.743,
+                "90": 10.258,
+                "91": 10.371,
+                "92": 10.485,
+                "93": 10.598,
+                "94": 10.712,
+                "95": 10.826,
+                "96": 10.94,
+                "97": 11.054,
+                "98": 11.168,
+                "99": 11.283
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.048,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 47.537,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+              "init_value": 0.048,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "dd4721bfe3ee0e1cdacd4029ab4e09ac83dd0375bc02cb8e217e8d4eed16629f",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/11520.json"
+      }
+    }
+  }
+}

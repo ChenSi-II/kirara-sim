@@ -1,0 +1,6 @@
+use: pipeline
+kind: weapon
+name: ateaspoonoftranscendence
+
+override:
+  id: 12516

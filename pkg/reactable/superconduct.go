@@ -8,6 +8,8 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+const SuperConductShredKey = "superconduct-phys-shred"
+
 func (r *Reactable) TrySuperconduct(a *info.AttackEvent) bool {
 	if r.core.StarReactions.Enabled {
 		return r.tryStarSuperconduct(a, false)

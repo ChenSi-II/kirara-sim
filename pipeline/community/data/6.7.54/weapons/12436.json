@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "bladeofatonement",
+      "override_id": "12436",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "bladeofatonement",
+    "id": "12436",
+    "lunaris_id": "12436"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 43.7349,
+            "levels": {
+              "1": 1,
+              "10": 1.8,
+              "100": 10.324,
+              "11": 1.891,
+              "12": 1.981,
+              "13": 2.072,
+              "14": 2.162,
+              "15": 2.253,
+              "16": 2.345,
+              "17": 2.436,
+              "18": 2.527,
+              "19": 2.619,
+              "2": 1.088,
+              "20": 2.711,
+              "21": 2.803,
+              "22": 2.895,
+              "23": 2.987,
+              "24": 3.08,
+              "25": 3.172,
+              "26": 3.265,
+              "27": 3.358,
+              "28": 3.451,
+              "29": 3.544,
+              "3": 1.176,
+              "30": 3.637,
+              "31": 3.731,
+              "32": 3.824,
+              "33": 3.918,
+              "34": 4.011,
+              "35": 4.105,
+              "36": 4.199,
+              "37": 4.293,
+              "38": 4.387,
+              "39": 4.481,
+              "4": 1.264,
+              "40": 4.575,
+              "41": 4.669,
+              "42": 4.763,
+              "43": 4.858,
+              "44": 4.952,
+              "45": 5.047,
+              "46": 5.142,
+              "47": 5.236,
+              "48": 5.331,
+              "49": 5.426,
+              "5": 1.353,
+              "50": 5.521,
+              "51": 5.616,
+              "52": 5.711,
+              "53": 5.806,
+              "54": 5.901,
+              "55": 5.996,
+              "56": 6.092,
+              "57": 6.187,
+              "58": 6.282,
+              "59": 6.378,
+              "6": 1.442,
+              "60": 6.473,
+              "61": 6.569,
+              "62": 6.664,
+              "63": 6.76,
+              "64": 6.856,
+              "65": 6.951,
+              "66": 7.047,
+              "67": 7.143,
+              "68": 7.239,
+              "69": 7.335,
+              "7": 1.531,
+              "70": 7.431,
+              "71": 7.527,
+              "72": 7.623,
+              "73": 7.719,
+              "74": 7.815,
+              "75": 7.911,
+              "76": 8.007,
+              "77": 8.103,
+              "78": 8.199,
+              "79": 8.296,
+              "8": 1.621,
+              "80": 8.392,
+              "81": 8.488,
+              "82": 8.585,
+              "83": 8.681,
+              "84": 8.777,
+              "85": 8.874,
+              "86": 8.97,
+              "87": 9.067,
+              "88": 9.163,
+              "89": 9.26,
+              "9": 1.71,
+              "90": 9.356,
+              "91": 9.453,
+              "92": 9.55,
+              "93": 9.646,
+              "94": 9.743,
+              "95": 9.84,
+              "96": 9.936,
+              "97": 10.033,
+              "98": 10.13,
+              "99": 10.227
+            }
+          },
+          "fight_prop_attack_percent": {
+            "base": 0.06,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 43.7349,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_202"
+          },
+          {
+            "init_value": 0.06,
+            "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+            "type": "GROW_CURVE_CRITICAL_201"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+        "name": "Blade of Atonement",
+        "rarity": 4,
+        "weapon_type": "WEAPON_CLAYMORE"
+      },
+      "refinements": {
+        "1": {
+          "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>64</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>16%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Repentance and Redemption",
+          "param_list": [
+            64,
+            12,
+            0.16,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>80</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>20%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Repentance and Redemption",
+          "param_list": [
+            80,
+            12,
+            0.2,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>96</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>24%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Repentance and Redemption",
+          "param_list": [
+            96,
+            12,
+            0.24,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>112</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>28%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Repentance and Redemption",
+          "param_list": [
+            112,
+            12,
+            0.28,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>128</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>32%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+          "name": "Repentance and Redemption",
+          "param_list": [
+            128,
+            12,
+            0.32,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            64.0,
+            12.0,
+            0.1599999964237213,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            80.0,
+            12.0,
+            0.20000000298023224,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            96.0,
+            12.0,
+            0.23999999463558197,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            112.0,
+            12.0,
+            0.2800000011920929,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            128.0,
+            12.0,
+            0.3199999928474426,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            64,
+            12,
+            0.16,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            80,
+            12,
+            0.2,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            96,
+            12,
+            0.24,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            112,
+            12,
+            0.28,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            128,
+            12,
+            0.32,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Blade of Atonement",
+        "nanoka": "Blade of Atonement"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_PURPLE",
+        "nanoka": "QUALITY_PURPLE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_CLAYMORE",
+        "nanoka": "WEAPON_CLAYMORE"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Blade of Atonement",
+          "passive": {
+            "name": "Repentance and Redemption",
+            "refinements": {
+              "1": {
+                "description": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 64 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 16% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  64.0,
+                  12.0,
+                  0.1599999964237213,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 80 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 20% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  80.0,
+                  12.0,
+                  0.20000000298023224,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 96 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 24% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  96.0,
+                  12.0,
+                  0.23999999463558197,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 112 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 28% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  112.0,
+                  12.0,
+                  0.2800000011920929,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 128 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 32% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+                "params": [
+                  128.0,
+                  12.0,
+                  0.3199999928474426,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "ATK%": 6.0,
+              "atk": 44
+            },
+            "10": {
+              "ATK%": 8.2,
+              "atk": 79
+            },
+            "11": {
+              "ATK%": 8.2,
+              "atk": 83
+            },
+            "12": {
+              "ATK%": 8.2,
+              "atk": 87
+            },
+            "13": {
+              "ATK%": 8.2,
+              "atk": 91
+            },
+            "14": {
+              "ATK%": 8.2,
+              "atk": 95
+            },
+            "15": {
+              "ATK%": 9.4,
+              "atk": 99
+            },
+            "16": {
+              "ATK%": 9.4,
+              "atk": 103
+            },
+            "17": {
+              "ATK%": 9.4,
+              "atk": 107
+            },
+            "18": {
+              "ATK%": 9.4,
+              "atk": 111
+            },
+            "19": {
+              "ATK%": 9.4,
+              "atk": 115
+            },
+            "2": {
+              "ATK%": 6.0,
+              "atk": 48
+            },
+            "20": {
+              "ATK%": 10.6,
+              "atk": 119
+            },
+            "21": {
+              "ATK%": 10.6,
+              "atk": 148
+            },
+            "22": {
+              "ATK%": 10.6,
+              "atk": 153
+            },
+            "23": {
+              "ATK%": 10.6,
+              "atk": 157
+            },
+            "24": {
+              "ATK%": 10.6,
+              "atk": 161
+            },
+            "25": {
+              "ATK%": 11.8,
+              "atk": 165
+            },
+            "26": {
+              "ATK%": 11.8,
+              "atk": 169
+            },
+            "27": {
+              "ATK%": 11.8,
+              "atk": 173
+            },
+            "28": {
+              "ATK%": 11.8,
+              "atk": 177
+            },
+            "29": {
+              "ATK%": 11.8,
+              "atk": 181
+            },
+            "3": {
+              "ATK%": 6.0,
+              "atk": 51
+            },
+            "30": {
+              "ATK%": 13.0,
+              "atk": 185
+            },
+            "31": {
+              "ATK%": 13.0,
+              "atk": 189
+            },
+            "32": {
+              "ATK%": 13.0,
+              "atk": 193
+            },
+            "33": {
+              "ATK%": 13.0,
+              "atk": 197
+            },
+            "34": {
+              "ATK%": 13.0,
+              "atk": 201
+            },
+            "35": {
+              "ATK%": 14.2,
+              "atk": 205
+            },
+            "36": {
+              "ATK%": 14.2,
+              "atk": 210
+            },
+            "37": {
+              "ATK%": 14.2,
+              "atk": 214
+            },
+            "38": {
+              "ATK%": 14.2,
+              "atk": 218
+            },
+            "39": {
+              "ATK%": 14.2,
+              "atk": 222
+            },
+            "4": {
+              "ATK%": 6.0,
+              "atk": 55
+            },
+            "40": {
+              "ATK%": 15.4,
+              "atk": 226
+            },
+            "41": {
+              "ATK%": 15.4,
+              "atk": 256
+            },
+            "42": {
+              "ATK%": 15.4,
+              "atk": 260
+            },
+            "43": {
+              "ATK%": 15.4,
+              "atk": 264
+            },
+            "44": {
+              "ATK%": 15.4,
+              "atk": 268
+            },
+            "45": {
+              "ATK%": 16.7,
+              "atk": 273
+            },
+            "46": {
+              "ATK%": 16.7,
+              "atk": 277
+            },
+            "47": {
+              "ATK%": 16.7,
+              "atk": 281
+            },
+            "48": {
+              "ATK%": 16.7,
+              "atk": 285
+            },
+            "49": {
+              "ATK%": 16.7,
+              "atk": 289
+            },
+            "5": {
+              "ATK%": 7.0,
+              "atk": 59
+            },
+            "50": {
+              "ATK%": 17.9,
+              "atk": 293
+            },
+            "51": {
+              "ATK%": 17.9,
+              "atk": 323
+            },
+            "52": {
+              "ATK%": 17.9,
+              "atk": 328
+            },
+            "53": {
+              "ATK%": 17.9,
+              "atk": 332
+            },
+            "54": {
+              "ATK%": 17.9,
+              "atk": 336
+            },
+            "55": {
+              "ATK%": 19.1,
+              "atk": 340
+            },
+            "56": {
+              "ATK%": 19.1,
+              "atk": 344
+            },
+            "57": {
+              "ATK%": 19.1,
+              "atk": 348
+            },
+            "58": {
+              "ATK%": 19.1,
+              "atk": 353
+            },
+            "59": {
+              "ATK%": 19.1,
+              "atk": 357
+            },
+            "6": {
+              "ATK%": 7.0,
+              "atk": 63
+            },
+            "60": {
+              "ATK%": 20.3,
+              "atk": 361
+            },
+            "61": {
+              "ATK%": 20.3,
+              "atk": 391
+            },
+            "62": {
+              "ATK%": 20.3,
+              "atk": 395
+            },
+            "63": {
+              "ATK%": 20.3,
+              "atk": 399
+            },
+            "64": {
+              "ATK%": 20.3,
+              "atk": 404
+            },
+            "65": {
+              "ATK%": 21.5,
+              "atk": 408
+            },
+            "66": {
+              "ATK%": 21.5,
+              "atk": 412
+            },
+            "67": {
+              "ATK%": 21.5,
+              "atk": 416
+            },
+            "68": {
+              "ATK%": 21.5,
+              "atk": 420
+            },
+            "69": {
+              "ATK%": 21.5,
+              "atk": 424
+            },
+            "7": {
+              "ATK%": 7.0,
+              "atk": 67
+            },
+            "70": {
+              "ATK%": 22.7,
+              "atk": 429
+            },
+            "71": {
+              "ATK%": 22.7,
+              "atk": 459
+            },
+            "72": {
+              "ATK%": 22.7,
+              "atk": 463
+            },
+            "73": {
+              "ATK%": 22.7,
+              "atk": 467
+            },
+            "74": {
+              "ATK%": 22.7,
+              "atk": 471
+            },
+            "75": {
+              "ATK%": 23.9,
+              "atk": 476
+            },
+            "76": {
+              "ATK%": 23.9,
+              "atk": 480
+            },
+            "77": {
+              "ATK%": 23.9,
+              "atk": 484
+            },
+            "78": {
+              "ATK%": 23.9,
+              "atk": 488
+            },
+            "79": {
+              "ATK%": 23.9,
+              "atk": 493
+            },
+            "8": {
+              "ATK%": 7.0,
+              "atk": 71
+            },
+            "80": {
+              "ATK%": 25.1,
+              "atk": 497
+            },
+            "81": {
+              "ATK%": 25.1,
+              "atk": 527
+            },
+            "82": {
+              "ATK%": 25.1,
+              "atk": 531
+            },
+            "83": {
+              "ATK%": 25.1,
+              "atk": 535
+            },
+            "84": {
+              "ATK%": 25.1,
+              "atk": 539
+            },
+            "85": {
+              "ATK%": 26.4,
+              "atk": 544
+            },
+            "86": {
+              "ATK%": 26.4,
+              "atk": 548
+            },
+            "87": {
+              "ATK%": 26.4,
+              "atk": 552
+            },
+            "88": {
+              "ATK%": 26.4,
+              "atk": 556
+            },
+            "89": {
+              "ATK%": 26.4,
+              "atk": 561
+            },
+            "9": {
+              "ATK%": 7.0,
+              "atk": 75
+            },
+            "90": {
+              "ATK%": 27.6,
+              "atk": 565
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "900388019177ce7815648a7d1febf850bf3fc11009821ffdfc150fb2e180e91f",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/12436.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "救赎之斩",
+          "passive": {
+            "name": "罪责的悔赎",
+            "refinements": {
+              "1": {
+                "description": "触发元素反应的12秒内，装备者的元素精通提升64点；触发星烁反应的12秒内，装备者的攻击力提升16%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  64.0,
+                  12.0,
+                  0.1599999964237213,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "触发元素反应的12秒内，装备者的元素精通提升80点；触发星烁反应的12秒内，装备者的攻击力提升20%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  80.0,
+                  12.0,
+                  0.20000000298023224,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "触发元素反应的12秒内，装备者的元素精通提升96点；触发星烁反应的12秒内，装备者的攻击力提升24%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  96.0,
+                  12.0,
+                  0.23999999463558197,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "触发元素反应的12秒内，装备者的元素精通提升112点；触发星烁反应的12秒内，装备者的攻击力提升28%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  112.0,
+                  12.0,
+                  0.2800000011920929,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "触发元素反应的12秒内，装备者的元素精通提升128点；触发星烁反应的12秒内，装备者的攻击力提升32%。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  128.0,
+                  12.0,
+                  0.3199999928474426,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "ATK%": 6.0,
+              "atk": 44
+            },
+            "10": {
+              "ATK%": 8.2,
+              "atk": 79
+            },
+            "11": {
+              "ATK%": 8.2,
+              "atk": 83
+            },
+            "12": {
+              "ATK%": 8.2,
+              "atk": 87
+            },
+            "13": {
+              "ATK%": 8.2,
+              "atk": 91
+            },
+            "14": {
+              "ATK%": 8.2,
+              "atk": 95
+            },
+            "15": {
+              "ATK%": 9.4,
+              "atk": 99
+            },
+            "16": {
+              "ATK%": 9.4,
+              "atk": 103
+            },
+            "17": {
+              "ATK%": 9.4,
+              "atk": 107
+            },
+            "18": {
+              "ATK%": 9.4,
+              "atk": 111
+            },
+            "19": {
+              "ATK%": 9.4,
+              "atk": 115
+            },
+            "2": {
+              "ATK%": 6.0,
+              "atk": 48
+            },
+            "20": {
+              "ATK%": 10.6,
+              "atk": 119
+            },
+            "21": {
+              "ATK%": 10.6,
+              "atk": 148
+            },
+            "22": {
+              "ATK%": 10.6,
+              "atk": 153
+            },
+            "23": {
+              "ATK%": 10.6,
+              "atk": 157
+            },
+            "24": {
+              "ATK%": 10.6,
+              "atk": 161
+            },
+            "25": {
+              "ATK%": 11.8,
+              "atk": 165
+            },
+            "26": {
+              "ATK%": 11.8,
+              "atk": 169
+            },
+            "27": {
+              "ATK%": 11.8,
+              "atk": 173
+            },
+            "28": {
+              "ATK%": 11.8,
+              "atk": 177
+            },
+            "29": {
+              "ATK%": 11.8,
+              "atk": 181
+            },
+            "3": {
+              "ATK%": 6.0,
+              "atk": 51
+            },
+            "30": {
+              "ATK%": 13.0,
+              "atk": 185
+            },
+            "31": {
+              "ATK%": 13.0,
+              "atk": 189
+            },
+            "32": {
+              "ATK%": 13.0,
+              "atk": 193
+            },
+            "33": {
+              "ATK%": 13.0,
+              "atk": 197
+            },
+            "34": {
+              "ATK%": 13.0,
+              "atk": 201
+            },
+            "35": {
+              "ATK%": 14.2,
+              "atk": 205
+            },
+            "36": {
+              "ATK%": 14.2,
+              "atk": 210
+            },
+            "37": {
+              "ATK%": 14.2,
+              "atk": 214
+            },
+            "38": {
+              "ATK%": 14.2,
+              "atk": 218
+            },
+            "39": {
+              "ATK%": 14.2,
+              "atk": 222
+            },
+            "4": {
+              "ATK%": 6.0,
+              "atk": 55
+            },
+            "40": {
+              "ATK%": 15.4,
+              "atk": 226
+            },
+            "41": {
+              "ATK%": 15.4,
+              "atk": 256
+            },
+            "42": {
+              "ATK%": 15.4,
+              "atk": 260
+            },
+            "43": {
+              "ATK%": 15.4,
+              "atk": 264
+            },
+            "44": {
+              "ATK%": 15.4,
+              "atk": 268
+            },
+            "45": {
+              "ATK%": 16.7,
+              "atk": 273
+            },
+            "46": {
+              "ATK%": 16.7,
+              "atk": 277
+            },
+            "47": {
+              "ATK%": 16.7,
+              "atk": 281
+            },
+            "48": {
+              "ATK%": 16.7,
+              "atk": 285
+            },
+            "49": {
+              "ATK%": 16.7,
+              "atk": 289
+            },
+            "5": {
+              "ATK%": 7.0,
+              "atk": 59
+            },
+            "50": {
+              "ATK%": 17.9,
+              "atk": 293
+            },
+            "51": {
+              "ATK%": 17.9,
+              "atk": 323
+            },
+            "52": {
+              "ATK%": 17.9,
+              "atk": 328
+            },
+            "53": {
+              "ATK%": 17.9,
+              "atk": 332
+            },
+            "54": {
+              "ATK%": 17.9,
+              "atk": 336
+            },
+            "55": {
+              "ATK%": 19.1,
+              "atk": 340
+            },
+            "56": {
+              "ATK%": 19.1,
+              "atk": 344
+            },
+            "57": {
+              "ATK%": 19.1,
+              "atk": 348
+            },
+            "58": {
+              "ATK%": 19.1,
+              "atk": 353
+            },
+            "59": {
+              "ATK%": 19.1,
+              "atk": 357
+            },
+            "6": {
+              "ATK%": 7.0,
+              "atk": 63
+            },
+            "60": {
+              "ATK%": 20.3,
+              "atk": 361
+            },
+            "61": {
+              "ATK%": 20.3,
+              "atk": 391
+            },
+            "62": {
+              "ATK%": 20.3,
+              "atk": 395
+            },
+            "63": {
+              "ATK%": 20.3,
+              "atk": 399
+            },
+            "64": {
+              "ATK%": 20.3,
+              "atk": 404
+            },
+            "65": {
+              "ATK%": 21.5,
+              "atk": 408
+            },
+            "66": {
+              "ATK%": 21.5,
+              "atk": 412
+            },
+            "67": {
+              "ATK%": 21.5,
+              "atk": 416
+            },
+            "68": {
+              "ATK%": 21.5,
+              "atk": 420
+            },
+            "69": {
+              "ATK%": 21.5,
+              "atk": 424
+            },
+            "7": {
+              "ATK%": 7.0,
+              "atk": 67
+            },
+            "70": {
+              "ATK%": 22.7,
+              "atk": 429
+            },
+            "71": {
+              "ATK%": 22.7,
+              "atk": 459
+            },
+            "72": {
+              "ATK%": 22.7,
+              "atk": 463
+            },
+            "73": {
+              "ATK%": 22.7,
+              "atk": 467
+            },
+            "74": {
+              "ATK%": 22.7,
+              "atk": 471
+            },
+            "75": {
+              "ATK%": 23.9,
+              "atk": 476
+            },
+            "76": {
+              "ATK%": 23.9,
+              "atk": 480
+            },
+            "77": {
+              "ATK%": 23.9,
+              "atk": 484
+            },
+            "78": {
+              "ATK%": 23.9,
+              "atk": 488
+            },
+            "79": {
+              "ATK%": 23.9,
+              "atk": 493
+            },
+            "8": {
+              "ATK%": 7.0,
+              "atk": 71
+            },
+            "80": {
+              "ATK%": 25.1,
+              "atk": 497
+            },
+            "81": {
+              "ATK%": 25.1,
+              "atk": 527
+            },
+            "82": {
+              "ATK%": 25.1,
+              "atk": 531
+            },
+            "83": {
+              "ATK%": 25.1,
+              "atk": 535
+            },
+            "84": {
+              "ATK%": 25.1,
+              "atk": 539
+            },
+            "85": {
+              "ATK%": 26.4,
+              "atk": 544
+            },
+            "86": {
+              "ATK%": 26.4,
+              "atk": 548
+            },
+            "87": {
+              "ATK%": 26.4,
+              "atk": 552
+            },
+            "88": {
+              "ATK%": 26.4,
+              "atk": 556
+            },
+            "89": {
+              "ATK%": 26.4,
+              "atk": 561
+            },
+            "9": {
+              "ATK%": 7.0,
+              "atk": 75
+            },
+            "90": {
+              "ATK%": 27.6,
+              "atk": 565
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "e425bb76a53f966c1f095638fe6a99d7f26f1155b3a570374961ba723e7abdf2",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/12436.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+          "name": "Blade of Atonement",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>64</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>16%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Repentance and Redemption",
+              "param_list": [
+                64,
+                12,
+                0.16,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>80</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>20%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Repentance and Redemption",
+              "param_list": [
+                80,
+                12,
+                0.2,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>96</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>24%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Repentance and Redemption",
+              "param_list": [
+                96,
+                12,
+                0.24,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>112</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>28%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Repentance and Redemption",
+              "param_list": [
+                112,
+                12,
+                0.28,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by <color=#99FFFFFF>128</color> for 12s, while triggering a Stellar Glimmer reaction increases their ATK by <color=#99FFFFFF>32%</color> for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+              "name": "Repentance and Redemption",
+              "param_list": [
+                128,
+                12,
+                0.32,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 43.7349,
+              "levels": {
+                "1": 1,
+                "10": 1.8,
+                "100": 10.324,
+                "11": 1.891,
+                "12": 1.981,
+                "13": 2.072,
+                "14": 2.162,
+                "15": 2.253,
+                "16": 2.345,
+                "17": 2.436,
+                "18": 2.527,
+                "19": 2.619,
+                "2": 1.088,
+                "20": 2.711,
+                "21": 2.803,
+                "22": 2.895,
+                "23": 2.987,
+                "24": 3.08,
+                "25": 3.172,
+                "26": 3.265,
+                "27": 3.358,
+                "28": 3.451,
+                "29": 3.544,
+                "3": 1.176,
+                "30": 3.637,
+                "31": 3.731,
+                "32": 3.824,
+                "33": 3.918,
+                "34": 4.011,
+                "35": 4.105,
+                "36": 4.199,
+                "37": 4.293,
+                "38": 4.387,
+                "39": 4.481,
+                "4": 1.264,
+                "40": 4.575,
+                "41": 4.669,
+                "42": 4.763,
+                "43": 4.858,
+                "44": 4.952,
+                "45": 5.047,
+                "46": 5.142,
+                "47": 5.236,
+                "48": 5.331,
+                "49": 5.426,
+                "5": 1.353,
+                "50": 5.521,
+                "51": 5.616,
+                "52": 5.711,
+                "53": 5.806,
+                "54": 5.901,
+                "55": 5.996,
+                "56": 6.092,
+                "57": 6.187,
+                "58": 6.282,
+                "59": 6.378,
+                "6": 1.442,
+                "60": 6.473,
+                "61": 6.569,
+                "62": 6.664,
+                "63": 6.76,
+                "64": 6.856,
+                "65": 6.951,
+                "66": 7.047,
+                "67": 7.143,
+                "68": 7.239,
+                "69": 7.335,
+                "7": 1.531,
+                "70": 7.431,
+                "71": 7.527,
+                "72": 7.623,
+                "73": 7.719,
+                "74": 7.815,
+                "75": 7.911,
+                "76": 8.007,
+                "77": 8.103,
+                "78": 8.199,
+                "79": 8.296,
+                "8": 1.621,
+                "80": 8.392,
+                "81": 8.488,
+                "82": 8.585,
+                "83": 8.681,
+                "84": 8.777,
+                "85": 8.874,
+                "86": 8.97,
+                "87": 9.067,
+                "88": 9.163,
+                "89": 9.26,
+                "9": 1.71,
+                "90": 9.356,
+                "91": 9.453,
+                "92": 9.55,
+                "93": 9.646,
+                "94": 9.743,
+                "95": 9.84,
+                "96": 9.936,
+                "97": 10.033,
+                "98": 10.13,
+                "99": 10.227
+              }
+            },
+            "fight_prop_attack_percent": {
+              "base": 0.06,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 43.7349,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+              "init_value": 0.06,
+              "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "dad6cd601a04f5bf75367d3589c8535f7964d632a06dedf3f7c6d32929ae49bb",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/12436.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+          "name": "救赎之斩",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "触发元素反应的12秒内，装备者的元素精通提升<color=#99FFFFFF>64</color>点；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>16%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "罪责的悔赎",
+              "param_list": [
+                64,
+                12,
+                0.16,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "触发元素反应的12秒内，装备者的元素精通提升<color=#99FFFFFF>80</color>点；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>20%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "罪责的悔赎",
+              "param_list": [
+                80,
+                12,
+                0.2,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "触发元素反应的12秒内，装备者的元素精通提升<color=#99FFFFFF>96</color>点；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>24%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "罪责的悔赎",
+              "param_list": [
+                96,
+                12,
+                0.24,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "触发元素反应的12秒内，装备者的元素精通提升<color=#99FFFFFF>112</color>点；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>28%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "罪责的悔赎",
+              "param_list": [
+                112,
+                12,
+                0.28,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "触发元素反应的12秒内，装备者的元素精通提升<color=#99FFFFFF>128</color>点；触发星烁反应的12秒内，装备者的攻击力提升<color=#99FFFFFF>32%</color>。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "罪责的悔赎",
+              "param_list": [
+                128,
+                12,
+                0.32,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 43.7349,
+              "levels": {
+                "1": 1,
+                "10": 1.8,
+                "100": 10.324,
+                "11": 1.891,
+                "12": 1.981,
+                "13": 2.072,
+                "14": 2.162,
+                "15": 2.253,
+                "16": 2.345,
+                "17": 2.436,
+                "18": 2.527,
+                "19": 2.619,
+                "2": 1.088,
+                "20": 2.711,
+                "21": 2.803,
+                "22": 2.895,
+                "23": 2.987,
+                "24": 3.08,
+                "25": 3.172,
+                "26": 3.265,
+                "27": 3.358,
+                "28": 3.451,
+                "29": 3.544,
+                "3": 1.176,
+                "30": 3.637,
+                "31": 3.731,
+                "32": 3.824,
+                "33": 3.918,
+                "34": 4.011,
+                "35": 4.105,
+                "36": 4.199,
+                "37": 4.293,
+                "38": 4.387,
+                "39": 4.481,
+                "4": 1.264,
+                "40": 4.575,
+                "41": 4.669,
+                "42": 4.763,
+                "43": 4.858,
+                "44": 4.952,
+                "45": 5.047,
+                "46": 5.142,
+                "47": 5.236,
+                "48": 5.331,
+                "49": 5.426,
+                "5": 1.353,
+                "50": 5.521,
+                "51": 5.616,
+                "52": 5.711,
+                "53": 5.806,
+                "54": 5.901,
+                "55": 5.996,
+                "56": 6.092,
+                "57": 6.187,
+                "58": 6.282,
+                "59": 6.378,
+                "6": 1.442,
+                "60": 6.473,
+                "61": 6.569,
+                "62": 6.664,
+                "63": 6.76,
+                "64": 6.856,
+                "65": 6.951,
+                "66": 7.047,
+                "67": 7.143,
+                "68": 7.239,
+                "69": 7.335,
+                "7": 1.531,
+                "70": 7.431,
+                "71": 7.527,
+                "72": 7.623,
+                "73": 7.719,
+                "74": 7.815,
+                "75": 7.911,
+                "76": 8.007,
+                "77": 8.103,
+                "78": 8.199,
+                "79": 8.296,
+                "8": 1.621,
+                "80": 8.392,
+                "81": 8.488,
+                "82": 8.585,
+                "83": 8.681,
+                "84": 8.777,
+                "85": 8.874,
+                "86": 8.97,
+                "87": 9.067,
+                "88": 9.163,
+                "89": 9.26,
+                "9": 1.71,
+                "90": 9.356,
+                "91": 9.453,
+                "92": 9.55,
+                "93": 9.646,
+                "94": 9.743,
+                "95": 9.84,
+                "96": 9.936,
+                "97": 10.033,
+                "98": 10.13,
+                "99": 10.227
+              }
+            },
+            "fight_prop_attack_percent": {
+              "base": 0.06,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 43.7349,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_202"
+            },
+            {
+              "init_value": 0.06,
+              "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "cb091fc46f916c49fdca58dba949d18518d3e77e7c947d977cd84f59d4b9c400",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/12436.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+package linnea
+
+import (
+	"github.com/genshinsim/gcsim/internal/frames"
+	"github.com/genshinsim/gcsim/pkg/core/action"
+	"github.com/genshinsim/gcsim/pkg/core/attacks"
+	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/combat"
+	"github.com/genshinsim/gcsim/pkg/core/info"
+)
+
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
+func (c *char) ChargeAttack(map[string]int) (action.Info, error) {
+	ai := info.AttackInfo{
+		ActorIndex: c.Index(), Abil: "Fully-Charged Aimed Shot", AttackTag: attacks.AttackTagExtra,
+		ICDTag: attacks.ICDTagNormalAttack, ICDGroup: attacks.ICDGroupDefault,
+		StrikeType: attacks.StrikeTypePierce, Element: attributes.Geo,
+		Durability: 25, Mult: charge[1][c.TalentLvlAttack()],
+	}
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 30, 30)
+	f := frames.InitAbilSlice(52)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 52, CanQueueAfter: 36, State: action.ChargeAttackState}, nil
+}

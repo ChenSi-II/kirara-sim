@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "nanoka": {
+      "base_url": "https://static.nanoka.cc/gi",
+      "live_version": "6.7",
+      "preview_version": "6.7.54"
+    },
+    "lunaris": {
+      "base_url": "https://api.lunaris.moe/data",
+      "live_version": "6.7.0",
+      "preview_version": "6.7.54.2"
+    }
+  },
+  "characters": [
+    {
+      "id": "10000100",
+      "slug": "kachina",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000110",
+      "slug": "iansan",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000113",
+      "slug": "ifa",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000122",
+      "slug": "nefer",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000124",
+      "slug": "jahoda",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000126",
+      "slug": "zibai",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000127",
+      "slug": "illuga",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000128",
+      "slug": "varka",
+      "gcsim_status": "incomplete"
+    },
+    {
+      "id": "10000129",
+      "slug": "lohen",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000130",
+      "slug": "linnea",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000132",
+      "slug": "prune",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000133",
+      "slug": "sandrone",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000005-5",
+      "lunaris_id": "10000005_CRYO",
+      "slug": "aethercryo",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000007-5",
+      "lunaris_id": "10000007_CRYO",
+      "slug": "luminecryo",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000148",
+      "slug": "alyosha",
+      "gcsim_status": "missing"
+    },
+    {
+      "id": "10000150",
+      "slug": "odette",
+      "gcsim_status": "missing"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "11519",
+      "slug": "lightbearingmoonshard",
+      "gcsim_status": "missing",
+      "release_track": "live"
+    },
+    {
+      "id": "12516",
+      "slug": "ateaspoonoftranscendence",
+      "gcsim_status": "missing",
+      "release_track": "live"
+    },
+    {
+      "id": "13517",
+      "slug": "disasterandremorse",
+      "gcsim_status": "missing",
+      "release_track": "live"
+    },
+    {
+      "id": "11435",
+      "slug": "hereticsmoltenblade",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "11436",
+      "slug": "emberwell",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "11520",
+      "slug": "whitelakefrostfeather",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "11521",
+      "slug": "exaiphanesblade",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "12435",
+      "slug": "forgedbythegoldenmelody",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "12436",
+      "slug": "bladeofatonement",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "13435",
+      "slug": "frostbreath",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "13436",
+      "slug": "songofthevigil",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "14435",
+      "slug": "clashofkings",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "14436",
+      "slug": "echoesoftheheart",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "15435",
+      "slug": "jadevista",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "15436",
+      "slug": "covenantoffrostandsnow",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "12432",
+      "slug": "flameforgedinsight",
+      "gcsim_status": "implemented",
+      "release_track": "live",
+      "note": "The user-reported 拾慧铸熔 is already registered and implemented."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "15046",
+      "slug": "disenchantmentindeepshadow",
+      "gcsim_status": "incomplete",
+      "release_track": "live"
+    },
+    {
+      "id": "15047",
+      "slug": "scarletproof",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    },
+    {
+      "id": "15048",
+      "slug": "heartofthefurnace",
+      "gcsim_status": "missing",
+      "release_track": "preview"
+    }
+  ],
+  "reactions": [
+    {
+      "tutorial_id": "1048",
+      "slug": "stellarconduct",
+      "gcsim_status": "missing",
+      "keywords": {
+        "en": [
+          "Stellar-Conduct"
+        ],
+        "zh": [
+          "星超导"
+        ]
+      }
+    },
+    {
+      "tutorial_id": "1049",
+      "slug": "stellarswirl",
+      "gcsim_status": "missing",
+      "keywords": {
+        "en": [
+          "Stellar Swirl",
+          "Stellar Glimmer"
+        ],
+        "zh": [
+          "星扩散",
+          "星烁"
+        ]
+      }
+    }
+  ],
+  "excluded_entities": {
+    "characters": [
+      {
+        "ids": "10000117-2..8, 10000118-2..8",
+        "reason": "Manekin/Manekina special avatars, not normal party characters."
+      },
+      {
+        "ids": "10000134, 10000135",
+        "reason": "Crossbow/TPS Traveler entries, not normal elemental Traveler forms."
+      }
+    ],
+    "weapons": [
+      {
+        "ids": "224001..224008, 310001..390001",
+        "reason": "TPS, event, or internal special equipment; not normal inventory weapons."
+      }
+    ],
+    "artifacts": [
+      {
+        "ids": "15004",
+        "reason": "Glacier and Snowfield is unreleased/internal."
+      }
+    ]
+  },
+  "legacy_artifact_gaps": [
+    "10004",
+    "10010",
+    "10011",
+    "10013",
+    "15009",
+    "15010",
+    "15011",
+    "15012",
+    "15013"
+  ]
+}

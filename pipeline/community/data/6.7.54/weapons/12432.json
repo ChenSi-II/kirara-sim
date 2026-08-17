@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "flameforgedinsight",
+      "override_id": "12432",
+      "use": "pipeline"
+    },
+    "registered": true,
+    "status": "implemented"
+  },
+  "identity": {
+    "gcsim_slug": "flameforgedinsight",
+    "id": "12432",
+    "lunaris_id": "12432"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 42.401,
+            "levels": {
+              "1": 1,
+              "10": 1.743,
+              "100": 9.174,
+              "11": 1.826,
+              "12": 1.908,
+              "13": 1.991,
+              "14": 2.073,
+              "15": 2.156,
+              "16": 2.239,
+              "17": 2.321,
+              "18": 2.404,
+              "19": 2.486,
+              "2": 1.083,
+              "20": 2.569,
+              "21": 2.651,
+              "22": 2.734,
+              "23": 2.817,
+              "24": 2.899,
+              "25": 2.982,
+              "26": 3.064,
+              "27": 3.147,
+              "28": 3.229,
+              "29": 3.312,
+              "3": 1.165,
+              "30": 3.394,
+              "31": 3.477,
+              "32": 3.56,
+              "33": 3.642,
+              "34": 3.725,
+              "35": 3.807,
+              "36": 3.89,
+              "37": 3.972,
+              "38": 4.055,
+              "39": 4.138,
+              "4": 1.248,
+              "40": 4.22,
+              "41": 4.303,
+              "42": 4.385,
+              "43": 4.468,
+              "44": 4.55,
+              "45": 4.633,
+              "46": 4.716,
+              "47": 4.798,
+              "48": 4.881,
+              "49": 4.963,
+              "5": 1.33,
+              "50": 5.046,
+              "51": 5.128,
+              "52": 5.211,
+              "53": 5.294,
+              "54": 5.376,
+              "55": 5.459,
+              "56": 5.541,
+              "57": 5.624,
+              "58": 5.706,
+              "59": 5.789,
+              "6": 1.413,
+              "60": 5.872,
+              "61": 5.954,
+              "62": 6.037,
+              "63": 6.119,
+              "64": 6.202,
+              "65": 6.284,
+              "66": 6.367,
+              "67": 6.45,
+              "68": 6.532,
+              "69": 6.615,
+              "7": 1.495,
+              "70": 6.697,
+              "71": 6.78,
+              "72": 6.862,
+              "73": 6.945,
+              "74": 7.028,
+              "75": 7.11,
+              "76": 7.193,
+              "77": 7.275,
+              "78": 7.358,
+              "79": 7.44,
+              "8": 1.578,
+              "80": 7.523,
+              "81": 7.606,
+              "82": 7.688,
+              "83": 7.771,
+              "84": 7.853,
+              "85": 7.936,
+              "86": 8.018,
+              "87": 8.101,
+              "88": 8.183,
+              "89": 8.266,
+              "9": 1.661,
+              "90": 8.349,
+              "91": 8.431,
+              "92": 8.514,
+              "93": 8.596,
+              "94": 8.679,
+              "95": 8.761,
+              "96": 8.844,
+              "97": 8.927,
+              "98": 9.009,
+              "99": 9.092
+            }
+          },
+          "fight_prop_element_mastery": {
+            "base": 36,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 42.401,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_201"
+          },
+          {
+            "init_value": 36,
+            "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+            "type": "GROW_CURVE_CRITICAL_201"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Claymore_Polilith",
+        "name": "Flame-Forged Insight",
+        "rarity": 4,
+        "weapon_type": "WEAPON_CLAYMORE"
+      },
+      "refinements": {
+        "1": {
+          "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>12</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>60</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+          "name": "Mind in Bloom",
+          "param_list": [
+            12,
+            60,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>15</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>75</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+          "name": "Mind in Bloom",
+          "param_list": [
+            15,
+            75,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>18</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>90</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+          "name": "Mind in Bloom",
+          "param_list": [
+            18,
+            90,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>21</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>105</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+          "name": "Mind in Bloom",
+          "param_list": [
+            21,
+            105,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>24</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>120</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+          "name": "Mind in Bloom",
+          "param_list": [
+            24,
+            120,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "live",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            12.0,
+            60.0,
+            15.0,
+            15.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            15.0,
+            75.0,
+            15.0,
+            15.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            18.0,
+            90.0,
+            15.0,
+            15.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            21.0,
+            105.0,
+            15.0,
+            15.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            24.0,
+            120.0,
+            15.0,
+            15.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            12,
+            60,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            15,
+            75,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            18,
+            90,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            21,
+            105,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            24,
+            120,
+            15,
+            15,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Flame-Forged Insight",
+        "nanoka": "Flame-Forged Insight"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_PURPLE",
+        "nanoka": "QUALITY_PURPLE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_CLAYMORE",
+        "nanoka": "WEAPON_CLAYMORE"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Flame-Forged Insight",
+          "passive": {
+            "name": "Mind in Bloom",
+            "refinements": {
+              "1": {
+                "description": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 12 Elemental Energy and increase Elemental Mastery by 60 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+                "params": [
+                  12.0,
+                  60.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 15 Elemental Energy and increase Elemental Mastery by 75 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+                "params": [
+                  15.0,
+                  75.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 18 Elemental Energy and increase Elemental Mastery by 90 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+                "params": [
+                  18.0,
+                  90.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 21 Elemental Energy and increase Elemental Mastery by 105 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+                "params": [
+                  21.0,
+                  105.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 24 Elemental Energy and increase Elemental Mastery by 120 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+                "params": [
+                  24.0,
+                  120.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Elemental Mastery": 36,
+              "atk": 42
+            },
+            "10": {
+              "Elemental Mastery": 49,
+              "atk": 74
+            },
+            "11": {
+              "Elemental Mastery": 49,
+              "atk": 77
+            },
+            "12": {
+              "Elemental Mastery": 49,
+              "atk": 81
+            },
+            "13": {
+              "Elemental Mastery": 49,
+              "atk": 84
+            },
+            "14": {
+              "Elemental Mastery": 49,
+              "atk": 88
+            },
+            "15": {
+              "Elemental Mastery": 56,
+              "atk": 91
+            },
+            "16": {
+              "Elemental Mastery": 56,
+              "atk": 95
+            },
+            "17": {
+              "Elemental Mastery": 56,
+              "atk": 98
+            },
+            "18": {
+              "Elemental Mastery": 56,
+              "atk": 102
+            },
+            "19": {
+              "Elemental Mastery": 56,
+              "atk": 105
+            },
+            "2": {
+              "Elemental Mastery": 36,
+              "atk": 46
+            },
+            "20": {
+              "Elemental Mastery": 64,
+              "atk": 109
+            },
+            "21": {
+              "Elemental Mastery": 64,
+              "atk": 138
+            },
+            "22": {
+              "Elemental Mastery": 64,
+              "atk": 142
+            },
+            "23": {
+              "Elemental Mastery": 64,
+              "atk": 145
+            },
+            "24": {
+              "Elemental Mastery": 64,
+              "atk": 149
+            },
+            "25": {
+              "Elemental Mastery": 71,
+              "atk": 152
+            },
+            "26": {
+              "Elemental Mastery": 71,
+              "atk": 156
+            },
+            "27": {
+              "Elemental Mastery": 71,
+              "atk": 159
+            },
+            "28": {
+              "Elemental Mastery": 71,
+              "atk": 163
+            },
+            "29": {
+              "Elemental Mastery": 71,
+              "atk": 166
+            },
+            "3": {
+              "Elemental Mastery": 36,
+              "atk": 49
+            },
+            "30": {
+              "Elemental Mastery": 78,
+              "atk": 170
+            },
+            "31": {
+              "Elemental Mastery": 78,
+              "atk": 173
+            },
+            "32": {
+              "Elemental Mastery": 78,
+              "atk": 177
+            },
+            "33": {
+              "Elemental Mastery": 78,
+              "atk": 180
+            },
+            "34": {
+              "Elemental Mastery": 78,
+              "atk": 184
+            },
+            "35": {
+              "Elemental Mastery": 85,
+              "atk": 187
+            },
+            "36": {
+              "Elemental Mastery": 85,
+              "atk": 191
+            },
+            "37": {
+              "Elemental Mastery": 85,
+              "atk": 194
+            },
+            "38": {
+              "Elemental Mastery": 85,
+              "atk": 198
+            },
+            "39": {
+              "Elemental Mastery": 85,
+              "atk": 201
+            },
+            "4": {
+              "Elemental Mastery": 36,
+              "atk": 53
+            },
+            "40": {
+              "Elemental Mastery": 93,
+              "atk": 205
+            },
+            "41": {
+              "Elemental Mastery": 93,
+              "atk": 234
+            },
+            "42": {
+              "Elemental Mastery": 93,
+              "atk": 238
+            },
+            "43": {
+              "Elemental Mastery": 93,
+              "atk": 241
+            },
+            "44": {
+              "Elemental Mastery": 93,
+              "atk": 245
+            },
+            "45": {
+              "Elemental Mastery": 100,
+              "atk": 248
+            },
+            "46": {
+              "Elemental Mastery": 100,
+              "atk": 252
+            },
+            "47": {
+              "Elemental Mastery": 100,
+              "atk": 255
+            },
+            "48": {
+              "Elemental Mastery": 100,
+              "atk": 259
+            },
+            "49": {
+              "Elemental Mastery": 100,
+              "atk": 262
+            },
+            "5": {
+              "Elemental Mastery": 42,
+              "atk": 56
+            },
+            "50": {
+              "Elemental Mastery": 107,
+              "atk": 266
+            },
+            "51": {
+              "Elemental Mastery": 107,
+              "atk": 295
+            },
+            "52": {
+              "Elemental Mastery": 107,
+              "atk": 299
+            },
+            "53": {
+              "Elemental Mastery": 107,
+              "atk": 302
+            },
+            "54": {
+              "Elemental Mastery": 107,
+              "atk": 306
+            },
+            "55": {
+              "Elemental Mastery": 115,
+              "atk": 309
+            },
+            "56": {
+              "Elemental Mastery": 115,
+              "atk": 313
+            },
+            "57": {
+              "Elemental Mastery": 115,
+              "atk": 316
+            },
+            "58": {
+              "Elemental Mastery": 115,
+              "atk": 320
+            },
+            "59": {
+              "Elemental Mastery": 115,
+              "atk": 323
+            },
+            "6": {
+              "Elemental Mastery": 42,
+              "atk": 60
+            },
+            "60": {
+              "Elemental Mastery": 122,
+              "atk": 327
+            },
+            "61": {
+              "Elemental Mastery": 122,
+              "atk": 356
+            },
+            "62": {
+              "Elemental Mastery": 122,
+              "atk": 360
+            },
+            "63": {
+              "Elemental Mastery": 122,
+              "atk": 363
+            },
+            "64": {
+              "Elemental Mastery": 122,
+              "atk": 367
+            },
+            "65": {
+              "Elemental Mastery": 129,
+              "atk": 370
+            },
+            "66": {
+              "Elemental Mastery": 129,
+              "atk": 374
+            },
+            "67": {
+              "Elemental Mastery": 129,
+              "atk": 377
+            },
+            "68": {
+              "Elemental Mastery": 129,
+              "atk": 381
+            },
+            "69": {
+              "Elemental Mastery": 129,
+              "atk": 384
+            },
+            "7": {
+              "Elemental Mastery": 42,
+              "atk": 63
+            },
+            "70": {
+              "Elemental Mastery": 136,
+              "atk": 388
+            },
+            "71": {
+              "Elemental Mastery": 136,
+              "atk": 417
+            },
+            "72": {
+              "Elemental Mastery": 136,
+              "atk": 421
+            },
+            "73": {
+              "Elemental Mastery": 136,
+              "atk": 424
+            },
+            "74": {
+              "Elemental Mastery": 136,
+              "atk": 428
+            },
+            "75": {
+              "Elemental Mastery": 144,
+              "atk": 431
+            },
+            "76": {
+              "Elemental Mastery": 144,
+              "atk": 435
+            },
+            "77": {
+              "Elemental Mastery": 144,
+              "atk": 438
+            },
+            "78": {
+              "Elemental Mastery": 144,
+              "atk": 442
+            },
+            "79": {
+              "Elemental Mastery": 144,
+              "atk": 445
+            },
+            "8": {
+              "Elemental Mastery": 42,
+              "atk": 67
+            },
+            "80": {
+              "Elemental Mastery": 151,
+              "atk": 449
+            },
+            "81": {
+              "Elemental Mastery": 151,
+              "atk": 478
+            },
+            "82": {
+              "Elemental Mastery": 151,
+              "atk": 482
+            },
+            "83": {
+              "Elemental Mastery": 151,
+              "atk": 485
+            },
+            "84": {
+              "Elemental Mastery": 151,
+              "atk": 489
+            },
+            "85": {
+              "Elemental Mastery": 158,
+              "atk": 492
+            },
+            "86": {
+              "Elemental Mastery": 158,
+              "atk": 496
+            },
+            "87": {
+              "Elemental Mastery": 158,
+              "atk": 499
+            },
+            "88": {
+              "Elemental Mastery": 158,
+              "atk": 503
+            },
+            "89": {
+              "Elemental Mastery": 158,
+              "atk": 506
+            },
+            "9": {
+              "Elemental Mastery": 42,
+              "atk": 70
+            },
+            "90": {
+              "Elemental Mastery": 165,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_Polilith",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "a844a1763f471024b19a5075b8638ac9ba17bee1fa733b57d942494f8afdaf7a",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/12432.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "拾慧铸熔",
+          "passive": {
+            "name": "盛放的思绪",
+            "refinements": {
+              "1": {
+                "description": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复12点元素能量，并在接下来的15秒内使元素精通提升60点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  12.0,
+                  60.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复15点元素能量，并在接下来的15秒内使元素精通提升75点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  15.0,
+                  75.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复18点元素能量，并在接下来的15秒内使元素精通提升90点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  18.0,
+                  90.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复21点元素能量，并在接下来的15秒内使元素精通提升105点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  21.0,
+                  105.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复24点元素能量，并在接下来的15秒内使元素精通提升120点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+                "params": [
+                  24.0,
+                  120.0,
+                  15.0,
+                  15.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_PURPLE",
+          "stats": {
+            "1": {
+              "Elemental Mastery": 36,
+              "atk": 42
+            },
+            "10": {
+              "Elemental Mastery": 49,
+              "atk": 74
+            },
+            "11": {
+              "Elemental Mastery": 49,
+              "atk": 77
+            },
+            "12": {
+              "Elemental Mastery": 49,
+              "atk": 81
+            },
+            "13": {
+              "Elemental Mastery": 49,
+              "atk": 84
+            },
+            "14": {
+              "Elemental Mastery": 49,
+              "atk": 88
+            },
+            "15": {
+              "Elemental Mastery": 56,
+              "atk": 91
+            },
+            "16": {
+              "Elemental Mastery": 56,
+              "atk": 95
+            },
+            "17": {
+              "Elemental Mastery": 56,
+              "atk": 98
+            },
+            "18": {
+              "Elemental Mastery": 56,
+              "atk": 102
+            },
+            "19": {
+              "Elemental Mastery": 56,
+              "atk": 105
+            },
+            "2": {
+              "Elemental Mastery": 36,
+              "atk": 46
+            },
+            "20": {
+              "Elemental Mastery": 64,
+              "atk": 109
+            },
+            "21": {
+              "Elemental Mastery": 64,
+              "atk": 138
+            },
+            "22": {
+              "Elemental Mastery": 64,
+              "atk": 142
+            },
+            "23": {
+              "Elemental Mastery": 64,
+              "atk": 145
+            },
+            "24": {
+              "Elemental Mastery": 64,
+              "atk": 149
+            },
+            "25": {
+              "Elemental Mastery": 71,
+              "atk": 152
+            },
+            "26": {
+              "Elemental Mastery": 71,
+              "atk": 156
+            },
+            "27": {
+              "Elemental Mastery": 71,
+              "atk": 159
+            },
+            "28": {
+              "Elemental Mastery": 71,
+              "atk": 163
+            },
+            "29": {
+              "Elemental Mastery": 71,
+              "atk": 166
+            },
+            "3": {
+              "Elemental Mastery": 36,
+              "atk": 49
+            },
+            "30": {
+              "Elemental Mastery": 78,
+              "atk": 170
+            },
+            "31": {
+              "Elemental Mastery": 78,
+              "atk": 173
+            },
+            "32": {
+              "Elemental Mastery": 78,
+              "atk": 177
+            },
+            "33": {
+              "Elemental Mastery": 78,
+              "atk": 180
+            },
+            "34": {
+              "Elemental Mastery": 78,
+              "atk": 184
+            },
+            "35": {
+              "Elemental Mastery": 85,
+              "atk": 187
+            },
+            "36": {
+              "Elemental Mastery": 85,
+              "atk": 191
+            },
+            "37": {
+              "Elemental Mastery": 85,
+              "atk": 194
+            },
+            "38": {
+              "Elemental Mastery": 85,
+              "atk": 198
+            },
+            "39": {
+              "Elemental Mastery": 85,
+              "atk": 201
+            },
+            "4": {
+              "Elemental Mastery": 36,
+              "atk": 53
+            },
+            "40": {
+              "Elemental Mastery": 93,
+              "atk": 205
+            },
+            "41": {
+              "Elemental Mastery": 93,
+              "atk": 234
+            },
+            "42": {
+              "Elemental Mastery": 93,
+              "atk": 238
+            },
+            "43": {
+              "Elemental Mastery": 93,
+              "atk": 241
+            },
+            "44": {
+              "Elemental Mastery": 93,
+              "atk": 245
+            },
+            "45": {
+              "Elemental Mastery": 100,
+              "atk": 248
+            },
+            "46": {
+              "Elemental Mastery": 100,
+              "atk": 252
+            },
+            "47": {
+              "Elemental Mastery": 100,
+              "atk": 255
+            },
+            "48": {
+              "Elemental Mastery": 100,
+              "atk": 259
+            },
+            "49": {
+              "Elemental Mastery": 100,
+              "atk": 262
+            },
+            "5": {
+              "Elemental Mastery": 42,
+              "atk": 56
+            },
+            "50": {
+              "Elemental Mastery": 107,
+              "atk": 266
+            },
+            "51": {
+              "Elemental Mastery": 107,
+              "atk": 295
+            },
+            "52": {
+              "Elemental Mastery": 107,
+              "atk": 299
+            },
+            "53": {
+              "Elemental Mastery": 107,
+              "atk": 302
+            },
+            "54": {
+              "Elemental Mastery": 107,
+              "atk": 306
+            },
+            "55": {
+              "Elemental Mastery": 115,
+              "atk": 309
+            },
+            "56": {
+              "Elemental Mastery": 115,
+              "atk": 313
+            },
+            "57": {
+              "Elemental Mastery": 115,
+              "atk": 316
+            },
+            "58": {
+              "Elemental Mastery": 115,
+              "atk": 320
+            },
+            "59": {
+              "Elemental Mastery": 115,
+              "atk": 323
+            },
+            "6": {
+              "Elemental Mastery": 42,
+              "atk": 60
+            },
+            "60": {
+              "Elemental Mastery": 122,
+              "atk": 327
+            },
+            "61": {
+              "Elemental Mastery": 122,
+              "atk": 356
+            },
+            "62": {
+              "Elemental Mastery": 122,
+              "atk": 360
+            },
+            "63": {
+              "Elemental Mastery": 122,
+              "atk": 363
+            },
+            "64": {
+              "Elemental Mastery": 122,
+              "atk": 367
+            },
+            "65": {
+              "Elemental Mastery": 129,
+              "atk": 370
+            },
+            "66": {
+              "Elemental Mastery": 129,
+              "atk": 374
+            },
+            "67": {
+              "Elemental Mastery": 129,
+              "atk": 377
+            },
+            "68": {
+              "Elemental Mastery": 129,
+              "atk": 381
+            },
+            "69": {
+              "Elemental Mastery": 129,
+              "atk": 384
+            },
+            "7": {
+              "Elemental Mastery": 42,
+              "atk": 63
+            },
+            "70": {
+              "Elemental Mastery": 136,
+              "atk": 388
+            },
+            "71": {
+              "Elemental Mastery": 136,
+              "atk": 417
+            },
+            "72": {
+              "Elemental Mastery": 136,
+              "atk": 421
+            },
+            "73": {
+              "Elemental Mastery": 136,
+              "atk": 424
+            },
+            "74": {
+              "Elemental Mastery": 136,
+              "atk": 428
+            },
+            "75": {
+              "Elemental Mastery": 144,
+              "atk": 431
+            },
+            "76": {
+              "Elemental Mastery": 144,
+              "atk": 435
+            },
+            "77": {
+              "Elemental Mastery": 144,
+              "atk": 438
+            },
+            "78": {
+              "Elemental Mastery": 144,
+              "atk": 442
+            },
+            "79": {
+              "Elemental Mastery": 144,
+              "atk": 445
+            },
+            "8": {
+              "Elemental Mastery": 42,
+              "atk": 67
+            },
+            "80": {
+              "Elemental Mastery": 151,
+              "atk": 449
+            },
+            "81": {
+              "Elemental Mastery": 151,
+              "atk": 478
+            },
+            "82": {
+              "Elemental Mastery": 151,
+              "atk": 482
+            },
+            "83": {
+              "Elemental Mastery": 151,
+              "atk": 485
+            },
+            "84": {
+              "Elemental Mastery": 151,
+              "atk": 489
+            },
+            "85": {
+              "Elemental Mastery": 158,
+              "atk": 492
+            },
+            "86": {
+              "Elemental Mastery": 158,
+              "atk": 496
+            },
+            "87": {
+              "Elemental Mastery": 158,
+              "atk": 499
+            },
+            "88": {
+              "Elemental Mastery": 158,
+              "atk": 503
+            },
+            "89": {
+              "Elemental Mastery": 158,
+              "atk": 506
+            },
+            "9": {
+              "Elemental Mastery": 42,
+              "atk": 70
+            },
+            "90": {
+              "Elemental Mastery": 165,
+              "atk": 510
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_Polilith",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "9f55f39fbec7573a461f862b48ac78c1d6f45d272432dcf2f1da27ba3c76a765",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/12432.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_Polilith",
+          "name": "Flame-Forged Insight",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>12</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>60</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+              "name": "Mind in Bloom",
+              "param_list": [
+                12,
+                60,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>15</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>75</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+              "name": "Mind in Bloom",
+              "param_list": [
+                15,
+                75,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>18</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>90</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+              "name": "Mind in Bloom",
+              "param_list": [
+                18,
+                90,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>21</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>105</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+              "name": "Mind in Bloom",
+              "param_list": [
+                21,
+                105,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore <color=#99FFFFFF>24</color> Elemental Energy and increase Elemental Mastery by <color=#99FFFFFF>120</color> for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+              "name": "Mind in Bloom",
+              "param_list": [
+                24,
+                120,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_element_mastery": {
+              "base": 36,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 36,
+              "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "7f0353e0fb919eff243ac079caf1288da42bea1d8ddf5518f28b50163cd7ddbb",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/12432.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_Polilith",
+          "name": "拾慧铸熔",
+          "rarity": 4,
+          "refinement": {
+            "1": {
+              "desc": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复<color=#99FFFFFF>12</color>点元素能量，并在接下来的15秒内使元素精通提升<color=#99FFFFFF>60</color>点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "盛放的思绪",
+              "param_list": [
+                12,
+                60,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复<color=#99FFFFFF>15</color>点元素能量，并在接下来的15秒内使元素精通提升<color=#99FFFFFF>75</color>点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "盛放的思绪",
+              "param_list": [
+                15,
+                75,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复<color=#99FFFFFF>18</color>点元素能量，并在接下来的15秒内使元素精通提升<color=#99FFFFFF>90</color>点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "盛放的思绪",
+              "param_list": [
+                18,
+                90,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复<color=#99FFFFFF>21</color>点元素能量，并在接下来的15秒内使元素精通提升<color=#99FFFFFF>105</color>点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "盛放的思绪",
+              "param_list": [
+                21,
+                105,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "触发感电、月感电、绽放、月绽放、结晶或月结晶反应时，恢复<color=#99FFFFFF>24</color>点元素能量，并在接下来的15秒内使元素精通提升<color=#99FFFFFF>120</color>点。该效果每15秒至多触发一次。装备者处于队伍后台时，依然能触发上述效果。",
+              "name": "盛放的思绪",
+              "param_list": [
+                24,
+                120,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 42.401,
+              "levels": {
+                "1": 1,
+                "10": 1.743,
+                "100": 9.174,
+                "11": 1.826,
+                "12": 1.908,
+                "13": 1.991,
+                "14": 2.073,
+                "15": 2.156,
+                "16": 2.239,
+                "17": 2.321,
+                "18": 2.404,
+                "19": 2.486,
+                "2": 1.083,
+                "20": 2.569,
+                "21": 2.651,
+                "22": 2.734,
+                "23": 2.817,
+                "24": 2.899,
+                "25": 2.982,
+                "26": 3.064,
+                "27": 3.147,
+                "28": 3.229,
+                "29": 3.312,
+                "3": 1.165,
+                "30": 3.394,
+                "31": 3.477,
+                "32": 3.56,
+                "33": 3.642,
+                "34": 3.725,
+                "35": 3.807,
+                "36": 3.89,
+                "37": 3.972,
+                "38": 4.055,
+                "39": 4.138,
+                "4": 1.248,
+                "40": 4.22,
+                "41": 4.303,
+                "42": 4.385,
+                "43": 4.468,
+                "44": 4.55,
+                "45": 4.633,
+                "46": 4.716,
+                "47": 4.798,
+                "48": 4.881,
+                "49": 4.963,
+                "5": 1.33,
+                "50": 5.046,
+                "51": 5.128,
+                "52": 5.211,
+                "53": 5.294,
+                "54": 5.376,
+                "55": 5.459,
+                "56": 5.541,
+                "57": 5.624,
+                "58": 5.706,
+                "59": 5.789,
+                "6": 1.413,
+                "60": 5.872,
+                "61": 5.954,
+                "62": 6.037,
+                "63": 6.119,
+                "64": 6.202,
+                "65": 6.284,
+                "66": 6.367,
+                "67": 6.45,
+                "68": 6.532,
+                "69": 6.615,
+                "7": 1.495,
+                "70": 6.697,
+                "71": 6.78,
+                "72": 6.862,
+                "73": 6.945,
+                "74": 7.028,
+                "75": 7.11,
+                "76": 7.193,
+                "77": 7.275,
+                "78": 7.358,
+                "79": 7.44,
+                "8": 1.578,
+                "80": 7.523,
+                "81": 7.606,
+                "82": 7.688,
+                "83": 7.771,
+                "84": 7.853,
+                "85": 7.936,
+                "86": 8.018,
+                "87": 8.101,
+                "88": 8.183,
+                "89": 8.266,
+                "9": 1.661,
+                "90": 8.349,
+                "91": 8.431,
+                "92": 8.514,
+                "93": 8.596,
+                "94": 8.679,
+                "95": 8.761,
+                "96": 8.844,
+                "97": 8.927,
+                "98": 9.009,
+                "99": 9.092
+              }
+            },
+            "fight_prop_element_mastery": {
+              "base": 36,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 42.401,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_201"
+            },
+            {
+              "init_value": 36,
+              "prop_type": "FIGHT_PROP_ELEMENT_MASTERY",
+              "type": "GROW_CURVE_CRITICAL_201"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "d075a9b36fe7a2bfb40e5880c265fd68db73a2d7b7e675ec4ca2f8b71697757d",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/12432.json"
+      }
+    }
+  }
+}

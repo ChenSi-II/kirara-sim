@@ -1,0 +1,454 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "artifact",
+      "name": "heartofthefurnace",
+      "override_id": "15048",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "heartofthefurnace",
+    "id": "15048",
+    "lunaris_id": "15048"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "identity": {
+        "icon": "UI_RelicIcon_15048_4",
+        "id": 15048,
+        "rank": [
+          4,
+          5
+        ]
+      },
+      "set_bonuses": [
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+              "value": 0.18
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150480,
+          "desc": "ATK +18%.",
+          "id": 215048,
+          "level": 0,
+          "name": "Heart of the Furnace",
+          "open_config": "",
+          "param_list": [
+            0.18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "add_props": [
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            },
+            {
+              "prop_type": "FIGHT_PROP_NONE",
+              "value": 0
+            }
+          ],
+          "affix_id": 2150481,
+          "desc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and he DMG bonus from multiple Artifact Sets with the same name do not stack.",
+          "id": 215048,
+          "level": 1,
+          "name": "Heart of the Furnace",
+          "open_config": "Relic_7.0_StarSupport_4",
+          "param_list": [
+            0.12,
+            0.5,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "unresolved": [
+      "event ordering and off-field behavior not explicitly encoded by the source",
+      "the reaction event/tag implementation required by the 4-piece effect"
+    ]
+  },
+  "kind": "artifact",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "set_bonus_params": {
+        "agrees": true,
+        "lunaris": {
+          "2pc": [
+            0.18000000715255737,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4pc": [
+            0.11999999731779099,
+            0.5,
+            12.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "2pc": [
+            0.18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4pc": [
+            0.12,
+            0.5,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Heart of the Furnace",
+        "nanoka": "Heart of the Furnace"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15048_3",
+                "name": "Foundryman's Legacy"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15048_4",
+                "name": "Foundryman's Conjecture"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15048_1",
+                "name": "Foundryman's Magnanimity"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15048_2",
+                "name": "Foundryman's Observation"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15048_5",
+                "name": "Foundryman's Calculus"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "ATK +18%.",
+                "params": [
+                  0.18000000715255737,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and he DMG bonus from multiple Artifact Sets with the same name do not stack.",
+                "params": [
+                  0.11999999731779099,
+                  0.5,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15048_4",
+            "setName": "Heart of the Furnace"
+          }
+        },
+        "sha256": "65c607a261048684cb3bd46c338613c69e237d27421757a660a6f94717b5c06d",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/artifact/15048.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "info": {
+            "pieces": {
+              "circlet": {
+                "icon": "UI_RelicIcon_15048_3",
+                "name": "熔铸者的继志"
+              },
+              "flower": {
+                "icon": "UI_RelicIcon_15048_4",
+                "name": "熔铸者的揣度"
+              },
+              "goblet": {
+                "icon": "UI_RelicIcon_15048_1",
+                "name": "熔铸者的雅量"
+              },
+              "plume": {
+                "icon": "UI_RelicIcon_15048_2",
+                "name": "熔铸者的观测"
+              },
+              "sands": {
+                "icon": "UI_RelicIcon_15048_5",
+                "name": "熔铸者的计算"
+              }
+            },
+            "qualityType": "QUALITY_ORANGE",
+            "setBonuses": {
+              "2pc": {
+                "description": "攻击力提高18%。",
+                "params": [
+                  0.18000000715255737,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4pc": {
+                "description": "装备者触发星烁反应或造成星烁反应伤害后的12秒内，攻击力提升12%，队伍中附近的所有角色造成的星烁反应伤害提升50%。装备者处于后台时也能触发上述效果。同名圣遗物套装产生的伤害加成效果无法叠加。",
+                "params": [
+                  0.11999999731779099,
+                  0.5,
+                  12.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "setIcon": "UI_RelicIcon_15048_4",
+            "setName": "炉火融炼之心"
+          }
+        },
+        "sha256": "5c36bf263b9670c99ab21e448f346c0282a2168afa66ef00066e4f09b229b8bb",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/artifact/15048.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150480,
+              "desc": "ATK +18%.",
+              "id": 215048,
+              "level": 0,
+              "name": "Heart of the Furnace",
+              "open_config": "",
+              "param_list": [
+                0.18,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150481,
+              "desc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and he DMG bonus from multiple Artifact Sets with the same name do not stack.",
+              "id": 215048,
+              "level": 1,
+              "name": "Heart of the Furnace",
+              "open_config": "Relic_7.0_StarSupport_4",
+              "param_list": [
+                0.12,
+                0.5,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15048_4",
+          "id": 15048,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "af4f364e760e1f5d11811c9d6eb0684f9deb4cb8856520713ed97942d7fa0f58",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/artifact/15048.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "affix": [
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_ATTACK_PERCENT",
+                  "value": 0.18
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150480,
+              "desc": "攻击力提高18%。",
+              "id": 215048,
+              "level": 0,
+              "name": "炉火融炼之心",
+              "open_config": "",
+              "param_list": [
+                0.18,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "add_props": [
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                },
+                {
+                  "prop_type": "FIGHT_PROP_NONE",
+                  "value": 0
+                }
+              ],
+              "affix_id": 2150481,
+              "desc": "装备者触发星烁反应或造成星烁反应伤害后的12秒内，攻击力提升12%，队伍中附近的所有角色造成的星烁反应伤害提升50%。装备者处于后台时也能触发上述效果。同名圣遗物套装产生的伤害加成效果无法叠加。",
+              "id": 215048,
+              "level": 1,
+              "name": "炉火融炼之心",
+              "open_config": "Relic_7.0_StarSupport_4",
+              "param_list": [
+                0.12,
+                0.5,
+                12,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "icon": "UI_RelicIcon_15048_4",
+          "id": 15048,
+          "need": [
+            2,
+            4
+          ],
+          "rank": [
+            4,
+            5
+          ]
+        },
+        "sha256": "75b537bc3e4b8ca53d8d16aa6040c14830465b96590430ba767bd4e6b6b33e7d",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/artifact/15048.json"
+      }
+    }
+  }
+}

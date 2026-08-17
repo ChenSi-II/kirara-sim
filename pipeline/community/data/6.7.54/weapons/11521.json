@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "exaiphanesblade",
+      "override_id": "11521",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "exaiphanesblade",
+    "id": "11521",
+    "lunaris_id": "11521"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 45.9364,
+            "levels": {
+              "1": 1,
+              "10": 1.775,
+              "100": 10.162,
+              "11": 1.862,
+              "12": 1.949,
+              "13": 2.036,
+              "14": 2.124,
+              "15": 2.211,
+              "16": 2.299,
+              "17": 2.386,
+              "18": 2.474,
+              "19": 2.562,
+              "2": 1.086,
+              "20": 2.65,
+              "21": 2.738,
+              "22": 2.827,
+              "23": 2.915,
+              "24": 3.004,
+              "25": 3.093,
+              "26": 3.182,
+              "27": 3.271,
+              "28": 3.36,
+              "29": 3.45,
+              "3": 1.171,
+              "30": 3.539,
+              "31": 3.629,
+              "32": 3.719,
+              "33": 3.809,
+              "34": 3.899,
+              "35": 3.989,
+              "36": 4.08,
+              "37": 4.17,
+              "38": 4.261,
+              "39": 4.352,
+              "4": 1.257,
+              "40": 4.443,
+              "41": 4.534,
+              "42": 4.625,
+              "43": 4.717,
+              "44": 4.808,
+              "45": 4.9,
+              "46": 4.992,
+              "47": 5.084,
+              "48": 5.176,
+              "49": 5.268,
+              "5": 1.343,
+              "50": 5.36,
+              "51": 5.453,
+              "52": 5.546,
+              "53": 5.638,
+              "54": 5.731,
+              "55": 5.825,
+              "56": 5.918,
+              "57": 6.011,
+              "58": 6.105,
+              "59": 6.198,
+              "6": 1.429,
+              "60": 6.292,
+              "61": 6.386,
+              "62": 6.48,
+              "63": 6.575,
+              "64": 6.669,
+              "65": 6.763,
+              "66": 6.858,
+              "67": 6.953,
+              "68": 7.048,
+              "69": 7.143,
+              "7": 1.516,
+              "70": 7.238,
+              "71": 7.334,
+              "72": 7.429,
+              "73": 7.525,
+              "74": 7.621,
+              "75": 7.717,
+              "76": 7.813,
+              "77": 7.909,
+              "78": 8.005,
+              "79": 8.102,
+              "8": 1.602,
+              "80": 8.199,
+              "81": 8.295,
+              "82": 8.392,
+              "83": 8.489,
+              "84": 8.587,
+              "85": 8.684,
+              "86": 8.782,
+              "87": 8.879,
+              "88": 8.977,
+              "89": 9.075,
+              "9": 1.689,
+              "90": 9.173,
+              "91": 9.271,
+              "92": 9.37,
+              "93": 9.468,
+              "94": 9.567,
+              "95": 9.666,
+              "96": 9.765,
+              "97": 9.864,
+              "98": 9.963,
+              "99": 10.062
+            }
+          },
+          "fight_prop_critical": {
+            "base": 0.072,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 45.9364,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_301"
+          },
+          {
+            "init_value": 0.072,
+            "prop_type": "FIGHT_PROP_CRITICAL",
+            "type": "GROW_CURVE_CRITICAL_301"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+        "name": "Exaiphanes Blade",
+        "rarity": 5,
+        "weapon_type": "WEAPON_SWORD_ONE_HAND"
+      },
+      "refinements": {
+        "1": {
+          "desc": "When the Traveler equips this, their ATK will increase by <color=#99FFFFFF>16%</color> for <color=#99FFFFFF>8</color>s after they hit an opponent. At the same time, they will also regenerate <color=#99FFFFFF>3</color> Elemental Energy. This effect can trigger once every <color=#99FFFFFF>5</color>s. This can be triggered even when the character is not on the field.",
+          "name": "Traveler's Path",
+          "param_list": [
+            0.16,
+            8,
+            0,
+            3,
+            5,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>20%</color> for 8s, and regenerate <color=#99FFFFFF>3</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+          "name": "Traveler's Path",
+          "param_list": [
+            0.2,
+            8,
+            0.06,
+            3,
+            5,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>24%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+          "name": "Traveler's Path",
+          "param_list": [
+            0.24,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>32%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+          "name": "Traveler's Path",
+          "param_list": [
+            0.32,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>40%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+          "name": "Traveler's Path",
+          "param_list": [
+            0.4,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "preview",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            0.1599999964237213,
+            8.0,
+            0.0,
+            3.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            0.20000000298023224,
+            8.0,
+            0.05999999865889549,
+            3.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            0.23999999463558197,
+            8.0,
+            0.05999999865889549,
+            5.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            0.3199999928474426,
+            8.0,
+            0.05999999865889549,
+            5.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            0.4000000059604645,
+            8.0,
+            0.05999999865889549,
+            5.0,
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            0.16,
+            8,
+            0,
+            3,
+            5,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0.2,
+            8,
+            0.06,
+            3,
+            5,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0.24,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0.32,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            0.4,
+            8,
+            0.06,
+            5,
+            5,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Exaiphanes Blade",
+        "nanoka": "Exaiphanes Blade"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_ORANGE",
+        "nanoka": "QUALITY_ORANGE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_SWORD_ONE_HAND",
+        "nanoka": "WEAPON_SWORD_ONE_HAND"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Exaiphanes Blade",
+          "passive": {
+            "name": "Traveler's Path",
+            "refinements": {
+              "1": {
+                "description": "When the Traveler equips this, their ATK will increase by 16% for 8s after they hit an opponent. At the same time, they will also regenerate 3 Elemental Energy. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+                "params": [
+                  0.1599999964237213,
+                  8.0,
+                  0.0,
+                  3.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 20% for 8s, and regenerate 3 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+                "params": [
+                  0.20000000298023224,
+                  8.0,
+                  0.05999999865889549,
+                  3.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 24% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+                "params": [
+                  0.23999999463558197,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 32% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+                "params": [
+                  0.3199999928474426,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by 40% for 8s, and regenerate 5 Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+                "params": [
+                  0.4000000059604645,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 7.2,
+              "atk": 46
+            },
+            "10": {
+              "CRIT Rate%": 9.8,
+              "atk": 82
+            },
+            "11": {
+              "CRIT Rate%": 9.8,
+              "atk": 86
+            },
+            "12": {
+              "CRIT Rate%": 9.8,
+              "atk": 90
+            },
+            "13": {
+              "CRIT Rate%": 9.8,
+              "atk": 94
+            },
+            "14": {
+              "CRIT Rate%": 9.8,
+              "atk": 98
+            },
+            "15": {
+              "CRIT Rate%": 11.3,
+              "atk": 102
+            },
+            "16": {
+              "CRIT Rate%": 11.3,
+              "atk": 106
+            },
+            "17": {
+              "CRIT Rate%": 11.3,
+              "atk": 110
+            },
+            "18": {
+              "CRIT Rate%": 11.3,
+              "atk": 114
+            },
+            "19": {
+              "CRIT Rate%": 11.3,
+              "atk": 118
+            },
+            "2": {
+              "CRIT Rate%": 7.2,
+              "atk": 50
+            },
+            "20": {
+              "CRIT Rate%": 12.7,
+              "atk": 122
+            },
+            "21": {
+              "CRIT Rate%": 12.7,
+              "atk": 157
+            },
+            "22": {
+              "CRIT Rate%": 12.7,
+              "atk": 161
+            },
+            "23": {
+              "CRIT Rate%": 12.7,
+              "atk": 165
+            },
+            "24": {
+              "CRIT Rate%": 12.7,
+              "atk": 169
+            },
+            "25": {
+              "CRIT Rate%": 14.2,
+              "atk": 173
+            },
+            "26": {
+              "CRIT Rate%": 14.2,
+              "atk": 177
+            },
+            "27": {
+              "CRIT Rate%": 14.2,
+              "atk": 181
+            },
+            "28": {
+              "CRIT Rate%": 14.2,
+              "atk": 185
+            },
+            "29": {
+              "CRIT Rate%": 14.2,
+              "atk": 190
+            },
+            "3": {
+              "CRIT Rate%": 7.2,
+              "atk": 54
+            },
+            "30": {
+              "CRIT Rate%": 15.6,
+              "atk": 194
+            },
+            "31": {
+              "CRIT Rate%": 15.6,
+              "atk": 198
+            },
+            "32": {
+              "CRIT Rate%": 15.6,
+              "atk": 202
+            },
+            "33": {
+              "CRIT Rate%": 15.6,
+              "atk": 206
+            },
+            "34": {
+              "CRIT Rate%": 15.6,
+              "atk": 210
+            },
+            "35": {
+              "CRIT Rate%": 17.1,
+              "atk": 214
+            },
+            "36": {
+              "CRIT Rate%": 17.1,
+              "atk": 219
+            },
+            "37": {
+              "CRIT Rate%": 17.1,
+              "atk": 223
+            },
+            "38": {
+              "CRIT Rate%": 17.1,
+              "atk": 227
+            },
+            "39": {
+              "CRIT Rate%": 17.1,
+              "atk": 231
+            },
+            "4": {
+              "CRIT Rate%": 7.2,
+              "atk": 58
+            },
+            "40": {
+              "CRIT Rate%": 18.5,
+              "atk": 235
+            },
+            "41": {
+              "CRIT Rate%": 18.5,
+              "atk": 270
+            },
+            "42": {
+              "CRIT Rate%": 18.5,
+              "atk": 275
+            },
+            "43": {
+              "CRIT Rate%": 18.5,
+              "atk": 279
+            },
+            "44": {
+              "CRIT Rate%": 18.5,
+              "atk": 283
+            },
+            "45": {
+              "CRIT Rate%": 20.0,
+              "atk": 287
+            },
+            "46": {
+              "CRIT Rate%": 20.0,
+              "atk": 292
+            },
+            "47": {
+              "CRIT Rate%": 20.0,
+              "atk": 296
+            },
+            "48": {
+              "CRIT Rate%": 20.0,
+              "atk": 300
+            },
+            "49": {
+              "CRIT Rate%": 20.0,
+              "atk": 304
+            },
+            "5": {
+              "CRIT Rate%": 8.4,
+              "atk": 62
+            },
+            "50": {
+              "CRIT Rate%": 21.4,
+              "atk": 308
+            },
+            "51": {
+              "CRIT Rate%": 21.4,
+              "atk": 344
+            },
+            "52": {
+              "CRIT Rate%": 21.4,
+              "atk": 348
+            },
+            "53": {
+              "CRIT Rate%": 21.4,
+              "atk": 352
+            },
+            "54": {
+              "CRIT Rate%": 21.4,
+              "atk": 357
+            },
+            "55": {
+              "CRIT Rate%": 22.9,
+              "atk": 361
+            },
+            "56": {
+              "CRIT Rate%": 22.9,
+              "atk": 365
+            },
+            "57": {
+              "CRIT Rate%": 22.9,
+              "atk": 370
+            },
+            "58": {
+              "CRIT Rate%": 22.9,
+              "atk": 374
+            },
+            "59": {
+              "CRIT Rate%": 22.9,
+              "atk": 378
+            },
+            "6": {
+              "CRIT Rate%": 8.4,
+              "atk": 66
+            },
+            "60": {
+              "CRIT Rate%": 24.4,
+              "atk": 382
+            },
+            "61": {
+              "CRIT Rate%": 24.4,
+              "atk": 418
+            },
+            "62": {
+              "CRIT Rate%": 24.4,
+              "atk": 422
+            },
+            "63": {
+              "CRIT Rate%": 24.4,
+              "atk": 427
+            },
+            "64": {
+              "CRIT Rate%": 24.4,
+              "atk": 431
+            },
+            "65": {
+              "CRIT Rate%": 25.8,
+              "atk": 435
+            },
+            "66": {
+              "CRIT Rate%": 25.8,
+              "atk": 440
+            },
+            "67": {
+              "CRIT Rate%": 25.8,
+              "atk": 444
+            },
+            "68": {
+              "CRIT Rate%": 25.8,
+              "atk": 448
+            },
+            "69": {
+              "CRIT Rate%": 25.8,
+              "atk": 453
+            },
+            "7": {
+              "CRIT Rate%": 8.4,
+              "atk": 70
+            },
+            "70": {
+              "CRIT Rate%": 27.3,
+              "atk": 457
+            },
+            "71": {
+              "CRIT Rate%": 27.3,
+              "atk": 492
+            },
+            "72": {
+              "CRIT Rate%": 27.3,
+              "atk": 497
+            },
+            "73": {
+              "CRIT Rate%": 27.3,
+              "atk": 501
+            },
+            "74": {
+              "CRIT Rate%": 27.3,
+              "atk": 506
+            },
+            "75": {
+              "CRIT Rate%": 28.7,
+              "atk": 510
+            },
+            "76": {
+              "CRIT Rate%": 28.7,
+              "atk": 515
+            },
+            "77": {
+              "CRIT Rate%": 28.7,
+              "atk": 519
+            },
+            "78": {
+              "CRIT Rate%": 28.7,
+              "atk": 523
+            },
+            "79": {
+              "CRIT Rate%": 28.7,
+              "atk": 528
+            },
+            "8": {
+              "CRIT Rate%": 8.4,
+              "atk": 74
+            },
+            "80": {
+              "CRIT Rate%": 30.2,
+              "atk": 532
+            },
+            "81": {
+              "CRIT Rate%": 30.2,
+              "atk": 568
+            },
+            "82": {
+              "CRIT Rate%": 30.2,
+              "atk": 572
+            },
+            "83": {
+              "CRIT Rate%": 30.2,
+              "atk": 577
+            },
+            "84": {
+              "CRIT Rate%": 30.2,
+              "atk": 581
+            },
+            "85": {
+              "CRIT Rate%": 31.6,
+              "atk": 586
+            },
+            "86": {
+              "CRIT Rate%": 31.6,
+              "atk": 590
+            },
+            "87": {
+              "CRIT Rate%": 31.6,
+              "atk": 595
+            },
+            "88": {
+              "CRIT Rate%": 31.6,
+              "atk": 599
+            },
+            "89": {
+              "CRIT Rate%": 31.6,
+              "atk": 604
+            },
+            "9": {
+              "CRIT Rate%": 8.4,
+              "atk": 78
+            },
+            "90": {
+              "CRIT Rate%": 33.1,
+              "atk": 608
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "151bc9afe1e3e609e9b789e32ea7be9eaca2a84765194a72db234dedda8c7daf",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/11521.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "星锋剑",
+          "passive": {
+            "name": "旅者之路",
+            "refinements": {
+              "1": {
+                "description": "旅行者装备时，命中敌人后，攻击力提升16%，持续8秒，并使旅行者恢复3点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+                "params": [
+                  0.1599999964237213,
+                  8.0,
+                  0.0,
+                  3.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升20%，持续8秒，并使旅行者恢复3点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+                "params": [
+                  0.20000000298023224,
+                  8.0,
+                  0.05999999865889549,
+                  3.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升24%，持续8秒，并使旅行者恢复5点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+                "params": [
+                  0.23999999463558197,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升32%，持续8秒，并使旅行者恢复5点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+                "params": [
+                  0.3199999928474426,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升40%，持续8秒，并使旅行者恢复5点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+                "params": [
+                  0.4000000059604645,
+                  8.0,
+                  0.05999999865889549,
+                  5.0,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT Rate%": 7.2,
+              "atk": 46
+            },
+            "10": {
+              "CRIT Rate%": 9.8,
+              "atk": 82
+            },
+            "11": {
+              "CRIT Rate%": 9.8,
+              "atk": 86
+            },
+            "12": {
+              "CRIT Rate%": 9.8,
+              "atk": 90
+            },
+            "13": {
+              "CRIT Rate%": 9.8,
+              "atk": 94
+            },
+            "14": {
+              "CRIT Rate%": 9.8,
+              "atk": 98
+            },
+            "15": {
+              "CRIT Rate%": 11.3,
+              "atk": 102
+            },
+            "16": {
+              "CRIT Rate%": 11.3,
+              "atk": 106
+            },
+            "17": {
+              "CRIT Rate%": 11.3,
+              "atk": 110
+            },
+            "18": {
+              "CRIT Rate%": 11.3,
+              "atk": 114
+            },
+            "19": {
+              "CRIT Rate%": 11.3,
+              "atk": 118
+            },
+            "2": {
+              "CRIT Rate%": 7.2,
+              "atk": 50
+            },
+            "20": {
+              "CRIT Rate%": 12.7,
+              "atk": 122
+            },
+            "21": {
+              "CRIT Rate%": 12.7,
+              "atk": 157
+            },
+            "22": {
+              "CRIT Rate%": 12.7,
+              "atk": 161
+            },
+            "23": {
+              "CRIT Rate%": 12.7,
+              "atk": 165
+            },
+            "24": {
+              "CRIT Rate%": 12.7,
+              "atk": 169
+            },
+            "25": {
+              "CRIT Rate%": 14.2,
+              "atk": 173
+            },
+            "26": {
+              "CRIT Rate%": 14.2,
+              "atk": 177
+            },
+            "27": {
+              "CRIT Rate%": 14.2,
+              "atk": 181
+            },
+            "28": {
+              "CRIT Rate%": 14.2,
+              "atk": 185
+            },
+            "29": {
+              "CRIT Rate%": 14.2,
+              "atk": 190
+            },
+            "3": {
+              "CRIT Rate%": 7.2,
+              "atk": 54
+            },
+            "30": {
+              "CRIT Rate%": 15.6,
+              "atk": 194
+            },
+            "31": {
+              "CRIT Rate%": 15.6,
+              "atk": 198
+            },
+            "32": {
+              "CRIT Rate%": 15.6,
+              "atk": 202
+            },
+            "33": {
+              "CRIT Rate%": 15.6,
+              "atk": 206
+            },
+            "34": {
+              "CRIT Rate%": 15.6,
+              "atk": 210
+            },
+            "35": {
+              "CRIT Rate%": 17.1,
+              "atk": 214
+            },
+            "36": {
+              "CRIT Rate%": 17.1,
+              "atk": 219
+            },
+            "37": {
+              "CRIT Rate%": 17.1,
+              "atk": 223
+            },
+            "38": {
+              "CRIT Rate%": 17.1,
+              "atk": 227
+            },
+            "39": {
+              "CRIT Rate%": 17.1,
+              "atk": 231
+            },
+            "4": {
+              "CRIT Rate%": 7.2,
+              "atk": 58
+            },
+            "40": {
+              "CRIT Rate%": 18.5,
+              "atk": 235
+            },
+            "41": {
+              "CRIT Rate%": 18.5,
+              "atk": 270
+            },
+            "42": {
+              "CRIT Rate%": 18.5,
+              "atk": 275
+            },
+            "43": {
+              "CRIT Rate%": 18.5,
+              "atk": 279
+            },
+            "44": {
+              "CRIT Rate%": 18.5,
+              "atk": 283
+            },
+            "45": {
+              "CRIT Rate%": 20.0,
+              "atk": 287
+            },
+            "46": {
+              "CRIT Rate%": 20.0,
+              "atk": 292
+            },
+            "47": {
+              "CRIT Rate%": 20.0,
+              "atk": 296
+            },
+            "48": {
+              "CRIT Rate%": 20.0,
+              "atk": 300
+            },
+            "49": {
+              "CRIT Rate%": 20.0,
+              "atk": 304
+            },
+            "5": {
+              "CRIT Rate%": 8.4,
+              "atk": 62
+            },
+            "50": {
+              "CRIT Rate%": 21.4,
+              "atk": 308
+            },
+            "51": {
+              "CRIT Rate%": 21.4,
+              "atk": 344
+            },
+            "52": {
+              "CRIT Rate%": 21.4,
+              "atk": 348
+            },
+            "53": {
+              "CRIT Rate%": 21.4,
+              "atk": 352
+            },
+            "54": {
+              "CRIT Rate%": 21.4,
+              "atk": 357
+            },
+            "55": {
+              "CRIT Rate%": 22.9,
+              "atk": 361
+            },
+            "56": {
+              "CRIT Rate%": 22.9,
+              "atk": 365
+            },
+            "57": {
+              "CRIT Rate%": 22.9,
+              "atk": 370
+            },
+            "58": {
+              "CRIT Rate%": 22.9,
+              "atk": 374
+            },
+            "59": {
+              "CRIT Rate%": 22.9,
+              "atk": 378
+            },
+            "6": {
+              "CRIT Rate%": 8.4,
+              "atk": 66
+            },
+            "60": {
+              "CRIT Rate%": 24.4,
+              "atk": 382
+            },
+            "61": {
+              "CRIT Rate%": 24.4,
+              "atk": 418
+            },
+            "62": {
+              "CRIT Rate%": 24.4,
+              "atk": 422
+            },
+            "63": {
+              "CRIT Rate%": 24.4,
+              "atk": 427
+            },
+            "64": {
+              "CRIT Rate%": 24.4,
+              "atk": 431
+            },
+            "65": {
+              "CRIT Rate%": 25.8,
+              "atk": 435
+            },
+            "66": {
+              "CRIT Rate%": 25.8,
+              "atk": 440
+            },
+            "67": {
+              "CRIT Rate%": 25.8,
+              "atk": 444
+            },
+            "68": {
+              "CRIT Rate%": 25.8,
+              "atk": 448
+            },
+            "69": {
+              "CRIT Rate%": 25.8,
+              "atk": 453
+            },
+            "7": {
+              "CRIT Rate%": 8.4,
+              "atk": 70
+            },
+            "70": {
+              "CRIT Rate%": 27.3,
+              "atk": 457
+            },
+            "71": {
+              "CRIT Rate%": 27.3,
+              "atk": 492
+            },
+            "72": {
+              "CRIT Rate%": 27.3,
+              "atk": 497
+            },
+            "73": {
+              "CRIT Rate%": 27.3,
+              "atk": 501
+            },
+            "74": {
+              "CRIT Rate%": 27.3,
+              "atk": 506
+            },
+            "75": {
+              "CRIT Rate%": 28.7,
+              "atk": 510
+            },
+            "76": {
+              "CRIT Rate%": 28.7,
+              "atk": 515
+            },
+            "77": {
+              "CRIT Rate%": 28.7,
+              "atk": 519
+            },
+            "78": {
+              "CRIT Rate%": 28.7,
+              "atk": 523
+            },
+            "79": {
+              "CRIT Rate%": 28.7,
+              "atk": 528
+            },
+            "8": {
+              "CRIT Rate%": 8.4,
+              "atk": 74
+            },
+            "80": {
+              "CRIT Rate%": 30.2,
+              "atk": 532
+            },
+            "81": {
+              "CRIT Rate%": 30.2,
+              "atk": 568
+            },
+            "82": {
+              "CRIT Rate%": 30.2,
+              "atk": 572
+            },
+            "83": {
+              "CRIT Rate%": 30.2,
+              "atk": 577
+            },
+            "84": {
+              "CRIT Rate%": 30.2,
+              "atk": 581
+            },
+            "85": {
+              "CRIT Rate%": 31.6,
+              "atk": 586
+            },
+            "86": {
+              "CRIT Rate%": 31.6,
+              "atk": 590
+            },
+            "87": {
+              "CRIT Rate%": 31.6,
+              "atk": 595
+            },
+            "88": {
+              "CRIT Rate%": 31.6,
+              "atk": 599
+            },
+            "89": {
+              "CRIT Rate%": 31.6,
+              "atk": 604
+            },
+            "9": {
+              "CRIT Rate%": 8.4,
+              "atk": 78
+            },
+            "90": {
+              "CRIT Rate%": 33.1,
+              "atk": 608
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "be4c2546f747b9ff3fa5174123eb49ab67415e4153a367d47b6f58a0f0bc3777",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/11521.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+          "name": "Exaiphanes Blade",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "When the Traveler equips this, their ATK will increase by <color=#99FFFFFF>16%</color> for <color=#99FFFFFF>8</color>s after they hit an opponent. At the same time, they will also regenerate <color=#99FFFFFF>3</color> Elemental Energy. This effect can trigger once every <color=#99FFFFFF>5</color>s. This can be triggered even when the character is not on the field.",
+              "name": "Traveler's Path",
+              "param_list": [
+                0.16,
+                8,
+                0,
+                3,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>20%</color> for 8s, and regenerate <color=#99FFFFFF>3</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+              "name": "Traveler's Path",
+              "param_list": [
+                0.2,
+                8,
+                0.06,
+                3,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>24%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+              "name": "Traveler's Path",
+              "param_list": [
+                0.24,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>32%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+              "name": "Traveler's Path",
+              "param_list": [
+                0.32,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "When the Traveler equips this, their CRIT DMG increases by 6% for every Element they have resonated with. Additionally, the Traveler's ATK will also increase by <color=#99FFFFFF>40%</color> for 8s, and regenerate <color=#99FFFFFF>5</color> Elemental Energy, after they attack and hit an opponent. This effect can trigger once every 5s. This can be triggered even when the character is not on the field.",
+              "name": "Traveler's Path",
+              "param_list": [
+                0.4,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 45.9364,
+              "levels": {
+                "1": 1,
+                "10": 1.775,
+                "100": 10.162,
+                "11": 1.862,
+                "12": 1.949,
+                "13": 2.036,
+                "14": 2.124,
+                "15": 2.211,
+                "16": 2.299,
+                "17": 2.386,
+                "18": 2.474,
+                "19": 2.562,
+                "2": 1.086,
+                "20": 2.65,
+                "21": 2.738,
+                "22": 2.827,
+                "23": 2.915,
+                "24": 3.004,
+                "25": 3.093,
+                "26": 3.182,
+                "27": 3.271,
+                "28": 3.36,
+                "29": 3.45,
+                "3": 1.171,
+                "30": 3.539,
+                "31": 3.629,
+                "32": 3.719,
+                "33": 3.809,
+                "34": 3.899,
+                "35": 3.989,
+                "36": 4.08,
+                "37": 4.17,
+                "38": 4.261,
+                "39": 4.352,
+                "4": 1.257,
+                "40": 4.443,
+                "41": 4.534,
+                "42": 4.625,
+                "43": 4.717,
+                "44": 4.808,
+                "45": 4.9,
+                "46": 4.992,
+                "47": 5.084,
+                "48": 5.176,
+                "49": 5.268,
+                "5": 1.343,
+                "50": 5.36,
+                "51": 5.453,
+                "52": 5.546,
+                "53": 5.638,
+                "54": 5.731,
+                "55": 5.825,
+                "56": 5.918,
+                "57": 6.011,
+                "58": 6.105,
+                "59": 6.198,
+                "6": 1.429,
+                "60": 6.292,
+                "61": 6.386,
+                "62": 6.48,
+                "63": 6.575,
+                "64": 6.669,
+                "65": 6.763,
+                "66": 6.858,
+                "67": 6.953,
+                "68": 7.048,
+                "69": 7.143,
+                "7": 1.516,
+                "70": 7.238,
+                "71": 7.334,
+                "72": 7.429,
+                "73": 7.525,
+                "74": 7.621,
+                "75": 7.717,
+                "76": 7.813,
+                "77": 7.909,
+                "78": 8.005,
+                "79": 8.102,
+                "8": 1.602,
+                "80": 8.199,
+                "81": 8.295,
+                "82": 8.392,
+                "83": 8.489,
+                "84": 8.587,
+                "85": 8.684,
+                "86": 8.782,
+                "87": 8.879,
+                "88": 8.977,
+                "89": 9.075,
+                "9": 1.689,
+                "90": 9.173,
+                "91": 9.271,
+                "92": 9.37,
+                "93": 9.468,
+                "94": 9.567,
+                "95": 9.666,
+                "96": 9.765,
+                "97": 9.864,
+                "98": 9.963,
+                "99": 10.062
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.072,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 45.9364,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+              "init_value": 0.072,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "4cf2ee7753bf940eaa95571857ede105dbaa5d1baa2dc43bdf3d0e2baca7f288",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/11521.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+          "name": "星锋剑",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "旅行者装备时，命中敌人后，攻击力提升<color=#99FFFFFF>16%</color>，持续<color=#99FFFFFF>8</color>秒，并使旅行者恢复<color=#99FFFFFF>3</color>点元素能量。该效果每<color=#99FFFFFF>5</color>秒至多触发一次，角色处于队伍后台也能触发。",
+              "name": "旅者之路",
+              "param_list": [
+                0.16,
+                8,
+                0,
+                3,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升<color=#99FFFFFF>20%</color>，持续8秒，并使旅行者恢复<color=#99FFFFFF>3</color>点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+              "name": "旅者之路",
+              "param_list": [
+                0.2,
+                8,
+                0.06,
+                3,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升<color=#99FFFFFF>24%</color>，持续8秒，并使旅行者恢复<color=#99FFFFFF>5</color>点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+              "name": "旅者之路",
+              "param_list": [
+                0.24,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升<color=#99FFFFFF>32%</color>，持续8秒，并使旅行者恢复<color=#99FFFFFF>5</color>点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+              "name": "旅者之路",
+              "param_list": [
+                0.32,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "旅行者装备时，每与一种元素共鸣过，旅行者的暴击伤害就会提升6%。此外，旅行者的攻击命中敌人后，攻击力提升<color=#99FFFFFF>40%</color>，持续8秒，并使旅行者恢复<color=#99FFFFFF>5</color>点元素能量。该效果每5秒至多触发一次，角色处于队伍后台也能触发。",
+              "name": "旅者之路",
+              "param_list": [
+                0.4,
+                8,
+                0.06,
+                5,
+                5,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 45.9364,
+              "levels": {
+                "1": 1,
+                "10": 1.775,
+                "100": 10.162,
+                "11": 1.862,
+                "12": 1.949,
+                "13": 2.036,
+                "14": 2.124,
+                "15": 2.211,
+                "16": 2.299,
+                "17": 2.386,
+                "18": 2.474,
+                "19": 2.562,
+                "2": 1.086,
+                "20": 2.65,
+                "21": 2.738,
+                "22": 2.827,
+                "23": 2.915,
+                "24": 3.004,
+                "25": 3.093,
+                "26": 3.182,
+                "27": 3.271,
+                "28": 3.36,
+                "29": 3.45,
+                "3": 1.171,
+                "30": 3.539,
+                "31": 3.629,
+                "32": 3.719,
+                "33": 3.809,
+                "34": 3.899,
+                "35": 3.989,
+                "36": 4.08,
+                "37": 4.17,
+                "38": 4.261,
+                "39": 4.352,
+                "4": 1.257,
+                "40": 4.443,
+                "41": 4.534,
+                "42": 4.625,
+                "43": 4.717,
+                "44": 4.808,
+                "45": 4.9,
+                "46": 4.992,
+                "47": 5.084,
+                "48": 5.176,
+                "49": 5.268,
+                "5": 1.343,
+                "50": 5.36,
+                "51": 5.453,
+                "52": 5.546,
+                "53": 5.638,
+                "54": 5.731,
+                "55": 5.825,
+                "56": 5.918,
+                "57": 6.011,
+                "58": 6.105,
+                "59": 6.198,
+                "6": 1.429,
+                "60": 6.292,
+                "61": 6.386,
+                "62": 6.48,
+                "63": 6.575,
+                "64": 6.669,
+                "65": 6.763,
+                "66": 6.858,
+                "67": 6.953,
+                "68": 7.048,
+                "69": 7.143,
+                "7": 1.516,
+                "70": 7.238,
+                "71": 7.334,
+                "72": 7.429,
+                "73": 7.525,
+                "74": 7.621,
+                "75": 7.717,
+                "76": 7.813,
+                "77": 7.909,
+                "78": 8.005,
+                "79": 8.102,
+                "8": 1.602,
+                "80": 8.199,
+                "81": 8.295,
+                "82": 8.392,
+                "83": 8.489,
+                "84": 8.587,
+                "85": 8.684,
+                "86": 8.782,
+                "87": 8.879,
+                "88": 8.977,
+                "89": 9.075,
+                "9": 1.689,
+                "90": 9.173,
+                "91": 9.271,
+                "92": 9.37,
+                "93": 9.468,
+                "94": 9.567,
+                "95": 9.666,
+                "96": 9.765,
+                "97": 9.864,
+                "98": 9.963,
+                "99": 10.062
+              }
+            },
+            "fight_prop_critical": {
+              "base": 0.072,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 45.9364,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_301"
+            },
+            {
+              "init_value": 0.072,
+              "prop_type": "FIGHT_PROP_CRITICAL",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "4886ee7170844b385faa4298cf31d3cb52c6f59776cfc7b2067915bded3e6b67",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/11521.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "gcsim": {
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "stellarswirl",
+    "tutorial_id": "1049"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "related_hyperlinks": {
+        "11130002": {
+          "color": "",
+          "desc": "Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and Lunar-Charged DMG dealt by 0.2%, and Stellar Swirl reaction DMG dealt by {PARAM#P1132101|5S100}%. These points will be cleared when his Nightsoul's Blessing state ends.",
+          "name": "Rescue Essentials",
+          "param": [
+            "150",
+            "0.015",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11500002": {
+          "color": "",
+          "desc": "Odette's special Elemental Skill, which deals to nearby opponents <color=#99FFFFFF>AoE Cryo DMG</color> over time. Then, when the dance duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG. During the dance duet, Odette can control the direction of the dance steps.\\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The DMG dealt when the dance duet ends is changed to <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.\\n\\nAdditionally, after Odette unleashes the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>, should she be in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state while her <color=#FFD780FF>Dance Double</color> is still on the field, the <color=#FFD780FF>Dance Double</color>'s two dance moves types will also deal additional <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.",
+          "name": "Adagio: Coda at Dawn's Tolling",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11500003": {
+          "color": "",
+          "desc": "After unlocking the Passive Talent \"The Chosen One's Spring,\" Odette will obtain a special effect when she summons her <color=#FFD780FF>Solo Dance Double</color>.\\nEvery stack of <color=#FFD780FF>Marvelous Splendor</color> active increases the character's Stellar Glimmer DMG by 15%. This lasts until her <color=#FFD780FF>Dance Double</color> exits the field or when she summons her <color=#FFD780FF>Solo Dance Double</color> again.\\nWhen Odette is off-field, she loses 1 stack of <color=#FFD780FF>Marvelous Splendor</color> every 1 second, while other nearby party members gain the corresponding number of <color=#FFD780FF>Marvelous Splendor</color> stacks at the same time.",
+          "name": "Marvelous Splendor",
+          "param": [
+            "0.15",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        },
+        "11500004": {
+          "color": "",
+          "desc": "<color=#FFD780FF>Radiance: Stellar-Conduct</color> and <color=#FFD780FF>Radiance: Stellar Swirl</color> are both considered <color=#FFD780FF>Radiance: Stellar Glimmer</color> states.\\nCharacters can only be affected by one Radiance state at any one time, and where more than one state can be triggered, <color=#FFD780FF>Radiance: Stellar-Conduct</color> shall apply first.",
+          "name": "Radiance: Stellar Glimmer",
+          "param": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      "tutorial": {
+        "category": "Elemental Reactions",
+        "description": "When Anemo meets Cryo, and certain other conditions are met, a special Stellar Swirl reaction is triggered. This deals an instance of Anemo DMG to the opponent and generates a Stellar Vortex.\\nTriggering Stellar Swirl multiple times raises the level of the Stellar Vortex, which explodes after a certain time or after a certain number of Stellar Swirl reactions have been triggered. This deals AoE Cryo DMG to nearby opponents.\\nThe aforementioned DMG can CRIT.",
+        "name": "Elemental Reaction: Stellar Swirl",
+        "tipIcon": "UI_MessageIcon_StarSwirlIce",
+        "tips": {
+          "1": {
+            "img": "UI_Tutorial_StarSwirlIce_01",
+            "tipDescription": "When Anemo meets Cryo, and certain other conditions are met, a special Stellar Swirl reaction is triggered. This deals an instance of Anemo DMG to the opponent and generates a Stellar Vortex.\\nTriggering Stellar Swirl multiple times raises the level of the Stellar Vortex, which explodes after a certain time or after a certain number of Stellar Swirl reactions have been triggered. This deals AoE Cryo DMG to nearby opponents.\\nThe aforementioned DMG can CRIT."
+          },
+          "2": {
+            "img": "UI_Tutorial_StarSwirlIce_02",
+            "tipDescription": "Up to one Stellar Vortex can exist on the field within a certain range.\\nA Stellar Vortex on the field will level up to Lv. 2 after a certain number of Stellar Swirl reactions have been triggered. A higher-level Vortex deals more AoE Cryo DMG to opponents over a wider area when it explodes.\\n\\nAfter a Stellar Swirl reaction is triggered, certain nearby characters will also enter the Radiance: Stellar Swirl effect for 8s, which enhances certain Talents and skill effects.\\nCertain characters can use their Talents to deal Stellar Swirl reaction DMG to opponents. This DMG can trigger CRIT Hits."
+          },
+          "3": {
+            "img": "UI_Tutorial_StarSwirlIce_03",
+            "tipDescription": "When the Stellar Vortex explodes, it will also grant nearby characters the ability to jump higher once, for a short time."
+          }
+        }
+      }
+    },
+    "unresolved": [
+      "exact base coefficient and level-scaling formula",
+      "eligibility conditions represented only as 'certain conditions'",
+      "field/vortex duration, radius, trigger count, stored-energy thresholds, and caps",
+      "aura consumption, ICD, ownership, snapshot, and multi-target rules"
+    ]
+  },
+  "kind": "reaction",
+  "schema_version": 1,
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "category": "Elemental Reactions",
+          "description": "When Anemo meets Cryo, and certain other conditions are met, a special Stellar Swirl reaction is triggered. This deals an instance of Anemo DMG to the opponent and generates a Stellar Vortex.\\nTriggering Stellar Swirl multiple times raises the level of the Stellar Vortex, which explodes after a certain time or after a certain number of Stellar Swirl reactions have been triggered. This deals AoE Cryo DMG to nearby opponents.\\nThe aforementioned DMG can CRIT.",
+          "name": "Elemental Reaction: Stellar Swirl",
+          "tipIcon": "UI_MessageIcon_StarSwirlIce",
+          "tips": {
+            "1": {
+              "img": "UI_Tutorial_StarSwirlIce_01",
+              "tipDescription": "When Anemo meets Cryo, and certain other conditions are met, a special Stellar Swirl reaction is triggered. This deals an instance of Anemo DMG to the opponent and generates a Stellar Vortex.\\nTriggering Stellar Swirl multiple times raises the level of the Stellar Vortex, which explodes after a certain time or after a certain number of Stellar Swirl reactions have been triggered. This deals AoE Cryo DMG to nearby opponents.\\nThe aforementioned DMG can CRIT."
+            },
+            "2": {
+              "img": "UI_Tutorial_StarSwirlIce_02",
+              "tipDescription": "Up to one Stellar Vortex can exist on the field within a certain range.\\nA Stellar Vortex on the field will level up to Lv. 2 after a certain number of Stellar Swirl reactions have been triggered. A higher-level Vortex deals more AoE Cryo DMG to opponents over a wider area when it explodes.\\n\\nAfter a Stellar Swirl reaction is triggered, certain nearby characters will also enter the Radiance: Stellar Swirl effect for 8s, which enhances certain Talents and skill effects.\\nCertain characters can use their Talents to deal Stellar Swirl reaction DMG to opponents. This DMG can trigger CRIT Hits."
+            },
+            "3": {
+              "img": "UI_Tutorial_StarSwirlIce_03",
+              "tipDescription": "When the Stellar Vortex explodes, it will also grant nearby characters the ability to jump higher once, for a short time."
+            }
+          }
+        },
+        "sha256": "b3ca9df821c11738d0c177e2361e763273c37d1cd251b42938f3379c6f062f44",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/tutorial/1049.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "category": "元素反应",
+          "description": "「风元素」触及「冰元素」时，若满足特定条件，会引发特殊的「星扩散」反应，对敌人造成一次风元素伤害，并创造「星辉风旋」。\\n多次触发星扩散反应，可以提升星辉风旋的等级；星辉风旋会在一定时间后或触发一定次数的星扩散反应后引爆，对附近的敌人造成冰元素范围伤害。\\n上述伤害均可触发暴击。",
+          "name": "元素反应：星扩散",
+          "tipIcon": "UI_MessageIcon_StarSwirlIce",
+          "tips": {
+            "1": {
+              "img": "UI_Tutorial_StarSwirlIce_01",
+              "tipDescription": "「风元素」触及「冰元素」时，若满足特定条件，会引发特殊的「星扩散」反应，对敌人造成一次风元素伤害，并创造「星辉风旋」。\\n多次触发星扩散反应，可以提升星辉风旋的等级；星辉风旋会在一定时间后或触发一定次数的星扩散反应后引爆，对附近的敌人造成冰元素范围伤害。\\n上述伤害均可触发暴击。"
+            },
+            "2": {
+              "img": "UI_Tutorial_StarSwirlIce_02",
+              "tipDescription": "在一定范围内，至多存在一个星辉风旋。\\n星辉风旋处于场上时，触发一定次数的星扩散反应后，星辉风旋将会提升至二级，在引爆时对更大范围内的敌人造成更高的冰元素范围伤害。\\n\\n触发星扩散反应后的8秒内，附近的部分角色还会获得额外的辉映·星扩散效果，使部分天赋与技能的效果获得强化。\\n部分角色可以通过自身的天赋特性，对敌人造成星扩散反应伤害，该伤害可以触发暴击。"
+            },
+            "3": {
+              "img": "UI_Tutorial_StarSwirlIce_03",
+              "tipDescription": "星辉风旋引爆后，还会短暂赋予附近的角色一次高高跳起的能力。"
+            }
+          }
+        },
+        "sha256": "80f9edd189316b02e6c7490f7775f396feed7ae0d6c8f894f0fb3ed2196351d4",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/tutorial/1049.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "11130002": {
+            "color": "",
+            "desc": "Max 150 points. Each Rescue Essentials point Ifa has will increase the Swirl and Electro-Charged DMG dealt by nearby party members by 1.5%, and Lunar-Charged DMG dealt by 0.2%, and Stellar Swirl reaction DMG dealt by {PARAM#P1132101|5S100}%. These points will be cleared when his Nightsoul's Blessing state ends.",
+            "name": "Rescue Essentials",
+            "param": [
+              "150",
+              "0.015",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500002": {
+            "color": "",
+            "desc": "Odette's special Elemental Skill, which deals to nearby opponents <color=#99FFFFFF>AoE Cryo DMG</color> over time. Then, when the dance duet ends, she deals another instance of <color=#99FFFFFF>AoE Cryo DMG</color> that is considered Stellar-Conduct DMG. During the dance duet, Odette can control the direction of the dance steps.\\n<color=#FFD780FF>Radiance: Stellar Glimmer</color>: The DMG dealt when the dance duet ends is changed to <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.\\n\\nAdditionally, after Odette unleashes the special Elemental Skill <color=#FFD780FF>Adagio: Coda at Dawn's Tolling</color>, should she be in the <color=#FFD780FF>Radiance: Stellar Glimmer</color> state while her <color=#FFD780FF>Dance Double</color> is still on the field, the <color=#FFD780FF>Dance Double</color>'s two dance moves types will also deal additional <color=#99FFFFFF>AoE Cryo DMG</color> of the corresponding Stellar reaction type.",
+            "name": "Adagio: Coda at Dawn's Tolling",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500003": {
+            "color": "",
+            "desc": "After unlocking the Passive Talent \"The Chosen One's Spring,\" Odette will obtain a special effect when she summons her <color=#FFD780FF>Solo Dance Double</color>.\\nEvery stack of <color=#FFD780FF>Marvelous Splendor</color> active increases the character's Stellar Glimmer DMG by 15%. This lasts until her <color=#FFD780FF>Dance Double</color> exits the field or when she summons her <color=#FFD780FF>Solo Dance Double</color> again.\\nWhen Odette is off-field, she loses 1 stack of <color=#FFD780FF>Marvelous Splendor</color> every 1 second, while other nearby party members gain the corresponding number of <color=#FFD780FF>Marvelous Splendor</color> stacks at the same time.",
+            "name": "Marvelous Splendor",
+            "param": [
+              "0.15",
+              "1",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500004": {
+            "color": "",
+            "desc": "<color=#FFD780FF>Radiance: Stellar-Conduct</color> and <color=#FFD780FF>Radiance: Stellar Swirl</color> are both considered <color=#FFD780FF>Radiance: Stellar Glimmer</color> states.\\nCharacters can only be affected by one Radiance state at any one time, and where more than one state can be triggered, <color=#FFD780FF>Radiance: Stellar-Conduct</color> shall apply first.",
+            "name": "Radiance: Stellar Glimmer",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "sha256": "7a11214b0e3e40ef40d07170041a2819f629e751151fb946e9a490df88ca3adc",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/hyperlink.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "11130002": {
+            "color": "",
+            "desc": "上限为150点。基于伊法持有的救援要义，每1点救援要义会使队伍中附近的角色触发的扩散反应与感电反应造成的伤害提升1.5%，月感电反应造成的伤害提升0.2%，星扩散反应造成的伤害提升{PARAM#P1132101|5S100}%。救援要义将在伊法的夜魂加持结束时被移除。",
+            "name": "救援要义",
+            "param": [
+              "150",
+              "0.015",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11130007": {
+            "color": "",
+            "desc": "队伍中附近的角色对敌人触发冻结、超导、星超导、冰元素扩散、星扩散或冰元素结晶反应时，将在敌人附近创造一枚虚境裂隙。该效果每2.5秒至多触发一次，场上至多存在3枚丝柯克自己创造的虚境裂隙。\\n\\n丝柯克可以通过以下方式，汲取附近一定范围内的虚境裂隙：\\n·在七相一闪模式下进行的重击命中敌人时；\\n·施放七相一闪模式下的特殊元素爆发<color=#FFD780FF>极恶技·尽</color>时；\\n·长按施放元素战技<color=#FFD780FF>极恶技·闪</color>进行快速移动时。\\n\\n每汲取一枚虚境裂隙，丝柯克将获得8点蛇之狡谋。",
+            "name": "理外之理",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11320001": {
+            "color": "",
+            "desc": "值得信任的追猎魔女好伙伴！在一定条件下可以发生元素转化，所有原本由「狩灾誓锤」造成的伤害，都会转为对敌人造成对应元素类型的伤害。\\n布伦妮可以通过以下方式，召唤出发生元素转化的「狩灾誓锤」：\\n·布伦妮施放元素战技<color=#FFD780FF>叮铃铃·猎魔之音</color>对敌人触发扩散或星扩散反应后的一定时间内，可以施放特殊的元素战技<color=#FFD780FF>咚锵锵·裁魔之惩</color>；施放该特殊元素战技时，「狩灾誓锤」将会转化为参与先前扩散或星扩散反应的其他元素类型。\\n·解锁突破天赋「裁断追惩」后，如果处于「寻猎」模式下的「诱巫饵铃」对敌人触发了扩散或星扩散反应，则会召唤出一柄依据本次扩散或星扩散反应进行元素转化的「狩灾誓锤」对敌人进行攻击。",
+            "name": "狩灾誓锤",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500002": {
+            "color": "",
+            "desc": "奥黛塔的特殊元素战技，对附近的敌人持续造成<color=#99FFFFFF>冰元素范围伤害</color>，并在共舞结束时，造成一次视为星超导反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。共舞时，奥黛塔可以控制舞步的方向。\\n<color=#FFD780FF>辉映·星烁</color>：共舞结束时，改为造成一次视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。\\n\\n此外，施放特殊元素战技<color=#FFD780FF>柔板·破晓终奏</color>后，在<color=#FFD780FF>独舞倒影</color>剩余持续时间内，若奥黛塔处于<color=#FFD780FF>辉映·星烁</color>状态，则<color=#FFD780FF>独舞倒影</color>的两种舞步还会额外造成视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。",
+            "name": "柔板·破晓终奏",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500003": {
+            "color": "",
+            "desc": "解锁突破天赋「获选者的春祭」后，奥黛塔召唤<color=#FFD780FF>独舞倒影</color>时将会获得的特殊效果。\\n每层<color=#FFD780FF>华彩</color>都会使角色造成的星烁反应伤害提升15%，持续至<color=#FFD780FF>独舞倒影</color>退场或重新召唤<color=#FFD780FF>独舞倒影</color>。\\n当奥黛塔处于队伍后台时，奥黛塔每秒会清除1层<color=#FFD780FF>华彩</color>，并使队伍中附近的其他角色获得对应层数的<color=#FFD780FF>华彩</color>。",
+            "name": "华彩",
+            "param": [
+              "0.15",
+              "1",
+              "",
+              "",
+              ""
+            ]
+          },
+          "11500004": {
+            "color": "",
+            "desc": "<color=#FFD780FF>辉映·星超导</color>与<color=#FFD780FF>辉映·星扩散</color>统称为<color=#FFD780FF>辉映·星烁</color>状态。\\n角色同时只能受到一种辉映状态影响，且优先被<color=#FFD780FF>辉映·星超导</color>影响。",
+            "name": "辉映·星烁",
+            "param": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        "sha256": "da9afb26c50272a5eabb6458045d8311d1bcd12473b6cf0eff589f4e61b82bd4",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/hyperlink.json"
+      }
+    }
+  }
+}

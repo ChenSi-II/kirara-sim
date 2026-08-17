@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "ateaspoonoftranscendence",
+      "override_id": "12516",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "ateaspoonoftranscendence",
+    "id": "12516",
+    "lunaris_id": "12516"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 47.537,
+            "levels": {
+              "1": 1,
+              "10": 1.837,
+              "100": 11.397,
+              "11": 1.933,
+              "12": 2.028,
+              "13": 2.124,
+              "14": 2.22,
+              "15": 2.317,
+              "16": 2.414,
+              "17": 2.511,
+              "18": 2.608,
+              "19": 2.706,
+              "2": 1.091,
+              "20": 2.804,
+              "21": 2.903,
+              "22": 3.002,
+              "23": 3.101,
+              "24": 3.2,
+              "25": 3.3,
+              "26": 3.4,
+              "27": 3.5,
+              "28": 3.601,
+              "29": 3.701,
+              "3": 1.183,
+              "30": 3.803,
+              "31": 3.904,
+              "32": 4.005,
+              "33": 4.107,
+              "34": 4.209,
+              "35": 4.312,
+              "36": 4.414,
+              "37": 4.517,
+              "38": 4.62,
+              "39": 4.723,
+              "4": 1.275,
+              "40": 4.827,
+              "41": 4.931,
+              "42": 5.035,
+              "43": 5.139,
+              "44": 5.243,
+              "45": 5.348,
+              "46": 5.453,
+              "47": 5.558,
+              "48": 5.663,
+              "49": 5.768,
+              "5": 1.368,
+              "50": 5.874,
+              "51": 5.98,
+              "52": 6.086,
+              "53": 6.192,
+              "54": 6.299,
+              "55": 6.406,
+              "56": 6.513,
+              "57": 6.62,
+              "58": 6.727,
+              "59": 6.835,
+              "6": 1.461,
+              "60": 6.942,
+              "61": 7.05,
+              "62": 7.158,
+              "63": 7.267,
+              "64": 7.375,
+              "65": 7.484,
+              "66": 7.592,
+              "67": 7.701,
+              "68": 7.811,
+              "69": 7.92,
+              "7": 1.554,
+              "70": 8.03,
+              "71": 8.139,
+              "72": 8.249,
+              "73": 8.359,
+              "74": 8.47,
+              "75": 8.58,
+              "76": 8.691,
+              "77": 8.802,
+              "78": 8.913,
+              "79": 9.024,
+              "8": 1.648,
+              "80": 9.135,
+              "81": 9.247,
+              "82": 9.358,
+              "83": 9.47,
+              "84": 9.582,
+              "85": 9.694,
+              "86": 9.807,
+              "87": 9.919,
+              "88": 10.032,
+              "89": 10.145,
+              "9": 1.743,
+              "90": 10.258,
+              "91": 10.371,
+              "92": 10.485,
+              "93": 10.598,
+              "94": 10.712,
+              "95": 10.826,
+              "96": 10.94,
+              "97": 11.054,
+              "98": 11.168,
+              "99": 11.283
+            }
+          },
+          "fight_prop_critical_hurt": {
+            "base": 0.096,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 47.537,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_302"
+          },
+          {
+            "init_value": 0.096,
+            "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+            "type": "GROW_CURVE_CRITICAL_301"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Claymore_CrystallineSword",
+        "name": "A Teaspoon of Transcendence",
+        "rarity": 5,
+        "weapon_type": "WEAPON_CLAYMORE"
+      },
+      "refinements": {
+        "1": {
+          "desc": "ATK is increased by <color=#99FFFFFF>28%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>16%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+          "name": "White Fairy's Queening",
+          "param_list": [
+            0.28,
+            0.16,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "ATK is increased by <color=#99FFFFFF>35%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>20%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+          "name": "White Fairy's Queening",
+          "param_list": [
+            0.35,
+            0.2,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "ATK is increased by <color=#99FFFFFF>42%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>24%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+          "name": "White Fairy's Queening",
+          "param_list": [
+            0.42,
+            0.24,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "ATK is increased by <color=#99FFFFFF>49%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>28%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+          "name": "White Fairy's Queening",
+          "param_list": [
+            0.49,
+            0.28,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "ATK is increased by <color=#99FFFFFF>56%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>32%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+          "name": "White Fairy's Queening",
+          "param_list": [
+            0.56,
+            0.32,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "live",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            0.2800000011920929,
+            0.1599999964237213,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            0.3499999940395355,
+            0.20000000298023224,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            0.41999998688697815,
+            0.23999999463558197,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            0.49000000953674316,
+            0.2800000011920929,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            0.5600000023841858,
+            0.3199999928474426,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            0.28,
+            0.16,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0.35,
+            0.2,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0.42,
+            0.24,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            0.49,
+            0.28,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            0.56,
+            0.32,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "A Teaspoon of Transcendence",
+        "nanoka": "A Teaspoon of Transcendence"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_ORANGE",
+        "nanoka": "QUALITY_ORANGE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_CLAYMORE",
+        "nanoka": "WEAPON_CLAYMORE"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "A Teaspoon of Transcendence",
+          "passive": {
+            "name": "White Fairy's Queening",
+            "refinements": {
+              "1": {
+                "description": "ATK is increased by 28%.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by 16% for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+                "params": [
+                  0.2800000011920929,
+                  0.1599999964237213,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "ATK is increased by 35%.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by 20% for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+                "params": [
+                  0.3499999940395355,
+                  0.20000000298023224,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "ATK is increased by 42%.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by 24% for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+                "params": [
+                  0.41999998688697815,
+                  0.23999999463558197,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "ATK is increased by 49%.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by 28% for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+                "params": [
+                  0.49000000953674316,
+                  0.2800000011920929,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "ATK is increased by 56%.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by 32% for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+                "params": [
+                  0.5600000023841858,
+                  0.3199999928474426,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT DMG%": 9.6,
+              "atk": 48
+            },
+            "10": {
+              "CRIT DMG%": 13.1,
+              "atk": 87
+            },
+            "11": {
+              "CRIT DMG%": 13.1,
+              "atk": 92
+            },
+            "12": {
+              "CRIT DMG%": 13.1,
+              "atk": 96
+            },
+            "13": {
+              "CRIT DMG%": 13.1,
+              "atk": 101
+            },
+            "14": {
+              "CRIT DMG%": 13.1,
+              "atk": 106
+            },
+            "15": {
+              "CRIT DMG%": 15.0,
+              "atk": 110
+            },
+            "16": {
+              "CRIT DMG%": 15.0,
+              "atk": 115
+            },
+            "17": {
+              "CRIT DMG%": 15.0,
+              "atk": 119
+            },
+            "18": {
+              "CRIT DMG%": 15.0,
+              "atk": 124
+            },
+            "19": {
+              "CRIT DMG%": 15.0,
+              "atk": 129
+            },
+            "2": {
+              "CRIT DMG%": 9.6,
+              "atk": 52
+            },
+            "20": {
+              "CRIT DMG%": 17.0,
+              "atk": 133
+            },
+            "21": {
+              "CRIT DMG%": 17.0,
+              "atk": 169
+            },
+            "22": {
+              "CRIT DMG%": 17.0,
+              "atk": 174
+            },
+            "23": {
+              "CRIT DMG%": 17.0,
+              "atk": 179
+            },
+            "24": {
+              "CRIT DMG%": 17.0,
+              "atk": 183
+            },
+            "25": {
+              "CRIT DMG%": 18.9,
+              "atk": 188
+            },
+            "26": {
+              "CRIT DMG%": 18.9,
+              "atk": 193
+            },
+            "27": {
+              "CRIT DMG%": 18.9,
+              "atk": 197
+            },
+            "28": {
+              "CRIT DMG%": 18.9,
+              "atk": 202
+            },
+            "29": {
+              "CRIT DMG%": 18.9,
+              "atk": 207
+            },
+            "3": {
+              "CRIT DMG%": 9.6,
+              "atk": 56
+            },
+            "30": {
+              "CRIT DMG%": 20.8,
+              "atk": 212
+            },
+            "31": {
+              "CRIT DMG%": 20.8,
+              "atk": 217
+            },
+            "32": {
+              "CRIT DMG%": 20.8,
+              "atk": 221
+            },
+            "33": {
+              "CRIT DMG%": 20.8,
+              "atk": 226
+            },
+            "34": {
+              "CRIT DMG%": 20.8,
+              "atk": 231
+            },
+            "35": {
+              "CRIT DMG%": 22.8,
+              "atk": 236
+            },
+            "36": {
+              "CRIT DMG%": 22.8,
+              "atk": 241
+            },
+            "37": {
+              "CRIT DMG%": 22.8,
+              "atk": 246
+            },
+            "38": {
+              "CRIT DMG%": 22.8,
+              "atk": 251
+            },
+            "39": {
+              "CRIT DMG%": 22.8,
+              "atk": 256
+            },
+            "4": {
+              "CRIT DMG%": 9.6,
+              "atk": 61
+            },
+            "40": {
+              "CRIT DMG%": 24.7,
+              "atk": 261
+            },
+            "41": {
+              "CRIT DMG%": 24.7,
+              "atk": 297
+            },
+            "42": {
+              "CRIT DMG%": 24.7,
+              "atk": 302
+            },
+            "43": {
+              "CRIT DMG%": 24.7,
+              "atk": 306
+            },
+            "44": {
+              "CRIT DMG%": 24.7,
+              "atk": 311
+            },
+            "45": {
+              "CRIT DMG%": 26.7,
+              "atk": 316
+            },
+            "46": {
+              "CRIT DMG%": 26.7,
+              "atk": 321
+            },
+            "47": {
+              "CRIT DMG%": 26.7,
+              "atk": 326
+            },
+            "48": {
+              "CRIT DMG%": 26.7,
+              "atk": 331
+            },
+            "49": {
+              "CRIT DMG%": 26.7,
+              "atk": 336
+            },
+            "5": {
+              "CRIT DMG%": 11.2,
+              "atk": 65
+            },
+            "50": {
+              "CRIT DMG%": 28.6,
+              "atk": 341
+            },
+            "51": {
+              "CRIT DMG%": 28.6,
+              "atk": 378
+            },
+            "52": {
+              "CRIT DMG%": 28.6,
+              "atk": 383
+            },
+            "53": {
+              "CRIT DMG%": 28.6,
+              "atk": 388
+            },
+            "54": {
+              "CRIT DMG%": 28.6,
+              "atk": 393
+            },
+            "55": {
+              "CRIT DMG%": 30.5,
+              "atk": 398
+            },
+            "56": {
+              "CRIT DMG%": 30.5,
+              "atk": 403
+            },
+            "57": {
+              "CRIT DMG%": 30.5,
+              "atk": 408
+            },
+            "58": {
+              "CRIT DMG%": 30.5,
+              "atk": 413
+            },
+            "59": {
+              "CRIT DMG%": 30.5,
+              "atk": 418
+            },
+            "6": {
+              "CRIT DMG%": 11.2,
+              "atk": 69
+            },
+            "60": {
+              "CRIT DMG%": 32.5,
+              "atk": 423
+            },
+            "61": {
+              "CRIT DMG%": 32.5,
+              "atk": 460
+            },
+            "62": {
+              "CRIT DMG%": 32.5,
+              "atk": 465
+            },
+            "63": {
+              "CRIT DMG%": 32.5,
+              "atk": 470
+            },
+            "64": {
+              "CRIT DMG%": 32.5,
+              "atk": 475
+            },
+            "65": {
+              "CRIT DMG%": 34.4,
+              "atk": 480
+            },
+            "66": {
+              "CRIT DMG%": 34.4,
+              "atk": 485
+            },
+            "67": {
+              "CRIT DMG%": 34.4,
+              "atk": 491
+            },
+            "68": {
+              "CRIT DMG%": 34.4,
+              "atk": 496
+            },
+            "69": {
+              "CRIT DMG%": 34.4,
+              "atk": 501
+            },
+            "7": {
+              "CRIT DMG%": 11.2,
+              "atk": 74
+            },
+            "70": {
+              "CRIT DMG%": 36.3,
+              "atk": 506
+            },
+            "71": {
+              "CRIT DMG%": 36.3,
+              "atk": 543
+            },
+            "72": {
+              "CRIT DMG%": 36.3,
+              "atk": 548
+            },
+            "73": {
+              "CRIT DMG%": 36.3,
+              "atk": 553
+            },
+            "74": {
+              "CRIT DMG%": 36.3,
+              "atk": 558
+            },
+            "75": {
+              "CRIT DMG%": 38.3,
+              "atk": 563
+            },
+            "76": {
+              "CRIT DMG%": 38.3,
+              "atk": 569
+            },
+            "77": {
+              "CRIT DMG%": 38.3,
+              "atk": 574
+            },
+            "78": {
+              "CRIT DMG%": 38.3,
+              "atk": 579
+            },
+            "79": {
+              "CRIT DMG%": 38.3,
+              "atk": 585
+            },
+            "8": {
+              "CRIT DMG%": 11.2,
+              "atk": 78
+            },
+            "80": {
+              "CRIT DMG%": 40.2,
+              "atk": 590
+            },
+            "81": {
+              "CRIT DMG%": 40.2,
+              "atk": 626
+            },
+            "82": {
+              "CRIT DMG%": 40.2,
+              "atk": 632
+            },
+            "83": {
+              "CRIT DMG%": 40.2,
+              "atk": 637
+            },
+            "84": {
+              "CRIT DMG%": 40.2,
+              "atk": 642
+            },
+            "85": {
+              "CRIT DMG%": 42.2,
+              "atk": 648
+            },
+            "86": {
+              "CRIT DMG%": 42.2,
+              "atk": 653
+            },
+            "87": {
+              "CRIT DMG%": 42.2,
+              "atk": 658
+            },
+            "88": {
+              "CRIT DMG%": 42.2,
+              "atk": 664
+            },
+            "89": {
+              "CRIT DMG%": 42.2,
+              "atk": 669
+            },
+            "9": {
+              "CRIT DMG%": 11.2,
+              "atk": 83
+            },
+            "90": {
+              "CRIT DMG%": 44.1,
+              "atk": 674
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_CrystallineSword",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "338d60026d5f964d6f8805bd1a62cf15a829ab58836234ce19161ec6e106c6fb",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/12516.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "超越之匙",
+          "passive": {
+            "name": "白女皇的升变",
+            "refinements": {
+              "1": {
+                "description": "攻击力提升28%。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升16%，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+                "params": [
+                  0.2800000011920929,
+                  0.1599999964237213,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "攻击力提升35%。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升20%，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+                "params": [
+                  0.3499999940395355,
+                  0.20000000298023224,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "攻击力提升42%。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升24%，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+                "params": [
+                  0.41999998688697815,
+                  0.23999999463558197,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "攻击力提升49%。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升28%，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+                "params": [
+                  0.49000000953674316,
+                  0.2800000011920929,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "攻击力提升56%。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升32%，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+                "params": [
+                  0.5600000023841858,
+                  0.3199999928474426,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT DMG%": 9.6,
+              "atk": 48
+            },
+            "10": {
+              "CRIT DMG%": 13.1,
+              "atk": 87
+            },
+            "11": {
+              "CRIT DMG%": 13.1,
+              "atk": 92
+            },
+            "12": {
+              "CRIT DMG%": 13.1,
+              "atk": 96
+            },
+            "13": {
+              "CRIT DMG%": 13.1,
+              "atk": 101
+            },
+            "14": {
+              "CRIT DMG%": 13.1,
+              "atk": 106
+            },
+            "15": {
+              "CRIT DMG%": 15.0,
+              "atk": 110
+            },
+            "16": {
+              "CRIT DMG%": 15.0,
+              "atk": 115
+            },
+            "17": {
+              "CRIT DMG%": 15.0,
+              "atk": 119
+            },
+            "18": {
+              "CRIT DMG%": 15.0,
+              "atk": 124
+            },
+            "19": {
+              "CRIT DMG%": 15.0,
+              "atk": 129
+            },
+            "2": {
+              "CRIT DMG%": 9.6,
+              "atk": 52
+            },
+            "20": {
+              "CRIT DMG%": 17.0,
+              "atk": 133
+            },
+            "21": {
+              "CRIT DMG%": 17.0,
+              "atk": 169
+            },
+            "22": {
+              "CRIT DMG%": 17.0,
+              "atk": 174
+            },
+            "23": {
+              "CRIT DMG%": 17.0,
+              "atk": 179
+            },
+            "24": {
+              "CRIT DMG%": 17.0,
+              "atk": 183
+            },
+            "25": {
+              "CRIT DMG%": 18.9,
+              "atk": 188
+            },
+            "26": {
+              "CRIT DMG%": 18.9,
+              "atk": 193
+            },
+            "27": {
+              "CRIT DMG%": 18.9,
+              "atk": 197
+            },
+            "28": {
+              "CRIT DMG%": 18.9,
+              "atk": 202
+            },
+            "29": {
+              "CRIT DMG%": 18.9,
+              "atk": 207
+            },
+            "3": {
+              "CRIT DMG%": 9.6,
+              "atk": 56
+            },
+            "30": {
+              "CRIT DMG%": 20.8,
+              "atk": 212
+            },
+            "31": {
+              "CRIT DMG%": 20.8,
+              "atk": 217
+            },
+            "32": {
+              "CRIT DMG%": 20.8,
+              "atk": 221
+            },
+            "33": {
+              "CRIT DMG%": 20.8,
+              "atk": 226
+            },
+            "34": {
+              "CRIT DMG%": 20.8,
+              "atk": 231
+            },
+            "35": {
+              "CRIT DMG%": 22.8,
+              "atk": 236
+            },
+            "36": {
+              "CRIT DMG%": 22.8,
+              "atk": 241
+            },
+            "37": {
+              "CRIT DMG%": 22.8,
+              "atk": 246
+            },
+            "38": {
+              "CRIT DMG%": 22.8,
+              "atk": 251
+            },
+            "39": {
+              "CRIT DMG%": 22.8,
+              "atk": 256
+            },
+            "4": {
+              "CRIT DMG%": 9.6,
+              "atk": 61
+            },
+            "40": {
+              "CRIT DMG%": 24.7,
+              "atk": 261
+            },
+            "41": {
+              "CRIT DMG%": 24.7,
+              "atk": 297
+            },
+            "42": {
+              "CRIT DMG%": 24.7,
+              "atk": 302
+            },
+            "43": {
+              "CRIT DMG%": 24.7,
+              "atk": 306
+            },
+            "44": {
+              "CRIT DMG%": 24.7,
+              "atk": 311
+            },
+            "45": {
+              "CRIT DMG%": 26.7,
+              "atk": 316
+            },
+            "46": {
+              "CRIT DMG%": 26.7,
+              "atk": 321
+            },
+            "47": {
+              "CRIT DMG%": 26.7,
+              "atk": 326
+            },
+            "48": {
+              "CRIT DMG%": 26.7,
+              "atk": 331
+            },
+            "49": {
+              "CRIT DMG%": 26.7,
+              "atk": 336
+            },
+            "5": {
+              "CRIT DMG%": 11.2,
+              "atk": 65
+            },
+            "50": {
+              "CRIT DMG%": 28.6,
+              "atk": 341
+            },
+            "51": {
+              "CRIT DMG%": 28.6,
+              "atk": 378
+            },
+            "52": {
+              "CRIT DMG%": 28.6,
+              "atk": 383
+            },
+            "53": {
+              "CRIT DMG%": 28.6,
+              "atk": 388
+            },
+            "54": {
+              "CRIT DMG%": 28.6,
+              "atk": 393
+            },
+            "55": {
+              "CRIT DMG%": 30.5,
+              "atk": 398
+            },
+            "56": {
+              "CRIT DMG%": 30.5,
+              "atk": 403
+            },
+            "57": {
+              "CRIT DMG%": 30.5,
+              "atk": 408
+            },
+            "58": {
+              "CRIT DMG%": 30.5,
+              "atk": 413
+            },
+            "59": {
+              "CRIT DMG%": 30.5,
+              "atk": 418
+            },
+            "6": {
+              "CRIT DMG%": 11.2,
+              "atk": 69
+            },
+            "60": {
+              "CRIT DMG%": 32.5,
+              "atk": 423
+            },
+            "61": {
+              "CRIT DMG%": 32.5,
+              "atk": 460
+            },
+            "62": {
+              "CRIT DMG%": 32.5,
+              "atk": 465
+            },
+            "63": {
+              "CRIT DMG%": 32.5,
+              "atk": 470
+            },
+            "64": {
+              "CRIT DMG%": 32.5,
+              "atk": 475
+            },
+            "65": {
+              "CRIT DMG%": 34.4,
+              "atk": 480
+            },
+            "66": {
+              "CRIT DMG%": 34.4,
+              "atk": 485
+            },
+            "67": {
+              "CRIT DMG%": 34.4,
+              "atk": 491
+            },
+            "68": {
+              "CRIT DMG%": 34.4,
+              "atk": 496
+            },
+            "69": {
+              "CRIT DMG%": 34.4,
+              "atk": 501
+            },
+            "7": {
+              "CRIT DMG%": 11.2,
+              "atk": 74
+            },
+            "70": {
+              "CRIT DMG%": 36.3,
+              "atk": 506
+            },
+            "71": {
+              "CRIT DMG%": 36.3,
+              "atk": 543
+            },
+            "72": {
+              "CRIT DMG%": 36.3,
+              "atk": 548
+            },
+            "73": {
+              "CRIT DMG%": 36.3,
+              "atk": 553
+            },
+            "74": {
+              "CRIT DMG%": 36.3,
+              "atk": 558
+            },
+            "75": {
+              "CRIT DMG%": 38.3,
+              "atk": 563
+            },
+            "76": {
+              "CRIT DMG%": 38.3,
+              "atk": 569
+            },
+            "77": {
+              "CRIT DMG%": 38.3,
+              "atk": 574
+            },
+            "78": {
+              "CRIT DMG%": 38.3,
+              "atk": 579
+            },
+            "79": {
+              "CRIT DMG%": 38.3,
+              "atk": 585
+            },
+            "8": {
+              "CRIT DMG%": 11.2,
+              "atk": 78
+            },
+            "80": {
+              "CRIT DMG%": 40.2,
+              "atk": 590
+            },
+            "81": {
+              "CRIT DMG%": 40.2,
+              "atk": 626
+            },
+            "82": {
+              "CRIT DMG%": 40.2,
+              "atk": 632
+            },
+            "83": {
+              "CRIT DMG%": 40.2,
+              "atk": 637
+            },
+            "84": {
+              "CRIT DMG%": 40.2,
+              "atk": 642
+            },
+            "85": {
+              "CRIT DMG%": 42.2,
+              "atk": 648
+            },
+            "86": {
+              "CRIT DMG%": 42.2,
+              "atk": 653
+            },
+            "87": {
+              "CRIT DMG%": 42.2,
+              "atk": 658
+            },
+            "88": {
+              "CRIT DMG%": 42.2,
+              "atk": 664
+            },
+            "89": {
+              "CRIT DMG%": 42.2,
+              "atk": 669
+            },
+            "9": {
+              "CRIT DMG%": 11.2,
+              "atk": 83
+            },
+            "90": {
+              "CRIT DMG%": 44.1,
+              "atk": 674
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Claymore_CrystallineSword",
+          "weaponType": "WEAPON_CLAYMORE"
+        },
+        "sha256": "1b987a81ca021dd8651a92dff1e33da5c7c9312c55710a4e2eb5f8c45ff1738b",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/12516.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_CrystallineSword",
+          "name": "A Teaspoon of Transcendence",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "ATK is increased by <color=#99FFFFFF>28%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>16%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+              "name": "White Fairy's Queening",
+              "param_list": [
+                0.28,
+                0.16,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "ATK is increased by <color=#99FFFFFF>35%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>20%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+              "name": "White Fairy's Queening",
+              "param_list": [
+                0.35,
+                0.2,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "ATK is increased by <color=#99FFFFFF>42%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>24%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+              "name": "White Fairy's Queening",
+              "param_list": [
+                0.42,
+                0.24,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "ATK is increased by <color=#99FFFFFF>49%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>28%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+              "name": "White Fairy's Queening",
+              "param_list": [
+                0.49,
+                0.28,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "ATK is increased by <color=#99FFFFFF>56%</color>.\\nAdditionally, each time the equipping character hits an opponent with their Charged Attack, they attain \"Transcendence\" for a short time: their Stellar-Conduct and Stellar Swirl reaction DMG is increased by <color=#99FFFFFF>32%</color> for 5s. This effect can stack once every 0.2s, max 3 stacks.",
+              "name": "White Fairy's Queening",
+              "param_list": [
+                0.56,
+                0.32,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 47.537,
+              "levels": {
+                "1": 1,
+                "10": 1.837,
+                "100": 11.397,
+                "11": 1.933,
+                "12": 2.028,
+                "13": 2.124,
+                "14": 2.22,
+                "15": 2.317,
+                "16": 2.414,
+                "17": 2.511,
+                "18": 2.608,
+                "19": 2.706,
+                "2": 1.091,
+                "20": 2.804,
+                "21": 2.903,
+                "22": 3.002,
+                "23": 3.101,
+                "24": 3.2,
+                "25": 3.3,
+                "26": 3.4,
+                "27": 3.5,
+                "28": 3.601,
+                "29": 3.701,
+                "3": 1.183,
+                "30": 3.803,
+                "31": 3.904,
+                "32": 4.005,
+                "33": 4.107,
+                "34": 4.209,
+                "35": 4.312,
+                "36": 4.414,
+                "37": 4.517,
+                "38": 4.62,
+                "39": 4.723,
+                "4": 1.275,
+                "40": 4.827,
+                "41": 4.931,
+                "42": 5.035,
+                "43": 5.139,
+                "44": 5.243,
+                "45": 5.348,
+                "46": 5.453,
+                "47": 5.558,
+                "48": 5.663,
+                "49": 5.768,
+                "5": 1.368,
+                "50": 5.874,
+                "51": 5.98,
+                "52": 6.086,
+                "53": 6.192,
+                "54": 6.299,
+                "55": 6.406,
+                "56": 6.513,
+                "57": 6.62,
+                "58": 6.727,
+                "59": 6.835,
+                "6": 1.461,
+                "60": 6.942,
+                "61": 7.05,
+                "62": 7.158,
+                "63": 7.267,
+                "64": 7.375,
+                "65": 7.484,
+                "66": 7.592,
+                "67": 7.701,
+                "68": 7.811,
+                "69": 7.92,
+                "7": 1.554,
+                "70": 8.03,
+                "71": 8.139,
+                "72": 8.249,
+                "73": 8.359,
+                "74": 8.47,
+                "75": 8.58,
+                "76": 8.691,
+                "77": 8.802,
+                "78": 8.913,
+                "79": 9.024,
+                "8": 1.648,
+                "80": 9.135,
+                "81": 9.247,
+                "82": 9.358,
+                "83": 9.47,
+                "84": 9.582,
+                "85": 9.694,
+                "86": 9.807,
+                "87": 9.919,
+                "88": 10.032,
+                "89": 10.145,
+                "9": 1.743,
+                "90": 10.258,
+                "91": 10.371,
+                "92": 10.485,
+                "93": 10.598,
+                "94": 10.712,
+                "95": 10.826,
+                "96": 10.94,
+                "97": 11.054,
+                "98": 11.168,
+                "99": 11.283
+              }
+            },
+            "fight_prop_critical_hurt": {
+              "base": 0.096,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 47.537,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+              "init_value": 0.096,
+              "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "c56cccfa63698ecec01a9fa44c3bb34f679ef984d13bd315aee9dc0d5507b134",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/12516.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Claymore_CrystallineSword",
+          "name": "超越之匙",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "攻击力提升<color=#99FFFFFF>28%</color>。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升<color=#99FFFFFF>16%</color>，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+              "name": "白女皇的升变",
+              "param_list": [
+                0.28,
+                0.16,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "攻击力提升<color=#99FFFFFF>35%</color>。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升<color=#99FFFFFF>20%</color>，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+              "name": "白女皇的升变",
+              "param_list": [
+                0.35,
+                0.2,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "攻击力提升<color=#99FFFFFF>42%</color>。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升<color=#99FFFFFF>24%</color>，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+              "name": "白女皇的升变",
+              "param_list": [
+                0.42,
+                0.24,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "攻击力提升<color=#99FFFFFF>49%</color>。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升<color=#99FFFFFF>28%</color>，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+              "name": "白女皇的升变",
+              "param_list": [
+                0.49,
+                0.28,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "攻击力提升<color=#99FFFFFF>56%</color>。\\n此外，装备者的重击每次命中敌人后，都会短暂达成「超越」：使装备者的星超导和星扩散反应伤害提升<color=#99FFFFFF>32%</color>，持续5秒。该效果至多叠加3层，每0.2秒至多叠加一层。",
+              "name": "白女皇的升变",
+              "param_list": [
+                0.56,
+                0.32,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 47.537,
+              "levels": {
+                "1": 1,
+                "10": 1.837,
+                "100": 11.397,
+                "11": 1.933,
+                "12": 2.028,
+                "13": 2.124,
+                "14": 2.22,
+                "15": 2.317,
+                "16": 2.414,
+                "17": 2.511,
+                "18": 2.608,
+                "19": 2.706,
+                "2": 1.091,
+                "20": 2.804,
+                "21": 2.903,
+                "22": 3.002,
+                "23": 3.101,
+                "24": 3.2,
+                "25": 3.3,
+                "26": 3.4,
+                "27": 3.5,
+                "28": 3.601,
+                "29": 3.701,
+                "3": 1.183,
+                "30": 3.803,
+                "31": 3.904,
+                "32": 4.005,
+                "33": 4.107,
+                "34": 4.209,
+                "35": 4.312,
+                "36": 4.414,
+                "37": 4.517,
+                "38": 4.62,
+                "39": 4.723,
+                "4": 1.275,
+                "40": 4.827,
+                "41": 4.931,
+                "42": 5.035,
+                "43": 5.139,
+                "44": 5.243,
+                "45": 5.348,
+                "46": 5.453,
+                "47": 5.558,
+                "48": 5.663,
+                "49": 5.768,
+                "5": 1.368,
+                "50": 5.874,
+                "51": 5.98,
+                "52": 6.086,
+                "53": 6.192,
+                "54": 6.299,
+                "55": 6.406,
+                "56": 6.513,
+                "57": 6.62,
+                "58": 6.727,
+                "59": 6.835,
+                "6": 1.461,
+                "60": 6.942,
+                "61": 7.05,
+                "62": 7.158,
+                "63": 7.267,
+                "64": 7.375,
+                "65": 7.484,
+                "66": 7.592,
+                "67": 7.701,
+                "68": 7.811,
+                "69": 7.92,
+                "7": 1.554,
+                "70": 8.03,
+                "71": 8.139,
+                "72": 8.249,
+                "73": 8.359,
+                "74": 8.47,
+                "75": 8.58,
+                "76": 8.691,
+                "77": 8.802,
+                "78": 8.913,
+                "79": 9.024,
+                "8": 1.648,
+                "80": 9.135,
+                "81": 9.247,
+                "82": 9.358,
+                "83": 9.47,
+                "84": 9.582,
+                "85": 9.694,
+                "86": 9.807,
+                "87": 9.919,
+                "88": 10.032,
+                "89": 10.145,
+                "9": 1.743,
+                "90": 10.258,
+                "91": 10.371,
+                "92": 10.485,
+                "93": 10.598,
+                "94": 10.712,
+                "95": 10.826,
+                "96": 10.94,
+                "97": 11.054,
+                "98": 11.168,
+                "99": 11.283
+              }
+            },
+            "fight_prop_critical_hurt": {
+              "base": 0.096,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 47.537,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_302"
+            },
+            {
+              "init_value": 0.096,
+              "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_CLAYMORE"
+        },
+        "sha256": "f67f97cabf3f55173de3c2dc18335660c4672ed8e2b290adbce3132b5aa35e71",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/12516.json"
+      }
+    }
+  }
+}

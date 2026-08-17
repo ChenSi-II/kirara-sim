@@ -1,0 +1,1964 @@
+{
+  "gcsim": {
+    "config_seed": {
+      "kind": "weapon",
+      "name": "lightbearingmoonshard",
+      "override_id": "11519",
+      "use": "pipeline"
+    },
+    "registered": false,
+    "status": "missing"
+  },
+  "identity": {
+    "gcsim_slug": "lightbearingmoonshard",
+    "id": "11519",
+    "lunaris_id": "11519"
+  },
+  "implementation_inputs": {
+    "confirmed": {
+      "base_stats": {
+        "stats_modifier": {
+          "atk": {
+            "base": 44.3358,
+            "levels": {
+              "1": 1,
+              "10": 1.709,
+              "100": 8.837,
+              "11": 1.787,
+              "12": 1.865,
+              "13": 1.942,
+              "14": 2.02,
+              "15": 2.098,
+              "16": 2.175,
+              "17": 2.253,
+              "18": 2.33,
+              "19": 2.408,
+              "2": 1.079,
+              "20": 2.485,
+              "21": 2.562,
+              "22": 2.639,
+              "23": 2.717,
+              "24": 2.794,
+              "25": 2.871,
+              "26": 2.948,
+              "27": 3.026,
+              "28": 3.103,
+              "29": 3.18,
+              "3": 1.159,
+              "30": 3.257,
+              "31": 3.334,
+              "32": 3.412,
+              "33": 3.489,
+              "34": 3.566,
+              "35": 3.644,
+              "36": 3.721,
+              "37": 3.798,
+              "38": 3.876,
+              "39": 3.953,
+              "4": 1.238,
+              "40": 4.031,
+              "41": 4.109,
+              "42": 4.186,
+              "43": 4.264,
+              "44": 4.342,
+              "45": 4.419,
+              "46": 4.497,
+              "47": 4.575,
+              "48": 4.653,
+              "49": 4.731,
+              "5": 1.317,
+              "50": 4.81,
+              "51": 4.888,
+              "52": 4.966,
+              "53": 5.044,
+              "54": 5.123,
+              "55": 5.201,
+              "56": 5.28,
+              "57": 5.359,
+              "58": 5.437,
+              "59": 5.516,
+              "6": 1.395,
+              "60": 5.595,
+              "61": 5.674,
+              "62": 5.753,
+              "63": 5.833,
+              "64": 5.912,
+              "65": 5.991,
+              "66": 6.071,
+              "67": 6.15,
+              "68": 6.23,
+              "69": 6.31,
+              "7": 1.474,
+              "70": 6.39,
+              "71": 6.47,
+              "72": 6.55,
+              "73": 6.63,
+              "74": 6.71,
+              "75": 6.791,
+              "76": 6.871,
+              "77": 6.952,
+              "78": 7.033,
+              "79": 7.113,
+              "8": 1.552,
+              "80": 7.194,
+              "81": 7.275,
+              "82": 7.357,
+              "83": 7.438,
+              "84": 7.519,
+              "85": 7.601,
+              "86": 7.682,
+              "87": 7.764,
+              "88": 7.846,
+              "89": 7.928,
+              "9": 1.631,
+              "90": 8.01,
+              "91": 8.092,
+              "92": 8.174,
+              "93": 8.257,
+              "94": 8.339,
+              "95": 8.422,
+              "96": 8.505,
+              "97": 8.588,
+              "98": 8.671,
+              "99": 8.754
+            }
+          },
+          "fight_prop_critical_hurt": {
+            "base": 0.192,
+            "levels": {
+              "1": 1,
+              "10": 1.363,
+              "100": 4.998,
+              "11": 1.363,
+              "12": 1.363,
+              "13": 1.363,
+              "14": 1.363,
+              "15": 1.565,
+              "16": 1.565,
+              "17": 1.565,
+              "18": 1.565,
+              "19": 1.565,
+              "2": 1,
+              "20": 1.767,
+              "21": 1.767,
+              "22": 1.767,
+              "23": 1.767,
+              "24": 1.767,
+              "25": 1.969,
+              "26": 1.969,
+              "27": 1.969,
+              "28": 1.969,
+              "29": 1.969,
+              "3": 1,
+              "30": 2.171,
+              "31": 2.171,
+              "32": 2.171,
+              "33": 2.171,
+              "34": 2.171,
+              "35": 2.373,
+              "36": 2.373,
+              "37": 2.373,
+              "38": 2.373,
+              "39": 2.373,
+              "4": 1,
+              "40": 2.575,
+              "41": 2.575,
+              "42": 2.575,
+              "43": 2.575,
+              "44": 2.575,
+              "45": 2.777,
+              "46": 2.777,
+              "47": 2.777,
+              "48": 2.777,
+              "49": 2.777,
+              "5": 1.162,
+              "50": 2.979,
+              "51": 2.979,
+              "52": 2.979,
+              "53": 2.979,
+              "54": 2.979,
+              "55": 3.181,
+              "56": 3.181,
+              "57": 3.181,
+              "58": 3.181,
+              "59": 3.181,
+              "6": 1.162,
+              "60": 3.383,
+              "61": 3.383,
+              "62": 3.383,
+              "63": 3.383,
+              "64": 3.383,
+              "65": 3.585,
+              "66": 3.585,
+              "67": 3.585,
+              "68": 3.585,
+              "69": 3.585,
+              "7": 1.162,
+              "70": 3.786,
+              "71": 3.786,
+              "72": 3.786,
+              "73": 3.786,
+              "74": 3.786,
+              "75": 3.988,
+              "76": 3.988,
+              "77": 3.988,
+              "78": 3.988,
+              "79": 3.988,
+              "8": 1.162,
+              "80": 4.19,
+              "81": 4.19,
+              "82": 4.19,
+              "83": 4.19,
+              "84": 4.19,
+              "85": 4.392,
+              "86": 4.392,
+              "87": 4.392,
+              "88": 4.392,
+              "89": 4.392,
+              "9": 1.162,
+              "90": 4.594,
+              "91": 4.594,
+              "92": 4.594,
+              "93": 4.594,
+              "94": 4.594,
+              "95": 4.796,
+              "96": 4.796,
+              "97": 4.796,
+              "98": 4.796,
+              "99": 4.796
+            }
+          }
+        },
+        "weapon_prop": [
+          {
+            "init_value": 44.3358,
+            "prop_type": "FIGHT_PROP_BASE_ATTACK",
+            "type": "GROW_CURVE_ATTACK_304"
+          },
+          {
+            "init_value": 0.192,
+            "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+            "type": "GROW_CURVE_CRITICAL_301"
+          }
+        ]
+      },
+      "identity": {
+        "icon": "UI_EquipIcon_Sword_SilverwareSaw",
+        "name": "Lightbearing Moonshard",
+        "rarity": 5,
+        "weapon_type": "WEAPON_SWORD_ONE_HAND"
+      },
+      "refinements": {
+        "1": {
+          "desc": "Increases DEF by <color=#99FFFFFF>20%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>64%</color> for 5s after the equipping character uses an Elemental Skill.",
+          "name": "Legacy of Lang-Gan",
+          "param_list": [
+            0.64,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "2": {
+          "desc": "Increases DEF by <color=#99FFFFFF>25%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>80%</color> for 5s after the equipping character uses an Elemental Skill.",
+          "name": "Legacy of Lang-Gan",
+          "param_list": [
+            0.8,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "3": {
+          "desc": "Increases DEF by <color=#99FFFFFF>30%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>96%</color> for 5s after the equipping character uses an Elemental Skill.",
+          "name": "Legacy of Lang-Gan",
+          "param_list": [
+            0.96,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "4": {
+          "desc": "Increases DEF by <color=#99FFFFFF>35%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>112%</color> for 5s after the equipping character uses an Elemental Skill.",
+          "name": "Legacy of Lang-Gan",
+          "param_list": [
+            1.12,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "5": {
+          "desc": "Increases DEF by <color=#99FFFFFF>40%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>128%</color> for 5s after the equipping character uses an Elemental Skill.",
+          "name": "Legacy of Lang-Gan",
+          "param_list": [
+            1.28,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "unresolved": [
+      "trigger ordering and target ownership where the passive text is ambiguous",
+      "whether duration and cooldown timers are extended by hitlag"
+    ]
+  },
+  "kind": "weapon",
+  "release_track": "live",
+  "schema_version": 1,
+  "source_comparison": {
+    "combat": {
+      "refinement_params": {
+        "agrees": true,
+        "lunaris": {
+          "1": [
+            0.6399999856948853,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "2": [
+            0.800000011920929,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "3": [
+            0.9599999785423279,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "4": [
+            1.1200000047683716,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "5": [
+            1.2799999713897705,
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nanoka": {
+          "1": [
+            0.64,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "2": [
+            0.8,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "3": [
+            0.96,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "4": [
+            1.12,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "5": [
+            1.28,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "identity": {
+      "name": {
+        "agrees": true,
+        "lunaris": "Lightbearing Moonshard",
+        "nanoka": "Lightbearing Moonshard"
+      },
+      "rarity": {
+        "agrees": true,
+        "lunaris": "QUALITY_ORANGE",
+        "nanoka": "QUALITY_ORANGE"
+      },
+      "weapon_type": {
+        "agrees": true,
+        "lunaris": "WEAPON_SWORD_ONE_HAND",
+        "nanoka": "WEAPON_SWORD_ONE_HAND"
+      }
+    }
+  },
+  "sources": {
+    "lunaris": {
+      "en": {
+        "payload": {
+          "name": "Lightbearing Moonshard",
+          "passive": {
+            "name": "Legacy of Lang-Gan",
+            "refinements": {
+              "1": {
+                "description": "Increases DEF by 20%. DMG inflicted by Lunar-Crystallize reactions increases by 64% for 5s after the equipping character uses an Elemental Skill.",
+                "params": [
+                  0.6399999856948853,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "Increases DEF by 25%. DMG inflicted by Lunar-Crystallize reactions increases by 80% for 5s after the equipping character uses an Elemental Skill.",
+                "params": [
+                  0.800000011920929,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "Increases DEF by 30%. DMG inflicted by Lunar-Crystallize reactions increases by 96% for 5s after the equipping character uses an Elemental Skill.",
+                "params": [
+                  0.9599999785423279,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "Increases DEF by 35%. DMG inflicted by Lunar-Crystallize reactions increases by 112% for 5s after the equipping character uses an Elemental Skill.",
+                "params": [
+                  1.1200000047683716,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "Increases DEF by 40%. DMG inflicted by Lunar-Crystallize reactions increases by 128% for 5s after the equipping character uses an Elemental Skill.",
+                "params": [
+                  1.2799999713897705,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT DMG%": 19.2,
+              "atk": 44
+            },
+            "10": {
+              "CRIT DMG%": 26.2,
+              "atk": 76
+            },
+            "11": {
+              "CRIT DMG%": 26.2,
+              "atk": 79
+            },
+            "12": {
+              "CRIT DMG%": 26.2,
+              "atk": 83
+            },
+            "13": {
+              "CRIT DMG%": 26.2,
+              "atk": 86
+            },
+            "14": {
+              "CRIT DMG%": 26.2,
+              "atk": 90
+            },
+            "15": {
+              "CRIT DMG%": 30.0,
+              "atk": 93
+            },
+            "16": {
+              "CRIT DMG%": 30.0,
+              "atk": 96
+            },
+            "17": {
+              "CRIT DMG%": 30.0,
+              "atk": 100
+            },
+            "18": {
+              "CRIT DMG%": 30.0,
+              "atk": 103
+            },
+            "19": {
+              "CRIT DMG%": 30.0,
+              "atk": 107
+            },
+            "2": {
+              "CRIT DMG%": 19.2,
+              "atk": 48
+            },
+            "20": {
+              "CRIT DMG%": 33.9,
+              "atk": 110
+            },
+            "21": {
+              "CRIT DMG%": 33.9,
+              "atk": 145
+            },
+            "22": {
+              "CRIT DMG%": 33.9,
+              "atk": 148
+            },
+            "23": {
+              "CRIT DMG%": 33.9,
+              "atk": 152
+            },
+            "24": {
+              "CRIT DMG%": 33.9,
+              "atk": 155
+            },
+            "25": {
+              "CRIT DMG%": 37.8,
+              "atk": 158
+            },
+            "26": {
+              "CRIT DMG%": 37.8,
+              "atk": 162
+            },
+            "27": {
+              "CRIT DMG%": 37.8,
+              "atk": 165
+            },
+            "28": {
+              "CRIT DMG%": 37.8,
+              "atk": 169
+            },
+            "29": {
+              "CRIT DMG%": 37.8,
+              "atk": 172
+            },
+            "3": {
+              "CRIT DMG%": 19.2,
+              "atk": 51
+            },
+            "30": {
+              "CRIT DMG%": 41.7,
+              "atk": 176
+            },
+            "31": {
+              "CRIT DMG%": 41.7,
+              "atk": 179
+            },
+            "32": {
+              "CRIT DMG%": 41.7,
+              "atk": 182
+            },
+            "33": {
+              "CRIT DMG%": 41.7,
+              "atk": 186
+            },
+            "34": {
+              "CRIT DMG%": 41.7,
+              "atk": 189
+            },
+            "35": {
+              "CRIT DMG%": 45.6,
+              "atk": 193
+            },
+            "36": {
+              "CRIT DMG%": 45.6,
+              "atk": 196
+            },
+            "37": {
+              "CRIT DMG%": 45.6,
+              "atk": 199
+            },
+            "38": {
+              "CRIT DMG%": 45.6,
+              "atk": 203
+            },
+            "39": {
+              "CRIT DMG%": 45.6,
+              "atk": 206
+            },
+            "4": {
+              "CRIT DMG%": 19.2,
+              "atk": 55
+            },
+            "40": {
+              "CRIT DMG%": 49.4,
+              "atk": 210
+            },
+            "41": {
+              "CRIT DMG%": 49.4,
+              "atk": 244
+            },
+            "42": {
+              "CRIT DMG%": 49.4,
+              "atk": 248
+            },
+            "43": {
+              "CRIT DMG%": 49.4,
+              "atk": 251
+            },
+            "44": {
+              "CRIT DMG%": 49.4,
+              "atk": 255
+            },
+            "45": {
+              "CRIT DMG%": 53.3,
+              "atk": 258
+            },
+            "46": {
+              "CRIT DMG%": 53.3,
+              "atk": 262
+            },
+            "47": {
+              "CRIT DMG%": 53.3,
+              "atk": 265
+            },
+            "48": {
+              "CRIT DMG%": 53.3,
+              "atk": 268
+            },
+            "49": {
+              "CRIT DMG%": 53.3,
+              "atk": 272
+            },
+            "5": {
+              "CRIT DMG%": 22.3,
+              "atk": 58
+            },
+            "50": {
+              "CRIT DMG%": 57.2,
+              "atk": 275
+            },
+            "51": {
+              "CRIT DMG%": 57.2,
+              "atk": 310
+            },
+            "52": {
+              "CRIT DMG%": 57.2,
+              "atk": 314
+            },
+            "53": {
+              "CRIT DMG%": 57.2,
+              "atk": 317
+            },
+            "54": {
+              "CRIT DMG%": 57.2,
+              "atk": 321
+            },
+            "55": {
+              "CRIT DMG%": 61.1,
+              "atk": 324
+            },
+            "56": {
+              "CRIT DMG%": 61.1,
+              "atk": 327
+            },
+            "57": {
+              "CRIT DMG%": 61.1,
+              "atk": 331
+            },
+            "58": {
+              "CRIT DMG%": 61.1,
+              "atk": 334
+            },
+            "59": {
+              "CRIT DMG%": 61.1,
+              "atk": 338
+            },
+            "6": {
+              "CRIT DMG%": 22.3,
+              "atk": 62
+            },
+            "60": {
+              "CRIT DMG%": 65.0,
+              "atk": 341
+            },
+            "61": {
+              "CRIT DMG%": 65.0,
+              "atk": 376
+            },
+            "62": {
+              "CRIT DMG%": 65.0,
+              "atk": 380
+            },
+            "63": {
+              "CRIT DMG%": 65.0,
+              "atk": 383
+            },
+            "64": {
+              "CRIT DMG%": 65.0,
+              "atk": 387
+            },
+            "65": {
+              "CRIT DMG%": 68.8,
+              "atk": 390
+            },
+            "66": {
+              "CRIT DMG%": 68.8,
+              "atk": 394
+            },
+            "67": {
+              "CRIT DMG%": 68.8,
+              "atk": 397
+            },
+            "68": {
+              "CRIT DMG%": 68.8,
+              "atk": 401
+            },
+            "69": {
+              "CRIT DMG%": 68.8,
+              "atk": 404
+            },
+            "7": {
+              "CRIT DMG%": 22.3,
+              "atk": 65
+            },
+            "70": {
+              "CRIT DMG%": 72.7,
+              "atk": 408
+            },
+            "71": {
+              "CRIT DMG%": 72.7,
+              "atk": 442
+            },
+            "72": {
+              "CRIT DMG%": 72.7,
+              "atk": 446
+            },
+            "73": {
+              "CRIT DMG%": 72.7,
+              "atk": 450
+            },
+            "74": {
+              "CRIT DMG%": 72.7,
+              "atk": 453
+            },
+            "75": {
+              "CRIT DMG%": 76.6,
+              "atk": 457
+            },
+            "76": {
+              "CRIT DMG%": 76.6,
+              "atk": 460
+            },
+            "77": {
+              "CRIT DMG%": 76.6,
+              "atk": 464
+            },
+            "78": {
+              "CRIT DMG%": 76.6,
+              "atk": 467
+            },
+            "79": {
+              "CRIT DMG%": 76.6,
+              "atk": 471
+            },
+            "8": {
+              "CRIT DMG%": 22.3,
+              "atk": 69
+            },
+            "80": {
+              "CRIT DMG%": 80.4,
+              "atk": 475
+            },
+            "81": {
+              "CRIT DMG%": 80.4,
+              "atk": 509
+            },
+            "82": {
+              "CRIT DMG%": 80.4,
+              "atk": 513
+            },
+            "83": {
+              "CRIT DMG%": 80.4,
+              "atk": 516
+            },
+            "84": {
+              "CRIT DMG%": 80.4,
+              "atk": 520
+            },
+            "85": {
+              "CRIT DMG%": 84.3,
+              "atk": 524
+            },
+            "86": {
+              "CRIT DMG%": 84.3,
+              "atk": 527
+            },
+            "87": {
+              "CRIT DMG%": 84.3,
+              "atk": 531
+            },
+            "88": {
+              "CRIT DMG%": 84.3,
+              "atk": 535
+            },
+            "89": {
+              "CRIT DMG%": 84.3,
+              "atk": 538
+            },
+            "9": {
+              "CRIT DMG%": 22.3,
+              "atk": 72
+            },
+            "90": {
+              "CRIT DMG%": 88.2,
+              "atk": 542
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_SilverwareSaw",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "0e7fe81b86911ddb946e81270608ee745b63cb2b03dfc5d0ecb1026b377fc629",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/en/weapon/11519.json"
+      },
+      "version": "6.7.54.2",
+      "zh": {
+        "payload": {
+          "name": "朏魄含光",
+          "passive": {
+            "name": "琅玕衍义",
+            "refinements": {
+              "1": {
+                "description": "防御力提高20%。装备者施放元素战技后的5秒内，月结晶反应伤害提升64%。",
+                "params": [
+                  0.6399999856948853,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "2": {
+                "description": "防御力提高25%。装备者施放元素战技后的5秒内，月结晶反应伤害提升80%。",
+                "params": [
+                  0.800000011920929,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "3": {
+                "description": "防御力提高30%。装备者施放元素战技后的5秒内，月结晶反应伤害提升96%。",
+                "params": [
+                  0.9599999785423279,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "4": {
+                "description": "防御力提高35%。装备者施放元素战技后的5秒内，月结晶反应伤害提升112%。",
+                "params": [
+                  1.1200000047683716,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "5": {
+                "description": "防御力提高40%。装备者施放元素战技后的5秒内，月结晶反应伤害提升128%。",
+                "params": [
+                  1.2799999713897705,
+                  5.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "qualityType": "QUALITY_ORANGE",
+          "stats": {
+            "1": {
+              "CRIT DMG%": 19.2,
+              "atk": 44
+            },
+            "10": {
+              "CRIT DMG%": 26.2,
+              "atk": 76
+            },
+            "11": {
+              "CRIT DMG%": 26.2,
+              "atk": 79
+            },
+            "12": {
+              "CRIT DMG%": 26.2,
+              "atk": 83
+            },
+            "13": {
+              "CRIT DMG%": 26.2,
+              "atk": 86
+            },
+            "14": {
+              "CRIT DMG%": 26.2,
+              "atk": 90
+            },
+            "15": {
+              "CRIT DMG%": 30.0,
+              "atk": 93
+            },
+            "16": {
+              "CRIT DMG%": 30.0,
+              "atk": 96
+            },
+            "17": {
+              "CRIT DMG%": 30.0,
+              "atk": 100
+            },
+            "18": {
+              "CRIT DMG%": 30.0,
+              "atk": 103
+            },
+            "19": {
+              "CRIT DMG%": 30.0,
+              "atk": 107
+            },
+            "2": {
+              "CRIT DMG%": 19.2,
+              "atk": 48
+            },
+            "20": {
+              "CRIT DMG%": 33.9,
+              "atk": 110
+            },
+            "21": {
+              "CRIT DMG%": 33.9,
+              "atk": 145
+            },
+            "22": {
+              "CRIT DMG%": 33.9,
+              "atk": 148
+            },
+            "23": {
+              "CRIT DMG%": 33.9,
+              "atk": 152
+            },
+            "24": {
+              "CRIT DMG%": 33.9,
+              "atk": 155
+            },
+            "25": {
+              "CRIT DMG%": 37.8,
+              "atk": 158
+            },
+            "26": {
+              "CRIT DMG%": 37.8,
+              "atk": 162
+            },
+            "27": {
+              "CRIT DMG%": 37.8,
+              "atk": 165
+            },
+            "28": {
+              "CRIT DMG%": 37.8,
+              "atk": 169
+            },
+            "29": {
+              "CRIT DMG%": 37.8,
+              "atk": 172
+            },
+            "3": {
+              "CRIT DMG%": 19.2,
+              "atk": 51
+            },
+            "30": {
+              "CRIT DMG%": 41.7,
+              "atk": 176
+            },
+            "31": {
+              "CRIT DMG%": 41.7,
+              "atk": 179
+            },
+            "32": {
+              "CRIT DMG%": 41.7,
+              "atk": 182
+            },
+            "33": {
+              "CRIT DMG%": 41.7,
+              "atk": 186
+            },
+            "34": {
+              "CRIT DMG%": 41.7,
+              "atk": 189
+            },
+            "35": {
+              "CRIT DMG%": 45.6,
+              "atk": 193
+            },
+            "36": {
+              "CRIT DMG%": 45.6,
+              "atk": 196
+            },
+            "37": {
+              "CRIT DMG%": 45.6,
+              "atk": 199
+            },
+            "38": {
+              "CRIT DMG%": 45.6,
+              "atk": 203
+            },
+            "39": {
+              "CRIT DMG%": 45.6,
+              "atk": 206
+            },
+            "4": {
+              "CRIT DMG%": 19.2,
+              "atk": 55
+            },
+            "40": {
+              "CRIT DMG%": 49.4,
+              "atk": 210
+            },
+            "41": {
+              "CRIT DMG%": 49.4,
+              "atk": 244
+            },
+            "42": {
+              "CRIT DMG%": 49.4,
+              "atk": 248
+            },
+            "43": {
+              "CRIT DMG%": 49.4,
+              "atk": 251
+            },
+            "44": {
+              "CRIT DMG%": 49.4,
+              "atk": 255
+            },
+            "45": {
+              "CRIT DMG%": 53.3,
+              "atk": 258
+            },
+            "46": {
+              "CRIT DMG%": 53.3,
+              "atk": 262
+            },
+            "47": {
+              "CRIT DMG%": 53.3,
+              "atk": 265
+            },
+            "48": {
+              "CRIT DMG%": 53.3,
+              "atk": 268
+            },
+            "49": {
+              "CRIT DMG%": 53.3,
+              "atk": 272
+            },
+            "5": {
+              "CRIT DMG%": 22.3,
+              "atk": 58
+            },
+            "50": {
+              "CRIT DMG%": 57.2,
+              "atk": 275
+            },
+            "51": {
+              "CRIT DMG%": 57.2,
+              "atk": 310
+            },
+            "52": {
+              "CRIT DMG%": 57.2,
+              "atk": 314
+            },
+            "53": {
+              "CRIT DMG%": 57.2,
+              "atk": 317
+            },
+            "54": {
+              "CRIT DMG%": 57.2,
+              "atk": 321
+            },
+            "55": {
+              "CRIT DMG%": 61.1,
+              "atk": 324
+            },
+            "56": {
+              "CRIT DMG%": 61.1,
+              "atk": 327
+            },
+            "57": {
+              "CRIT DMG%": 61.1,
+              "atk": 331
+            },
+            "58": {
+              "CRIT DMG%": 61.1,
+              "atk": 334
+            },
+            "59": {
+              "CRIT DMG%": 61.1,
+              "atk": 338
+            },
+            "6": {
+              "CRIT DMG%": 22.3,
+              "atk": 62
+            },
+            "60": {
+              "CRIT DMG%": 65.0,
+              "atk": 341
+            },
+            "61": {
+              "CRIT DMG%": 65.0,
+              "atk": 376
+            },
+            "62": {
+              "CRIT DMG%": 65.0,
+              "atk": 380
+            },
+            "63": {
+              "CRIT DMG%": 65.0,
+              "atk": 383
+            },
+            "64": {
+              "CRIT DMG%": 65.0,
+              "atk": 387
+            },
+            "65": {
+              "CRIT DMG%": 68.8,
+              "atk": 390
+            },
+            "66": {
+              "CRIT DMG%": 68.8,
+              "atk": 394
+            },
+            "67": {
+              "CRIT DMG%": 68.8,
+              "atk": 397
+            },
+            "68": {
+              "CRIT DMG%": 68.8,
+              "atk": 401
+            },
+            "69": {
+              "CRIT DMG%": 68.8,
+              "atk": 404
+            },
+            "7": {
+              "CRIT DMG%": 22.3,
+              "atk": 65
+            },
+            "70": {
+              "CRIT DMG%": 72.7,
+              "atk": 408
+            },
+            "71": {
+              "CRIT DMG%": 72.7,
+              "atk": 442
+            },
+            "72": {
+              "CRIT DMG%": 72.7,
+              "atk": 446
+            },
+            "73": {
+              "CRIT DMG%": 72.7,
+              "atk": 450
+            },
+            "74": {
+              "CRIT DMG%": 72.7,
+              "atk": 453
+            },
+            "75": {
+              "CRIT DMG%": 76.6,
+              "atk": 457
+            },
+            "76": {
+              "CRIT DMG%": 76.6,
+              "atk": 460
+            },
+            "77": {
+              "CRIT DMG%": 76.6,
+              "atk": 464
+            },
+            "78": {
+              "CRIT DMG%": 76.6,
+              "atk": 467
+            },
+            "79": {
+              "CRIT DMG%": 76.6,
+              "atk": 471
+            },
+            "8": {
+              "CRIT DMG%": 22.3,
+              "atk": 69
+            },
+            "80": {
+              "CRIT DMG%": 80.4,
+              "atk": 475
+            },
+            "81": {
+              "CRIT DMG%": 80.4,
+              "atk": 509
+            },
+            "82": {
+              "CRIT DMG%": 80.4,
+              "atk": 513
+            },
+            "83": {
+              "CRIT DMG%": 80.4,
+              "atk": 516
+            },
+            "84": {
+              "CRIT DMG%": 80.4,
+              "atk": 520
+            },
+            "85": {
+              "CRIT DMG%": 84.3,
+              "atk": 524
+            },
+            "86": {
+              "CRIT DMG%": 84.3,
+              "atk": 527
+            },
+            "87": {
+              "CRIT DMG%": 84.3,
+              "atk": 531
+            },
+            "88": {
+              "CRIT DMG%": 84.3,
+              "atk": 535
+            },
+            "89": {
+              "CRIT DMG%": 84.3,
+              "atk": 538
+            },
+            "9": {
+              "CRIT DMG%": 22.3,
+              "atk": 72
+            },
+            "90": {
+              "CRIT DMG%": 88.2,
+              "atk": 542
+            }
+          },
+          "weaponIcon": "UI_EquipIcon_Sword_SilverwareSaw",
+          "weaponType": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "a3c23697185efc70b45dd58d72de64b057c1725138b2494c4327c5c23f11a262",
+        "url": "https://api.lunaris.moe/data/6.7.54.2/chs/weapon/11519.json"
+      }
+    },
+    "nanoka": {
+      "en": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_SilverwareSaw",
+          "name": "Lightbearing Moonshard",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "Increases DEF by <color=#99FFFFFF>20%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>64%</color> for 5s after the equipping character uses an Elemental Skill.",
+              "name": "Legacy of Lang-Gan",
+              "param_list": [
+                0.64,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "Increases DEF by <color=#99FFFFFF>25%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>80%</color> for 5s after the equipping character uses an Elemental Skill.",
+              "name": "Legacy of Lang-Gan",
+              "param_list": [
+                0.8,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "Increases DEF by <color=#99FFFFFF>30%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>96%</color> for 5s after the equipping character uses an Elemental Skill.",
+              "name": "Legacy of Lang-Gan",
+              "param_list": [
+                0.96,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "Increases DEF by <color=#99FFFFFF>35%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>112%</color> for 5s after the equipping character uses an Elemental Skill.",
+              "name": "Legacy of Lang-Gan",
+              "param_list": [
+                1.12,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "Increases DEF by <color=#99FFFFFF>40%</color>. DMG inflicted by Lunar-Crystallize reactions increases by <color=#99FFFFFF>128%</color> for 5s after the equipping character uses an Elemental Skill.",
+              "name": "Legacy of Lang-Gan",
+              "param_list": [
+                1.28,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 44.3358,
+              "levels": {
+                "1": 1,
+                "10": 1.709,
+                "100": 8.837,
+                "11": 1.787,
+                "12": 1.865,
+                "13": 1.942,
+                "14": 2.02,
+                "15": 2.098,
+                "16": 2.175,
+                "17": 2.253,
+                "18": 2.33,
+                "19": 2.408,
+                "2": 1.079,
+                "20": 2.485,
+                "21": 2.562,
+                "22": 2.639,
+                "23": 2.717,
+                "24": 2.794,
+                "25": 2.871,
+                "26": 2.948,
+                "27": 3.026,
+                "28": 3.103,
+                "29": 3.18,
+                "3": 1.159,
+                "30": 3.257,
+                "31": 3.334,
+                "32": 3.412,
+                "33": 3.489,
+                "34": 3.566,
+                "35": 3.644,
+                "36": 3.721,
+                "37": 3.798,
+                "38": 3.876,
+                "39": 3.953,
+                "4": 1.238,
+                "40": 4.031,
+                "41": 4.109,
+                "42": 4.186,
+                "43": 4.264,
+                "44": 4.342,
+                "45": 4.419,
+                "46": 4.497,
+                "47": 4.575,
+                "48": 4.653,
+                "49": 4.731,
+                "5": 1.317,
+                "50": 4.81,
+                "51": 4.888,
+                "52": 4.966,
+                "53": 5.044,
+                "54": 5.123,
+                "55": 5.201,
+                "56": 5.28,
+                "57": 5.359,
+                "58": 5.437,
+                "59": 5.516,
+                "6": 1.395,
+                "60": 5.595,
+                "61": 5.674,
+                "62": 5.753,
+                "63": 5.833,
+                "64": 5.912,
+                "65": 5.991,
+                "66": 6.071,
+                "67": 6.15,
+                "68": 6.23,
+                "69": 6.31,
+                "7": 1.474,
+                "70": 6.39,
+                "71": 6.47,
+                "72": 6.55,
+                "73": 6.63,
+                "74": 6.71,
+                "75": 6.791,
+                "76": 6.871,
+                "77": 6.952,
+                "78": 7.033,
+                "79": 7.113,
+                "8": 1.552,
+                "80": 7.194,
+                "81": 7.275,
+                "82": 7.357,
+                "83": 7.438,
+                "84": 7.519,
+                "85": 7.601,
+                "86": 7.682,
+                "87": 7.764,
+                "88": 7.846,
+                "89": 7.928,
+                "9": 1.631,
+                "90": 8.01,
+                "91": 8.092,
+                "92": 8.174,
+                "93": 8.257,
+                "94": 8.339,
+                "95": 8.422,
+                "96": 8.505,
+                "97": 8.588,
+                "98": 8.671,
+                "99": 8.754
+              }
+            },
+            "fight_prop_critical_hurt": {
+              "base": 0.192,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 44.3358,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+              "init_value": 0.192,
+              "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "269b1fd58bf49c11537a4948c17a5a49ce3a4b507d9ca23619c0f90a4c831dcd",
+        "url": "https://static.nanoka.cc/gi/6.7.54/en/weapon/11519.json"
+      },
+      "version": "6.7.54",
+      "zh": {
+        "payload": {
+          "icon": "UI_EquipIcon_Sword_SilverwareSaw",
+          "name": "朏魄含光",
+          "rarity": 5,
+          "refinement": {
+            "1": {
+              "desc": "防御力提高<color=#99FFFFFF>20%</color>。装备者施放元素战技后的5秒内，月结晶反应伤害提升<color=#99FFFFFF>64%</color>。",
+              "name": "琅玕衍义",
+              "param_list": [
+                0.64,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "2": {
+              "desc": "防御力提高<color=#99FFFFFF>25%</color>。装备者施放元素战技后的5秒内，月结晶反应伤害提升<color=#99FFFFFF>80%</color>。",
+              "name": "琅玕衍义",
+              "param_list": [
+                0.8,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "3": {
+              "desc": "防御力提高<color=#99FFFFFF>30%</color>。装备者施放元素战技后的5秒内，月结晶反应伤害提升<color=#99FFFFFF>96%</color>。",
+              "name": "琅玕衍义",
+              "param_list": [
+                0.96,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "4": {
+              "desc": "防御力提高<color=#99FFFFFF>35%</color>。装备者施放元素战技后的5秒内，月结晶反应伤害提升<color=#99FFFFFF>112%</color>。",
+              "name": "琅玕衍义",
+              "param_list": [
+                1.12,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "5": {
+              "desc": "防御力提高<color=#99FFFFFF>40%</color>。装备者施放元素战技后的5秒内，月结晶反应伤害提升<color=#99FFFFFF>128%</color>。",
+              "name": "琅玕衍义",
+              "param_list": [
+                1.28,
+                5,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "stats_modifier": {
+            "atk": {
+              "base": 44.3358,
+              "levels": {
+                "1": 1,
+                "10": 1.709,
+                "100": 8.837,
+                "11": 1.787,
+                "12": 1.865,
+                "13": 1.942,
+                "14": 2.02,
+                "15": 2.098,
+                "16": 2.175,
+                "17": 2.253,
+                "18": 2.33,
+                "19": 2.408,
+                "2": 1.079,
+                "20": 2.485,
+                "21": 2.562,
+                "22": 2.639,
+                "23": 2.717,
+                "24": 2.794,
+                "25": 2.871,
+                "26": 2.948,
+                "27": 3.026,
+                "28": 3.103,
+                "29": 3.18,
+                "3": 1.159,
+                "30": 3.257,
+                "31": 3.334,
+                "32": 3.412,
+                "33": 3.489,
+                "34": 3.566,
+                "35": 3.644,
+                "36": 3.721,
+                "37": 3.798,
+                "38": 3.876,
+                "39": 3.953,
+                "4": 1.238,
+                "40": 4.031,
+                "41": 4.109,
+                "42": 4.186,
+                "43": 4.264,
+                "44": 4.342,
+                "45": 4.419,
+                "46": 4.497,
+                "47": 4.575,
+                "48": 4.653,
+                "49": 4.731,
+                "5": 1.317,
+                "50": 4.81,
+                "51": 4.888,
+                "52": 4.966,
+                "53": 5.044,
+                "54": 5.123,
+                "55": 5.201,
+                "56": 5.28,
+                "57": 5.359,
+                "58": 5.437,
+                "59": 5.516,
+                "6": 1.395,
+                "60": 5.595,
+                "61": 5.674,
+                "62": 5.753,
+                "63": 5.833,
+                "64": 5.912,
+                "65": 5.991,
+                "66": 6.071,
+                "67": 6.15,
+                "68": 6.23,
+                "69": 6.31,
+                "7": 1.474,
+                "70": 6.39,
+                "71": 6.47,
+                "72": 6.55,
+                "73": 6.63,
+                "74": 6.71,
+                "75": 6.791,
+                "76": 6.871,
+                "77": 6.952,
+                "78": 7.033,
+                "79": 7.113,
+                "8": 1.552,
+                "80": 7.194,
+                "81": 7.275,
+                "82": 7.357,
+                "83": 7.438,
+                "84": 7.519,
+                "85": 7.601,
+                "86": 7.682,
+                "87": 7.764,
+                "88": 7.846,
+                "89": 7.928,
+                "9": 1.631,
+                "90": 8.01,
+                "91": 8.092,
+                "92": 8.174,
+                "93": 8.257,
+                "94": 8.339,
+                "95": 8.422,
+                "96": 8.505,
+                "97": 8.588,
+                "98": 8.671,
+                "99": 8.754
+              }
+            },
+            "fight_prop_critical_hurt": {
+              "base": 0.192,
+              "levels": {
+                "1": 1,
+                "10": 1.363,
+                "100": 4.998,
+                "11": 1.363,
+                "12": 1.363,
+                "13": 1.363,
+                "14": 1.363,
+                "15": 1.565,
+                "16": 1.565,
+                "17": 1.565,
+                "18": 1.565,
+                "19": 1.565,
+                "2": 1,
+                "20": 1.767,
+                "21": 1.767,
+                "22": 1.767,
+                "23": 1.767,
+                "24": 1.767,
+                "25": 1.969,
+                "26": 1.969,
+                "27": 1.969,
+                "28": 1.969,
+                "29": 1.969,
+                "3": 1,
+                "30": 2.171,
+                "31": 2.171,
+                "32": 2.171,
+                "33": 2.171,
+                "34": 2.171,
+                "35": 2.373,
+                "36": 2.373,
+                "37": 2.373,
+                "38": 2.373,
+                "39": 2.373,
+                "4": 1,
+                "40": 2.575,
+                "41": 2.575,
+                "42": 2.575,
+                "43": 2.575,
+                "44": 2.575,
+                "45": 2.777,
+                "46": 2.777,
+                "47": 2.777,
+                "48": 2.777,
+                "49": 2.777,
+                "5": 1.162,
+                "50": 2.979,
+                "51": 2.979,
+                "52": 2.979,
+                "53": 2.979,
+                "54": 2.979,
+                "55": 3.181,
+                "56": 3.181,
+                "57": 3.181,
+                "58": 3.181,
+                "59": 3.181,
+                "6": 1.162,
+                "60": 3.383,
+                "61": 3.383,
+                "62": 3.383,
+                "63": 3.383,
+                "64": 3.383,
+                "65": 3.585,
+                "66": 3.585,
+                "67": 3.585,
+                "68": 3.585,
+                "69": 3.585,
+                "7": 1.162,
+                "70": 3.786,
+                "71": 3.786,
+                "72": 3.786,
+                "73": 3.786,
+                "74": 3.786,
+                "75": 3.988,
+                "76": 3.988,
+                "77": 3.988,
+                "78": 3.988,
+                "79": 3.988,
+                "8": 1.162,
+                "80": 4.19,
+                "81": 4.19,
+                "82": 4.19,
+                "83": 4.19,
+                "84": 4.19,
+                "85": 4.392,
+                "86": 4.392,
+                "87": 4.392,
+                "88": 4.392,
+                "89": 4.392,
+                "9": 1.162,
+                "90": 4.594,
+                "91": 4.594,
+                "92": 4.594,
+                "93": 4.594,
+                "94": 4.594,
+                "95": 4.796,
+                "96": 4.796,
+                "97": 4.796,
+                "98": 4.796,
+                "99": 4.796
+              }
+            }
+          },
+          "weapon_prop": [
+            {
+              "init_value": 44.3358,
+              "prop_type": "FIGHT_PROP_BASE_ATTACK",
+              "type": "GROW_CURVE_ATTACK_304"
+            },
+            {
+              "init_value": 0.192,
+              "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+              "type": "GROW_CURVE_CRITICAL_301"
+            }
+          ],
+          "weapon_type": "WEAPON_SWORD_ONE_HAND"
+        },
+        "sha256": "82333b634e0b7a46d03e49799a7825523bd1e2632e0e9e507790f41ab7c90d53",
+        "url": "https://static.nanoka.cc/gi/6.7.54/zh/weapon/11519.json"
+      }
+    }
+  }
+}
