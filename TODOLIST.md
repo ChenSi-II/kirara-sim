@@ -9,6 +9,13 @@
 - **先补测试和生成链路，再追求数量。** 当前 CI 只测试部分 Go 包，UI 流程只安装依赖；角色/武器/圣遗物几乎没有针对被动和数值的单元测试。
 - **优先争取原项目的共同维护权，同时准备社区 fork。** MIT 许可证允许 fork，但域名、部署密钥、Cloudflare、数据库、Discord bot 和发布身份不会随代码一起转移。
 
+当前执行文档：
+
+- [内容矩阵](docs/content-matrix.md)
+- [Community preview 固定数据快照](docs/community-data-snapshot.md)
+- [不完整实现政策](docs/incomplete-implementation-policy.md)
+- [星反应可执行规格门槛](docs/mechanics/stellar-reactions-spec.md)
+
 ## 1. 仓库结构和新增内容的真实链路
 
 ```text
