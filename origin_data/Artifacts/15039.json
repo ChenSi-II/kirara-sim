@@ -1,0 +1,145 @@
+{
+  "Id": 15039,
+  "Icon": "UI_RelicIcon_15039_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150390,
+      "Id": 215039,
+      "Level": 0,
+      "OpenConfig": "Relic_FallingAttack_2",
+      "ParamList": [
+        0.25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "长夜之誓",
+      "Desc": "下落攻击造成的伤害提升25%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150391,
+      "Id": 215039,
+      "Level": 1,
+      "OpenConfig": "Relic_FallingAttack_4",
+      "ParamList": [
+        1,
+        2,
+        2,
+        0.15,
+        6,
+        1,
+        5,
+        0
+      ],
+      "Name": "长夜之誓",
+      "Desc": "装备者的下落攻击/重击/元素战技命中敌人后，获得1/2/2层「永照的流辉」，由下落攻击、重击或元素战技产生的该效果分别每1秒至多触发一次。永照的流辉：下落攻击造成的伤害提升15%，持续6秒，至多叠加5层，每层持续时间独立计算。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15039_1",
+      "Name": "未吹响的号角",
+      "Desc": "过去曾用来召集守誓之人的号角，如今早已失去其作用。",
+      "Story": {
+        "285391": {
+          "Zh": "ART/UI/Readable/CHS/Relic15039_1",
+          "En": "ART/UI/Readable/EN/Relic15039_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15039_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15039_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15039_2",
+      "Name": "夜鸣莺的尾羽",
+      "Desc": "用夜莺的羽毛精心制成的帽饰，据说其形制由最初的铸灯者所定下。",
+      "Story": {
+        "285392": {
+          "Zh": "ART/UI/Readable/CHS/Relic15039_2",
+          "En": "ART/UI/Readable/EN/Relic15039_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15039_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15039_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15039_3",
+      "Name": "被浸染的缨盔",
+      "Desc": "古老而沉重的头盔，是标识了北方古老战士家系的传承之物。",
+      "Story": {
+        "285393": {
+          "Zh": "ART/UI/Readable/CHS/Relic15039_3",
+          "En": "ART/UI/Readable/EN/Relic15039_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15039_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15039_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15039_4",
+      "Name": "执灯人的誓词",
+      "Desc": "执灯士所佩戴的铁花，象征着此人曾发下永世守望的重誓。",
+      "Story": {
+        "285394": {
+          "Zh": "ART/UI/Readable/CHS/Relic15039_4",
+          "En": "ART/UI/Readable/EN/Relic15039_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15039_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15039_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15039_5",
+      "Name": "不死者的哀铃",
+      "Desc": "漫步黑渊的战士所携带的铜铃，在无光的夜里常常能听到它的哀鸣。",
+      "Story": {
+        "285395": {
+          "Zh": "ART/UI/Readable/CHS/Relic15039_5",
+          "En": "ART/UI/Readable/EN/Relic15039_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15039_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15039_5_KR"
+        }
+      }
+    }
+  }
+}

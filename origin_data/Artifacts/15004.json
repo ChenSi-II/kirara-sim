@@ -1,0 +1,146 @@
+{
+  "Id": 15004,
+  "Icon": "UI_RelicIcon_15004_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ICE_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150040,
+      "Id": 215004,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冰之川与雪之砂",
+      "Desc": "获得15%冰元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150041,
+      "Id": 215004,
+      "Level": 1,
+      "OpenConfig": "Relic_ReactionIceEnhance",
+      "ParamList": [
+        1,
+        0.15,
+        10,
+        0.3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冰之川与雪之砂",
+      "Desc": "超导反应造成的伤害提升100%，融化反应的加成系数提高15%。施放元素爆发后的10秒内，冰元素伤害加成额外提升30%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15004_1",
+      "Name": "北风之盏",
+      "Desc": "与北风同行的骑士留下的空之杯，凛冬的霜之息依旧盈满其中。",
+      "Story": {
+        "285041": {
+          "Zh": "ART/UI/Readable/CHS/Relic15004_1",
+          "En": "ART/UI/Readable/EN/Relic15004_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15004_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15004_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15004_2",
+      "Name": "雪藏之羽",
+      "Desc": "与北风同行的骑士于雪中拾获的鸟羽，如今依旧静候解冻之刻。",
+      "Story": {
+        "285042": {
+          "Zh": "ART/UI/Readable/CHS/Relic15004_2",
+          "En": "ART/UI/Readable/EN/Relic15004_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15004_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15004_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15004_3",
+      "Name": "冰河之冠",
+      "Desc": "与北风同行的骑士所戴的冠冕，以凛冬的寒冰与白银打造而成。",
+      "Story": {
+        "285043": {
+          "Zh": "ART/UI/Readable/CHS/Relic15004_3",
+          "En": "ART/UI/Readable/EN/Relic15004_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15004_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15004_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15004_4",
+      "Name": "凛冬霜心",
+      "Desc": "陷入静默的冰之花，凝固在摘下的一刻，是骑士不离身的纪念。",
+      "Story": {
+        "285044": {
+          "Zh": "ART/UI/Readable/CHS/Relic15004_4",
+          "En": "ART/UI/Readable/EN/Relic15004_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15004_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15004_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15004_5",
+      "Name": "凝冰成砂",
+      "Desc": "与北风同行的骑士曾用的时计，内部是永不消去的雪砂与霜风。",
+      "Story": {
+        "285045": {
+          "Zh": "ART/UI/Readable/CHS/Relic15004_5",
+          "En": "ART/UI/Readable/EN/Relic15004_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15004_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15004_5_KR"
+        }
+      }
+    }
+  }
+}

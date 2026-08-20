@@ -1,0 +1,9 @@
+{
+  "Name": "涅墨林塞的金枝",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在如今早已无法追忆的古老时代，高天的御使曾将这柄长剑赐予阿卡狄亚的主祭，允其引领千风赐福的圣都。",
+  "WeaponType": "WEAPON_SWORD_ONE_HAND",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Sword_MorphNemorensis_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

@@ -1,0 +1,145 @@
+{
+  "Id": 15029,
+  "Icon": "UI_RelicIcon_15029_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_WATER_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150290,
+      "Id": 215029,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "水仙之梦",
+      "Desc": "获得15%水元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150291,
+      "Id": 215029,
+      "Level": 1,
+      "OpenConfig": "Relic_Narcissus",
+      "ParamList": [
+        8,
+        0.07,
+        0.16,
+        0.25,
+        0.04,
+        0.09,
+        0.15,
+        0
+      ],
+      "Name": "水仙之梦",
+      "Desc": "普通攻击、重击、下落攻击、元素战技或元素爆发命中敌人后，将产生1层持续8秒的「镜中水仙」效果。处于1/2/3层及以上「镜中水仙」效果下时，攻击力将提高7%/16%/25%，水元素伤害加成提升4%/9%/15%。由普通攻击、重击、下落攻击、元素战技或元素爆发产生的「镜中水仙」将分别独立存在。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15029_1",
+      "Name": "勇者们的茶会",
+      "Desc": "精致的茶杯。或许曾与他人共同度过悠闲的午后时光吧。",
+      "Story": {
+        "285291": {
+          "Zh": "ART/UI/Readable/CHS/Relic15029_1",
+          "En": "ART/UI/Readable/EN/Relic15029_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15029_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15029_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15029_2",
+      "Name": "坏巫师的羽杖",
+      "Desc": "原本在礼帽上的装饰鸟羽。墨绿的颜色想必相当吸引眼球吧。",
+      "Story": {
+        "285292": {
+          "Zh": "ART/UI/Readable/CHS/Relic15029_2",
+          "En": "ART/UI/Readable/EN/Relic15029_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15029_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15029_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15029_3",
+      "Name": "恶龙的单片镜",
+      "Desc": "精致的单片眼镜。依照古老的轶事传闻，透过它或许能瞥见未来的光景吧。",
+      "Story": {
+        "285293": {
+          "Zh": "ART/UI/Readable/CHS/Relic15029_3",
+          "En": "ART/UI/Readable/EN/Relic15029_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15029_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15029_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15029_4",
+      "Name": "旅途中的鲜花",
+      "Desc": "故事一定会结束，鲜花也终究会凋落。但梦中描绘的花朵永远都会饱满而充满芬芳吧。",
+      "Story": {
+        "285294": {
+          "Zh": "ART/UI/Readable/CHS/Relic15029_4",
+          "En": "ART/UI/Readable/EN/Relic15029_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15029_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15029_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15029_5",
+      "Name": "水仙的时时刻刻",
+      "Desc": "早已停止运转的怀表，似乎在徒劳的旋转中见证过许多的年月。",
+      "Story": {
+        "285295": {
+          "Zh": "ART/UI/Readable/CHS/Relic15029_5",
+          "En": "ART/UI/Readable/EN/Relic15029_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15029_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15029_5_KR"
+        }
+      }
+    }
+  }
+}

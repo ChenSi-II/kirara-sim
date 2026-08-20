@@ -1,0 +1,9 @@
+{
+  "Name": "阿夏梅兹的千光",
+  "Desc": "(test) 雷属性枪械",
+  "WeaponType": "ITEM_TPS_WEAPON",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_AssaultRifle_Fulmen",
+  "Skill": 11353,
+  "Tps": true
+}

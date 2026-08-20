@@ -1,0 +1,145 @@
+{
+  "Id": 15024,
+  "Icon": "UI_RelicIcon_15024_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150240,
+      "Id": 215024,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0.18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "来歆余响",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150241,
+      "Id": 215024,
+      "Level": 1,
+      "OpenConfig": "Relic_AttackWithExtraDamage",
+      "ParamList": [
+        0.36,
+        0.7,
+        0.05,
+        0.2,
+        0.2,
+        0.2,
+        0,
+        0
+      ],
+      "Name": "来歆余响",
+      "Desc": "普通攻击命中敌人时，有36%概率触发「幽谷祝祀」：普通攻击造成的伤害提高，伤害提高值为攻击力的70%，该效果将在普通攻击造成伤害后的0.05秒后清除。普通攻击未触发「幽谷祝祀」时，会使下次触发概率提升20%；0.2秒内至多判定1次触发与否。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15024_1",
+      "Name": "涌泉之盏",
+      "Desc": "能够源源不断涌出清泉的茶盏。或许是仙家的赠礼、遗物或是失物吧。",
+      "Story": {
+        "285241": {
+          "Zh": "ART/UI/Readable/CHS/Relic15024_1",
+          "En": "ART/UI/Readable/EN/Relic15024_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15024_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15024_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15024_2",
+      "Name": "垂玉之叶",
+      "Desc": "宛如叶片的玉佩。过去在特定的友人之间，似乎有着特殊的含义。",
+      "Story": {
+        "285242": {
+          "Zh": "ART/UI/Readable/CHS/Relic15024_2",
+          "En": "ART/UI/Readable/EN/Relic15024_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15024_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15024_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15024_3",
+      "Name": "浮溯之珏",
+      "Desc": "由一块美玉制成的对耳环。有着无比温润的感觉。",
+      "Story": {
+        "285243": {
+          "Zh": "ART/UI/Readable/CHS/Relic15024_3",
+          "En": "ART/UI/Readable/EN/Relic15024_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15024_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15024_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15024_4",
+      "Name": "魂香之花",
+      "Desc": "花型的玉雕。魂香幽幽的气息似有似无地萦绕其中。",
+      "Story": {
+        "285244": {
+          "Zh": "ART/UI/Readable/CHS/Relic15024_4",
+          "En": "ART/UI/Readable/EN/Relic15024_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15024_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15024_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15024_5",
+      "Name": "祝祀之凭",
+      "Desc": "圆形的玉佩。在某个传说中，它是何地之祭祀肇始的凭证。",
+      "Story": {
+        "285245": {
+          "Zh": "ART/UI/Readable/CHS/Relic15024_5",
+          "En": "ART/UI/Readable/EN/Relic15024_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15024_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15024_5_KR"
+        }
+      }
+    }
+  }
+}

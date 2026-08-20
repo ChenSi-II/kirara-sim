@@ -172,7 +172,9 @@
       "yoimiya": "宵宫",
       "yumemizukimizuki": "梦见月瑞希",
       "yunjin": "云堇",
-      "zhongli": "钟离"
+      "zhongli": "钟离",
+      "vodyanitsa": "沃雅妮莎",
+      "vesna": "薇斯纳"
     },
     "monster_names": {
       "abyssheraldfrostfall": "深渊使徒·霜落",
@@ -842,7 +844,13 @@
       "wineandsong": "暗巷的酒与诗",
       "wolffang": "狼牙",
       "wolfsgravestone": "狼的末路",
-      "xiphosmoonlight": "西福斯的月光"
+      "xiphosmoonlight": "西福斯的月光",
+      "xinzhi": "新枝",
+      "yingang": "银釭",
+      "diebian": "蝶变",
+      "ningxuechenxin": "凝雪沉心",
+      "xuanliusongge": "漩流颂歌",
+      "roufengyouxian": "柔风游弦"
     }
   },
   "English": {
@@ -1018,7 +1026,9 @@
       "yoimiya": "Yoimiya",
       "yumemizukimizuki": "Yumemizuki Mizuki",
       "yunjin": "Yun Jin",
-      "zhongli": "Zhongli"
+      "zhongli": "Zhongli",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "Abyss Herald: Frost Fall",
@@ -1688,7 +1698,13 @@
       "wineandsong": "Wine and Song",
       "wolffang": "Wolf-Fang",
       "wolfsgravestone": "Wolf's Gravestone",
-      "xiphosmoonlight": "Xiphos' Moonlight"
+      "xiphosmoonlight": "Xiphos' Moonlight",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   },
   "German": {
@@ -1864,7 +1880,9 @@
       "yoimiya": "Yoimiya",
       "yumemizukimizuki": "Yumemizuki Mizuki",
       "yunjin": "Yun Jin",
-      "zhongli": "Zhongli"
+      "zhongli": "Zhongli",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "Abgrundbote – Frostfall",
@@ -2534,7 +2552,13 @@
       "wineandsong": "Wein und Gesang in den Gassen",
       "wolffang": "Wolfszahn",
       "wolfsgravestone": "Wolfsgrab",
-      "xiphosmoonlight": "Mondlicht von Xiphos"
+      "xiphosmoonlight": "Mondlicht von Xiphos",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   },
   "Japanese": {
@@ -2710,7 +2734,9 @@
       "yoimiya": "宵宮",
       "yumemizukimizuki": "夢見月瑞希",
       "yunjin": "雲菫",
-      "zhongli": "鍾離"
+      "zhongli": "鍾離",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "アビスの使徒·落霜",
@@ -3380,7 +3406,13 @@
       "wineandsong": "ダークアレイの酒と詩",
       "wolffang": "狼牙",
       "wolfsgravestone": "狼の末路",
-      "xiphosmoonlight": "サイフォスの月明かり"
+      "xiphosmoonlight": "サイフォスの月明かり",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   },
   "Korean": {
@@ -3556,7 +3588,9 @@
       "yoimiya": "요이미야",
       "yumemizukimizuki": "유메미즈키 미즈키",
       "yunjin": "운근",
-      "zhongli": "종려"
+      "zhongli": "종려",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "심연 사도·서리 내림",
@@ -4226,7 +4260,13 @@
       "wineandsong": "뒷골목의 술과 시",
       "wolffang": "늑대 송곳니",
       "wolfsgravestone": "늑대의 말로",
-      "xiphosmoonlight": "크시포스의 달빛"
+      "xiphosmoonlight": "크시포스의 달빛",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   },
   "Russian": {
@@ -4402,7 +4442,9 @@
       "yoimiya": "Ёимия",
       "yumemizukimizuki": "Мидзуки",
       "yunjin": "Юнь Цзинь",
-      "zhongli": "Чжун Ли"
+      "zhongli": "Чжун Ли",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "Вестник Бездны: Наступление хлада",
@@ -5072,7 +5114,13 @@
       "wineandsong": "Вино и песни",
       "wolffang": "Волчий клык",
       "wolfsgravestone": "Волчья погибель",
-      "xiphosmoonlight": "Лунное сияние ксифоса"
+      "xiphosmoonlight": "Лунное сияние ксифоса",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   },
   "Spanish": {
@@ -5248,7 +5296,9 @@
       "yoimiya": "Yoimiya",
       "yumemizukimizuki": "Yumemizuki Mizuki",
       "yunjin": "Yun Jin",
-      "zhongli": "Zhongli"
+      "zhongli": "Zhongli",
+      "vodyanitsa": "Vodyanitsa",
+      "vesna": "Vesna"
     },
     "monster_names": {
       "abyssheraldfrostfall": "Emisario del Abismo - Helada sombría",
@@ -5918,7 +5968,13 @@
       "wineandsong": "Vino y Poesía",
       "wolffang": "Colmillo Lupino",
       "wolfsgravestone": "Lápida del Lobo",
-      "xiphosmoonlight": "Luz Lunar de Xifos"
+      "xiphosmoonlight": "Luz Lunar de Xifos",
+      "xinzhi": "Xinzhi",
+      "yingang": "Yingang",
+      "diebian": "Diebian",
+      "ningxuechenxin": "Ningxue Chenxin",
+      "xuanliusongge": "Xuanliu Songge",
+      "roufengyouxian": "Roufeng Youxian"
     }
   }
 }

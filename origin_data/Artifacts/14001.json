@@ -1,0 +1,146 @@
+{
+  "Id": 14001,
+  "Icon": "UI_RelicIcon_14001_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ICE_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140010,
+      "Id": 214001,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冰风迷途的勇士",
+      "Desc": "获得15%冰元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140011,
+      "Id": 214001,
+      "Level": 1,
+      "OpenConfig": "Relic_CriticUpAgainstIceAndFrozen",
+      "ParamList": [
+        0.2,
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冰风迷途的勇士",
+      "Desc": "攻击处于冰元素影响下的敌人时，暴击率提高20%；若敌人处于冻结状态下，则暴击率额外提高20%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_14001_1",
+      "Name": "遍结寒霜的傲骨",
+      "Desc": "待定",
+      "Story": {
+        "284011": {
+          "Zh": "ART/UI/Readable/CHS/Relic14001_1",
+          "En": "ART/UI/Readable/EN/Relic14001_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14001_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14001_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_14001_2",
+      "Name": "摧冰而行的执望",
+      "Desc": "待定",
+      "Story": {
+        "284012": {
+          "Zh": "ART/UI/Readable/CHS/Relic14001_2",
+          "En": "ART/UI/Readable/EN/Relic14001_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14001_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14001_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_14001_3",
+      "Name": "破冰踏雪的回音",
+      "Desc": "待定",
+      "Story": {
+        "284013": {
+          "Zh": "ART/UI/Readable/CHS/Relic14001_3",
+          "En": "ART/UI/Readable/EN/Relic14001_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14001_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14001_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_14001_4",
+      "Name": "历经风雪的思念",
+      "Desc": "待定",
+      "Story": {
+        "284014": {
+          "Zh": "ART/UI/Readable/CHS/Relic14001_4",
+          "En": "ART/UI/Readable/EN/Relic14001_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14001_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14001_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_14001_5",
+      "Name": "冰雪故园的终期",
+      "Desc": "待定",
+      "Story": {
+        "284015": {
+          "Zh": "ART/UI/Readable/CHS/Relic14001_5",
+          "En": "ART/UI/Readable/EN/Relic14001_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14001_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14001_5_KR"
+        }
+      }
+    }
+  }
+}

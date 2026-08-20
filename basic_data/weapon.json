@@ -431,6 +431,30 @@
     "Zh": "织月者的曙色",
     "Ja": "月紡ぎの曙光"
   },
+  "11437": {
+    "Icon": "UI_EquipIcon_Sword_SpikedStake",
+    "Rank": 4,
+    "Type": "WEAPON_SWORD_ONE_HAND",
+    "En": "xinzhi",
+    "ATK": 510,
+    "Sub": "FIGHT_PROP_CRITICAL_HURT",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "新枝",
+    "Ja": ""
+  },
+  "11438": {
+    "Icon": "UI_EquipIcon_Sword_Fajian",
+    "Rank": 4,
+    "Type": "WEAPON_SWORD_ONE_HAND",
+    "En": "yingang",
+    "ATK": 510,
+    "Sub": "FIGHT_PROP_ATTACK_PERCENT",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "银釭",
+    "Ja": ""
+  },
   "11501": {
     "Icon": "UI_EquipIcon_Sword_Falcon",
     "Rank": 5,
@@ -622,6 +646,18 @@
     "Ko": "신월의 달빛",
     "Zh": "朏魄含光",
     "Ja": "三日月の含光"
+  },
+  "11522": {
+    "Icon": "UI_EquipIcon_Sword_Samosvist",
+    "Rank": 5,
+    "Type": "WEAPON_SWORD_ONE_HAND",
+    "En": "diebian",
+    "ATK": 674,
+    "Sub": "FIGHT_PROP_CRITICAL_HURT",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "蝶变",
+    "Ja": ""
   },
   "12101": {
     "Icon": "UI_EquipIcon_Claymore_Aniki",
@@ -2003,6 +2039,18 @@
     "Zh": "霜辰",
     "Ja": "霜辰"
   },
+  "14437": {
+    "Icon": "UI_EquipIcon_Catalyst_FrostScepter",
+    "Rank": 4,
+    "Type": "WEAPON_CATALYST",
+    "En": "ningxuechenxin",
+    "ATK": 510,
+    "Sub": "FIGHT_PROP_CRITICAL_HURT",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "凝雪沉心",
+    "Ja": ""
+  },
   "14501": {
     "Icon": "UI_EquipIcon_Catalyst_Dvalin",
     "Rank": 5,
@@ -2230,6 +2278,18 @@
     "Ko": "일곱빛 계시",
     "Zh": "尘光七谕",
     "Ja": "塵光七諭JP0D"
+  },
+  "14524": {
+    "Icon": "UI_EquipIcon_Catalyst_Bludnye",
+    "Rank": 5,
+    "Type": "WEAPON_CATALYST",
+    "En": "xuanliusongge",
+    "ATK": 542,
+    "Sub": "FIGHT_PROP_HP_PERCENT",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "漩流颂歌",
+    "Ja": ""
   },
   "15101": {
     "Icon": "UI_EquipIcon_Bow_Hunters",
@@ -2650,6 +2710,18 @@
     "Ko": "무지개뱀의 현",
     "Zh": "虹蛇的雨弦",
     "Ja": "虹蛇の雨弦"
+  },
+  "15437": {
+    "Icon": "UI_EquipIcon_Bow_Windtalker",
+    "Rank": 4,
+    "Type": "WEAPON_BOW",
+    "En": "roufengyouxian",
+    "ATK": 510,
+    "Sub": "FIGHT_PROP_CRITICAL",
+    "Desc": "",
+    "Ko": "",
+    "Zh": "柔风游弦",
+    "Ja": ""
   },
   "15501": {
     "Icon": "UI_EquipIcon_Bow_Dvalin",

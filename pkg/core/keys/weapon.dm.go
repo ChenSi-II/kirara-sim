@@ -18,6 +18,20 @@ func WeaponValues() []Weapon                  { return _WeaponValues[:] }
 
 func WeaponString(s string) (Weapon, error) {
 	s = strings.ToLower(s)
+	switch s {
+	case "newbranch":
+		return Xinzhi, nil
+	case "silverlamp":
+		return Yingang, nil
+	case "metamorphosis":
+		return Diebian, nil
+	case "frostboundheart":
+		return NingxueChenxin, nil
+	case "flowingballad":
+		return XuanliuSongge, nil
+	case "softwindstrings":
+		return RoufengYouxian, nil
+	}
 	ind := slices.IndexFunc(_WeaponNames[:], func(i string) bool { return i == s })
 	if ind == -1 {
 		return 0, fmt.Errorf("%s does not belong to Weapon", s)
@@ -289,7 +303,23 @@ const (
 	WolfFang                                      // wolffang
 	WolfsGravestone                               // wolfsgravestone
 	XiphosMoonlight                               // xiphosmoonlight
+	Xinzhi                                        // xinzhi
+	Yingang                                       // yingang
+	Diebian                                       // diebian
+	NingxueChenxin                                // ningxuechenxin
+	XuanliuSongge                                 // xuanliusongge
+	RoufengYouxian                                // roufengyouxian
 	InvalidWeapon                                 // invalidweapon
+)
+
+// Aliases for the untranslated weapon names present in origin_data.
+const (
+	Newbranch       Weapon = Xinzhi
+	Silverlamp      Weapon = Yingang
+	Metamorphosis   Weapon = Diebian
+	FrostboundHeart Weapon = NingxueChenxin
+	FlowingBallad   Weapon = XuanliuSongge
+	SoftwindStrings Weapon = RoufengYouxian
 )
 
 var _WeaponNames = [...]string{
@@ -540,6 +570,12 @@ var _WeaponNames = [...]string{
 	"wolffang",
 	"wolfsgravestone",
 	"xiphosmoonlight",
+	"xinzhi",
+	"yingang",
+	"diebian",
+	"ningxuechenxin",
+	"xuanliusongge",
+	"roufengyouxian",
 	"invalidweapon",
 }
 
@@ -791,5 +827,11 @@ var _WeaponValues = [...]Weapon{
 	WolfFang,
 	WolfsGravestone,
 	XiphosMoonlight,
+	Xinzhi,
+	Yingang,
+	Diebian,
+	NingxueChenxin,
+	XuanliuSongge,
+	RoufengYouxian,
 	InvalidWeapon,
 }

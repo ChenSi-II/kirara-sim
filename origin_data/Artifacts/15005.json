@@ -1,0 +1,146 @@
+{
+  "Id": 15005,
+  "Icon": "UI_RelicIcon_15005_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEC_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150050,
+      "Id": 215005,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "如雷的盛怒",
+      "Desc": "获得15%雷元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150051,
+      "Id": 215005,
+      "Level": 1,
+      "OpenConfig": "Relic_ReactionElectricEnhance",
+      "ParamList": [
+        0.4,
+        0.8,
+        0.2,
+        0.2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "如雷的盛怒",
+      "Desc": "超载、感电、超导、超绽放反应造成的伤害提升40%，超激化反应带来的伤害提升提高20%，月感电、星超导反应造成的伤害提升20%。触发上述元素反应或原激化反应时，元素战技冷却时间减少1秒。该效果每0.8秒最多触发一次。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15005_1",
+      "Name": "降雷的凶兆",
+      "Desc": "丽莎专用",
+      "Story": {
+        "285051": {
+          "Zh": "ART/UI/Readable/CHS/Relic15005_1",
+          "En": "ART/UI/Readable/EN/Relic15005_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15005_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15005_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15005_2",
+      "Name": "雷灾的孑遗",
+      "Desc": "丽莎专用",
+      "Story": {
+        "285052": {
+          "Zh": "ART/UI/Readable/CHS/Relic15005_2",
+          "En": "ART/UI/Readable/EN/Relic15005_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15005_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15005_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15005_3",
+      "Name": "唤雷的头冠",
+      "Desc": "菲谢尔专用",
+      "Story": {
+        "285053": {
+          "Zh": "ART/UI/Readable/CHS/Relic15005_3",
+          "En": "ART/UI/Readable/EN/Relic15005_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15005_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15005_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15005_4",
+      "Name": "雷鸟的怜悯",
+      "Desc": "菲谢尔专用",
+      "Story": {
+        "285054": {
+          "Zh": "ART/UI/Readable/CHS/Relic15005_4",
+          "En": "ART/UI/Readable/EN/Relic15005_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15005_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15005_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15005_5",
+      "Name": "雷霆的时计",
+      "Desc": "菲谢尔专用",
+      "Story": {
+        "285055": {
+          "Zh": "ART/UI/Readable/CHS/Relic15005_5",
+          "En": "ART/UI/Readable/EN/Relic15005_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15005_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15005_5_KR"
+        }
+      }
+    }
+  }
+}

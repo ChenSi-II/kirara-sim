@@ -1,0 +1,147 @@
+{
+  "Id": 10010,
+  "Icon": "UI_RelicIcon_10010_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HP",
+          "Value": 1000
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100100,
+      "Id": 210010,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冒险家",
+      "Desc": "生命值上限提高1000点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100101,
+      "Id": 210010,
+      "Level": 1,
+      "OpenConfig": "Relic_ChestHealSelf",
+      "ParamList": [
+        5,
+        1,
+        0.06,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "冒险家",
+      "Desc": "开启各类宝箱后的5秒内，持续恢复30%生命值。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10010_1",
+      "Name": "冒险家金杯",
+      "Desc": "冒险家某次出征的战利品，虽然有缺口，仍然是值得骄傲的猎获。",
+      "Story": {
+        "280101": {
+          "Zh": "ART/UI/Readable/CHS/Relic10010_1",
+          "En": "ART/UI/Readable/EN/Relic10010_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10010_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10010_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10010_2",
+      "Name": "冒险家尾羽",
+      "Desc": "异国的奇妙鸟类的羽毛，在这片大陆上非常罕见。",
+      "Story": {
+        "280102": {
+          "Zh": "ART/UI/Readable/CHS/Relic10010_2",
+          "En": "ART/UI/Readable/EN/Relic10010_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10010_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10010_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10010_3",
+      "Name": "冒险家头带",
+      "Desc": "束在额前的饰带，吸满了汗液、覆盖着尘土。但脏污难以遮掩冒险家的骄傲。",
+      "Story": {
+        "280103": {
+          "Zh": "ART/UI/Readable/CHS/Relic10010_3",
+          "En": "ART/UI/Readable/EN/Relic10010_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10010_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10010_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10010_4",
+      "Name": "冒险家之花",
+      "Desc": "从深邃的古都寻得的绝境求生的小花，被当做骄傲的勋章佩在胸前。",
+      "Story": {
+        "280104": {
+          "Zh": "ART/UI/Readable/CHS/Relic10010_4",
+          "En": "ART/UI/Readable/EN/Relic10010_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10010_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10010_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10010_5",
+      "Name": "冒险家怀表",
+      "Desc": "常在不见天日的巨渊还是失落的古都流连的冒险家，会经常忘记时间。",
+      "Story": {
+        "280105": {
+          "Zh": "ART/UI/Readable/CHS/Relic10010_5",
+          "En": "ART/UI/Readable/EN/Relic10010_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10010_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10010_5_KR"
+        }
+      }
+    }
+  }
+}

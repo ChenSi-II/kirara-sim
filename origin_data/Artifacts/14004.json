@@ -1,0 +1,146 @@
+{
+  "Id": 14004,
+  "Icon": "UI_RelicIcon_14004_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HEAL_ADD",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140040,
+      "Id": 214004,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "被怜爱的少女",
+      "Desc": "角色造成的治疗效果提升15%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140041,
+      "Id": 214004,
+      "Level": 1,
+      "OpenConfig": "Relic_SkillEnhanceCured",
+      "ParamList": [
+        0.2,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "被怜爱的少女",
+      "Desc": "施放元素战技或元素爆发后的10秒内，队伍中所有角色受治疗效果加成提高20%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_14004_1",
+      "Name": "少女片刻的闲暇",
+      "Desc": "芭芭拉专用",
+      "Story": {
+        "284041": {
+          "Zh": "ART/UI/Readable/CHS/Relic14004_1",
+          "En": "ART/UI/Readable/EN/Relic14004_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14004_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14004_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_14004_2",
+      "Name": "少女飘摇的思念",
+      "Desc": "芭芭拉专用",
+      "Story": {
+        "284042": {
+          "Zh": "ART/UI/Readable/CHS/Relic14004_2",
+          "En": "ART/UI/Readable/EN/Relic14004_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14004_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14004_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_14004_3",
+      "Name": "少女易逝的芳颜",
+      "Desc": "芭芭拉专用",
+      "Story": {
+        "284043": {
+          "Zh": "ART/UI/Readable/CHS/Relic14004_3",
+          "En": "ART/UI/Readable/EN/Relic14004_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14004_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14004_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_14004_4",
+      "Name": "远方的少女之心",
+      "Desc": "芭芭拉专用",
+      "Story": {
+        "284044": {
+          "Zh": "ART/UI/Readable/CHS/Relic14004_4",
+          "En": "ART/UI/Readable/EN/Relic14004_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14004_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14004_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_14004_5",
+      "Name": "少女苦短的良辰",
+      "Desc": "芭芭拉专用",
+      "Story": {
+        "284045": {
+          "Zh": "ART/UI/Readable/CHS/Relic14004_5",
+          "En": "ART/UI/Readable/EN/Relic14004_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14004_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14004_5_KR"
+        }
+      }
+    }
+  }
+}

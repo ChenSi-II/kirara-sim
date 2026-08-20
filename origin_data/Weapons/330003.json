@@ -1,0 +1,9 @@
+{
+  "Name": "芬里基亚的星芒",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在如今早已无法追忆的古老时代，高天的御使曾将这柄长枪赐予沙尔·芬德尼尔的主祭，允其引领绿荫苍翠的城邦。",
+  "WeaponType": "WEAPON_POLE",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Pole_MorphFylkir_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

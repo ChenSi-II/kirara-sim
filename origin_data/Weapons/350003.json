@@ -1,0 +1,9 @@
+{
+  "Name": "猰貐",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在如今早已无法追忆的古老时代，高天的御使曾将这柄长弓赐予琅玕的主祭，允其引领新诞的文明。",
+  "WeaponType": "WEAPON_BOW",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Bow_MorphYayu_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

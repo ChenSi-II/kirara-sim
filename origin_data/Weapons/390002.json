@@ -1,0 +1,9 @@
+{
+  "Name": "星锋剑",
+  "Desc": "闪映着蓦然辉光的星色长剑，只有旅行者可以装备的特殊兵刃幻形。\\n\\n<i>「我是万物肇始之刻的空无，我是万物沦没后新诞的荧火。」</i>\\n<i>「看啊，我的功业已成。」</i>",
+  "WeaponType": "WEAPON_SWORD_ONE_HAND",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya01",
+  "Tag": "TAG_TYPE_NONE",
+  "Skin": true
+}

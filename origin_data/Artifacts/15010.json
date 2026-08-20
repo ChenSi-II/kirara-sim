@@ -1,0 +1,61 @@
+{
+  "Id": 15010,
+  "Icon": "UI_RelicIcon_15010_3",
+  "Need": [
+    1
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150100,
+      "Id": 215010,
+      "Level": 0,
+      "OpenConfig": "Relic_WaterResistance",
+      "ParamList": [
+        0.4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "祭水之人",
+      "Desc": "受到的水元素附着效果的持续时间减少40%。"
+    }
+  ],
+  "Parts": {
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15010_3",
+      "Name": "祭水礼冠",
+      "Desc": "在古老的时代，司祭祀之人佩戴的礼冠。因为常年浸没在水中，具有奇妙的抗性。",
+      "Story": {
+        "285103": {
+          "Zh": "ART/UI/Readable/CHS/Relic15010_3",
+          "En": "ART/UI/Readable/EN/Relic15010_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15010_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15010_3_KR"
+        }
+      }
+    }
+  }
+}

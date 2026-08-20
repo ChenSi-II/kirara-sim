@@ -1,0 +1,9 @@
+{
+  "Name": "贾尔杜莱的银辉",
+  "Desc": "自地脉至深之处显现的辉耀兵刃幻形，能依据持有者的元素类型变化自身。据说在如今早已无法追忆的古老时代，高天的御使曾将这柄巨剑赐予夷斯的主祭，允其引领水草丰茂的海港。",
+  "WeaponType": "WEAPON_CLAYMORE",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Claymore_MorphGradlon_{0}",
+  "Tag": "TAG_TYPE_COLOR_BY_ELEMENT",
+  "Skin": true
+}

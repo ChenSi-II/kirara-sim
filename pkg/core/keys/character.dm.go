@@ -173,6 +173,8 @@ const (
 	Prune                         // prune
 	Sandrone                      // sandrone
 	Zibai                         // zibai
+	Vodyanitsa                    // vodyanitsa
+	Vesna                         // vesna
 	InvalidChar                   // invalidchar
 )
 
@@ -308,6 +310,8 @@ var _CharNames = [...]string{
 	"prune",
 	"sandrone",
 	"zibai",
+	"vodyanitsa",
+	"vesna",
 	"invalidchar",
 }
 
@@ -443,5 +447,7 @@ var _CharValues = [...]Char{
 	Prune,
 	Sandrone,
 	Zibai,
+	Vodyanitsa,
+	Vesna,
 	InvalidChar,
 }

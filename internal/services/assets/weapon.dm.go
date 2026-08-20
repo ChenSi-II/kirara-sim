@@ -249,4 +249,10 @@ var weaponMap = map[string]string{
 	"wolffang":                        "UI_EquipIcon_Sword_Boreas_Awaken",
 	"wolfsgravestone":                 "UI_EquipIcon_Claymore_Wolfmound_Awaken",
 	"xiphosmoonlight":                 "UI_EquipIcon_Sword_Pleroma_Awaken",
+	"xinzhi":                          "UI_EquipIcon_Sword_SpikedStake",
+	"yingang":                         "UI_EquipIcon_Sword_Fajian",
+	"diebian":                         "UI_EquipIcon_Sword_Samosvist",
+	"ningxuechenxin":                  "UI_EquipIcon_Catalyst_FrostScepter",
+	"xuanliusongge":                   "UI_EquipIcon_Catalyst_Bludnye",
+	"roufengyouxian":                  "UI_EquipIcon_Bow_Windtalker",
 }

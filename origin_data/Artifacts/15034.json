@@ -1,0 +1,145 @@
+{
+  "Id": 15034,
+  "Icon": "UI_RelicIcon_15034_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150340,
+      "Id": 215034,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "回声之林夜话",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150341,
+      "Id": 215034,
+      "Level": 1,
+      "OpenConfig": "Relic_CrystalShieldToRockDamageUp",
+      "ParamList": [
+        10,
+        0.2,
+        1.5,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "回声之林夜话",
+      "Desc": "施放元素战技后的10秒内，岩元素伤害加成提升20%；若处于结晶反应产生的护盾庇护下，或附近存在月结晶反应产生的月笼，上述效果提高150%，进一步提高的效果将在不满足上述条件的1秒后移除。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15034_1",
+      "Name": "慷慨的墨水瓶",
+      "Desc": "故事中的女巫所借助的墨水瓶，有着不逊于蘸水笔的神奇魔法。",
+      "Story": {
+        "285341": {
+          "Zh": "ART/UI/Readable/CHS/Relic15034_1",
+          "En": "ART/UI/Readable/EN/Relic15034_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15034_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15034_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15034_2",
+      "Name": "诚恳的蘸水笔",
+      "Desc": "故事中的女巫所使用的蘸水笔，流畅顺滑在它所有的优点中最不值得一提。",
+      "Story": {
+        "285342": {
+          "Zh": "ART/UI/Readable/CHS/Relic15034_2",
+          "En": "ART/UI/Readable/EN/Relic15034_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15034_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15034_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15034_3",
+      "Name": "慈爱的淑女帽",
+      "Desc": "故事中的女巫所爱用的淑女帽，沉稳又不失俏皮的设计令她格外中意。",
+      "Story": {
+        "285343": {
+          "Zh": "ART/UI/Readable/CHS/Relic15034_3",
+          "En": "ART/UI/Readable/EN/Relic15034_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15034_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15034_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15034_4",
+      "Name": "无私的妆饰花",
+      "Desc": "故事中的女巫所佩戴的胸花，与她所喜爱的其他装饰一样，用蝴蝶的造型作为点缀。",
+      "Story": {
+        "285344": {
+          "Zh": "ART/UI/Readable/CHS/Relic15034_4",
+          "En": "ART/UI/Readable/EN/Relic15034_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15034_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15034_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15034_5",
+      "Name": "忠实的砂时计",
+      "Desc": "故事中的女巫所仰仗的砂时计，据说对它念出错误的咒语，时间的流逝就会格外迅速。",
+      "Story": {
+        "285345": {
+          "Zh": "ART/UI/Readable/CHS/Relic15034_5",
+          "En": "ART/UI/Readable/EN/Relic15034_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15034_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15034_5_KR"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "Id": 15016,
+  "Icon": "UI_RelicIcon_15016_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_WATER_ADD_HURT",
+          "Value": 0.15
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150160,
+      "Id": 215016,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "沉沦之心",
+      "Desc": "获得15%水元素伤害加成。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150161,
+      "Id": 215016,
+      "Level": 1,
+      "OpenConfig": "Relic_WaterSkillEnhanceNormalAtkAndExtraAtk",
+      "ParamList": [
+        0.3,
+        1,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "沉沦之心",
+      "Desc": "施放元素战技后的15秒内，普通攻击与重击造成的伤害提高30%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15016_1",
+      "Name": "沉波之盏",
+      "Desc": "待定",
+      "Story": {
+        "285161": {
+          "Zh": "ART/UI/Readable/CHS/Relic15016_1",
+          "En": "ART/UI/Readable/EN/Relic15016_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15016_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15016_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15016_2",
+      "Name": "追忆之风",
+      "Desc": "待定",
+      "Story": {
+        "285162": {
+          "Zh": "ART/UI/Readable/CHS/Relic15016_2",
+          "En": "ART/UI/Readable/EN/Relic15016_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15016_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15016_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15016_3",
+      "Name": "酒渍船帽",
+      "Desc": "待定",
+      "Story": {
+        "285163": {
+          "Zh": "ART/UI/Readable/CHS/Relic15016_3",
+          "En": "ART/UI/Readable/EN/Relic15016_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15016_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15016_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15016_4",
+      "Name": "饰金胸花",
+      "Desc": "待定",
+      "Story": {
+        "285164": {
+          "Zh": "ART/UI/Readable/CHS/Relic15016_4",
+          "En": "ART/UI/Readable/EN/Relic15016_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15016_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15016_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15016_5",
+      "Name": "坚铜罗盘",
+      "Desc": "待定",
+      "Story": {
+        "285165": {
+          "Zh": "ART/UI/Readable/CHS/Relic15016_5",
+          "En": "ART/UI/Readable/EN/Relic15016_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15016_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15016_5_KR"
+        }
+      }
+    }
+  }
+}

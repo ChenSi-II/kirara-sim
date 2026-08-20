@@ -1,0 +1,146 @@
+{
+  "Id": 15017,
+  "Icon": "UI_RelicIcon_15017_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_HP_PERCENT",
+          "Value": 0.2
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150170,
+      "Id": 215017,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "千岩牢固",
+      "Desc": "生命值提升20%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150171,
+      "Id": 215017,
+      "Level": 1,
+      "OpenConfig": "Relic_ShieldCostUpWhenElementalArtHit",
+      "ParamList": [
+        0.2,
+        0.3,
+        3,
+        0.5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "千岩牢固",
+      "Desc": "元素战技命中敌人后，使队伍中附近的所有角色攻击力提升20%，护盾强效提升30%，持续3秒。该效果每0.5秒至多触发一次。装备此圣遗物套装的角色处于队伍后台时，依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15017_1",
+      "Name": "盟誓金爵",
+      "Desc": "迪奥娜专用",
+      "Story": {
+        "285171": {
+          "Zh": "ART/UI/Readable/CHS/Relic15017_1",
+          "En": "ART/UI/Readable/EN/Relic15017_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15017_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15017_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15017_2",
+      "Name": "昭武翎羽",
+      "Desc": "迪奥娜专用",
+      "Story": {
+        "285172": {
+          "Zh": "ART/UI/Readable/CHS/Relic15017_2",
+          "En": "ART/UI/Readable/EN/Relic15017_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15017_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15017_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15017_3",
+      "Name": "将帅兜鍪",
+      "Desc": "迪奥娜专用",
+      "Story": {
+        "285173": {
+          "Zh": "ART/UI/Readable/CHS/Relic15017_3",
+          "En": "ART/UI/Readable/EN/Relic15017_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15017_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15017_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15017_4",
+      "Name": "勋绩之花",
+      "Desc": "迪奥娜专用",
+      "Story": {
+        "285174": {
+          "Zh": "ART/UI/Readable/CHS/Relic15017_4",
+          "En": "ART/UI/Readable/EN/Relic15017_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15017_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15017_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15017_5",
+      "Name": "金铜时晷",
+      "Desc": "迪奥娜专用",
+      "Story": {
+        "285175": {
+          "Zh": "ART/UI/Readable/CHS/Relic15017_5",
+          "En": "ART/UI/Readable/EN/Relic15017_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15017_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15017_5_KR"
+        }
+      }
+    }
+  }
+}

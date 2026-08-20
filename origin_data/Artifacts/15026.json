@@ -1,0 +1,145 @@
+{
+  "Id": 15026,
+  "Icon": "UI_RelicIcon_15026_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ELEMENT_MASTERY",
+          "Value": 80
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150260,
+      "Id": 215026,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        80,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "饰金之梦",
+      "Desc": "元素精通提高80点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150261,
+      "Id": 215026,
+      "Level": 1,
+      "OpenConfig": "Relic_ElemMasteryGathering",
+      "ParamList": [
+        0.14,
+        50,
+        8,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "饰金之梦",
+      "Desc": "触发元素反应后的8秒内，会根据队伍内其他角色的元素类型，使装备者获得强化：队伍中每存在1个和装备者同类元素的角色，攻击力提升14%；每存在1个和装备者不同元素类型的角色，元素精通提升50点。上述每类效果至多计算3个角色。该效果每8秒至多触发一次。装备者处于队伍后台时，依然能触发该效果。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15026_1",
+      "Name": "如蜜的终宴",
+      "Desc": "曾在古老盛大的宴会上使用的酒杯，褪去了往日华丽的颜色。",
+      "Story": {
+        "285261": {
+          "Zh": "ART/UI/Readable/CHS/Relic15026_1",
+          "En": "ART/UI/Readable/EN/Relic15026_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15026_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15026_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15026_2",
+      "Name": "裁断的翎羽",
+      "Desc": "曾用来衡量罪人心脏重量的特制翎羽，如今失去了原本的功能。",
+      "Story": {
+        "285262": {
+          "Zh": "ART/UI/Readable/CHS/Relic15026_2",
+          "En": "ART/UI/Readable/EN/Relic15026_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15026_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15026_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15026_3",
+      "Name": "沙王的投影",
+      "Desc": "旧日沙漠祭司的镶金头巾，其形制乃是为了效仿传说中的沙民之王。",
+      "Story": {
+        "285263": {
+          "Zh": "ART/UI/Readable/CHS/Relic15026_3",
+          "En": "ART/UI/Readable/EN/Relic15026_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15026_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15026_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15026_4",
+      "Name": "梦中的铁花",
+      "Desc": "暗金打造的蓓蕾，再无机会开放的花瓣包裹着赤红的花芯。",
+      "Story": {
+        "285264": {
+          "Zh": "ART/UI/Readable/CHS/Relic15026_4",
+          "En": "ART/UI/Readable/EN/Relic15026_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15026_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15026_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15026_5",
+      "Name": "沉金的岁月",
+      "Desc": "暗金光泽的古老日晷，似乎在诉说着沙漠的旧日。",
+      "Story": {
+        "285265": {
+          "Zh": "ART/UI/Readable/CHS/Relic15026_5",
+          "En": "ART/UI/Readable/EN/Relic15026_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15026_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15026_5_KR"
+        }
+      }
+    }
+  }
+}

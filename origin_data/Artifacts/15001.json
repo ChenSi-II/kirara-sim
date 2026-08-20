@@ -1,0 +1,146 @@
+{
+  "Id": 15001,
+  "Icon": "UI_RelicIcon_15001_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150010,
+      "Id": 215001,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "角斗士的终幕礼",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2150011,
+      "Id": 215001,
+      "Level": 1,
+      "OpenConfig": "Relic_MeleeAttackUp",
+      "ParamList": [
+        0.35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "角斗士的终幕礼",
+      "Desc": "装备该圣遗物套装的角色为单手剑、双手剑、长柄武器角色时，角色普通攻击造成的伤害提高35%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_15001_1",
+      "Name": "角斗士的酣醉",
+      "Desc": "雷泽专用",
+      "Story": {
+        "285011": {
+          "Zh": "ART/UI/Readable/CHS/Relic15001_1",
+          "En": "ART/UI/Readable/EN/Relic15001_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15001_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15001_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_15001_2",
+      "Name": "角斗士的归宿",
+      "Desc": "雷泽专用",
+      "Story": {
+        "285012": {
+          "Zh": "ART/UI/Readable/CHS/Relic15001_2",
+          "En": "ART/UI/Readable/EN/Relic15001_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15001_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15001_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_15001_3",
+      "Name": "角斗士的凯旋",
+      "Desc": "雷泽专用",
+      "Story": {
+        "285013": {
+          "Zh": "ART/UI/Readable/CHS/Relic15001_3",
+          "En": "ART/UI/Readable/EN/Relic15001_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15001_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15001_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_15001_4",
+      "Name": "角斗士的留恋",
+      "Desc": "雷泽专用",
+      "Story": {
+        "285014": {
+          "Zh": "ART/UI/Readable/CHS/Relic15001_4",
+          "En": "ART/UI/Readable/EN/Relic15001_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15001_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15001_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_15001_5",
+      "Name": "角斗士的希冀",
+      "Desc": "雷泽专用",
+      "Story": {
+        "285015": {
+          "Zh": "ART/UI/Readable/CHS/Relic15001_5",
+          "En": "ART/UI/Readable/EN/Relic15001_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic15001_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic15001_5_KR"
+        }
+      }
+    }
+  }
+}

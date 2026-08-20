@@ -1,0 +1,9 @@
+{
+  "Name": "星锋剑",
+  "Desc": "闪映着蓦然辉光的星色长剑，旅行者赠予朋友的特殊兵刃幻形。\\n\\n<i>「但这个世界不会再度燃烧，因为世界之外的正义已经降临。」</i>\\n<i>「看啊，今夜星光璀璨。」</i>",
+  "WeaponType": "WEAPON_SWORD_ONE_HAND",
+  "Rarity": 4,
+  "Icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya02",
+  "Tag": "TAG_TYPE_NONE",
+  "Skin": true
+}

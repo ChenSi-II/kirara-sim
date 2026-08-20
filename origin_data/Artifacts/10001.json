@@ -1,0 +1,148 @@
+{
+  "Id": 10001,
+  "Icon": "UI_RelicIcon_10001_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_ATTACK_PERCENT",
+          "Value": 0.18
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100010,
+      "Id": 210001,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "行者之心",
+      "Desc": "攻击力提高18%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100011,
+      "Id": 210001,
+      "Level": 1,
+      "OpenConfig": "Relic_ExtraAtkCritUp",
+      "ParamList": [
+        0.3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "行者之心",
+      "Desc": "重击的暴击率提升30%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10001_1",
+      "Name": "异国之盏",
+      "Desc": "朴素的白瓷酒杯，曾经盈满了欢愉的酒水。",
+      "Story": {
+        "280011": {
+          "Zh": "ART/UI/Readable/CHS/Relic10001_1",
+          "En": "ART/UI/Readable/EN/Relic10001_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10001_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10001_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10001_2",
+      "Name": "归乡之羽",
+      "Desc": "蓝色的箭羽，其上凝结着旅人消逝远去的眷恋。",
+      "Story": {
+        "280012": {
+          "Zh": "ART/UI/Readable/CHS/Relic10001_2",
+          "En": "ART/UI/Readable/EN/Relic10001_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10001_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10001_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10001_3",
+      "Name": "感别之冠",
+      "Desc": "散发着春风气息的柳冠。",
+      "Story": {
+        "280013": {
+          "Zh": "ART/UI/Readable/CHS/Relic10001_3",
+          "En": "ART/UI/Readable/EN/Relic10001_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10001_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10001_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10001_4",
+      "Name": "故人之心",
+      "Desc": "玉蓝色的小花，花茎上扎着谁人的丝带。",
+      "Story": {
+        "280014": {
+          "Zh": "ART/UI/Readable/CHS/Relic10001_4",
+          "En": "ART/UI/Readable/EN/Relic10001_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10001_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10001_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10001_5",
+      "Name": "逐光之石",
+      "Desc": "饱经沧桑的时晷，永远在静默地记录着日月循环。",
+      "Story": {
+        "280015": {
+          "Zh": "ART/UI/Readable/CHS/Relic10001_5",
+          "En": "ART/UI/Readable/EN/Relic10001_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10001_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10001_5_KR"
+        }
+      }
+    }
+  }
+}

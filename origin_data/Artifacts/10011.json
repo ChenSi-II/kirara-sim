@@ -1,0 +1,147 @@
+{
+  "Id": 10011,
+  "Icon": "UI_RelicIcon_10011_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_DEFENSE",
+          "Value": 100
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100110,
+      "Id": 210011,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "幸运儿",
+      "Desc": "防御力提高100点。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2100111,
+      "Id": 210011,
+      "Level": 1,
+      "OpenConfig": "Relic_CoinHealSelf",
+      "ParamList": [
+        300,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "幸运儿",
+      "Desc": "拾取摩拉时，恢复300点生命值。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_10011_1",
+      "Name": "幸运儿之杯",
+      "Desc": "精致的金属器皿，曾经被用来打趴了夜盗。",
+      "Story": {
+        "280111": {
+          "Zh": "ART/UI/Readable/CHS/Relic10011_1",
+          "En": "ART/UI/Readable/EN/Relic10011_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10011_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10011_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_10011_2",
+      "Name": "幸运儿鹰羽",
+      "Desc": "挡在面前的魔物却被捕食的鹰隼盯上，偶尔能带来这种程度运气的翎羽。",
+      "Story": {
+        "280112": {
+          "Zh": "ART/UI/Readable/CHS/Relic10011_2",
+          "En": "ART/UI/Readable/EN/Relic10011_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10011_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10011_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_10011_3",
+      "Name": "幸运儿银冠",
+      "Desc": "原本坠入落穴，却是被驱逐的旧宗族藏宝的地窖。是那次经历的纪念品。",
+      "Story": {
+        "280113": {
+          "Zh": "ART/UI/Readable/CHS/Relic10011_3",
+          "En": "ART/UI/Readable/EN/Relic10011_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10011_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10011_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_10011_4",
+      "Name": "幸运儿绿花",
+      "Desc": "无忧无虑地生长在原野里的四叶绿花，被采是因为能带来幸运之说。",
+      "Story": {
+        "280114": {
+          "Zh": "ART/UI/Readable/CHS/Relic10011_4",
+          "En": "ART/UI/Readable/EN/Relic10011_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10011_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10011_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_10011_5",
+      "Name": "幸运儿沙漏",
+      "Desc": "因为破洞而空空如也的沙漏。时光流逝对无忧无虑的人没有意义。",
+      "Story": {
+        "280115": {
+          "Zh": "ART/UI/Readable/CHS/Relic10011_5",
+          "En": "ART/UI/Readable/EN/Relic10011_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic10011_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic10011_5_KR"
+        }
+      }
+    }
+  }
+}

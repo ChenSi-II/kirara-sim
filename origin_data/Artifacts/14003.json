@@ -1,0 +1,146 @@
+{
+  "Id": 14003,
+  "Icon": "UI_RelicIcon_14003_4",
+  "Need": [
+    2,
+    4
+  ],
+  "Rank": [
+    3,
+    4,
+    5
+  ],
+  "Affix": [
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_FIRE_SUB_HURT",
+          "Value": 0.4
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140030,
+      "Id": 214003,
+      "Level": 0,
+      "OpenConfig": "",
+      "ParamList": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "渡过烈火的贤人",
+      "Desc": "火元素抗性提高40%。"
+    },
+    {
+      "AddProps": [
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        },
+        {
+          "PropType": "FIGHT_PROP_NONE",
+          "Value": 0
+        }
+      ],
+      "AffixId": 2140031,
+      "Id": 214003,
+      "Level": 1,
+      "OpenConfig": "Relic_DamageUpAgainstFireAndBurning",
+      "ParamList": [
+        0.35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Name": "渡过烈火的贤人",
+      "Desc": "对处于火元素影响下的敌人造成的伤害提升35%。"
+    }
+  ],
+  "Parts": {
+    "EquipRing": {
+      "Icon": "UI_RelicIcon_14003_1",
+      "Name": "渡火者的醒悟",
+      "Desc": "传说中是能耐流火高热的杯盏，如今其中空无一物仅有余温。",
+      "Story": {
+        "284031": {
+          "Zh": "ART/UI/Readable/CHS/Relic14003_1",
+          "En": "ART/UI/Readable/EN/Relic14003_1_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14003_1_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14003_1_KR"
+        }
+      }
+    },
+    "EquipNecklace": {
+      "Icon": "UI_RelicIcon_14003_2",
+      "Name": "渡火者的解脱",
+      "Desc": "浴火的孤高之鸟的羽毛，似乎能从中听到野火里的振翅之声。",
+      "Story": {
+        "284032": {
+          "Zh": "ART/UI/Readable/CHS/Relic14003_2",
+          "En": "ART/UI/Readable/EN/Relic14003_2_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14003_2_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14003_2_KR"
+        }
+      }
+    },
+    "EquipDress": {
+      "Icon": "UI_RelicIcon_14003_3",
+      "Name": "渡火者的智慧",
+      "Desc": "渡过火海的智者之冠，曾经映照着在热浪中挺立的古老身影。",
+      "Story": {
+        "284033": {
+          "Zh": "ART/UI/Readable/CHS/Relic14003_3",
+          "En": "ART/UI/Readable/EN/Relic14003_3_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14003_3_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14003_3_KR"
+        }
+      }
+    },
+    "EquipBracer": {
+      "Icon": "UI_RelicIcon_14003_4",
+      "Name": "渡火者的决绝",
+      "Desc": "在烈焰的簇拥下盛开的花朵，传说古代智者佩着它走进了火海。",
+      "Story": {
+        "284034": {
+          "Zh": "ART/UI/Readable/CHS/Relic14003_4",
+          "En": "ART/UI/Readable/EN/Relic14003_4_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14003_4_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14003_4_KR"
+        }
+      }
+    },
+    "EquipShoes": {
+      "Icon": "UI_RelicIcon_14003_5",
+      "Name": "渡火者的煎熬",
+      "Desc": "流淌着闪烁热砂的沙漏。流沙匆匆而去，从不留下任何烙印。",
+      "Story": {
+        "284035": {
+          "Zh": "ART/UI/Readable/CHS/Relic14003_5",
+          "En": "ART/UI/Readable/EN/Relic14003_5_EN",
+          "Ja": "ART/UI/Readable/JP/Relic14003_5_JP",
+          "Ko": "ART/UI/Readable/KR/Relic14003_5_KR"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+use: pipeline
+kind: character
+name: vodyanitsa
+source: community
+version: origin_data
+override:
+  id: 10000140
