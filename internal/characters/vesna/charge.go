@@ -9,6 +9,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) ChargeAttack(map[string]int) (action.Info, error) {
 	ele := attributes.Physical
 	if c.StatusIsActive(spiritbladeArmedKey) {

@@ -10,6 +10,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) Attack(map[string]int) (action.Info, error) {
 	stage := c.NormalCounter
 	for hit, mult := range attack[stage] {

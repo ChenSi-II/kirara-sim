@@ -14,7 +14,7 @@ const (
 
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	c.SetCD(action.ActionBurst, int(burstParam[5][c.TalentLvlBurst()]*60))
-	c.ConsumeEnergy(6)
+	c.ConsumeEnergy(60)
 
 	c.Core.Tasks.Add(func() {
 		if c.StatusIsActive(lumiKey) {
@@ -50,12 +50,13 @@ func (c *char) initialBurstHeal() {
 
 func (c *char) startContinuousHealing() {
 	src := c.Core.F
-	c.AddStatus(burstHealKey, int(burstParam[4][c.TalentLvlBurst()]*60), true)
+	dur := int(burstParam[4][c.TalentLvlBurst()] * 60)
+	c.AddStatus(burstHealKey, dur, true)
 	// The local talent data defines duration but not interval. Two seconds is
 	// retained as an explicit provisional runtime value pending frame evidence.
-	for delay := 2 * 60; delay <= 12*60; delay += 2 * 60 {
+	for delay := 2 * 60; delay <= dur; delay += 2 * 60 {
 		c.QueueCharTask(func() {
-			if !c.StatusIsActive(burstHealKey) || src+12*60 < c.Core.F {
+			if !c.StatusIsActive(burstHealKey) || src+dur < c.Core.F {
 				return
 			}
 			lvl := c.TalentLvlBurst()

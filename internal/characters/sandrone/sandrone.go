@@ -9,6 +9,18 @@ import (
 
 type char struct {
 	*tmpl.Character
+	resolutionSrc   int
+	resolutionPower int
+	resolutionRays  int
+	tacticStacks    int
+}
+
+func (c *char) reduceResolutionPower(amount int) {
+	removed := min(amount, c.resolutionPower)
+	c.resolutionPower -= removed
+	if c.Base.Ascension >= 1 {
+		c.tacticStacks = min(10, c.tacticStacks+removed/10)
+	}
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {

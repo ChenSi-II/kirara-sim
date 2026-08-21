@@ -13,6 +13,7 @@ const (
 	spiritbladeArmedKey = "vesna-spiritblade-armed"
 	radianceKey         = "vesna-radiance-star-diffusion"
 	composureKey        = "vesna-composure"
+	stepReadyKey        = "vesna-spiritblade-step-ready"
 )
 
 type char struct {
@@ -50,6 +51,9 @@ func (c *char) Init() error {
 }
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
+	if a == action.ActionSkill && c.StatusIsActive(stepReadyKey) {
+		return true, action.NoFailure
+	}
 	if a == action.ActionSkill && c.StatusIsActive(spiritbladeArmedKey) &&
 		(c.magic > 0 || (c.specialStage == 2 && c.freeDance)) {
 		return true, action.NoFailure

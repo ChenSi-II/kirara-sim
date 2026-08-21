@@ -9,6 +9,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Spiritblade: Burst", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Anemo, Durability: 25, Mult: burst[c.TalentLvlBurst()] * c.spiritbladeBonus()}
 	if c.StatusIsActive(radianceKey) {

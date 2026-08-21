@@ -36,7 +36,11 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 		c.evilsbane = true
 	}
 	c.SetCD(action.ActionBurst, int(burstParam[2][lvl]*60))
-	c.ConsumeEnergy(20)
+	c.ConsumeEnergy(60)
+	if c.Base.Cons >= 4 && c.StatusIsActive("lohen-c4-refund") {
+		c.DeleteStatus("lohen-c4-refund")
+		c.AddEnergy("lohen-c4-burst-refund", 15)
+	}
 	f := frames.InitAbilSlice(78)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 78, CanQueueAfter: 66, State: action.BurstState}, nil
 }

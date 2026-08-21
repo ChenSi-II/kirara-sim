@@ -12,6 +12,9 @@ import (
 
 func (c *char) initAscensions() {
 	c.Core.Flags.Custom[reactable.LunarCrystallizeEnableKey] = 1
+	c.Core.Events.Subscribe(event.OnMoondriftHarmony, func(...any) {
+		c.AddStatus("zibai-selenic-descent", 4*60, true)
+	}, "zibai-selenic-descent-harmony")
 	geo, hydro := 0, 0
 	for _, ch := range c.Core.Player.Chars() {
 		if ch.Index() != c.Index() && ch.Base.Element == attributes.Geo {

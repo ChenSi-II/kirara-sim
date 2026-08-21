@@ -24,9 +24,13 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 	if c.Core.StarReactions.DiffusionActive {
 		beam.AttackTag, beam.ICDTag, beam.Mult = attacks.AttackTagReactionStarDiffusionCryo, attacks.ICDTagNone, burst[3][lvl]
 	}
+	if (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) && c.tacticStacks > 0 {
+		beam.Mult *= 1 + .10*float64(c.tacticStacks)
+		c.tacticStacks = 0
+	}
 	c.Core.QueueAttack(beam, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 56, 56)
 	c.SetCD(action.ActionBurst, int(burstParam[3][lvl]*60))
-	c.ConsumeEnergy(56)
+	c.ConsumeEnergy(60)
 	f := frames.InitAbilSlice(88)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 88, CanQueueAfter: 76, State: action.BurstState}, nil
 }

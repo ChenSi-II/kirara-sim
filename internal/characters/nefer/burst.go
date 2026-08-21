@@ -20,7 +20,7 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 	c.veils = 0
 	c.AddStatus("nefer-true-eye", 60, true)
 	c.SetCD(action.ActionBurst, int(burstParam[5][lvl]*60))
-	c.ConsumeEnergy(28)
+	c.ConsumeEnergy(60)
 	f := frames.InitAbilSlice(76)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 76, CanQueueAfter: 64, State: action.BurstState}, nil
 }

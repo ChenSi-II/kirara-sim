@@ -10,6 +10,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/player"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) LowPlungeAttack(p map[string]int) (action.Info, error)  { return c.plunge(p, false) }
 func (c *char) HighPlungeAttack(p map[string]int) (action.Info, error) { return c.plunge(p, true) }
 func (c *char) plunge(p map[string]int, high bool) (action.Info, error) {

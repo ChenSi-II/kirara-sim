@@ -20,6 +20,10 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	} else if c.Core.StarReactions.DiffusionActive {
 		second.AttackTag, second.ICDTag, second.Mult = attacks.AttackTagReactionStarDiffusionCryo, attacks.ICDTagNone, skill[2][lvl]
 	}
+	if c.Base.Ascension >= 1 && c.resolutionPower > 50 && (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) {
+		second.Mult *= 4
+		c.reduceResolutionPower(50)
+	}
 	c.Core.QueueAttack(second, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 32, 32)
 	c.SetCD(action.ActionSkill, int(skillParam[2][lvl]*60))
 	f := frames.InitAbilSlice(54)

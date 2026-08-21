@@ -20,17 +20,25 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 	dur := int(burstParam[6][lvl] * 60)
 	c.nightingaleStacks = int(burstParam[4][lvl])
 	c.consumedStacks = 0
+	c.constructStacks = min(15, 5*c.Core.Constructs.Count())
+	c.nightingaleStacks += c.constructStacks
 	c.AddStatus(orioleSongKey, dur, true)
 	c.lightkeepersOath()
 	if c.Base.Cons >= 4 {
 		for _, ch := range c.Core.Player.Chars() {
-			buff := make([]float64, attributes.EndStatType)
-			buff[attributes.DEF] = 200
-			ch.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("illuga-c4", dur), AffectedStat: attributes.DEF, Amount: func() []float64 { return buff }})
+			target := ch
+			target.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("illuga-c4", dur), AffectedStat: attributes.DEF, Amount: func() []float64 {
+				buff := make([]float64, attributes.EndStatType)
+				if target.Index() != c.Core.Player.Active() {
+					return buff
+				}
+				buff[attributes.DEF] = 200
+				return buff
+			}})
 		}
 	}
 	c.SetCD(action.ActionBurst, int(burstParam[7][lvl]*60))
-	c.ConsumeEnergy(42)
+	c.ConsumeEnergy(60)
 	f := frames.InitAbilSlice(82)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 82, CanQueueAfter: 70, State: action.BurstState}, nil
 }

@@ -12,6 +12,17 @@ type char struct {
 	*tmpl.Character
 	joy, will, etchedUses int
 	evilsbane             bool
+	c6ExtendReady         bool
+}
+
+const c3MomentumKey = "lohen-c3-momentum"
+
+func (c *char) skillLevel() int {
+	lvl := c.TalentLvlSkill()
+	if c.StatusIsActive(c3MomentumKey) {
+		lvl = min(lvl+1, len(skillParam[0])-1)
+	}
+	return lvl
 }
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {

@@ -11,6 +11,7 @@ type char struct {
 	*tmpl.Character
 	nightingaleStacks int
 	consumedStacks    int
+	constructStacks   int
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {

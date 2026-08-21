@@ -51,14 +51,19 @@ func (c *char) phantasmPerformance() (action.Info, error) {
 	}
 	for i := 0; i < 3; i++ {
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Phantasm Performance Shade %d", i+1), AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, Mult: skillParam[8+i][lvl] * bonus}
+		if c.Base.Cons >= 6 && i == 1 {
+			ai.Mult = 0
+			ai.FlatDmg = .85 * c.Stat(attributes.EM)
+			ai.Elevation = .15
+		}
 		if c.Base.Cons >= 1 {
 			ai.FlatDmg += .6 * c.Stat(attributes.EM) * bonus
 		}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 24+i*10, 24+i*10)
 	}
 	if c.Base.Cons >= 6 {
-		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Phantasm Performance (C6)", AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, FlatDmg: 1.2 * c.Stat(attributes.EM), Elevation: .15}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 60, 60)
+		finish := info.AttackInfo{ActorIndex: c.Index(), Abil: "Phantasm Performance (C6) Finale", AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, FlatDmg: 1.2 * c.Stat(attributes.EM), Elevation: .15}
+		c.Core.QueueAttack(finish, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 60, 60)
 	}
 	if c.phantasmUses >= 3 {
 		c.DeleteStatus(shadowDanceKey)

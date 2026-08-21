@@ -16,7 +16,16 @@ func (c *char) initAscensions() {
 		return
 	}
 	register := func(evt event.Event, ele attributes.Element) {
-		c.Core.Events.Subscribe(evt, func(...any) { c.oathhammer(ele) }, fmt.Sprintf("prune-a1-%d", evt))
+		c.Core.Events.Subscribe(evt, func(args ...any) {
+			if !c.StatusIsActive(bellKey) || len(args) < 2 {
+				return
+			}
+			atk, ok := args[1].(*info.AttackEvent)
+			if !ok || atk.Info.ActorIndex != c.Index() || atk.Info.Abil != "Witchlure Bell" {
+				return
+			}
+			c.oathhammer(ele)
+		}, fmt.Sprintf("prune-a1-%d", evt))
 	}
 	register(event.OnSwirlPyro, attributes.Pyro)
 	register(event.OnSwirlHydro, attributes.Hydro)
@@ -31,6 +40,15 @@ func (c *char) oathhammer(ele attributes.Element) {
 	}
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Banehunter Oathhammer", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: ele, Mult: 1.5}
 	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
+	if c.Base.Cons >= 2 {
+		c.c2Stacks = min(6, c.c2Stacks+1)
+	}
+	if c.Base.Cons >= 4 {
+		bounce := ai
+		bounce.Abil = "Banehunter Oathhammer Bounce"
+		bounce.Mult = .80
+		c.Core.QueueAttack(bounce, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 8, 8)
+	}
 	c.converted = ele
 	c.tollingRally()
 	if c.Base.Cons >= 1 && !c.StatusIsActive("prune-c1-icd") {
@@ -45,6 +63,9 @@ func (c *char) tollingRally() {
 	}
 	bonus := min(max(c.TotalAtk()-2000, 0)*.00025, .50)
 	for _, ch := range c.Core.Player.Chars() {
+		if ch.Index() == c.Index() {
+			continue
+		}
 		ch.AddAttackMod(character.AttackMod{Base: modifier.NewBaseWithHitlag("prune-tolling-rally", 5*60), Amount: func(*info.AttackEvent, info.Target) []float64 {
 			out := make([]float64, attributes.EndStatType)
 			out[attributes.DmgP] = bonus

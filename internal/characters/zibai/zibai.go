@@ -10,11 +10,12 @@ import (
 
 type char struct {
 	*tmpl.Character
-	phase, strides int
-	phaseSrc       int
-	scattermoon    bool
-	c1FirstStride  bool
-	c6Elevation    float64
+	phase         float64
+	strides       int
+	phaseSrc      int
+	scattermoon   bool
+	c1FirstStride bool
+	c6Elevation   float64
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {

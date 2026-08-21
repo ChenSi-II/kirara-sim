@@ -9,7 +9,11 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) Skill(map[string]int) (action.Info, error) {
+	if c.Base.Cons >= 6 && c.StatusIsActive(stepReadyKey) {
+		return c.spiritbladeStep()
+	}
 	if c.StatusIsActive(spiritbladeArmedKey) {
 		return c.spiritbladeSkill()
 	}
@@ -76,12 +80,32 @@ func (c *char) spiritbladeSkill() (action.Info, error) {
 	if c.Base.Cons >= 1 {
 		maxDance++
 	}
+	if c.Base.Cons >= 6 && stage == 2 {
+		c.AddStatus(stepReadyKey, 5*60, true)
+	}
 	if c.danceCount >= maxDance {
 		c.endSpiritbladeArmament()
 	}
 
 	f := frames.InitAbilSlice(54)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 54, CanQueueAfter: 38, State: action.SkillState}, nil
+}
+
+func (c *char) spiritbladeStep() (action.Info, error) {
+	c.DeleteStatus(stepReadyKey)
+	base := info.AttackInfo{ActorIndex: c.Index(), Abil: "Spiritblade: Step", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeSlash, Element: attributes.Anemo, Durability: 25, Mult: 1.5}
+	c.Core.QueueAttack(base, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 20, 20)
+	star := base
+	star.Abil = "Starblade: Step"
+	star.Mult = 2 * c.spiritbladeBonus()
+	star.AttackTag = attacks.AttackTagReactionStarDiffusionAnemo
+	star.ICDTag = attacks.ICDTagNone
+	star.Durability = 0
+	c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 26, 26)
+	if c.StatusIsActive(spiritbladeArmedKey) {
+		c.queueFeather(26)
+	}
+	return action.Info{Frames: frames.NewAbilFunc(frames.InitAbilSlice(54)), AnimationLength: 54, CanQueueAfter: 38, State: action.SkillState}, nil
 }
 
 func (c *char) queueVesnaSkillAttack(abil string, mult float64, delay int) {

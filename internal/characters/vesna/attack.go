@@ -11,7 +11,11 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) Attack(map[string]int) (action.Info, error) {
+	if c.StatusIsActive(stepReadyKey) && c.Base.Cons >= 6 {
+		return c.spiritbladeStep()
+	}
 	stage := c.NormalCounter
 	ele := attributes.Physical
 	if c.StatusIsActive(spiritbladeArmedKey) {

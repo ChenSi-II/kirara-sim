@@ -3,6 +3,7 @@ package vesna
 import (
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/modifier"
@@ -13,17 +14,29 @@ func (c *char) initConstellations() {
 		c.AddReactBonusMod(character.ReactBonusMod{
 			Base: modifier.NewBase("vesna-c1-star-diffusion", -1),
 			Amount: func(ai info.AttackInfo) float64 {
-				if !c.StatusIsActive(spiritbladeArmedKey) {
+				if !c.StatusIsActive(spiritbladeArmedKey) && !c.StatusIsActive(stepReadyKey) {
 					return 0
 				}
 				switch ai.AttackTag {
 				case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
-					return 0.20
+					return .20
 				default:
 					return 0
 				}
 			},
 		})
+	}
+	if c.Base.Cons >= 6 {
+		c.Core.Events.Subscribe(event.OnApplyAttack, func(args ...any) {
+			atk := args[0].(*info.AttackEvent)
+			if atk.Info.ActorIndex != c.Index() {
+				return
+			}
+			switch atk.Info.AttackTag {
+			case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
+				atk.Info.Elevation += .20
+			}
+		}, "vesna-c6-elevation")
 	}
 	if c.Base.Cons < 2 {
 		return

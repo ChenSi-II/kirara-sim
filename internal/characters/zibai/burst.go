@@ -19,7 +19,7 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 		c.AddStatus(lunarPhaseKey, c.StatusDuration(lunarPhaseKey)+102, true)
 	}
 	c.SetCD(action.ActionBurst, int(burstParam[2][lvl]*60))
-	c.ConsumeEnergy(26)
+	c.ConsumeEnergy(60)
 	f := frames.InitAbilSlice(76)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 76, CanQueueAfter: 64, State: action.BurstState}, nil
 }

@@ -27,11 +27,7 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	for delay := 60; delay <= int(skillParam[3][lvl]*60); delay += 60 {
 		c.QueueCharTask(func() {
 			if src == c.phaseSrc && c.StatusIsActive(lunarPhaseKey) {
-				gain := 10
-				if c.Base.Cons >= 6 {
-					gain = 15
-				}
-				c.addPhase(gain)
+				c.addPhase(10)
 			}
 		}, delay)
 	}
@@ -43,7 +39,7 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 
 func (c *char) spiritSteed() (action.Info, error) {
 	lvl := c.TalentLvlSkill()
-	consumed := 70
+	consumed := 70.0
 	if c.Base.Cons >= 6 {
 		consumed = c.phase
 	}
@@ -62,7 +58,7 @@ func (c *char) spiritSteed() (action.Info, error) {
 		c.c1FirstStride = false
 	}
 	if c.Base.Cons >= 6 && consumed > 70 {
-		c.c6Elevation = .016 * float64(consumed-70)
+		c.c6Elevation = .016 * (consumed - 70)
 		second.Elevation += c.c6Elevation
 		c.AddStatus("zibai-c6-elevation", 3*60, true)
 	}
@@ -77,7 +73,13 @@ func (c *char) spiritSteed() (action.Info, error) {
 	f := frames.InitAbilSlice(58)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 58, CanQueueAfter: 44, State: action.SkillState}, nil
 }
-func (c *char) addPhase(v int) { c.phase = min(100, c.phase+v) }
+func (c *char) addPhase(v int) {
+	gain := float64(v)
+	if c.Base.Cons >= 6 && c.StatusIsActive(lunarPhaseKey) {
+		gain *= 1.5
+	}
+	c.phase = min(100, c.phase+gain)
+}
 func (c *char) maxStrides() int {
 	if c.Base.Cons >= 1 {
 		return 5

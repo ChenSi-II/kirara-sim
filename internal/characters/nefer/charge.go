@@ -11,7 +11,18 @@ import (
 
 // TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) ChargeAttack(map[string]int) (action.Info, error) {
-	if c.StatusIsActive(shadowDanceKey) && c.Core.Player.Dew() > 0 && c.phantasmUses < 3 {
+	phantasm := c.StatusIsActive(shadowDanceKey) && c.Core.Player.Dew() > 0 && c.phantasmUses < 3
+	if c.StatusIsActive(shadowDanceKey) && !phantasm && c.StatusIsActive("nefer-a2-dew-window") && !c.StatusIsActive("nefer-a2-dew-granted") {
+		c.AddStatus("nefer-a2-dew-granted", 5*60, true)
+		amount := 1 + min(max(c.Stat(attributes.EM)-500, 0)/100*.1, .5)
+		c.a2DewRemainder += amount
+		gained := int(c.a2DewRemainder)
+		c.a2DewRemainder -= float64(gained)
+		for i := 0; i < gained; i++ {
+			c.Core.Player.AddVerdantDew()
+		}
+	}
+	if phantasm {
 		return c.phantasmPerformance()
 	}
 	for hit, mult := range charge {

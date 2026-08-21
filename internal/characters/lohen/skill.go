@@ -20,9 +20,28 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	}
 	lvl := c.TalentLvlSkill()
 	c.joy, c.will, c.etchedUses = 0, 0, 0
-	c.AddStatus(masterstrokeKey, int(skillParam[11][lvl]*60), true)
+	if !c.StatusIsActive("lohen-c3-cooldown") {
+		momentumDur := 9 * 60
+		for _, ch := range c.Core.Player.Chars() {
+			if ch.Index() == c.Index() {
+				continue
+			}
+			if ch.TalentLvlAttack() >= lvl || ch.TalentLvlSkill() >= lvl || ch.TalentLvlBurst() >= lvl {
+				momentumDur += 6 * 60
+				break
+			}
+		}
+		c.AddStatus(c3MomentumKey, momentumDur, true)
+		c.AddStatus("lohen-c3-cooldown", 18*60, true)
+	}
+	dur := int(skillParam[11][lvl] * 60)
+	c.AddStatus(masterstrokeKey, dur, true)
 	if c.Base.Cons >= 4 {
-		c.AddEnergy("lohen-c4", 15)
+		if c.Energy < c.EnergyMax {
+			c.AddEnergy("lohen-c4", 15)
+		} else {
+			c.AddStatus("lohen-c4-refund", 15*60, true)
+		}
 	}
 	c.SetCD(action.ActionSkill, int(skillParam[18][lvl]*60))
 	f := frames.InitAbilSlice(46)
@@ -30,14 +49,18 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 }
 
 func (c *char) etchedIntoBoneAndSoul() (action.Info, error) {
-	lvl := c.TalentLvlSkill()
+	lvl := c.skillLevel()
 	bonus := skillParam[17][lvl] * float64(c.will)
 	for i := 0; i < 4; i++ {
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Etched Into Bone and Soul %d", i+1), AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypePierce, Element: attributes.Cryo, Durability: 25, Mult: skillParam[16][lvl], BaseDmgBonus: bonus}
 		if c.Base.Cons >= 6 {
 			ai.FlatDmg += 0
 		}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 18+i*7, 18+i*7, c.etchedHit)
+		cb := c.etchedHit
+		if i > 0 {
+			cb = nil
+		}
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 18+i*7, 18+i*7, cb)
 	}
 	c.joy = 0
 	c.etchedUses++
@@ -89,5 +112,14 @@ func (c *char) etchedHit(a info.AttackCB) {
 	if a.Target.Type() == info.TargettableEnemy && !c.StatusIsActive("lohen-particle-icd") {
 		c.AddStatus("lohen-particle-icd", 5*60, true)
 		c.Core.QueueParticle(c.Base.Key.String(), 4, attributes.Cryo, c.ParticleDelay)
+	}
+	if c.Base.Cons >= 6 && a.Target.Type() == info.TargettableEnemy {
+		if c.c6ExtendReady && !c.StatusIsActive("lohen-c6-extend-icd") {
+			c.AddStatus("lohen-c6-extend-icd", 7*60, true)
+			if c.StatusIsActive(masterstrokeKey) {
+				c.AddStatus(masterstrokeKey, c.StatusDuration(masterstrokeKey)+75, true)
+			}
+		}
+		c.c6ExtendReady = true
 	}
 }

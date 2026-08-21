@@ -10,8 +10,9 @@ import (
 
 type char struct {
 	*tmpl.Character
-	phantasmUses int
-	seeds, veils int
+	phantasmUses   int
+	seeds, veils   int
+	a2DewRemainder float64
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {

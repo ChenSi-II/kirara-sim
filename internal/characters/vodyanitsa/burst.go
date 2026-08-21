@@ -9,6 +9,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
+// TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	mult := burst[c.TalentLvlBurst()]
 	if c.StatusIsActive(microphoneKey) {

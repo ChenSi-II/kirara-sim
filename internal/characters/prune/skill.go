@@ -48,6 +48,9 @@ func (c *char) skillHit(ele attributes.Element) info.AttackCBFunc {
 			return
 		}
 		c.tollingRally()
+		if c.Base.Cons >= 2 {
+			c.c2Stacks = min(6, c.c2Stacks+1)
+		}
 		if c.Base.Cons >= 1 && !c.StatusIsActive("prune-c1-icd") {
 			c.AddStatus("prune-c1-icd", 108, true)
 			c.AddEnergy("prune-c1", 2)
