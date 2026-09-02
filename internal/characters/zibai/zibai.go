@@ -31,7 +31,10 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
 	if a == action.ActionSkill && c.StatusIsActive(lunarPhaseKey) {
-		if c.phase < 70 {
+		if c.Base.Cons < 6 && c.phase < 70 {
+			return false, action.SkillCD
+		}
+		if c.Base.Cons >= 6 && c.phase <= 0 {
 			return false, action.SkillCD
 		}
 		return true, action.NoFailure

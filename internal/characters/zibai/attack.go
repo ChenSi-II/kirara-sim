@@ -38,7 +38,9 @@ func (c *char) lunarAttack() (action.Info, error) {
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Lunar Phase Normal %d-%d", stage+1, hit+1), AttackTag: attacks.AttackTagNormal, ICDTag: attacks.ICDTagNormalAttack, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeSlash, Element: attributes.Geo, Durability: 25, UseDef: true, Mult: skillParam[index][lvl]}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 18+hit*6, 18+hit*6, c.phaseNormalHit)
 	}
-	if stage == 3 {
+	// The extra fourth-hit Lunar Crystallize strike is only granted at
+	// Moon Sign: Full Moon, not merely while Lunar Phase Shift is active.
+	if stage == 3 && c.Core.Player.GetMoonsignLevel() >= 2 {
 		extra := info.AttackInfo{ActorIndex: c.Index(), Abil: "Lunar Phase Fourth-Hit Additional DMG", AttackTag: attacks.AttackTagDirectLunarCrystallize, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeSlash, Element: attributes.Geo, UseDef: true, Mult: skillParam[2][lvl]}
 		if c.scattermoon && c.Base.Cons >= 4 {
 			extra.Mult *= 2.5

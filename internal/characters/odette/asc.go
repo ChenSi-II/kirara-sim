@@ -21,6 +21,16 @@ func (c *char) initAscensions() {
 				return 0
 			}
 			bonus := .15 * float64(c.splendor[target.Index()])
+			// Snow Swan's Dream increases Odette's own Stellar reaction damage;
+			// C4 extends half of that bonus to the rest of the party.
+			if c.StatusIsActive(dreamKey) {
+				dream := burstParam[2][c.TalentLvlBurst()]
+				if target.Index() == c.Index() {
+					bonus += dream
+				} else if c.Base.Cons >= 4 {
+					bonus += dream * .5
+				}
+			}
 			if c.Base.Ascension >= 4 {
 				bonus += min(max(c.TotalAtk()-1000, 0)/100*.015, .30)
 			}
