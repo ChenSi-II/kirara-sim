@@ -27,7 +27,7 @@ type communityWeaponRecord struct {
 	Kind          string `json:"kind"`
 	Identity      struct {
 		ID        string `json:"id"`
-		GCSimSlug string `json:"gcsim_slug"`
+		GCSimSlug string `json:"gcsim_slug"` //nolint:tagliatelle // fixed by the external community schema
 	} `json:"identity"`
 	GCSim struct {
 		ConfigSeed struct {
@@ -35,7 +35,7 @@ type communityWeaponRecord struct {
 			Name       string `json:"name"`
 			OverrideID string `json:"override_id"`
 		} `json:"config_seed"`
-	} `json:"gcsim"`
+	} `json:"gcsim"` //nolint:tagliatelle // fixed by the external community schema
 	ImplementationInputs struct {
 		Confirmed struct {
 			Identity struct {
@@ -55,9 +55,9 @@ type communityWeaponRecord struct {
 }
 
 type communityWeaponProp struct {
-	InitialValue float64 `json:"init_value"`
+	InitialValue float64 `json:"init_value"` //nolint:tagliatelle // fixed by the external community schema
 	PropType     string  `json:"prop_type"`
-	CurveType    string  `json:"type"`
+	CurveType    string  `json:"type"` //nolint:tagliatelle // fixed by the external community schema
 }
 
 type communityRefinement struct {

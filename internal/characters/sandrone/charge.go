@@ -11,8 +11,10 @@ import (
 
 // Charge multipliers are exported by origin_data but omitted from the
 // generated action table because charged attacks have stateful follow-up hits.
-var resolutionSweep = []float64{.43, .465, .5, .55, .585, .625, .68, .735, .79, .85, .91, .97, 1.03, 1.09, 1.15}
-var resolutionRay = []float64{1.2255, 1.32525, 1.425, 1.5675, 1.66725, 1.78125, 1.938, 2.09475, 2.2515, 2.4225, 2.5935, 2.7645, 2.9355, 3.1065, 3.2775}
+var (
+	resolutionSweep = []float64{.43, .465, .5, .55, .585, .625, .68, .735, .79, .85, .91, .97, 1.03, 1.09, 1.15}
+	resolutionRay   = []float64{1.2255, 1.32525, 1.425, 1.5675, 1.66725, 1.78125, 1.938, 2.09475, 2.2515, 2.4225, 2.5935, 2.7645, 2.9355, 3.1065, 3.2775}
+)
 
 // TODO: replace conservative hitmarks/cancels when verified frame data is available.
 func (c *char) ChargeAttack(map[string]int) (action.Info, error) {

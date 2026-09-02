@@ -2,6 +2,7 @@ package nefer
 
 import (
 	"fmt"
+
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
@@ -79,6 +80,7 @@ func (c *char) absorbSeeds() {
 	c.addVeils(c.seeds)
 	c.seeds = 0
 }
+
 func (c *char) addVeils(n int) {
 	limit := 3
 	if c.Base.Cons >= 2 {
@@ -95,6 +97,7 @@ func (c *char) addVeils(n int) {
 		c.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("nefer-veil-em", 8*60), AffectedStat: attributes.EM, Amount: func() []float64 { return buff }})
 	}
 }
+
 func (c *char) c4ResTick(src int) func() {
 	return func() {
 		if c.Base.Cons < 4 || !c.StatusIsActive(shadowDanceKey) {
@@ -108,6 +111,7 @@ func (c *char) c4ResTick(src int) func() {
 		c.QueueCharTask(c.c4ResTick(src), 60)
 	}
 }
+
 func (c *char) skillParticle(a info.AttackCB) {
 	if a.Target.Type() == info.TargettableEnemy && !c.StatusIsActive("nefer-particle-icd") {
 		c.AddStatus("nefer-particle-icd", 5*60, true)

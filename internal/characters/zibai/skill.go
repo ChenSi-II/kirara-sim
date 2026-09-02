@@ -73,6 +73,7 @@ func (c *char) spiritSteed() (action.Info, error) {
 	f := frames.InitAbilSlice(58)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 58, CanQueueAfter: 44, State: action.SkillState}, nil
 }
+
 func (c *char) addPhase(v int) {
 	gain := float64(v)
 	if c.Base.Cons >= 6 && c.StatusIsActive(lunarPhaseKey) {
@@ -80,12 +81,14 @@ func (c *char) addPhase(v int) {
 	}
 	c.phase = min(100, c.phase+gain)
 }
+
 func (c *char) maxStrides() int {
 	if c.Base.Cons >= 1 {
 		return 5
 	}
 	return 4
 }
+
 func (c *char) skillParticle(a info.AttackCB) {
 	if a.Target.Type() == info.TargettableEnemy && !c.StatusIsActive("zibai-particle-icd") {
 		c.AddStatus("zibai-particle-icd", 5*60, true)

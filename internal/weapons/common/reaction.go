@@ -18,7 +18,6 @@ func SubscribeOwnerReactions(
 	callback func(*info.AttackEvent),
 ) {
 	for reaction := event.ReactionEventStartDelim + 1; reaction < event.ReactionEventEndDelim; reaction++ {
-		reaction := reaction
 		c.Events.Subscribe(reaction, func(args ...any) {
 			if len(args) < 2 {
 				return

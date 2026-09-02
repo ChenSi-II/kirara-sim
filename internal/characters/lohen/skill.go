@@ -2,6 +2,7 @@ package lohen
 
 import (
 	"fmt"
+
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
@@ -82,6 +83,7 @@ func (c *char) attackElement() attributes.Element {
 	}
 	return attributes.Physical
 }
+
 func (c *char) maxEtchedUses() int {
 	if c.Base.Cons >= 6 {
 		return 5
@@ -108,6 +110,7 @@ func (c *char) masterstrokeHit(a info.AttackCB) {
 		}
 	}
 }
+
 func (c *char) etchedHit(a info.AttackCB) {
 	if a.Target.Type() == info.TargettableEnemy && !c.StatusIsActive("lohen-particle-icd") {
 		c.AddStatus("lohen-particle-icd", 5*60, true)

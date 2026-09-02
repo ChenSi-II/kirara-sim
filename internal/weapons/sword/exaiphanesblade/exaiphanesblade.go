@@ -19,8 +19,10 @@ type Weapon struct{ Index int }
 func (w *Weapon) SetIndex(idx int) { w.Index = idx }
 func (w *Weapon) Init() error      { return nil }
 
-var atkByRefine = [...]float64{0, 0.16, 0.20, 0.24, 0.32, 0.40}
-var energyByRefine = [...]float64{0, 3, 3, 5, 5, 5}
+var (
+	atkByRefine    = [...]float64{0, 0.16, 0.20, 0.24, 0.32, 0.40}
+	energyByRefine = [...]float64{0, 3, 3, 5, 5, 5}
+)
 
 func isTraveler(key keys.Char) bool {
 	switch key {
