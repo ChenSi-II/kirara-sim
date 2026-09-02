@@ -173,7 +173,10 @@ func writeFile(name string, data []byte) {
 		if tmp, err := format.Source(data, format.Options{
 			LangVersion: runtime.Version(),
 			ModulePath:  baseModule,
-			Extra:       true,
+			Extra: format.Extra{
+				GroupParams:   true,
+				ClotheReturns: true,
+			},
 		}); err != nil {
 			fmt.Println(string(data))
 			assert(fmt.Errorf("failed to format go file: name=%v,err=%w", name, err))
