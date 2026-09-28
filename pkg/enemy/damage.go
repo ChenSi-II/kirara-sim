@@ -225,17 +225,7 @@ func (e *Enemy) calcDirectLunar(atk *info.AttackEvent, evt glog.Event, grpMult f
 	// add flat damage
 	damage += atk.Info.FlatDmg
 
-	// apply def mod
-	// TODO: Should we check this? lunar reaction damage is supposed to ignore def
-	defadj := e.defAdj(evt)
-	if defadj > 0.9 {
-		defadj = 0.9
-	}
-	defIgn := min(atk.Info.IgnoreDefPercent, 1.0)
-	defmod := float64(atk.Snapshot.CharLvl+100) /
-		(float64(atk.Snapshot.CharLvl+100) +
-			float64(e.Level+100)*(1+defadj)*(1-defIgn))
-	damage *= defmod
+	// Direct Lunar damage ignores enemy defense.
 
 	// apply resist mod
 	res := e.resist(&atk.Info, evt)
@@ -303,11 +293,11 @@ func (e *Enemy) calcDirectLunar(atk *info.AttackEvent, evt glog.Event, grpMult f
 			Write("ele", st).
 			Write("ele_per", elePer).
 			Write("bonus_dmg", dmgBonus).
-			Write("ignore_def", defIgn).
-			Write("def_adj", defadj).
+			Write("ignore_def", 1.0).
+			Write("def_adj", 0.0).
 			Write("target_lvl", e.Level).
 			Write("char_lvl", atk.Snapshot.CharLvl).
-			Write("def_mod", defmod).
+			Write("def_mod", 1.0).
 			Write("res", res).
 			Write("res_mod", resmod).
 			Write("elevation_bonus", elevation).
