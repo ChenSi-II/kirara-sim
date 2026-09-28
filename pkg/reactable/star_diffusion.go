@@ -49,6 +49,7 @@ func (r *Reactable) tryStarDiffusion(a *info.AttackEvent, aura attributes.Elemen
 			attacks.AttackTagReactionStarDiffusionAnemo,
 			attributes.Anemo,
 			0.75,
+			0,
 			combat.NewSingleTargetHit(r.self.Key()),
 		)
 	}
@@ -97,6 +98,7 @@ func (r *Reactable) detonateStarDiffusion() {
 		attacks.AttackTagReactionStarDiffusionCryo,
 		attributes.Cryo,
 		mult,
+		25, // 1U Cryo application on vortex detonation.
 		combat.NewSingleTargetHit(target.Key()),
 	)
 }

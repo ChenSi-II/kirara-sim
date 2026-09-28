@@ -146,6 +146,8 @@ func TestStarDiffusionVortexMultipliers(t *testing.T) {
 					t.Fatal("star diffusion did not trigger")
 				}
 			}
+			// Clear the triggering aura to verify the explosion applies Cryo itself.
+			trg[0].SetAuraDurability(info.ReactionModKeyCryo, 0, 0)
 			wantPreDetonationStacks := tc.stacks
 			if tc.immediate {
 				wantPreDetonationStacks = 0
@@ -160,6 +162,12 @@ func TestStarDiffusionVortexMultipliers(t *testing.T) {
 			}
 			if trg[0].last.Info.AttackTag != attacks.AttackTagReactionStarDiffusionCryo {
 				t.Fatalf("last attack tag = %v, want Star Diffusion Cryo", trg[0].last.Info.AttackTag)
+			}
+			if got := trg[0].last.Info.Durability; got != 25 {
+				t.Fatalf("explosion application = %v, want 25 (1U)", got)
+			}
+			if got := trg[0].GetAuraDurability(info.ReactionModKeyCryo); got <= info.ZeroDur {
+				t.Fatalf("explosion did not apply Cryo: aura durability = %v", got)
 			}
 			base := combat.CalcReactionBaseDmg(c.Player.ByIndex(0).Base.Level)
 			want := tc.wantMult * 0.6 * base

@@ -33,6 +33,7 @@ func doStarReactionAttack(
 	tag attacks.AttackTag,
 	ele attributes.Element,
 	mult float64,
+	durability info.Durability,
 	pattern info.AttackPattern,
 ) {
 	contributions := make([]starContribution, 0, len(c.Player.Chars()))
@@ -45,6 +46,7 @@ func doStarReactionAttack(
 		StrikeType:       attacks.StrikeTypeDefault,
 		Element:          ele,
 		Mult:             mult,
+		Durability:       durability,
 		IgnoreDefPercent: 1,
 	}
 
