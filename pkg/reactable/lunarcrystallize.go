@@ -184,7 +184,7 @@ func doSingleLCrAttack(contribMap [info.MaxChars]bool, target info.Target, core 
 		cr := ae.Snapshot.Stats[attributes.CR]
 		cd := ae.Snapshot.Stats[attributes.CD]
 
-		flatdmg := combat.CalcSpecialReactionDmg(char.Base.Level, char.ReactBonus(ae.Info), ae.Info, em)
+		flatdmg := combat.CalcSpecialReactionDmg(combat.CalcReactionBaseDmg(char.Base.Level), 1.6, char.ReactBonus(ae.Info), ae.Info, em)
 		isCrit := false
 
 		if core.Rand.Float64() <= cr {

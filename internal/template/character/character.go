@@ -16,6 +16,8 @@ import (
 type Character struct {
 	*character.CharWrapper
 	Core                   *core.Core
+	Enhanced               bool
+	superconductPriority   bool
 	ActionCD               []int
 	cdQueueWorkerStartedAt []int
 	cdCurrentQueueWorker   []*func()

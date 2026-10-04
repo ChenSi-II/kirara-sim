@@ -1,8 +1,6 @@
 package sandrone
 
 import (
-	"strings"
-
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/combat"
@@ -29,14 +27,13 @@ func (c *char) initC1() {
 	for _, ch := range c.Core.Player.Chars() {
 		target := ch
 		target.AddReactBonusMod(character.ReactBonusMod{Base: modifier.NewBase("sandrone-c1-c6", -1), Amount: func(ai info.AttackInfo) float64 {
-			return c.c1ReactBonus(target, ai)
+			return c.c1ReactBonus(ai)
 		}})
 	}
 	if c.Base.Cons < 6 {
 		return
 	}
-	c.Core.Events.Subscribe(event.OnApplyAttack, func(args ...any) {
-		atk := args[0].(*info.AttackEvent)
+	c.AddStarDamageMod("sandrone-c6-elevation", func(atk *info.AttackEvent) {
 		if atk.Info.ActorIndex != c.Index() {
 			return
 		}
@@ -44,10 +41,10 @@ func (c *char) initC1() {
 		case attacks.AttackTagReactionStarSuperconduct, attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
 			atk.Info.Elevation += .20
 		}
-	}, "sandrone-c6-elevation")
+	})
 }
 
-func (c *char) c1ReactBonus(target *character.CharWrapper, ai info.AttackInfo) float64 {
+func (c *char) c1ReactBonus(ai info.AttackInfo) float64 {
 	if c.StatusIsActive("sandrone-resolution") {
 		switch ai.AttackTag {
 		case attacks.AttackTagReactionStarSuperconduct, attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
@@ -55,19 +52,16 @@ func (c *char) c1ReactBonus(target *character.CharWrapper, ai info.AttackInfo) f
 		}
 		return 0
 	}
-	if c.Base.Cons < 6 || target.Index() != c.Index() {
-		return 0
-	}
-	return .20
+	return 0
 }
 
 func (c *char) initC2() {
 	c.AddAttackMod(character.AttackMod{Base: modifier.NewBase("sandrone-c2-ray-cd", -1), Amount: func(atk *info.AttackEvent, _ info.Target) []float64 {
-		if atk.Info.ActorIndex != c.Index() || !strings.Contains(atk.Info.Abil, "Ray") {
+		if atk.Info.ActorIndex != c.Index() || (atk.Info.Abil != "Faggio Condensing Ray" && atk.Info.Abil != "Faggio Cluster Condensing Ray") || !attacks.AttackTagIsStar(atk.Info.AttackTag) {
 			return nil
 		}
 		out := make([]float64, attributes.EndStatType)
-		out[attributes.CD] = .40 + .20*float64(min(max(c.resolutionRays-1, 0), 3))
+		out[attributes.CD] = .40 + .20*float64(min(max(c.resolutionRays, 0), 3))
 		return out
 	}})
 }
@@ -75,17 +69,20 @@ func (c *char) initC2() {
 func (c *char) initC4() {
 	last := -4 * 60
 	hook := func(args ...any) {
+		atk := args[1].(*info.AttackEvent)
+		if atk.Info.ActorIndex != c.Index() || !attacks.AttackTagIsStar(atk.Info.AttackTag) {
+			return
+		}
 		if c.Core.F-last < 4*60 {
 			return
 		}
 		last = c.Core.F
 		mult, tag := 1.25, attacks.AttackTagReactionStarSuperconduct
-		if c.Core.StarReactions.DiffusionActive {
+		if atk.Info.AttackTag != attacks.AttackTagReactionStarSuperconduct {
 			mult, tag = 1.875, attacks.AttackTagReactionStarDiffusionCryo
 		}
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Prismatic Resonance Cannon (C4)", AttackTag: tag, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Mult: mult}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(args[0].(info.Target), nil, 3), 0, 0)
 	}
-	c.Core.Events.Subscribe(event.OnStarSuperconduct, hook, "sandrone-c4-conduct")
-	c.Core.Events.Subscribe(event.OnStarDiffusion, hook, "sandrone-c4-diffusion")
+	c.Core.Events.Subscribe(event.OnEnemyDamage, hook, "sandrone-c4-hit")
 }

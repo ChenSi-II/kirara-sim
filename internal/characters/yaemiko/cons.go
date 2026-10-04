@@ -8,6 +8,10 @@ import (
 
 // When Sesshou Sakura lightning hits opponents, the Electro DMG Bonus of all nearby party members is increased by 20% for 5s.
 func (c *char) c4() {
+	if c.Enhanced && !c.StatusIsActive("yaemiko-c4-energy-icd") {
+		c.AddStatus("yaemiko-c4-energy-icd", 300, false)
+		c.AddEnergy("yaemiko-c4", 8)
+	}
 	// TODO: does this trigger for yaemiko too? assuming it does
 	for _, char := range c.Core.Player.Chars() {
 		char.AddStatMod(character.StatMod{

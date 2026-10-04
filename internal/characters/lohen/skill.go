@@ -45,8 +45,10 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 		}
 	}
 	c.SetCD(action.ActionSkill, int(skillParam[18][lvl]*60))
-	f := frames.InitAbilSlice(46)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 46, CanQueueAfter: 30, State: action.SkillState}, nil
+	// Image 8: E -> attack/charge starts at 0.350s. Other transitions
+	// provisionally share that value; see PLACEHOLDER_FRAMES.md.
+	f := frames.InitAbilSlice(21)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 21, CanQueueAfter: 21, State: action.SkillState}, nil
 }
 
 func (c *char) etchedIntoBoneAndSoul() (action.Info, error) {
@@ -61,7 +63,7 @@ func (c *char) etchedIntoBoneAndSoul() (action.Info, error) {
 		if i > 0 {
 			cb = nil
 		}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 18+i*7, 18+i*7, cb)
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), etchedHitmarks[i], etchedHitmarks[i], cb)
 	}
 	c.joy = 0
 	c.etchedUses++
@@ -73,8 +75,9 @@ func (c *char) etchedIntoBoneAndSoul() (action.Info, error) {
 	if c.Base.Cons >= 2 {
 		c.evilsbane = true
 	}
-	f := frames.InitAbilSlice(58)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 58, CanQueueAfter: 44, State: action.SkillState}, nil
+	// Image 8: the special E ends at 1.166s (70f).
+	f := frames.InitAbilSlice(70)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 70, CanQueueAfter: 70, State: action.SkillState}, nil
 }
 
 func (c *char) attackElement() attributes.Element {
@@ -95,11 +98,15 @@ func (c *char) masterstrokeHit(a info.AttackCB) {
 	if a.Target.Type() != info.TargettableEnemy || !c.StatusIsActive(masterstrokeKey) {
 		return
 	}
-	c.joy = min(100, c.joy+17)
+	if c.etchedUses < c.maxEtchedUses() && !c.StatusIsActive("lohen-joy-icd") {
+		c.joy = min(100, c.joy+int(skillParam[12][c.skillLevel()]))
+		c.AddStatus("lohen-joy-icd", 6, true)
+	}
 	if c.evilsbane && c.Base.Cons >= 2 {
 		c.evilsbane = false
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Evilsbane Blade", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypePierce, Element: attributes.Cryo, Mult: 5}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
+		// Image 8: the C2 hit at .583s follows EA1 at .550s by 2f.
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 2, 2)
 		for _, ch := range c.Core.Player.Chars() {
 			if ch.Index() == c.Index() {
 				continue

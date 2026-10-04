@@ -26,6 +26,10 @@ func init() {
 
 // Only applies burst damage. Main Talisman functions are handled in qiqi.go
 func (c *char) Burst(p map[string]int) (action.Info, error) {
+	if c.Enhanced && c.Base.Cons >= 6 {
+		c.c6Stacks = 4
+		c.AddStatus("qiqi-c6-stacks", 12*60, false)
+	}
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
 		Abil:       "Fortune-Preserving Talisman",
@@ -39,6 +43,14 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	}
 	ap := combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 7)
 	c.Core.QueueAttack(ai, ap, burstHitmark, burstHitmark)
+	if c.SuperconductRadiance() {
+		stellar := ai
+		stellar.Abil = "Fortune-Preserving Talisman (Stellar)"
+		stellar.AttackTag = attacks.AttackTagReactionStarSuperconduct
+		stellar.Durability = 0
+		stellar.Mult = burstStellar[c.TalentLvlBurst()]
+		c.Core.QueueAttack(stellar, ap, burstHitmark, burstHitmark)
+	}
 
 	// Talisman is applied via a 0 dmg attack way before the damage is dealt
 	talismanAi := info.AttackInfo{
@@ -95,6 +107,9 @@ func (c *char) talismanHealHook() {
 			Src:     healAmt,
 			Bonus:   c.Stat(attributes.Heal),
 		})
+		if c.Enhanced && c.Base.Cons >= 4 {
+			c.healLowest(1.8 * c.TotalAtk())
+		}
 		e.SetTag(talismanICDKey, c.Core.F+60)
 	}, "talisman-heal-hook")
 }
@@ -124,13 +139,17 @@ func (c *char) onNACAHitHook() {
 		// When Qiqi hits opponents with her Normal and Charged Attacks,
 		// she has a 50% chance to apply a Fortune-Preserving Talisman to them for 6s.
 		// This effect can only occur once every 30s.
-		if c.Base.Ascension >= 4 && !c.StatusIsActive(a4ICDKey) && (c.Core.Rand.Float64() < 0.5) {
+		chance, cooldown := .5, 1800
+		if c.StellarRadiance() {
+			chance, cooldown = 1, 900
+		}
+		if c.Base.Ascension >= 4 && !c.StatusIsActive(a4ICDKey) && c.Core.Rand.Float64() < chance {
 			// Don't want to overwrite a longer burst duration talisman with a shorter duration one
 			// TODO: Unclear how the interaction works if there is already a talisman on enemy
 			// TODO: Being generous for now and not putting it on CD if there is a conflict
 			if e.StatusExpiry(talismanKey) < c.Core.F+360 {
 				e.AddStatus(talismanKey, 360, true)
-				c.AddStatus(a4ICDKey, 1800, true) // 30s icd
+				c.AddStatus(a4ICDKey, cooldown, true) // 30s icd
 				c.Core.Log.NewEvent(
 					"Qiqi A4 Adding Talisman",
 					glog.LogCharacterEvent,

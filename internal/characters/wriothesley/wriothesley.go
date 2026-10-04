@@ -20,9 +20,10 @@ type char struct {
 	c1SkillExtensionProc bool
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 60
 	c.NormalHitNum = normalHitNum
@@ -36,6 +37,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.onExit()
 
 	c.a4()
@@ -52,10 +54,14 @@ func (c *char) Snapshot(ai *info.AttackInfo) info.Snapshot {
 		ai.Mult *= skill[c.TalentLvlSkill()]
 	}
 
+	c.enhanceSnapshot(ai, &ds)
 	return ds
 }
 
 func (c *char) graciousRebukeReady() bool {
+	if c.SuperconductRadiance() {
+		return c.Base.Ascension >= 1 && c.CurrentHPRatio() < .6
+	}
 	if c.Base.Ascension < 1 {
 		return false
 	}

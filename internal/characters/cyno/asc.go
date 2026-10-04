@@ -26,7 +26,12 @@ func (c *char) a1() {
 	}
 	c.a1Extended = false
 	c.AddStatus(a1Key, 84, true)
-	c.QueueCharTask(c.a1, 234)
+	src := c.burstSrc
+	c.QueueCharTask(func() {
+		if src == c.burstSrc {
+			c.a1()
+		}
+	}, 234)
 }
 
 func (c *char) a1Buff() {

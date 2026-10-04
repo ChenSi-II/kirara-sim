@@ -1,9 +1,7 @@
 package reactable
 
 import (
-	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
-	"github.com/genshinsim/gcsim/pkg/core/combat"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/glog"
 	"github.com/genshinsim/gcsim/pkg/core/info"
@@ -19,7 +17,7 @@ const (
 
 func (r *Reactable) addStarSuperconductStack(a *info.AttackEvent) {
 	state := &r.core.StarReactions
-	if !state.Enabled || !state.SuperconductActive || a.Info.Durability < info.ZeroDur {
+	if state.BeaconSuperconduct || (!state.Enabled && !state.SuperconductEnabled) || !state.SuperconductActive || a.Info.Durability < info.ZeroDur {
 		return
 	}
 	if a.Info.Element != attributes.Cryo && a.Info.Element != attributes.Electro {
@@ -89,9 +87,12 @@ func (r *Reactable) tryStarSuperconduct(a *info.AttackEvent, frozen bool) bool {
 	}
 
 	a.Reacted = true
+	if !r.core.StarReactions.BeaconSuperconduct {
+		r.activateStarSuperconductDomain()
+	}
+	// The interaction creates the domain and triggers reaction-dependent kit
+	// effects. Star Superconduct damage comes exclusively from talent attacks.
 	r.core.Events.Emit(event.OnStarSuperconduct, r.self, a)
-	r.activateStarSuperconductDomain()
-	r.queueStarSuperconduct(a.Info.ActorIndex)
 	return true
 }
 
@@ -127,24 +128,4 @@ func (r *Reactable) tryStarSuperconductOnAura(a *info.AttackEvent) bool {
 	}
 	a.Info.Durability = max(a.Info.Durability-consumed, 0)
 	return true
-}
-
-func (r *Reactable) queueStarSuperconduct(owner int) {
-	// Preserve ordinary Superconduct's 0.1s reaction-damage GCD.
-	if r.superconductGCD != -1 && r.core.F < r.superconductGCD {
-		return
-	}
-	r.superconductGCD = r.core.F + 0.1*60
-	coefficient := r.core.StarReactions.SuperconductCoefficient
-	doStarReactionAttack(
-		r.core,
-		r.self,
-		owner,
-		info.ReactionTypeStarSuperconduct,
-		attacks.AttackTagReactionStarSuperconduct,
-		attributes.Cryo,
-		coefficient,
-		0,
-		combat.NewCircleHitOnTarget(r.self, nil, 3),
-	)
 }

@@ -61,7 +61,13 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 		snap := c.Snapshot(&ai)
 		if c.StatusIsActive(a1SparkKey) {
 			snap.Stats[attributes.DmgP] += .50
-			c.DeleteStatus(a1SparkKey)
+			if c.IsHexerei {
+				c.consumeSpark()
+				ai.Abil = "Boom-Boom Barrage"
+				ai.Mult *= c.medalMultiplier()
+			} else {
+				c.DeleteStatus(a1SparkKey)
+			}
 		}
 
 		c.Core.QueueAttackWithSnap(

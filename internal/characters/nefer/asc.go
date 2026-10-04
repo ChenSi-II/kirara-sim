@@ -5,8 +5,6 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
-	"github.com/genshinsim/gcsim/pkg/core/player/character"
-	"github.com/genshinsim/gcsim/pkg/modifier"
 	"github.com/genshinsim/gcsim/pkg/reactable"
 )
 
@@ -29,11 +27,11 @@ func (c *char) initAscensions() {
 		}
 	}, "nefer-lunar-bloom-base")
 	if c.Base.Cons >= 6 {
-		c.AddReactBonusMod(character.ReactBonusMod{Base: modifier.NewBase("nefer-c6-lunar-bloom", -1), Amount: func(ai info.AttackInfo) float64 {
-			if ai.AttackTag == attacks.AttackTagDirectLunarBloom {
-				return .15
+		c.Core.Events.Subscribe(event.OnEnemyHit, func(args ...any) {
+			atk := args[1].(*info.AttackEvent)
+			if atk.Info.ActorIndex == c.Index() && atk.Info.AttackTag == attacks.AttackTagDirectLunarBloom && c.Core.Player.GetMoonsignLevel() >= 2 {
+				atk.Info.Elevation += .15
 			}
-			return 0
-		}})
+		}, "nefer-c6-lunar-bloom")
 	}
 }

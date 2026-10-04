@@ -48,17 +48,22 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 
 	for i, mult := range attack[c.NormalCounter] {
 		ai.Mult = mult[c.TalentLvlAttack()]
+		ap := combat.NewBoxHit(c.Core.Combat.Player(), c.Core.Combat.PrimaryTarget(), info.Point{Y: -0.5}, 0.1, 1)
+		var cb info.AttackCBFunc
+		if c.hexActive() && c.eyeActive() {
+			ai.Abil = "Hurricane Arrow"
+			ai.Element = attributes.Anemo
+			ai.Mult *= hurricaneMultiplier[c.TalentLvlAttack()]
+			ai.ICDTag = attacks.ICDTagNormalAttack
+			ap = combat.NewBoxHit(c.Core.Combat.Player(), c.Core.Combat.PrimaryTarget(), info.Point{Y: -0.5}, 1, 20)
+			cb = c.hurricaneHit
+		}
 		c.Core.QueueAttack(
 			ai,
-			combat.NewBoxHit(
-				c.Core.Combat.Player(),
-				c.Core.Combat.PrimaryTarget(),
-				info.Point{Y: -0.5},
-				0.1,
-				1,
-			),
+			ap,
 			attackHitmarks[c.NormalCounter][i],
 			attackHitmarks[c.NormalCounter][i]+travel,
+			cb,
 		)
 	}
 

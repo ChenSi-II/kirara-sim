@@ -3,11 +3,8 @@ package cyno
 import (
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
-	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/glog"
-	"github.com/genshinsim/gcsim/pkg/core/player/character"
-	"github.com/genshinsim/gcsim/pkg/modifier"
 )
 
 var burstFrames []int
@@ -25,28 +22,7 @@ func init() {
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
-	c.burstExtension = 0 // resets the number of possible extensions to the burst each time
-	c.c4Counter = 0      // reset c4 stacks
-	c.c6Stacks = 0       // same as above
-
-	m := make([]float64, attributes.EndStatType)
-	m[attributes.EM] = 100
-	c.AddStatMod(character.StatMod{
-		Base:         modifier.NewBaseWithHitlag(burstKey, 712), // 112f extra duration
-		AffectedStat: attributes.EM,
-		Amount: func() []float64 {
-			return m
-		},
-	})
-	c.burstSrc = c.Core.F
-	src := c.Core.F
-	// if cyno extends his burst, we need to set skill CD properly
-	c.QueueCharTask(func() { c.onBurstExpiry(src) }, 713+240)
-	c.QueueCharTask(func() { c.onBurstExpiry(src) }, 713+480)
-
-	if c.Base.Ascension >= 1 {
-		c.QueueCharTask(c.a1, 328)
-	}
+	c.enterPactsworn(712, false)
 	c.SetCD(action.ActionBurst, 1200)
 	c.ConsumeEnergy(3)
 
@@ -66,7 +42,7 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 func (c *char) tryBurstPPSlide(hitmark int) {
 	duration := c.StatusDuration(burstKey)
 	if 0 < duration && duration < hitmark {
-		c.ExtendStatus(burstKey, hitmark-duration+1)
+		c.extendPactsworn(hitmark - duration + 1)
 		c.Core.Log.NewEvent("pp slide activated", glog.LogCharacterEvent, c.Index()).
 			Write("expiry", c.StatusExpiry(burstKey))
 		src := c.burstSrc
@@ -83,6 +59,7 @@ func (c *char) onExitField() {
 		}
 		prev := args[0].(int)
 		if prev == c.Index() {
+			c.transferSunrise(args[1].(int))
 			c.DeleteStatus(burstKey)
 			c.onBurstExpiry(c.burstSrc)
 		}
@@ -96,5 +73,7 @@ func (c *char) onBurstExpiry(burstSrc int) {
 	if c.StatusIsActive(burstKey) {
 		return
 	}
-	c.burstSrc = -1 // make sure we don't call other burst fns
+	c.DeleteStatus(c6Key)
+	c.c6Stacks = 0
+	c.DeleteStatus(a1Key)
 }

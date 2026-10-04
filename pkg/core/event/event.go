@@ -78,7 +78,8 @@ const (
 	OnAimShoot     // nil
 	OnDash
 	OnLunarReactionAttack // target, AttackEvent; event so predamagemods can be applied to the individual Lunar contributions. Emitted once per contributor
-	OnStarReactionAttack  // target, AttackEvent; emitted once per Star reaction contributor
+	OnStarReactionAttack  // target, AttackEvent; emitted once per Star Diffusion reaction contributor
+	OnStarDiffusionVortex // target, detonated (bool); creation or detonation of the shared vortex
 	OnMoondriftHarmony    // target, AttackEvent;
 	// sim stuff
 	OnInitialize  // nil

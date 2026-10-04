@@ -11,6 +11,8 @@ import (
 type char struct {
 	*tmpl.Character
 	burstExtension int
+	burstFromSkill bool
+	sunriseStacks  map[int]int
 	burstSrc       int
 	c2Stacks       int
 	c4Counter      int
@@ -19,9 +21,10 @@ type char struct {
 	normalBCounter int
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 80
 	c.BurstCon = 3
@@ -34,6 +37,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.onExitField()
 	c.a1Extension()
 

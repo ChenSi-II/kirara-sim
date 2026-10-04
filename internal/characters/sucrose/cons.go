@@ -44,17 +44,22 @@ func (c *char) makeC4Callback() func(info.AttackCB) {
 
 func (c *char) c6() {
 	stat := attributes.EleToDmgP(c.qAbsorb)
+	duration := c.Core.Status.Duration("sucroseburst")
+	if duration <= 0 {
+		return
+	}
 
 	for _, char := range c.Core.Player.Chars() {
+		buff := make([]float64, attributes.EndStatType)
+		buff[stat] = .20
+		if c.IsHexerei && char.IsHexerei {
+			buff[stat] += 0.0857142
+		}
 		char.AddStatMod(character.StatMod{
-			Base:         modifier.NewBaseWithHitlag("sucrose-c6", 60*10),
+			Base:         modifier.NewBase("sucrose-c6", duration),
 			AffectedStat: stat,
 			Amount: func() []float64 {
-				c.c6buff[stat] = .20
-				if char.IsHexerei {
-					c.c6buff[stat] += 0.0857142
-				}
-				return c.c6buff
+				return buff
 			},
 		})
 	}

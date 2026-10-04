@@ -22,10 +22,10 @@ type starContribution struct {
 	ae      info.AttackEvent
 }
 
-// doStarReactionAttack follows the Lunar reaction contribution model: every
+// doStarDiffusionAttack follows the Lunar reaction contribution model: every
 // team member calculates an independent contribution, the results are sorted
 // after crit, then weighted 60%/30%/5%/5%.
-func doStarReactionAttack(
+func doStarDiffusionAttack(
 	c *core.Core,
 	target info.Target,
 	owner int,
@@ -38,16 +38,17 @@ func doStarReactionAttack(
 ) {
 	contributions := make([]starContribution, 0, len(c.Player.Chars()))
 	ai := info.AttackInfo{
-		DamageSrc:        target.Key(),
-		Abil:             string(rt),
-		AttackTag:        tag,
-		ICDTag:           attacks.ICDTagNone,
-		ICDGroup:         attacks.ICDGroupDefault,
-		StrikeType:       attacks.StrikeTypeDefault,
-		Element:          ele,
-		Mult:             mult,
-		Durability:       durability,
-		IgnoreDefPercent: 1,
+		DamageSrc:               target.Key(),
+		Abil:                    string(rt),
+		AttackTag:               tag,
+		ICDTag:                  attacks.ICDTagNone,
+		ICDGroup:                attacks.ICDGroupDefault,
+		StrikeType:              attacks.StrikeTypeDefault,
+		Element:                 ele,
+		Mult:                    mult,
+		Durability:              durability,
+		IgnoreDefPercent:        1,
+		IsStarDiffusionReaction: true,
 	}
 
 	for charInd, char := range c.Player.Chars() {
@@ -62,7 +63,7 @@ func doStarReactionAttack(
 
 		c.Events.Emit(event.OnStarReactionAttack, target, &ae)
 		em := ae.Snapshot.Stats[attributes.EM]
-		dmg := combat.CalcSpecialReactionDmg(char.Base.Level, char.ReactBonus(ae.Info), ae.Info, em)
+		dmg := combat.CalcSpecialReactionDmg(combat.CalcReactionBaseDmg(char.Base.Level), mult, char.ReactBonus(ae.Info), ae.Info, em)
 		isCrit := false
 		if c.Rand.Float64() <= ae.Snapshot.Stats[attributes.CR] {
 			dmg *= 1 + ae.Snapshot.Stats[attributes.CD]

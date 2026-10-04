@@ -17,8 +17,9 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 	c := &char{Character: tmpl.NewWithWrapper(s, w)}
 	c.EnergyMax = 70
 	c.NormalHitNum = 3
-	c.SkillCon = 3
-	c.BurstCon = 5
+	c.Moonsign = 1
+	c.SkillCon = 5
+	c.BurstCon = 3
 	w.Character = c
 	return nil
 }

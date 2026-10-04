@@ -175,6 +175,8 @@ const (
 	Zibai                         // zibai
 	Vodyanitsa                    // vodyanitsa
 	Vesna                         // vesna
+	Mitya                         // mitya
+	Valeriy                       // valeriy
 	InvalidChar                   // invalidchar
 )
 
@@ -312,6 +314,8 @@ var _CharNames = [...]string{
 	"zibai",
 	"vodyanitsa",
 	"vesna",
+	"mitya",
+	"valeriy",
 	"invalidchar",
 }
 
@@ -449,5 +453,7 @@ var _CharValues = [...]Char{
 	Zibai,
 	Vodyanitsa,
 	Vesna,
+	Mitya,
+	Valeriy,
 	InvalidChar,
 }

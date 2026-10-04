@@ -13,12 +13,8 @@ type char struct {
 	c4HPStacks    int
 	soloStacks    int
 	concertStacks int
-	c2StarBuffs   []c2StarBuff
-}
-
-type c2StarBuff struct {
-	expiry int
-	target int // -1 means the whole team (C6)
+	c2Star        bool
+	flowingVortex bool
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {

@@ -29,6 +29,14 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		})
 	})
 
-	// Stellar Glimmer is not yet represented by an engine event.
+	star := make([]float64, attributes.EndStatType)
+	star[attributes.ATKP] = 0.12 + 0.04*float64(p.Refine)
+	common.SubscribeOwnerStarReactions(c, char, "blade-of-atonement-star", func(*info.AttackEvent) {
+		char.AddStatMod(character.StatMod{
+			Base:         modifier.NewBaseWithHitlag("blade-of-atonement-atk", 12*60),
+			AffectedStat: attributes.ATKP,
+			Amount:       func() []float64 { return star },
+		})
+	})
 	return w, nil
 }

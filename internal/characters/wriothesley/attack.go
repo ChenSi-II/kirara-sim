@@ -86,14 +86,15 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 				combat.NewBoxHitOnTarget(
 					c.Core.Combat.Player(),
 					info.Point{Y: attackOffsets[skillIndex]},
-					attackHitboxes[skillIndex][c.NormalCounter][0],
-					attackHitboxes[skillIndex][c.NormalCounter][1],
+					attackHitboxes[skillIndex][n][0],
+					attackHitboxes[skillIndex][n][1],
 				),
 				0,
 				0,
 				c1N5CB,
 				particleCB,
 				chillingPenalty,
+				c.radiantNormalCB(n),
 			)
 		}, attackHitmarks[c.NormalCounter][i])
 	}

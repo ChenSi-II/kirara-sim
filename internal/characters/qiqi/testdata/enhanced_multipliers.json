@@ -1,0 +1,39 @@
+{
+  "source": "origin_data/Avatars/10000035.json",
+  "source_sha256": "190c787063eccc1384aa049e51126beaf6b58571dc62d7d61fb573580d740cb8",
+  "note": "Extracted combat multipliers retained for tests after origin_data was removed from Git tracking.",
+  "skill_coordinated": [
+    0.24,
+    0.258,
+    0.276,
+    0.3,
+    0.318,
+    0.336,
+    0.36,
+    0.384,
+    0.408,
+    0.432,
+    0.456,
+    0.48,
+    0.51,
+    0.54,
+    0.57
+  ],
+  "burst_stellar": [
+    2.973336,
+    3.196336,
+    3.419336,
+    3.71667,
+    3.93967,
+    4.16267,
+    4.460004,
+    4.757338,
+    5.054671,
+    5.352005,
+    5.649338,
+    5.946672,
+    6.318339,
+    6.690006,
+    7.061673
+  ]
+}

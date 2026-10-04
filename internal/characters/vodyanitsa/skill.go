@@ -14,20 +14,29 @@ import (
 	"github.com/genshinsim/gcsim/pkg/modifier"
 )
 
-const microphoneKey = "vodyanitsa-microphone-summon"
+const (
+	// SongKey identifies the active 遥久之歌 state for party interactions.
+	SongKey         = "vodyanitsa-microphone-summon"
+	microphoneKey   = SongKey
+	songStacksKey   = "vodyanitsa-song-stacks"
+	c2Key           = "vodyanitsa-c2"
+	recentVortexKey = "vodyanitsa-recent-flowing-vortex"
+)
 
-// TODO: replace conservative hitmarks/cancels when verified frame data is available.
+// Timings are from user image 3; see PLACEHOLDER_FRAMES.md. The skill's
+// nominal duration and cooldown continue to come from origin_data.
 func (c *char) Skill(map[string]int) (action.Info, error) {
 	lvl := c.TalentLvlSkill()
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Water Nymph Overture", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Hydro, Durability: 25, UseHP: true, Mult: skill[c.TalentLvlSkill()]}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 28, 28)
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), skillHitmark, skillHitmark, c.microphoneResShred(lvl))
 
 	c.skillSrc = c.Core.F
 	src := c.skillSrc
 	// A2 grants these two linked resources whenever the microphone state starts.
 	if c.Base.Ascension >= 4 {
-		c.soloStacks = 17
+		c.soloStacks = 25
 		c.concertStacks = 10
+		c.AddStatus(songStacksKey, 30*60, true)
 	} else {
 		c.soloStacks = 0
 		c.concertStacks = 0
@@ -37,15 +46,23 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 		dur += 9 * 60
 	}
 	c.AddStatus(microphoneKey, dur, true)
-	for delay := 3 * 60; delay < dur; delay += 3 * 60 {
-		c.QueueCharTask(c.microphoneAttack(src), delay)
+	if c.Base.Ascension >= 1 && c.Core.StarReactions.DiffusionStacks > 0 {
+		c.flowingVortex = true
+		c.shredAnemo()
 	}
-	for delay := 90; delay < dur; delay += 90 {
-		c.QueueCharTask(c.microphoneHeal(src, lvl), delay)
+	for _, delay := range microphoneAttackFrames {
+		if delay < dur {
+			c.QueueCharTask(c.microphoneAttack(src), delay)
+		}
+	}
+	for _, delay := range microphoneHealFrames {
+		if delay < dur {
+			c.QueueCharTask(c.microphoneHeal(src, lvl), delay)
+		}
 	}
 	c.SetCD(action.ActionSkill, 16*60)
-	f := frames.InitAbilSlice(58)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 58, CanQueueAfter: 42, State: action.SkillState}, nil
+	f := frames.InitAbilSlice(skillLength)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: skillLength, CanQueueAfter: skillLength, State: action.SkillState}, nil
 }
 
 func (c *char) microphoneAttack(src int) func() {
@@ -63,36 +80,23 @@ func (c *char) microphoneC2Buff() {
 	if c.Base.Cons < 2 {
 		return
 	}
-	star := c.StatusIsActive("vodyanitsa-flowing-vortex")
-	if star {
-		target := c.Core.Player.Active()
-		if c.Base.Cons >= 6 {
-			target = -1
-		}
-		expiry := c.Core.F + 5*60
-		refreshed := false
-		for i := range c.c2StarBuffs {
-			if c.c2StarBuffs[i].target == target {
-				c.c2StarBuffs[i].expiry = expiry
-				refreshed = true
-				break
-			}
-		}
-		if !refreshed {
-			c.c2StarBuffs = append(c.c2StarBuffs, c2StarBuff{expiry: expiry, target: target})
-		}
-	}
+	c.c2Star = c.flowingVortex || c.StatusDuration(recentVortexKey) > 0
+	c.AddStatus(c2Key, 5*60, true)
 	for _, target := range c.Core.Player.Chars() {
-		if c.Base.Cons < 6 && target.Index() != c.Core.Player.Active() {
-			continue
-		}
 		bonus := make([]float64, attributes.EndStatType)
 		target.AddAttackMod(character.AttackMod{
-			Base: modifier.NewBaseWithHitlag("vodyanitsa-c2", 5*60),
+			Base: modifier.NewBaseWithHitlag(c2Key, 5*60),
 			Amount: func(atk *info.AttackEvent, _ info.Target) []float64 {
+				if c.StatusDuration(c2Key) == 0 || (c.Base.Cons < 6 && target.Index() != c.Core.Player.Active()) {
+					return nil
+				}
 				// Star reaction contributions are modified through OnStarReactionAttack;
 				// AttackMods are not applied while those contributions are calculated.
-				if !star && (atk.Info.Element == attributes.Hydro || atk.Info.Element == attributes.Cryo) {
+				if c.c2Star && atk.Info.IsDirectStarDamage() && atk.Info.AttackTag != attacks.AttackTagReactionStarSuperconduct {
+					bonus[attributes.CD] = .60
+					return bonus
+				}
+				if !c.c2Star && !attacks.AttackTagIsStar(atk.Info.AttackTag) && (atk.Info.Element == attributes.Hydro || atk.Info.Element == attributes.Cryo) {
 					bonus[attributes.CD] = .50
 					return bonus
 				}
@@ -142,5 +146,6 @@ func (c *char) microphoneHeal(src, lvl int) func() {
 			Src:     healScale * (skillHealFlat[lvl] + skillHealPct[lvl]*c.MaxHP()),
 			Bonus:   c.Stat(attributes.Heal),
 		})
+		c.c1Buff()
 	}
 }

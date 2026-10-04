@@ -13,7 +13,7 @@ func (c *char) initConstellations() {
 	}
 	for _, ch := range c.Core.Player.Chars() {
 		ch.AddReactBonusMod(character.ReactBonusMod{Base: modifier.NewBase("zibai-c2", -1), Amount: func(ai info.AttackInfo) float64 {
-			if ai.AttackTag == attacks.AttackTagDirectLunarCrystallize || ai.AttackTag == attacks.AttackTagReactionLunarCrystallize {
+			if c.StatusIsActive(lunarPhaseKey) && (ai.AttackTag == attacks.AttackTagDirectLunarCrystallize || ai.AttackTag == attacks.AttackTagReactionLunarCrystallize) {
 				return .30
 			}
 			return 0

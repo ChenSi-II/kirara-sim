@@ -94,10 +94,14 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.Core.Tasks.Add(c.skillDmgTickTask(src, tickAE, 60), 57+7)
 
 		// Apply damage needs to take place after above takes place to ensure stats are handled correctly
-		c.Core.QueueAttackWithSnap(ai, snap, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2.5), 0)
+		c.Core.QueueAttackWithSnap(ai, snap, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2.5), 0, c.enhancedC1)
 	}, skillHitmark)
 
-	c.SetCDWithDelay(action.ActionSkill, 1800, 3) // 30s * 60
+	cd := 1800
+	if c.Enhanced {
+		cd = 900
+	}
+	c.SetCDWithDelay(action.ActionSkill, cd, 3) // 30s * 60
 
 	return action.Info{
 		Frames:          frames.NewAbilFunc(skillFrames),
@@ -127,7 +131,7 @@ func (c *char) skillDmgTickTask(src int, ae *info.AttackEvent, lastTickDuration 
 		tick.Pattern = combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 2.5)
 
 		if c.Base.Cons >= 1 {
-			tick.Callbacks = append(tick.Callbacks, c.c1)
+			tick.Callbacks = append(tick.Callbacks, c.c1, c.enhancedC1)
 		}
 
 		c.Core.QueueAttackEvent(&tick, 0)

@@ -50,6 +50,10 @@ func (c *char) c1Init() {
 		atk := args[1].(*info.AttackEvent)
 
 		char := c.Core.Player.Chars()[atk.Info.ActorIndex]
+		bonus := 0.15
+		if c.IsHexerei && c.Core.Player.Active() != char.Index() {
+			bonus *= 1.6
+		}
 
 		// add c1 to party member that triggered the effect, delay by 1, because:
 		// "This bonus does not apply in the triggering attack nor from the resulting Hydro DMG dealt by
@@ -58,14 +62,7 @@ func (c *char) c1Init() {
 			char.AddReactBonusMod(character.ReactBonusMod{
 				Base: modifier.NewBaseWithHitlag("mona-c1", 8*60),
 				Amount: func(ai info.AttackInfo) float64 {
-					m := 0.15
-
-					// Hexerei passive
-					// Additionally, when your off-field party members trigger the above effect, the DMG Bonus
-					// to the above Hydro-related Elemental Reactions is enhanced to 160% of its original effect.
-					if c.IsHexerei && c.Core.Player.Active() != char.Index() {
-						m *= 1.6
-					}
+					m := bonus
 
 					switch ai.AttackTag {
 					// - Hydro Swirl DMG increases by 15%.
@@ -148,7 +145,7 @@ func (c *char) c2HexereiCB(a info.AttackCB) {
 
 	for _, char := range c.Core.Player.Chars() {
 		char.AddStatMod(character.StatMod{
-			Base:         modifier.NewBaseWithHitlag("mona-hexerei-c2-em", 60*8),
+			Base:         modifier.NewBaseWithHitlag("mona-hexerei-c2-em", 60*12),
 			AffectedStat: attributes.EM,
 			Amount: func() []float64 {
 				return m

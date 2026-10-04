@@ -1,8 +1,6 @@
 package yaemiko
 
 import (
-	"log"
-
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/combat"
@@ -34,10 +32,10 @@ func (c *char) makeKitsune() {
 		}
 		// ok now we can delete this
 		c.popOldestKitsune()
-	}, 900-skillStart) // e ani + duration
+	}, c.kitsuneDuration()) // e ani + duration
 
 	if len(c.kitsunes) == 0 {
-		c.Core.Status.Add(yaeTotemStatus, 900-skillStart)
+		c.Core.Status.Add(yaeTotemStatus, c.kitsuneDuration())
 	}
 	// pop oldest first
 	if len(c.kitsunes) == 3 {
@@ -67,9 +65,9 @@ func (c *char) popOldestKitsune() {
 
 	// here check for status
 	if len(c.kitsunes) > 0 {
-		dur := c.Core.F - c.kitsunes[0].src + (900 - skillStart)
+		dur := c.kitsunes[0].src + c.kitsuneDuration() - c.Core.F
 		if dur < 0 {
-			log.Panicf("oldest totem should have expired already? dur: %v totem: %v", dur, *c.kitsunes[0])
+			dur = 0
 		}
 		c.Core.Status.Add(yaeTotemStatus, dur)
 	} else {
@@ -92,7 +90,9 @@ func (c *char) kitsuneBurst(ai info.AttackInfo, pattern info.AttackPattern) {
 			Write("src", c.kitsunes[i].src).
 			Write("delay", burstThunderbolt1Hitmark+i*24)
 	}
-	c.popAllKitsune()
+	if !c.Enhanced {
+		c.popAllKitsune()
+	}
 }
 
 func (c *char) kitsuneTick(totem *kitsune) func() {
@@ -142,9 +142,17 @@ func (c *char) kitsuneTick(totem *kitsune) func() {
 			ai.IgnoreDefPercent = 0.60
 		}
 
+		empowered := c.Enhanced && c.StatusIsActive("yaemiko-empowered-sakura")
+		if empowered {
+			ai.Mult += .8
+		}
+
 		// spawn 1 attack
 		// priority: enemy > gadget
 		tick := func(pos info.Point) {
+			if empowered {
+				c.DeleteStatus("yaemiko-empowered-sakura")
+			}
 			c.Core.QueueAttack(
 				ai,
 				combat.NewCircleHitOnTarget(pos, nil, 0.5),
@@ -152,6 +160,7 @@ func (c *char) kitsuneTick(totem *kitsune) func() {
 				1,
 				c.particleCB,
 				c4cb,
+				c.enhancedTickCB(empowered),
 			)
 		}
 

@@ -121,6 +121,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 }
 
 func (c *char) applyDreamDrifterEffect(travel int) {
+	c.empoweredCloud = false
 	c.AddStatus(dreamDrifterStateKey, dreamDrifterBaseDuration, true)
 
 	c.startCloudAttacks(travel)
@@ -147,6 +148,11 @@ func (c *char) skillInit() {
 					return 0
 				}
 				switch ai.AttackTag {
+				case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
+					if c.Enhanced {
+						return swirlDMG[c.TalentLvlSkill()] * .1 * c.Stat(attributes.EM)
+					}
+					return 0
 				case attacks.AttackTagSwirlCryo:
 				case attacks.AttackTagSwirlElectro:
 				case attacks.AttackTagSwirlHydro:
@@ -211,6 +217,7 @@ func (c *char) particleCB(a info.AttackCB) {
 
 func (c *char) cancelDreamDrifterState() {
 	c.DeleteStatus(dreamDrifterStateKey)
+	c.empoweredCloud = false
 	c.cloudSrc = -1
 
 	c.Core.Log.NewEvent("DreamDrifter effect cancelled", glog.LogCharacterEvent, c.Index())
@@ -224,12 +231,19 @@ func (c *char) cloudTask(travel, src, hitmark int) {
 		if !c.StatusIsActive(dreamDrifterStateKey) {
 			return
 		}
+		ai := c.cloudAttack
+		empowered := c.Enhanced && c.empoweredCloud
+		if empowered {
+			ai.FlatDmg += 10 * c.Stat(attributes.EM)
+			c.empoweredCloud = false
+		}
 		c.Core.QueueAttackWithSnap(
-			c.cloudAttack,
+			ai,
 			c.cloudSnap,
 			combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, cloudExplosionRadius),
 			travel,
 			c.particleCB,
+			c.empoweredCloudCB(empowered),
 		)
 		c.cloudTask(travel, src, cloudHitInterval)
 	}, hitmark)

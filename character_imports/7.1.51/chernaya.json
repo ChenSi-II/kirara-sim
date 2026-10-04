@@ -1,0 +1,114 @@
+{
+  "name": "秘星典谕",
+  "weapon_type": "WEAPON_CATALYST",
+  "weapon_prop": [
+    {
+      "init_value": 44.3358,
+      "prop_type": "FIGHT_PROP_BASE_ATTACK",
+      "type": "GROW_CURVE_ATTACK_304"
+    },
+    {
+      "init_value": 0.192,
+      "prop_type": "FIGHT_PROP_CRITICAL_HURT",
+      "type": "GROW_CURVE_CRITICAL_301"
+    }
+  ],
+  "rarity": 5,
+  "icon": "UI_EquipIcon_Catalyst_Chernaya",
+  "ascension": {
+    "1": {
+      "fight_prop_base_attack": 31.1
+    },
+    "2": {
+      "fight_prop_base_attack": 62.2
+    },
+    "3": {
+      "fight_prop_base_attack": 93.4
+    },
+    "4": {
+      "fight_prop_base_attack": 124.5
+    },
+    "5": {
+      "fight_prop_base_attack": 155.6
+    },
+    "6": {
+      "fight_prop_base_attack": 186.7
+    }
+  },
+  "refinement": {
+    "1": {
+      "name": "辰星的流迹",
+      "desc": "暴击伤害提升<color=#99FFFFFF>24%</color>。施放元素战技时，装备者获得「算式调和」效果：元素精通提升<color=#99FFFFFF>48</color>点，持续20秒；效果期间，队伍中附近的角色触发元素反应时，装备者获得一层「算式离析」效果：每层使元素精通额外提升<color=#99FFFFFF>24</color>点，一次「算式调和」期间至多叠加3层「算式离析」效果，施放元素战技时会先移除原有的效果；\\n辉映·星烁：每层离析结果将使持有者额外获得<color=#99FFFFFF>12%</color>星超导反应的暴击伤害提升。",
+      "param_list": [
+        48.0,
+        24.0,
+        0.12,
+        20.0,
+        0.0,
+        3.0,
+        5.0,
+        0.75
+      ]
+    },
+    "2": {
+      "name": "辰星的流迹",
+      "desc": "暴击伤害提升<color=#99FFFFFF>30%</color>。施放元素战技时，装备者获得「算式调和」效果：元素精通提升<color=#99FFFFFF>60</color>点，持续20秒；效果期间，队伍中附近的角色触发元素反应时，装备者获得一层「算式离析」效果：每层使元素精通额外提升<color=#99FFFFFF>30</color>点，一次「算式调和」期间至多叠加3层「算式离析」效果，施放元素战技时会先移除原有的效果；\\n辉映·星烁：每层离析结果将使持有者额外获得<color=#99FFFFFF>15%</color>星超导反应的暴击伤害提升。",
+      "param_list": [
+        60.0,
+        30.0,
+        0.15,
+        20.0,
+        0.0,
+        3.0,
+        5.0,
+        0.75
+      ]
+    },
+    "3": {
+      "name": "辰星的流迹",
+      "desc": "暴击伤害提升<color=#99FFFFFF>36%</color>。施放元素战技时，装备者获得「算式调和」效果：元素精通提升<color=#99FFFFFF>72</color>点，持续20秒；效果期间，队伍中附近的角色触发元素反应时，装备者获得一层「算式离析」效果：每层使元素精通额外提升<color=#99FFFFFF>36</color>点，一次「算式调和」期间至多叠加3层「算式离析」效果，施放元素战技时会先移除原有的效果；\\n辉映·星烁：每层离析结果将使持有者额外获得<color=#99FFFFFF>18%</color>星超导反应的暴击伤害提升。",
+      "param_list": [
+        72.0,
+        36.0,
+        0.18,
+        20.0,
+        0.0,
+        3.0,
+        5.0,
+        0.75
+      ]
+    },
+    "4": {
+      "name": "辰星的流迹",
+      "desc": "暴击伤害提升<color=#99FFFFFF>42%</color>。施放元素战技时，装备者获得「算式调和」效果：元素精通提升<color=#99FFFFFF>84</color>点，持续20秒；效果期间，队伍中附近的角色触发元素反应时，装备者获得一层「算式离析」效果：每层使元素精通额外提升<color=#99FFFFFF>42</color>点，一次「算式调和」期间至多叠加3层「算式离析」效果，施放元素战技时会先移除原有的效果；\\n辉映·星烁：每层离析结果将使持有者额外获得<color=#99FFFFFF>21%</color>星超导反应的暴击伤害提升。",
+      "param_list": [
+        84.0,
+        42.0,
+        0.21,
+        20.0,
+        0.0,
+        3.0,
+        5.0,
+        0.75
+      ]
+    },
+    "5": {
+      "name": "辰星的流迹",
+      "desc": "暴击伤害提升<color=#99FFFFFF>48%</color>。施放元素战技时，装备者获得「算式调和」效果：元素精通提升<color=#99FFFFFF>96</color>点，持续20秒；效果期间，队伍中附近的角色触发元素反应时，装备者获得一层「算式离析」效果：每层使元素精通额外提升<color=#99FFFFFF>48</color>点，一次「算式调和」期间至多叠加3层「算式离析」效果，施放元素战技时会先移除原有的效果；\\n辉映·星烁：每层离析结果将使持有者额外获得<color=#99FFFFFF>24%</color>星超导反应的暴击伤害提升。",
+      "param_list": [
+        96.0,
+        48.0,
+        0.24,
+        20.0,
+        0.0,
+        3.0,
+        5.0,
+        0.75
+      ]
+    }
+  },
+  "source": {
+    "url": "https://static.nanoka.cc/gi/7.1.51/zh/weapon/14525.json",
+    "sha256": "9d07991f1b908751bbd9302f558c8cf2d3b753707c9e9ec2d84ba128b998515b"
+  }
+}

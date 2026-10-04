@@ -3,6 +3,7 @@ package enemy
 import (
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/combat"
 	"github.com/genshinsim/gcsim/pkg/core/glog"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
@@ -12,8 +13,8 @@ func (e *Enemy) calc(atk *info.AttackEvent, evt glog.Event, grpMult float64) (fl
 
 	if atk.Info.AttackTag == attacks.AttackTagDirectLunarCharged ||
 		atk.Info.AttackTag == attacks.AttackTagDirectLunarBloom ||
-		atk.Info.AttackTag == attacks.AttackTagDirectLunarCrystallize {
-		return e.calcDirectLunar(atk, evt, grpMult)
+		atk.Info.AttackTag == attacks.AttackTagDirectLunarCrystallize || atk.Info.IsDirectStarDamage() {
+		return e.calcDirectSpecial(atk, evt, grpMult)
 	}
 
 	elePer := 0.0
@@ -182,10 +183,10 @@ func (e *Enemy) calc(atk *info.AttackEvent, evt glog.Event, grpMult float64) (fl
 	return damage, isCrit
 }
 
-func (e *Enemy) calcDirectLunar(atk *info.AttackEvent, evt glog.Event, grpMult float64) (float64, bool) {
+func (e *Enemy) calcDirectSpecial(atk *info.AttackEvent, evt glog.Event, grpMult float64) (float64, bool) {
 	var isCrit bool
 
-	// no DMG% for direct lunar damage
+	// Direct Lunar and Star damage use reaction bonuses instead of DMG%.
 
 	// calculate using HP/Def/EM/Atk
 	var a float64
@@ -200,32 +201,35 @@ func (e *Enemy) calcDirectLunar(atk *info.AttackEvent, evt glog.Event, grpMult f
 		a = atk.Snapshot.Stats.TotalATK()
 	}
 
-	// BaseDmgBonus affects only multiplier damage
-	damage := atk.Info.Mult * a * (1 + atk.Info.BaseDmgBonus)
-
 	mult := 1.0
-	// special 3x mult for direct lunarcharged // FIXME: SAME AS REACTION
+	// Keep reaction coefficients separate from the talent multiplier.
 	switch atk.Info.AttackTag {
 	case attacks.AttackTagDirectLunarCharged:
 		mult = 3
 	case attacks.AttackTagDirectLunarCrystallize:
 		mult = 1.6
+	case attacks.AttackTagReactionStarSuperconduct:
+		if e.Core.StarReactions.SuperconductActive {
+			mult = e.Core.StarReactions.SuperconductCoefficient
+			if mult <= 0 {
+				mult = 1
+			}
+		}
+	case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
+		// Independent of the reaction's 0.75 Anemo coefficient and its
+		// 2/3 Cryo vortex coefficient.
+		mult = 1
 	}
-	damage *= mult
-
-	base := damage
+	base := atk.Info.Mult * a * (1 + atk.Info.BaseDmgBonus) * mult
 
 	// calculate em bonus
 	em := atk.Snapshot.Stats[attributes.EM]
 	emBonus := (6 * em) / (2000 + em)
 	reactBonus := e.Core.Player.ByIndex(atk.Info.ActorIndex).ReactBonus(atk.Info)
-	preampdmg := damage
-	damage *= 1 + emBonus + reactBonus
+	preampdmg := base
+	damage := combat.CalcSpecialReactionDmg(atk.Info.Mult*a, mult, reactBonus, atk.Info, em)
 
-	// add flat damage
-	damage += atk.Info.FlatDmg
-
-	// Direct Lunar damage ignores enemy defense.
+	// Direct Lunar and Star damage ignore enemy defense.
 
 	// apply resist mod
 	res := e.resist(&atk.Info, evt)
@@ -241,7 +245,6 @@ func (e *Enemy) calcDirectLunar(atk *info.AttackEvent, evt glog.Event, grpMult f
 	damage *= grpMult
 
 	elevation := atk.Info.Elevation
-	damage *= 1 + elevation
 
 	// make sure 0 <= cr <= 1
 	if atk.Snapshot.Stats[attributes.CR] < 0 {

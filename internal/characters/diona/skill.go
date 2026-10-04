@@ -37,6 +37,9 @@ func init() {
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	if c.Enhanced {
+		c.AddStatus("diona-extra-paws", 20*60, false)
+	}
 	travel, ok := p["travel"]
 	if !ok {
 		travel = 10

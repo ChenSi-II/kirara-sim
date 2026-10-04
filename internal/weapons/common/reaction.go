@@ -30,3 +30,15 @@ func SubscribeOwnerReactions(
 		}, fmt.Sprintf("%s-%d-%s", key, reaction, char.Base.Key.String()))
 	}
 }
+
+// SubscribeOwnerStarReactions excludes ordinary and Lunar reactions.
+func SubscribeOwnerStarReactions(c *core.Core, char *character.CharWrapper, key string, callback func(*info.AttackEvent)) {
+	for _, reaction := range []event.Event{event.OnStarSuperconduct, event.OnStarDiffusion} {
+		c.Events.Subscribe(reaction, func(args ...any) {
+			atk, ok := args[1].(*info.AttackEvent)
+			if ok && atk.Info.ActorIndex == char.Index() {
+				callback(atk)
+			}
+		}, fmt.Sprintf("%s-%d-%s", key, reaction, char.Base.Key.String()))
+	}
+}

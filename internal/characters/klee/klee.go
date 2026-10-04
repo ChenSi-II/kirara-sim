@@ -10,12 +10,17 @@ import (
 
 type char struct {
 	*tmpl.Character
-	c1Chance float64
+	c1Chance   float64
+	sparks     int
+	burstSrc   int
+	burstEnded bool
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	hex, ok := p.Params["hexerei"]
+	c.IsHexerei = !ok || hex != 0
 
 	c.EnergyMax = 60
 	c.NormalHitNum = normalHitNum
@@ -31,6 +36,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 
 func (c *char) Init() error {
 	c.onExitField()
+	c.hexInit()
 	return nil
 }
 
@@ -42,4 +48,11 @@ func (c *char) ActionStam(a action.Action, p map[string]int) float64 {
 		return 50
 	}
 	return c.Character.ActionStam(a, p)
+}
+
+func (c *char) ResetNormalCounter() {
+	if c.hexActive() && c.Core.Status.Duration("kleeq") > 0 {
+		return
+	}
+	c.Character.ResetNormalCounter()
 }

@@ -14,9 +14,10 @@ type char struct {
 	c6buff        []float64
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 80
 	c.NormalHitNum = normalHitNum
@@ -29,6 +30,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.a1()
 	if c.Base.Cons >= 2 {
 		c.c2()

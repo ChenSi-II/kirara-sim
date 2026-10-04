@@ -9,7 +9,8 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
-// TODO: replace conservative hitmarks/cancels when verified frame data is available.
+// Action/hit timings: user image 2; see PLACEHOLDER_FRAMES.md for the observed
+// values and the inferred EE1 -> EE2 transition.
 func (c *char) Skill(map[string]int) (action.Info, error) {
 	if c.Base.Cons >= 6 && c.StatusIsActive(stepReadyKey) {
 		return c.spiritbladeStep()
@@ -20,12 +21,14 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 
 	lvl := c.TalentLvlSkill()
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Spiritblade: Rise", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Anemo, Durability: 25, Mult: skill[lvl]}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 30, 30)
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), initialSkillHitmark, initialSkillHitmark)
 	c.composure = 0
+	c.composureExpiries = nil
 	c.DeleteStatus(composureKey)
-	if c.Base.Cons >= 2 {
-		c.composure = 6
-		c.AddStatus(composureKey, 20*60, true)
+	if c.Base.Cons >= 2 && c.Base.Ascension >= 1 {
+		for range 6 {
+			c.addComposure()
+		}
 	}
 	c.magic = 2
 	c.specialStage = 0
@@ -40,8 +43,10 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 		}
 	}, 15*60+1)
 	c.SetCD(action.ActionSkill, 18*60)
-	f := frames.InitAbilSlice(60)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 60, CanQueueAfter: 44, State: action.SkillState}, nil
+	// The hit is later than the observed animation end; it must survive the
+	// next action beginning at frame 27.
+	f := frames.InitAbilSlice(initialSkillLength)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: initialSkillLength, CanQueueAfter: initialSkillLength, State: action.SkillState}, nil
 }
 
 func (c *char) spiritbladeSkill() (action.Info, error) {
@@ -51,21 +56,18 @@ func (c *char) spiritbladeSkill() (action.Info, error) {
 
 	switch stage {
 	case 0:
-		c.queueVesnaSkillAttack("Spiritblade: Thrust", base, 20)
-		c.queueSpiritbladeAttack("Spiritblade: Thrust Blade", base, 20)
+		c.queueVesnaSkillAttack("Spiritblade: Thrust", base, 13)
 		c.specialStage = 1
 	case 1:
-		c.queueVesnaSkillAttack("Spiritblade: Fall", 1.5*base, 24)
-		c.queueSpiritbladeAttack("Spiritblade: Fall Blade", 2.5*base, 28)
+		c.queueVesnaSkillAttack("Spiritblade: Fall", 1.5*base, 21)
+		c.queueSpiritbladeAttack("Spiritblade: Fall Blade", skillFallBlade[lvl], 52)
 		c.specialStage = 2
 	default:
 		for i := 0; i < 4; i++ {
-			delay := 14 + i*6
-			c.queueVesnaSkillAttack("Spiritblade: Dance", base, delay)
-			c.queueSpiritbladeAttack("Spiritblade: Dance Blade", base, delay)
+			delay := 28 + i*9
+			c.queueSpiritbladeAttack("Spiritblade: Dance Blade", skillDanceBlade[lvl], delay)
 		}
-		c.queueVesnaSkillAttack("Spiritblade: Dance Finale", 3.5*base, 42)
-		c.queueSpiritbladeAttack("Spiritblade: Dance Blade Finale", 3.5*base, 42)
+		c.queueSpiritbladeAttack("Spiritblade: Dance Blade Finale", skillDanceFinale[lvl], 75)
 		c.danceCount++
 	}
 
@@ -87,25 +89,38 @@ func (c *char) spiritbladeSkill() (action.Info, error) {
 		c.endSpiritbladeArmament()
 	}
 
-	f := frames.InitAbilSlice(54)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 54, CanQueueAfter: 38, State: action.SkillState}, nil
+	animation := spiritbladeSkillLengths[stage]
+	f := frames.InitAbilSlice(animation)
+	canQueue := animation
+	if stage == 0 {
+		// Inferred from EE123 ending at 142 rather than 20+52+76=148.
+		f[action.ActionSkill] = 14
+		canQueue = 14
+	}
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: animation, CanQueueAfter: canQueue, State: action.SkillState}, nil
 }
 
 func (c *char) spiritbladeStep() (action.Info, error) {
 	c.DeleteStatus(stepReadyKey)
 	base := info.AttackInfo{ActorIndex: c.Index(), Abil: "Spiritblade: Step", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeSlash, Element: attributes.Anemo, Durability: 25, Mult: 1.5}
-	c.Core.QueueAttack(base, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 20, 20)
+	c.Core.QueueAttack(base, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 18, 18)
 	star := base
 	star.Abil = "Starblade: Step"
 	star.Mult = 2 * c.spiritbladeBonus()
-	star.AttackTag = attacks.AttackTagReactionStarDiffusionAnemo
-	star.ICDTag = attacks.ICDTagNone
-	star.Durability = 0
-	c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 26, 26)
-	if c.StatusIsActive(spiritbladeArmedKey) {
-		c.queueFeather(26)
+	if c.StatusIsActive(radianceKey) {
+		star.AttackTag = attacks.AttackTagReactionStarDiffusionAnemo
+		star.ICDTag = attacks.ICDTagNone
+		star.Durability = 0
 	}
-	return action.Info{Frames: frames.NewAbilFunc(frames.InitAbilSlice(54)), AnimationLength: 54, CanQueueAfter: 38, State: action.SkillState}, nil
+	c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 43, 43)
+	if c.StatusIsActive(spiritbladeArmedKey) {
+		// The image does not resolve this additional feather's travel time.
+		c.queueFeather(43)
+	}
+	f := frames.InitAbilSlice(97)
+	f[action.ActionSkill] = 48
+	f[action.ActionDash] = 76
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 97, CanQueueAfter: 48, State: action.SkillState}, nil
 }
 
 func (c *char) queueVesnaSkillAttack(abil string, mult float64, delay int) {

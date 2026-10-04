@@ -41,33 +41,32 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 
 func (c *char) phantasmPerformance() (action.Info, error) {
 	lvl := c.TalentLvlSkill()
-	bonus := 1 + .08*float64(c.veils)
 	c.phantasmUses++
 	c.Core.Player.ConsumeDew(1)
 	c.absorbSeeds()
+	bonus := 1 + .08*float64(c.veils)
 	for i := 0; i < 2; i++ {
 		atkIdx, emIdx := 4+i*2, 5+i*2
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Phantasm Performance Nefer %d", i+1), AttackTag: attacks.AttackTagExtra, ICDTag: attacks.ICDTagNormalAttack, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, Durability: 25, Mult: skillParam[atkIdx][lvl] * bonus, FlatDmg: skillParam[emIdx][lvl] * c.Stat(attributes.EM) * bonus}
+		if c.Base.Cons >= 6 && i == 1 {
+			ai.AttackTag, ai.ICDTag, ai.Durability = attacks.AttackTagDirectLunarBloom, attacks.ICDTagNone, 0
+			ai.UseEM, ai.Mult, ai.FlatDmg = true, .85*bonus, 0
+			if c.Base.Cons >= 1 {
+				ai.Mult += .6 * bonus
+			}
+		}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 18+i*12, 18+i*12)
 	}
 	for i := 0; i < 3; i++ {
-		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Phantasm Performance Shade %d", i+1), AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, Mult: skillParam[8+i][lvl] * bonus}
-		if c.Base.Cons >= 6 && i == 1 {
-			ai.Mult = 0
-			ai.FlatDmg = .85 * c.Stat(attributes.EM)
-			ai.Elevation = .15
-		}
+		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Phantasm Performance Shade %d", i+1), AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, UseEM: true, Mult: skillParam[8+i][lvl] * bonus}
 		if c.Base.Cons >= 1 {
-			ai.FlatDmg += .6 * c.Stat(attributes.EM) * bonus
+			ai.Mult += .6 * bonus
 		}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 24+i*10, 24+i*10)
 	}
 	if c.Base.Cons >= 6 {
-		finish := info.AttackInfo{ActorIndex: c.Index(), Abil: "Phantasm Performance (C6) Finale", AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, FlatDmg: 1.2 * c.Stat(attributes.EM), Elevation: .15}
+		finish := info.AttackInfo{ActorIndex: c.Index(), Abil: "Phantasm Performance (C6) Finale", AttackTag: attacks.AttackTagDirectLunarBloom, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Dendro, IgnoreDefPercent: 1, UseEM: true, Mult: (1.2 + .6) * bonus}
 		c.Core.QueueAttack(finish, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 60, 60)
-	}
-	if c.phantasmUses >= 3 {
-		c.DeleteStatus(shadowDanceKey)
 	}
 	f := frames.InitAbilSlice(76)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 76, CanQueueAfter: 62, State: action.ChargeAttackState}, nil

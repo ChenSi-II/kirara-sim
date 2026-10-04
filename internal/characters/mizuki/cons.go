@@ -52,6 +52,10 @@ func (c *char) c1() {
 
 		// Only on swirls. The swirl source does not matter, it can be either mizuki or another anemo char.
 		switch atk.Info.AttackTag {
+		case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
+			if !c.Enhanced || !atk.Info.IsStarDiffusionReaction {
+				return
+			}
 		case attacks.AttackTagSwirlCryo:
 		case attacks.AttackTagSwirlElectro:
 		case attacks.AttackTagSwirlHydro:
@@ -66,6 +70,9 @@ func (c *char) c1() {
 		}
 
 		additionalDmg := c1Multiplier * c.c1EM
+		if attacks.AttackTagIsStar(atk.Info.AttackTag) {
+			additionalDmg *= .5
+		}
 
 		c.Core.Log.NewEvent("mizuki c1 proc", glog.LogPreDamageMod, atk.Info.ActorIndex).
 			Write("before", atk.Info.FlatDmg).
@@ -77,6 +84,14 @@ func (c *char) c1() {
 
 		// Cancel the effect
 		e.DeleteStatus(c1Key)
+		if c.Enhanced {
+			ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Twenty-Three Nights (Enhanced C1)", AttackTag: attacks.AttackTagNone, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, Element: attributes.Anemo, UseEM: true, Mult: 10}
+			if c.DiffusionRadiance() {
+				ai.AttackTag = attacks.AttackTagReactionStarDiffusionAnemo
+				ai.Mult = 4
+			}
+			c.Core.QueueAttack(ai, combat.NewSingleTargetHit(e.Key()), 0, 1)
+		}
 	}, c1Key)
 }
 

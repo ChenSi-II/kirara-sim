@@ -5,6 +5,7 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/combat"
 	"github.com/genshinsim/gcsim/pkg/core/info"
+	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/enemy"
 	"github.com/genshinsim/gcsim/pkg/modifier"
 )
@@ -20,6 +21,11 @@ func (c *char) c1(delay int) {
 		return
 	}
 	c.c1Chance = 0.1
+	if c.IsHexerei {
+		buff := make([]float64, attributes.EndStatType)
+		buff[attributes.ATKP] = .6
+		c.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("klee-c1-atk", 12*60), AffectedStat: attributes.ATKP, Amount: func() []float64 { return buff }})
+	}
 
 	ai := info.AttackInfo{
 		ActorIndex:         c.Index(),
@@ -46,8 +52,12 @@ func (c *char) c2(a info.AttackCB) {
 	if !ok {
 		return
 	}
+	reduction := -.233
+	if c.IsHexerei {
+		reduction = -.23
+	}
 	e.AddDefMod(info.DefMod{
 		Base:  modifier.NewBaseWithHitlag("kleec2", 10*60),
-		Value: -0.233,
+		Value: reduction,
 	})
 }

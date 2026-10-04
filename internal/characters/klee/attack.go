@@ -98,6 +98,7 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 		Mult:       attack[c.NormalCounter][c.TalentLvlAttack()],
 	}
 
+	normal := c.NormalCounter
 	done := false
 	tryPerformAttack := func() {
 		if done {
@@ -109,12 +110,17 @@ func (c *char) Attack(p map[string]int) (action.Info, error) {
 				c.Core.Combat.Player(),
 				c.Core.Combat.PrimaryTarget(),
 				nil,
-				attackRadius[c.NormalCounter],
+				attackRadius[normal],
 			),
 			0,
 			travel,
 			c.makeA1CB(),
 		)
+		if c.hexActive() && c.Core.Status.Duration("kleeq") > 0 && c.sparks > 0 {
+			if normal == 2 || (c.Base.Cons >= 6 && c.Core.Rand.Float64() < .4) {
+				c.boomBarrage(travel)
+			}
+		}
 		c.c1(travel)
 		done = true
 	}

@@ -45,7 +45,9 @@ func TestLinneaSkillRuntime(t *testing.T) {
 	if err := c.Player.Exec(action.ActionSkill, keys.Linnea, map[string]int{"taps": 5}); err != nil {
 		t.Fatalf("execute skill: %v", err)
 	}
-	for range 220 {
+	// Image 9: five-tap E3 at 115f, followed by the first Standard pair at
+	// 252/273f. The old 220f cutoff preceded the measured follow-up attacks.
+	for range 273 {
 		advanceCoreFrame(c)
 	}
 
@@ -55,8 +57,8 @@ func TestLinneaSkillRuntime(t *testing.T) {
 	if millionHits != 1 {
 		t.Errorf("expected one Million Ton Crush hit, got %d", millionHits)
 	}
-	if pummelerHits == 0 {
-		t.Error("expected Lumi to continue attacking after switching to Standard Power Form")
+	if pummelerHits != 2 {
+		t.Errorf("expected the first measured Standard Power Form pair, got %d hits", pummelerHits)
 	}
 	got, err := c.Player.Chars()[idx].Condition([]string{"field-catalog"})
 	if err != nil {

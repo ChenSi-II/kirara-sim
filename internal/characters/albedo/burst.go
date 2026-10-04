@@ -38,6 +38,13 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 	}
 
 	c2Count := 0
+	forcedC2 := c.IsHexerei && c.Base.Cons >= 6 && len(c.liveSilver()) > 0
+	if forcedC2 {
+		c.silver = nil
+		c.c2stacks = 4
+		c.AddStatus(c2key, 30*60, true)
+		c.AddStatus("albedo-c6-blossom", 20*60, true)
+	}
 	hasC2 := c.Base.Cons >= 2 && c.StatusIsActive(c2key)
 	// C2 damage for initial hit is calculated on burst start
 	if hasC2 {

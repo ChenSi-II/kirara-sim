@@ -309,6 +309,7 @@ const (
 	NingxueChenxin                                // ningxuechenxin
 	XuanliuSongge                                 // xuanliusongge
 	RoufengYouxian                                // roufengyouxian
+	Chernaya                                      // chernaya
 	InvalidWeapon                                 // invalidweapon
 )
 
@@ -576,6 +577,7 @@ var _WeaponNames = [...]string{
 	"ningxuechenxin",
 	"xuanliusongge",
 	"roufengyouxian",
+	"chernaya",
 	"invalidweapon",
 }
 
@@ -833,5 +835,6 @@ var _WeaponValues = [...]Weapon{
 	NingxueChenxin,
 	XuanliuSongge,
 	RoufengYouxian,
+	Chernaya,
 	InvalidWeapon,
 }

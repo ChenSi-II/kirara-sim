@@ -21,36 +21,24 @@ func (c *char) initConstellations() {
 			default:
 				return
 			}
-			active := c.c2StarBuffs[:0]
-			for _, buff := range c.c2StarBuffs {
-				if buff.expiry <= c.Core.F {
-					continue
-				}
-				active = append(active, buff)
-				if buff.target == -1 || buff.target == atk.Info.ActorIndex {
-					atk.Snapshot.Stats[attributes.CD] += .60
-				}
+			if c.c2Star && c.StatusDuration(c2Key) > 0 && (c.Base.Cons >= 6 || atk.Info.ActorIndex == c.Core.Player.Active()) {
+				atk.Snapshot.Stats[attributes.CD] += .60
 			}
-			c.c2StarBuffs = active
 		}, "vodyanitsa-c2-star-cd")
 	}
+}
+
+func (c *char) c1Buff() {
 	if c.Base.Cons < 1 {
 		return
 	}
-	c.Core.Events.Subscribe(event.OnHeal, func(args ...any) {
-		source := args[0].(*info.HealInfo)
-		amount := args[2].(float64)
-		if source.Caller != c.Index() || amount <= 0 {
-			return
-		}
-		for _, ch := range c.Core.Player.Chars() {
-			m := make([]float64, attributes.EndStatType)
-			m[attributes.ATK] = 0.007 * c.MaxHP()
-			ch.AddStatMod(character.StatMod{
-				Base:         modifier.NewBaseWithHitlag("vodyanitsa-c1", 3*60),
-				AffectedStat: attributes.ATK,
-				Amount:       func() []float64 { return m },
-			})
-		}
-	}, "vodyanitsa-c1-heal")
+	for _, ch := range c.Core.Player.Chars() {
+		m := make([]float64, attributes.EndStatType)
+		m[attributes.ATK] = 0.008 * c.MaxHP()
+		ch.AddStatMod(character.StatMod{
+			Base:         modifier.NewBaseWithHitlag("vodyanitsa-c1", 5*60),
+			AffectedStat: attributes.ATK,
+			Amount:       func() []float64 { return m },
+		})
+	}
 }

@@ -43,16 +43,20 @@ func (c *char) c2(a info.AttackCB) {
 	if !ok {
 		return
 	}
+	reduction := -0.12
+	if c.IsHexerei {
+		reduction = -0.24
+	}
 
 	e.AddResistMod(info.ResistMod{
 		Base:  modifier.NewBaseWithHitlag("venti-c2-anemo", 600),
 		Ele:   attributes.Anemo,
-		Value: -0.12,
+		Value: reduction,
 	})
 	e.AddResistMod(info.ResistMod{
 		Base:  modifier.NewBaseWithHitlag("venti-c2-phys", 600),
 		Ele:   attributes.Physical,
-		Value: -0.12,
+		Value: reduction,
 	})
 }
 

@@ -13,21 +13,32 @@ const hunterAdvanceKey = "alyosha-hunter-advance"
 
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	lvl := c.TalentLvlBurst()
-	dur := int(burstParam[2][lvl] * 60)
+	// Image 4 absolute Q timelines, rounded at 60 FPS. Field duration starts
+	// after the cast begins; do not truncate the final observed projectile.
+	// See PLACEHOLDER_FRAMES.md for the image provenance.
+	fieldHits := []int{82, 199, 317, 434, 552, 668, 785}
+	tugarinHits := []int{128, 245, 361, 479, 596, 715, 829}
+	dur := 860 // field disappearance at 14.333s
 	if c.Base.Cons >= 2 {
-		dur += 6 * 60
+		fieldHits = append(fieldHits, 903, 1023, 1137)
+		tugarinHits = append(tugarinHits, 946, 1068, 1181)
+		dur = 1217 // 20.283s, including the field's startup
 	}
 	c.SetCD(action.ActionBurst, int(burstParam[3][lvl]*60))
 	c.ConsumeEnergy(18)
 	c.burstSrc = c.Core.F
 	src := c.burstSrc
 	c.AddStatus(hunterAdvanceKey, dur, true)
-	for delay := 30; delay <= dur; delay += 2 * 60 {
+	for _, delay := range fieldHits {
 		c.QueueCharTask(c.huntingFieldTick(src), delay)
-		c.QueueCharTask(c.tugarinTick(src), delay+12)
 	}
-	f := frames.InitAbilSlice(72)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 72, CanQueueAfter: 60, State: action.BurstState}, nil
+	for _, delay := range tugarinHits {
+		c.QueueCharTask(c.tugarinTick(src), delay)
+	}
+	f := frames.InitAbilSlice(57) // Q ends at 0.950s
+	// QE totals 1.450s; tap E lasts 0.633s, so Q→E is 49 frames.
+	f[action.ActionSkill] = 49
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 57, CanQueueAfter: 49, State: action.BurstState}, nil
 }
 
 func (c *char) huntingFieldTick(src int) func() {

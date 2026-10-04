@@ -3,7 +3,6 @@ package vesna
 import (
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
-	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/modifier"
@@ -27,8 +26,7 @@ func (c *char) initConstellations() {
 		})
 	}
 	if c.Base.Cons >= 6 {
-		c.Core.Events.Subscribe(event.OnApplyAttack, func(args ...any) {
-			atk := args[0].(*info.AttackEvent)
+		c.AddStarDamageMod("vesna-c6-elevation", func(atk *info.AttackEvent) {
 			if atk.Info.ActorIndex != c.Index() {
 				return
 			}
@@ -36,7 +34,7 @@ func (c *char) initConstellations() {
 			case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
 				atk.Info.Elevation += .20
 			}
-		}, "vesna-c6-elevation")
+		})
 	}
 	if c.Base.Cons < 2 {
 		return
@@ -47,8 +45,8 @@ func (c *char) initConstellations() {
 		AffectedStat: attributes.ATKP,
 		Amount: func() []float64 {
 			m[attributes.ATKP] = 0
-			if c.composure >= 6 && c.StatusIsActive(composureKey) {
-				m[attributes.ATKP] = 0.6
+			if c.activeComposure() >= 6 {
+				m[attributes.ATKP] = 0.4
 			}
 			return m
 		},

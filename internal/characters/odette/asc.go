@@ -9,9 +9,17 @@ import (
 )
 
 func (c *char) initAscensions() {
-	if c.Base.Ascension < 1 {
-		return
-	}
+	c.AddStarDamageMod("odette-star-base-and-elevation", func(atk *info.AttackEvent) {
+		atk.Info.BaseDmgBonus += min(c.TotalAtk()/100*.007, .14)
+		if c.Base.Cons >= 6 {
+			if c.StatusIsActive(doubleKey) && c.splendor[atk.Info.ActorIndex] > 0 {
+				atk.Info.Elevation += .25
+			}
+			if atk.Info.ActorIndex == c.Index() {
+				atk.Info.Elevation += .20
+			}
+		}
+	})
 	for _, ch := range c.Core.Player.Chars() {
 		target := ch
 		target.AddReactBonusMod(character.ReactBonusMod{Base: modifier.NewBase("odette-marvelous-splendor", -1), Amount: func(ai info.AttackInfo) float64 {
@@ -20,7 +28,10 @@ func (c *char) initAscensions() {
 			default:
 				return 0
 			}
-			bonus := .15 * float64(c.splendor[target.Index()])
+			bonus := 0.0
+			if c.StatusIsActive(doubleKey) {
+				bonus = .15 * float64(c.splendor[target.Index()])
+			}
 			// Snow Swan's Dream increases Odette's own Stellar reaction damage;
 			// C4 extends half of that bonus to the rest of the party.
 			if c.StatusIsActive(dreamKey) {
@@ -31,21 +42,17 @@ func (c *char) initAscensions() {
 					bonus += dream * .5
 				}
 			}
-			if c.Base.Ascension >= 4 {
+			if c.Base.Ascension >= 4 && target.Index() == c.Index() {
 				bonus += min(max(c.TotalAtk()-1000, 0)/100*.015, .30)
-			}
-			if c.Base.Cons >= 6 {
-				bonus += .25
-				if target.Index() == c.Index() {
-					bonus += .20
-				}
 			}
 			return bonus
 		}})
 		if c.Base.Cons >= 2 {
 			target.AddStatMod(character.StatMod{Base: modifier.NewBase("odette-c2-atk", -1), AffectedStat: attributes.ATKP, Amount: func() []float64 {
 				out := make([]float64, attributes.EndStatType)
-				out[attributes.ATKP] = .07 * float64(c.splendor[target.Index()])
+				if c.StatusIsActive(doubleKey) {
+					out[attributes.ATKP] = .07 * float64(c.splendor[target.Index()])
+				}
 				return out
 			}})
 		}
@@ -63,9 +70,9 @@ func (c *char) grantSplendor(src int) {
 	if c.Base.Cons >= 1 {
 		c.splendor[c.Index()] += 2
 	}
-	for delay := 60; delay <= 20*60; delay += 60 {
+	for delay := 60; delay <= c.StatusDuration(doubleKey); delay += 60 {
 		c.QueueCharTask(func() {
-			if src != c.doubleSrc || c.Core.Player.Active() == c.Index() || c.splendor[c.Index()] == 0 {
+			if src != c.doubleSrc || !c.StatusIsActive(doubleKey) || c.Core.Player.Active() == c.Index() || c.splendor[c.Index()] == 0 {
 				return
 			}
 			move := 1
@@ -73,8 +80,14 @@ func (c *char) grantSplendor(src int) {
 				move = 2
 			}
 			move = min(move, c.splendor[c.Index()])
-			c.splendor[c.Index()] -= move
-			c.splendor[c.Core.Player.Active()] += move
+			if c.Base.Cons < 6 {
+				c.splendor[c.Index()] -= move
+			}
+			for _, ally := range c.Core.Player.Chars() {
+				if ally.Index() != c.Index() {
+					c.splendor[ally.Index()] = c.splendor[ally.Index()] + move
+				}
+			}
 		}, delay)
 	}
 }

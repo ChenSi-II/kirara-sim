@@ -15,14 +15,16 @@ const (
 type char struct {
 	*tmpl.Character
 	skillLastUsed     int
+	c6Stacks          int
 	skillHealSnapshot info.Snapshot // Required as both on hit procs and continuous healing need to use this
 }
 
 // TODO: Not implemented - C6 (revival mechanic, not suitable for sim)
 // C4 - Enemy Atk reduction, not useful in this sim version
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 80
 	c.NormalHitNum = normalHitNum
@@ -38,6 +40,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 
 // Ensures the set of targets are initialized properly
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.a1()
 	c.talismanHealHook()
 	c.onNACAHitHook()

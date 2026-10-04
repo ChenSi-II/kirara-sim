@@ -83,7 +83,9 @@ abilities:
 
   - name: skill
     params:
-      counter: Number of counter hits. Default 0. 2 for perfect counter. Does not affect frames.
+      counter: Number of incoming counter hits. Default 0. 2 for perfect counter. Does not affect frames.
+      hold: Set to 1 to charge Tidecaller. With enhanced=1, each 48 frames adds one counter stack.
+      hold_frames: Charge duration in frames when hold=1 (default 96). Added to the original release animation.
     hitbox:
       - name: E-Base
         shape: Circle

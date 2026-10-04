@@ -33,7 +33,8 @@ docs:
     .linnea.lumi-form: Lumi's current form (`super`, `standard`, or `absent`).
     .linnea.field-catalog: Current Field Catalog stacks.
   issues:
-    - Skill, Burst, summon attack frames, hitboxes, and Burst healing interval remain provisional pending verified runtime data.
+    - Skill swap endpoints and summon attack timelines use user timing image 9 (2026-10-04); see PLACEHOLDER_FRAMES.md for measured and inferred values.
+    - Burst frames and healing interval, summon creation, intermediate tap counts, unrecorded Moon Cage arrivals, and hitboxes remain provisional.
 
 abilities:
   - name: skill

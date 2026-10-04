@@ -25,7 +25,8 @@ func (c *char) initAscensions() {
 			if !ok || atk.Info.ActorIndex != c.Index() || atk.Info.Abil != "Witchlure Bell" {
 				return
 			}
-			c.oathhammer(ele)
+			// Image 7: the passive hammer lands 0.800s after the bell hit.
+			c.QueueCharTask(func() { c.oathhammer(ele) }, 48)
 		}, fmt.Sprintf("prune-a1-%d", evt))
 	}
 	register(event.OnSwirlPyro, attributes.Pyro)
@@ -36,9 +37,6 @@ func (c *char) initAscensions() {
 }
 
 func (c *char) oathhammer(ele attributes.Element) {
-	if !c.StatusIsActive(bellKey) {
-		return
-	}
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Banehunter Oathhammer", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: ele, Mult: 1.5}
 	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
 	if c.Base.Cons >= 2 {
@@ -48,7 +46,7 @@ func (c *char) oathhammer(ele attributes.Element) {
 		bounce := ai
 		bounce.Abil = "Banehunter Oathhammer Bounce"
 		bounce.Mult = .80
-		c.Core.QueueAttack(bounce, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 8, 8)
+		c.Core.QueueAttack(bounce, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 64, 64)
 	}
 	c.converted = ele
 	c.tollingRally()

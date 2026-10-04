@@ -15,9 +15,11 @@ const hunterMarkKey = "alyosha-hunter-mark"
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
 	hold := p["hold"] != 0
-	index, hitmark := 0, 24
+	// Image 4: tap E hits at 0.433s and ends at 0.633s.
+	// Hold E remains provisional; see PLACEHOLDER_FRAMES.md.
+	index, hitmark, animation := 0, 26, 38
 	if hold {
-		index, hitmark = 1, 42
+		index, hitmark, animation = 1, 42, 66
 	}
 	lvl := c.TalentLvlSkill()
 	ai := info.AttackInfo{
@@ -28,8 +30,14 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	}
 	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), hitmark, hitmark, c.skillHit)
 	c.SetCD(action.ActionSkill, int(skillParam[2][lvl]*60))
-	f := frames.InitAbilSlice(hitmark + 24)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: hitmark + 24, CanQueueAfter: hitmark + 8, State: action.SkillState}, nil
+	f := frames.InitAbilSlice(animation)
+	queue := hitmark + 8 // hold input queue remains provisional
+	if !hold {
+		queue = 30
+		// Image 4 EQ totals 1.450s; subtract the 0.950s Q animation.
+		f[action.ActionBurst] = 30
+	}
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: animation, CanQueueAfter: queue, State: action.SkillState}, nil
 }
 
 func (c *char) skillHit(a info.AttackCB) {

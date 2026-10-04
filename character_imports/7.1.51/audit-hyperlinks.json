@@ -1,0 +1,103 @@
+{
+  "url": "https://static.nanoka.cc/gi/7.1.51/zh/hyperlink.json",
+  "retrieved": "2026-10-04",
+  "note": "Supplemental links; newer hyperlink text can conflict with older skill snapshots. Such conflicts are recorded, not silently used to overwrite measured timings.",
+  "entries": {
+    "11290001": {
+      "name": "奇谋",
+      "desc": "施放元素战技<color=#FFD780FF>奇兵诡出</color>后，洛恩将会切换至该状态。奇谋状态具有如下特性：\\n·洛恩的普通攻击、重击与下落攻击将转为造成无法被附魔覆盖的<color=#99FFFFFF>冰元素伤害</color>；\\n·洛恩的普通攻击或重击命中敌人时，会为洛恩积攒特殊的<color=#FFD780FF>欢悦</color>，用于施放特殊元素战技<color=#FFD780FF>镂骨彻心</color>；在<color=#FFD780FF>奇谋</color>状态下至多施放3次<color=#FFD780FF>镂骨彻心</color>，之后无法获得<color=#FFD780FF>欢悦</color>。\\n·队伍中附近的其他角色造成伤害时，会为洛恩积攒特殊的<color=#FFD780FF>争胜</color>，用于提升特殊元素战技<color=#FFD780FF>镂骨彻心</color>造成的伤害；\\n·洛恩退场时，奇谋状态将会解除；奇谋状态解除时，<color=#FFD780FF>欢悦</color>与<color=#FFD780FF>争胜</color>也会清除。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11290002": {
+      "name": "镂骨彻心",
+      "desc": "洛恩的<color=#FFD780FF>欢悦</color>积攒至上限后，可以施放的特殊元素战技。\\n命中敌人后消耗所有<color=#FFD780FF>欢悦</color>与<color=#FFD780FF>争胜</color>，造成<color=#99FFFFFF>冰元素伤害</color>，并依据消耗的<color=#FFD780FF>争胜</color>，提升本次伤害。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11290003": {
+      "name": "欢悦",
+      "desc": "在奇谋状态下，洛恩的普通攻击或重击命中敌人时，会获得{PARAM#P1293201|13S1}点<color=#FFD780FF>欢悦</color>，上限为100点。\\n每0.1秒至多获得一次<color=#FFD780FF>欢悦</color>。<color=#FFD780FF>欢悦</color>积攒至上限后，洛恩的元素战技<color=#FFD780FF>奇兵诡出</color>将会被替换为特殊的元素战技<color=#FFD780FF>镂骨彻心</color>。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11290004": {
+      "name": "争胜",
+      "desc": "在奇谋状态下，队伍中附近的其他角色造成伤害时，会为洛恩提供的特殊资源，上限为100点。\\n奇谋状态持续期间，队伍中附近的其他角色造成伤害时，若本次伤害不低于洛恩基础攻击力的{PARAM#P1293201|15S100}%，将会为洛恩积攒{PARAM#P1293201|16S1}点<color=#FFD780FF>争胜</color>，否则会为洛恩积攒1点<color=#FFD780FF>争胜</color>。\\n同一个角色每0.1秒至多为洛恩积攒一次<color=#FFD780FF>争胜</color>。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11500001": {
+      "name": "独舞倒影",
+      "desc": "与奥黛塔一同起舞的心象倒影，可以通过施放元素战技或元素爆发召唤至场上。\\n会交替呈现<color=#FFD780FF>拂羽</color>与<color=#FFD780FF>旋翼</color>两种舞步，以优雅轻盈的舞姿间歇性攻击附近的敌人，造成<color=#99FFFFFF>冰元素范围伤害</color>。\\n同时至多存在一个奥黛塔自己创造的<color=#FFD780FF>独舞倒影</color>。\\n\\n此外，附近存在奥黛塔自己召唤的<color=#FFD780FF>独舞倒影</color>时，奥黛塔的元素战技<color=#FFD780FF>柔板·幻灵夜舞</color>将会被替换为特殊的元素战技<color=#FFD780FF>柔板·破晓终奏</color>。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11500002": {
+      "name": "柔板·破晓终奏",
+      "desc": "奥黛塔的特殊元素战技，对附近的敌人持续造成<color=#99FFFFFF>冰元素范围伤害</color>，并在共舞结束时，造成一次视为星超导反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。共舞时，奥黛塔可以控制舞步的方向。\\n<color=#FFD780FF>辉映·星烁</color>：共舞结束时，改为造成一次视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。\\n\\n此外，施放特殊元素战技<color=#FFD780FF>柔板·破晓终奏</color>后，在<color=#FFD780FF>独舞倒影</color>剩余持续时间内，若奥黛塔处于<color=#FFD780FF>辉映·星烁</color>状态，则<color=#FFD780FF>独舞倒影</color>的两种舞步还会额外造成视为对应星烁反应伤害的<color=#99FFFFFF>冰元素范围伤害</color>。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11500003": {
+      "name": "华彩",
+      "desc": "解锁突破天赋「获选者的春祭」后，奥黛塔召唤<color=#FFD780FF>独舞倒影</color>时将会获得的特殊效果。\\n每层<color=#FFD780FF>华彩</color>都会使角色造成的星烁反应伤害提升15%，持续至<color=#FFD780FF>独舞倒影</color>退场或重新召唤<color=#FFD780FF>独舞倒影</color>。\\n当奥黛塔处于队伍后台时，奥黛塔每秒会清除1层<color=#FFD780FF>华彩</color>，并使队伍中附近的其他角色获得对应层数的<color=#FFD780FF>华彩</color>。",
+      "param": [
+        "0.15",
+        "1",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    },
+    "11500004": {
+      "name": "辉映·星烁",
+      "desc": "<color=#FFD780FF>辉映·星超导</color>与<color=#FFD780FF>辉映·星扩散</color>统称为<color=#FFD780FF>辉映·星烁</color>状态。\\n角色同时只能受到一种辉映状态影响，且优先被<color=#FFD780FF>辉映·星超导</color>影响。",
+      "param": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": ""
+    }
+  }
+}

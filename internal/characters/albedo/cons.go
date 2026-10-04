@@ -3,6 +3,7 @@ package albedo
 import (
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
+	"github.com/genshinsim/gcsim/pkg/core/construct"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/core/player/shield"
@@ -65,7 +66,7 @@ func (c *char) c6(lastConstruct int) func() {
 		}
 
 		// apply C6 buff to active char for 1s if they are protected by crystallize and within the skill area
-		crystallizeShield := c.Core.Player.Shields.Get(shield.Crystallize) != nil
+		crystallizeShield := c.Core.Player.Shields.Get(shield.Crystallize) != nil || (c.IsHexerei && c.moonCageInArea())
 		inSkillArea := c.Core.Combat.Player().IsWithinArea(c.skillArea)
 		if crystallizeShield && inSkillArea {
 			active := c.Core.Player.ActiveChar()
@@ -83,4 +84,14 @@ func (c *char) c6(lastConstruct int) func() {
 		// check again in 0.3s
 		c.Core.Tasks.Add(c.c6(lastConstruct), 18)
 	}
+}
+
+func (c *char) moonCageInArea() bool {
+	cages, _ := c.Core.Constructs.ConstructsByType(construct.GeoConstructLunarCrystallize)
+	for _, cage := range cages {
+		if c.skillArea.Shape.PointInShape(cage.Pos()) {
+			return true
+		}
+	}
+	return false
 }

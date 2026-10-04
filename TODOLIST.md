@@ -1,5 +1,7 @@
 # gcsim 内容扩充与项目复活执行清单
 
+> 2026-10-04 机制复核更正：此前的 `review-ready` / `basic-simulation-validated` 和下文已勾选项不能作为机制正确的证明。复核发现多项伤害与状态机错误，清单状态已在 `character_imports/manifest.json` 降级。修复及尚未完成事项见 [新角色机制复核](reports/2026-10-04-new-characters-mechanics-review.md)。图片帧数与机制完整度分开判断。
+
 > 分析基线：`main` 分支 `45585d29d`（2026-07-05）。本文针对“新增几个角色、2 种反应、几套圣遗物、几十把武器”，名称和具体数量确定后，把占位符替换为实际条目即可。
 
 ## 0. 先说结论

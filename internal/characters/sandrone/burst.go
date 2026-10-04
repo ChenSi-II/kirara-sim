@@ -13,10 +13,10 @@ import (
 
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	lvl := c.TalentLvlBurst()
-	c.AddStatus("sandrone-qed", 88, true)
+	c.AddStatus("sandrone-qed", 99, true)
 	for i := 0; i < 3; i++ {
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Prismatic Bombardment %d", i+1), AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: burst[0][lvl]}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 24+i*8, 24+i*8)
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), burstBombardmentHitmarks[i], burstBombardmentHitmarks[i])
 	}
 	beam := info.AttackInfo{ActorIndex: c.Index(), Abil: "Convective Inhibition Ray", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: burst[1][lvl]}
 	if c.Core.StarReactions.SuperconductActive {
@@ -29,9 +29,11 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 		beam.Mult *= 1 + .10*float64(c.tacticStacks)
 		c.tacticStacks = 0
 	}
-	c.Core.QueueAttack(beam, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 56, 56)
+	c.Core.QueueAttack(beam, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 180, 180)
 	c.SetCD(action.ActionBurst, int(burstParam[3][lvl]*60))
 	c.ConsumeEnergy(60)
-	f := frames.InitAbilSlice(88)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 88, CanQueueAfter: 76, State: action.BurstState}, nil
+	// Images 1/6: Q ends at 1.650s, before every damage hit. Do not
+	// extend the action to its 3.000s beam hit; see PLACEHOLDER_FRAMES.md.
+	f := frames.InitAbilSlice(99)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 99, CanQueueAfter: 99, State: action.BurstState}, nil
 }

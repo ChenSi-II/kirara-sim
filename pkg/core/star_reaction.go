@@ -19,6 +19,10 @@ const (
 // team mechanics, so their counters must not live on an individual enemy.
 type StarReactionState struct {
 	Enabled bool
+	// Characters such as Mitya convert only Superconduct, not Cryo Swirl.
+	SuperconductEnabled bool
+	// Mitya replaces prism settlements with expiring beacons.
+	BeaconSuperconduct bool
 
 	SuperconductActive      bool
 	SuperconductStacks      int
@@ -45,6 +49,9 @@ func isStarReactionAvatar(id, subID int32) bool {
 func (c *Core) initStarReactions() {
 	for _, char := range c.Player.Chars() {
 		data := catalog.CharacterMap[char.Base.Key]
+		if data != nil && data.Id == 10000136 {
+			c.StarReactions.SuperconductEnabled = true
+		}
 		if data != nil && isStarReactionAvatar(int32(data.Id), int32(data.SubId)) {
 			c.StarReactions.Enabled = true
 			return

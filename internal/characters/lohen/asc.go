@@ -19,9 +19,18 @@ func (c *char) initAscensions() {
 		if atk.Info.ActorIndex == c.Index() {
 			return
 		}
+		key := fmt.Sprintf("lohen-will-icd-%d", atk.Info.ActorIndex)
+		if c.StatusIsActive(key) {
+			return
+		}
+		c.AddStatus(key, 6, true)
+		baseATK := c.Stat(attributes.BaseATK)
 		gain := 1
-		if args[2].(float64) >= 30*c.TotalAtk() && c.Base.Ascension >= 1 {
-			gain = 80
+		if args[2].(float64) >= skillParam[14][c.skillLevel()]*baseATK {
+			gain = int(skillParam[15][c.skillLevel()])
+		}
+		if c.Base.Ascension >= 1 && args[2].(float64) >= 30*baseATK {
+			gain += 60
 		}
 		if c.Base.Cons >= 1 {
 			gain *= 5
@@ -38,6 +47,9 @@ func (c *char) initAscensions() {
 				return
 			}
 			atk := args[1].(*info.AttackEvent)
+			if atk.Info.ActorIndex == c.Index() {
+				return
+			}
 			buff := make([]float64, attributes.EndStatType)
 			buff[attributes.ATKP] = .15
 			c.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("lohen-a4-self", 8*60), AffectedStat: attributes.ATKP, Amount: func() []float64 { return buff }})

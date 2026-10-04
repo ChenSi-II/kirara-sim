@@ -18,9 +18,10 @@ type char struct {
 	burstAtk *info.AttackEvent
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 80
 	c.NormalHitNum = normalHitNum
@@ -33,6 +34,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.burstProc()
 	if c.Base.Cons >= 4 {
 		c.c4Init()

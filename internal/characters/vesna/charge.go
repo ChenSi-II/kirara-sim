@@ -9,15 +9,19 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
-// TODO: replace conservative hitmarks/cancels when verified frame data is available.
+// Armed A1+CA timings are reconstructed from image 2; ordinary CA remains a
+// placeholder. The inferred action boundary is recorded in PLACEHOLDER_FRAMES.md.
 func (c *char) ChargeAttack(map[string]int) (action.Info, error) {
 	ele := attributes.Physical
+	hitmark, animation, canQueue := 30, 52, 36
 	if c.StatusIsActive(spiritbladeArmedKey) {
 		ele = attributes.Anemo
+		hitmark, animation, canQueue = armedChargeHitmark, armedChargeLength, armedChargeLength
+		c.queueFeather(armedChargeFeather)
+		c.queueFeather(armedChargeFeather)
 	}
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Charged Attack", AttackTag: attacks.AttackTagExtra, ICDTag: attacks.ICDTagNormalAttack, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: ele, Durability: 25, Mult: charge[c.TalentLvlAttack()]}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 30, 30)
-	c.queueFeather(30)
-	f := frames.InitAbilSlice(52)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 52, CanQueueAfter: 36, State: action.ChargeAttackState}, nil
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), hitmark, hitmark)
+	f := frames.InitAbilSlice(animation)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: animation, CanQueueAfter: canQueue, State: action.ChargeAttackState}, nil
 }

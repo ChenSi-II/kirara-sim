@@ -89,6 +89,13 @@ func (c *char) c4() {
 	restore := func(args ...any) {
 		atk := args[1].(*info.AttackEvent)
 		if atk.Info.ActorIndex != c.Index() {
+			if c.Enhanced && c.Core.Player.ByIndex(atk.Info.ActorIndex).StatusIsActive(sunriseKey) && !c.StatusIsActive("cyno-c4-return-icd") {
+				c.AddStatus("cyno-c4-return-icd", 1080, false)
+				c.AddEnergy("cyno-c4-return", 20)
+			}
+			return
+		}
+		if !c.StatusIsActive(burstKey) || c.burstFromSkill {
 			return
 		}
 		if c.c4Counter > 4 { // counting from 0 to 4, 5 instances max
@@ -110,6 +117,7 @@ func (c *char) c4() {
 	c.Core.Events.Subscribe(event.OnOverload, restoreNoGadget, "cyno-c4")
 	c.Core.Events.Subscribe(event.OnElectroCharged, restoreNoGadget, "cyno-c4")
 	c.Core.Events.Subscribe(event.OnLunarCharged, restoreNoGadget, "cyno-c4")
+	c.Core.Events.Subscribe(event.OnStarSuperconduct, restoreNoGadget, "cyno-c4")
 	c.Core.Events.Subscribe(event.OnSuperconduct, restoreNoGadget, "cyno-c4")
 	c.Core.Events.Subscribe(event.OnQuicken, restoreNoGadget, "cyno-c4")
 	c.Core.Events.Subscribe(event.OnAggravate, restoreNoGadget, "cyno-c4")
@@ -142,7 +150,7 @@ func (c *char) makeC6CB() info.AttackCBFunc {
 		if a.Target.Type() != info.TargettableEnemy {
 			return
 		}
-		if c.c6Stacks == 0 {
+		if c.c6Stacks == 0 || !c.StatusIsActive(burstKey) {
 			return
 		}
 		if !c.StatusIsActive(c6Key) {
@@ -169,6 +177,7 @@ func (c *char) makeC6CB() info.AttackCBFunc {
 			FlatDmg:      c.a4Bolt(),
 		}
 
+		c.stellarBolt(&ai, c.Enhanced && c.StatusIsActive(sunriseKey))
 		c.Core.QueueAttack(
 			ai,
 			combat.NewCircleHit(

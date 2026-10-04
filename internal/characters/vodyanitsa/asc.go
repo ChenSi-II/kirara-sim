@@ -14,34 +14,25 @@ import (
 
 func (c *char) initAscensions() {
 	if c.Base.Ascension >= 1 {
-		c.Core.Events.Subscribe(event.OnStarReactionAttack, func(args ...any) {
-			if !c.StatusIsActive(microphoneKey) {
+		c.Core.Events.Subscribe(event.OnStarDiffusionVortex, func(args ...any) {
+			detonated := args[1].(bool)
+			if detonated {
+				if c.flowingVortex {
+					c.shredAnemo()
+					c.AddStatus(recentVortexKey, 5*60, true)
+				}
+				c.flowingVortex = false
 				return
 			}
-			atk, ok := args[1].(*info.AttackEvent)
-			if !ok {
-				return
+			c.flowingVortex = c.StatusIsActive(microphoneKey)
+			if c.flowingVortex {
+				c.shredAnemo()
 			}
-			switch atk.Info.AttackTag {
-			case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
-			default:
-				return
-			}
-			c.AddStatus("vodyanitsa-flowing-vortex", 6*60, true)
-			target, ok := args[0].(*enemy.Enemy)
-			if !ok {
-				return
-			}
-			target.AddResistMod(info.ResistMod{
-				Base:  modifier.NewBaseWithHitlag("vodyanitsa-flowing-vortex-anemo-res", 6*60),
-				Ele:   attributes.Anemo,
-				Value: -0.30,
-			})
 		}, "vodyanitsa-a1-flowing-vortex")
 	}
 	if c.Base.Ascension >= 4 {
 		c.Core.Events.Subscribe(event.OnEnemyHit, func(args ...any) {
-			if !c.StatusIsActive(microphoneKey) {
+			if c.StatusDuration(songStacksKey) == 0 {
 				return
 			}
 			atk, ok := args[1].(*info.AttackEvent)
@@ -67,22 +58,21 @@ func (c *char) initAscensions() {
 					}
 					out := make([]float64, attributes.EndStatType)
 					if atk.Info.Element == attributes.Hydro || atk.Info.Element == attributes.Cryo {
-						out[attributes.DmgP] += .50
+						out[attributes.DmgP] += .60
 					}
 					return out
 				},
 			})
 		}
-		c.Core.Events.Subscribe(event.OnApplyAttack, func(args ...any) {
-			atk, ok := args[0].(*info.AttackEvent)
-			if !ok || !c.StatusIsActive(microphoneKey) {
+		c.AddStarDamageMod("vodyanitsa-c6-star-elevation", func(atk *info.AttackEvent) {
+			if !c.StatusIsActive(microphoneKey) {
 				return
 			}
 			switch atk.Info.AttackTag {
 			case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
 				atk.Info.Elevation += .25
 			}
-		}, "vodyanitsa-c6-star-elevation")
+		})
 	}
 }
 
@@ -105,7 +95,7 @@ func (c *char) applyA2Bonus(atk *info.AttackEvent) {
 	} else {
 		c.concertStacks--
 	}
-	if star != c.StatusIsActive("vodyanitsa-flowing-vortex") {
+	if star != (c.flowingVortex || c.StatusDuration(recentVortexKey) > 0) {
 		return
 	}
 	if !star && (atk.Info.AttackTag >= attacks.AttackTagNoneStat || (atk.Info.Element != attributes.Hydro && atk.Info.Element != attributes.Cryo)) {
@@ -119,4 +109,19 @@ func (c *char) applyA2Bonus(atk *info.AttackEvent) {
 		bonus = min(bonus*140, 3500.0)
 	}
 	atk.Info.FlatDmg += bonus
+}
+
+// The existing simulator treats the party and its targets as nearby.
+func (c *char) shredAnemo() {
+	for _, t := range c.Core.Combat.Enemies() {
+		target, ok := t.(*enemy.Enemy)
+		if !ok {
+			continue
+		}
+		target.AddResistMod(info.ResistMod{
+			Base:  modifier.NewBaseWithHitlag("vodyanitsa-flowing-vortex-anemo-res", 6*60),
+			Ele:   attributes.Anemo,
+			Value: -0.35,
+		})
+	}
 }

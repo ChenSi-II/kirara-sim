@@ -36,6 +36,9 @@ func init() {
 // Has two parameters, "bounce" determines the number of bounces that hit
 // "mine" determines the number of mines that hit the enemy
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	if c.IsHexerei {
+		c.gainSpark()
+	}
 	type attackData struct {
 		ai   info.AttackInfo
 		snap info.Snapshot
@@ -136,6 +139,10 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 				particleCB,
 			)
 		}
+		var mineSparkCB info.AttackCBFunc
+		if c.IsHexerei {
+			mineSparkCB = c.makeA1CB()
+		}
 		for i := range mineAttacks {
 			c.Core.QueueAttackWithSnap(
 				mineAttacks[i].ai,
@@ -143,6 +150,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 				combat.NewCircleHit(c.Core.Combat.Player(), c.Core.Combat.PrimaryTarget(), nil, 2),
 				mineHitmark-cooldownDelay,
 				c.c2,
+				mineSparkCB,
 			)
 		}
 		c.c1(bounceHitmarks[0] - cooldownDelay)

@@ -2254,5 +2254,21 @@
     "Ko": "",
     "Zh": "薇斯纳",
     "Ja": ""
+  },
+  "10000136": {
+    "Icon": "UI_AvatarIcon_Mitya",
+    "Rank": "QUALITY_ORANGE",
+    "En": "Mitya",
+    "Zh": "米提亚",
+    "Weapon": "WEAPON_CATALYST",
+    "Element": "Electro"
+  },
+  "10000137": {
+    "Icon": "UI_AvatarIcon_Valeriy",
+    "Rank": "QUALITY_PURPLE",
+    "En": "Valeriy",
+    "Zh": "瓦列里",
+    "Weapon": "WEAPON_SWORD_ONE_HAND",
+    "Element": "Electro"
   }
 }

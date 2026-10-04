@@ -9,16 +9,17 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
-// TODO: replace conservative hitmarks/cancels when verified frame data is available.
+// Timings are from user image 3: damage at 1.700s, action end at 1.750s.
+// See PLACEHOLDER_FRAMES.md; earlier cancel points remain unmeasured.
 func (c *char) Burst(map[string]int) (action.Info, error) {
 	mult := burst[c.TalentLvlBurst()]
 	if c.StatusIsActive(microphoneKey) {
 		mult *= 1.48
 	}
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Water Nymph Aria", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Hydro, Durability: 25, UseHP: true, Mult: mult}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 30, 30)
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), burstHitmark, burstHitmark)
 	c.SetCD(action.ActionBurst, 15*60)
 	c.ConsumeEnergy(60)
-	f := frames.InitAbilSlice(72)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 72, CanQueueAfter: 60, State: action.BurstState}, nil
+	f := frames.InitAbilSlice(burstLength)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: burstLength, CanQueueAfter: burstLength, State: action.BurstState}, nil
 }

@@ -3,8 +3,10 @@ package songofthevigil
 import (
 	"github.com/genshinsim/gcsim/internal/weapons/common"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
+	"github.com/genshinsim/gcsim/pkg/modifier"
 )
 
 const energyICDKey = "song-of-the-vigil-energy-icd"
@@ -26,6 +28,14 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		char.AddEnergy("song-of-the-vigil", energyRestore(p.Refine))
 	})
 
-	// Stellar Glimmer is not yet represented by an engine event.
+	m := make([]float64, attributes.EndStatType)
+	m[attributes.ATKP] = 0.15 + 0.05*float64(p.Refine)
+	common.SubscribeOwnerStarReactions(c, char, "song-of-the-vigil-star", func(*info.AttackEvent) {
+		char.AddStatMod(character.StatMod{
+			Base:         modifier.NewBaseWithHitlag("song-of-the-vigil-atk", 12*60),
+			AffectedStat: attributes.ATKP,
+			Amount:       func() []float64 { return m },
+		})
+	})
 	return w, nil
 }

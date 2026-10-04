@@ -12,8 +12,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000148.json",
       "lunaris_url": "https://lunaris.moe/character/10000148",
       "nanoka_query": "Alyosha 10000148",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -26,10 +26,17 @@
         "internal/characters/gorou"
       ],
       "todos": [
+        "N4 and C2 mark ownership, field Star bonus and C6 stack logic remain incomplete.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "N4 and C2 mark ownership, field Star bonus and C6 stack logic remain incomplete."
+      }
     },
     {
       "id": 10000110,
@@ -41,8 +48,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000110.json",
       "lunaris_url": "https://lunaris.moe/character/10000110",
       "nanoka_query": "Iansan 10000110",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -55,10 +62,17 @@
         "internal/characters/xilonen"
       ],
       "todos": [
+        "Nightsoul consumption and movement recovery are missing; stomp/A1/A4 and constellation triggers need a state-machine rewrite.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Nightsoul consumption and movement recovery are missing; stomp/A1/A4 and constellation triggers need a state-machine rewrite."
+      }
     },
     {
       "id": 10000113,
@@ -70,8 +84,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000113.json",
       "lunaris_url": "https://lunaris.moe/character/10000113",
       "nanoka_query": "Ifa 10000113",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -84,10 +98,17 @@
         "internal/characters/sayu"
       ],
       "todos": [
+        "Nightsoul lifecycle and team Nightsoul-based Rescue Essentials are not modeled; fixed points are not source-correct.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Nightsoul lifecycle and team Nightsoul-based Rescue Essentials are not modeled; fixed points are not source-correct."
+      }
     },
     {
       "id": 10000127,
@@ -99,8 +120,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000127.json",
       "lunaris_url": "https://lunaris.moe/character/10000127",
       "nanoka_query": "Illuga 10000127",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -113,10 +134,17 @@
         "internal/characters/gorou"
       ],
       "todos": [
+        "C1 reaction ownership, C2 single-target selection and construct classification still require correction.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "C1 reaction ownership, C2 single-target selection and construct classification still require correction."
+      }
     },
     {
       "id": 10000124,
@@ -128,8 +156,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000124.json",
       "lunaris_url": "https://lunaris.moe/character/10000124",
       "nanoka_query": "Jahoda 10000124",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -142,10 +170,17 @@
         "internal/characters/sayu"
       ],
       "todos": [
+        "Flask absorption, conversion and robot selection remain incomplete; fixed flags are not a full implementation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Flask absorption, conversion and robot selection remain incomplete; fixed flags are not a full implementation."
+      }
     },
     {
       "id": 10000100,
@@ -157,8 +192,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000100.json",
       "lunaris_url": "https://lunaris.moe/character/10000100",
       "nanoka_query": "Kachina 10000100",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -171,10 +206,17 @@
         "internal/characters/gorou"
       ],
       "todos": [
+        "Nightsoul and mounted normal actions are not modeled; Twirly is not registered as a Geo construct.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Nightsoul and mounted normal actions are not modeled; Twirly is not registered as a Geo construct."
+      }
     },
     {
       "id": 10000130,
@@ -186,8 +228,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000130.json",
       "lunaris_url": "https://lunaris.moe/character/10000130",
       "nanoka_query": "Linnea 10000130",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -203,10 +245,17 @@
         "pkg/reactable/lunarcrystallize.go"
       ],
       "todos": [
+        "C1 per-target stack consumption and C4 active-recipient behavior still require source and multi-target verification.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "C1 per-target stack consumption and C4 active-recipient behavior still require source and multi-target verification."
+      }
     },
     {
       "id": 10000129,
@@ -218,8 +267,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000129.json",
       "lunaris_url": "https://lunaris.moe/character/10000129",
       "nanoka_query": "Lohen 10000129",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -232,10 +281,17 @@
         "internal/characters/tartaglia"
       ],
       "todos": [
+        "C2 hit/expiry/cooldown, Hexerei effects, stance expiry and C6 extension ordering remain incomplete.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "C2 hit/expiry/cooldown, Hexerei effects, stance expiry and C6 extension ordering remain incomplete."
+      }
     },
     {
       "id": 10000122,
@@ -247,8 +303,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000122.json",
       "lunaris_url": "https://lunaris.moe/character/10000122",
       "nanoka_query": "Nefer 10000122",
-      "status": "review-ready",
-      "simulation_level": "partial-simulation",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -264,11 +320,18 @@
         "pkg/reactable/bloom.go"
       ],
       "todos": [
+        "Seeds of Deceit are counted but do not replace Dendro cores; veil expiry, C4 dew speed and Serpent movement remain incomplete.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering",
         "Implement Seed of Deceit entity"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Seeds of Deceit are counted but do not replace Dendro cores; veil expiry, C4 dew speed and Serpent movement remain incomplete."
+      }
     },
     {
       "id": 10000150,
@@ -280,8 +343,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000150.json",
       "lunaris_url": "https://lunaris.moe/character/10000150",
       "nanoka_query": "Odette 10000150",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -294,10 +357,17 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
+        "A4 independent multiplier, C2 resistance reduction and per-character Radiance lifecycle remain incomplete.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "A4 independent multiplier, C2 resistance reduction and per-character Radiance lifecycle remain incomplete."
+      }
     },
     {
       "id": 10000132,
@@ -309,8 +379,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000132.json",
       "lunaris_url": "https://lunaris.moe/character/10000132",
       "nanoka_query": "Prune 10000132",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -323,10 +393,17 @@
         "internal/characters/sayu"
       ],
       "todos": [
+        "Initial conversion needs actual reaction events; Hexerei and C6 ATK buff remain incomplete.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Initial conversion needs actual reaction events; Hexerei and C6 ATK buff remain incomplete."
+      }
     },
     {
       "id": 10000133,
@@ -338,8 +415,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000133.json",
       "lunaris_url": "https://lunaris.moe/character/10000133",
       "nanoka_query": "Sandrone 10000133",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -352,10 +429,17 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
+        "Power repair/decay, A1 stack expiry, overdrive re-entry and C6 cluster timing still require implementation or observation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Power repair/decay, A1 stack expiry, overdrive re-entry and C6 cluster timing still require implementation or observation."
+      }
     },
     {
       "id": 10000128,
@@ -377,7 +461,15 @@
       ],
       "missing_core_support": [],
       "references": [],
-      "todos": []
+      "todos": [
+        "Free C6 charged stamina and new reaction compatibility remain under review; no complete independent kit validation."
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "Free C6 charged stamina and new reaction compatibility remain under review; no complete independent kit validation."
+      }
     },
     {
       "id": 10000126,
@@ -389,8 +481,8 @@
       "source_path": "pipeline/community/data/6.7.54/characters/10000126.json",
       "lunaris_url": "https://lunaris.moe/character/10000126",
       "nanoka_query": "Zibai 10000126",
-      "status": "review-ready",
-      "simulation_level": "basic-simulation-validated",
+      "status": "mechanics-review-required",
+      "simulation_level": "runtime-smoke-tested",
       "missing_local_fields": [
         "action frames, hit marks, cancel windows, and hitlag",
         "hitbox geometry, targeting, travel time, and multi-target behavior",
@@ -403,10 +495,17 @@
         "pkg/reactable/lunarcrystallize.go"
       ],
       "todos": [
+        "C1 damage bucket, C4 hit trigger and phase-generation/expiry boundaries still require correction or verification.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
-      ]
+      ],
+      "mechanics_audit": {
+        "date": "2026-10-04",
+        "result": "incomplete",
+        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
+        "remaining": "C1 damage bucket, C4 hit trigger and phase-generation/expiry boundaries still require correction or verification."
+      }
     }
   ]
 }

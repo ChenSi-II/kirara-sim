@@ -132,6 +132,9 @@ func (p *snack) onPickedUp() {
 
 	// C4 restores 5 energy to mizuki up to 4 times
 	mizuki.c4()
+	if mizuki.Enhanced && mizuki.Base.Cons >= 4 {
+		mizuki.healOther(activeChar.Index())
+	}
 
 	p.Kill()
 }

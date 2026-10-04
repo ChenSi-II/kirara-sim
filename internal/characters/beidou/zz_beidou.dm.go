@@ -15,7 +15,7 @@ import (
 func init() {
 	core.RegisterCharFunc(keys.Beidou, NewChar)
 	paramsFor := map[action.Action][]string{
-		action.ActionSkill: {"counter"},
+		action.ActionSkill: {"counter", "hold", "hold_frames"},
 	}
 	validation.RegisterCharParamValidationFunc(keys.Beidou, func(a action.Action, keys []string) error {
 		valid, ok := paramsFor[a]

@@ -31,6 +31,7 @@ const (
 )
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	c.hexOnSkill()
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
 		Abil:       skillAbilInitial,
@@ -68,6 +69,7 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.Core.Constructs.New(c.newConstruct(1800, skillDir, skillPos), true)
 		c.lastConstruct = c.Core.F
 		c.skillActive = true
+		c.hexTeamBuff(false)
 		// Reset ICD after construct is created
 		c.DeleteStatus(skillICDKey)
 		// add C4 and C6 checks
@@ -107,7 +109,7 @@ func (c *char) skillHook() {
 		trg := args[0].(info.Target)
 		atk := args[1].(*info.AttackEvent)
 		dmg := args[2].(float64)
-		if !c.skillActive {
+		if !c.skillActive && (len(c.liveSilver()) == 0 || c.CurrentHP() <= 0) {
 			return
 		}
 		if c.StatusIsActive(skillICDKey) {
@@ -121,7 +123,7 @@ func (c *char) skillHook() {
 			return
 		}
 		// don't proc if target hit is outside of the skill area
-		if !trg.IsWithinArea(c.skillArea) {
+		if !c.inBlossomArea(trg) {
 			return
 		}
 
@@ -153,5 +155,6 @@ func (c *char) skillHook() {
 				c.c2stacks = 4
 			}
 		}
+		c.hexC2()
 	}, "albedo-skill")
 }

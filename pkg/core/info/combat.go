@@ -63,6 +63,15 @@ type AttackInfo struct {
 	CanBeDefenseHalted   bool    // for whacking ruin gaurds
 	IsDeployable         bool    // if this is true, then hitlag does not affect owner
 	HitlagOnHeadshotOnly bool    // if this is true, will only apply if HitWeakpoint is also true
+	// True only for Star Diffusion's team contributions and their precomputed
+	// damage packet. Star-tagged talent attacks leave this false, including
+	// talents that scale entirely through FlatDmg rather than Mult.
+	IsStarDiffusionReaction bool
+}
+
+// IsDirectStarDamage distinguishes talent damage from precomputed reactions.
+func (a AttackInfo) IsDirectStarDamage() bool {
+	return attacks.AttackTagIsStar(a.AttackTag) && !a.IsStarDiffusionReaction
 }
 
 type Snapshot struct {

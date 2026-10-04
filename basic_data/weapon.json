@@ -3022,5 +3022,13 @@
     "Ko": "불멸·듀란달",
     "Zh": "无毁·督兰嘉德",
     "Ja": "無毀・デュランガルド"
+  },
+  "14525": {
+    "Icon": "UI_EquipIcon_Catalyst_Chernaya",
+    "Rank": 5,
+    "En": "Chernaya",
+    "Zh": "秘星典谕",
+    "Type": "WEAPON_CATALYST",
+    "Skin": false
   }
 }

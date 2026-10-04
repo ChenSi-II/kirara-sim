@@ -112,7 +112,7 @@ func (c *char) c6cb(a info.AttackCB) {
 }
 
 func (c *char) c6HexereiMod() {
-	if !c.IsHexerei {
+	if !c.IsHexerei || c.Base.Cons < 6 {
 		return
 	}
 	m := make([]float64, attributes.EndStatType)

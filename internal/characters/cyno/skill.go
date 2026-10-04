@@ -68,6 +68,9 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		c.makeParticleCB(false),
 	)
 
+	if c.Enhanced {
+		c.enterPactsworn(360, true)
+	}
 	c.Core.Tasks.Add(c.triggerSkillCD, skillCDDelay)
 
 	return action.Info{
@@ -116,6 +119,7 @@ func (c *char) skillB() (action.Info, error) {
 		ai.Mult = 1.0
 		ai.FlatDmg = c.a4Bolt()
 		ai.AttackTag = attacks.AttackTagElementalArtHold
+		c.stellarBolt(&ai, c.SuperconductRadiance())
 		ai.ICDTag = attacks.ICDTagElementalArt
 		ai.ICDGroup = attacks.ICDGroupCynoBolt
 		ai.StrikeType = attacks.StrikeTypeSlash
@@ -139,8 +143,8 @@ func (c *char) skillB() (action.Info, error) {
 			)
 		}
 	}
-	if c.burstExtension < 2 { // burst can only be extended 2 times per burst cycle (up to 18s, 10s base and +4 each time)
-		c.ExtendStatus(burstKey, 240) // 4s*60
+	if !c.burstFromSkill && c.burstExtension < 2 { // burst can only be extended 2 times per burst cycle (up to 18s, 10s base and +4 each time)
+		c.extendPactsworn(240) // 4s*60
 		c.burstExtension++
 	}
 

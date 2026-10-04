@@ -50,8 +50,12 @@ func (c *char) lunarAttack() (action.Info, error) {
 		c.Core.QueueAttack(extra, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 28, 28)
 	}
 	c.AdvanceNormalIndex()
-	f := frames.InitNormalCancelSlice(30, 46)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 46, CanQueueAfter: 30, State: action.NormalAttackState}, nil
+	// The aggregate rotation does not provide measured cancel points. Use the
+	// allocated duration for every transition instead of retaining the old
+	// 30f skill/burst cancel, which would silently shorten the fitted sequence.
+	duration := phaseNormalFrames[stage]
+	f := frames.InitAbilSlice(duration)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: duration, CanQueueAfter: duration, State: action.NormalAttackState}, nil
 }
 
 func (c *char) phaseNormalHit(a info.AttackCB) {

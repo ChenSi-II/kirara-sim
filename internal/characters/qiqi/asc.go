@@ -17,7 +17,7 @@ func (c *char) a1() {
 		return
 	}
 	a1Hook := func(args ...any) {
-		if c.StatusIsActive(skillBuffKey) {
+		if !c.StatusIsActive(skillBuffKey) {
 			return
 		}
 		atk := args[1].(*info.AttackEvent)

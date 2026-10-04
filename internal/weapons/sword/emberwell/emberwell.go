@@ -3,6 +3,7 @@ package emberwell
 import (
 	"github.com/genshinsim/gcsim/internal/weapons/common"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
@@ -29,6 +30,16 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		})
 	})
 
-	// Stellar Glimmer is not yet represented by an engine event or attack tag.
+	common.SubscribeOwnerStarReactions(c, char, "emberwell-star", func(*info.AttackEvent) {
+		char.AddReactBonusMod(character.ReactBonusMod{
+			Base: modifier.NewBaseWithHitlag("emberwell-star", 12*60),
+			Amount: func(ai info.AttackInfo) float64 {
+				if attacks.AttackTagIsStar(ai.AttackTag) {
+					return atkBonus(p.Refine)
+				}
+				return 0
+			},
+		})
+	})
 	return w, nil
 }

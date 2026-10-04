@@ -33,7 +33,10 @@ const (
 
 func init() {
 	skillFrames = frames.InitAbilSlice(55)
-	skillFrames[action.ActionAttack] = 49
+	// Aggregate-rotation estimate (not image-extracted); together with the
+	// Sturm CA -> NA transition this fits the user's 12.5s sequence. See
+	// PLACEHOLDER_FRAMES.md for hitlag/team assumptions and retained legacy data.
+	skillFrames[action.ActionAttack] = 48
 	skillFrames[action.ActionCharge] = 49 // Assumed same as NA
 	skillFrames[action.ActionBurst] = 44
 	skillFrames[action.ActionSkill] = 44 // Assumed same as Q

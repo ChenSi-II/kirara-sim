@@ -30,6 +30,7 @@ cmd/gcsim/gcsim
 pipeline/_cache/
 pipeline/_compiled.spec.yml
 pipeline/data/
+/origin_data/
 keys.json
 tagger_mapping.json
 /app/*

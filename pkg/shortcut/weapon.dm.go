@@ -456,4 +456,7 @@ var WeaponNameToKey = map[string]keys.Weapon{
 	"roufengyouxian":                  keys.RoufengYouxian,
 	"softwindstrings":                 keys.RoufengYouxian,
 	"windtalker":                      keys.RoufengYouxian,
+	"chernaya":                        keys.Chernaya,
+	"秘星典谕":                            keys.Chernaya,
+	"mixingdianyu":                    keys.Chernaya,
 }

@@ -29,7 +29,7 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 			target := ch
 			target.AddStatMod(character.StatMod{Base: modifier.NewBaseWithHitlag("illuga-c4", dur), AffectedStat: attributes.DEF, Amount: func() []float64 {
 				buff := make([]float64, attributes.EndStatType)
-				if target.Index() != c.Core.Player.Active() {
+				if target.Index() != c.Core.Player.Active() || !c.StatusIsActive(orioleSongKey) {
 					return buff
 				}
 				buff[attributes.DEF] = 200

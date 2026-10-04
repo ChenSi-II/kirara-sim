@@ -32,3 +32,13 @@ func (c *char) Init() error {
 	c.initConstellations()
 	return nil
 }
+
+func (c *char) ActionStam(a action.Action, p map[string]int) float64 {
+	if a == action.ActionCharge && c.StatusIsActive(shadowDanceKey) {
+		if c.Core.Player.Dew() > 0 && c.phantasmUses < 3 {
+			return 0
+		}
+		return 25
+	}
+	return c.Character.ActionStam(a, p)
+}

@@ -10,8 +10,10 @@ import (
 
 type char struct {
 	*tmpl.Character
-	doubleSrc int
-	splendor  [info.MaxChars]int
+	doubleSrc       int
+	doubleTimeline  int
+	doubleFromBurst bool
+	splendor        [info.MaxChars]int
 }
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {

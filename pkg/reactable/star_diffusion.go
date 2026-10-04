@@ -32,16 +32,20 @@ func (r *Reactable) tryStarDiffusion(a *info.AttackEvent, aura attributes.Elemen
 
 	state := &r.core.StarReactions
 	newDomain := !state.DiffusionActive
+	newVortex := state.DiffusionStacks == 0
 	state.DiffusionActive = true
 	state.DiffusionStacks = min(state.DiffusionStacks+1, starDiffusionMaxStacks)
 	state.DiffusionOwner = a.Info.ActorIndex
 	state.DiffusionTarget = r.self
+	if newVortex {
+		r.core.Events.Emit(event.OnStarDiffusionVortex, r.self, false)
+	}
 
 	// Preserve ordinary Cryo Swirl's reaction-damage GCD while still counting
 	// every successfully triggered Star Diffusion toward the vortex.
 	if r.swirlCryoGCD == -1 || r.core.F >= r.swirlCryoGCD {
 		r.swirlCryoGCD = r.core.F + 0.1*60
-		doStarReactionAttack(
+		doStarDiffusionAttack(
 			r.core,
 			r.self,
 			a.Info.ActorIndex,
@@ -84,13 +88,14 @@ func (r *Reactable) detonateStarDiffusion() {
 	if stacks == 0 || state.DiffusionTarget == nil {
 		return
 	}
+	r.core.Events.Emit(event.OnStarDiffusionVortex, state.DiffusionTarget, true)
 
 	mult := 2.0
 	if stacks >= 3 {
 		mult = 3
 	}
 	target := state.DiffusionTarget
-	doStarReactionAttack(
+	doStarDiffusionAttack(
 		r.core,
 		target,
 		state.DiffusionOwner,

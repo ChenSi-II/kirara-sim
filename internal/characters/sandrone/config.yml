@@ -17,3 +17,14 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param9:P}/{param10:P}|1)'
   - skill: 'skill(Prism Shot DMG|{param1:F1P})'
   - burst: 'burst(Bombardment DMG|{param1:F1P} ×3)'
+
+docs:
+  issues:
+    - E/Q and held-charge hit timelines use user images 1/6 (2026-10-04); see PLACEHOLDER_FRAMES.md for measured and inferred values.
+    - Charge defaults to 360 frames with no release recovery; immediate E follow-ups can cancel into the next E when its cooldown ends unless duration is explicit. This cancel is inferred.
+    - The fitted power model enters overdrive on C0 ray 3 and C1 ray 6 from zero power, as confirmed by the user. C0 overdrive hits are recorded; C1 overdrive hits reuse estimated offsets. Gauge gain/repair/decay rates and unrecorded power histories still need measurements.
+
+abilities:
+  - name: charge
+    params:
+      duration: Held-charge duration in frames (default 360, minimum 1). An explicit value also disables the inferred early cancel into the next E.

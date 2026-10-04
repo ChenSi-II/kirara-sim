@@ -20,8 +20,17 @@ func TestStarSuperconductReplacesSuperconduct(t *testing.T) {
 
 	starCount := 0
 	normalCount := 0
-	c.Events.Subscribe(event.OnStarSuperconduct, func(args ...any) { starCount++ }, "test-star-superconduct")
+	damageCount := 0
+	contributorCount := 0
+	c.Events.Subscribe(event.OnStarSuperconduct, func(args ...any) {
+		starCount++
+		if !c.StarReactions.SuperconductActive {
+			t.Fatal("reaction listeners must see the activated domain")
+		}
+	}, "test-star-superconduct")
 	c.Events.Subscribe(event.OnSuperconduct, func(args ...any) { normalCount++ }, "test-normal-superconduct")
+	c.Events.Subscribe(event.OnEnemyDamage, func(args ...any) { damageCount++ }, "test-damage-count")
+	c.Events.Subscribe(event.OnStarReactionAttack, func(args ...any) { contributorCount++ }, "test-contributor-count")
 
 	c.QueueAttackEvent(makeAOEAttack(attributes.Cryo, 25), 0)
 	advanceCoreFrame(c)
@@ -40,8 +49,11 @@ func TestStarSuperconductReplacesSuperconduct(t *testing.T) {
 	if got := c.Player.ByIndex(0).Stat(attributes.CryoP); !floatApproxEqual(got, 0.28) {
 		t.Fatalf("initial cryo bonus = %v, want 0.28", got)
 	}
-	if trg[0].last.Info.AttackTag != attacks.AttackTagReactionStarSuperconduct {
-		t.Fatalf("last attack tag = %v, want Star Superconduct", trg[0].last.Info.AttackTag)
+	if damageCount != 2 || contributorCount != 0 {
+		t.Fatalf("ice/electro hits must not produce reaction damage: hits=%d, contributions=%d", damageCount, contributorCount)
+	}
+	if trg[0].last.Info.Element != attributes.Electro || trg[0].last.Info.Abil != "Test AoE Attack" {
+		t.Fatalf("unexpected extra attack after the triggering Electro hit: %+v", trg[0].last.Info)
 	}
 }
 
@@ -116,6 +128,42 @@ func TestStarDiffusionReplacesCryoSwirl(t *testing.T) {
 	if trg[0].last.Info.AttackTag != attacks.AttackTagReactionStarDiffusionAnemo {
 		t.Fatalf("last attack tag = %v, want Star Diffusion Anemo", trg[0].last.Info.AttackTag)
 	}
+	if !trg[0].last.Info.IsStarDiffusionReaction || trg[0].last.Info.IsDirectStarDamage() {
+		t.Fatal("combined Star Diffusion damage must be marked as a reaction")
+	}
+}
+
+func TestStarDiffusionVortexLifecycleEvents(t *testing.T) {
+	for _, stacks := range []int{2, 6} {
+		c, targets := testCoreWithTrgs(1)
+		if err := c.Init(); err != nil {
+			t.Fatal(err)
+		}
+		target := targets[0]
+		target.SetAuraDurability(info.ReactionModKeyCryo, 1000, 0)
+		var events []bool
+		c.Events.Subscribe(event.OnStarDiffusionVortex, func(args ...any) {
+			events = append(events, args[1].(bool))
+		}, "test-vortex-lifecycle")
+		for range stacks {
+			target.tryStarDiffusion(&info.AttackEvent{Info: info.AttackInfo{
+				ActorIndex: 0, Element: attributes.Anemo, Durability: 25,
+			}}, attributes.Cryo)
+		}
+		if stacks < 6 {
+			if len(events) != 1 || events[0] {
+				t.Fatalf("stacking should create one vortex: %v", events)
+			}
+			advanceCoreFrameMultiple(c, starDiffusionInterval)
+		}
+		if len(events) != 2 || events[0] || !events[1] {
+			t.Fatalf("want creation then detonation at %d stacks, got %v", stacks, events)
+		}
+		advanceCoreFrameMultiple(c, starDiffusionInterval)
+		if len(events) != 2 {
+			t.Fatal("empty cycle emitted a detonation")
+		}
+	}
 }
 
 func TestStarDiffusionVortexMultipliers(t *testing.T) {
@@ -180,4 +228,48 @@ func TestStarDiffusionVortexMultipliers(t *testing.T) {
 
 func floatApproxEqual(got, want float64) bool {
 	return math.Abs(got-want) < 1e-9
+}
+
+func TestBeaconSuperconductSkipsPrismSettlements(t *testing.T) {
+	c, trg := testCoreWithTrgs(1)
+	if err := c.Init(); err != nil {
+		t.Fatal(err)
+	}
+	c.StarReactions.Enabled = true
+	c.StarReactions.BeaconSuperconduct = true
+	count := 0
+	c.Events.Subscribe(event.OnStarSuperconduct, func(...any) { count++ }, "test-beacon-reaction")
+	c.QueueAttackEvent(makeAOEAttack(attributes.Cryo, 25), 0)
+	advanceCoreFrame(c)
+	c.QueueAttackEvent(makeAOEAttack(attributes.Electro, 25), 0)
+	advanceCoreFrameMultiple(c, 2)
+	if count != 1 || c.StarReactions.SuperconductActive {
+		t.Fatal("reaction must emit the beacon event without creating the prism domain")
+	}
+	c.StarReactions.SuperconductActive = true
+	c.StarReactions.SuperconductCoefficient = 1
+	trg[0].addStarSuperconductStack(makeAOEAttack(attributes.Electro, 25))
+	advanceCoreFrameMultiple(c, 241)
+	if c.StarReactions.SuperconductStacks != 0 || c.StarReactions.SuperconductCoefficient != 1 || c.Player.ByIndex(0).Stat(attributes.CryoP) != 0 {
+		t.Fatal("beacons must not inherit prism stacks or elemental bonuses")
+	}
+}
+
+func TestSuperconductOnlyDoesNotConvertCryoSwirl(t *testing.T) {
+	c, _ := testCoreWithTrgs(1)
+	if err := c.Init(); err != nil {
+		t.Fatal(err)
+	}
+	c.StarReactions.SuperconductEnabled = true
+	c.StarReactions.BeaconSuperconduct = true
+	star, swirl := 0, 0
+	c.Events.Subscribe(event.OnStarDiffusion, func(...any) { star++ }, "test-no-star-swirl")
+	c.Events.Subscribe(event.OnSwirlCryo, func(...any) { swirl++ }, "test-normal-cryo-swirl")
+	c.QueueAttackEvent(makeAOEAttack(attributes.Cryo, 25), 0)
+	advanceCoreFrame(c)
+	c.QueueAttackEvent(makeAOEAttack(attributes.Anemo, 25), 0)
+	advanceCoreFrameMultiple(c, 2)
+	if star != 0 || swirl != 1 {
+		t.Fatalf("Mitya-only team swirl: star=%d ordinary=%d", star, swirl)
+	}
 }

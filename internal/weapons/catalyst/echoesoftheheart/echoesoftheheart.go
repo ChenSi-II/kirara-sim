@@ -3,6 +3,7 @@ package echoesoftheheart
 import (
 	"github.com/genshinsim/gcsim/internal/weapons/common"
 	"github.com/genshinsim/gcsim/pkg/core"
+	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
@@ -29,6 +30,16 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		})
 	})
 
-	// Stellar Glimmer is not yet represented by an engine event or attack tag.
+	common.SubscribeOwnerStarReactions(c, char, "echoes-of-the-heart-star", func(*info.AttackEvent) {
+		char.AddReactBonusMod(character.ReactBonusMod{
+			Base: modifier.NewBaseWithHitlag("echoes-of-the-heart-star", 12*60),
+			Amount: func(ai info.AttackInfo) float64 {
+				if attacks.AttackTagIsStar(ai.AttackTag) {
+					return 0.12 + 0.04*float64(p.Refine)
+				}
+				return 0
+			},
+		})
+	})
 	return w, nil
 }

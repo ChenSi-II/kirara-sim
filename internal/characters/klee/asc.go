@@ -16,6 +16,12 @@ func (c *char) makeA1CB() info.AttackCBFunc {
 		return nil
 	}
 	return func(a info.AttackCB) {
+		if c.IsHexerei {
+			if a.Target.Type() == info.TargettableEnemy && a.Damage > 0 && c.Core.Rand.Float64() < .5 {
+				c.gainSpark()
+			}
+			return
+		}
 		if c.StatusIsActive(a1IcdKey) {
 			return
 		}

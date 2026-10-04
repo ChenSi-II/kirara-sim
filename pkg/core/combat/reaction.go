@@ -17,26 +17,26 @@ func CalcReactionBaseDmg(lvl int) float64 {
 	return reactionLvlBase[idx]
 }
 
-func CalcSpecialReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em float64) float64 {
-	var reactionMultiplier float64
-	switch atk.AttackTag {
-	case attacks.AttackTagReactionLunarCharge:
-		reactionMultiplier = 3
-	case attacks.AttackTagReactionLunarCrystallize:
-		reactionMultiplier = 1.6
-	case attacks.AttackTagReactionStarSuperconduct,
-		attacks.AttackTagReactionStarDiffusionCryo:
-		reactionMultiplier = atk.Mult
-	case attacks.AttackTagReactionStarDiffusionAnemo:
-		reactionMultiplier = 0.75
-	}
-	return (reactionMultiplier*(1+((6*em)/(2000+em))+reactBonus)*CalcReactionBaseDmg(lvl)*(1+atk.BaseDmgBonus) + atk.FlatDmg) * (1 + atk.Elevation)
+// CalcSpecialReactionDmg computes damage before resistance and crit. Talent
+// damage supplies its multiplier times the scaling stat as baseDmg; reaction
+// contributions supply CalcReactionBaseDmg(level). Keeping the coefficient
+// separate prevents talent multipliers from being mistaken for reaction or
+// vortex coefficients. Direct Star Diffusion always uses coefficient 1.
+func CalcSpecialReactionDmg(baseDmg, coefficient, reactBonus float64, atk info.AttackInfo, em float64) float64 {
+	return (coefficient*(1+((6*em)/(2000+em))+reactBonus)*baseDmg*(1+atk.BaseDmgBonus) + atk.FlatDmg) * (1 + atk.Elevation)
 }
 
 // CalcLunarReactionDmg is kept for callers outside the core package. New
 // Lunar-like reactions should use CalcSpecialReactionDmg.
 func CalcLunarReactionDmg(lvl int, reactBonus float64, atk info.AttackInfo, em float64) float64 {
-	return CalcSpecialReactionDmg(lvl, reactBonus, atk, em)
+	coefficient := 0.0
+	switch atk.AttackTag {
+	case attacks.AttackTagReactionLunarCharge:
+		coefficient = 3
+	case attacks.AttackTagReactionLunarCrystallize:
+		coefficient = 1.6
+	}
+	return CalcSpecialReactionDmg(CalcReactionBaseDmg(lvl), coefficient, reactBonus, atk, em)
 }
 
 func CalcReactionDmg(lvl int, src reactionBonusSrc, atk info.AttackInfo, em float64) (float64, info.Snapshot) {

@@ -33,7 +33,17 @@ func init() {
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
 	// 0 for base dmg, 1 for 1x bonus, 2 for max bonus
-	counter := p["counter"]
+	counter := max(0, p["counter"])
+	holdFrames := 0
+	if c.Enhanced && p["hold"] > 0 {
+		// hold is a boolean; hold_frames selects the charge duration (default full charge).
+		holdFrames = 96
+		if v, ok := p["hold_frames"]; ok {
+			holdFrames = max(0, v)
+		}
+		counter = min(2, counter+holdFrames/48)
+	}
+	hitmark := skillHitmark + holdFrames
 	if counter >= 2 {
 		counter = 2
 		c.a4()
@@ -60,9 +70,10 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 	c.Core.QueueAttack(
 		ai,
 		combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, skillRadius[counter]),
-		skillHitmark,
-		skillHitmark,
+		hitmark,
+		hitmark,
 		c.makeParticleCB(counter),
+		c.enhancedHoldCB(p["hold"] > 0, counter),
 	)
 
 	// add shield
@@ -74,15 +85,15 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		Name:       "Tidecaller (Shield)",
 		HP:         shieldPer[c.TalentLvlSkill()]*c.MaxHP() + shieldBase[c.TalentLvlSkill()],
 		Ele:        attributes.Electro,
-		Expires:    c.Core.F + skillHitmark, // last until hitmark
+		Expires:    c.Core.F + hitmark, // last until hitmark
 	})
 
-	c.SetCDWithDelay(action.ActionSkill, 450, 4)
+	c.SetCDWithDelay(action.ActionSkill, 450, 4+holdFrames)
 
 	return action.Info{
-		Frames:          frames.NewAbilFunc(skillFrames),
-		AnimationLength: skillFrames[action.InvalidAction],
-		CanQueueAfter:   skillFrames[action.ActionDash], // earliest cancel
+		Frames:          func(a action.Action) int { return skillFrames[a] + holdFrames },
+		AnimationLength: skillFrames[action.InvalidAction] + holdFrames,
+		CanQueueAfter:   skillFrames[action.ActionDash] + holdFrames, // earliest cancel
 		State:           action.SkillState,
 	}, nil
 }

@@ -84,6 +84,9 @@ func (c *char) a4() {
 }
 
 func (c *char) astralGlowGainCB(a info.AttackCB) {
+	if a.Target.Type() != info.TargettableEnemy {
+		return
+	}
 	if !c.IsHexerei {
 		return
 	}
@@ -127,7 +130,7 @@ func (c *char) omenRefreshCB(a info.AttackCB) {
 
 	omenRefreshCount := t.GetTag(omenKey)
 
-	if omenRefreshCount < 0 {
+	if omenRefreshCount <= 0 {
 		return
 	}
 
@@ -137,10 +140,6 @@ func (c *char) omenRefreshCB(a info.AttackCB) {
 
 	t.SetTag(omenKey, omenRefreshCount-1)
 
-	if omenRefreshCount-1 < 0 {
-		t.RemoveTag(omenKey)
-	}
-
 	c.AddStatus(omenRefreshICDKey, 0.5*60, false) // 0.5s ICD
 
 	omenExp := t.StatusExpiry(omenKey)
@@ -149,10 +148,8 @@ func (c *char) omenRefreshCB(a info.AttackCB) {
 
 	t.AddStatus(omenKey, newDur, true)
 
-	omenRefreshCount++
-
 	c.Core.Log.NewEvent("mona hexerei proc: omen refresh", glog.LogCharacterEvent, c.Index()).
-		Write("refreshCount", omenRefreshCount)
+		Write("remainingRefreshes", omenRefreshCount-1)
 }
 
 func (c *char) hexInit() {

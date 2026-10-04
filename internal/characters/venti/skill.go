@@ -30,6 +30,7 @@ func init() {
 }
 
 func (c *char) Skill(p map[string]int) (action.Info, error) {
+	c.hexC4()
 	ai := info.AttackInfo{
 		ActorIndex:   c.Index(),
 		Abil:         "Skyward Sonnett (Press)",
@@ -73,6 +74,10 @@ func (c *char) Skill(p map[string]int) (action.Info, error) {
 		}
 	}
 
+	if p["hold"] == 0 && c.IsHexerei && c.Base.Cons >= 2 && c.StatusIsActive("venti-winds-advent") {
+		ai.Mult *= 3
+		c.DeleteStatus("venti-winds-advent")
+	}
 	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(trg, nil, radius), 0, hitmark, c.c2, c.makeParticleCB(count))
 
 	c.SetCDWithDelay(action.ActionSkill, cd, cdstart)

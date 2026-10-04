@@ -23,7 +23,7 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 	}
 	for i := 0; i < 6; i++ {
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: fmt.Sprintf("Manifest Judgment %d", i+1), AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypePierce, Element: attributes.Cryo, Durability: 25, Mult: burstParam[0][lvl], BaseDmgBonus: burstParam[1][lvl] * float64(will)}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 20+i*7, 20+i*7)
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), burstHitmarks[i], burstHitmarks[i])
 	}
 	if c.StatusIsActive(masterstrokeKey) {
 		c.AddStatus(masterstrokeKey, c.StatusDuration(masterstrokeKey)+99, true)
@@ -31,6 +31,7 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 	if c.Base.Cons < 6 {
 		c.will = 0
 	} else {
+		c.will = will
 		c.joy = 100
 	}
 	if c.Base.Cons >= 2 {
@@ -42,6 +43,10 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 		c.DeleteStatus("lohen-c4-refund")
 		c.AddEnergy("lohen-c4-burst-refund", 15)
 	}
-	f := frames.InitAbilSlice(78)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 78, CanQueueAfter: 66, State: action.BurstState}, nil
+	// Image 8 gives Q -> swap at 2.233s, before the remaining hits land.
+	// The full animation/other cancels were not supplied: conservatively use
+	// one frame after the last hit. See PLACEHOLDER_FRAMES.md.
+	f := frames.InitAbilSlice(172)
+	f[action.ActionSwap] = 134
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 172, CanQueueAfter: 134, State: action.BurstState}, nil
 }

@@ -41,11 +41,16 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 
 	// TODO: snapshot timing
 	snap := c.Snapshot(&ai)
-	var ap info.AttackPattern
+	ap := combat.NewBoxHitOnTarget(c.Core.Combat.Player(), info.Point{Y: -1.2}, 2.8, 3.6)
 	var rebukeCB info.AttackCBFunc
 	var particleCB info.AttackCBFunc
 	var c6Attack bool
-	if c.Base.Ascension >= 1 {
+	if c.SuperconductRadiance() && c.graciousRebukeReady() {
+		c.radiantCharge(&ai, &snap)
+		rebukeCB = c.radiantChargeCB()
+		particleCB = c.particleCB
+		ap = combat.NewBoxHitOnTarget(c.Core.Combat.Player(), info.Point{Y: -.8}, 4, 5)
+	} else if !c.SuperconductRadiance() && c.Base.Ascension >= 1 {
 		if c.Base.Cons >= 1 {
 			rebukeCB, c6Attack = c.c1(&ai, &snap)
 		} else {

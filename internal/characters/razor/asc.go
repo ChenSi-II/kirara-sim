@@ -48,7 +48,7 @@ func (c *char) a4() {
 }
 
 func (c *char) thunderFallCB() {
-	if !c.IsHexerei {
+	if !c.IsHexerei || !c.StatusIsActive(burstBuffKey) {
 		return
 	}
 
@@ -59,8 +59,6 @@ func (c *char) thunderFallCB() {
 	if c.StatusIsActive(hexereiICDKey) {
 		return
 	}
-
-	c.c6HexereiMod()
 
 	ai := info.AttackInfo{
 		ActorIndex: c.Index(),
@@ -79,7 +77,7 @@ func (c *char) thunderFallCB() {
 		info.Point{Y: 2},
 		5,
 	)
-	c.AddStatus(hexereiICDKey, 60+74, false)
+	c.AddStatus(hexereiICDKey, 60, false)
 
 	c.Core.QueueAttack(ai, ap, 0, 37)
 	c.Core.Tasks.Add(

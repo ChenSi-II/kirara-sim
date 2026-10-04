@@ -25,12 +25,14 @@ func (c *char) initAscensions() {
 		}
 	}
 	buff := make([]float64, attributes.EndStatType)
-	buff[attributes.DEFP], buff[attributes.EM] = .15*float64(geo), 60*float64(hydro)
+	if c.Base.Ascension >= 4 {
+		buff[attributes.DEFP], buff[attributes.EM] = .15*float64(geo), 60*float64(hydro)
+	}
 	c.AddStatMod(character.StatMod{Base: modifier.NewBase("zibai-a4-party", -1), Amount: func() []float64 { return buff }})
 	apply := func(atk *info.AttackEvent) {
 		if atk.Info.AttackTag == attacks.AttackTagDirectLunarCrystallize || atk.Info.AttackTag == attacks.AttackTagReactionLunarCrystallize {
 			atk.Info.BaseDmgBonus += min(c.TotalDef(false)/100*.007, .14)
-			if c.Base.Cons >= 6 && c.StatusIsActive("zibai-c6-elevation") {
+			if atk.Info.ActorIndex == c.Index() && c.Base.Cons >= 6 && c.StatusIsActive("zibai-c6-elevation") {
 				atk.Info.Elevation += c.c6Elevation
 			}
 		}

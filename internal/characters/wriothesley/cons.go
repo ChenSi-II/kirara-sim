@@ -67,6 +67,7 @@ func (c *char) c1(ai *info.AttackInfo, snap *info.Snapshot) (info.AttackCBFunc, 
 		// E extension
 		if !c.c1SkillExtensionProc && c.StatusIsActive(skillKey) {
 			c.ExtendStatus(skillKey, c1SkillExtension)
+			c.ExtendStatus("wriothesley-a4", c1SkillExtension)
 			c.c1SkillExtensionProc = true
 			c.Core.Log.NewEvent("c1: skill duration is extended", glog.LogCharacterEvent, c.Index())
 		}
@@ -83,7 +84,7 @@ func (c *char) c1(ai *info.AttackInfo, snap *info.Snapshot) (info.AttackCBFunc, 
 }
 
 func (c *char) makeC1N5CB() info.AttackCBFunc {
-	if c.Base.Cons < 1 || c.NormalCounter != 4 {
+	if c.SuperconductRadiance() || c.Base.Cons < 1 || c.NormalCounter != 4 {
 		return nil
 	}
 	return func(a info.AttackCB) {
@@ -143,6 +144,9 @@ func (c *char) c4() {
 	c.caHeal = 0.5
 
 	c.Core.Events.Subscribe(event.OnHeal, func(args ...any) {
+		if c.SuperconductRadiance() {
+			return
+		}
 		index := args[1].(int)
 		amount := args[2].(float64)
 		overheal := args[3].(float64)
@@ -170,6 +174,9 @@ func (c *char) c4() {
 				Base:         modifier.NewBaseWithHitlag(c4Status, 4*60),
 				AffectedStat: attributes.AtkSpd,
 				Amount: func() []float64 {
+					if c.SuperconductRadiance() {
+						return nil
+					}
 					return m
 				},
 			})
@@ -180,6 +187,9 @@ func (c *char) c4() {
 					Base:         modifier.NewBaseWithHitlag(c4Status, 6*60),
 					AffectedStat: attributes.AtkSpd,
 					Amount: func() []float64 {
+						if c.SuperconductRadiance() {
+							return nil
+						}
 						return m
 					},
 				})

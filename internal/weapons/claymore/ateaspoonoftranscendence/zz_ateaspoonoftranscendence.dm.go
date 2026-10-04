@@ -4,7 +4,7 @@
 //
 //	ATK is increased by 28%.
 //	Additionally, each time the equipping character hits an opponent with their Charged
-//	Attack, they attain "Transcendence" for a short time: their Stellar-Conduct DMG is
+//	Attack, they attain "Transcendence" for a short time: their Stellar-Conduct and Stellar Swirl DMG is
 //	increased by 16% for 5s. This effect can stack once every 0.2s, max 3 stacks.
 package ateaspoonoftranscendence
 

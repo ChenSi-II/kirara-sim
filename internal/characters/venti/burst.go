@@ -20,6 +20,16 @@ func init() {
 }
 
 func (c *char) Burst(p map[string]int) (action.Info, error) {
+	c.hexC4()
+	c.burstSrc = c.Core.F
+	c.burstEnd = c.Core.F + burstStart + 480
+	c.burstExtensions = 0
+	c.DeleteStatus("venti-hexerei-eye")
+	if c.IsHexerei && c.Base.Cons >= 2 {
+		c.AddStatus("venti-winds-advent", 15*60, true)
+		c.ResetActionCooldown(action.ActionSkill)
+	}
+	src := c.burstSrc
 	// reset location
 	c.qAbsorb = attributes.NoElement
 	player := c.Core.Combat.Player()
@@ -57,17 +67,30 @@ func (c *char) Burst(p map[string]int) (action.Info, error) {
 		cb = c.c6(attributes.Anemo)
 	}
 
-	// starts at 106 with 24f interval between ticks. 20 total
-	for i := range 20 {
-		c.Core.Tasks.Add(func() {
-			c.Core.QueueAttackWithSnap(ai, snap, ap, 0, cb)
-		}, 106+24*i)
+	// Keep the original hitmarks; recurse so hurricane arrows can extend both components.
+	var tick func()
+	tick = func() {
+		if src != c.burstSrc || c.Core.F >= c.burstEnd {
+			return
+		}
+		c.Core.QueueAttackWithSnap(ai, snap, ap, 0, cb)
+		c.Core.Tasks.Add(tick, 24)
 	}
-	// Infusion usually occurs after 4 ticks of anemo according to KQM library
-	c.Core.Tasks.Add(c.absorbCheckQ(c.Core.F, 0, int((480-24*4)/18)), 106+24*3)
-
+	c.Core.Tasks.Add(tick, 106)
+	c.Core.Tasks.Add(c.absorbCheckQ(src, 0, int((480-24*4)/18)), 106+24*3)
 	if c.Base.Ascension >= 4 {
-		c.Core.Tasks.Add(c.a4, 480+burstStart)
+		var finish func()
+		finish = func() {
+			if src != c.burstSrc {
+				return
+			}
+			if c.Core.F < c.burstEnd {
+				c.Core.Tasks.Add(finish, c.burstEnd-c.Core.F)
+				return
+			}
+			c.a4()
+		}
+		c.Core.Tasks.Add(finish, 480+burstStart)
 	}
 
 	c.SetCDWithDelay(action.ActionBurst, 15*60, 81)
@@ -88,15 +111,22 @@ func (c *char) burstAbsorbedTicks() {
 	}
 
 	ap := combat.NewCircleHitOnTarget(c.qPos, nil, 6)
-	// ticks at 24f. 15 total
-	for i := range 15 {
-		c.Core.QueueAttackWithSnap(c.aiAbsorb, c.snapAbsorb, ap, i*24, cb)
+	src := c.burstSrc
+	baseEnd := c.Core.F + 15*24
+	var tick func()
+	tick = func() {
+		if src != c.burstSrc || c.Core.F >= min(c.burstEnd, baseEnd+c.burstExtensions*60) {
+			return
+		}
+		c.Core.QueueAttackWithSnap(c.aiAbsorb, c.snapAbsorb, ap, 0, cb)
+		c.Core.Tasks.Add(tick, 24)
 	}
+	tick()
 }
 
 func (c *char) absorbCheckQ(src, count, maxcount int) func() {
 	return func() {
-		if count == maxcount {
+		if src != c.burstSrc || c.Core.F >= c.burstEnd {
 			return
 		}
 		c.qAbsorb = c.Core.Combat.AbsorbCheck(c.Index(), c.absorbCheckLocation, attributes.Pyro, attributes.Hydro, attributes.Electro, attributes.Cryo)

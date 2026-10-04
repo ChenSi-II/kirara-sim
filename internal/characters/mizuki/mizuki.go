@@ -17,13 +17,15 @@ type char struct {
 	cloudSrc                        int
 	a4Buff                          []float64
 	c1EM                            float64
+	empoweredCloud                  bool
 	c2Buff                          []float64
 	c4EnergyGenerationsRemaining    int
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	c.SetEnhanced(p)
 
 	c.EnergyMax = 60
 	c.NormalHitNum = normalHitNum
@@ -36,6 +38,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.enhancedInit()
 	c.skillInit()
 	c.a1()
 	c.a4()

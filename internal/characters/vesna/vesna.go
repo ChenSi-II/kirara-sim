@@ -18,12 +18,13 @@ const (
 
 type char struct {
 	*tmpl.Character
-	armedSrc     int
-	magic        int
-	specialStage int
-	danceCount   int
-	composure    int
-	freeDance    bool
+	armedSrc          int
+	magic             int
+	specialStage      int
+	danceCount        int
+	composure         int
+	composureExpiries []int
+	freeDance         bool
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
@@ -46,6 +47,8 @@ func (c *char) Init() error {
 		}
 		c.endSpiritbladeArmament()
 		c.composure = 0
+		c.composureExpiries = nil
+		c.DeleteStatus(composureKey)
 	}, "vesna-swap")
 	return nil
 }
@@ -63,7 +66,6 @@ func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Fail
 
 func (c *char) endSpiritbladeArmament() {
 	c.DeleteStatus(spiritbladeArmedKey)
-	c.DeleteStatus(composureKey)
 	c.magic = 0
 	c.specialStage = 0
 	c.danceCount = 0
@@ -81,16 +83,29 @@ func (c *char) addComposure() {
 	if c.Base.Ascension < 1 {
 		return
 	}
-	if !c.StatusIsActive(composureKey) {
-		c.composure = 0
+	if c.activeComposure() == 6 {
+		c.composureExpiries = c.composureExpiries[1:]
 	}
-	c.composure = min(c.composure+1, 6)
+	c.composureExpiries = append(c.composureExpiries, c.Core.F+20*60)
+	c.composure = len(c.composureExpiries)
 	c.AddStatus(composureKey, 20*60, true)
 }
 
+func (c *char) activeComposure() int {
+	active := c.composureExpiries[:0]
+	for _, expiry := range c.composureExpiries {
+		if expiry > c.Core.F {
+			active = append(active, expiry)
+		}
+	}
+	c.composureExpiries = active
+	c.composure = len(active)
+	return c.composure
+}
+
 func (c *char) spiritbladeBonus() float64 {
-	if c.Base.Ascension < 1 || !c.StatusIsActive(composureKey) {
+	if c.Base.Ascension < 1 {
 		return 1
 	}
-	return 1 + 0.1*float64(c.composure)
+	return 1 + 0.1*float64(c.activeComposure())
 }

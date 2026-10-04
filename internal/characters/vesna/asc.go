@@ -1,34 +1,34 @@
 package vesna
 
 import (
-	"math"
-
+	"github.com/genshinsim/gcsim/internal/characters/vodyanitsa"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
+	"github.com/genshinsim/gcsim/pkg/core/keys"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 	"github.com/genshinsim/gcsim/pkg/modifier"
 )
 
 func (c *char) initAscensions() {
 	c.Core.Events.Subscribe(event.OnStarDiffusion, func(...any) {
-		c.AddStatus(radianceKey, 8*60, true)
+		duration := 8 * 60
+		for _, ch := range c.Core.Player.Chars() {
+			if ch.Base.Key == keys.Vodyanitsa && ch.Base.Ascension >= 1 && ch.StatusIsActive(vodyanitsa.SongKey) {
+				duration += 4 * 60
+				break
+			}
+		}
+		c.AddStatus(radianceKey, duration, true)
 	}, "vesna-radiance")
 
-	for _, ch := range c.Core.Player.Chars() {
-		ch.AddReactBonusMod(character.ReactBonusMod{
-			Base: modifier.NewBase("vesna-star-diffusion-base-dmg", -1),
-			Amount: func(ai info.AttackInfo) float64 {
-				switch ai.AttackTag {
-				case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
-				default:
-					return 0
-				}
-				return min(math.Floor(c.TotalAtk()/100)*0.007, 0.14)
-			},
-		})
-	}
+	c.AddStarDamageMod("vesna-star-diffusion-base-dmg", func(atk *info.AttackEvent) {
+		switch atk.Info.AttackTag {
+		case attacks.AttackTagReactionStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionCryo:
+			atk.Info.BaseDmgBonus += min(c.TotalAtk()/100*.007, .14)
+		}
+	})
 
 	if c.Base.Ascension < 4 {
 		return

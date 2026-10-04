@@ -65,11 +65,44 @@ func NewWeapon(c *core.Core, char *character.CharWrapper, p info.WeaponProfile) 
 		w.lastProc = c.F
 		if w.activeStacks() < 3 {
 			w.expiries = append(w.expiries, c.F+8*60)
+		} else {
+			w.expiries = append(w.expiries[1:], c.F+8*60)
 		}
 	}, fmt.Sprintf("whitelake-frostfeather-%s", char.Base.Key.String()))
 
-	// Stellar Glimmer CRIT DMG and its energy trigger are blocked on missing
-	// engine reaction events and attack tags. The independent ATK stacks are
-	// fully modeled and can trigger while the holder is off-field.
+	critBonus := 0.35 + 0.15*float64(p.Refine)
+	crit := make([]float64, attributes.EndStatType)
+	crit[attributes.CD] = critBonus
+	char.AddAttackMod(character.AttackMod{
+		Base: modifier.NewBase("whitelake-frostfeather-star-cd", -1),
+		Amount: func(atk *info.AttackEvent, _ info.Target) []float64 {
+			// Combined reactions already evaluated CRIT per contributor.
+			if atk.Info.IsDirectStarDamage() && w.activeStacks() == 3 {
+				return crit
+			}
+			return nil
+		},
+	})
+	c.Events.Subscribe(event.OnStarReactionAttack, func(args ...any) {
+		atk := args[1].(*info.AttackEvent)
+		if atk.Info.ActorIndex == char.Index() && attacks.AttackTagIsStar(atk.Info.AttackTag) && w.activeStacks() == 3 {
+			atk.Snapshot.Stats[attributes.CD] += critBonus
+		}
+	}, fmt.Sprintf("whitelake-frostfeather-star-cd-%v", char.Index()))
+	energy := func(args ...any) {
+		atk := args[1].(*info.AttackEvent)
+		if atk.Info.ActorIndex != char.Index() || w.activeStacks() < 3 || char.StatusDuration("whitelake-frostfeather-energy-icd") > 0 {
+			return
+		}
+		char.AddEnergy("whitelake-frostfeather", 3.5+0.5*float64(p.Refine))
+		char.AddStatus("whitelake-frostfeather-energy-icd", 210, false)
+	}
+	c.Events.Subscribe(event.OnStarSuperconduct, energy, fmt.Sprintf("whitelake-frostfeather-conduct-%v", char.Index()))
+	c.Events.Subscribe(event.OnStarDiffusion, energy, fmt.Sprintf("whitelake-frostfeather-diffusion-%v", char.Index()))
+	c.Events.Subscribe(event.OnEnemyDamage, func(args ...any) {
+		if attacks.AttackTagIsStar(args[1].(*info.AttackEvent).Info.AttackTag) {
+			energy(args...)
+		}
+	}, fmt.Sprintf("whitelake-frostfeather-star-damage-%v", char.Index()))
 	return w, nil
 }

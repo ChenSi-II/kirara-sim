@@ -120,9 +120,9 @@ func (c *char) c6Init() {
 
 	c.AddStatMod(character.StatMod{
 		Base:         modifier.NewBase("varka-c6-cdmg", -1),
-		AffectedStat: attributes.AnemoP,
+		AffectedStat: attributes.CD,
 		Amount: func() []float64 {
-			if c.a4Stacks == 0 {
+			if !c.StatusIsActive(a4Key) || c.a4Stacks == 0 {
 				return nil
 			}
 			m[attributes.CD] = float64(c.a4Stacks) * 0.2

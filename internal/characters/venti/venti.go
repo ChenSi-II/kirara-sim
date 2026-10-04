@@ -16,11 +16,16 @@ type char struct {
 	aiAbsorb            info.AttackInfo
 	snapAbsorb          info.Snapshot
 	c4bonus             []float64
+	burstSrc            int
+	burstEnd            int
+	burstExtensions     int
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	hex, ok := p.Params["hexerei"]
+	c.IsHexerei = !ok || hex != 0
 
 	c.EnergyMax = 60
 	c.NormalHitNum = normalHitNum
@@ -33,9 +38,10 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.hexInit()
 	// C4:
 	// When Venti picks up an Elemental Orb or Particle, he receives a 25% Anemo DMG Bonus for 10s.
-	if c.Base.Cons >= 4 {
+	if c.Base.Cons >= 4 && !c.IsHexerei {
 		c.c4()
 	}
 	return nil

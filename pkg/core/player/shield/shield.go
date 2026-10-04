@@ -33,6 +33,7 @@ const (
 	IneffaSkill
 	ColumbinaC1
 	NicoleSkill
+	ValeriySkill
 	EndType
 )
 

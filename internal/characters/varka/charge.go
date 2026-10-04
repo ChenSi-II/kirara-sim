@@ -11,6 +11,7 @@ import (
 
 var (
 	chargeFrames             []int
+	sturmChargeFrames        []int
 	chargeHitmarks           = []int{41, 41}
 	chargeHitlagHaltFrames   = []float64{0.0, 0.09}
 	chargeCanBeDefenseHalted = []bool{false, true}
@@ -33,6 +34,11 @@ func init() {
 	chargeFrames[action.ActionJump] = chargeHitmarks[1]
 	chargeFrames[action.ActionSwap] = 49
 	chargeFrames[action.ActionWalk] = 49
+
+	// Aggregate-rotation estimate, not image-extracted frame data. Preserve the
+	// legacy untransformed table; see PLACEHOLDER_FRAMES.md (2026-10-04).
+	sturmChargeFrames = append([]int(nil), chargeFrames...)
+	sturmChargeFrames[action.ActionAttack] = 41
 
 	azureDevourFrames = frames.InitAbilSlice(75)
 	azureDevourFrames[action.ActionAttack] = 64
@@ -140,8 +146,8 @@ func (c *char) skillCharge() (action.Info, error) {
 	}
 
 	return action.Info{
-		Frames:          frames.NewAbilFuncWithOffset(chargeFrames, windup),
-		AnimationLength: chargeFrames[action.InvalidAction] + windup,
+		Frames:          frames.NewAbilFuncWithOffset(sturmChargeFrames, windup),
+		AnimationLength: sturmChargeFrames[action.InvalidAction] + windup,
 		CanQueueAfter:   chargeHitmarks[1] + windup,
 		State:           action.ChargeAttackState,
 	}, nil

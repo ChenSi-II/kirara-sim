@@ -20,57 +20,97 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	}
 	lvl := c.TalentLvlSkill()
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Phantom Night Dancers", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: skillParam[0][lvl]}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 30, 30, c.skillParticle)
-	c.summonDouble(int(skillParam[10][lvl] * 60))
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 4), 28, 28, c.skillParticle)
+	c.summonDouble(int(skillParam[10][lvl]*60), false)
 	c.AddStatus(codaKey, 6*60, true)
 	c.SetCD(action.ActionSkill, int(skillParam[11][lvl]*60))
-	f := frames.InitAbilSlice(62)
-	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 62, CanQueueAfter: 46, State: action.SkillState}, nil
+	// Image 5 E1: hit 0.466s, end 0.766s; see PLACEHOLDER_FRAMES.md.
+	f := frames.InitAbilSlice(46)
+	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 46, CanQueueAfter: 28, State: action.SkillState}, nil
 }
 
 func (c *char) coda() (action.Info, error) {
 	c.DeleteStatus(codaKey)
+	c.AddStatus("odette-double-enhanced", c.StatusDuration(doubleKey), true)
 	lvl := c.TalentLvlSkill()
-	for i := 0; i < 3; i++ {
-		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Coda at Dawn's Tolling", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: skillParam[1][lvl]}
-		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 4), 20+i*12, 20+i*12)
+	// Image 5's immediate EE column has its own double timeline. Replace
+	// pending E-only attacks, without resummoning or granting Splendor again.
+	// A one-frame scheduler delay shifts the recorded EE trace by one frame.
+	elapsed := c.Core.F - c.doubleSrc
+	if !c.doubleFromBurst && elapsed >= 46 && elapsed <= 47 {
+		origin := c.Core.F - 46
+		c.doubleTimeline++
+		c.scheduleDoubleHits(origin, []int{161, 397, 631, 865, 1098}, []int{271, 507, 742, 976, 1207})
+		// EE double disappearance: 21.516s from the initial E.
+		c.AddStatus(doubleKey, origin+1291-c.Core.F, true)
 	}
-	final := c.stellarAttack("Coda Finale", skillParam[2][lvl], skillParam[3][lvl], attacks.AttackTagElementalArt)
-	c.Core.QueueAttack(final, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 62, 62)
+	// Image 5 E2 offsets are relative to E2 start, not the preceding E/Q.
+	for _, hitmark := range []int{16, 26, 33} {
+		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Coda at Dawn's Tolling", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: skillParam[1][lvl]}
+		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 4), hitmark, hitmark)
+	}
+	final := c.stellarAttack("Coda Finale", skillParam[2][lvl], skillParam[3][lvl], attacks.AttackTagReactionStarSuperconduct)
+	c.Core.QueueAttack(final, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 66, 66)
 	if c.Base.Cons >= 1 {
 		extra := c.stellarAttack("Coda Finale (C1)", 3, 4.5, attacks.AttackTagReactionStarSuperconduct)
-		c.Core.QueueAttack(extra, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 68, 68)
+		c.Core.QueueAttack(extra, combat.NewCircleHitOnTarget(c.Core.Combat.Player(), nil, 5), 66, 66)
 	}
 	f := frames.InitAbilSlice(82)
 	return action.Info{Frames: frames.NewAbilFunc(f), AnimationLength: 82, CanQueueAfter: 70, State: action.SkillState}, nil
 }
 
-func (c *char) summonDouble(dur int) {
+func (c *char) summonDouble(dur int, fromBurst bool) {
+	c.DeleteStatus("odette-double-enhanced")
 	c.doubleSrc = c.Core.F
+	c.doubleTimeline++
+	c.doubleFromBurst = fromBurst
 	src := c.doubleSrc
-	c.AddStatus(doubleKey, dur, true)
+	// Image 5 standalone E and Q columns. Plume and Wing are alternating
+	// attacks with roughly a four-second cycle for each, not 90-frame ticks.
+	// The diagram's paired stellar hits occur at the same timestamp.
+	plume := []int{164, 395, 631, 864, 1097}
+	wing := []int{269, 507, 741, 974, 1206}
+	startup := 89 // E double disappears at 21.483s after a 20s lifetime.
+	if fromBurst {
+		plume = []int{257, 490, 723, 958, 1191}
+		wing = []int{363, 598, 831, 1068}
+		startup = 72 // Q double disappears at 21.200s.
+	}
+	// Immediate EE replaces this schedule in coda(). Delayed E2 and QE
+	// remain distinct recordings, not interchangeable with immediate EE.
+	c.AddStatus(doubleKey, dur+startup, true)
 	c.grantSplendor(src)
-	for delay := 90; delay <= dur; delay += 90 {
-		c.QueueCharTask(c.doubleTick(src, delay/90), delay)
+	c.scheduleDoubleHits(c.Core.F, plume, wing)
+}
+
+func (c *char) scheduleDoubleHits(origin int, plume, wing []int) {
+	for _, hitmark := range plume {
+		if delay := origin + hitmark - c.Core.F; delay >= 0 {
+			c.QueueCharTask(c.doubleTick(c.doubleSrc, c.doubleTimeline, true), delay)
+		}
+	}
+	for _, hitmark := range wing {
+		if delay := origin + hitmark - c.Core.F; delay >= 0 {
+			c.QueueCharTask(c.doubleTick(c.doubleSrc, c.doubleTimeline, false), delay)
+		}
 	}
 }
 
-func (c *char) doubleTick(src, tick int) func() {
+func (c *char) doubleTick(src, timeline int, plume bool) func() {
 	return func() {
-		if src != c.doubleSrc || !c.StatusIsActive(doubleKey) {
+		if src != c.doubleSrc || timeline != c.doubleTimeline || !c.StatusIsActive(doubleKey) {
 			return
 		}
 		lvl := c.TalentLvlSkill()
-		plume := tick%2 == 1
 		name, normal, conduct, swirl := "Wing", skillParam[7][lvl], skillParam[8][lvl], skillParam[9][lvl]
 		if plume {
 			name, normal, conduct, swirl = "Plume", skillParam[4][lvl], skillParam[5][lvl], skillParam[6][lvl]
 		}
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Dance Double " + name, AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: normal}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
-		if c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive {
+		if c.StatusIsActive("odette-double-enhanced") && (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) {
 			star := c.stellarAttack("Dance Double "+name+" Stellar", conduct, swirl, attacks.AttackTagElementalArt)
-			c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 4, 4)
+			c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
 		}
 	}
 }
@@ -80,7 +120,7 @@ func (c *char) stellarAttack(name string, conduct, swirl float64, fallback attac
 	if c.Core.StarReactions.SuperconductActive {
 		ai.AttackTag = attacks.AttackTagReactionStarSuperconduct
 	}
-	if c.Core.StarReactions.DiffusionActive {
+	if !c.Core.StarReactions.SuperconductActive && c.Core.StarReactions.DiffusionActive {
 		ai.AttackTag, ai.Mult = attacks.AttackTagReactionStarDiffusionCryo, swirl
 	}
 	return ai

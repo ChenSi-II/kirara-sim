@@ -19,7 +19,13 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 		c.DeleteStatus(conversionKey)
 	}
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Hexhunter Chime", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: ele, Durability: 25, Mult: skill[index][lvl]}
-	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 28, 28, c.skillHit(ele))
+	// Image 7: initial hammer hits at 0.516s, converted hammer at 0.683s.
+	// Their complete/cancel animations remain provisional (58f).
+	hitmark := 31
+	if index == 1 {
+		hitmark = 41
+	}
+	c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), hitmark, hitmark, c.skillHit(ele))
 	if index == 0 {
 		c.SetCD(action.ActionSkill, int(skillParam[2][lvl]*60))
 	}
@@ -57,7 +63,7 @@ func (c *char) skillHit(ele attributes.Element) info.AttackCBFunc {
 		}
 		if c.Base.Cons >= 4 {
 			ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Witch-tribution Ricochet", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: ele, Mult: .8}
-			c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 8, 8)
+			c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 64, 64)
 		}
 	}
 }

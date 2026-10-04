@@ -21,6 +21,7 @@ const (
 type char struct {
 	*tmpl.Character
 	lumiSrc            int
+	lumiAttackSrc      int
 	lumiForm           lumiForm
 	lumiFeed           int
 	fieldCatalogStacks int

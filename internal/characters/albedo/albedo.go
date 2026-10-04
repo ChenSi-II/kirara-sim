@@ -18,11 +18,14 @@ type char struct {
 	skillSnapshot   info.Snapshot
 	// c2 tracking
 	c2stacks int
+	silver   []silverBloom
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := char{}
 	c.Character = tmpl.NewWithWrapper(s, w)
+	hex, ok := p.Params["hexerei"]
+	c.IsHexerei = !ok || hex != 0
 
 	c.EnergyMax = 40
 	c.NormalHitNum = normalHitNum
@@ -37,6 +40,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 func (c *char) Init() error {
 	c.skillHook()
 	c.a1()
+	c.hexInit()
 	return nil
 }
 
