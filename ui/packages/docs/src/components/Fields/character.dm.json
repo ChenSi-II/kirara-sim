@@ -153,6 +153,20 @@
       "desc": "The direction of the Blind Spot relatively to Kinich. -1 - in clock-wise direction; 1 - in counter clock-wise direction; 0 - does not exist at the moment."
     }
   ],
+  "linnea": [
+    {
+      "field": ".linnea.field-catalog",
+      "desc": "Current Field Catalog stacks."
+    },
+    {
+      "field": ".linnea.lumi",
+      "desc": "Whether Lumi is active."
+    },
+    {
+      "field": ".linnea.lumi-form",
+      "desc": "Lumi's current form (`super`, `standard`, or `absent`)."
+    }
+  ],
   "lyney": [
     {
       "field": ".lyney.propSurplusStacks",

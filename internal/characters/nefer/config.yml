@@ -19,3 +19,15 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param9:P}/{param10:P}|1)'
   - skill: 'skill(Skill DMG|{param1:F1P} ATK+{param2:F1P} Elemental Mastery)'
   - burst: 'burst(1-Hit DMG|{param1:F1P} ATK+{param2:F1P} Elemental Mastery)'
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+  - name: burst

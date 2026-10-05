@@ -14,6 +14,24 @@
   "lauma": [
     "Spirit envoy state jump is not implemented."
   ],
+  "linnea": [
+    "Skill swap endpoints and summon attack timelines use user timing image 9 (2026-10-04); see PLACEHOLDER_FRAMES.md for measured and inferred values.",
+    "Burst frames and healing interval, summon creation, intermediate tap counts, unrecorded Moon Cage arrivals, and hitboxes remain provisional."
+  ],
+  "mitya": [
+    "Animation, hitmarks and periodic attack intervals are unmeasured placeholders; see PLACEHOLDER_FRAMES.md.",
+    "Skill particle generation is not modeled because its count and delay are unconfirmed."
+  ],
+  "sandrone": [
+    "E/Q and held-charge hit timelines use user images 1/6 (2026-10-04); see PLACEHOLDER_FRAMES.md for measured and inferred values.",
+    "Recommended rotations use charge[rays=N] (Chinese alias charge[射线=N]); only emitted condensing rays count, not sweeps, overdrive shots or C6 extra segments. See README.md for the C0/C1 rotations.",
+    "Legacy charge without rays or duration defaults to 360 frames and may cancel into the next E early. Explicit rays disables that early cancel. Release recovery remains 0 unmeasured frames.",
+    "The fitted power model enters overdrive on C0 ray 3 and C1 ray 6 from zero power, as confirmed by the user. E clears the entire power bar. Gauge gain/decay and unrecorded power histories still need measurements; C1 E-to-charge rays 4-6 extend the combined recording at 60-frame intervals."
+  ],
+  "valeriy": [
+    "Animation, hitmarks and barrage intervals are unmeasured placeholders; see PLACEHOLDER_FRAMES.md.",
+    "Skill particle generation is not modeled because its count and delay are unconfirmed."
+  ],
   "xianyun": [
     "Not all characters can plunge after a Adeptal Assistance boosted jump"
   ]

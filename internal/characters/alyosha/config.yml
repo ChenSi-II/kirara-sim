@@ -19,3 +19,17 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param9:F1P}/{param10:F1P}|1)'
   - skill: 'skill(#{LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press} DMG|{param1:F1P})'
   - burst: 'burst(Fulgurite Hunting Field DMG|{param1:F1P})'
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+    params:
+      hold: 0 for Tap (default), 1 for Hold.
+  - name: burst

@@ -30,8 +30,9 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 }
 
 func (c *char) coda() (action.Info, error) {
-	// The source table has a separate 15s Coda cooldown. A new E/Q
-	// window cannot bypass it; the conflicting window text remains 6s.
+	// Coda is available only during the six-second window created by E or Q.
+	// The source table also gives Coda its own 15s cooldown; a new E/Q window
+	// cannot bypass that cooldown.
 	c.codaCooldownUntil = c.Core.F + int(skillParam[12][c.TalentLvlSkill()]*60)
 	c.DeleteStatus(codaKey)
 	c.AddStatus("odette-double-enhanced", c.StatusDuration(doubleKey), true)

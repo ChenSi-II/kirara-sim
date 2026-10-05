@@ -1,11 +1,14 @@
 package sandrone
 
 import (
+	"fmt"
+
 	"github.com/genshinsim/gcsim/internal/frames"
 	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/attributes"
 	"github.com/genshinsim/gcsim/pkg/core/combat"
+	"github.com/genshinsim/gcsim/pkg/core/glog"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 )
 
@@ -16,24 +19,20 @@ var (
 	resolutionRay   = []float64{1.2255, 1.32525, 1.425, 1.5675, 1.66725, 1.78125, 1.938, 2.09475, 2.2515, 2.4225, 2.5935, 2.7645, 2.9355, 3.1065, 3.2775}
 )
 
-// Charge is a held action, not an off-field summon. The requested duration is
-// in frames; its default 6s and release recovery (0f) remain assumptions.
+// Charge accepts rays (or 射线) to release after that many condensing rays.
+// Alternatively duration holds for frames; its default 6s and release recovery
+// (0f) remain assumptions. Counted charge stops at overdrive if residual power
+// prevents reaching the requested count; it never counts overdrive/cluster hits.
 // Hit schedules come from images 1/6; see PLACEHOLDER_FRAMES.md.
 func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
+	goal, err := c.requestedResolutionRays(p)
+	if err != nil {
+		return action.Info{}, err
+	}
 	duration := 6 * 60
 	if d, ok := p["duration"]; ok {
 		duration = max(1, d)
 	}
-	c.resolutionSrc++
-	src := c.resolutionSrc
-	c.resolutionRays = 0
-	c.resolutionChannel = true
-	c.sweepTailUntil = -1
-	if !c.powerOverdrive {
-		c.AddStatus("sandrone-resolution", duration+1, true)
-	}
-	c.resolutionTick++
-	c.QueueCharTask(c.powerTick(c.resolutionTick), 60)
 	sweeps, rays := resolutionSweepHitmarks, resolutionRayHitmarks
 	if c.Base.Cons >= 1 {
 		sweeps, rays = resolutionC1SweepHitmarks, resolutionC1RayHitmarks
@@ -45,6 +44,20 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	if followsSkill {
 		sweeps, rays = skillResolutionSweepHitmarks, skillResolutionRayHitmarks
 	}
+	if goal > 0 {
+		duration = nextChannelHit(rays, goal-1, 60)
+	}
+	c.resolutionSrc++
+	src := c.resolutionSrc
+	c.resolutionRays = 0
+	c.resolutionRayGoal = goal
+	c.resolutionChannel = true
+	c.sweepTailUntil = -1
+	if !c.powerOverdrive {
+		c.AddStatus("sandrone-resolution", duration+1, true)
+	}
+	c.resolutionTick++
+	c.QueueCharTask(c.powerTick(c.resolutionTick), 60)
 	if c.powerOverdrive {
 		// Re-pressing may shoot in overdrive; it must not reset the gauge
 		// or grant Resolution. The restart startup is still unmeasured and
@@ -70,18 +83,74 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	c.QueueCharTask(endChannel, duration+1)
 	f := frames.InitAbilSlice(duration)
 	queueAfter := duration
-	if _, explicitHold := p["duration"]; !explicitHold && followsSkill {
+	if _, explicitHold := p["duration"]; goal == 0 && !explicitHold && followsSkill {
 		// Default E -> held CA -> E loops may leave CA when the next E is
 		// ready, rather than adding the old arbitrary 6s lock to every E.
 		// This cancel is inferred; explicit duration keeps the requested hold.
 		f[action.ActionSkill] = min(duration, max(sweeps[0], c.Cooldown(action.ActionSkill)))
 		queueAfter = min(duration, sweeps[0])
 	}
+	frameFunc := frames.NewAbilFunc(f)
+	if goal > 0 {
+		// Unlock only after the actual ray callback releases the channel.
+		// Keep CanQueueAfter at the scheduled final ray, so an end-of-script
+		// or wait statement cannot finish the simulation before it fires.
+		// Early overdrive stops firing but keeps this upper-bound queue time.
+		frameFunc = func(action.Action) int {
+			if src != c.resolutionSrc || !c.resolutionChannel {
+				return 0
+			}
+			return duration + 1
+		}
+	}
 	return action.Info{
-		Frames: frames.NewAbilFunc(f), AnimationLength: duration, CanQueueAfter: queueAfter,
+		Frames: frameFunc, AnimationLength: duration, CanQueueAfter: queueAfter,
 		State:     action.ChargeAttackState,
 		OnRemoved: func(action.AnimationState) { endChannel() },
 	}, nil
+}
+
+func (c *char) requestedResolutionRays(p map[string]int) (int, error) {
+	goal, counted := p["rays"]
+	if chinese, ok := p["射线"]; ok {
+		if counted && chinese != goal {
+			return 0, fmt.Errorf("sandrone charge: rays and 射线 must agree")
+		}
+		goal, counted = chinese, true
+	}
+	if !counted {
+		return 0, nil
+	}
+	if _, ok := p["duration"]; ok {
+		return 0, fmt.Errorf("sandrone charge: choose rays/射线 or duration, not both")
+	}
+	limit := 3
+	if c.Base.Cons >= 1 {
+		limit = 6
+	}
+	if goal < 1 || goal > limit {
+		return 0, fmt.Errorf("sandrone charge: rays/射线 must be between 1 and %d at C%d", limit, c.Base.Cons)
+	}
+	if c.powerOverdrive {
+		return 0, fmt.Errorf("sandrone charge: cannot fire condensing rays in overdrive; use skill to repair first")
+	}
+	return goal, nil
+}
+
+func (c *char) finishCountedCharge() {
+	if c.resolutionRayGoal == 0 || !c.resolutionChannel {
+		return
+	}
+	if c.resolutionRays < c.resolutionRayGoal && !c.powerOverdrive {
+		return
+	}
+	if c.resolutionRays < c.resolutionRayGoal {
+		c.Core.Log.NewEvent("Sandrone entered overdrive before requested ray count", glog.LogWarnings, c.Index()).
+			Write("requested_rays", c.resolutionRayGoal).
+			Write("fired_rays", c.resolutionRays)
+	}
+	c.resolutionChannel = false
+	c.DeleteStatus("sandrone-resolution")
 }
 
 func nextChannelHit(recorded []int, i, interval int) int {
@@ -122,6 +191,7 @@ func (c *char) powerTick(src int) func() {
 				gain /= 2
 			}
 			c.gainResolutionPower(gain)
+			c.finishCountedCharge()
 		} else {
 			decay := 5.0
 			if c.Core.Player.Active() != c.Index() {
@@ -196,9 +266,14 @@ func (c *char) resolutionRay(src int) func() {
 			cluster := ai
 			cluster.Abil = "Faggio Cluster Condensing Ray"
 			cluster.Mult = clusterMult
-			for i := 0; i < 4; i++ {
-				c.Core.QueueAttack(cluster, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 6+i*6, 6+i*6)
+			// The cluster continues through the interval after the third
+			// normal ray and finishes just before the sixth ray. Exact hit
+			// offsets are not measured; spacing four provisional segments
+			// over that confirmed window reflects the user's observation.
+			for _, delay := range []int{40, 80, 120, 160} {
+				c.Core.QueueAttack(cluster, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), delay, delay)
 			}
 		}
+		c.finishCountedCharge()
 	}
 }

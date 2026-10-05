@@ -17,3 +17,18 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param7:P}/{param8:P}|1)'
   - skill: 'skill(Smoke Bomb DMG|{param1:F1P})'
   - burst: 'burst(Skill DMG|{param1:F1P})'
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+    params:
+      contact: 0 by default; 1 selects contact damage when filled is 0. This is a manual input to the current simplified model.
+      filled: 0 by default; 1 selects the filled-flask damage and enables Meowball attacks. Overrides contact; flask absorption is not simulated automatically.
+  - name: burst

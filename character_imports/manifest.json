@@ -357,16 +357,16 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
-        "A4 multiplier, C2 shred and intrinsic Radiance corrected; Coda has a separate 15s cooldown. Same-version source conflict remains: E/Q 6s window versus double-lifetime hyperlink. Delayed Coda/QE timing remains unmeasured.",
+        "The reviewed four Odette groups are implemented and tested: A4 multiplier, C2 shred, intrinsic Radiance, and the six-second E/Q Coda window with its separate 15-second cooldown. Delayed Coda/QE timing remains unmeasured.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
         "date": "2026-10-05",
-        "result": "partial-fixes-tested",
+        "result": "mechanism-reviewed-scope-complete",
         "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
-        "remaining": "A4 multiplier, C2 shred and intrinsic Radiance corrected; Coda has a separate 15s cooldown. Same-version source conflict remains: E/Q 6s window versus double-lifetime hyperlink. Delayed Coda/QE timing remains unmeasured."
+        "remaining": "The reviewed four Odette groups are implemented and tested: A4 multiplier, C2 shred, intrinsic Radiance, and the six-second E/Q Coda window with its separate 15-second cooldown. Delayed Coda/QE timing remains unmeasured."
       }
     },
     {
@@ -393,16 +393,16 @@
         "internal/characters/sayu"
       ],
       "todos": [
-        "Four reviewed mechanism groups corrected. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; not a complete kit validation.",
+        "The reviewed four Prune groups are implemented and tested at mechanism level. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; this is not a complete kit validation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
         "date": "2026-10-05",
-        "result": "partial-fixes-tested",
+        "result": "mechanism-reviewed-scope-complete",
         "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
-        "remaining": "Four reviewed mechanism groups corrected. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; not a complete kit validation."
+        "remaining": "The reviewed four Prune groups are implemented and tested at mechanism level. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; this is not a complete kit validation."
       }
     },
     {
@@ -429,16 +429,16 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
-        "Radiance and overdrive re-press state corrected. Tactics now expire after 60s, provisionally refreshed together. Power growth/repair/decay, stack refresh policy, overdrive restart startup and C6 cluster timing/release need observation.",
+        "Four of five reviewed Sandrone groups are implemented or accepted: Radiance, overdrive re-press, 60-second tactics expiry policy, full-bar E repair, and provisional C6 cluster window through before ray six. Power growth/decay and exact cluster hit frames remain estimated.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
         "date": "2026-10-05",
-        "result": "partial-fixes-tested",
+        "result": "mechanism-reviewed-with-one-sandrone-data-gap",
         "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
-        "remaining": "Radiance and overdrive re-press state corrected. Tactics now expire after 60s, provisionally refreshed together. Power growth/repair/decay, stack refresh policy, overdrive restart startup and C6 cluster timing/release need observation."
+        "remaining": "Four of five reviewed Sandrone groups are implemented or accepted: Radiance, overdrive re-press, 60-second tactics expiry policy, full-bar E repair, and provisional C6 cluster window through before ray six. Power growth/decay and exact cluster hit frames remain estimated."
       }
     },
     {
@@ -495,16 +495,16 @@
         "pkg/reactable/lunarcrystallize.go"
       ],
       "todos": [
-        "C1 bucket, C4 hit/combo, phase lifecycle and C6 resource/elevation boundaries corrected, including no second elevation on aggregate Lunar Crystallize damage. Final stride exit timing and C2 retention on its hits still need observation.",
+        "The reviewed six Zibai groups are implemented or accepted, including C1 bucket, C4 hit/combo, phase lifecycle, C6 resource/elevation boundaries, and the retained final-stride exit policy. Exact unmeasured frames remain separate from mechanism status.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
         "date": "2026-10-05",
-        "result": "partial-fixes-tested",
+        "result": "mechanism-reviewed-scope-complete",
         "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
-        "remaining": "C1 bucket, C4 hit/combo, phase lifecycle and C6 resource/elevation boundaries corrected, including no second elevation on aggregate Lunar Crystallize damage. Final stride exit timing and C2 retention on its hits still need observation."
+        "remaining": "The reviewed six Zibai groups are implemented or accepted, including C1 bucket, C4 hit/combo, phase lifecycle, C6 resource/elevation boundaries, and the retained final-stride exit policy. Exact unmeasured frames remain separate from mechanism status."
       }
     }
   ]

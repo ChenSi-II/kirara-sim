@@ -481,6 +481,52 @@
       "invalid": false
     }
   ],
+  "alyosha": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "amber": [
     {
       "ability": "attack",
@@ -2203,6 +2249,144 @@
       "invalid": false
     }
   ],
+  "iansan": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "ifa": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "illuga": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "ineffa": [
     {
       "ability": "attack",
@@ -2224,6 +2408,52 @@
     {
       "ability": "high_plunge",
       "invalid": true
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "jahoda": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
     },
     {
       "ability": "skill",
@@ -2291,6 +2521,52 @@
     {
       "ability": "walk",
       "note": "No action followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "kachina": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -2979,6 +3255,52 @@
       "invalid": false
     }
   ],
+  "linnea": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "lisa": [
     {
       "ability": "attack",
@@ -3021,6 +3343,52 @@
     {
       "ability": "walk",
       "note": "No action followed by walk (except low_plunge and high_plunge) has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "lohen": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -3508,6 +3876,52 @@
       "invalid": false
     }
   ],
+  "mitya": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "mona": [
     {
       "ability": "attack",
@@ -3689,6 +4103,52 @@
     {
       "ability": "walk",
       "note": "Normal Attacks do not have legal walk cancels recorded, but Skill, Burst and Low/High Plunge do.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "nefer": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -3930,6 +4390,52 @@
       "invalid": false
     }
   ],
+  "odette": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "ororon": [
     {
       "ability": "attack",
@@ -3970,6 +4476,52 @@
     {
       "ability": "walk",
       "note": "Only aim followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "prune": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -4169,6 +4721,52 @@
     {
       "ability": "walk",
       "note": "No action followed by walk (except low_plunge and high_plunge) has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "sandrone": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -4698,6 +5296,53 @@
       "invalid": false
     }
   ],
+  "valeriy": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "note": "Uses the special charged attack automatically when Potential is at least 40.",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
   "varesa": [
     {
       "ability": "attack",
@@ -4834,6 +5479,98 @@
     {
       "ability": "walk",
       "note": "Only aim followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "vesna": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "vodyanitsa": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {
@@ -5606,6 +6343,52 @@
     {
       "ability": "walk",
       "note": "No action followed by walk has proper frames.",
+      "invalid": false
+    },
+    {
+      "ability": "swap",
+      "invalid": false
+    }
+  ],
+  "zibai": [
+    {
+      "ability": "attack",
+      "invalid": false
+    },
+    {
+      "ability": "aim",
+      "invalid": true
+    },
+    {
+      "ability": "charge",
+      "invalid": false
+    },
+    {
+      "ability": "low_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "high_plunge",
+      "invalid": false
+    },
+    {
+      "ability": "skill",
+      "invalid": false
+    },
+    {
+      "ability": "burst",
+      "invalid": false
+    },
+    {
+      "ability": "dash",
+      "invalid": false
+    },
+    {
+      "ability": "jump",
+      "invalid": false
+    },
+    {
+      "ability": "walk",
       "invalid": false
     },
     {

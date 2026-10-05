@@ -5,3 +5,16 @@ source: community
 version: origin_data
 override:
   id: 10000143
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+  - name: burst
+  - name: dash

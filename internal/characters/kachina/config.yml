@@ -19,3 +19,17 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param9:P}/{param10:P}|1)'
   - skill: 'skill(Turbo Twirly Mounted DMG|{param1:F1P} DEF)'
   - burst: 'burst(Skill DMG|{param1:F1P} DEF)'
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+    params:
+      mount: 0 for off-field Turbo Twirly (default), 1 for mounted attacks.
+  - name: burst

@@ -26,10 +26,10 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	if c.Base.Ascension >= 1 && c.resolutionPower > 50 && (c.SuperconductRadiance() || c.DiffusionRadiance()) {
 		second.Mult *= 4
 	}
-	// E repairs Faggio regardless of Ascension or Stellar status. The exact
-	// repair curve is unmeasured: retain the 50-point lump as an explicit
-	// approximation, but do not incorrectly gate repair on the A1 damage buff.
-	c.reduceResolutionPower(50)
+	// E repairs Faggio regardless of Ascension or Stellar status. The repair
+	// removes the entire current decoding-power bar. The reduction still feeds
+	// A1's power-removed tactic counter and exits Overdrive below 50 power.
+	c.reduceResolutionPower(c.resolutionPower)
 	c.Core.QueueAttack(second, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 48, 48)
 	c.SetCD(action.ActionSkill, int(skillParam[2][lvl]*60))
 	f := frames.InitAbilSlice(37)

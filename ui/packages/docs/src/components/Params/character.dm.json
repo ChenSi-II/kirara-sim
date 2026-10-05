@@ -222,6 +222,23 @@
       "desc": "Projectile travel time. Default 5 frames."
     }
   ],
+  "alyosha": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
   "amber": [
     {
       "ability": "attack",
@@ -314,7 +331,17 @@
     {
       "ability": "skill",
       "param": "counter",
-      "desc": "Number of counter hits. Default 0. 2 for perfect counter. Does not affect frames."
+      "desc": "Number of incoming counter hits. Default 0. 2 for perfect counter. Does not affect frames."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "Set to 1 to charge Tidecaller. With enhanced=1, each 48 frames adds one counter stack."
+    },
+    {
+      "ability": "skill",
+      "param": "hold_frames",
+      "desc": "Charge duration in frames when hold=1 (default 96). Added to the original release animation."
     }
   ],
   "bennett": [
@@ -791,6 +818,69 @@
       "desc": "0 for no collision dmg (default), 1 for collision dmg."
     }
   ],
+  "iansan": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    }
+  ],
+  "ifa": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    }
+  ],
+  "illuga": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
+  "jahoda": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "contact",
+      "desc": "0 by default; 1 selects contact damage when filled is 0. This is a manual input to the current simplified model."
+    },
+    {
+      "ability": "skill",
+      "param": "filled",
+      "desc": "0 by default; 1 selects the filled-flask damage and enables Meowball attacks. Overrides contact; flask absorption is not simulated automatically."
+    }
+  ],
   "jean": [
     {
       "ability": "skill",
@@ -806,6 +896,23 @@
       "ability": "burst",
       "param": "enter_delay",
       "desc": "Time between enter/leave hits. Default 600 / enter (frames)."
+    }
+  ],
+  "kachina": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "mount",
+      "desc": "0 for off-field Turbo Twirly (default), 1 for mounted attacks."
     }
   ],
   "kaedeharakazuha": [
@@ -1039,6 +1146,23 @@
       "desc": "Projectile travel time for Starlight Slugs. Default 22 frames."
     }
   ],
+  "linnea": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "taps",
+      "desc": "Number of consecutive Skill/Normal taps represented by the cast. Default 1; range 1–5."
+    }
+  ],
   "lisa": [
     {
       "ability": "low_plunge",
@@ -1054,6 +1178,18 @@
       "ability": "skill",
       "param": "hold",
       "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
+  "lohen": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ],
   "lumineanemo": [
@@ -1326,6 +1462,28 @@
       "desc": "0 for Tap (default), 1 for Hold."
     }
   ],
+  "mitya": [
+    {
+      "ability": "charge",
+      "param": "duration",
+      "desc": "Special charged-attack hold duration in frames, minimum 60. By default uses the current beacon count. Only applies while an overloaded core and at least one beacon are active."
+    },
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "skill",
+      "param": "hold",
+      "desc": "0 for a steady core (tap, default), 1 for an overloaded core (hold)."
+    }
+  ],
   "mona": [
     {
       "ability": "skill",
@@ -1372,6 +1530,18 @@
       "ability": "skill",
       "param": "hold",
       "desc": "0 for Tap (default), value between 1 and 241 for Hold. The number is added to the minimum holding frames for Tap to turn into Hold (41), subtracted by 1 to account for requiring a 1 to activate."
+    }
+  ],
+  "nefer": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ],
   "neuvillette": [
@@ -1452,6 +1622,18 @@
       "desc": "Number of seconds to extend Burst by. Value must be between 0 and 10. Default 10."
     }
   ],
+  "odette": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    }
+  ],
   "ororon": [
     {
       "ability": "attack",
@@ -1477,6 +1659,18 @@
       "ability": "skill",
       "param": "travel",
       "desc": "Travel time of bounce between targets in frames. Default: 10."
+    }
+  ],
+  "prune": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ],
   "qiqi": [
@@ -1535,6 +1729,33 @@
       "ability": "skill",
       "param": "nobehind",
       "desc": "Default 0. 1 for disabling striking behind for A1 purposes."
+    }
+  ],
+  "sandrone": [
+    {
+      "ability": "charge",
+      "param": "duration",
+      "desc": "Held-charge duration in frames (default 360, minimum 1). An explicit value also disables the inferred early cancel into the next E."
+    },
+    {
+      "ability": "charge",
+      "param": "rays",
+      "desc": "Number of condensing rays before releasing (C0: 1-3, C1+: 1-6). Mutually exclusive with duration. Requires not starting in overdrive; residual power can cause early overdrive and fewer rays, logged as a warning."
+    },
+    {
+      "ability": "charge",
+      "param": "射线",
+      "desc": "Chinese alias for rays."
+    },
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ],
   "sangonomiyakokomi": [
@@ -1727,6 +1948,18 @@
       "desc": "Projectile travel time. Default 0 frames."
     }
   ],
+  "valeriy": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    }
+  ],
   "varesa": [
     {
       "ability": "low_plunge",
@@ -1764,6 +1997,30 @@
       "ability": "skill",
       "param": "hold",
       "desc": "0 for Tap (default), 1 for Hold."
+    }
+  ],
+  "vesna": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    }
+  ],
+  "vodyanitsa": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ],
   "wanderer": [
@@ -1985,6 +2242,18 @@
       "ability": "skill",
       "param": "hold_nostele",
       "desc": "If 1, no Stone Stele will be created (i.e. shield only) and Hold will be performed. Default 0."
+    }
+  ],
+  "zibai": [
+    {
+      "ability": "low_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
+    },
+    {
+      "ability": "high_plunge",
+      "param": "collision",
+      "desc": "0 to omit plunge collision damage (default), 1 to include it."
     }
   ]
 }

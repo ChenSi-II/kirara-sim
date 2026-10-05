@@ -37,6 +37,9 @@ tasks:
     cmds:
       - go generate ./pipeline
       - go run ./pipeline {{.CLI_ARGS}}
+  character-docs:
+    desc: Regenerate character script names, actions and parameters from local configs (requires PyYAML)
+    cmd: python3 scripts/generate_character_docs.py {{.CLI_ARGS}}
   pipeline-add:
     cmds:
       - git add -v 'ui/packages/docs/docs/reference/*/*.md' > /dev/null

@@ -300,15 +300,11 @@ func TestSkillChargeLoopDoesNotInheritOldChannel(t *testing.T) {
 		advanceTo(t, c, 720)
 		checkFrames(t, hits["Prism Shot 1"], []int{36, 276, 516})
 		checkFrames(t, hits["Prism Shot 2"], []int{48, 288, 528})
-		// The first two loops retain nine sweeps and two rays. Residual power
-		// can overheat C0 in the third loop; don't reset power to force repeats.
-		// In particular the old channel's third ray at E+248 must vanish.
+		// E repairs the complete current power bar, so every loop in this
+		// animation-only fixture starts its own recorded sweep/ray sequence.
 		wantSweeps, wantRays := []int{}, []int{}
 		for _, origin := range []int{0, 240, 480} {
 			for _, f := range []int{69, 88, 108, 129, 150, 171, 191, 212, 233} {
-				if cons == 0 && origin == 480 && f > 191 {
-					continue
-				}
 				wantSweeps = append(wantSweeps, origin+f)
 			}
 			for _, f := range []int{133, 191} {
@@ -317,10 +313,8 @@ func TestSkillChargeLoopDoesNotInheritOldChannel(t *testing.T) {
 		}
 		checkFrames(t, hits["Faggio Resolution Sweep"], wantSweeps)
 		checkFrames(t, hits["Faggio Condensing Ray"], wantRays)
-		if cons == 0 {
-			checkFrames(t, hits["Faggio Power Overdrive Ray"], []int{691, 716})
-		} else if len(hits["Faggio Power Overdrive Ray"]) != 0 {
-			t.Fatal("C1 half-rate incorrectly overheated")
+		if len(hits["Faggio Power Overdrive Ray"]) != 0 {
+			t.Fatal("full E repair should prevent this fixture from inheriting overdrive")
 		}
 		if err := c.Player.ReadyCheck(action.ActionSkill, keys.Sandrone, nil); err != nil {
 			t.Fatal("next E blocked after third loop", err)
@@ -337,10 +331,11 @@ func TestSkillRepairDoesNotRequireStellarBuff(t *testing.T) {
 	if _, err := ch.Skill(nil); err != nil {
 		t.Fatal(err)
 	}
-	if ch.resolutionPower != 40 {
+	if ch.resolutionPower != 0 {
 		t.Fatal("E repair incorrectly requires Stellar status")
 	}
 	ch.tacticStacks, ch.tacticPowerRemoved = 0, 0
+	ch.resolutionPower = 10
 	ch.reduceResolutionPower(5)
 	ch.reduceResolutionPower(5)
 	if ch.tacticStacks != 1 {

@@ -13,6 +13,7 @@ type char struct {
 	resolutionSrc      int
 	resolutionPower    float64
 	resolutionRays     int
+	resolutionRayGoal  int
 	tacticStacks       int
 	tacticExpiry       int
 	tacticPowerRemoved float64

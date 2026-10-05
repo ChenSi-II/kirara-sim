@@ -21,10 +21,22 @@ talents:
 docs:
   issues:
     - E/Q and held-charge hit timelines use user images 1/6 (2026-10-04); see PLACEHOLDER_FRAMES.md for measured and inferred values.
-    - Charge defaults to 360 frames with no release recovery; immediate E follow-ups can cancel into the next E when its cooldown ends unless duration is explicit. This cancel is inferred.
-    - The fitted power model enters overdrive on C0 ray 3 and C1 ray 6 from zero power, as confirmed by the user. C0 overdrive hits are recorded; C1 overdrive hits reuse estimated offsets. Gauge gain/repair/decay rates and unrecorded power histories still need measurements.
+    - Recommended rotations use charge[rays=N] (Chinese alias charge[射线=N]); only emitted condensing rays count, not sweeps, overdrive shots or C6 extra segments. See README.md for the C0/C1 rotations.
+    - Legacy charge without rays or duration defaults to 360 frames and may cancel into the next E early. Explicit rays disables that early cancel. Release recovery remains 0 unmeasured frames.
+    - The fitted power model enters overdrive on C0 ray 3 and C1 ray 6 from zero power, as confirmed by the user. E clears the entire power bar. Gauge gain/decay and unrecorded power histories still need measurements; C1 E-to-charge rays 4-6 extend the combined recording at 60-frame intervals.
 
 abilities:
+  - name: attack
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+  - name: burst
   - name: charge
     params:
+      rays: "Number of condensing rays before releasing (C0: 1-3, C1+: 1-6). Mutually exclusive with duration. Requires not starting in overdrive; residual power can cause early overdrive and fewer rays, logged as a warning."
+      射线: Chinese alias for rays.
       duration: Held-charge duration in frames (default 360, minimum 1). An explicit value also disables the inferred early cancel into the next E.

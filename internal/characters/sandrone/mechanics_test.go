@@ -80,6 +80,34 @@ func TestTacticsExpireAndCannotBuffLaterBurst(t *testing.T) {
 	}
 }
 
+func TestERepairsTheEntirePowerBar(t *testing.T) {
+	_, ch, _ := setupTiming(t, 0)
+	ch.resolutionPower = 73
+	if _, err := ch.Skill(nil); err != nil {
+		t.Fatal(err)
+	}
+	if ch.resolutionPower != 0 {
+		t.Fatalf("E repaired %v power; want the whole bar", ch.resolutionPower)
+	}
+}
+
+func TestC6ClusterRunsUntilBeforeSixthRay(t *testing.T) {
+	c, _, hits := setupTiming(t, 6)
+	if err := c.Player.Exec(action.ActionCharge, keys.Sandrone, map[string]int{"duration": 500}); err != nil {
+		t.Fatal(err)
+	}
+	advanceTo(t, c, 500)
+	clusters := hits["Faggio Cluster Condensing Ray"]
+	if len(clusters) != 4 {
+		t.Fatalf("cluster segments = %v, want four", clusters)
+	}
+	// C1's sixth normal ray is at 402f in the confirmed recording. The
+	// cluster offsets are provisional, but all segments must precede it.
+	if clusters[len(clusters)-1] >= 402 {
+		t.Fatalf("cluster outlived sixth ray: %v", clusters)
+	}
+}
+
 func TestIntrinsicRadianceHasOwnLifetimeAndSuperconductPriority(t *testing.T) {
 	for _, song := range []bool{false, true} {
 		c, ch, _ := setupTiming(t, 0)

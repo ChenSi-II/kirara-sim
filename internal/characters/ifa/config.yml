@@ -18,3 +18,15 @@ talents:
   - highPlunge: 'attack(Low/High Plunge DMG|{param7:P}/{param8:P}|1)'
   - skill: 'skill(Tonicshot DMG|{param1:F1P})'
   - burst: 'burst(Skill DMG|{param1:F1P})'
+
+abilities:
+  - name: attack
+  - name: charge
+  - name: low_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: high_plunge
+    params:
+      collision: 0 to omit plunge collision damage (default), 1 to include it.
+  - name: skill
+  - name: burst

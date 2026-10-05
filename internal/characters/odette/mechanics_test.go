@@ -122,3 +122,24 @@ func TestBurstCannotBypassCodaCooldown(t *testing.T) {
 		t.Fatal("Coda remained on cooldown")
 	}
 }
+
+func TestCodaWindowIsSixSecondsAfterEOrQ(t *testing.T) {
+	c, ch, _ := setupTiming(t, 0)
+	if _, err := ch.Skill(nil); err != nil {
+		t.Fatal(err)
+	}
+	tickTo(c, 359)
+	if !ch.StatusIsActive(codaKey) {
+		t.Fatal("Coda window ended before six seconds")
+	}
+	tickTo(c, 361)
+	if ch.StatusIsActive(codaKey) {
+		t.Fatal("Coda window outlived six seconds")
+	}
+	if _, err := ch.Burst(nil); err != nil {
+		t.Fatal(err)
+	}
+	if !ch.StatusIsActive(codaKey) {
+		t.Fatal("Q did not open a new six-second Coda window")
+	}
+}
