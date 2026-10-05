@@ -31,6 +31,7 @@ func TestStellarTalentDamageUsesReactionFormula(t *testing.T) {
 						tag = attacks.AttackTagReactionStarSuperconduct
 					} else {
 						c.StarReactions.DiffusionActive = true
+						c.Events.Emit(event.OnStarDiffusion, c.Combat.PrimaryTarget(), &info.AttackEvent{Info: info.AttackInfo{ActorIndex: 0}})
 						c.StarReactions.DiffusionStacks = 6
 					}
 					buff := make([]float64, attributes.EndStatType)

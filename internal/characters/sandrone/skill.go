@@ -18,12 +18,12 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 	c.Core.QueueAttack(first, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 36, 36, c.particleCB)
 	second := first
 	second.Abil = "Prism Shot 2"
-	if c.Core.StarReactions.SuperconductActive {
+	if c.SuperconductRadiance() {
 		second.AttackTag, second.ICDTag, second.Mult = attacks.AttackTagReactionStarSuperconduct, attacks.ICDTagNone, skill[1][lvl]
-	} else if c.Core.StarReactions.DiffusionActive {
+	} else if c.DiffusionRadiance() {
 		second.AttackTag, second.ICDTag, second.Mult = attacks.AttackTagReactionStarDiffusionCryo, attacks.ICDTagNone, skill[2][lvl]
 	}
-	if c.Base.Ascension >= 1 && c.resolutionPower > 50 && (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) {
+	if c.Base.Ascension >= 1 && c.resolutionPower > 50 && (c.SuperconductRadiance() || c.DiffusionRadiance()) {
 		second.Mult *= 4
 	}
 	// E repairs Faggio regardless of Ascension or Stellar status. The exact

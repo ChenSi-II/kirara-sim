@@ -19,6 +19,8 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/keys"
+	"github.com/genshinsim/gcsim/pkg/core/player/character"
+	"github.com/genshinsim/gcsim/pkg/modifier"
 )
 
 // Expectations transcribed from the C3/C5 talent descriptions, in A/E/Q order.
@@ -190,4 +192,40 @@ func TestAuditZibaiC6IsSelfOnlyAndAppliedOnce(t *testing.T) {
 	closeEnh(t, a.Info.Elevation, 0)
 	ch.DeleteStatus("zibai-lunar-phase-shift")
 	closeEnh(t, c.Player.ByIndex(1).ReactBonus(a.Info), 0)
+}
+
+func TestAuditIllugaConsumesOnHitAndUsesLunarScale(t *testing.T) {
+	c, e, ch := enhancedCore(t, 4, nil, keys.Illuga, keys.Zibai)
+	stats := make([]float64, attributes.EndStatType)
+	stats[attributes.EM] = 200
+	ch.AddStatMod(character.StatMod{Base: modifier.NewBase("audit-em", -1), AffectedStat: attributes.EM, Amount: func() []float64 { return stats }})
+	if _, err := ch.Burst(nil); err != nil {
+		t.Fatal(err)
+	}
+	// Merely applying an attack (including one that will miss) cannot spend
+	// the 21 charges. No queued attacks are advanced during these assertions.
+	for range 30 {
+		a := &info.AttackEvent{Info: info.AttackInfo{ActorIndex: 0, Element: attributes.Geo, AttackTag: attacks.AttackTagDirectLunarCrystallize}}
+		c.Events.Emit(event.OnApplyAttack, a)
+		closeEnh(t, a.Info.FlatDmg, 0)
+	}
+	makeHit := func(tag attacks.AttackTag) *info.AttackEvent {
+		a := &info.AttackEvent{Info: info.AttackInfo{ActorIndex: 0, Element: attributes.Geo, AttackTag: tag}}
+		c.Events.Emit(event.OnEnemyHit, e, a)
+		return a
+	}
+	ordinary := makeHit(attacks.AttackTagNormal)
+	lunar := makeHit(attacks.AttackTagDirectLunarCrystallize)
+	if ordinary.Info.FlatDmg <= 0 || lunar.Info.FlatDmg <= ordinary.Info.FlatDmg*5 {
+		t.Fatalf("ordinary=%v lunar=%v: lunar must use its separate table", ordinary.Info.FlatDmg, lunar.Info.FlatDmg)
+	}
+	before := ch.Stat(attributes.DEF)
+	for range 19 {
+		makeHit(attacks.AttackTagNormal)
+	}
+	if ch.StatusIsActive("illuga-haunted-night-oriole-song") {
+		t.Fatal("21 hits did not exhaust the song")
+	}
+	closeEnh(t, before-ch.Stat(attributes.DEF), 200)
+	closeEnh(t, makeHit(attacks.AttackTagNormal).Info.FlatDmg, 0)
 }

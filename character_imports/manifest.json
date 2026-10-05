@@ -357,16 +357,16 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
-        "A4 independent multiplier, C2 resistance reduction and per-character Radiance lifecycle remain incomplete.",
+        "A4 multiplier, C2 shred and intrinsic Radiance corrected; Coda has a separate 15s cooldown. Same-version source conflict remains: E/Q 6s window versus double-lifetime hyperlink. Delayed Coda/QE timing remains unmeasured.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
-        "date": "2026-10-04",
-        "result": "incomplete",
-        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
-        "remaining": "A4 independent multiplier, C2 resistance reduction and per-character Radiance lifecycle remain incomplete."
+        "date": "2026-10-05",
+        "result": "partial-fixes-tested",
+        "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
+        "remaining": "A4 multiplier, C2 shred and intrinsic Radiance corrected; Coda has a separate 15s cooldown. Same-version source conflict remains: E/Q 6s window versus double-lifetime hyperlink. Delayed Coda/QE timing remains unmeasured."
       }
     },
     {
@@ -393,16 +393,16 @@
         "internal/characters/sayu"
       ],
       "todos": [
-        "Initial conversion needs actual reaction events; Hexerei and C6 ATK buff remain incomplete.",
+        "Four reviewed mechanism groups corrected. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; not a complete kit validation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
-        "date": "2026-10-04",
-        "result": "incomplete",
-        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
-        "remaining": "Initial conversion needs actual reaction events; Hexerei and C6 ATK buff remain incomplete."
+        "date": "2026-10-05",
+        "result": "partial-fixes-tested",
+        "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
+        "remaining": "Four reviewed mechanism groups corrected. Multi-element conversion priority, geometry, snapshots, ICD and unmeasured frames still need independent observation; not a complete kit validation."
       }
     },
     {
@@ -429,16 +429,16 @@
         "pkg/core/star_reaction.go"
       ],
       "todos": [
-        "Power repair/decay, A1 stack expiry, overdrive re-entry and C6 cluster timing still require implementation or observation.",
+        "Radiance and overdrive re-press state corrected. Tactics now expire after 60s, provisionally refreshed together. Power growth/repair/decay, stack refresh policy, overdrive restart startup and C6 cluster timing/release need observation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
-        "date": "2026-10-04",
-        "result": "incomplete",
-        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
-        "remaining": "Power repair/decay, A1 stack expiry, overdrive re-entry and C6 cluster timing still require implementation or observation."
+        "date": "2026-10-05",
+        "result": "partial-fixes-tested",
+        "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
+        "remaining": "Radiance and overdrive re-press state corrected. Tactics now expire after 60s, provisionally refreshed together. Power growth/repair/decay, stack refresh policy, overdrive restart startup and C6 cluster timing/release need observation."
       }
     },
     {
@@ -495,16 +495,16 @@
         "pkg/reactable/lunarcrystallize.go"
       ],
       "todos": [
-        "C1 damage bucket, C4 hit trigger and phase-generation/expiry boundaries still require correction or verification.",
+        "C1 bucket, C4 hit/combo, phase lifecycle and C6 resource/elevation boundaries corrected, including no second elevation on aggregate Lunar Crystallize damage. Final stride exit timing and C2 retention on its hits still need observation.",
         "User review of character-specific mechanics",
         "Validate final damage values against an independent trusted sample",
         "Verify frames, hitboxes, ICD, hitlag, particle behavior, and runtime state ordering"
       ],
       "mechanics_audit": {
-        "date": "2026-10-04",
-        "result": "incomplete",
-        "report": "reports/2026-10-04-new-characters-mechanics-review.md",
-        "remaining": "C1 damage bucket, C4 hit trigger and phase-generation/expiry boundaries still require correction or verification."
+        "date": "2026-10-05",
+        "result": "partial-fixes-tested",
+        "report": "reports/2026-10-05-four-characters-mechanics-fixes.md",
+        "remaining": "C1 bucket, C4 hit/combo, phase lifecycle and C6 resource/elevation boundaries corrected, including no second elevation on aggregate Lunar Crystallize damage. Final stride exit timing and C2 retention on its hits still need observation."
       }
     }
   ]

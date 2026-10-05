@@ -230,6 +230,35 @@ func floatApproxEqual(got, want float64) bool {
 	return math.Abs(got-want) < 1e-9
 }
 
+func TestStarContributionUsesModifiedMultiplier(t *testing.T) {
+	c, targets := testCoreWithTrgs(1)
+	if err := c.Init(); err != nil {
+		t.Fatal(err)
+	}
+	bonus := 1.0
+	c.Events.Subscribe(event.OnStarReactionAttack, func(args ...any) {
+		a := args[1].(*info.AttackEvent)
+		a.Snapshot.Stats[attributes.CR] = 0
+		a.Snapshot.Stats[attributes.EM] = 1000
+		a.Info.BaseDmgBonus = .14
+		a.Info.Elevation = .45
+		a.Info.FlatDmg = 100 * bonus
+		a.Info.Mult *= bonus
+	}, "test-independent-multiplier")
+	target := targets[0]
+	apply := func() float64 {
+		doStarDiffusionAttack(c, target, 0, info.ReactionTypeStarDiffusionAnemo, attacks.AttackTagReactionStarDiffusionAnemo, attributes.Anemo, .75, 0, combat.NewSingleTargetHit(target.Key()))
+		advanceCoreFrameMultiple(c, 2)
+		return target.last.Info.FlatDmg
+	}
+	base := apply()
+	bonus = 1.3
+	boosted := apply()
+	if base <= 0 || math.Abs(boosted/base-1.3) > 1e-9 {
+		t.Fatalf("contributor multiplier did not reach aggregate damage: base=%v boosted=%v", base, boosted)
+	}
+}
+
 func TestBeaconSuperconductSkipsPrismSettlements(t *testing.T) {
 	c, trg := testCoreWithTrgs(1)
 	if err := c.Init(); err != nil {

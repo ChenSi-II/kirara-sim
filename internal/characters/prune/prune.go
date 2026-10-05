@@ -23,8 +23,10 @@ func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Fail
 	return c.Character.ActionReady(a, p)
 }
 
-func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
+func NewChar(s *core.Core, w *character.CharWrapper, p info.CharacterProfile) error {
 	c := &char{Character: tmpl.NewWithWrapper(s, w)}
+	hex, ok := p.Params["hexerei"]
+	c.IsHexerei = !ok || hex != 0
 	c.EnergyMax = 70
 	c.NormalHitNum = 3
 	c.SkillCon = 5
@@ -36,5 +38,6 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 func (c *char) Init() error {
 	c.initAscensions()
 	c.initConstellations()
+	c.initReactionBuffs()
 	return nil
 }

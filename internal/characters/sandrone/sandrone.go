@@ -3,7 +3,6 @@ package sandrone
 import (
 	tmpl "github.com/genshinsim/gcsim/internal/template/character"
 	"github.com/genshinsim/gcsim/pkg/core"
-	"github.com/genshinsim/gcsim/pkg/core/action"
 	"github.com/genshinsim/gcsim/pkg/core/info"
 	"github.com/genshinsim/gcsim/pkg/core/player/character"
 )
@@ -15,6 +14,7 @@ type char struct {
 	resolutionPower    float64
 	resolutionRays     int
 	tacticStacks       int
+	tacticExpiry       int
 	tacticPowerRemoved float64
 	resolutionTick     int
 	powerOverdrive     bool
@@ -33,16 +33,23 @@ func (c *char) reduceResolutionPower(amount float64) {
 		// remainder to integer division before reaching ten removed power.
 		c.tacticPowerRemoved += removed
 		stacks := int((c.tacticPowerRemoved + 1e-9) / 10)
+		if c.Core.F >= c.tacticExpiry {
+			c.tacticStacks = 0
+		}
 		c.tacticStacks = min(10, c.tacticStacks+stacks)
+		if stacks > 0 {
+			// A shared 60s refresh timer prevents indefinite retention.
+			// Independent-vs-shared layer refresh remains unmeasured.
+			c.tacticExpiry = c.Core.F + 60*60
+			expires := c.tacticExpiry
+			c.QueueCharTask(func() {
+				if c.tacticExpiry == expires {
+					c.tacticStacks = 0
+				}
+			}, 60*60)
+		}
 		c.tacticPowerRemoved = max(0, c.tacticPowerRemoved-float64(stacks)*10)
 	}
-}
-
-func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
-	if a == action.ActionCharge && c.powerOverdrive {
-		return false, action.SkillCD
-	}
-	return c.Character.ActionReady(a, p)
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
@@ -56,6 +63,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.InitStellarRadiance()
 	c.initAscensions()
 	c.initConstellations()
 	return nil

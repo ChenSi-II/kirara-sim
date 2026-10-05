@@ -11,6 +11,13 @@ import (
 func (c *char) initAscensions() {
 	c.AddStarDamageMod("odette-star-base-and-elevation", func(atk *info.AttackEvent) {
 		atk.Info.BaseDmgBonus += min(c.TotalAtk()/100*.007, .14)
+		if c.Base.Ascension >= 4 && atk.Info.ActorIndex == c.Index() {
+			// Like Nefer's Phantasm multiplier: amplify original damage,
+			// independently of the additive reaction/base/elevation buckets.
+			bonus := 1 + min(max(c.TotalAtk()-1000, 0)/100*.015, .30)
+			atk.Info.Mult *= bonus
+			atk.Info.FlatDmg *= bonus
+		}
 		if c.Base.Cons >= 6 {
 			if c.StatusIsActive(doubleKey) && c.splendor[atk.Info.ActorIndex] > 0 {
 				atk.Info.Elevation += .25
@@ -41,9 +48,6 @@ func (c *char) initAscensions() {
 				} else if c.Base.Cons >= 4 {
 					bonus += dream * .5
 				}
-			}
-			if c.Base.Ascension >= 4 && target.Index() == c.Index() {
-				bonus += min(max(c.TotalAtk()-1000, 0)/100*.015, .30)
 			}
 			return bonus
 		}})

@@ -27,10 +27,11 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	c.resolutionSrc++
 	src := c.resolutionSrc
 	c.resolutionRays = 0
-	c.powerOverdrive = false
 	c.resolutionChannel = true
 	c.sweepTailUntil = -1
-	c.AddStatus("sandrone-resolution", duration+1, true)
+	if !c.powerOverdrive {
+		c.AddStatus("sandrone-resolution", duration+1, true)
+	}
 	c.resolutionTick++
 	c.QueueCharTask(c.powerTick(c.resolutionTick), 60)
 	sweeps, rays := resolutionSweepHitmarks, resolutionRayHitmarks
@@ -44,11 +45,18 @@ func (c *char) ChargeAttack(p map[string]int) (action.Info, error) {
 	if followsSkill {
 		sweeps, rays = skillResolutionSweepHitmarks, skillResolutionRayHitmarks
 	}
-	for i, delay := 0, sweeps[0]; delay <= duration; i, delay = i+1, nextChannelHit(sweeps, i+1, 20) {
-		c.QueueCharTask(c.resolutionSweepHit(src, i < len(sweeps)), delay)
-	}
-	for i, delay := 0, rays[0]; delay <= duration; i, delay = i+1, nextChannelHit(rays, i+1, 60) {
-		c.QueueCharTask(c.resolutionRay(src), delay)
+	if c.powerOverdrive {
+		// Re-pressing may shoot in overdrive; it must not reset the gauge
+		// or grant Resolution. The restart startup is still unmeasured and
+		// uses the recorded transition's first-shot offset.
+		c.QueueCharTask(c.overdriveRay(c.resolutionTick, 0), overdriveHitmarks[0])
+	} else {
+		for i, delay := 0, sweeps[0]; delay <= duration; i, delay = i+1, nextChannelHit(sweeps, i+1, 20) {
+			c.QueueCharTask(c.resolutionSweepHit(src, i < len(sweeps)), delay)
+		}
+		for i, delay := 0, rays[0]; delay <= duration; i, delay = i+1, nextChannelHit(rays, i+1, 60) {
+			c.QueueCharTask(c.resolutionRay(src), delay)
+		}
 	}
 	endChannel := func() {
 		if src != c.resolutionSrc {
@@ -175,11 +183,11 @@ func (c *char) resolutionRay(src int) func() {
 		// Image 6 identifies Z2/Z3 as blunt, including their Stellar variants.
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Faggio Condensing Ray", AttackTag: attacks.AttackTagExtra, ICDTag: attacks.ICDTagNormalAttack, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: attributes.Cryo, Durability: 25, Mult: resolutionRay[c.TalentLvlAttack()]}
 		clusterMult := 1.0
-		if c.Core.StarReactions.SuperconductActive {
+		if c.SuperconductRadiance() {
 			ai.AttackTag, ai.ICDTag, ai.Durability = attacks.AttackTagReactionStarSuperconduct, attacks.ICDTagNone, 0
 			ai.Mult *= 2.0 / 3.0 // Talent table: 81.7% superconduct vs 122.55% ordinary/diffusion at level 1.
 			clusterMult = .80
-		} else if c.Core.StarReactions.DiffusionActive {
+		} else if c.DiffusionRadiance() {
 			ai.AttackTag, ai.ICDTag, ai.Durability = attacks.AttackTagReactionStarDiffusionCryo, attacks.ICDTagNone, 0
 			clusterMult = 1.20
 		}

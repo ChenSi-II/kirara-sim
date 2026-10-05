@@ -10,16 +10,18 @@ import (
 
 type char struct {
 	*tmpl.Character
-	phase         float64
-	strides       int
-	phaseSrc      int
-	scattermoon   bool
-	c1FirstStride bool
-	c6Elevation   float64
+	phase             float64
+	strides           int
+	phaseSrc          int
+	lastPhaseReaction int
+	scattermoon       bool
+	c1FirstStride     bool
+	c6Elevation       float64
 }
 
 func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) error {
 	c := &char{Character: tmpl.NewWithWrapper(s, w)}
+	c.lastPhaseReaction = -4 * 60
 	c.EnergyMax = 60
 	c.NormalHitNum = 4
 	c.SkillCon = 3
@@ -31,10 +33,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
 	if a == action.ActionSkill && c.StatusIsActive(lunarPhaseKey) {
-		if c.Base.Cons < 6 && c.phase < 70 {
-			return false, action.SkillCD
-		}
-		if c.Base.Cons >= 6 && c.phase <= 0 {
+		if c.phase < 70 {
 			return false, action.SkillCD
 		}
 		return true, action.NoFailure
@@ -46,4 +45,11 @@ func (c *char) Init() error {
 	c.initAscensions()
 	c.initConstellations()
 	return nil
+}
+
+func (c *char) ResetNormalCounter() {
+	if c.Base.Cons >= 4 && c.StatusIsActive(lunarPhaseKey) {
+		return
+	}
+	c.Character.ResetNormalCounter()
 }

@@ -63,7 +63,7 @@ func doStarDiffusionAttack(
 
 		c.Events.Emit(event.OnStarReactionAttack, target, &ae)
 		em := ae.Snapshot.Stats[attributes.EM]
-		dmg := combat.CalcSpecialReactionDmg(combat.CalcReactionBaseDmg(char.Base.Level), mult, char.ReactBonus(ae.Info), ae.Info, em)
+		dmg := combat.CalcSpecialReactionDmg(combat.CalcReactionBaseDmg(char.Base.Level), ae.Info.Mult, char.ReactBonus(ae.Info), ae.Info, em)
 		isCrit := false
 		if c.Rand.Float64() <= ae.Snapshot.Stats[attributes.CR] {
 			dmg *= 1 + ae.Snapshot.Stats[attributes.CD]

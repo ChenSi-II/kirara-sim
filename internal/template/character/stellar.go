@@ -4,9 +4,28 @@ import (
 	"github.com/genshinsim/gcsim/pkg/core/attacks"
 	"github.com/genshinsim/gcsim/pkg/core/event"
 	"github.com/genshinsim/gcsim/pkg/core/info"
+	"github.com/genshinsim/gcsim/pkg/core/keys"
 )
 
 const DiffusionRadianceKey = "stellar-diffusion-radiance"
+
+// InitStellarRadiance is for characters with an intrinsic Stellar kit. The
+// shared vortex is not their Radiance timer. Vodyanitsa extends the timer only
+// when her A1 and Song are active when the reaction occurs.
+func (c *Character) InitStellarRadiance() {
+	c.Enhanced = true
+	c.superconductPriority = true
+	c.Core.Events.Subscribe(event.OnStarDiffusion, func(...any) {
+		duration := 8 * 60
+		for _, ally := range c.Core.Player.Chars() {
+			if ally.Base.Key == keys.Vodyanitsa && ally.Base.Ascension >= 1 && ally.StatusIsActive("vodyanitsa-microphone-summon") {
+				duration += 4 * 60
+				break
+			}
+		}
+		c.AddStatus(DiffusionRadianceKey, duration, true)
+	}, c.Base.Key.String()+"-intrinsic-radiance")
+}
 
 // Enhanced is opt-out, like the existing hexerei parameter. It controls the
 // additional kit; the two Radiance states still require their actual triggers.

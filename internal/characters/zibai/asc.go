@@ -37,12 +37,18 @@ func (c *char) initAscensions() {
 			}
 		}
 	}
-	c.Core.Events.Subscribe(event.OnEnemyHit, func(args ...any) { apply(args[1].(*info.AttackEvent)) }, "zibai-lunar-base")
+	c.Core.Events.Subscribe(event.OnEnemyHit, func(args ...any) {
+		atk := args[1].(*info.AttackEvent)
+		// Reaction packets already contain the independently calculated
+		// contributions. Applying C6 here would elevate the whole team twice.
+		if atk.Info.AttackTag == attacks.AttackTagDirectLunarCrystallize {
+			apply(atk)
+		}
+	}, "zibai-lunar-base")
 	c.Core.Events.Subscribe(event.OnLunarReactionAttack, func(args ...any) { apply(args[1].(*info.AttackEvent)) }, "zibai-lunar-reaction-base")
-	last := -4 * 60
 	c.Core.Events.Subscribe(event.OnLunarCrystallize, func(...any) {
-		if c.Core.Player.GetMoonsignLevel() >= 2 && c.Core.F-last >= 4*60 {
-			last = c.Core.F
+		if c.StatusIsActive(lunarPhaseKey) && c.Core.Player.GetMoonsignLevel() >= 2 && c.Core.F-c.lastPhaseReaction >= 4*60 {
+			c.lastPhaseReaction = c.Core.F
 			c.addPhase(35)
 		}
 	}, "zibai-phase-lunar-crystallize")

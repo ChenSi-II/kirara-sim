@@ -19,13 +19,13 @@ func (c *char) Burst(map[string]int) (action.Info, error) {
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), burstBombardmentHitmarks[i], burstBombardmentHitmarks[i])
 	}
 	beam := info.AttackInfo{ActorIndex: c.Index(), Abil: "Convective Inhibition Ray", AttackTag: attacks.AttackTagElementalBurst, ICDTag: attacks.ICDTagElementalBurst, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: burst[1][lvl]}
-	if c.Core.StarReactions.SuperconductActive {
+	if c.SuperconductRadiance() {
 		beam.AttackTag, beam.ICDTag, beam.Mult = attacks.AttackTagReactionStarSuperconduct, attacks.ICDTagNone, burst[2][lvl]
 	}
-	if c.Core.StarReactions.DiffusionActive {
+	if c.DiffusionRadiance() {
 		beam.AttackTag, beam.ICDTag, beam.Mult = attacks.AttackTagReactionStarDiffusionCryo, attacks.ICDTagNone, burst[3][lvl]
 	}
-	if (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) && c.tacticStacks > 0 {
+	if (c.SuperconductRadiance() || c.DiffusionRadiance()) && c.tacticStacks > 0 && c.Core.F < c.tacticExpiry {
 		beam.Mult *= 1 + .10*float64(c.tacticStacks)
 		c.tacticStacks = 0
 	}

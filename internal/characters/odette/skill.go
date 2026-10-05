@@ -30,6 +30,9 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 }
 
 func (c *char) coda() (action.Info, error) {
+	// The source table has a separate 15s Coda cooldown. A new E/Q
+	// window cannot bypass it; the conflicting window text remains 6s.
+	c.codaCooldownUntil = c.Core.F + int(skillParam[12][c.TalentLvlSkill()]*60)
 	c.DeleteStatus(codaKey)
 	c.AddStatus("odette-double-enhanced", c.StatusDuration(doubleKey), true)
 	lvl := c.TalentLvlSkill()
@@ -108,7 +111,7 @@ func (c *char) doubleTick(src, timeline int, plume bool) func() {
 		}
 		ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Dance Double " + name, AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagElementalArt, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Durability: 25, Mult: normal}
 		c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
-		if c.StatusIsActive("odette-double-enhanced") && (c.Core.StarReactions.SuperconductActive || c.Core.StarReactions.DiffusionActive) {
+		if c.StatusIsActive("odette-double-enhanced") && (c.SuperconductRadiance() || c.DiffusionRadiance()) {
 			star := c.stellarAttack("Dance Double "+name+" Stellar", conduct, swirl, attacks.AttackTagElementalArt)
 			c.Core.QueueAttack(star, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 3), 0, 0)
 		}
@@ -117,10 +120,10 @@ func (c *char) doubleTick(src, timeline int, plume bool) func() {
 
 func (c *char) stellarAttack(name string, conduct, swirl float64, fallback attacks.AttackTag) info.AttackInfo {
 	ai := info.AttackInfo{ActorIndex: c.Index(), Abil: name, AttackTag: fallback, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeDefault, Element: attributes.Cryo, Mult: conduct}
-	if c.Core.StarReactions.SuperconductActive {
+	if c.SuperconductRadiance() {
 		ai.AttackTag = attacks.AttackTagReactionStarSuperconduct
 	}
-	if !c.Core.StarReactions.SuperconductActive && c.Core.StarReactions.DiffusionActive {
+	if !c.SuperconductRadiance() && c.DiffusionRadiance() {
 		ai.AttackTag, ai.Mult = attacks.AttackTagReactionStarDiffusionCryo, swirl
 	}
 	return ai

@@ -10,14 +10,18 @@ import (
 
 type char struct {
 	*tmpl.Character
-	doubleSrc       int
-	doubleTimeline  int
-	doubleFromBurst bool
-	splendor        [info.MaxChars]int
+	codaCooldownUntil int
+	doubleSrc         int
+	doubleTimeline    int
+	doubleFromBurst   bool
+	splendor          [info.MaxChars]int
 }
 
 func (c *char) ActionReady(a action.Action, p map[string]int) (bool, action.Failure) {
 	if a == action.ActionSkill && c.StatusIsActive(codaKey) && c.StatusIsActive(doubleKey) {
+		if c.Core.F < c.codaCooldownUntil {
+			return false, action.SkillCD
+		}
 		return true, action.NoFailure
 	}
 	return c.Character.ActionReady(a, p)
@@ -34,6 +38,7 @@ func NewChar(s *core.Core, w *character.CharWrapper, _ info.CharacterProfile) er
 }
 
 func (c *char) Init() error {
+	c.InitStellarRadiance()
 	c.initAscensions()
 	c.initConstellations()
 	return nil

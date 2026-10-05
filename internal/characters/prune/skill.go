@@ -34,36 +34,15 @@ func (c *char) Skill(map[string]int) (action.Info, error) {
 }
 
 func (c *char) skillHit(ele attributes.Element) info.AttackCBFunc {
+	if ele != attributes.Anemo {
+		return c.convertedHammerHit(ele, attacks.AttackTagElementalArt, "Witch-tribution Ricochet")
+	}
+	generated := false
 	return func(a info.AttackCB) {
-		if a.Target.Type() != info.TargettableEnemy {
+		if a.Target.Type() != info.TargettableEnemy || generated {
 			return
 		}
-		if ele == attributes.Anemo {
-			target, ok := a.Target.(info.Reactable)
-			if !ok {
-				return
-			}
-			for _, candidate := range []attributes.Element{attributes.Pyro, attributes.Hydro, attributes.Electro, attributes.Cryo} {
-				if target.AuraContains(candidate) {
-					c.converted = candidate
-					c.AddStatus(conversionKey, 6*60, true)
-					break
-				}
-			}
-			c.Core.QueueParticle(c.Base.Key.String(), 4, attributes.Anemo, c.ParticleDelay)
-			return
-		}
-		c.tollingRally()
-		if c.Base.Cons >= 2 {
-			c.c2Stacks = min(6, c.c2Stacks+1)
-		}
-		if c.Base.Cons >= 1 && !c.StatusIsActive("prune-c1-icd") {
-			c.AddStatus("prune-c1-icd", 108, true)
-			c.AddEnergy("prune-c1", 2)
-		}
-		if c.Base.Cons >= 4 {
-			ai := info.AttackInfo{ActorIndex: c.Index(), Abil: "Witch-tribution Ricochet", AttackTag: attacks.AttackTagElementalArt, ICDTag: attacks.ICDTagNone, ICDGroup: attacks.ICDGroupDefault, StrikeType: attacks.StrikeTypeBlunt, Element: ele, Mult: .8}
-			c.Core.QueueAttack(ai, combat.NewCircleHitOnTarget(c.Core.Combat.PrimaryTarget(), nil, 2), 64, 64)
-		}
+		generated = true
+		c.Core.QueueParticle(c.Base.Key.String(), 4, attributes.Anemo, c.ParticleDelay)
 	}
 }
